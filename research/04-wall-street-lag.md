@@ -93,3 +93,16 @@ The **analyst leg returned complete, real data** on all five names (consensus, t
 - **Do not** confuse this screen with Camillo's edge. His edge is the observation and the *decision* that a change is meaningful. The screen is a flashlight, not a judgment.
 
 The counter-argument in one sentence: **Wall Street is not stupid; it is constrained** — by career risk, by coverage budgets, by models that start from guidance, and by a cultural distance from the consumers who move certain brands. Those constraints create intervals. Camillo's career is a documented bet that those intervals are tradable. This repository's job is to explain that bet carefully, and to give you a modest instrument for noticing when the interval might be open — not to tell you to walk through it.
+
+## Academic additions (expansion)
+
+These papers support the *structural* claim that the Street can lag; they do not validate a tradable social-arbitrage rule.
+
+- Hong, Kubik & Solomon, 2000, *RAND Journal of Economics* — herding and career risk among security analysts.
+- Hong & Kubik, 2003, *Journal of Finance* — career concerns and analyst optimism.
+- Da, Engelberg & Gao, 2011, *Journal of Finance*, “In Search of Attention” — Google Search as a revealed-attention measure, with return predictability in a historical sample that is not automatically a live edge.
+- Preis, Moat & Stanley, 2013, *Scientific Reports* — Google search and market moves; later debate on robustness.
+- Bhushan, 1989 — analyst coverage rises with size and other firm traits; thin coverage is the more plausible habitat for an information gap.
+- McNichols & O’Brien — self-selection into coverage, and slower downgrades than upgrades (median 127 days versus 98 in the often-cited comparison). A related finding in the stickiness literature is that only about half of analysts respond to news within four months.
+
+The scanner and the Street Consensus Profile are instruments for asking the priced-in question, not evidence that a rule has alpha. See [`08-street-view-and-experiments.md`](08-street-view-and-experiments.md).

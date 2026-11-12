@@ -1,0 +1,12 @@
+{
+  "retrieved_at_utc": "2026-11-12T18:13:00Z",
+  "method": "Wikimedia REST API",
+  "note": "ELF uses article E.l.f.; TPR uses Tapestry, Inc. Original e.l.f._Cosmetics and Coach_(company) titles were thin or empty.",
+  "sum_13d": {
+    "CROX": 6417,
+    "LULU": 10310,
+    "NWL": 969,
+    "ELF": 2318,
+    "TPR": 1779
+  }
+}

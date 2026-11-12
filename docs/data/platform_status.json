@@ -1,0 +1,114 @@
+{
+  "retrieved_at_utc": "2026-11-12T18:11:04Z",
+  "policy": "Public data only. No logins with user credentials. No paywall bypass. No fabricated counts.",
+  "platforms": {
+    "wikipedia": {
+      "status": "worked",
+      "reason": "5/5 articles returned daily series",
+      "tried": [
+        "Wikimedia REST pageviews API, identified User-Agent"
+      ],
+      "retrieved_at_utc": "2026-11-12T18:08:57Z"
+    },
+    "google_trends": {
+      "status": "worked",
+      "reason": "5/5 keywords",
+      "tried": [
+        "pytrends TrendReq interest_over_time, today 5-y, US, urllib3 patch"
+      ],
+      "retrieved_at_utc": "2026-11-12T18:09:07Z"
+    },
+    "gdelt_news": {
+      "status": "partial",
+      "reason": "First pass HTTP 429 (5s limit). Retry after 6s for 'Crocs' returned 28 TimelineVol points (max 0.0505 on 2026-10-06, last 0.0046 on 2026-11-12), saved to data/gdelt/CROX.json. 'e.l.f.' rejected as too short/common. Other tickers not retried in the first burst.",
+      "tried": [
+        "GDELT DOC API TimelineVol, 2026-10-01 to 2026-11-12, first burst",
+        "Single-query retry after 6 seconds for Crocs \u2014 worked"
+      ],
+      "retrieved_at_utc": "2026-11-12T18:12:00Z"
+    },
+    "google_news": {
+      "status": "worked",
+      "reason": "5/5 RSS feeds",
+      "tried": [
+        "Google News RSS",
+        "Scrapling Fetcher fallback"
+      ],
+      "retrieved_at_utc": "2026-11-12T18:10:25Z"
+    },
+    "app_store": {
+      "status": "worked",
+      "reason": "Official search works; this is app presence, not a live top-chart rank.",
+      "tried": [
+        "iTunes Search API, official public"
+      ],
+      "retrieved_at_utc": "2026-11-12T18:10:29Z"
+    },
+    "reddit": {
+      "status": "blocked",
+      "reason": "www HTTP 403; old HTTP 403; pullpush HTTP 526; scrapling status=403",
+      "tried": [
+        "www.reddit.com public JSON",
+        "old.reddit.com public JSON",
+        "PullPush archive API",
+        "Scrapling Fetcher GET of public JSON"
+      ],
+      "retrieved_at_utc": "2026-11-12T18:10:40Z"
+    },
+    "x": {
+      "status": "worked",
+      "reason": "Official 7-day counts via MCP for four queries. Adapter available with CCT_X_BEARER. twscrape skipped (no logins).",
+      "tried": [
+        "Grok Bot MCP get_posts_counts_recent (official X API)",
+        "CCT_X_BEARER official recent-search adapter",
+        "twscrape without accounts (skipped \u2014 no logins)"
+      ],
+      "retrieved_at_utc": "2026-11-12T18:10:41Z"
+    },
+    "tiktok": {
+      "status": "partial",
+      "reason": "Public pages fetched or attempted; no verified view-count extracted. https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en status=200 len=21168; https://www.tiktok.com/tag/crocs status=200 len=396039",
+      "tried": [
+        "Scrapling Fetcher GET of TikTok Creative Center popular hashtags",
+        "Scrapling Fetcher GET of tiktok.com/tag/crocs",
+        "davidteather/TikTok-Api not invoked with session cookies (no logins)"
+      ],
+      "retrieved_at_utc": "2026-11-12T18:10:48Z"
+    },
+    "instagram": {
+      "status": "blocked",
+      "reason": "scrapling status=200; instaloader JSON Query to api/v1/tags/web_info/: 403 Forbidden - \"fail\" status, message \"login_required\" when accessing https://i.instagram.com/api/v1/tags/web_info/?__a=1&__d=dis&tag_name=crocs",
+      "tried": [
+        "Scrapling Fetcher GET of public instagram.com/explore/tags/crocs/",
+        "instaloader Hashtag.from_name without login (metadata only)"
+      ],
+      "retrieved_at_utc": "2026-11-12T18:10:53Z"
+    },
+    "pinterest_trends": {
+      "status": "partial",
+      "reason": "status=200 title=[<data='<title>Pinterest Trends</title>' parent='<head><meta charset=\"utf-8\"><meta conten...'>] len=57852",
+      "tried": [
+        "Scrapling Fetcher GET https://trends.pinterest.com/"
+      ],
+      "retrieved_at_utc": "2026-11-12T18:10:56Z"
+    },
+    "amazon_movers": {
+      "status": "partial",
+      "reason": "status=200 title=[<data='<title>Amazon.com Movers &amp; Shakers:...' parent='<head><script>var aPageStart = (new Date...'>] len=277848",
+      "tried": [
+        "Scrapling Fetcher GET https://www.amazon.com/gp/movers-and-shakers"
+      ],
+      "retrieved_at_utc": "2026-11-12T18:10:59Z"
+    },
+    "youtube": {
+      "status": "worked",
+      "reason": "3 public search results with metadata",
+      "tried": [
+        "yt-dlp ytsearch3:Crocs shoes --dump-json --skip-download",
+        "YouTube Data API skipped (no YOUTUBE_API_KEY)"
+      ],
+      "retrieved_at_utc": "2026-11-12T18:11:04Z"
+    }
+  },
+  "n_provenance_rows": 41
+}

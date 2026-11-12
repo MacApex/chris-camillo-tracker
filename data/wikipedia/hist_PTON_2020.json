@@ -1,0 +1,1907 @@
+{
+  "retrieved_at_utc": "2026-11-12T18:13:00Z",
+  "article": "Peloton_Interactive",
+  "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Peloton_Interactive/daily/20200101/20201231",
+  "method": "Wikimedia REST API",
+  "items": [
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020010100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020010200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020010700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 4
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020010800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020011200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020011300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020011900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020012500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020012600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020012800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020020200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020020300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020020500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020020700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020020800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020020900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020021000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020021100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020021200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020021300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020021400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020021800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020022300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020022400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020022500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020022600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020022700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020030100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020031200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020031600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020031700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020031800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 4
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020031900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020032000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020032200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020032400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020032500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020032600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020032700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020032800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020040400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020040900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020041000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020041100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020041400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020041600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020041900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020042000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020042100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 3
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020042300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020042400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020042800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020042900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020050400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020050500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020050600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020050800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020051000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020051100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020051200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 6
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020051300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020051500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020051700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020051800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 3
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020051900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020052000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020052300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020052400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020052500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020052600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020052700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020052800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020053000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020053100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020060100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020060200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020060500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020060700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020060800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020060900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020061000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020061300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020061600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 3
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020061700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020061900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020062100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020062200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020062400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020062800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020063000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020070100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020070200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020070900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020071000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020071200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020071400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020071600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020071700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020071800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020072000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020072700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020072800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 3
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020073100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020080300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020080400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020080500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 3
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020080700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020080800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020080900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020081000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020081300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020081800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020081900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 3
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020082000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020082200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020082400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020082500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020082600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020082700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020082800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020082900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020083000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020090100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020090200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020090300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020090400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 5
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020090600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020090700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020090800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 4
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020090900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020091100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 4
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020091200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020091400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020091500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020091600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 6
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020091800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020091900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020092100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020092200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020092300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020092700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 3
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020092900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020093000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020100100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020100200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020100300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020100400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020100500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 5
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020100600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020100700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020100800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020100900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 6
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020101000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020101200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020101300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020101400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020101500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020101600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020101800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020101900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020102000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020102100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020102300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020102400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020102500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020102600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020102800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 3
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020102900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020103000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020110400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020110800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020111000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020111100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020111200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020111300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020111600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 5
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020111700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020111800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020111900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020112000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020112100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020112300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020112400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020112600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020112700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020112900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020113000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020120100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020120200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020120300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 3
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020120500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020120600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020120700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020120900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020121000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 4
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020121100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020121200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 3
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020121400",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020121500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020121600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020121700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020121800",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020122100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020122200",
+      "access": "all-access",
+      "agent": "user",
+      "views": 3
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020122300",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020122500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020122600",
+      "access": "all-access",
+      "agent": "user",
+      "views": 2
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020122700",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020122900",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020123000",
+      "access": "all-access",
+      "agent": "user",
+      "views": 1
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Peloton_Interactive",
+      "granularity": "daily",
+      "timestamp": "2020123100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 11
+    }
+  ]
+}

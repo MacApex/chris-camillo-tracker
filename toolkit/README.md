@@ -47,3 +47,27 @@ Google Trends in particular should be treated with care. In 2025 Camillo publicl
 ## Disclaimer
 
 Not financial advice. For research and education only. Free data vendors can be delayed, incomplete, or wrong. Past patterns, including Camillo's audited record, do not predict future results. You can lose money, especially with options and concentration — two features of his personal book that this toolkit deliberately does **not** automate.
+
+## Street-view and multi-platform signals
+
+```bash
+python -m camillo_tracker street CROX
+python -m camillo_tracker signals CROX --wiki Crocs
+python experiments/run_event_study.py
+python -m pytest -q
+```
+
+- `camillo_tracker.street_view` — Street Consensus Profile and priced-in verdict.
+- `camillo_tracker.signals` — Wikipedia pageviews, Google Trends, Google News RSS, GDELT (respect the 5-second limit), YouTube metadata via yt-dlp, iTunes Search, corroboration (two rising z-scores, no imputation).
+- Optional scrapers already attempted in `scripts/probe_platforms.py`: Scrapling Fetcher, instaloader (no login), twscrape (skipped — needs accounts; we will not log into user credentials), yt-dlp `--skip-download`. Status lives in `../data/platform_status.json`.
+
+### Environment variables
+
+| Variable | Purpose |
+|---|---|
+| `CCT_X_BEARER` | Official X / Twitter recent-search bearer for `social.x_mentions`. Without it, skip or use the MCP sample in `data/x_counts_sample.json`. |
+| `TWITTER_BEARER_TOKEN` | Same, fallback name. |
+| `CCT_USE_FINBERT=1` | Enable FinBERT if `transformers` and `torch` are installed. |
+| `YOUTUBE_API_KEY` | Optional official YouTube Data API. The default YouTube path is yt-dlp metadata search, no key. |
+
+Public data only. Do not put personal login cookies in this toolkit.

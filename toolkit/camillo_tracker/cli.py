@@ -62,7 +62,46 @@ def main(argv: list[str] | None = None) -> int:
         metavar="TICKER=kw1,kw2",
         help="Override Google Trends keywords, e.g. --keywords CROX='Crocs shoes,Hey Dude'",
     )
+    st = sub.add_parser("street", help="Street Consensus Profile and priced-in verdict")
+    st.add_argument("ticker", help="Ticker symbol")
+    st.add_argument("--out", "-o", help="Write JSON")
+    sig = sub.add_parser("signals", help="Multi-platform niche signals and corroboration")
+    sig.add_argument("ticker", help="Ticker symbol")
+    sig.add_argument("--keywords", default="", help="Comma-separated Trends / news keywords")
+    sig.add_argument("--wiki", default="", help="English Wikipedia article title")
+    sig.add_argument("--out", "-o", help="Write JSON")
     args = p.parse_args(argv)
+
+    if args.cmd == "street":
+        from .street_view import street_profile
+        import json as _json
+        prof = street_profile(args.ticker.upper())
+        v = prof.get("verdict") or {}
+        print(f"\n{prof.get('symbol')}  verdict={v.get('label')}  confidence={v.get('confidence')}  points={v.get('priced_in_points')}")
+        for r in v.get("reasons") or []:
+            print("  -", r)
+        print("\n", (prof.get("how_it_feeds_the_tree") or ""), "\n")
+        print("Not financial advice.\n")
+        if args.out:
+            Path(args.out).write_text(_json.dumps(prof, indent=2, default=str), encoding="utf-8")
+            print("wrote", args.out)
+        return 0
+
+    if args.cmd == "signals":
+        from .signals import collect_signals
+        import json as _json
+        kws = [x.strip() for x in (args.keywords or "").split(",") if x.strip()] or None
+        bundle = collect_signals(args.ticker.upper(), keywords=kws, wiki_article=args.wiki or None)
+        c = bundle.get("corroboration") or {}
+        print(f"\n{bundle.get('symbol')}  corroborated={c.get('corroborated')}  n={c.get('n_confirming')}  z={c.get('weighted_z')}  score={c.get('composite_0_100')}")
+        print(" ", c.get("interpretation"))
+        for name, res in (bundle.get("platforms") or {}).items():
+            print(f"  {name:16} {(res or {}).get('status')}  {(res or {}).get('reason') or ''}")
+        print()
+        if args.out:
+            Path(args.out).write_text(_json.dumps(bundle, indent=2, default=str), encoding="utf-8")
+            print("wrote", args.out)
+        return 0
 
     # Import here so `--help` does not require deps to be fully happy
     from .divergence import scan_many

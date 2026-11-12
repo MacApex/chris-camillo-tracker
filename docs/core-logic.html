@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>核心投资逻辑 · Core Logic — Chris Camillo Tracker</title>
+  <meta name="description" content="Chris Camillo 社会套利的可复用逻辑：第一性原理、决策树、物质性与定价检验、普通投资者风险规则与工作案例。">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,450;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  
+</head>
+<body data-lang="zh">
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CC</span>
+        <span class="brand-text">
+          <strong>Chris Camillo Tracker</strong>
+          <span>Social arbitrage research</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav class="primary" aria-label="Primary">
+        <a href="index.html">Overview</a>
+        <a href="core-logic.html" class="nav-featured" aria-current="page">核心逻辑</a>
+        <a href="trades.html">交易</a>
+        <a href="dimensions.html">维度</a>
+        <a href="street-view.html">街景</a>
+        <a href="track-record.html">Track record</a>
+        <a href="playbook.html">Playbook</a>
+        <a href="divergence.html">Divergence</a>
+        <a href="resources.html">Resources</a>
+        <a href="sources.html">Sources</a>
+      </nav>
+    </div>
+  </header>
+
+  
+<section class="prose">
+  <div class="wrap">
+    <p class="eyebrow">核心投资逻辑 · Core Logic &amp; Reusable Playbook</p>
+    <h1>先看世界，再看华尔街。</h1>
+    
+<div class="lang-toggle" data-lang-toggle role="group" aria-label="Language">
+  <button type="button" data-lang="zh" class="is-on">中文</button>
+  <button type="button" data-lang="en">English</button>
+  <button type="button" data-lang="both">对照 · Side by side</button>
+</div>
+
+
+    <div class="callout"><strong>不是投资建议。</strong> 本页把 Camillo 的方法蒸馏成可检查的步骤，供研究与教育使用。他的审计业绩、期权结构和仓位规模不可复制为个人规则。本站与 Camillo、Dumb Money、TickerTags、Schwager、Business Insider 均无关联。</div>
+
+    <div class="pair">
+      <div class="lang-zh">
+        <h2>第一性原理</h2>
+        <p>社会套利是<strong>信息差投资</strong>。步骤只有四句：观察真实世界中已经发生的变化（文化、消费、技术、政策）；把它连接到一家足够大、该变化能够影响利润的上市公司；在华尔街把这件事写入盈利预测和分析师报告之前建立仓位；当信息进入财报、研报和价格本身、信息差消失时退出。</p>
+        <p>Schwager 给这一章的标题是 “Neither”——既不是传统基本面，也不是技术分析。彼得·林奇是灵感来源（走进商场、观察生活），但 Camillo 主动放弃了林奇式的财务深挖，只保留规模与物质性。边缘来自<strong>时差</strong>，不是来自同一个模型上的更聪明。</p>
+        <p>后来的工具（TikTok、Google Trends、TickerTags、Discord、专业论坛）都只是观察装置。2025 年他退出 Lululemon 的公开理由是：AI 污染了 Trends，工具本身坏了。方法的核心不是某一个 App。</p>
+      </div>
+      <div class="lang-en">
+        <h2>First principles</h2>
+        <p>Social arbitrage is <strong>information-gap investing</strong>. Observe a real-world change (culture, consumption, technology, policy). Connect it to a public company large enough for the change to matter. Invest before Wall Street writes it into estimates and notes. Exit as the fact reaches earnings, research, and the tape — at information parity.</p>
+        <p>Schwager titled the chapter “Neither”: neither traditional fundamental analysis nor technical analysis. Peter Lynch is the stated inspiration (walk the mall), but Camillo drops Lynch’s financial deep-dive and keeps size and materiality. The edge is <strong>being early</strong>, not being clever on the same model.</p>
+        <p>TikTok, Google Trends, TickerTags, Discord, and specialist forums are instruments of observation. In 2025 he said he exited Lululemon because AI had corrupted Trends — the tool itself had broken. The method is not an app.</p>
+      </div>
+    </div>
+
+    <h2>决策树 · Decision tree</h2>
+    
+<div class="tree-wrap" role="img" aria-label="Decision tree">
+<svg viewBox="0 0 900 740" xmlns="http://www.w3.org/2000/svg" font-family="Outfit, Helvetica, sans-serif">
+  <defs>
+    <style>
+      .bx { fill:#14171e; stroke:#c9a66b; stroke-width:1.2; }
+      .tx { fill:#f2eee4; font-size:13px; }
+      .sm { fill:#8d897e; font-size:10px; }
+      .ln { stroke:#c9a66b; stroke-width:1.1; fill:none; }
+      .go { fill:#4ecb8d; }
+      .no { fill:#e36b5b; }
+      .gd { fill:#c9a66b; }
+    </style>
+  </defs>
+  <rect class="bx" x="280" y="16" width="340" height="64" rx="10"/>
+  <text class="tx" x="450" y="42" text-anchor="middle">1. 观察到相对基线的异常变化？</text>
+  <text class="sm" x="450" y="62" text-anchor="middle">A real change vs. your own baseline — not vs. a headline</text>
+
+  <line class="ln" x1="450" y1="80" x2="450" y2="112"/>
+  <rect class="bx" x="280" y="112" width="340" height="64" rx="10"/>
+  <text class="tx" x="450" y="138" text-anchor="middle">2. 2–3 个独立平台交叉验证？</text>
+  <text class="sm" x="450" y="158" text-anchor="middle">Corroborate on 2–3 platforms; one spike is not enough</text>
+
+  <line class="ln" x1="450" y1="176" x2="450" y2="208"/>
+  <rect class="bx" x="280" y="208" width="340" height="64" rx="10"/>
+  <text class="tx" x="450" y="234" text-anchor="middle">3. 物质性：对公司利润够大吗？</text>
+  <text class="sm" x="450" y="254" text-anchor="middle">Materiality: can this move earnings at this company’s size?</text>
+
+  <line class="ln" x1="450" y1="272" x2="450" y2="304"/>
+  <rect class="bx" x="280" y="304" width="340" height="72" rx="10"/>
+  <text class="tx" x="450" y="330" text-anchor="middle">4. 定价检验：卖方是否已经反映？</text>
+  <text class="sm" x="450" y="350" text-anchor="middle">Is it in estimates, notes, ratings, targets?</text>
+  <text class="sm" x="450" y="364" text-anchor="middle">Street Consensus Profile → priced-in verdict</text>
+
+  <line class="ln" x1="450" y1="376" x2="200" y2="430"/>
+  <line class="ln" x1="450" y1="376" x2="700" y2="430"/>
+
+  <rect class="bx" x="50" y="430" width="300" height="72" rx="10"/>
+  <text class="tx" x="200" y="458" text-anchor="middle" fill="#e36b5b">已定价 / already priced</text>
+  <text class="sm" x="200" y="480" text-anchor="middle">放下。信息不差已在闭合。</text>
+
+  <rect class="bx" x="550" y="430" width="300" height="72" rx="10"/>
+  <text class="tx" x="700" y="458" text-anchor="middle">尚未清楚定价 + 利基上升</text>
+  <text class="sm" x="700" y="480" text-anchor="middle">not clearly priced AND niche rising</text>
+
+  <line class="ln" x1="700" y1="502" x2="700" y2="534"/>
+  <rect class="bx" x="550" y="534" width="300" height="72" rx="10"/>
+  <text class="tx" x="700" y="562" text-anchor="middle">5. 仓位与工具（普通投资者规则）</text>
+  <text class="sm" x="700" y="582" text-anchor="middle">Size and instrument — retail risk rules, not his 2–30%</text>
+
+  <line class="ln" x1="700" y1="606" x2="700" y2="638"/>
+  <rect class="bx" x="550" y="638" width="300" height="80" rx="10"/>
+  <text class="tx" x="700" y="666" text-anchor="middle">6. 写论点，设退出条件，再行动</text>
+  <text class="sm" x="700" y="686" text-anchor="middle">Write the thesis and the exit before you act</text>
+  <text class="sm" x="700" y="702" text-anchor="middle">This is a human-work prompt, not a trade signal</text>
+
+  <text class="sm" x="200" y="530" text-anchor="middle">任何一步为「否」：停止或继续观察。</text>
+  <text class="sm" x="200" y="548" text-anchor="middle">A “no” at any gate: stop, or keep watching.</text>
+</svg>
+</div>
+
+
+    <div class="pair">
+      <div class="lang-zh">
+        <h2>信号评分标准</h2>
+        <ul>
+          <li><strong>基线，不是绝对值。</strong> 问的是「相对这个社群、这个季节、这个品牌平时的样子，是否异常」，而不是「今天的讨论是否很多」。</li>
+          <li><strong>交叉验证。</strong> 两个或三个独立平台同时上升，权重大于单一尖峰。本工具箱用各平台相对自身历史的 z 分数，并记录缺失，不填空。</li>
+          <li><strong>来源可靠性。</strong> TikTok / 真实世界观察在 Camillo 框架里权更高；主流新闻量往往是滞后指标；Wikipedia 浏览量是注意力，不是情绪。</li>
+          <li><strong>查询质量。</strong> 短代码（如 ELF）在 X 上被去掉 $ 后会严重噪声。不能核实的数字一律丢弃。</li>
+          <li><strong>工具会坏。</strong> 2025 年 Trends 的 AI 污染是一个必须写进清单的失效模式。</li>
+        </ul>
+      </div>
+      <div class="lang-en">
+        <h2>Signal rubric</h2>
+        <ul>
+          <li><strong>Baseline, not a raw count.</strong> The question is whether something is unusual versus that community, season, and brand — not whether “there is a lot of talk today.”</li>
+          <li><strong>Corroboration.</strong> A rise on two or three independent platforms outweighs a single spike. This toolkit uses z-scores versus each platform’s own history, records missingness, and never imputes a count.</li>
+          <li><strong>Source reliability.</strong> TikTok and lived observation sit higher in Camillo’s own practice; mainstream news volume often lags; Wikipedia pageviews are attention, not sentiment.</li>
+          <li><strong>Query quality.</strong> Short tokens (ELF) become noisy once X strips the $ character. Unverifiable numbers are discarded.</li>
+          <li><strong>Tools break.</strong> The 2025 AI-pollution of Google Trends is a first-class failure mode.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="check-grid">
+      <div class="check-card">
+        <h3>物质性检验 · Materiality</h3>
+        <div class="pair">
+          <div class="lang-zh">
+            <ol>
+              <li>这个变化触及的是公司的哪一条产品线？大约占总收入或利润的多少？</li>
+              <li>1–2% 的收入贡献通常不够（Elmer’s slime 是他用杠杆去打的边界案例，不是普通投资者的模板）。</li>
+              <li>公司是否够大、够流动性，能承受你计划的工具？他又说原则上不做微型股。</li>
+              <li>如果无法粗估物质性，就还没有到「候选」这一步。</li>
+            </ol>
+          </div>
+          <div class="lang-en">
+            <ol>
+              <li>Which line of the company does this change touch, and roughly what share of sales or profit?</li>
+              <li>A 1–2% revenue contribution is usually too small (Elmer’s slime is a leveraged edge-case he described, not a retail template).</li>
+              <li>Is the name large and liquid enough for the instrument you have in mind? He has also said he does not, as a rule, invest in microcaps.</li>
+              <li>If you cannot sketch materiality, it is not yet a candidate.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="check-card">
+        <h3>定价检验 · Is it priced in?</h3>
+        <div class="pair">
+          <div class="lang-zh">
+            <ol>
+              <li>共识评级分布：是否已经一边倒买入？</li>
+              <li>目标价离散与隐含上行：卖方是否已经写入看多情形？</li>
+              <li>盈利预测是否在近 30 天内上修？</li>
+              <li>近 90 天是否出现集中上调？</li>
+              <li>研报 / 新闻语气、覆盖人数、历史超预期。</li>
+              <li>结论只能是：已定价 / 部分定价 / 尚未清楚定价 / 数据不足。后一项必须说出来，不能假装知道。</li>
+            </ol>
+          </div>
+          <div class="lang-en">
+            <ol>
+              <li>Consensus rating distribution: is the Street already mostly a buy?</li>
+              <li>Price-target dispersion and implied upside: is a bull case already in the numbers?</li>
+              <li>Have EPS estimates been revised up over ~30 days?</li>
+              <li>A cluster of upgrades in 90 days is a migration signal.</li>
+              <li>Note/news tone, coverage count, surprise history.</li>
+              <li>The only allowed labels are already / partially / not clearly priced / insufficient data. The last one must be said out loud.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="check-grid">
+      <div class="check-card">
+        <h3>退出清单 · Exit</h3>
+        <div class="pair">
+          <div class="lang-zh">
+            <ol>
+              <li>信息是否已经进入最近一期财报或电话会？</li>
+              <li>分析师是否开始撰写你当初看到的那个事实？</li>
+              <li>他描述的退出是每次卖掉约 10–20%，直到信息平价；不是技术止损。</li>
+              <li>论点破坏（事实被证伪、工具被污染、你再也说不清物质性）是退出理由——即便他本人不用止损单。</li>
+              <li>不要因为「别人也这么看」而提前砍掉仍然成立的论点（这是他最后悔的一笔，代码未公开）。</li>
+            </ol>
+          </div>
+          <div class="lang-en">
+            <ol>
+              <li>Has the fact entered the latest earnings or call?</li>
+              <li>Have analysts started writing the thing you originally observed?</li>
+              <li>He has described selling 10–20% at a time until information parity — not a chart stop.</li>
+              <li>A broken thesis (the fact is false, the tool is polluted, materiality no longer holds) is an exit, even though he himself does not use stop-loss orders.</li>
+              <li>Do not liquidate a still-valid thesis because other people are talking (his most-regretful trade, ticker unnamed).</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="check-card">
+        <h3>普通投资者的风险规则</h3>
+        <div class="pair">
+          <div class="lang-zh">
+            <ol>
+              <li><strong>不要复制</strong>他所说的 2–30% 仓位，更不要复制「储蓄的 25–30% 去做 SPY / Wynn 看跌期权」。</li>
+              <li>默认用很小的仓位（例如 1–3%）做研究性跟踪；把期权溢价当作可以归零的金额。</li>
+              <li>他把「大钱」账户和安全账户分开；大多数人没有这种结构，也不应该用生活费去模拟。</li>
+              <li>他不用止损，可能在论点仍在时加仓——这对职业交易员是一回事，对用工资账户的人是另一回事。写一个「论点失效」退出条件。</li>
+              <li>一年可能只有一两次够格的想法（他 2011 年说 100–200 次观察换 1–2 笔交易）。没事可做是正常状态。</li>
+              <li>审计过的生涯回报不能当作你的期望收益。单笔盈亏多为自我陈述。</li>
+            </ol>
+          </div>
+          <div class="lang-en">
+            <ol>
+              <li><strong>Do not copy</strong> the 2–30% sizing he has described, and do not copy “25–30% of savings in SPY / Wynn puts.”</li>
+              <li>Default to a small (e.g. 1–3%) research-sized line; treat any options premium as money you can lose in full.</li>
+              <li>He separates a “big money” sleeve from a safer account. Most people do not have that structure and should not simulate it with living expenses.</li>
+              <li>He uses no stops and may add when the thesis is intact. That is one thing for a professional book and another for a paycheck account. Write a thesis-break exit.</li>
+              <li>One or two qualified ideas a year is consistent with what he said in 2011 (100–200 observations → 1–2 trades). Doing nothing is the default.</li>
+              <li>The audited career record is not your expected return. Single-trade P&amp;Ls are mostly self-reported.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>工作案例 · Worked cases</h2>
+    <p class="small">以下只使用有来源的事实。股票路径是市场事实，不是他已审计的个人收益。完整记录见 <a href="trades.html">交易库</a>；事件研究见 <a href="street-view.html">街景</a>。</p>
+
+    <div class="case">
+      <p class="meta">01 · DIIBF · 2020-04-24 · 记者看过买单截图</p>
+      <h3>Dorel：日期最清楚的一笔</h3>
+      <div class="pair">
+        <div class="lang-zh">
+          <p>信号是疫情下的居家与自行车需求。Business Insider 看过 2020 年 4 月 24 日、价格 1.56 美元的买入截图；约在 6 月于 4.46 美元附近分批减仓，11 月出清当天股价 11.38 美元。629% 是这段股价路径，不是已核实的个人收益率（他是分批卖出的）。Stansberry 上「9 倍，我记得」是自我陈述。</p>
+          <p>Yahoo 在 ±90 天窗口内没有抓到评级变动（覆盖可能很薄，零不代表没有活动）。Wikipedia「Dorel Industries」在日后 14 天日均浏览 298，相对日前 243，只是轻微上升。从 4 月 24 日起，yfinance 复权价的前瞻收益约为 1 个月 +131%、3 个月 +243%、6 个月 +609%。注意：yfinance 起始价约 0.69 美元，与 BI 截图的 1.56 美元不一致——场外报价质量有问题，两套数字我们都保留，不私下调和。</p>
+        </div>
+        <div class="lang-en">
+          <p>The signal was stay-at-home and bike demand. BI viewed purchase screenshots at $1.56 on 24 April 2020; gradual selling around $4.46 in June; a full exit in November when the stock was $11.38. The 629% is that stock path, not a verified personal rate of return (he sold gradually). “9X I think” on Stansberry is self-reported.</p>
+          <p>Yahoo’s upgrades/downgrades window is empty (thin coverage; a zero is not proof of inactivity). Wikipedia attention rose only modestly (243 → 298 daily average, 14d before vs after). Forward yfinance returns from 24 April: about +131% / +243% / +609% at 1/3/6 months. Caveat: yfinance’s starting close is about $0.69, which does not match the $1.56 screenshot. OTC data quality is the likely issue; we keep both figures and do not silently reconcile them.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case">
+      <p class="meta">02 · ELF · 2019-03（月精度）· 自我陈述 + 可核市场路径</p>
+      <h3>e.l.f. 与 Jeffree Star：卖方随后跟上</h3>
+      <div class="pair">
+        <div class="lang-zh">
+          <p>他对 BI 说，Jeffree Star 与渠道核实指向需求，股价在六周内上涨超过 50%。我们用 3 月 15 日作为月中占位（不是他的精确入场）。由此计算的市场路径是 1 个月 +25%、3 个月 +32.5%、6 个月 +70.3%——与「六周 50%」并不自动吻合，可能入场更早，我们不强制对齐。</p>
+          <p>有意思的是卖方：±90 天里，日期之前 0 次上调、之后 4 次上调。这是「信息向华尔街迁移」的一个可观察痕迹，也是定价检验要抓的东西。2019 年该 Wikipedia 条目不可用（404），注意力序列缺席。</p>
+        </div>
+        <div class="lang-en">
+          <p>He told BI that Jeffree Star and channel checks pointed to demand, and that the stock rose more than 50% in six weeks. We use 15 March as a mid-month placeholder, not his exact entry. The market path from that date is +25% / +32.5% / +70.3% at 1/3/6 months — which does not automatically equal “50% in six weeks.” The entry may have been earlier. We do not force a reconciliation.</p>
+          <p>The Street trace is the interesting part: in a ±90-day Yahoo window, 0 upgrades before the date and 4 after. That is a visible migration of information, which is what the priced-in test is for. Wikipedia has no 2019 series for the current “E.l.f.” title (404).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case">
+      <p class="meta">03 · QSR · 2019-04 与 2019-08 · 记者看过截图 · 亏损</p>
+      <h3>Restaurant Brands：方法不会让你永不犯错</h3>
+      <div class="pair">
+        <div class="lang-zh">
+          <p>Tim Hortons 翻转论点没有按预期走。BI 看过买入截图；他自称约亏损 75 万美元。股价后来从高点约 78.45 美元到 2020 年 3 月约跌 59%——这是市场路径，不是精确个人盈亏。我们事件研究里，4 月 15 日起 1/3/6 个月是 +0.5% / +9.2% / +7.1%（前段并不立刻为负）；8 月 15 日第二次买入窗口是 −2.2% / −7.2% / −7.3%。亏损出现在更长的持有期和 2020 年崩盘里。</p>
+          <p>这一案例必须留在库里，避免「只收集赢家」。观察方法不保证正确的公司，也不保证正确的时间。</p>
+        </div>
+        <div class="lang-en">
+          <p>A Tim Hortons turnaround thesis did not work. BI viewed purchase screenshots; he self-reported a loss of about $750k. The stock later fell about 59% from a $78.45 peak into March 2020 — a market path, not his exact P&amp;L. In our event study, from 15 April the 1/3/6-month path is +0.5% / +9.2% / +7.1% (not immediately negative); the August window is −2.2% / −7.2% / −7.3%. The damage sits in a longer hold and the 2020 crash.</p>
+          <p>This row has to stay in the database so the archive is not winners-only. Observational method does not guarantee the right company or the right time.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case">
+      <p class="meta">04 · SPY / WYNN 看跌 · 2020-02 · 自我陈述</p>
+      <h3>新冠空头：不是 TikTok，是外语一手材料</h3>
+      <div class="pair">
+        <div class="lang-zh">
+          <p>他在 Stansberry 说，借助翻译阅读中文论文，用储蓄的 25–30% 买入 SPY 与 Wynn 的看跌期权；起初亏损，3 月初「一周七位数」。未审计，也没有公开的行权价。从 2 月 18 日（2 月 15 日之后的交易日）起，SPY 1 个月 −28.7%、3 个月 −11.9%、6 个月已转正 +1.4%；Wynn 为 −67.5% / −38.4% / −36.9%。这些是标的路径，<strong>不是</strong>期权盈亏。早期对空头有利，六个月后指数已收回。</p>
+          <p>对普通投资者：这个仓位和工具都不可模仿。它说明两件事——信号可以来自专业或外语来源，不只是消费 App；以及退出时点（信息平价）比「看对方向」更决定期权结果。</p>
+        </div>
+        <div class="lang-en">
+          <p>On Stansberry he said he read Chinese-language papers via Translate, put 25–30% of savings into SPY and Wynn puts, lost at first, then made “seven figures in a week” in early March. Unaudited; strikes unpublished. From 18 February (the first session on or after 15 February), SPY was −28.7% / −11.9% / +1.4% at 1/3/6 months; Wynn −67.5% / −38.4% / −36.9%. These are underlying paths, <strong>not</strong> put P&amp;L. The short side was favored early; the index had recovered by six months.</p>
+          <p>For a normal investor this size and instrument are not a template. The lessons that do transfer: a signal can come from specialist or foreign-language sources, not only consumer apps; and the exit at information parity matters more for options than “getting the direction right.”</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case">
+      <p class="meta">05 · LULU 退出 · 2025 · 自我陈述</p>
+      <h3>当工具坏了：AI 污染 Google Trends</h3>
+      <div class="pair">
+        <div class="lang-zh">
+          <p>他在 2025 年的 X 长文（Threadreader 1957441296798298509）中说，因为 AI 生成查询污染了 Trends，他退出了 Lululemon 论点。这是方法的元教训：单一平台的尖峰，在无法被其他信号确认时，不是入场理由，而是失效警报。本工具箱因此要求 2–3 个平台交叉验证，并把 Trends 的可靠性写成带警告的权重，而不是最高权威。</p>
+        </div>
+        <div class="lang-en">
+          <p>In a 2025 X thread (Threadreader 1957441296798298509) he said he exited a Lululemon thesis after concluding that AI-generated queries had corrupted Google Trends. The meta-lesson: a single-platform spike that other signals will not confirm is not an entry — it is a failure alarm. That is why this toolkit requires 2–3-platform corroboration and treats Trends as a weighted, caveat-bearing input, not as an oracle.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pair">
+      <div class="lang-zh">
+        <h2>常见陷阱</h2>
+        <ul>
+          <li>把自我陈述的盈亏或营销数字（米歇尔·奥巴马 J.Crew「186%」——他其实错过了）当成审计结果。</li>
+          <li>单一平台尖峰，尤其是已被 AI 污染的 Trends。</li>
+          <li>物质性不够仍用杠杆（slime 是他的边界，不是你的）。</li>
+          <li>已经定价还硬做（我们把这标为 late_or_crowded）。</li>
+          <li>个人偏好压过流程（他承认的 Silicon Image HDMI 失败）。</li>
+          <li>听别人的意见砍掉仍成立的论点（最后悔的一笔）。</li>
+          <li>把迷因挤兑（GME / AMC 的自我陈述参与）当成典型的信息差交易。</li>
+          <li>把 Pabst、Vegas Golden Knights 这类无来源传闻写进样本。</li>
+          <li>在没有卖方数据时假装已经做完定价检验。</li>
+          <li>把本扫描器的分数当成交易信号。</li>
+        </ul>
+        <h2>模板</h2>
+        <p>论点与复盘模板在仓库 <a href="https://github.com/MacApex/chris-camillo-tracker/tree/main/research/templates">research/templates/</a>：先写观察、基线、物质性、定价检验、工具与退出，再动手；事后对照「哪个环节断了」。</p>
+      </div>
+      <div class="lang-en">
+        <h2>Pitfalls</h2>
+        <ul>
+          <li>Treating self-reported P&amp;L or marketing figures (the Michelle Obama J.Crew “186%” — he missed it) as audited results.</li>
+          <li>A single-platform spike, especially in AI-polluted Trends.</li>
+          <li>Leverage on something too small to matter (slime is his edge-case, not yours).</li>
+          <li>Acting after the Street has already priced it (we tag this late_or_crowded).</li>
+          <li>Personal bias over process (his Silicon Image HDMI failure).</li>
+          <li>Cutting a still-valid thesis because of other people’s opinions (his most-regretful trade).</li>
+          <li>Treating meme-squeeze participation (his self-reported GME / AMC) as a typical information-gap trade.</li>
+          <li>Admitting unsourced attributions (Pabst, Vegas Golden Knights) into the sample.</li>
+          <li>Faking a priced-in test when Street data is missing.</li>
+          <li>Treating a scanner score as a trade signal.</li>
+        </ul>
+        <h2>Templates</h2>
+        <p>Thesis and post-mortem templates live in <a href="https://github.com/MacApex/chris-camillo-tracker/tree/main/research/templates">research/templates/</a>: write the observation, baseline, materiality, priced-in test, instrument and exit before you act; afterwards, ask which gate failed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p>Chris Camillo Tracker · independent research archive · not affiliated with Camillo, Dumb Money, or TickerTags.<br>
+      <strong>Not financial advice.</strong> Past, even audited, results do not predict future returns. <a href="https://github.com/MacApex/chris-camillo-tracker">GitHub repository</a>.</p>
+      <p>Updated 13 Nov 2026, Asia/Shanghai.<br><a href="sources.html">Sources and gaps</a> · <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/DISCLAIMER.md">Disclaimer</a></p>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

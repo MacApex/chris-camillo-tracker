@@ -118,3 +118,14 @@ Compiled 13 November 2026 (Asia/Shanghai). Every factual claim in the research n
 ## GitHub resource verification
 
 Star counts and existence checks were run on 13 November 2026 via `gh api repos/{owner}/{repo}` and `gh api search/repositories`, authenticated as MacApex. See [03-resources.md](03-resources.md). The URL `OptionLab-Perg/OptionLab` returned 404 and was dropped.
+
+## Expansion sources and data (13 Nov 2026)
+
+- Trade database compiled from sources already listed in this file and in `01-track-record.md`. No new P&L was invented. Pabst and VGK remain rejected.
+- Event-study prices: yfinance auto-adjusted closes, retrieved 13 Nov 2026, Asia/Shanghai. Dorel OTC close disagrees with the BI screenshot; both retained.
+- Wikipedia pageviews: official Wikimedia REST API, same day. Article-title corrections: ELF is `E.l.f.`; TPR is `Tapestry, Inc.` (the first titles were empty or thin). ELF 2019 historical series: 404.
+- X 7-day counts: official recent-counts API via Grok Bot MCP `get_posts_counts_recent`, 13 Nov 2026 ~02:06 Asia/Shanghai. ELF query is noisy after `$` is stripped.
+- Google Trends: pytrends, 5-year US, same session (momentum figures in `data/provenance.csv`).
+- Google News RSS, iTunes Search, GDELT DOC API (Crocs timeline after a 6-second retry; first pass was HTTP 429), yt-dlp YouTube metadata: see `data/provenance.csv`.
+- Scrapling Fetcher 0.5.1: HTTP 200 on TikTok Creative Center, tiktok.com/tag/crocs, Pinterest Trends, Amazon Movers & Shakers; no trusted numeric series extracted, none estimated. instaloader: 403 `login_required`. Reddit: 403 / 526. twscrape: skipped (no logins).
+- Stansberry Investor Hour ep. 192 full transcript, previously retrieved, remains the source for self-reported GME / AMC / Peloton / COVID figures.

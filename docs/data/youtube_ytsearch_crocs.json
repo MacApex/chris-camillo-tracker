@@ -1,0 +1,28 @@
+{
+  "retrieved_at_utc": "2026-11-12T18:11:04Z",
+  "method": "yt-dlp ytsearch3:Crocs shoes --dump-json --skip-download",
+  "query": "Crocs shoes",
+  "results": [
+    {
+      "id": "qGBUP_4GN2E",
+      "title": "You Will Wear Crocs",
+      "view_count": 1886428,
+      "upload_date": "20250823",
+      "webpage_url": "https://www.youtube.com/watch?v=qGBUP_4GN2E"
+    },
+    {
+      "id": "C49ppGrnAyY",
+      "title": "Which Crocs Shoe is the Most Comfortable?",
+      "view_count": 57254,
+      "upload_date": "20260401",
+      "webpage_url": "https://www.youtube.com/watch?v=C49ppGrnAyY"
+    },
+    {
+      "id": "o89DtS7WFss",
+      "title": "Feel It All With Crocs",
+      "view_count": 2965598,
+      "upload_date": "20261005",
+      "webpage_url": "https://www.youtube.com/watch?v=o89DtS7WFss"
+    }
+  ]
+}

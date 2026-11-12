@@ -1,0 +1,634 @@
+{
+  "retrieved_at_utc": "2026-11-12T18:16:23Z",
+  "retrieved_at_asia_shanghai": "2026-11-13 Asia/Shanghai",
+  "n_events_attempted": 10,
+  "n_with_1m_return": 10,
+  "method": "Forward close-to-close returns from the first trading day on or after the documented date, using yfinance auto-adjusted closes, 21/63/126 trading days. These are market-path facts, not Camillo's personal P&L. Dates with only month precision use mid-month placeholders, labeled as such.",
+  "limitations": [
+    "Sample is small and is drawn from stories he later discussed \u2014 survivorship and storytelling bias.",
+    "Several dates are month-precision; GME/AMC placeholders are mid-squeeze, which can flatten or reverse forward returns.",
+    "TPR uses the BI article date, which is a mention, not an entry.",
+    "RBI is a documented losing thesis; it is included so the study is not winners-only.",
+    "COVID positions were puts \u2014 equity-index forward returns are not put P&L.",
+    "Target \u00d7 Missoni was an overnight options trade; the equity 1/3/6-month path is a different instrument.",
+    "pytrends 'today 5-y' from November 2026 does not reach 2019\u20132020, so we cannot honestly classify historical events into high-niche/low-Street quadrants. Wikipedia attention is a proxy only where the article exists.",
+    "Yahoo upgrades/downgrades history is incomplete. Zeros are not proof of inactivity.",
+    "No transaction costs, borrow fees, or options Greeks. Not a backtest of a tradable rule."
+  ],
+  "quadrant_classification": {
+    "status": "not_performed",
+    "reason": "Historical Google Trends and complete historical Street consensus at event dates are not available from the free sources we can verify. We refuse to invent quadrant labels."
+  },
+  "events": [
+    {
+      "id": "elf-2019",
+      "ticker": "ELF",
+      "date": "2019-03-15",
+      "precision": "month",
+      "side": "long",
+      "wiki": null,
+      "note": "Jeffree Star / channel-check month, per BI. Mid-month placeholder.",
+      "retrieved_at_utc": "2026-11-12T18:16:20Z",
+      "trading_start": "2019-03-15",
+      "returns": {
+        "1m": {
+          "ok": true,
+          "start_date": "2019-03-15",
+          "end_date": "2019-04-15",
+          "start_px": 9.24,
+          "end_px": 11.55,
+          "pct": 25.0
+        },
+        "3m": {
+          "ok": true,
+          "start_date": "2019-03-15",
+          "end_date": "2019-06-14",
+          "start_px": 9.24,
+          "end_px": 12.24,
+          "pct": 32.47
+        },
+        "6m": {
+          "ok": true,
+          "start_date": "2019-03-15",
+          "end_date": "2019-09-13",
+          "start_px": 9.24,
+          "end_px": 15.74,
+          "pct": 70.35
+        }
+      },
+      "return_in_direction_of_stated_side": {
+        "1m": 25.0,
+        "3m": 32.47,
+        "6m": 70.35
+      },
+      "street_window": {
+        "ok": true,
+        "n_actions_plus_minus_90d": 8,
+        "n_before": 4,
+        "n_after": 4,
+        "upgrades_before": 0,
+        "upgrades_after": 4,
+        "method": "yfinance.Ticker.upgrades_downgrades",
+        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+      },
+      "wikipedia_attention": {
+        "ok": false,
+        "reason": "no article assigned (date too early, or 404)"
+      }
+    },
+    {
+      "id": "rbi-2019-apr",
+      "ticker": "QSR",
+      "date": "2019-04-15",
+      "precision": "month",
+      "side": "long",
+      "wiki": "Restaurant_Brands_International",
+      "note": "First dated purchase window, later a loss.",
+      "retrieved_at_utc": "2026-11-12T18:16:20Z",
+      "trading_start": "2019-04-15",
+      "returns": {
+        "1m": {
+          "ok": true,
+          "start_date": "2019-04-15",
+          "end_date": "2019-05-15",
+          "start_px": 51.1888,
+          "end_px": 51.4276,
+          "pct": 0.47
+        },
+        "3m": {
+          "ok": true,
+          "start_date": "2019-04-15",
+          "end_date": "2019-07-16",
+          "start_px": 51.1888,
+          "end_px": 55.8732,
+          "pct": 9.15
+        },
+        "6m": {
+          "ok": true,
+          "start_date": "2019-04-15",
+          "end_date": "2019-10-14",
+          "start_px": 51.1888,
+          "end_px": 54.8073,
+          "pct": 7.07
+        }
+      },
+      "return_in_direction_of_stated_side": {
+        "1m": 0.47,
+        "3m": 9.15,
+        "6m": 7.07
+      },
+      "street_window": {
+        "ok": true,
+        "n_actions_plus_minus_90d": 10,
+        "n_before": 4,
+        "n_after": 6,
+        "upgrades_before": 1,
+        "upgrades_after": 0,
+        "method": "yfinance.Ticker.upgrades_downgrades",
+        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+      },
+      "wikipedia_attention": {
+        "ok": true,
+        "article": "Restaurant_Brands_International",
+        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Restaurant_Brands_International/daily/20190101/20200331",
+        "method": "Wikimedia REST API",
+        "retrieved_at_utc": "2026-11-12T18:13:00Z",
+        "views_on_date": 722,
+        "mean_14d_before": 774.2142857142857,
+        "mean_14d_after": 957.0,
+        "n_before": 14,
+        "n_after": 14
+      }
+    },
+    {
+      "id": "rbi-2019-aug",
+      "ticker": "QSR",
+      "date": "2019-08-15",
+      "precision": "month",
+      "side": "long",
+      "wiki": "Restaurant_Brands_International",
+      "note": "Second dated purchase window.",
+      "retrieved_at_utc": "2026-11-12T18:16:21Z",
+      "trading_start": "2019-08-15",
+      "returns": {
+        "1m": {
+          "ok": true,
+          "start_date": "2019-08-15",
+          "end_date": "2019-09-16",
+          "start_px": 57.0993,
+          "end_px": 55.8543,
+          "pct": -2.18
+        },
+        "3m": {
+          "ok": true,
+          "start_date": "2019-08-15",
+          "end_date": "2019-11-13",
+          "start_px": 57.0993,
+          "end_px": 52.9632,
+          "pct": -7.24
+        },
+        "6m": {
+          "ok": true,
+          "start_date": "2019-08-15",
+          "end_date": "2020-02-14",
+          "start_px": 57.0993,
+          "end_px": 52.9387,
+          "pct": -7.29
+        }
+      },
+      "return_in_direction_of_stated_side": {
+        "1m": -2.18,
+        "3m": -7.24,
+        "6m": -7.29
+      },
+      "street_window": {
+        "ok": true,
+        "n_actions_plus_minus_90d": 13,
+        "n_before": 7,
+        "n_after": 6,
+        "upgrades_before": 0,
+        "upgrades_after": 1,
+        "method": "yfinance.Ticker.upgrades_downgrades",
+        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+      },
+      "wikipedia_attention": {
+        "ok": true,
+        "article": "Restaurant_Brands_International",
+        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Restaurant_Brands_International/daily/20190101/20200331",
+        "method": "Wikimedia REST API",
+        "retrieved_at_utc": "2026-11-12T18:13:00Z",
+        "views_on_date": 907,
+        "mean_14d_before": 960.3571428571429,
+        "mean_14d_after": 3270.8571428571427,
+        "n_before": 14,
+        "n_after": 14
+      }
+    },
+    {
+      "id": "covid-spy-2020",
+      "ticker": "SPY",
+      "date": "2020-02-15",
+      "precision": "month",
+      "side": "short",
+      "wiki": null,
+      "note": "Puts on SPY, self-reported. Underlying returns shown; put P&L is unknown.",
+      "retrieved_at_utc": "2026-11-12T18:16:21Z",
+      "trading_start": "2020-02-18",
+      "returns": {
+        "1m": {
+          "ok": true,
+          "start_date": "2020-02-18",
+          "end_date": "2020-03-18",
+          "start_px": 306.1756,
+          "end_px": 218.2227,
+          "pct": -28.73
+        },
+        "3m": {
+          "ok": true,
+          "start_date": "2020-02-18",
+          "end_date": "2020-05-18",
+          "start_px": 306.1756,
+          "end_px": 269.8095,
+          "pct": -11.88
+        },
+        "6m": {
+          "ok": true,
+          "start_date": "2020-02-18",
+          "end_date": "2020-08-17",
+          "start_px": 306.1756,
+          "end_px": 310.4153,
+          "pct": 1.38
+        }
+      },
+      "return_in_direction_of_stated_side": {
+        "1m": 28.73,
+        "3m": 11.88,
+        "6m": -1.38
+      },
+      "street_window": {
+        "ok": false,
+        "reason": "no upgrades_downgrades"
+      },
+      "wikipedia_attention": {
+        "ok": false,
+        "reason": "no article assigned (date too early, or 404)"
+      }
+    },
+    {
+      "id": "covid-wynn-2020",
+      "ticker": "WYNN",
+      "date": "2020-02-15",
+      "precision": "month",
+      "side": "short",
+      "wiki": "Wynn_Resorts",
+      "note": "Puts on Wynn, self-reported.",
+      "retrieved_at_utc": "2026-11-12T18:16:21Z",
+      "trading_start": "2020-02-18",
+      "returns": {
+        "1m": {
+          "ok": true,
+          "start_date": "2020-02-18",
+          "end_date": "2020-03-18",
+          "start_px": 127.7132,
+          "end_px": 41.513,
+          "pct": -67.5
+        },
+        "3m": {
+          "ok": true,
+          "start_date": "2020-02-18",
+          "end_date": "2020-05-18",
+          "start_px": 127.7132,
+          "end_px": 78.6161,
+          "pct": -38.44
+        },
+        "6m": {
+          "ok": true,
+          "start_date": "2020-02-18",
+          "end_date": "2020-08-17",
+          "start_px": 127.7132,
+          "end_px": 80.575,
+          "pct": -36.91
+        }
+      },
+      "return_in_direction_of_stated_side": {
+        "1m": 67.5,
+        "3m": 38.44,
+        "6m": 36.91
+      },
+      "street_window": {
+        "ok": true,
+        "n_actions_plus_minus_90d": 17,
+        "n_before": 9,
+        "n_after": 8,
+        "upgrades_before": 2,
+        "upgrades_after": 1,
+        "method": "yfinance.Ticker.upgrades_downgrades",
+        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+      },
+      "wikipedia_attention": {
+        "ok": true,
+        "article": "Wynn_Resorts",
+        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Wynn_Resorts/daily/20200101/20200630",
+        "method": "Wikimedia REST API",
+        "retrieved_at_utc": "2026-11-12T18:13:00Z",
+        "views_on_date": 211,
+        "mean_14d_before": 249.42857142857142,
+        "mean_14d_after": 263.64285714285717,
+        "n_before": 14,
+        "n_after": 14
+      }
+    },
+    {
+      "id": "dorel-2020",
+      "ticker": "DIIBF",
+      "date": "2020-04-24",
+      "precision": "day",
+      "side": "long",
+      "wiki": "Dorel_Industries",
+      "note": "Best-dated event: purchase screenshots at $1.56, viewed by BI.",
+      "retrieved_at_utc": "2026-11-12T18:16:22Z",
+      "trading_start": "2020-04-24",
+      "returns": {
+        "1m": {
+          "ok": true,
+          "start_date": "2020-04-24",
+          "end_date": "2020-05-26",
+          "start_px": 0.6869,
+          "end_px": 1.5872,
+          "pct": 131.06
+        },
+        "3m": {
+          "ok": true,
+          "start_date": "2020-04-24",
+          "end_date": "2020-07-24",
+          "start_px": 0.6869,
+          "end_px": 2.3552,
+          "pct": 242.86
+        },
+        "6m": {
+          "ok": true,
+          "start_date": "2020-04-24",
+          "end_date": "2020-10-22",
+          "start_px": 0.6869,
+          "end_px": 4.8682,
+          "pct": 608.7
+        }
+      },
+      "return_in_direction_of_stated_side": {
+        "1m": 131.06,
+        "3m": 242.86,
+        "6m": 608.7
+      },
+      "street_window": {
+        "ok": true,
+        "n_actions_plus_minus_90d": 0,
+        "n_before": 0,
+        "n_after": 0,
+        "upgrades_before": 0,
+        "upgrades_after": 0,
+        "method": "yfinance.Ticker.upgrades_downgrades",
+        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+      },
+      "wikipedia_attention": {
+        "ok": true,
+        "article": "Dorel_Industries",
+        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Dorel_Industries/daily/20200101/20201231",
+        "method": "Wikimedia REST API",
+        "retrieved_at_utc": "2026-11-12T18:13:00Z",
+        "views_on_date": 217,
+        "mean_14d_before": 243.42857142857142,
+        "mean_14d_after": 298.0,
+        "n_before": 14,
+        "n_after": 14
+      }
+    },
+    {
+      "id": "tgt-missoni-2011",
+      "ticker": "TGT",
+      "date": "2011-09-07",
+      "precision": "day-approx",
+      "side": "long",
+      "wiki": null,
+      "note": " collab event week. Overnight options P&L is self-reported; we only show equity path. Wiki pageviews start mid-2015.",
+      "retrieved_at_utc": "2026-11-12T18:16:22Z",
+      "trading_start": "2011-09-07",
+      "returns": {
+        "1m": {
+          "ok": true,
+          "start_date": "2011-09-07",
+          "end_date": "2011-10-06",
+          "start_px": 32.4803,
+          "end_px": 33.3344,
+          "pct": 2.63
+        },
+        "3m": {
+          "ok": true,
+          "start_date": "2011-09-07",
+          "end_date": "2011-12-06",
+          "start_px": 32.4803,
+          "end_px": 34.6541,
+          "pct": 6.69
+        },
+        "6m": {
+          "ok": true,
+          "start_date": "2011-09-07",
+          "end_date": "2012-03-08",
+          "start_px": 32.4803,
+          "end_px": 37.1723,
+          "pct": 14.45
+        }
+      },
+      "return_in_direction_of_stated_side": {
+        "1m": 2.63,
+        "3m": 6.69,
+        "6m": 14.45
+      },
+      "street_window": {
+        "ok": true,
+        "n_actions_plus_minus_90d": 0,
+        "n_before": 0,
+        "n_after": 0,
+        "upgrades_before": 0,
+        "upgrades_after": 0,
+        "method": "yfinance.Ticker.upgrades_downgrades",
+        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+      },
+      "wikipedia_attention": {
+        "ok": false,
+        "reason": "no article assigned (date too early, or 404)"
+      }
+    },
+    {
+      "id": "gme-2021",
+      "ticker": "GME",
+      "date": "2021-01-25",
+      "precision": "month",
+      "side": "long",
+      "wiki": "GameStop",
+      "note": "Self-reported buy around $70 \u2014 already mid-squeeze. Mid/late January placeholder.",
+      "retrieved_at_utc": "2026-11-12T18:16:22Z",
+      "trading_start": "2021-01-25",
+      "returns": {
+        "1m": {
+          "ok": true,
+          "start_date": "2021-01-25",
+          "end_date": "2021-02-24",
+          "start_px": 19.1975,
+          "end_px": 22.9275,
+          "pct": 19.43
+        },
+        "3m": {
+          "ok": true,
+          "start_date": "2021-01-25",
+          "end_date": "2021-04-26",
+          "start_px": 19.1975,
+          "end_px": 42.2325,
+          "pct": 119.99
+        },
+        "6m": {
+          "ok": true,
+          "start_date": "2021-01-25",
+          "end_date": "2021-07-26",
+          "start_px": 19.1975,
+          "end_px": 45.985,
+          "pct": 139.54
+        }
+      },
+      "return_in_direction_of_stated_side": {
+        "1m": 19.43,
+        "3m": 119.99,
+        "6m": 139.54
+      },
+      "street_window": {
+        "ok": true,
+        "n_actions_plus_minus_90d": 5,
+        "n_before": 0,
+        "n_after": 5,
+        "upgrades_before": 0,
+        "upgrades_after": 0,
+        "method": "yfinance.Ticker.upgrades_downgrades",
+        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+      },
+      "wikipedia_attention": {
+        "ok": true,
+        "article": "GameStop",
+        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/GameStop/daily/20201201/20210630",
+        "method": "Wikimedia REST API",
+        "retrieved_at_utc": "2026-11-12T18:13:00Z",
+        "views_on_date": 16446,
+        "mean_14d_before": 2628.214285714286,
+        "mean_14d_after": 57513.42857142857,
+        "n_before": 14,
+        "n_after": 14
+      }
+    },
+    {
+      "id": "amc-2021",
+      "ticker": "AMC",
+      "date": "2021-01-25",
+      "precision": "month",
+      "side": "long",
+      "wiki": "AMC_Theatres",
+      "note": "Self-reported buy around $3.",
+      "retrieved_at_utc": "2026-11-12T18:16:23Z",
+      "trading_start": "2021-01-25",
+      "returns": {
+        "1m": {
+          "ok": true,
+          "start_date": "2021-01-25",
+          "end_date": "2021-02-24",
+          "start_px": 44.2,
+          "end_px": 90.9,
+          "pct": 105.66
+        },
+        "3m": {
+          "ok": true,
+          "start_date": "2021-01-25",
+          "end_date": "2021-04-26",
+          "start_px": 44.2,
+          "end_px": 115.0,
+          "pct": 160.18
+        },
+        "6m": {
+          "ok": true,
+          "start_date": "2021-01-25",
+          "end_date": "2021-07-26",
+          "start_px": 44.2,
+          "end_px": 402.9,
+          "pct": 811.54
+        }
+      },
+      "return_in_direction_of_stated_side": {
+        "1m": 105.66,
+        "3m": 160.18,
+        "6m": 811.54
+      },
+      "street_window": {
+        "ok": true,
+        "n_actions_plus_minus_90d": 0,
+        "n_before": 0,
+        "n_after": 0,
+        "upgrades_before": 0,
+        "upgrades_after": 0,
+        "method": "yfinance.Ticker.upgrades_downgrades",
+        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+      },
+      "wikipedia_attention": {
+        "ok": true,
+        "article": "AMC_Theatres",
+        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/AMC_Theatres/daily/20201201/20210630",
+        "method": "Wikimedia REST API",
+        "retrieved_at_utc": "2026-11-12T18:13:00Z",
+        "views_on_date": 2503,
+        "mean_14d_before": 901.0714285714286,
+        "mean_14d_after": 8768.714285714286,
+        "n_before": 14,
+        "n_after": 14
+      }
+    },
+    {
+      "id": "tpr-2021-mention",
+      "ticker": "TPR",
+      "date": "2021-08-15",
+      "precision": "mention_date",
+      "side": "long",
+      "wiki": "Tapestry,_Inc.",
+      "note": "BI mention of a $3.1M position \u2014 NOT an entry date. Forward returns from the article date only.",
+      "retrieved_at_utc": "2026-11-12T18:16:23Z",
+      "trading_start": "2021-08-16",
+      "returns": {
+        "1m": {
+          "ok": true,
+          "start_date": "2021-08-16",
+          "end_date": "2021-09-15",
+          "start_px": 38.347,
+          "end_px": 35.168,
+          "pct": -8.29
+        },
+        "3m": {
+          "ok": true,
+          "start_date": "2021-08-16",
+          "end_date": "2021-11-12",
+          "start_px": 38.347,
+          "end_px": 40.0901,
+          "pct": 4.55
+        },
+        "6m": {
+          "ok": true,
+          "start_date": "2021-08-16",
+          "end_date": "2022-02-14",
+          "start_px": 38.347,
+          "end_px": 34.6069,
+          "pct": -9.75
+        }
+      },
+      "return_in_direction_of_stated_side": {
+        "1m": -8.29,
+        "3m": 4.55,
+        "6m": -9.75
+      },
+      "street_window": {
+        "ok": true,
+        "n_actions_plus_minus_90d": 12,
+        "n_before": 2,
+        "n_after": 10,
+        "upgrades_before": 0,
+        "upgrades_after": 0,
+        "method": "yfinance.Ticker.upgrades_downgrades",
+        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+      },
+      "wikipedia_attention": {
+        "ok": true,
+        "article": "Tapestry,_Inc.",
+        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tapestry,_Inc./daily/20210101/20211231",
+        "method": "Wikimedia REST API",
+        "retrieved_at_utc": "2026-11-12T18:13:00Z",
+        "views_on_date": 146,
+        "mean_14d_before": 172.78571428571428,
+        "mean_14d_after": 198.42857142857142,
+        "n_before": 14,
+        "n_after": 14
+      }
+    }
+  ]
+}

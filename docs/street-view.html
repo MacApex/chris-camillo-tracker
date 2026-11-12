@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>街景 · Street view & experiments — Chris Camillo Tracker</title>
+  <meta name="description" content="A Street Consensus Profile for the priced-in test, an honest event study, and a multi-platform signal status log.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,450;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-lang="zh">
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CC</span>
+        <span class="brand-text">
+          <strong>Chris Camillo Tracker</strong>
+          <span>Social arbitrage research</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav class="primary" aria-label="Primary">
+        <a href="index.html">Overview</a>
+        <a href="core-logic.html" class="nav-featured">核心逻辑</a>
+        <a href="trades.html">交易</a>
+        <a href="dimensions.html">维度</a>
+        <a href="street-view.html" aria-current="page">街景</a>
+        <a href="track-record.html">Track record</a>
+        <a href="playbook.html">Playbook</a>
+        <a href="divergence.html">Divergence</a>
+        <a href="resources.html">Resources</a>
+        <a href="sources.html">Sources</a>
+      </nav>
+    </div>
+  </header>
+  
+<section class="prose">
+  <div class="wrap">
+    <p class="eyebrow">街景 · Street-view &amp; experiments</p>
+    <h1>这件事，卖方定价了吗？</h1>
+    
+<div class="lang-toggle" data-lang-toggle role="group" aria-label="Language">
+  <button type="button" data-lang="zh" class="is-on">中文</button>
+  <button type="button" data-lang="en">English</button>
+  <button type="button" data-lang="both">对照 · Side by side</button>
+</div>
+
+    <div class="pair">
+      <div class="lang-zh">
+        <p>这套框架用来<strong>支持</strong> Camillo 的定价检验，而不是替代观察本身。流程是：利基信号 → 候选代码 → 卖方共识档案（Street Consensus Profile）→ 定价结论。只有「利基上升且尚未清楚定价」才能进入人工研究；已经定价或数据不足就停下来。</p>
+        <p>档案的七个构件：共识评级分布、目标价离散与隐含上行、盈利预测修正、评级变动新近度、新闻 / 研报语气、覆盖人数、盈利意外历史。模块在 <code>camillo_tracker.street_view</code>，结论只能是 already_priced / partially_priced / not_clearly_priced / insufficient_data。</p>
+      </div>
+      <div class="lang-en">
+        <p>This framework is built to <strong>support</strong> Camillo’s “is it priced in?” test, not to replace observation. The workflow is: niche signal → candidate ticker → Street Consensus Profile → priced-in verdict. Only “niche rising and not clearly priced” survives to human work; already priced, or insufficient data, is a stand-down.</p>
+        <p>Seven components: consensus rating distribution, price-target dispersion and implied upside, estimate revisions, rating-change recency, news/note sentiment, coverage count, earnings-surprise history. Implemented in <code>camillo_tracker.street_view</code>. The only allowed labels are already_priced, partially_priced, not_clearly_priced, and insufficient_data.</p>
+      </div>
+    </div>
+
+    <h2>事件研究 · Event study</h2>
+    <div class="pair">
+      <div class="lang-zh">
+        <p>我们对 10 个有日期、有代码的记录，用 yfinance 复权收盘价计算 21 / 63 / 126 个交易日的前瞻收益。这是<strong>市场路径</strong>，不是 Camillo 的个人盈亏。样本小，且偏向他后来谈过的故事；若干日期只有月份精度；GME / AMC 的占位已经落在挤兑中段；TPR 用的是 BI 文章日期，不是入场日；新冠仓位是期权，标的收益不是期权盈亏；Target × Missoni 是隔夜期权。我们<strong>拒绝</strong>给历史事件贴上「高利基 / 低卖方」象限标签：免费的 Google Trends 从 2026 年 11 月回看只有约五年，到不了 2019–2020，我们不会编造。</p>
+      </div>
+      <div class="lang-en">
+        <p>For 10 dated, tickered events we computed 21 / 63 / 126-trading-day forward returns on yfinance auto-adjusted closes. These are <strong>market paths</strong>, not Camillo’s personal P&amp;L. The sample is small and biased toward stories he later discussed; several dates are month-precision; the GME / AMC placeholders sit mid-squeeze; TPR uses the BI article date, not an entry; the COVID positions were puts, so equity returns are not put P&amp;L; Target × Missoni was an overnight options trade. We <strong>refuse</strong> to assign historical high-niche / low-Street quadrants: free Google Trends from November 2026 only reaches about five years, and we will not invent the rest.</p>
+      </div>
+    </div>
+
+    <figure class="chart-fig">
+      <img src="assets/charts/event-forward-returns.png" alt="Forward 1, 3 and 6 month market returns from documented dates" width="1250" height="580">
+      <figcaption>Forward close-to-close returns from documented dates. Shorts are marked. Not personal P&amp;L. Retrieved 13 Nov 2026, Asia/Shanghai, via yfinance.</figcaption>
+    </figure>
+    <figure class="chart-fig">
+      <img src="assets/charts/event-side-signed.png" alt="Same returns signed in the direction of the stated side" width="1250" height="540">
+      <figcaption>Same paths, signed with the stated side (short = flipped underlying). COVID figures remain equity-index moves, not option P&amp;L.</figcaption>
+    </figure>
+    <figure class="chart-fig">
+      <img src="assets/charts/wiki-attention.png" alt="Wikipedia pageviews around documented dates, log scale" width="1000" height="520">
+      <figcaption>English Wikipedia user pageviews, 14-day means before and after, plus the date itself (log scale). Official Wikimedia REST API. GME and AMC attention exploded after 25 Jan 2021 — a lagging public-attention trace of the squeeze, not Camillo’s original signal.</figcaption>
+    </figure>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Event</th><th>Ticker</th><th>Date</th><th>Precision</th><th>Side</th><th>1m</th><th>3m</th><th>6m</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>elf-2019</td><td>ELF</td><td>2019-03-15</td><td>month</td><td>long</td><td>+25.0%</td><td>+32.5%</td><td>+70.3%</td><td>Mid-month placeholder. Self-report was &gt;50% in six weeks — a different window. 0 Yahoo upgrades before, 4 after.</td></tr>
+          <tr><td>rbi-2019-apr</td><td>QSR</td><td>2019-04-15</td><td>month</td><td>long</td><td>+0.5%</td><td>+9.2%</td><td>+7.1%</td><td>Documented losing thesis; early window not yet the loss. Screenshots viewed.</td></tr>
+          <tr><td>rbi-2019-aug</td><td>QSR</td><td>2019-08-15</td><td>month</td><td>long</td><td>−2.2%</td><td>−7.2%</td><td>−7.3%</td><td>Second purchase window. Damage continues into 2020.</td></tr>
+          <tr><td>covid-spy-2020</td><td>SPY</td><td>2020-02-15</td><td>month</td><td>short</td><td>−28.7%</td><td>−11.9%</td><td>+1.4%</td><td>Underlying path. Puts, 25–30% of savings, self-reported. Index recovered by 6m.</td></tr>
+          <tr><td>covid-wynn-2020</td><td>WYNN</td><td>2020-02-15</td><td>month</td><td>short</td><td>−67.5%</td><td>−38.4%</td><td>−36.9%</td><td>Underlying path, not put P&amp;L.</td></tr>
+          <tr><td>dorel-2020</td><td>DIIBF</td><td>2020-04-24</td><td>day</td><td>long</td><td>+131.1%</td><td>+242.9%</td><td>+608.7%</td><td>Best-dated. yfinance start ≈ $0.69 vs BI screenshot $1.56 — OTC discrepancy, both kept. 629% in BI is the path to $11.38 in November.</td></tr>
+          <tr><td>tgt-missoni-2011</td><td>TGT</td><td>2011-09-07</td><td>day-approx</td><td>long</td><td>+2.6%</td><td>+6.7%</td><td>+14.4%</td><td>He described an overnight options double. The equity path is a different instrument. Wiki starts 2015.</td></tr>
+          <tr><td>gme-2021</td><td>GME</td><td>2021-01-25</td><td>month</td><td>long</td><td>+19.4%</td><td>+120.0%</td><td>+139.5%</td><td>Self-reported buy ~$70, mid-squeeze. Prices are split-adjusted. Wiki views: 2,628 → 16,446 → 57,513 (14d before / on date / 14d after).</td></tr>
+          <tr><td>amc-2021</td><td>AMC</td><td>2021-01-25</td><td>month</td><td>long</td><td>+105.7%</td><td>+160.2%</td><td>+811.5%</td><td>Self-reported $3 → $13–15. Prices are split-adjusted and should not be compared raw to those figures.</td></tr>
+          <tr><td>tpr-2021-mention</td><td>TPR</td><td>2021-08-15</td><td>mention</td><td>long</td><td>−8.3%</td><td>+4.5%</td><td>−9.8%</td><td>BI mention of a $3.1M position — not an entry date.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Full JSON and method note: <a href="data/event_study.json">data/event_study.json</a>. Unit tests: <code>toolkit/tests/test_street_view.py</code> (11 passed, 13 Nov 2026).</p>
+
+    <h2>多平台信号 · Multi-platform signals</h2>
+    <div class="pair">
+      <div class="lang-zh">
+        <p>趋势检测不限于 Google Trends。我们实际安装并尝试了 Scrapling（Fetcher 优先）、instaloader、twscrape、yt-dlp（只取元数据）、Google News RSS、Wikipedia 官方浏览量、GDELT、iTunes Search，以及 Grok Bot 的官方 X 计数接口。没有使用 Max 的登录凭据，也没有绕过付费墙。不能核实的数字全部丢弃。</p>
+      </div>
+      <div class="lang-en">
+        <p>Trend detection is not limited to Google Trends. We actually installed and ran Scrapling (Fetcher first), instaloader, twscrape, yt-dlp (metadata only), Google News RSS, the official Wikipedia pageviews API, GDELT, iTunes Search, and Grok Bot’s official X recent-counts API. No logins with Max’s credentials, and no paywall bypass. Unverifiable numbers were discarded.</p>
+      </div>
+    </div>
+    <figure class="chart-fig">
+      <img src="assets/charts/live-snapshot.png" alt="Live snapshot of Trends, Wikipedia, and X counts on 13 Nov 2026" width="1280" height="470">
+      <figcaption>Live snapshot, 13 Nov 2026, Asia/Shanghai. ELF* on X is a noisy query after X strips the $ character — do not treat 90,164 as a clean brand count. Wikipedia ELF/TPR use corrected article titles (E.l.f.; Tapestry, Inc.).</figcaption>
+    </figure>
+
+    <h3>平台状态 · Platform status</h3>
+    <p class="small">Fetched 13 Nov 2026, 02:08–02:11 Asia/Shanghai. Provenance log: <a href="data/provenance.csv">data/provenance.csv</a>.</p>
+    <div class="table-wrap">
+      <table class="status-table">
+        <thead><tr><th>Platform</th><th>Status</th><th>Reason</th><th>What was tried</th></tr></thead>
+        <tbody data-platforms>
+          <tr><td>wikipedia</td><td><span class="badge badge-worked">worked</span></td><td>5/5 daily series (corrected titles for ELF and TPR).</td><td>Official Wikimedia REST API, identified User-Agent.</td></tr>
+          <tr><td>google_trends</td><td><span class="badge badge-worked">worked</span></td><td>5/5 keywords, pytrends, 5-year US window. Momentum: CROX 43.1, LULU 35.56, ELF 57.97, NWL 40.16, TPR 54.37.</td><td>pytrends with urllib3 method_whitelist patch.</td></tr>
+          <tr><td>x</td><td><span class="badge badge-worked">worked</span></td><td>Official 7-day counts: Crocs 42,056 (spike 18,438 on 10 Nov); Lululemon 172,939; Coach bag 2,029; ELF 90,164 (noisy after $ strip). twscrape skipped (needs logins).</td><td>Grok Bot MCP get_posts_counts_recent (official X API). CCT_X_BEARER adapter available. twscrape not logged in.</td></tr>
+          <tr><td>google_news</td><td><span class="badge badge-worked">worked</span></td><td>5/5 RSS feeds (84, 100, 77, 49, 56 items).</td><td>Google News RSS; Scrapling as fallback (not needed).</td></tr>
+          <tr><td>youtube</td><td><span class="badge badge-worked">worked</span></td><td>3 public ytsearch results for “Crocs shoes”: 1,886,428 / 57,254 / 2,965,598 views (yt-dlp metadata, no download).</td><td>yt-dlp ytsearch3 --dump-json --skip-download. YouTube Data API skipped (no key).</td></tr>
+          <tr><td>app_store</td><td><span class="badge badge-worked">worked</span></td><td>iTunes Search returns presence, not a live top-chart rank.</td><td>Official iTunes Search API.</td></tr>
+          <tr><td>gdelt_news</td><td><span class="badge badge-partial">partial</span></td><td>First pass HTTP 429 (need ≥5s). Retry after 6s for “Crocs” returned 28 TimelineVol points, max 0.0505 on 2026-10-06, last 0.0046 on 2026-11-12. “e.l.f.” rejected as too short/common.</td><td>Official GDELT DOC API TimelineVol.</td></tr>
+          <tr><td>tiktok</td><td><span class="badge badge-partial">partial</span></td><td>Scrapling Fetcher HTTP 200 on Creative Center (21,168 bytes) and tiktok.com/tag/crocs (396,039 bytes). No trusted numeric view count was parsed. Counts were not estimated. TikTok-Api not run with session cookies.</td><td>Scrapling Fetcher. No logins.</td></tr>
+          <tr><td>pinterest_trends</td><td><span class="badge badge-partial">partial</span></td><td>HTTP 200, 57,852 bytes, title “Pinterest Trends”. No numeric series extracted.</td><td>Scrapling Fetcher.</td></tr>
+          <tr><td>amazon_movers</td><td><span class="badge badge-partial">partial</span></td><td>HTTP 200, 277,848 bytes, Movers &amp; Shakers title. No numeric ranks extracted; not estimated.</td><td>Scrapling Fetcher.</td></tr>
+          <tr><td>instagram</td><td><span class="badge badge-blocked">blocked</span></td><td>Scrapling 200 on a public URL, but instaloader Hashtag.from_name returned 403 login_required. No credentials used.</td><td>Scrapling Fetcher; instaloader with no login.</td></tr>
+          <tr><td>reddit</td><td><span class="badge badge-blocked">blocked</span></td><td>www 403; old.reddit 403; PullPush 526; Scrapling 403. Datacenter IP is a known issue.</td><td>Public JSON, PullPush, Scrapling.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">X sample file: <a href="data/x_counts_sample.json">x_counts_sample.json</a>. YouTube metadata: <a href="data/youtube_ytsearch_crocs.json">youtube_ytsearch_crocs.json</a>. Adapters: <code>camillo_tracker.signals</code>. Env vars for users: <code>CCT_X_BEARER</code>, <code>CCT_USE_FINBERT=1</code>, <code>YOUTUBE_API_KEY</code> (optional official path). Cross-platform corroboration requires two rising z-scores; missing platforms are listed, never imputed.</p>
+  </div>
+</section>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p>Chris Camillo Tracker · independent research archive · not affiliated with Camillo, Dumb Money, or TickerTags.<br>
+      <strong>Not financial advice.</strong> Past, even audited, results do not predict future returns. <a href="https://github.com/MacApex/chris-camillo-tracker">GitHub repository</a>.</p>
+      <p>Updated 13 Nov 2026, Asia/Shanghai.<br><a href="sources.html">Sources and gaps</a> · <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/DISCLAIMER.md">Disclaimer</a></p>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

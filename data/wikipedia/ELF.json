@@ -1,0 +1,17 @@
+{
+  "retrieved_at_utc": "2026-11-12T18:08:55Z",
+  "article": "e.l.f._Cosmetics",
+  "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/e.l.f._Cosmetics/daily/20251013/20261112",
+  "method": "Wikimedia REST API",
+  "items": [
+    {
+      "project": "en.wikipedia",
+      "article": "e.l.f._Cosmetics",
+      "granularity": "daily",
+      "timestamp": "2026060500",
+      "access": "all-access",
+      "agent": "user",
+      "views": 0
+    }
+  ]
+}

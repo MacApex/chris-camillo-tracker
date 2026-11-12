@@ -94,3 +94,22 @@ These are not code, but they are the highest-signal places to learn the method f
 8. Camillo's August 2025 X thread on AI and Google Trends (Threadreader archive).
 
 Full citations are in [05-sources.md](05-sources.md).
+
+## Scrapers and public APIs actually attempted (13 Nov 2026)
+
+Star counts below were verified earlier in this project (13 Nov 2026) or are marked “see GitHub.” Status is from a live probe the same day: see `data/platform_status.json`.
+
+| Project | Role in this toolkit | Status on 13 Nov 2026 |
+|---|---|---|
+| [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | First-choice fetcher (`Fetcher.get`) for public pages | Partial: HTTP 200 on TikTok, Pinterest, Amazon; no trusted counts parsed. StealthyFetcher not required for those 200s. |
+| [davidteather/TikTok-Api](https://github.com/davidteather/TikTok-Api) (6,743★ earlier this run) | Optional; needs session cookies | Not invoked with cookies (no logins). |
+| [instaloader/instaloader](https://github.com/instaloader/instaloader) | Public hashtag metadata | Blocked: 403 `login_required`. |
+| [vladkens/twscrape](https://github.com/vladkens/twscrape) | X without official API | Skipped: requires user accounts. |
+| [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | YouTube *metadata* only | Worked: 3-result search with view counts. |
+| Wikimedia REST pageviews | Official, free | Worked, 5/5 after title corrections. |
+| GDELT DOC API | Official news-volume | Partial: 429, then 28-point Crocs series after a 6s pause. |
+| Google News RSS | Official RSS | Worked, 5/5. |
+| iTunes Search API | Official | Worked (presence, not chart rank). |
+| X official recent-counts (via MCP or `CCT_X_BEARER`) | Official | Worked for four queries. |
+
+Cross-platform corroboration is implemented in `camillo_tracker.signals.corroborate`. Reliability weights are documented opinions, applied only when a platform actually returns a z-score.
