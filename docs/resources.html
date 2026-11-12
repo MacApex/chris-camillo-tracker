@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resources — Chris Camillo Tracker</title>
+  <meta name="description" content="Verified GitHub tools for replicating the inputs of social-arbitrage research.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,450;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CC</span>
+        <span class="brand-text">
+          <strong>Chris Camillo Tracker</strong>
+          <span>Social arbitrage research</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav class="primary" aria-label="Primary">
+        <a href="index.html" >Overview</a>
+        <a href="track-record.html" >Track record</a>
+        <a href="playbook.html" >Playbook</a>
+        <a href="resources.html" aria-current="page">Resources</a>
+        <a href="divergence.html" >Divergence</a>
+        <a href="sources.html" >Sources</a>
+      </nav>
+    </div>
+  </header>
+
+  <article class="prose">
+    <div class="wrap-narrow">
+      <p class="eyebrow">03 · Resources</p>
+      <h1>Tools that approximate the inputs — not the judgment</h1>
+      <p class="deck">Star counts and URLs were verified with the GitHub API on 13 November 2026 (Asia/Shanghai). No repository backtests Camillo’s discretionary eye. These are tools for search interest, conversation, sentiment, consensus, and options research. Full table: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/03-resources.md">research/03-resources.md</a>.</p>
+    </div>
+    <div class="wrap">
+      <h2>Google Trends</h2>
+      <p class="deck">One of his favorite early-warning tools. Use a five-year window. In 2025 he warned that AI-generated queries may pollute the series.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Repository</th><th>Stars</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://github.com/GeneralMills/pytrends">GeneralMills/pytrends</a></td><td>3,730</td><td>Unofficial Python client for interest-over-time. Archived. This toolkit patches a urllib3 v2 incompatibility and still uses it.</td></tr>
+            <tr><td><a href="https://github.com/akvise/trends-checker">akvise/trends-checker</a></td><td>404</td><td>CLI on pytrends with tighter rate-limit and cookie handling.</td></tr>
+            <tr><td><a href="https://github.com/yiromo/pytrends-modern">yiromo/pytrends-modern</a></td><td>76</td><td>Maintained Trends client, a fork-of-forks.</td></tr>
+            <tr><td><a href="https://github.com/flack0x/trendspyg">flack0x/trendspyg</a></td><td>65</td><td>Modern, maintained pytrends alternative with a CLI.</td></tr>
+            <tr><td><a href="https://github.com/mikedbjones/longtrends">mikedbjones/longtrends</a></td><td>16</td><td>Long-term Trends series — the window Camillo prefers.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:1em">Academic companions: Preis, Moat &amp; Stanley, <em>Scientific Reports</em> 2013; Da, Engelberg &amp; Gao, “In Search of Attention,” <em>Journal of Finance</em> 2011.</p>
+
+      <h2>Social sentiment</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Repository</th><th>Stars</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://github.com/asad70/reddit-sentiment-analysis">asad70/reddit-sentiment-analysis</a></td><td>288</td><td>Most-mentioned Reddit tickers, scored with VADER. The most-starred practical WSB-style pipeline we verified.</td></tr>
+            <tr><td><a href="https://github.com/asad70/wallstreetbets-sentiment-analysis">asad70/wallstreetbets-sentiment-analysis</a></td><td>149</td><td>Earlier, r/wallstreetbets-only sibling.</td></tr>
+            <tr><td><a href="https://github.com/JustAnotherArchivist/snscrape">JustAnotherArchivist/snscrape</a></td><td>5,466</td><td>Scrape X, Reddit, and other networks without an official API. Breaks when sites change; respect ToS.</td></tr>
+            <tr><td><a href="https://github.com/cjhutto/vaderSentiment">cjhutto/vaderSentiment</a></td><td>5,096</td><td>Lexicon-and-rule sentiment tuned for social media. Default engine in this toolkit.</td></tr>
+            <tr><td><a href="https://github.com/ProsusAI/finBERT">ProsusAI/finBERT</a></td><td>2,279</td><td>BERT fine-tuned on financial language. Optional here via <code>CCT_USE_FINBERT=1</code>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>TikTok comment scraping at the scale he describes has no high-quality, stable open-source library we could recommend. Treat TikTok as a manual research surface. Reddit’s public JSON was 403 from this project’s build network; the code path is still in the toolkit for residential or authenticated use.</p>
+
+      <h2>Market data and options</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Repository</th><th>Stars</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://github.com/ranaroussi/yfinance">ranaroussi/yfinance</a></td><td>25,900</td><td>Unofficial Yahoo Finance client: prices, recommendations, targets, upgrades, news. The analyst leg of the scanner.</td></tr>
+            <tr><td><a href="https://github.com/OpenBB-finance/OpenBB">OpenBB-finance/OpenBB</a></td><td>75,364</td><td>Open data platform for analysts and agents (API listed <a href="https://github.com/openbq-org/OpenBB">openbq-org/OpenBB</a> at check time).</td></tr>
+            <tr><td><a href="https://github.com/goldspanlabs/optopsy">goldspanlabs/optopsy</a></td><td>1,517</td><td>Nimble Python library for options research and backtesting.</td></tr>
+            <tr><td><a href="https://github.com/Lumiwealth/lumibot">Lumiwealth/lumibot</a></td><td>2,229</td><td>Broader framework: backtest, paper, and live, including options.</td></tr>
+            <tr><td><a href="https://github.com/kernc/backtesting.py">kernc/backtesting.py</a></td><td>9,229</td><td>Clean equity-strategy backtester, not options-native.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><code>OptionLab-Perg/OptionLab</code> returned 404 on 13 November 2026 and is not listed. Options libraries help you <em>study</em> structures; they do not encode his entries or exits.</p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p>Chris Camillo Tracker · independent research archive · not affiliated with Camillo, Dumb Money, or TickerTags.<br>
+      <strong>Not financial advice.</strong> Past, even audited, results do not predict future returns. <a href="https://github.com/MacApex/chris-camillo-tracker">GitHub repository</a>.</p>
+      <p>Compiled 13 Nov 2026, Asia/Shanghai.<br><a href="sources.html">Sources and gaps</a> · <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/DISCLAIMER.md">Disclaimer</a></p>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Chris Camillo Tracker — divergence scanner
+# Python 3.10+
+yfinance>=0.2.40
+pandas>=2.0.0
+numpy>=1.24.0
+requests>=2.31.0
+vaderSentiment>=3.3.2
+pytrends>=4.9.2
+python-dateutil>=2.8.2
+# Optional: FinBERT (heavy; skipped unless CCT_USE_FINBERT=1)
+# transformers>=4.36.0
+# torch>=2.0.0

@@ -1,0 +1,2179 @@
+{
+  "title": "Chris Camillo Tracker \u2014 divergence scan",
+  "generated_at": "2026-11-12T17:51:01.577743+00:00",
+  "disclaimer": "NOT FINANCIAL ADVICE. This is a research screen that contrasts free sell-side consensus data with public social/search signals. It does not execute, recommend, or value any security. Camillo's edge is discretionary observation plus catalyst timing; a numeric score cannot substitute for that.",
+  "n": 5,
+  "n_opportunity_flags": 0,
+  "results": [
+    {
+      "symbol": "CROX",
+      "keywords": [
+        "Crocs shoes",
+        "Hey Dude shoes"
+      ],
+      "retrieved_at": "2026-11-12T17:49:50.604735+00:00",
+      "disclaimer": "Not financial advice. Heuristic research screen inspired by Camillo's information-imbalance idea. Data comes from free, unofficial sources and can be incomplete, delayed, or wrong.",
+      "analyst": {
+        "raw": {
+          "recommendation_mean": 2.333,
+          "analyst_bullishness": 66.67,
+          "recommendation_latest": {
+            "counts": {
+              "strongBuy": 3,
+              "buy": 5,
+              "hold": 6,
+              "sell": 1,
+              "strongSell": 0
+            },
+            "period": "0m"
+          },
+          "price_targets": {
+            "current": 158.77,
+            "high": 190.0,
+            "low": 128.0,
+            "mean": 164.66667,
+            "median": 171.5
+          },
+          "implied_upside_pct": 3.71,
+          "last_close": 158.77000427246094,
+          "recent_action_balance": 3.0,
+          "recent_action_n": 12,
+          "upgrades_downgrades": [
+            {
+              "GradeDate": "2026-10-31T02:15:03",
+              "Firm": "UBS",
+              "ToGrade": "Neutral",
+              "FromGrade": "Neutral",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 145.0,
+              "priorPriceTarget": 120.0
+            },
+            {
+              "GradeDate": "2026-10-30T14:14:49",
+              "Firm": "Barclays",
+              "ToGrade": "Overweight",
+              "FromGrade": "Overweight",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 178.0,
+              "priorPriceTarget": 139.0
+            },
+            {
+              "GradeDate": "2026-10-29T21:22:34",
+              "Firm": "Needham",
+              "ToGrade": "Buy",
+              "FromGrade": "Buy",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 190.0,
+              "priorPriceTarget": 150.0
+            },
+            {
+              "GradeDate": "2026-10-15T12:47:58",
+              "Firm": "Barclays",
+              "ToGrade": "Overweight",
+              "FromGrade": "Equal-Weight",
+              "Action": "up",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 139.0,
+              "priorPriceTarget": 118.0
+            },
+            {
+              "GradeDate": "2026-07-31T21:36:04",
+              "Firm": "UBS",
+              "ToGrade": "Neutral",
+              "FromGrade": "Neutral",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 120.0,
+              "priorPriceTarget": 107.0
+            },
+            {
+              "GradeDate": "2026-07-31T11:08:24",
+              "Firm": "Barclays",
+              "ToGrade": "Equal-Weight",
+              "FromGrade": "Equal-Weight",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 118.0,
+              "priorPriceTarget": 110.0
+            },
+            {
+              "GradeDate": "2026-07-23T18:11:11",
+              "Firm": "B of A Securities",
+              "ToGrade": "Buy",
+              "FromGrade": "Buy",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 160.0,
+              "priorPriceTarget": 145.0
+            },
+            {
+              "GradeDate": "2026-07-20T11:36:42",
+              "Firm": "Seaport Global",
+              "ToGrade": "Buy",
+              "FromGrade": "Buy",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 160.0,
+              "priorPriceTarget": 135.0
+            }
+          ],
+          "news": [
+            {
+              "title": "G-III's DTC Strategy Gains Traction as DKNY & Donna Karan Grow Online",
+              "publisher": "Zacks",
+              "published": "2026-11-11T16:00:00Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/g-iiis-dtc-strategy-gains-160000366.html"
+            },
+            {
+              "title": "Crocs Product Innovation Pipeline: Can Newness Revive U.S. Growth?",
+              "publisher": "Zacks",
+              "published": "2026-11-10T18:54:00Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/crocs-product-innovation-pipeline-newness-185400805.html"
+            },
+            {
+              "title": "Want to Escape the AI Sell-Off? This ETF Offers a Surprising Alternative",
+              "publisher": "MarketBeat",
+              "published": "2026-11-09T18:00:00Z",
+              "url": "https://www.marketbeat.com/articles/want-to-escape-the-ai-sell-off-this-etf-offers-a-surprising-alternative/?utm_source=yahoofinance&utm_medium=yahoofinance"
+            },
+            {
+              "title": "Under Armour's Q2 Earnings Beat Estimates on Cost Discipline",
+              "publisher": "Zacks",
+              "published": "2026-11-09T13:40:00Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/under-armours-q2-earnings-beat-134000338.html"
+            },
+            {
+              "title": "Crocs Heads 3 Undervalued Stocks To Watch",
+              "publisher": "Simply Wall St.",
+              "published": "2026-11-09T09:14:29Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/crocs-heads-3-undervalued-stocks-091429717.html"
+            },
+            {
+              "title": "Top 3 Undervalued Stocks To Watch In November 2026",
+              "publisher": "Simply Wall St.",
+              "published": "2026-11-09T03:14:14Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/top-3-undervalued-stocks-watch-031414693.html"
+            },
+            {
+              "title": "CROX or CTAS: Which Is the Better Value Stock Right Now?",
+              "publisher": "Zacks",
+              "published": "2026-11-06T15:40:03Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/crox-ctas-better-value-stock-154003621.html"
+            },
+            {
+              "title": "RL Q2 Earnings Beat Estimates on Strong Asia Sales, Margins Rise",
+              "publisher": "Zacks",
+              "published": "2026-11-05T16:18:00Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/rl-q2-earnings-beat-estimates-161800581.html"
+            }
+          ],
+          "warnings": []
+        },
+        "text_sentiment": {
+          "score": -0.0025,
+          "label": "neutral",
+          "engine": "vader",
+          "n_texts": 60,
+          "sample": [
+            {
+              "text": "G-III's DTC Strategy Gains Traction as DKNY & Donna Karan Grow Online",
+              "score": 0.34,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Crocs Product Innovation Pipeline: Can Newness Revive U.S. Growth?",
+              "score": 0.765,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Want to Escape the AI Sell-Off? This ETF Offers a Surprising Alternative",
+              "score": 0.4767,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Under Armour's Q2 Earnings Beat Estimates on Cost Discipline",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Crocs Heads 3 Undervalued Stocks To Watch",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Top 3 Undervalued Stocks To Watch In November 2026",
+              "score": 0.2023,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "CROX or CTAS: Which Is the Better Value Stock Right Now?",
+              "score": 0.6486,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "RL Q2 Earnings Beat Estimates on Strong Asia Sales, Margins Rise",
+              "score": 0.5106,
+              "engine": "vader",
+              "source": "analyst_news"
+            }
+          ]
+        },
+        "composite": {
+          "score": 63.9,
+          "stance": "neutral",
+          "components": {
+            "consensus_bullishness": 66.67,
+            "recent_actions": 3.0,
+            "text_sentiment": -0.0025,
+            "implied_upside_pct": 3.71
+          }
+        }
+      },
+      "social": {
+        "trends": {
+          "ok": true,
+          "error": null,
+          "combined_momentum": 42.8,
+          "momentum": {
+            "Crocs shoes": {
+              "recent_avg": 12.46,
+              "year_ago_avg": 11.62,
+              "baseline_avg": 15.86,
+              "yoy_change": 0.0728,
+              "vs_baseline": -0.2144,
+              "momentum_0_100": 47.9
+            },
+            "Hey Dude shoes": {
+              "recent_avg": 11.31,
+              "year_ago_avg": 11.62,
+              "baseline_avg": 26.61,
+              "yoy_change": -0.0265,
+              "vs_baseline": -0.575,
+              "momentum_0_100": 37.71
+            }
+          },
+          "note": "Google Trends is relative (0-100) and can be distorted by seasonality and, as Camillo later argued (2025), by AI-generated query traffic. Treat spikes that contradict other signals with caution.",
+          "series_tail": {
+            "Crocs shoes": [
+              {
+                "date": "2026-07-26",
+                "value": 24
+              },
+              {
+                "date": "2026-08-02",
+                "value": 18
+              },
+              {
+                "date": "2026-08-09",
+                "value": 18
+              },
+              {
+                "date": "2026-08-16",
+                "value": 16
+              },
+              {
+                "date": "2026-08-23",
+                "value": 14
+              },
+              {
+                "date": "2026-08-30",
+                "value": 14
+              },
+              {
+                "date": "2026-09-06",
+                "value": 14
+              },
+              {
+                "date": "2026-09-13",
+                "value": 11
+              },
+              {
+                "date": "2026-09-20",
+                "value": 13
+              },
+              {
+                "date": "2026-09-27",
+                "value": 12
+              },
+              {
+                "date": "2026-10-04",
+                "value": 11
+              },
+              {
+                "date": "2026-10-11",
+                "value": 11
+              },
+              {
+                "date": "2026-10-18",
+                "value": 12
+              },
+              {
+                "date": "2026-10-25",
+                "value": 11
+              },
+              {
+                "date": "2026-11-01",
+                "value": 10
+              },
+              {
+                "date": "2026-11-08",
+                "value": 13
+              }
+            ],
+            "Hey Dude shoes": [
+              {
+                "date": "2026-07-26",
+                "value": 15
+              },
+              {
+                "date": "2026-08-02",
+                "value": 16
+              },
+              {
+                "date": "2026-08-09",
+                "value": 15
+              },
+              {
+                "date": "2026-08-16",
+                "value": 14
+              },
+              {
+                "date": "2026-08-23",
+                "value": 14
+              },
+              {
+                "date": "2026-08-30",
+                "value": 11
+              },
+              {
+                "date": "2026-09-06",
+                "value": 10
+              },
+              {
+                "date": "2026-09-13",
+                "value": 10
+              },
+              {
+                "date": "2026-09-20",
+                "value": 11
+              },
+              {
+                "date": "2026-09-27",
+                "value": 10
+              },
+              {
+                "date": "2026-10-04",
+                "value": 11
+              },
+              {
+                "date": "2026-10-11",
+                "value": 11
+              },
+              {
+                "date": "2026-10-18",
+                "value": 11
+              },
+              {
+                "date": "2026-10-25",
+                "value": 10
+              },
+              {
+                "date": "2026-11-01",
+                "value": 12
+              },
+              {
+                "date": "2026-11-08",
+                "value": 12
+              }
+            ]
+          }
+        },
+        "reddit": {
+          "ok": false,
+          "n_posts": 0,
+          "sentiment": {
+            "score": 0.0,
+            "label": "neutral",
+            "engine": "none",
+            "n_texts": 0
+          },
+          "volume_0_100": 0.0,
+          "combined_0_100": null,
+          "errors": [
+            "403 for https://www.reddit.com/search.json?q=%24CROX%20OR%20CROX&sort=new&limit=40&t=mon",
+            "403 for https://www.reddit.com/r/wallstreetbets/search.json?q=CROX&restrict_sr=1&sort=ne",
+            "403 for https://www.reddit.com/r/stocks/search.json?q=CROX&restrict_sr=1&sort=new&limit=",
+            "403 for https://www.reddit.com/r/investing/search.json?q=CROX&restrict_sr=1&sort=new&lim",
+            "403 for https://www.reddit.com/r/StockMarket/search.json?q=CROX&restrict_sr=1&sort=new&l",
+            "403 for https://www.reddit.com/r/options/search.json?q=CROX&restrict_sr=1&sort=new&limit",
+            "PullPush fallback HTTP 526"
+          ],
+          "sample_posts": []
+        },
+        "x": {
+          "ok": false,
+          "skipped": true,
+          "reason": "No CCT_X_BEARER / TWITTER_BEARER_TOKEN set; X is optional."
+        },
+        "composite": {
+          "score": 42.8,
+          "label": "flat",
+          "notes": [
+            "Reddit unavailable or empty."
+          ]
+        }
+      },
+      "divergence": {
+        "score": -21.1,
+        "flag": "late_or_crowded",
+        "interpretation": "Analysts are already constructive (63.9) while social momentum is softer (42.8). The imbalance, if any, may already be closing."
+      }
+    },
+    {
+      "symbol": "LULU",
+      "keywords": [
+        "Lululemon",
+        "Lululemon bag"
+      ],
+      "retrieved_at": "2026-11-12T17:50:08.770405+00:00",
+      "disclaimer": "Not financial advice. Heuristic research screen inspired by Camillo's information-imbalance idea. Data comes from free, unofficial sources and can be incomplete, delayed, or wrong.",
+      "analyst": {
+        "raw": {
+          "recommendation_mean": 3.162,
+          "analyst_bullishness": 45.95,
+          "recommendation_latest": {
+            "counts": {
+              "strongBuy": 0,
+              "buy": 1,
+              "hold": 30,
+              "sell": 5,
+              "strongSell": 1
+            },
+            "period": "0m"
+          },
+          "price_targets": {
+            "current": 105.135,
+            "high": 255.0,
+            "low": 44.0,
+            "mean": 104.26207,
+            "median": 100.0
+          },
+          "implied_upside_pct": -0.83,
+          "last_close": 105.13500213623047,
+          "recent_action_balance": -2.0,
+          "recent_action_n": 49,
+          "upgrades_downgrades": [
+            {
+              "GradeDate": "2026-11-10T12:49:05",
+              "Firm": "Cantor Fitzgerald",
+              "ToGrade": "Neutral",
+              "FromGrade": "",
+              "Action": "init",
+              "priceTargetAction": "Announces",
+              "currentPriceTarget": 121.0,
+              "priorPriceTarget": 0.0
+            },
+            {
+              "GradeDate": "2026-10-22T17:14:30",
+              "Firm": "Wolfe Research",
+              "ToGrade": "Underperform",
+              "FromGrade": "",
+              "Action": "init",
+              "priceTargetAction": "Announces",
+              "currentPriceTarget": 75.0,
+              "priorPriceTarget": 0.0
+            },
+            {
+              "GradeDate": "2026-10-19T14:31:21",
+              "Firm": "Wells Fargo",
+              "ToGrade": "Equal-Weight",
+              "FromGrade": "Equal-Weight",
+              "Action": "main",
+              "priceTargetAction": "Lowers",
+              "currentPriceTarget": 90.0,
+              "priorPriceTarget": 95.0
+            },
+            {
+              "GradeDate": "2026-09-14T13:07:39",
+              "Firm": "Argus Research",
+              "ToGrade": "Hold",
+              "FromGrade": "Hold",
+              "Action": "reit",
+              "priceTargetAction": "",
+              "currentPriceTarget": 0.0,
+              "priorPriceTarget": 0.0
+            },
+            {
+              "GradeDate": "2026-09-09T19:34:09",
+              "Firm": "Citigroup",
+              "ToGrade": "Neutral",
+              "FromGrade": "Neutral",
+              "Action": "main",
+              "priceTargetAction": "Lowers",
+              "currentPriceTarget": 117.0,
+              "priorPriceTarget": 130.0
+            },
+            {
+              "GradeDate": "2026-09-09T13:03:00",
+              "Firm": "BMO Capital",
+              "ToGrade": "Underperform",
+              "FromGrade": "",
+              "Action": "init",
+              "priceTargetAction": "Announces",
+              "currentPriceTarget": 70.0,
+              "priorPriceTarget": 0.0
+            },
+            {
+              "GradeDate": "2026-09-04T18:24:34",
+              "Firm": "Telsey Advisory Group",
+              "ToGrade": "Market Perform",
+              "FromGrade": "Market Perform",
+              "Action": "main",
+              "priceTargetAction": "Lowers",
+              "currentPriceTarget": 110.0,
+              "priorPriceTarget": 122.0
+            },
+            {
+              "GradeDate": "2026-09-04T18:06:46",
+              "Firm": "Barclays",
+              "ToGrade": "Equal-Weight",
+              "FromGrade": "Equal-Weight",
+              "Action": "main",
+              "priceTargetAction": "Lowers",
+              "currentPriceTarget": 95.0,
+              "priorPriceTarget": 113.0
+            }
+          ],
+          "news": [
+            {
+              "title": "The Big Short Investor Is Buying This Stock At a 50% Discount",
+              "publisher": "24/7 Wall St.",
+              "published": "2026-11-12T16:34:17Z",
+              "url": "https://247wallst.com/investing/2026/11/12/the-big-short-investor-is-buying-this-stock-at-a-50-discount/"
+            },
+            {
+              "title": "Every December the Nasdaq-100 Reshuffles. QQQ Holders Feel It Even If They Never Trade",
+              "publisher": "24/7 Wall St.",
+              "published": "2026-11-11T23:03:03Z",
+              "url": "https://247wallst.com/investing/etf/2026/11/11/every-december-the-nasdaq-100-reshuffles-qqq-holders-feel-it-even-if-they-never-trade/"
+            },
+            {
+              "title": "Michael Burry Re-Enters LULU On Weakness, Boosts Positions In MercadoLibre, PayPal, JD And More",
+              "publisher": "Stocktwits",
+              "published": "2026-11-11T21:38:07Z",
+              "url": "https://stocktwits.com/news-articles/markets/equity/michael-burry-re-enters-lulu-on-weakness-boosts-positions-in-mercado-libre-pay-pal-jd-and-more/cNGxRoiR99d"
+            },
+            {
+              "title": "Michael Burry buys back into Lululemon, adds to other positions",
+              "publisher": "Investing.com",
+              "published": "2026-11-11T19:24:55Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/michael-burry-buys-back-lululemon-192455774.html"
+            },
+            {
+              "title": "Lululemon Brings Enzymatically Recycled Polyester to Running Shorts",
+              "publisher": "Sourcing Journal",
+              "published": "2026-11-11T18:18:02Z",
+              "url": "https://wwd.com/sourcing-journal/sustainability/lululemon-samsara-eco-enzymaitic-recycling-polyester-shorts-1239410883/"
+            },
+            {
+              "title": "Lululemon Rebuild Continues With New Marketing, Strategy Officers",
+              "publisher": "MediaPost",
+              "published": "2026-11-11T14:22:37Z",
+              "url": "https://www.mediapost.com/publications/article/419371/lululemon-rebuild-continues-with-new-marketing-st.html"
+            },
+            {
+              "title": "Lululemon Athletica (LULU) Names Ben Hallam And Emily Sunderland To Top Roles",
+              "publisher": "Simply Wall St.",
+              "published": "2026-11-10T20:08:48Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/lululemon-athletica-lulu-names-ben-200848897.html"
+            },
+            {
+              "title": "Averting Proxy Wars: 5 Companies Opting for Activist Investor Settlements",
+              "publisher": "Insider Monkey",
+              "published": "2026-11-10T18:55:58Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/averting-proxy-wars-5-companies-185558129.html"
+            }
+          ],
+          "warnings": []
+        },
+        "text_sentiment": {
+          "score": 0.0657,
+          "label": "neutral",
+          "engine": "vader",
+          "n_texts": 60,
+          "sample": [
+            {
+              "text": "The Big Short Investor Is Buying This Stock At a 50% Discount",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Every December the Nasdaq-100 Reshuffles. QQQ Holders Feel It Even If They Never Trade",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Michael Burry Re-Enters LULU On Weakness, Boosts Positions In MercadoLibre, PayPal, JD And More",
+              "score": -0.128,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Michael Burry buys back into Lululemon, adds to other positions",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Lululemon Brings Enzymatically Recycled Polyester to Running Shorts",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Lululemon Rebuild Continues With New Marketing, Strategy Officers",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Lululemon Athletica (LULU) Names Ben Hallam And Emily Sunderland To Top Roles",
+              "score": 0.2023,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Averting Proxy Wars: 5 Companies Opting for Activist Investor Settlements",
+              "score": -0.5574,
+              "engine": "vader",
+              "source": "analyst_news"
+            }
+          ]
+        },
+        "composite": {
+          "score": 47.53,
+          "stance": "neutral",
+          "components": {
+            "consensus_bullishness": 45.95,
+            "recent_actions": -2.0,
+            "text_sentiment": 0.0657,
+            "implied_upside_pct": -0.83
+          }
+        }
+      },
+      "social": {
+        "trends": {
+          "ok": true,
+          "error": null,
+          "combined_momentum": 32.39,
+          "momentum": {
+            "Lululemon": {
+              "recent_avg": 30.62,
+              "year_ago_avg": 44.54,
+              "baseline_avg": 40.99,
+              "yoy_change": -0.3126,
+              "vs_baseline": -0.2531,
+              "momentum_0_100": 35.56
+            },
+            "Lululemon bag": {
+              "recent_avg": 1.54,
+              "year_ago_avg": 2.69,
+              "baseline_avg": 2.55,
+              "yoy_change": -0.4286,
+              "vs_baseline": -0.3967,
+              "momentum_0_100": 29.21
+            }
+          },
+          "note": "Google Trends is relative (0-100) and can be distorted by seasonality and, as Camillo later argued (2025), by AI-generated query traffic. Treat spikes that contradict other signals with caution.",
+          "series_tail": {
+            "Lululemon": [
+              {
+                "date": "2026-07-26",
+                "value": 38
+              },
+              {
+                "date": "2026-08-02",
+                "value": 38
+              },
+              {
+                "date": "2026-08-09",
+                "value": 38
+              },
+              {
+                "date": "2026-08-16",
+                "value": 33
+              },
+              {
+                "date": "2026-08-23",
+                "value": 32
+              },
+              {
+                "date": "2026-08-30",
+                "value": 32
+              },
+              {
+                "date": "2026-09-06",
+                "value": 32
+              },
+              {
+                "date": "2026-09-13",
+                "value": 29
+              },
+              {
+                "date": "2026-09-20",
+                "value": 29
+              },
+              {
+                "date": "2026-09-27",
+                "value": 31
+              },
+              {
+                "date": "2026-10-04",
+                "value": 29
+              },
+              {
+                "date": "2026-10-11",
+                "value": 28
+              },
+              {
+                "date": "2026-10-18",
+                "value": 29
+              },
+              {
+                "date": "2026-10-25",
+                "value": 28
+              },
+              {
+                "date": "2026-11-01",
+                "value": 30
+              },
+              {
+                "date": "2026-11-08",
+                "value": 36
+              }
+            ],
+            "Lululemon bag": [
+              {
+                "date": "2026-07-26",
+                "value": 2
+              },
+              {
+                "date": "2026-08-02",
+                "value": 2
+              },
+              {
+                "date": "2026-08-09",
+                "value": 2
+              },
+              {
+                "date": "2026-08-16",
+                "value": 2
+              },
+              {
+                "date": "2026-08-23",
+                "value": 2
+              },
+              {
+                "date": "2026-08-30",
+                "value": 2
+              },
+              {
+                "date": "2026-09-06",
+                "value": 2
+              },
+              {
+                "date": "2026-09-13",
+                "value": 2
+              },
+              {
+                "date": "2026-09-20",
+                "value": 2
+              },
+              {
+                "date": "2026-09-27",
+                "value": 1
+              },
+              {
+                "date": "2026-10-04",
+                "value": 1
+              },
+              {
+                "date": "2026-10-11",
+                "value": 1
+              },
+              {
+                "date": "2026-10-18",
+                "value": 1
+              },
+              {
+                "date": "2026-10-25",
+                "value": 1
+              },
+              {
+                "date": "2026-11-01",
+                "value": 1
+              },
+              {
+                "date": "2026-11-08",
+                "value": 2
+              }
+            ]
+          }
+        },
+        "reddit": {
+          "ok": false,
+          "n_posts": 0,
+          "sentiment": {
+            "score": 0.0,
+            "label": "neutral",
+            "engine": "none",
+            "n_texts": 0
+          },
+          "volume_0_100": 0.0,
+          "combined_0_100": null,
+          "errors": [
+            "403 for https://www.reddit.com/search.json?q=%24LULU%20OR%20LULU&sort=new&limit=40&t=mon",
+            "403 for https://www.reddit.com/r/wallstreetbets/search.json?q=LULU&restrict_sr=1&sort=ne",
+            "403 for https://www.reddit.com/r/stocks/search.json?q=LULU&restrict_sr=1&sort=new&limit=",
+            "403 for https://www.reddit.com/r/investing/search.json?q=LULU&restrict_sr=1&sort=new&lim",
+            "403 for https://www.reddit.com/r/StockMarket/search.json?q=LULU&restrict_sr=1&sort=new&l",
+            "403 for https://www.reddit.com/r/options/search.json?q=LULU&restrict_sr=1&sort=new&limit",
+            "PullPush fallback HTTP 526"
+          ],
+          "sample_posts": []
+        },
+        "x": {
+          "ok": false,
+          "skipped": true,
+          "reason": "No CCT_X_BEARER / TWITTER_BEARER_TOKEN set; X is optional."
+        },
+        "composite": {
+          "score": 32.39,
+          "label": "fading",
+          "notes": [
+            "Reddit unavailable or empty."
+          ]
+        }
+      },
+      "divergence": {
+        "score": -15.14,
+        "flag": "watch",
+        "interpretation": "Moderate gap (social 32.39 vs analyst 47.53). Worth watching, not a flag."
+      }
+    },
+    {
+      "symbol": "ELF",
+      "keywords": [
+        "elf cosmetics",
+        "elf primer"
+      ],
+      "retrieved_at": "2026-11-12T17:50:26.241415+00:00",
+      "disclaimer": "Not financial advice. Heuristic research screen inspired by Camillo's information-imbalance idea. Data comes from free, unofficial sources and can be incomplete, delayed, or wrong.",
+      "analyst": {
+        "raw": {
+          "recommendation_mean": 2.278,
+          "analyst_bullishness": 68.06,
+          "recommendation_latest": {
+            "counts": {
+              "strongBuy": 1,
+              "buy": 11,
+              "hold": 6,
+              "sell": 0,
+              "strongSell": 0
+            },
+            "period": "0m"
+          },
+          "price_targets": {
+            "current": 114.415,
+            "high": 140.0,
+            "low": 110.0,
+            "mean": 131.0,
+            "median": 135.0
+          },
+          "implied_upside_pct": 14.5,
+          "last_close": 114.41500091552734,
+          "recent_action_balance": 1.0,
+          "recent_action_n": 46,
+          "upgrades_downgrades": [
+            {
+              "GradeDate": "2026-11-10T17:02:55",
+              "Firm": "Morgan Stanley",
+              "ToGrade": "Equal-Weight",
+              "FromGrade": "Equal-Weight",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 125.0,
+              "priorPriceTarget": 103.0
+            },
+            {
+              "GradeDate": "2026-11-06T00:54:50",
+              "Firm": "UBS",
+              "ToGrade": "Neutral",
+              "FromGrade": "Neutral",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 129.0,
+              "priorPriceTarget": 116.0
+            },
+            {
+              "GradeDate": "2026-11-05T23:28:50",
+              "Firm": "JP Morgan",
+              "ToGrade": "Overweight",
+              "FromGrade": "Overweight",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 135.0,
+              "priorPriceTarget": 130.0
+            },
+            {
+              "GradeDate": "2026-11-05T21:31:47",
+              "Firm": "Citigroup",
+              "ToGrade": "Buy",
+              "FromGrade": "Buy",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 139.0,
+              "priorPriceTarget": 130.0
+            },
+            {
+              "GradeDate": "2026-11-05T16:35:53",
+              "Firm": "Piper Sandler",
+              "ToGrade": "Neutral",
+              "FromGrade": "Neutral",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 110.0,
+              "priorPriceTarget": 100.0
+            },
+            {
+              "GradeDate": "2026-11-05T14:14:59",
+              "Firm": "Evercore ISI Group",
+              "ToGrade": "In-Line",
+              "FromGrade": "In-Line",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 115.0,
+              "priorPriceTarget": 100.0
+            },
+            {
+              "GradeDate": "2026-10-22T18:20:55",
+              "Firm": "Canaccord Genuity",
+              "ToGrade": "Buy",
+              "FromGrade": "Buy",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 137.0,
+              "priorPriceTarget": 123.0
+            },
+            {
+              "GradeDate": "2026-10-19T19:49:35",
+              "Firm": "JP Morgan",
+              "ToGrade": "Overweight",
+              "FromGrade": "Overweight",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 130.0,
+              "priorPriceTarget": 106.0
+            }
+          ],
+          "news": [
+            {
+              "title": "Sally Beauty Q4 Earnings Beat Estimates on Sales Growth & Cost Control",
+              "publisher": "Zacks",
+              "published": "2026-11-11T17:07:00Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/sally-beauty-q4-earnings-beat-170700175.html"
+            },
+            {
+              "title": "Can Estee Lauder's New Skin Science Strategy Fuel Long-Term Growth?",
+              "publisher": "Zacks",
+              "published": "2026-11-11T16:44:00Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/estee-lauders-skin-science-strategy-164400322.html"
+            },
+            {
+              "title": "Rhode\u2019s Road Map to $1 Billion in Sales",
+              "publisher": "WWD",
+              "published": "2026-11-11T05:01:00Z",
+              "url": "https://wwd.com/beauty-industry-news/beauty-features/rhodes-roadmap-1-billion-sales-1239408689/"
+            },
+            {
+              "title": "e.l.f. Beauty (ELF) is Attracting Investor Attention: Here is What You Should Know",
+              "publisher": "Zacks",
+              "published": "2026-11-10T13:00:02Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/e-l-f-beauty-elf-130002975.html"
+            },
+            {
+              "title": "Why is e.l.f. Beauty (ELF) stock soaring today",
+              "publisher": "StockStory",
+              "published": "2026-11-10T06:37:36Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/why-e-l-f-beauty-063736114.html"
+            },
+            {
+              "title": "Celsius vs. e.l.f. Beauty: Which Consumer Goods Stock Is the Better Buy for 2027?",
+              "publisher": "Motley Fool",
+              "published": "2026-11-09T13:44:02Z",
+              "url": "https://www.fool.com/coverage/better-buy/2026/11/09/celsius-vs-e-l-f-beauty-which-consumer-goods-stock-is-the-better-buy-for-2027/"
+            },
+            {
+              "title": "Is BJ's Wholesale Club (BJ) Stock Outpacing Its Consumer Staples Peers This Year?",
+              "publisher": "Zacks",
+              "published": "2026-11-09T13:40:02Z",
+              "url": "https://finance.yahoo.com/news/bjs-wholesale-club-bj-stock-134002201.html"
+            },
+            {
+              "title": "Is It Worth Investing in e.l.f. Beauty (ELF) Based on Wall Street's Bullish Views?",
+              "publisher": "Zacks",
+              "published": "2026-11-09T13:30:02Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/worth-investing-e-l-f-133002273.html"
+            }
+          ],
+          "warnings": []
+        },
+        "text_sentiment": {
+          "score": 0.0787,
+          "label": "neutral",
+          "engine": "vader",
+          "n_texts": 60,
+          "sample": [
+            {
+              "text": "Sally Beauty Q4 Earnings Beat Estimates on Sales Growth & Cost Control",
+              "score": 0.7506,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Can Estee Lauder's New Skin Science Strategy Fuel Long-Term Growth?",
+              "score": 0.3818,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Rhode\u2019s Road Map to $1 Billion in Sales",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "e.l.f. Beauty (ELF) is Attracting Investor Attention: Here is What You Should Know",
+              "score": 0.7845,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Why is e.l.f. Beauty (ELF) stock soaring today",
+              "score": 0.5859,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Celsius vs. e.l.f. Beauty: Which Consumer Goods Stock Is the Better Buy for 2027?",
+              "score": 0.7717,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Is BJ's Wholesale Club (BJ) Stock Outpacing Its Consumer Staples Peers This Year?",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Is It Worth Investing in e.l.f. Beauty (ELF) Based on Wall Street's Bullish Views?",
+              "score": 0.6908,
+              "engine": "vader",
+              "source": "analyst_news"
+            }
+          ]
+        },
+        "composite": {
+          "score": 61.52,
+          "stance": "neutral",
+          "components": {
+            "consensus_bullishness": 68.06,
+            "recent_actions": 1.0,
+            "text_sentiment": 0.0787,
+            "implied_upside_pct": 14.5
+          }
+        }
+      },
+      "social": {
+        "trends": {
+          "ok": true,
+          "error": null,
+          "combined_momentum": 37.82,
+          "momentum": {
+            "elf cosmetics": {
+              "recent_avg": 21.85,
+              "year_ago_avg": 28.77,
+              "baseline_avg": 31.73,
+              "yoy_change": -0.2406,
+              "vs_baseline": -0.3116,
+              "momentum_0_100": 36.55
+            },
+            "elf primer": {
+              "recent_avg": 32.15,
+              "year_ago_avg": 39.85,
+              "baseline_avg": 43.22,
+              "yoy_change": -0.1931,
+              "vs_baseline": -0.256,
+              "momentum_0_100": 39.09
+            }
+          },
+          "note": "Google Trends is relative (0-100) and can be distorted by seasonality and, as Camillo later argued (2025), by AI-generated query traffic. Treat spikes that contradict other signals with caution.",
+          "series_tail": {
+            "elf cosmetics": [
+              {
+                "date": "2026-07-26",
+                "value": 26
+              },
+              {
+                "date": "2026-08-02",
+                "value": 24
+              },
+              {
+                "date": "2026-08-09",
+                "value": 22
+              },
+              {
+                "date": "2026-08-16",
+                "value": 25
+              },
+              {
+                "date": "2026-08-23",
+                "value": 27
+              },
+              {
+                "date": "2026-08-30",
+                "value": 22
+              },
+              {
+                "date": "2026-09-06",
+                "value": 19
+              },
+              {
+                "date": "2026-09-13",
+                "value": 22
+              },
+              {
+                "date": "2026-09-20",
+                "value": 21
+              },
+              {
+                "date": "2026-09-27",
+                "value": 21
+              },
+              {
+                "date": "2026-10-04",
+                "value": 21
+              },
+              {
+                "date": "2026-10-11",
+                "value": 23
+              },
+              {
+                "date": "2026-10-18",
+                "value": 21
+              },
+              {
+                "date": "2026-10-25",
+                "value": 20
+              },
+              {
+                "date": "2026-11-01",
+                "value": 21
+              },
+              {
+                "date": "2026-11-08",
+                "value": 21
+              }
+            ],
+            "elf primer": [
+              {
+                "date": "2026-07-26",
+                "value": 32
+              },
+              {
+                "date": "2026-08-02",
+                "value": 35
+              },
+              {
+                "date": "2026-08-09",
+                "value": 32
+              },
+              {
+                "date": "2026-08-16",
+                "value": 33
+              },
+              {
+                "date": "2026-08-23",
+                "value": 35
+              },
+              {
+                "date": "2026-08-30",
+                "value": 31
+              },
+              {
+                "date": "2026-09-06",
+                "value": 33
+              },
+              {
+                "date": "2026-09-13",
+                "value": 30
+              },
+              {
+                "date": "2026-09-20",
+                "value": 29
+              },
+              {
+                "date": "2026-09-27",
+                "value": 30
+              },
+              {
+                "date": "2026-10-04",
+                "value": 32
+              },
+              {
+                "date": "2026-10-11",
+                "value": 35
+              },
+              {
+                "date": "2026-10-18",
+                "value": 31
+              },
+              {
+                "date": "2026-10-25",
+                "value": 38
+              },
+              {
+                "date": "2026-11-01",
+                "value": 28
+              },
+              {
+                "date": "2026-11-08",
+                "value": 33
+              }
+            ]
+          }
+        },
+        "reddit": {
+          "ok": false,
+          "n_posts": 0,
+          "sentiment": {
+            "score": 0.0,
+            "label": "neutral",
+            "engine": "none",
+            "n_texts": 0
+          },
+          "volume_0_100": 0.0,
+          "combined_0_100": null,
+          "errors": [
+            "403 for https://www.reddit.com/search.json?q=%24ELF%20OR%20ELF&sort=new&limit=40&t=month",
+            "403 for https://www.reddit.com/r/wallstreetbets/search.json?q=ELF&restrict_sr=1&sort=new",
+            "403 for https://www.reddit.com/r/stocks/search.json?q=ELF&restrict_sr=1&sort=new&limit=1",
+            "403 for https://www.reddit.com/r/investing/search.json?q=ELF&restrict_sr=1&sort=new&limi",
+            "403 for https://www.reddit.com/r/StockMarket/search.json?q=ELF&restrict_sr=1&sort=new&li",
+            "403 for https://www.reddit.com/r/options/search.json?q=ELF&restrict_sr=1&sort=new&limit=",
+            "PullPush fallback HTTP 526"
+          ],
+          "sample_posts": []
+        },
+        "x": {
+          "ok": false,
+          "skipped": true,
+          "reason": "No CCT_X_BEARER / TWITTER_BEARER_TOKEN set; X is optional."
+        },
+        "composite": {
+          "score": 37.82,
+          "label": "fading",
+          "notes": [
+            "Reddit unavailable or empty."
+          ]
+        }
+      },
+      "divergence": {
+        "score": -23.7,
+        "flag": "late_or_crowded",
+        "interpretation": "Analysts are already constructive (61.52) while social momentum is softer (37.82). The imbalance, if any, may already be closing."
+      }
+    },
+    {
+      "symbol": "NWL",
+      "keywords": [
+        "Elmer's glue",
+        "Newell Brands"
+      ],
+      "retrieved_at": "2026-11-12T17:50:43.204746+00:00",
+      "disclaimer": "Not financial advice. Heuristic research screen inspired by Camillo's information-imbalance idea. Data comes from free, unofficial sources and can be incomplete, delayed, or wrong.",
+      "analyst": {
+        "raw": {
+          "recommendation_mean": 2.556,
+          "analyst_bullishness": 61.11,
+          "recommendation_latest": {
+            "counts": {
+              "strongBuy": 2,
+              "buy": 1,
+              "hold": 5,
+              "sell": 1,
+              "strongSell": 0
+            },
+            "period": "0m"
+          },
+          "price_targets": {
+            "current": 5.84,
+            "high": 11.0,
+            "low": 5.0,
+            "mean": 6.40625,
+            "median": 5.625
+          },
+          "implied_upside_pct": 9.7,
+          "last_close": 5.840000152587891,
+          "recent_action_balance": -1.0,
+          "recent_action_n": 10,
+          "upgrades_downgrades": [
+            {
+              "GradeDate": "2026-11-02T21:50:29",
+              "Firm": "UBS",
+              "ToGrade": "Neutral",
+              "FromGrade": "Neutral",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 5.75,
+              "priorPriceTarget": 5.5
+            },
+            {
+              "GradeDate": "2026-11-02T18:43:40",
+              "Firm": "Citigroup",
+              "ToGrade": "Neutral",
+              "FromGrade": "Neutral",
+              "Action": "main",
+              "priceTargetAction": "Lowers",
+              "currentPriceTarget": 5.5,
+              "priorPriceTarget": 6.0
+            },
+            {
+              "GradeDate": "2026-08-04T14:54:31",
+              "Firm": "Citigroup",
+              "ToGrade": "Neutral",
+              "FromGrade": "Neutral",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 6.0,
+              "priorPriceTarget": 5.5
+            },
+            {
+              "GradeDate": "2026-08-03T21:25:34",
+              "Firm": "Canaccord Genuity",
+              "ToGrade": "Buy",
+              "FromGrade": "Buy",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 11.0,
+              "priorPriceTarget": 9.0
+            },
+            {
+              "GradeDate": "2026-08-03T20:59:51",
+              "Firm": "UBS",
+              "ToGrade": "Neutral",
+              "FromGrade": "Neutral",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 5.5,
+              "priorPriceTarget": 4.75
+            },
+            {
+              "GradeDate": "2026-08-03T16:03:50",
+              "Firm": "RBC Capital",
+              "ToGrade": "Sector Perform",
+              "FromGrade": "Sector Perform",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 5.0,
+              "priorPriceTarget": 4.0
+            },
+            {
+              "GradeDate": "2026-07-21T13:32:42",
+              "Firm": "Barclays",
+              "ToGrade": "Overweight",
+              "FromGrade": "Overweight",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 7.0,
+              "priorPriceTarget": 5.0
+            },
+            {
+              "GradeDate": "2026-07-16T18:48:06",
+              "Firm": "JP Morgan",
+              "ToGrade": "Overweight",
+              "FromGrade": "Overweight",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 7.0,
+              "priorPriceTarget": 5.0
+            }
+          ],
+          "news": [
+            {
+              "title": "Newell Brands (NWL) Jumped, What Is Behind The Fresh Attention?",
+              "publisher": "Simply Wall St.",
+              "published": "2026-11-10T06:13:07Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/newell-brands-nwl-jumped-behind-061307915.html"
+            },
+            {
+              "title": "Hamilton Beach\u2019s Next Leg of Growth \u2013 Quarterly Update Report",
+              "publisher": "Exec Edge",
+              "published": "2026-11-06T23:10:29Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/hamilton-beach-next-leg-growth-231029793.html"
+            },
+            {
+              "title": "NWL vs. CHD: Which Stock Is the Better Value Option?",
+              "publisher": "Zacks",
+              "published": "2026-11-03T15:40:02Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/nwl-vs-chd-stock-better-154002052.html"
+            },
+            {
+              "title": "Clorox Q1 Earnings Beat Estimates on Higher Sales & Cost Savings",
+              "publisher": "Zacks",
+              "published": "2026-11-03T15:19:00Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/clorox-q1-earnings-beat-estimates-151900919.html"
+            },
+            {
+              "title": "Are Investors Undervaluing Ahold (ADRNY) Right Now?",
+              "publisher": "Zacks",
+              "published": "2026-11-03T13:40:03Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/investors-undervaluing-ahold-adrny-now-134003509.html"
+            },
+            {
+              "title": "Newell Brands (NWL) Rockets 15% Higher Alongside Outlook; Analyst Hikes Price Target",
+              "publisher": "Insider Monkey",
+              "published": "2026-11-03T00:48:21Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/newell-brands-nwl-rockets-15-004821457.html"
+            },
+            {
+              "title": "Newell Brands Inc (NWL) (Q3 2026) Earnings Call Highlights: Broad-Based Growth and Margin ...",
+              "publisher": "GuruFocus.com",
+              "published": "2026-11-01T09:04:22Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/newell-brands-inc-nwl-q3-090422014.html"
+            },
+            {
+              "title": "Newell Brands Sinks 11% Despite Raised Sales Outlook as Inflation \u201cExceeded Our Expectations\u201d",
+              "publisher": "TIKR",
+              "published": "2026-10-30T20:24:04Z",
+              "url": "https://www.tikr.com/blog/newell-brands-sinks-11-despite-raised-sales-outlook-as-inflation-exceeded-our-expectations?ref=yahoofinance&tlnk=yf-261030-45xgq9q5"
+            }
+          ],
+          "warnings": []
+        },
+        "text_sentiment": {
+          "score": 0.0039,
+          "label": "neutral",
+          "engine": "vader",
+          "n_texts": 60,
+          "sample": [
+            {
+              "text": "Newell Brands (NWL) Jumped, What Is Behind The Fresh Attention?",
+              "score": 0.3182,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Hamilton Beach\u2019s Next Leg of Growth \u2013 Quarterly Update Report",
+              "score": 0.3818,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "NWL vs. CHD: Which Stock Is the Better Value Option?",
+              "score": 0.6486,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Clorox Q1 Earnings Beat Estimates on Higher Sales & Cost Savings",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Are Investors Undervaluing Ahold (ADRNY) Right Now?",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Newell Brands (NWL) Rockets 15% Higher Alongside Outlook; Analyst Hikes Price Target",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Newell Brands Inc (NWL) (Q3 2026) Earnings Call Highlights: Broad-Based Growth and Margin ...",
+              "score": 0.3818,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Newell Brands Sinks 11% Despite Raised Sales Outlook as Inflation \u201cExceeded Our Expectations\u201d",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            }
+          ]
+        },
+        "composite": {
+          "score": 54.47,
+          "stance": "neutral",
+          "components": {
+            "consensus_bullishness": 61.11,
+            "recent_actions": -1.0,
+            "text_sentiment": 0.0039,
+            "implied_upside_pct": 9.7
+          }
+        }
+      },
+      "social": {
+        "trends": {
+          "ok": true,
+          "error": null,
+          "combined_momentum": 38.58,
+          "momentum": {
+            "Elmer's glue": {
+              "recent_avg": 36.08,
+              "year_ago_avg": 43.23,
+              "baseline_avg": 47.98,
+              "yoy_change": -0.1655,
+              "vs_baseline": -0.248,
+              "momentum_0_100": 40.08
+            },
+            "Newell Brands": {
+              "recent_avg": 16.54,
+              "year_ago_avg": 21.77,
+              "baseline_avg": 23.16,
+              "yoy_change": -0.2403,
+              "vs_baseline": -0.2858,
+              "momentum_0_100": 37.08
+            }
+          },
+          "note": "Google Trends is relative (0-100) and can be distorted by seasonality and, as Camillo later argued (2025), by AI-generated query traffic. Treat spikes that contradict other signals with caution.",
+          "series_tail": {
+            "Elmer's glue": [
+              {
+                "date": "2026-07-26",
+                "value": 50
+              },
+              {
+                "date": "2026-08-02",
+                "value": 58
+              },
+              {
+                "date": "2026-08-09",
+                "value": 52
+              },
+              {
+                "date": "2026-08-16",
+                "value": 41
+              },
+              {
+                "date": "2026-08-23",
+                "value": 33
+              },
+              {
+                "date": "2026-08-30",
+                "value": 36
+              },
+              {
+                "date": "2026-09-06",
+                "value": 38
+              },
+              {
+                "date": "2026-09-13",
+                "value": 33
+              },
+              {
+                "date": "2026-09-20",
+                "value": 36
+              },
+              {
+                "date": "2026-09-27",
+                "value": 36
+              },
+              {
+                "date": "2026-10-04",
+                "value": 37
+              },
+              {
+                "date": "2026-10-11",
+                "value": 36
+              },
+              {
+                "date": "2026-10-18",
+                "value": 39
+              },
+              {
+                "date": "2026-10-25",
+                "value": 44
+              },
+              {
+                "date": "2026-11-01",
+                "value": 29
+              },
+              {
+                "date": "2026-11-08",
+                "value": 31
+              }
+            ],
+            "Newell Brands": [
+              {
+                "date": "2026-07-26",
+                "value": 19
+              },
+              {
+                "date": "2026-08-02",
+                "value": 25
+              },
+              {
+                "date": "2026-08-09",
+                "value": 24
+              },
+              {
+                "date": "2026-08-16",
+                "value": 25
+              },
+              {
+                "date": "2026-08-23",
+                "value": 17
+              },
+              {
+                "date": "2026-08-30",
+                "value": 14
+              },
+              {
+                "date": "2026-09-06",
+                "value": 16
+              },
+              {
+                "date": "2026-09-13",
+                "value": 12
+              },
+              {
+                "date": "2026-09-20",
+                "value": 19
+              },
+              {
+                "date": "2026-09-27",
+                "value": 14
+              },
+              {
+                "date": "2026-10-04",
+                "value": 16
+              },
+              {
+                "date": "2026-10-11",
+                "value": 14
+              },
+              {
+                "date": "2026-10-18",
+                "value": 16
+              },
+              {
+                "date": "2026-10-25",
+                "value": 18
+              },
+              {
+                "date": "2026-11-01",
+                "value": 17
+              },
+              {
+                "date": "2026-11-08",
+                "value": 17
+              }
+            ]
+          }
+        },
+        "reddit": {
+          "ok": false,
+          "n_posts": 0,
+          "sentiment": {
+            "score": 0.0,
+            "label": "neutral",
+            "engine": "none",
+            "n_texts": 0
+          },
+          "volume_0_100": 0.0,
+          "combined_0_100": null,
+          "errors": [
+            "403 for https://www.reddit.com/search.json?q=%24NWL%20OR%20NWL&sort=new&limit=40&t=month",
+            "403 for https://www.reddit.com/r/wallstreetbets/search.json?q=NWL&restrict_sr=1&sort=new",
+            "403 for https://www.reddit.com/r/stocks/search.json?q=NWL&restrict_sr=1&sort=new&limit=1",
+            "403 for https://www.reddit.com/r/investing/search.json?q=NWL&restrict_sr=1&sort=new&limi",
+            "403 for https://www.reddit.com/r/StockMarket/search.json?q=NWL&restrict_sr=1&sort=new&li",
+            "403 for https://www.reddit.com/r/options/search.json?q=NWL&restrict_sr=1&sort=new&limit=",
+            "PullPush fallback HTTP 526"
+          ],
+          "sample_posts": []
+        },
+        "x": {
+          "ok": false,
+          "skipped": true,
+          "reason": "No CCT_X_BEARER / TWITTER_BEARER_TOKEN set; X is optional."
+        },
+        "composite": {
+          "score": 38.58,
+          "label": "fading",
+          "notes": [
+            "Reddit unavailable or empty."
+          ]
+        }
+      },
+      "divergence": {
+        "score": -15.89,
+        "flag": "watch",
+        "interpretation": "Moderate gap (social 38.58 vs analyst 54.47). Worth watching, not a flag."
+      }
+    },
+    {
+      "symbol": "TPR",
+      "keywords": [
+        "Coach bag",
+        "Tapestry Coach"
+      ],
+      "retrieved_at": "2026-11-12T17:51:01.577555+00:00",
+      "disclaimer": "Not financial advice. Heuristic research screen inspired by Camillo's information-imbalance idea. Data comes from free, unofficial sources and can be incomplete, delayed, or wrong.",
+      "analyst": {
+        "raw": {
+          "recommendation_mean": 2.045,
+          "analyst_bullishness": 73.86,
+          "recommendation_latest": {
+            "counts": {
+              "strongBuy": 6,
+              "buy": 11,
+              "hold": 4,
+              "sell": 0,
+              "strongSell": 1
+            },
+            "period": "0m"
+          },
+          "price_targets": {
+            "current": 133.895,
+            "high": 211.0,
+            "low": 96.0,
+            "mean": 163.55,
+            "median": 159.5
+          },
+          "implied_upside_pct": 22.15,
+          "last_close": 133.89500427246094,
+          "recent_action_balance": 0.5,
+          "recent_action_n": 22,
+          "upgrades_downgrades": [
+            {
+              "GradeDate": "2026-11-10T12:54:45",
+              "Firm": "Cantor Fitzgerald",
+              "ToGrade": "Overweight",
+              "FromGrade": "",
+              "Action": "init",
+              "priceTargetAction": "Announces",
+              "currentPriceTarget": 159.0,
+              "priorPriceTarget": 0.0
+            },
+            {
+              "GradeDate": "2026-11-06T16:37:19",
+              "Firm": "Barclays",
+              "ToGrade": "Overweight",
+              "FromGrade": "Overweight",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 195.0,
+              "priorPriceTarget": 185.0
+            },
+            {
+              "GradeDate": "2026-11-06T14:58:31",
+              "Firm": "Evercore ISI Group",
+              "ToGrade": "Outperform",
+              "FromGrade": "Outperform",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 160.0,
+              "priorPriceTarget": 145.0
+            },
+            {
+              "GradeDate": "2026-11-06T14:03:07",
+              "Firm": "Wells Fargo",
+              "ToGrade": "Overweight",
+              "FromGrade": "Overweight",
+              "Action": "main",
+              "priceTargetAction": "Raises",
+              "currentPriceTarget": 155.0,
+              "priorPriceTarget": 150.0
+            },
+            {
+              "GradeDate": "2026-11-03T15:48:36",
+              "Firm": "Evercore ISI Group",
+              "ToGrade": "Outperform",
+              "FromGrade": "Outperform",
+              "Action": "main",
+              "priceTargetAction": "Lowers",
+              "currentPriceTarget": 145.0,
+              "priorPriceTarget": 160.0
+            },
+            {
+              "GradeDate": "2026-10-29T13:30:06",
+              "Firm": "Wells Fargo",
+              "ToGrade": "Overweight",
+              "FromGrade": "Overweight",
+              "Action": "main",
+              "priceTargetAction": "Lowers",
+              "currentPriceTarget": 150.0,
+              "priorPriceTarget": 160.0
+            },
+            {
+              "GradeDate": "2026-10-27T11:03:13",
+              "Firm": "Baird",
+              "ToGrade": "Outperform",
+              "FromGrade": "Outperform",
+              "Action": "main",
+              "priceTargetAction": "Lowers",
+              "currentPriceTarget": 150.0,
+              "priorPriceTarget": 165.0
+            },
+            {
+              "GradeDate": "2026-10-20T13:03:30",
+              "Firm": "UBS",
+              "ToGrade": "Buy",
+              "FromGrade": "Buy",
+              "Action": "main",
+              "priceTargetAction": "Lowers",
+              "currentPriceTarget": 200.0,
+              "priorPriceTarget": 232.0
+            }
+          ],
+          "news": [
+            {
+              "title": "Victoria's Secret Builds Overseas Momentum as China Leads the Way",
+              "publisher": "Zacks",
+              "published": "2026-11-12T11:35:00Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/victorias-secret-builds-overseas-momentum-113500202.html"
+            },
+            {
+              "title": "How Coach's Pricing Power & Global Demand Fuel Tapestry's Growth Story",
+              "publisher": "Zacks",
+              "published": "2026-11-10T18:16:00Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/coachs-pricing-power-global-demand-181600256.html"
+            },
+            {
+              "title": "How Ralph Lauren Stock Is Engineered To Make Money For You",
+              "publisher": "Trefis",
+              "published": "2026-11-10T15:18:50Z",
+              "url": "https://www.trefis.com/stock/rl/articles/623984/how-ralph-lauren-stock-is-engineered-to-make-money-for-you/2026-11-10"
+            },
+            {
+              "title": "DraftKings downgraded, Sarepta upgraded: Wall Street's top analyst calls",
+              "publisher": "The Fly",
+              "published": "2026-11-10T14:46:58Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/draftkings-downgraded-sarepta-upgraded-wall-144658393.html"
+            },
+            {
+              "title": "Why Did Ralph Lauren Stock Jump?",
+              "publisher": "Trefis",
+              "published": "2026-11-10T13:11:23Z",
+              "url": "https://www.trefis.com/stock/rl/articles/624102/why-did-ralph-lauren-stock-jump/2026-11-10"
+            },
+            {
+              "title": "What Makes Tapestry (TPR) a Strong Momentum Stock: Buy Now?",
+              "publisher": "Zacks",
+              "published": "2026-11-09T16:00:04Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/makes-tapestry-tpr-strong-momentum-160004956.html"
+            },
+            {
+              "title": "International Markets and Tapestry (TPR): A Deep Dive for Investors",
+              "publisher": "Zacks",
+              "published": "2026-11-09T13:15:07Z",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/international-markets-tapestry-tpr-deep-131507132.html"
+            },
+            {
+              "title": "Tapestry Q1 Earnings Call Highlights",
+              "publisher": "MarketBeat",
+              "published": "2026-11-08T15:14:24Z",
+              "url": "https://www.marketbeat.com/instant-alerts/transcript-tapestry-q1-earnings-call-highlights-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance"
+            }
+          ],
+          "warnings": []
+        },
+        "text_sentiment": {
+          "score": -0.119,
+          "label": "neutral",
+          "engine": "vader",
+          "n_texts": 60,
+          "sample": [
+            {
+              "text": "Victoria's Secret Builds Overseas Momentum as China Leads the Way",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "How Coach's Pricing Power & Global Demand Fuel Tapestry's Growth Story",
+              "score": 0.2732,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "How Ralph Lauren Stock Is Engineered To Make Money For You",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "DraftKings downgraded, Sarepta upgraded: Wall Street's top analyst calls",
+              "score": 0.2023,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Why Did Ralph Lauren Stock Jump?",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "What Makes Tapestry (TPR) a Strong Momentum Stock: Buy Now?",
+              "score": 0.5106,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "International Markets and Tapestry (TPR): A Deep Dive for Investors",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            },
+            {
+              "text": "Tapestry Q1 Earnings Call Highlights",
+              "score": 0.0,
+              "engine": "vader",
+              "source": "analyst_news"
+            }
+          ]
+        },
+        "composite": {
+          "score": 63.73,
+          "stance": "neutral",
+          "components": {
+            "consensus_bullishness": 73.86,
+            "recent_actions": 0.5,
+            "text_sentiment": -0.119,
+            "implied_upside_pct": 22.15
+          }
+        }
+      },
+      "social": {
+        "trends": {
+          "ok": true,
+          "error": null,
+          "combined_momentum": 59.84,
+          "momentum": {
+            "Coach bag": {
+              "recent_avg": 32.62,
+              "year_ago_avg": 26.15,
+              "baseline_avg": 20.21,
+              "yoy_change": 0.2471,
+              "vs_baseline": 0.6136,
+              "momentum_0_100": 69.68
+            },
+            "Tapestry Coach": {
+              "recent_avg": 0.0,
+              "year_ago_avg": 0.0,
+              "baseline_avg": 0.0,
+              "yoy_change": 0.0,
+              "vs_baseline": 0.0,
+              "momentum_0_100": 50.0
+            }
+          },
+          "note": "Google Trends is relative (0-100) and can be distorted by seasonality and, as Camillo later argued (2025), by AI-generated query traffic. Treat spikes that contradict other signals with caution.",
+          "series_tail": {
+            "Coach bag": [
+              {
+                "date": "2026-07-26",
+                "value": 37
+              },
+              {
+                "date": "2026-08-02",
+                "value": 37
+              },
+              {
+                "date": "2026-08-09",
+                "value": 36
+              },
+              {
+                "date": "2026-08-16",
+                "value": 35
+              },
+              {
+                "date": "2026-08-23",
+                "value": 33
+              },
+              {
+                "date": "2026-08-30",
+                "value": 31
+              },
+              {
+                "date": "2026-09-06",
+                "value": 36
+              },
+              {
+                "date": "2026-09-13",
+                "value": 33
+              },
+              {
+                "date": "2026-09-20",
+                "value": 34
+              },
+              {
+                "date": "2026-09-27",
+                "value": 32
+              },
+              {
+                "date": "2026-10-04",
+                "value": 31
+              },
+              {
+                "date": "2026-10-11",
+                "value": 30
+              },
+              {
+                "date": "2026-10-18",
+                "value": 30
+              },
+              {
+                "date": "2026-10-25",
+                "value": 28
+              },
+              {
+                "date": "2026-11-01",
+                "value": 31
+              },
+              {
+                "date": "2026-11-08",
+                "value": 40
+              }
+            ],
+            "Tapestry Coach": [
+              {
+                "date": "2026-07-26",
+                "value": 0
+              },
+              {
+                "date": "2026-08-02",
+                "value": 0
+              },
+              {
+                "date": "2026-08-09",
+                "value": 0
+              },
+              {
+                "date": "2026-08-16",
+                "value": 0
+              },
+              {
+                "date": "2026-08-23",
+                "value": 0
+              },
+              {
+                "date": "2026-08-30",
+                "value": 0
+              },
+              {
+                "date": "2026-09-06",
+                "value": 0
+              },
+              {
+                "date": "2026-09-13",
+                "value": 0
+              },
+              {
+                "date": "2026-09-20",
+                "value": 0
+              },
+              {
+                "date": "2026-09-27",
+                "value": 0
+              },
+              {
+                "date": "2026-10-04",
+                "value": 0
+              },
+              {
+                "date": "2026-10-11",
+                "value": 0
+              },
+              {
+                "date": "2026-10-18",
+                "value": 0
+              },
+              {
+                "date": "2026-10-25",
+                "value": 0
+              },
+              {
+                "date": "2026-11-01",
+                "value": 0
+              },
+              {
+                "date": "2026-11-08",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "reddit": {
+          "ok": false,
+          "n_posts": 0,
+          "sentiment": {
+            "score": 0.0,
+            "label": "neutral",
+            "engine": "none",
+            "n_texts": 0
+          },
+          "volume_0_100": 0.0,
+          "combined_0_100": null,
+          "errors": [
+            "403 for https://www.reddit.com/search.json?q=%24TPR%20OR%20TPR&sort=new&limit=40&t=month",
+            "403 for https://www.reddit.com/r/wallstreetbets/search.json?q=TPR&restrict_sr=1&sort=new",
+            "403 for https://www.reddit.com/r/stocks/search.json?q=TPR&restrict_sr=1&sort=new&limit=1",
+            "403 for https://www.reddit.com/r/investing/search.json?q=TPR&restrict_sr=1&sort=new&limi",
+            "403 for https://www.reddit.com/r/StockMarket/search.json?q=TPR&restrict_sr=1&sort=new&li",
+            "403 for https://www.reddit.com/r/options/search.json?q=TPR&restrict_sr=1&sort=new&limit=",
+            "PullPush fallback HTTP 526"
+          ],
+          "sample_posts": []
+        },
+        "x": {
+          "ok": false,
+          "skipped": true,
+          "reason": "No CCT_X_BEARER / TWITTER_BEARER_TOKEN set; X is optional."
+        },
+        "composite": {
+          "score": 59.84,
+          "label": "flat",
+          "notes": [
+            "Reddit unavailable or empty."
+          ]
+        }
+      },
+      "divergence": {
+        "score": -3.89,
+        "flag": "aligned",
+        "interpretation": "Social and Street readings are roughly in line; no clear divergence."
+      }
+    }
+  ]
+}
