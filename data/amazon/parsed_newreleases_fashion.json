@@ -1,0 +1,272 @@
+{
+  "kind": "newreleases_fashion",
+  "url": "https://www.amazon.com/gp/new-releases/fashion/",
+  "method": "Scrapling Fetcher",
+  "retrieved_at_utc": "2026-11-13T00:51:14Z",
+  "html_len": 436531,
+  "title": "Amazon.com New Releases: The best-selling new & future releases in Clothing, Shoes & Jewelry",
+  "products": [
+    {
+      "asin": "B0H6XT5NH9",
+      "rank": 1,
+      "title": "GAYHAY Ribbed Long Sleeve Shirts for Women Fitted Underscrub Fall Outfits | Slim Fashion Tops, Casual Basic Tees, Winter Laye",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/GAYHAY-Underscrub-Layering-Compression-Undershirt/dp/B0H6XT5NH9/ref=zg_bsnr_g_fashion_d_sccl_1/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HGQ39GV9",
+      "rank": 2,
+      "title": "GAYHAY Ribbed Long Sleeve Shirts for Women Fitted Underscrub Fall Outfits | Slim Fashion Tops, Casual Basic Tees, Winter Laye",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/JIZ-Translucent-Thermal-Pantyhose-Leggings/dp/B0HGQ39GV9/ref=zg_bsnr_g_fashion_d_sccl_2/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HFHLJZMJ",
+      "rank": 3,
+      "title": "JIZ Translucent Fleece Lined Tights Women, Thermal Tights for Women, Pantyhose Leggings, Warm Sheer Tights for Women Winter",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Christmas-Pajamas-Matching-Holiday-Sleepwear/dp/B0HFHLJZMJ/ref=zg_bsnr_g_fashion_d_sccl_3/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HCNPL5Q8",
+      "rank": 4,
+      "title": "Onyagin Family Christmas Pajamas Matching Sets Xmas Pjs | Matching Christmas Pajamas for Family Cute Holiday Plaid Sleepwear",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Ekouaer-Professional-Blouses-Classic-stretchy/dp/B0HCNPL5Q8/ref=zg_bsnr_g_fashion_d_sccl_4/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HFLY2J26",
+      "rank": 5,
+      "title": "Ekouaer 3/4 Sleeve Tops Women V Neck T Shirts Dressy Casual Blouses | Basic tees with decorative button cuffs, soft lightweig",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Facogoo-Trousers-Elastic-Outfits-Palazzo/dp/B0HFLY2J26/ref=zg_bsnr_g_fashion_d_sccl_5/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HP9ZZ9LK",
+      "rank": 6,
+      "title": "Facogoo Satin Wide Leg Dress Pants Silk Flowy Long Trousers for Women | Elastic Waist, Pull On, Dressy Outfits, Going Out, Fa",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Christmas-Pajama-Matching-Lounge-Elastic/dp/B0HP9ZZ9LK/ref=zg_bsnr_g_fashion_d_sccl_6/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HPPQYF6V",
+      "rank": 7,
+      "title": "Christmas Pajama Sets for Women 2 Piece Cute Print Matching Lounge Sets | Notch Lapel Long Sleeve Shirts & Elastic Waist Wide",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Tracksuit-Hoodies-Sweatsuit-Cardigans-Matching/dp/B0HPPQYF6V/ref=zg_bsnr_g_fashion_d_sccl_7/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HJQDB76Q",
+      "rank": 8,
+      "title": "Fall Mens Track Suits 2 Piece Set Full Zip Hoodies & Joggers Sweatsuit Sets | This Men's Sweatsuit Set Pairs a Soft Cardigans",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/BESTENA-Shapewear-shapewear-high-waist-under-dress/dp/B0HJQDB76Q/ref=zg_bsnr_g_fashion_d_sccl_8/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HP9Y9MY7",
+      "rank": 9,
+      "title": "BESTENA Tummy Control Shapewear Shorts, High Waisted Body Shaper | Girdle shapewear shorts smooth the tummy and thighs with h",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Christmas-Pajama-Matching-Lounge-Elastic/dp/B0HP9Y9MY7/ref=zg_bsnr_g_fashion_d_sccl_9/143-1588080-9300107"
+    },
+    {
+      "asin": "B0H5R4H3ZQ",
+      "rank": 10,
+      "title": "Christmas Pajama Sets for Women 2 Piece Cute Print Matching Lounge Sets | Notch Lapel Long Sleeve Shirts & Elastic Waist Wide",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Outfits-Matching-Clothing-Fashion-Tracksuits/dp/B0H5R4H3ZQ/ref=zg_bsnr_g_fashion_d_sccl_10/143-1588080-9300107"
+    },
+    {
+      "asin": "B0H8Y9PTBK",
+      "rank": 11,
+      "title": "WIHOLL Women's 2 Piece Matching Lounge Set Sweatsuits Fall Outfits | Long Sleeve V-Neck Tops, Elastic Waist Drawstring, Wide",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Trendy-Queen-Sweatshirt-Oversized-loungewear/dp/B0H8Y9PTBK/ref=zg_bsnr_g_fashion_d_sccl_11/143-1588080-9300107"
+    },
+    {
+      "asin": "B0H1LS26Q1",
+      "rank": 12,
+      "title": "Trendy Queen Womens Mock Neck Sweatshirt Oversized Casual Fall Clothes 2026 | Fleece lined, comfort sweater, slight stretch m",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Sweaters-Business-Lightweight-Turtleneck-Clothing/dp/B0H1LS26Q1/ref=zg_bsnr_g_fashion_d_sccl_12/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HK6SKFLF",
+      "rank": 13,
+      "title": "WIHOLL Womens Sweaters Mock Neck Long Sleeve Tops Fall Outfits Fashion 2026 | Business Casual, Women's Clothing, Work Shirts,",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Christmas-Sweatshirt-Embroidered-Oversized-Pullovers/dp/B0HK6SKFLF/ref=zg_bsnr_g_fashion_d_sccl_13/143-1588080-9300107"
+    },
+    {
+      "asin": "B0H758L1YP",
+      "rank": 14,
+      "title": "Ekouaer Womens 3/4 Length Sleeve Tops Boho Blouses Casual Pleated Shirts | Boho print, gathered front pleated detail, 3/4 len",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Ekouaer-Quarter-Elegant-gathered-lightweight/dp/B0H758L1YP/ref=zg_bsnr_g_fashion_d_sccl_14/143-1588080-9300107"
+    },
+    {
+      "asin": "B0H4576M3J",
+      "rank": 15,
+      "title": "Ekouaer Womens 3/4 Length Sleeve Tops Boho Blouses Casual Pleated Shirts | Boho print, gathered front pleated detail, 3/4 len",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Sweaters-Business-Outfits-Fashion-Jacquard/dp/B0H4576M3J/ref=zg_bsnr_g_fashion_d_sccl_15/143-1588080-9300107"
+    },
+    {
+      "asin": "B0H6WNP5L4",
+      "rank": 16,
+      "title": "WIHOLL Womens Fall Sweaters Contrast Raglan Sleeve Tops Fashion Clothing | Soft Knitted,Lightweight Pullover Sweater,Cozy Lon",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Sipaya-Shoulder-Sweaters-Chocolate-Oversized/dp/B0H6WNP5L4/ref=zg_bsnr_g_fashion_d_sccl_16/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HQ6S7W3K",
+      "rank": 17,
+      "title": "Sipaya Women's Sweaters Long Sleeve Off The Shoulder Tops Fall Going Out | Ribbed Cable Knit Oversized Sweaters,Comfiest Airp",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Hoodies-Zippered-Sweatshirt-Kangaroo-Lightweight/dp/B0HQ6S7W3K/ref=zg_bsnr_g_fashion_d_sccl_17/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HNN9KJLP",
+      "rank": 18,
+      "title": "Mens Zippered Hoodie Full Zip Lightweight for Winter | Men's Full Zip Hoodie, Hooded Zippered Sweatshirt, Kangaroo Pockets, L",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Leopard-Sweatshirt-Oversized-balloon-sleeves/dp/B0HNN9KJLP/ref=zg_bsnr_g_fashion_d_sccl_18/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HD6YV251",
+      "rank": 19,
+      "title": "Leopard Print Sweatshirt for Women Oversized Ruffle V Neck Long Sleeve Top | Soft cozy, ruffle V neck, balloon sleeves, loose",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Fisoew-Sweatshirt-Pullover-Oversized-Trending/dp/B0HD6YV251/ref=zg_bsnr_g_fashion_d_sccl_19/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HPB83D5Y",
+      "rank": 20,
+      "title": "Fisoew Womens Sweatshirt Mock Neck Henley Pullover Oversized Fall Outfits | Fall Fashion Clothes 2026,Long Sleeve Tops,Ruffle",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Christmas-Matching-Elastic-Sleepwear-Pajamas/dp/B0HPB83D5Y/ref=zg_bsnr_g_fashion_d_sccl_20/143-1588080-9300107"
+    },
+    {
+      "asin": "B0H8NS1R78",
+      "rank": 21,
+      "title": "Christmas Pajama Sets for Women 2 Piece Xmas Print Matching Lounge Sets | Notch Lapel Short Sleeve Shirt & Elastic Waist Wide",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Ekouaer3-Graphic-Vacation-Pleated-Blouses/dp/B0H8NS1R78/ref=zg_bsnr_g_fashion_d_sccl_21/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HD6ZSW2V",
+      "rank": 22,
+      "title": "Ekouaer 3/4 Length Sleeve Womens Tops V Neck Blouses Pleated Casual Shirts | Business Work Outfits, Soft Lightweight Fabric,",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Zeagoo-Stretchy-Layering-Undershirt-Business/dp/B0HD6ZSW2V/ref=zg_bsnr_g_fashion_d_sccl_22/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HBQMR5LF",
+      "rank": 23,
+      "title": "Zeagoo Women Short Sleeve Tops V Neck Slim Fit Tee Basic T-Shirt XS-2XL | Basic Tees, Ladies Short Sleeve Tops, Fashion Casua",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Trendy-Queen-Sweatpants-Fashion-Joggers/dp/B0HBQMR5LF/ref=zg_bsnr_g_fashion_d_sccl_23/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HFZVLKXX",
+      "rank": 24,
+      "title": "Trendy Queen Wide Leg Sweatpants Women Baggy Sweat Pants | FLeece Lined Lounge Fall Sweatpants Fashion Casual Joggers Comfy W",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Fisoew-Elastic-Waisted-Drawstring-Sweatpants/dp/B0HFZVLKXX/ref=zg_bsnr_g_fashion_d_sccl_24/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HJ2FDFBR",
+      "rank": 25,
+      "title": "Fisoew Womens Baggy Wide Leg Pants Casual Elastic High Waisted Drawstring Printed Workout Sweatpants",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Werena-Control-Shapewear-Seamless-Underwear/dp/B0HJ2FDFBR/ref=zg_bsnr_g_fashion_d_sccl_25/143-1588080-9300107"
+    },
+    {
+      "asin": "B0GJM188BF",
+      "rank": 26,
+      "title": "Werena Tummy Control Thong Shapewear for Women Seamless Shaping Novelty Thong Panties Body Shaper Underwear",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Essentials-Grainge-Toddlers-Snug-Fit/dp/B0GJM188BF/ref=zg_bsnr_g_fashion_d_sccl_26/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HM7GS653",
+      "rank": 27,
+      "title": "Amazon Essentials x Sofia Grainge Kids and Toddlers' Snug-Fit Cotton Pajamas",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Trendy-Queen-Cardigan-Lightweight-Pullover/dp/B0HM7GS653/ref=zg_bsnr_g_fashion_d_sccl_27/143-1588080-9300107"
+    },
+    {
+      "asin": "B0GFXY3M2N",
+      "rank": 28,
+      "title": "Trendy Queen Womens Wrap Cropped Open Front Pullover Sweater Tops 2026 | Lightweight Soft Knit, Adjustable Side Tie, Easy Lay",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Clickeez-Collectible-Character-Keyboard-Keychain/dp/B0GFXY3M2N/ref=zg_bsnr_g_fashion_d_sccl_28/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HJR44KPL",
+      "rank": 29,
+      "title": "Clickeez Care Bears 3-Pack | 3 Collectible Character Keyboard Keys Click and Clack | Create Your Own Keychain | Ages 6+",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Flannel-Integrated-Windproof-Balaclava-Outdoor/dp/B0HJR44KPL/ref=zg_bsnr_g_fashion_d_sccl_29/143-1588080-9300107"
+    },
+    {
+      "asin": "B0HBW613WD",
+      "rank": 30,
+      "title": "One Piece Flannel Warm Mask Hat | Soft Integrated Windproof Flannel Balaclava, Winter Full Face Cover Hat for Daily Outdoor S",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Trendy-Queen-Oversized-Sweaters-Pullover/dp/B0HBW613WD/ref=zg_bsnr_g_fashion_d_sccl_30/143-1588080-9300107"
+    }
+  ],
+  "brand_contexts": [
+    {
+      "match": "elf.",
+      "snippet": "(n in r)v(r[n])|| null===r[n]||(b.push(n+x+\"=\"+(r[n]-q)),p&&s(\"mark\",X[n]||n,+r[n]));b.push(\"t\"+x+\"=\"+r[m]);u.latency[\"t\"+x]=r[m];if(e(\"ctb\",k)||e(\"wb\",k))t=1}}!D&&t&&b.push(\"ctb=1\");return b.join(\"&\")}function x(b,c,f,e,m){if(b&&!e){e=d.ue_err;if(p){var g=h.encodeURIComponent;g&&b&&(m=new Image,b=\""
+    },
+    {
+      "match": "elf",
+      "snippet": "ajax&&p.ajax(b,c);k&&n&&(e={requestId:e,transitionType:\"soft\"},\"string\"===typeof g&&(e.pageType=g,d.ue_pty=g),\"string\"===typeof r&&(e.subPageType=r,d.ue_spty=r),k(\"newPage\",e),n(\"mark\",\"transitionStart\",b));a.tag(\"ajax-transition\")}d.ueinit=(d.ueinit||0)+1;var a=d.ue=d.ue||{};a.t0=h.aPageStart||d.ue"
+    },
+    {
+      "match": "elf",
+      "snippet": "oveEventListener\",aa=\"attachEvent\",ca=\"detachEvent\",X={cf:\"criticalFeature\",af:\"aboveTheFold\",fn:\"functional\",fp:\"firstPaint\",fcp:\"firstContentfulPaint\",bb:\"bodyBegin\",be:\"bodyEnd\",ld:\"loaded\"},K=h.Date,H=h.performance||h.webkitPerformance,g=(H||{}).timing,E=(H||{}).navigation,Q=(g||{}).navigationSt"
+    },
+    {
+      "match": "elf",
+      "snippet": "function(i,e,t,n){var r=!1,a=i[c];return N?(!a||a.tid!==J.tid||!a[S]||a.pid!==t||!a.ent&&n||n&&ii(a.ent,n))&&(i[c]={visible:!0,pid:t,tid:e,ent:n},r=!0):!H&&a&&a.tid===J.tid&&a[S]&&(r=!(a[S]=!1)),r}(R,(D?t.tid:null)||j.tid||t.tid||J.tid,(D?t.pid:null)||j.pid||t.pid||J.pid,(D?t.ent:null)||j.ent||t.ent"
+    }
+  ],
+  "n_asins": 30,
+  "n_ranked": 30,
+  "brand_products": [],
+  "http_status": 200
+}

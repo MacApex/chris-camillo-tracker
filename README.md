@@ -73,11 +73,13 @@ python -m pytest -q
 
 ## Multi-platform signals and provenance
 
-Adapters in `camillo_tracker.signals` (Wikipedia, Google Trends, Google News, GDELT, YouTube via yt-dlp metadata, iTunes, optional official X with `CCT_X_BEARER`). Corroboration requires two rising z-scores versus each platform's own baseline; missing platforms are listed, never imputed.
+Adapters in `camillo_tracker.signals`, `camillo_tracker.tiktok`, and `camillo_tracker.amazon` (Wikipedia, Google Trends, Google News, GDELT, YouTube via yt-dlp metadata, iTunes, optional official X with `CCT_X_BEARER`, TikTok public challenge/detail + Creative Center, Amazon public Best Sellers zg.rank). Corroboration requires two rising z-scores versus each platform's own baseline; missing platforms are listed, never imputed. A lifetime hashtag total or a single Amazon BSR is recorded as a fact and does **not** become a z-score.
 
-On 13 Nov 2026 (Asia/Shanghai) we actually ran Scrapling, instaloader, twscrape (skipped — no logins), yt-dlp, and the official X counts API. Per-platform status (worked / partial / blocked, with reasons) is in [`data/platform_status.json`](data/platform_status.json); every numeric point is in [`data/provenance.csv`](data/provenance.csv). Reddit and Instagram hashtag counts were blocked without credentials, which we will not use. TikTok pages returned HTTP 200 but no trusted view count was parsed — we did not estimate one.
+On 13 Nov 2026 (Asia/Shanghai) we actually ran Scrapling (Fetcher and StealthyFetcher), instaloader, twscrape (skipped — no logins), yt-dlp, davidteather/TikTok-Api (no login), and the official X counts API. Per-platform and per-method status (worked / partial / blocked, with reasons) is in [`data/platform_status.json`](data/platform_status.json); every numeric point is in [`data/provenance.csv`](data/provenance.csv). Reddit and Instagram hashtag counts were blocked without credentials, which we will not use.
 
-Env vars, documented in [`toolkit/README.md`](toolkit/README.md): `CCT_X_BEARER`, `CCT_USE_FINBERT`, `YOUTUBE_API_KEY` (optional).
+TikTok, same morning: public `/api/challenge/detail/` returned exact `statsV2` counts (e.g. #crocs 35,500,544,935 views / 1,927,145 videos), cross-checked by TikTokApi; Creative Center's public top-3 US 7-day list also worked but is capped at 3 without a login, which we will not use. Amazon: Crocs Classic Clog is #1 in Women's Shoes and #12 in Clothing, Shoes & Jewelry; e.l.f. products are #23 and #24 in Beauty. Lululemon, Coach, and Elmer's were not in the top 50 of the lists fetched — absence is recorded, not estimated. CamelCamelCamel was Cloudflare 403 (not bypassed). Full tables: [街景](https://macapex.github.io/chris-camillo-tracker/street-view.html).
+
+Env vars, documented in [`toolkit/README.md`](toolkit/README.md): `CCT_X_BEARER`, `CCT_USE_FINBERT`, `YOUTUBE_API_KEY` (optional), `CCT_LIVE_TIKTOK`, `CCT_LIVE_AMAZON`.
 
 ## More dimensions
 

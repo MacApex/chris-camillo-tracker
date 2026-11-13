@@ -1,0 +1,426 @@
+{
+  "title": "TikTok hashtag counts for sample brands \u2014 real official numbers",
+  "compiled_at_utc": "2026-11-13T01:00:00Z",
+  "compiled_at_asia_shanghai": "2026-11-13 09:00 Asia/Shanghai",
+  "policy": "No estimates. Official /api/challenge/detail/ (StealthyFetcher in-page fetch) is primary. TikTokApi is the second official method. hashtagradar is a third-party with lower counts, recorded but not used to override. #coach, #lulu, #slime are noisy generic words.",
+  "primary_challenge_detail": {
+    "CROX:crocs": {
+      "ticker": "CROX",
+      "hashtag": "crocs",
+      "viewCount": "35500544935",
+      "videoCount": "1927145",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 35500000000
+      },
+      "statsV2": {
+        "videoCount": "1927145",
+        "viewCount": "35500544935"
+      },
+      "challenge_id": "93006",
+      "retrieved_at_utc": "2026-11-13T00:49:34Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/crocs",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=crocs&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "specific"
+    },
+    "CROX:crocsshoes": {
+      "ticker": "CROX",
+      "hashtag": "crocsshoes",
+      "viewCount": "747910931",
+      "videoCount": "53039",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 747900000
+      },
+      "statsV2": {
+        "videoCount": "53039",
+        "viewCount": "747910931"
+      },
+      "challenge_id": "5909791",
+      "retrieved_at_utc": "2026-11-13T00:49:35Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/crocsshoes",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=crocsshoes&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "specific"
+    },
+    "CROX:crocsclassicclog": {
+      "ticker": "CROX",
+      "hashtag": "crocsclassicclog",
+      "viewCount": "20573765",
+      "videoCount": "1287",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 20600000
+      },
+      "statsV2": {
+        "videoCount": "1287",
+        "viewCount": "20573765"
+      },
+      "challenge_id": "7080897718746349595",
+      "retrieved_at_utc": "2026-11-13T00:49:36Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/crocsclassicclog",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=crocsclassicclog&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "specific"
+    },
+    "LULU:lululemon": {
+      "ticker": "LULU",
+      "hashtag": "lululemon",
+      "viewCount": "26698719936",
+      "videoCount": "1274509",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 26700000000
+      },
+      "statsV2": {
+        "videoCount": "1274509",
+        "viewCount": "26698719936"
+      },
+      "challenge_id": "192633",
+      "retrieved_at_utc": "2026-11-13T00:49:38Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/lululemon",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=lululemon&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "specific"
+    },
+    "LULU:lulu": {
+      "ticker": "LULU",
+      "hashtag": "lulu",
+      "viewCount": "13339723550",
+      "videoCount": "1015318",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 13300000000
+      },
+      "statsV2": {
+        "videoCount": "1015318",
+        "viewCount": "13339723550"
+      },
+      "challenge_id": "90950",
+      "retrieved_at_utc": "2026-11-13T00:49:39Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/lulu",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=lulu&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "noisy_generic_word"
+    },
+    "ELF:elfcosmetics": {
+      "ticker": "ELF",
+      "hashtag": "elfcosmetics",
+      "viewCount": "11511831389",
+      "videoCount": "560071",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 11500000000
+      },
+      "statsV2": {
+        "videoCount": "560071",
+        "viewCount": "11511831389"
+      },
+      "challenge_id": "3745016",
+      "retrieved_at_utc": "2026-11-13T00:49:41Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/elfcosmetics",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=elfcosmetics&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "specific"
+    },
+    "ELF:elfbeauty": {
+      "ticker": "ELF",
+      "hashtag": "elfbeauty",
+      "viewCount": "173633632",
+      "videoCount": "7486",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 173600000
+      },
+      "statsV2": {
+        "videoCount": "7486",
+        "viewCount": "173633632"
+      },
+      "challenge_id": "1607181640804358",
+      "retrieved_at_utc": "2026-11-13T00:49:42Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/elfbeauty",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=elfbeauty&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "specific"
+    },
+    "ELF:elfmakeup": {
+      "ticker": "ELF",
+      "hashtag": "elfmakeup",
+      "viewCount": "1410803929",
+      "videoCount": "78750",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 1400000000
+      },
+      "statsV2": {
+        "videoCount": "78750",
+        "viewCount": "1410803929"
+      },
+      "challenge_id": "2397273",
+      "retrieved_at_utc": "2026-11-13T00:49:44Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/elfmakeup",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=elfmakeup&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "specific"
+    },
+    "TPR:coach": {
+      "ticker": "TPR",
+      "hashtag": "coach",
+      "viewCount": "68635437552",
+      "videoCount": "5821037",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 68600000000
+      },
+      "statsV2": {
+        "videoCount": "5821037",
+        "viewCount": "68635437552"
+      },
+      "challenge_id": "9678",
+      "retrieved_at_utc": "2026-11-13T00:49:45Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/coach",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=coach&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "noisy_generic_word"
+    },
+    "TPR:coachbag": {
+      "ticker": "TPR",
+      "hashtag": "coachbag",
+      "viewCount": "6066578377",
+      "videoCount": "418193",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 6100000000
+      },
+      "statsV2": {
+        "videoCount": "418193",
+        "viewCount": "6066578377"
+      },
+      "challenge_id": "365377",
+      "retrieved_at_utc": "2026-11-13T00:49:47Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/coachbag",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=coachbag&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "specific"
+    },
+    "TPR:coachnewyork": {
+      "ticker": "TPR",
+      "hashtag": "coachnewyork",
+      "viewCount": "233738750",
+      "videoCount": "23338",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 233700000
+      },
+      "statsV2": {
+        "videoCount": "23338",
+        "viewCount": "233738750"
+      },
+      "challenge_id": "66848250",
+      "retrieved_at_utc": "2026-11-13T00:49:48Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/coachnewyork",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=coachnewyork&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "specific"
+    },
+    "NWL:elmersslime": {
+      "ticker": "NWL",
+      "hashtag": "elmersslime",
+      "viewCount": "89456670",
+      "videoCount": "2217",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 89500000
+      },
+      "statsV2": {
+        "videoCount": "2217",
+        "viewCount": "89456670"
+      },
+      "challenge_id": "62153739",
+      "retrieved_at_utc": "2026-11-13T00:49:49Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/elmersslime",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=elmersslime&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "specific"
+    },
+    "NWL:elmersglue": {
+      "ticker": "NWL",
+      "hashtag": "elmersglue",
+      "viewCount": "624740454",
+      "videoCount": "12310",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 624700000
+      },
+      "statsV2": {
+        "videoCount": "12310",
+        "viewCount": "624740454"
+      },
+      "challenge_id": "2063153",
+      "retrieved_at_utc": "2026-11-13T00:49:51Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/elmersglue",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=elmersglue&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "specific"
+    },
+    "NWL:slime": {
+      "ticker": "NWL",
+      "hashtag": "slime",
+      "viewCount": "222606744837",
+      "videoCount": "6360686",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 222600000000
+      },
+      "statsV2": {
+        "videoCount": "6360686",
+        "viewCount": "222606744837"
+      },
+      "challenge_id": "47378",
+      "retrieved_at_utc": "2026-11-13T00:49:52Z",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/slime",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=slime&device_platform=web_pc&os=linux",
+      "http_status": 200,
+      "ok": true,
+      "quality": "noisy_generic_word"
+    }
+  },
+  "crosscheck_tiktokapi": {
+    "crocs": {
+      "statsV2": {
+        "videoCount": "1927144",
+        "viewCount": "35500665122"
+      },
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 35500000000
+      },
+      "retrieved_at_utc": "2026-11-13T00:53:47Z",
+      "method": "davidteather/TikTok-Api hashtag.info(), no login, playwright session"
+    },
+    "lululemon": {
+      "statsV2": {
+        "videoCount": "1274510",
+        "viewCount": "26698742524"
+      },
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 26700000000
+      },
+      "retrieved_at_utc": "2026-11-13T00:53:47Z",
+      "method": "davidteather/TikTok-Api hashtag.info(), no login, playwright session"
+    },
+    "elfcosmetics": {
+      "statsV2": {
+        "videoCount": "560074",
+        "viewCount": "11511866885"
+      },
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 11500000000
+      },
+      "retrieved_at_utc": "2026-11-13T00:53:47Z",
+      "method": "davidteather/TikTok-Api hashtag.info(), no login, playwright session"
+    }
+  },
+  "crosscheck_first_xhr_crocs": {
+    "viewCount_statsV2": "35500477038",
+    "videoCount_statsV2": "1927163",
+    "viewCount_rounded": 35500000000,
+    "retrieved_at_utc": "2026-11-13T00:46:53Z",
+    "method": "StealthyFetcher XHR capture of public /api/challenge/detail/?challengeName=crocs"
+  },
+  "third_party_hashtagradar": {
+    "source": "https://hashtagradar.com/ (same content also served at tiktokhashtags.com \u2014 treat as ONE third-party, not two)",
+    "retrieved_at_utc": "2026-11-13T00:53:18Z",
+    "method": "Scrapling Fetcher of public hashtag pages",
+    "note": "Numbers are substantially lower than official TikTok challenge/detail. We do not average or reconcile them. Official API is the primary source. Directional ranking of the five specific tags agrees.",
+    "figures": {
+      "crocs": {
+        "posts": "520.9 Thousand",
+        "views": "11.1 Billion",
+        "views_per_post": 21331
+      },
+      "lululemon": {
+        "posts": "539.5 Thousand",
+        "views": "9.2 Billion",
+        "views_per_post": 17083
+      },
+      "elfcosmetics": {
+        "posts": "134.2 Thousand",
+        "views": "2.4 Billion",
+        "views_per_post": 17919
+      },
+      "coachbag": {
+        "posts": "36.8 Thousand",
+        "views": "464.1 Million",
+        "views_per_post": 12595
+      },
+      "elmersslime": {
+        "posts": "1.1 Thousand",
+        "views": "17.2 Million",
+        "views_per_post": 15735
+      }
+    }
+  },
+  "creative_center_public_top3": {
+    "source_url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?period=7&region=US",
+    "api": "https://ads.tiktok.com/CreativeOne/KnowledgeAPI/GetHashtagList",
+    "retrieved_at_utc": "2026-11-13T00:39:46Z",
+    "method": "Scrapling StealthyFetcher XHR capture; DOM text cross-check on the same page",
+    "window": "United States, last 7 days, public top 3 (further rows behind 'Log in or sign up')",
+    "items": [
+      {
+        "rank": 1,
+        "hashtag": "veteransday",
+        "publishCnt": 63021,
+        "vv": 68790053,
+        "dom_crosscheck": "63K Posts, 68.8M Views"
+      },
+      {
+        "rank": 2,
+        "hashtag": "mymoonmyman",
+        "publishCnt": 19837,
+        "vv": 43857081,
+        "dom_crosscheck": "19.8K Posts, 43.9M Views"
+      },
+      {
+        "rank": 3,
+        "hashtag": "piratetoken",
+        "publishCnt": 59086,
+        "vv": 428310388,
+        "dom_crosscheck": "59.1K Posts, 428.3M Views"
+      }
+    ],
+    "sample_brands_in_public_top3": false,
+    "note": "Brand-specific 'See analytics' appears to require login; we did not log in."
+  }
+}

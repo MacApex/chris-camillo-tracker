@@ -1,0 +1,39 @@
+{
+  "kind": "movers_fashion",
+  "url": "https://www.amazon.com/gp/movers-and-shakers/fashion/",
+  "method": "Scrapling Fetcher",
+  "retrieved_at_utc": "2026-11-13T00:51:07Z",
+  "html_len": 345474,
+  "title": "Amazon.com Movers & Shakers: The biggest gainers in Clothing, Shoes & Jewelry sales rank over the past 24 hours",
+  "products": [],
+  "brand_contexts": [
+    {
+      "match": "elf.",
+      "snippet": "(n in r)v(r[n])|| null===r[n]||(b.push(n+x+\"=\"+(r[n]-q)),p&&s(\"mark\",X[n]||n,+r[n]));b.push(\"t\"+x+\"=\"+r[m]);u.latency[\"t\"+x]=r[m];if(e(\"ctb\",k)||e(\"wb\",k))t=1}}!D&&t&&b.push(\"ctb=1\");return b.join(\"&\")}function x(b,c,f,e,m){if(b&&!e){e=d.ue_err;if(p){var g=h.encodeURIComponent;g&&b&&(m=new Image,b=\""
+    },
+    {
+      "match": "elf",
+      "snippet": "ajax&&p.ajax(b,c);k&&n&&(e={requestId:e,transitionType:\"soft\"},\"string\"===typeof g&&(e.pageType=g,d.ue_pty=g),\"string\"===typeof r&&(e.subPageType=r,d.ue_spty=r),k(\"newPage\",e),n(\"mark\",\"transitionStart\",b));a.tag(\"ajax-transition\")}d.ueinit=(d.ueinit||0)+1;var a=d.ue=d.ue||{};a.t0=h.aPageStart||d.ue"
+    },
+    {
+      "match": "elf",
+      "snippet": "oveEventListener\",aa=\"attachEvent\",ca=\"detachEvent\",X={cf:\"criticalFeature\",af:\"aboveTheFold\",fn:\"functional\",fp:\"firstPaint\",fcp:\"firstContentfulPaint\",bb:\"bodyBegin\",be:\"bodyEnd\",ld:\"loaded\"},K=h.Date,H=h.performance||h.webkitPerformance,g=(H||{}).timing,E=(H||{}).navigation,Q=(g||{}).navigationSt"
+    },
+    {
+      "match": "elf",
+      "snippet": "com/marketing?utm_source=amzn&utm_medium=footer&utm_campaign=home&ref_=footer_mm_dsp\" class=\"nav_a\">Start a Package Delivery Business Advertise Your Products Self-Publish with Us Become an Amazon Hub Partner \u203a <a href=\"/b/?"
+    },
+    {
+      "match": "elf",
+      "snippet": "ref_=footer_mm_dsp\" class=\"nav_a\">Start a Package Delivery Business Advertise Your Products Self-Publish with Us Become an Amazon Hub Partner \u203a <a href=\"/b/?node=18190131011&ld=AZUSSOA-seemore&ref_=footer_seemore\" class=\"na"
+    },
+    {
+      "match": "elf",
+      "snippet": "function(i,e,t,n){var r=!1,a=i[c];return N?(!a||a.tid!==J.tid||!a[S]||a.pid!==t||!a.ent&&n||n&&ii(a.ent,n))&&(i[c]={visible:!0,pid:t,tid:e,ent:n},r=!0):!H&&a&&a.tid===J.tid&&a[S]&&(r=!(a[S]=!1)),r}(R,(D?t.tid:null)||j.tid||t.tid||J.tid,(D?t.pid:null)||j.pid||t.pid||J.pid,(D?t.ent:null)||j.ent||t.ent"
+    }
+  ],
+  "n_asins": 0,
+  "n_ranked": 0,
+  "brand_products": [],
+  "http_status": 200
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "LULU",
+  "hashtag": "lululemon",
+  "retrieved_at_utc": "2026-11-13T00:49:38Z",
+  "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+  "http_status": 200,
+  "source_url": "https://www.tiktok.com/tag/lululemon",
+  "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=lululemon&device_platform=web_pc&os=linux",
+  "challenge_id": "192633",
+  "title": "lululemon",
+  "stats": {
+    "videoCount": 0,
+    "viewCount": 26700000000
+  },
+  "statsV2": {
+    "videoCount": "1274509",
+    "viewCount": "26698719936"
+  },
+  "videoCount": "1274509",
+  "viewCount": "26698719936",
+  "status_code": 0,
+  "ok": true,
+  "challengeInfo_slim": {
+    "challenge": {
+      "coverLarger": "",
+      "coverMedium": "",
+      "coverThumb": "",
+      "desc": "",
+      "id": "192633",
+      "isCommerce": false,
+      "profileLarger": "",
+      "profileMedium": "",
+      "profileThumb": "",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 26700000000
+      },
+      "title": "lululemon"
+    },
+    "challengeAnnouncement": {
+      "body": "",
+      "title": ""
+    },
+    "stats": {
+      "videoCount": 0,
+      "viewCount": 26700000000
+    },
+    "statsV2": {
+      "videoCount": "1274509",
+      "viewCount": "26698719936"
+    }
+  }
+}

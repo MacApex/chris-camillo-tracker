@@ -1,5 +1,5 @@
 {
-  "retrieved_at_utc": "2026-11-12T18:11:04Z",
+  "retrieved_at_utc": "2026-11-13T01:10:00Z",
   "policy": "Public data only. No logins with user credentials. No paywall bypass. No fabricated counts.",
   "platforms": {
     "wikipedia": {
@@ -23,7 +23,7 @@
       "reason": "First pass HTTP 429 (5s limit). Retry after 6s for 'Crocs' returned 28 TimelineVol points (max 0.0505 on 2026-10-06, last 0.0046 on 2026-11-12), saved to data/gdelt/CROX.json. 'e.l.f.' rejected as too short/common. Other tickers not retried in the first burst.",
       "tried": [
         "GDELT DOC API TimelineVol, 2026-10-01 to 2026-11-12, first burst",
-        "Single-query retry after 6 seconds for Crocs \u2014 worked"
+        "Single-query retry after 6 seconds for Crocs — worked"
       ],
       "retrieved_at_utc": "2026-11-12T18:12:00Z"
     },
@@ -61,19 +61,76 @@
       "tried": [
         "Grok Bot MCP get_posts_counts_recent (official X API)",
         "CCT_X_BEARER official recent-search adapter",
-        "twscrape without accounts (skipped \u2014 no logins)"
+        "twscrape without accounts (skipped — no logins)"
       ],
       "retrieved_at_utc": "2026-11-12T18:10:41Z"
     },
     "tiktok": {
-      "status": "partial",
-      "reason": "Public pages fetched or attempted; no verified view-count extracted. https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en status=200 len=21168; https://www.tiktok.com/tag/crocs status=200 len=396039",
+      "status": "worked",
+      "reason": "Official public /api/challenge/detail/ (StealthyFetcher in-page fetch) returned exact statsV2 for 14 sample hashtags, e.g. #crocs 35,500,544,935 views / 1,927,145 videos at 2026-11-13T00:49:34Z. davidteather/TikTok-Api hashtag.info() (no login) cross-checked #crocs, #lululemon, #elfcosmetics with matching rounded billions and live statsV2 increments. Creative Center GetHashtagList worked for the public US 7-day top 3 (#veteransday 63,021 posts / 68,790,053 views, DOM-confirmed) but is capped at totalCount=3 unauthenticated; sample brands were not in that list. Lifetime totals are a stock, not a 7-day z-score.",
       "tried": [
-        "Scrapling Fetcher GET of TikTok Creative Center popular hashtags",
-        "Scrapling Fetcher GET of tiktok.com/tag/crocs",
-        "davidteather/TikTok-Api not invoked with session cookies (no logins)"
+        "Scrapling StealthyFetcher XHR capture of ads.tiktok.com Creative Center GetHashtagList (worked, public top 3 + DOM screenshot cross-check)",
+        "StealthyFetcher session on tiktok.com/tag/<x> + in-page fetch of public /api/challenge/detail/ (worked, exact statsV2)",
+        "davidteather/TikTok-Api hashtag.info() with a playwright session, no login (worked; 6,744 GitHub stars on 13 Nov 2026)",
+        "Scrapling Fetcher of tiktok.com/tag/crocs __UNIVERSAL_DATA__ (blocked: 200 bot-shell, no stats)",
+        "hashtagradar.com public pages (partial; same HTML as tiktokhashtags.com — one site; totals lower than official, not used to override)",
+        "Exolyt public pages (blocked, 404). Pentos/Tokboard/Trendpop: no verified public unauthenticated totals"
       ],
-      "retrieved_at_utc": "2026-11-12T18:10:48Z"
+      "methods": {
+        "creative_center_GetHashtagList": {
+          "status": "worked",
+          "note": "Public US 7-day top 3 only (totalCount=3, hasMore=false). Brand 'See analytics' appears to need login; we did not log in."
+        },
+        "challenge_detail_inpage": {
+          "status": "worked",
+          "note": "Primary source. 14 hashtags, statsV2 exact strings. Two timed #crocs pulls document a live counter."
+        },
+        "TikTokApi": {
+          "status": "worked",
+          "note": "Second official-shaped method. Cross-checks three preferred tags."
+        },
+        "tag_page_Fetcher_UNIVERSAL_DATA": {
+          "status": "blocked",
+          "note": "Bot-detected shell (botType: others) without stats."
+        },
+        "hashtagradar": {
+          "status": "partial",
+          "note": "Public numbers, lower than official, same site as tiktokhashtags.com. Not used to override."
+        },
+        "exolyt": {
+          "status": "blocked",
+          "note": "404 / no usable totals without login."
+        }
+      },
+      "sample_preferred": {
+        "CROX #crocs": {
+          "viewCount": 35500544935,
+          "videoCount": 1927145,
+          "at": "2026-11-13T00:49:34Z"
+        },
+        "LULU #lululemon": {
+          "viewCount": 26698719936,
+          "videoCount": 1274509,
+          "at": "2026-11-13T00:49:38Z"
+        },
+        "ELF #elfcosmetics": {
+          "viewCount": 11511831389,
+          "videoCount": 560071,
+          "at": "2026-11-13T00:49:41Z"
+        },
+        "TPR #coachbag": {
+          "viewCount": 6066578377,
+          "videoCount": 418193,
+          "at": "2026-11-13T00:49:47Z",
+          "note": "#coach is noisy (many meanings); #coachbag is the cleaner tag."
+        },
+        "NWL #elmersslime": {
+          "viewCount": 89456670,
+          "videoCount": 2217,
+          "at": "2026-11-13T00:49:49Z"
+        }
+      },
+      "retrieved_at_utc": "2026-11-13T00:53:47Z"
     },
     "instagram": {
       "status": "blocked",
@@ -93,12 +150,66 @@
       "retrieved_at_utc": "2026-11-12T18:10:56Z"
     },
     "amazon_movers": {
-      "status": "partial",
-      "reason": "status=200 title=[<data='<title>Amazon.com Movers &amp; Shakers:...' parent='<head><script>var aPageStart = (new Date...'>] len=277848",
+      "status": "worked",
+      "reason": "Public Best Sellers pages parsed via Scrapling Fetcher from official data-client-recs-list zg.rank, title-only brand match. Crocs Classic Clog (B0014C0LSY) is #1 in Women's Shoes and #12 in Clothing, Shoes & Jewelry. Crocs Lined Clog (B01A6LUCZU) is #29 in Women's Shoes; the product page independently shows #455 in Clothing, Shoes & Jewelry and #5 in Women's Mules & Clogs. e.l.f. Instant Lift Brow Pencil is #23 and Cream Glide Lip Liner #24 in Beauty & Personal Care. Lululemon, Coach, and Elmer's were not in the top 50 of the lists fetched (absence recorded, not estimated). Movers & Shakers had no recs JSON; Amazon search HTTP 503; CamelCamelCamel Cloudflare 403; Keepa public PNG is a price chart, not BSR.",
       "tried": [
-        "Scrapling Fetcher GET https://www.amazon.com/gp/movers-and-shakers"
+        "Scrapling Fetcher of amazon.com/gp/bestsellers (Women's Shoes, Fashion, Beauty, Office, Toys) — worked, official zg.rank JSON",
+        "Scrapling Fetcher of product pages — worked for B01A6LUCZU (2.6MB); 3781-byte empty shell for B0014C0LSY and two e.l.f. ASINs",
+        "Movers & Shakers fashion/beauty — partial (200, no data-client-recs-list)",
+        "New Releases fashion — worked as a list (50 items) but no sample-brand title hits",
+        "Amazon search — blocked, HTTP 503",
+        "CamelCamelCamel public product pages — blocked, HTTP 403 Cloudflare; not bypassed",
+        "Keepa SPA and graph.keepa.com/pricehistory.png — partial (PNG 200, price not BSR, not transcribed)",
+        "GitHub amazon bestsellers scrapers checked (angeloestelle88/Amazon-Bestsellers-Scraper 49 stars; m-murasovs/amazon-bestsellers-scraper 24 stars) — not used; we parsed the official recs JSON ourselves"
       ],
-      "retrieved_at_utc": "2026-11-12T18:10:59Z"
+      "methods": {
+        "bestsellers_zg_rank": {
+          "status": "worked",
+          "note": "Primary. Title-only brand match. False context matches discarded."
+        },
+        "product_page_bsr": {
+          "status": "partial",
+          "note": "Worked for Lined Clog B01A6LUCZU (#455 / #5). Empty shells for three other ASINs."
+        },
+        "movers_and_shakers": {
+          "status": "partial",
+          "note": "200 but no official recs JSON via Fetcher."
+        },
+        "amazon_search": {
+          "status": "blocked",
+          "note": "HTTP 503."
+        },
+        "camelcamelcamel": {
+          "status": "blocked",
+          "note": "Cloudflare 403. Not bypassed."
+        },
+        "keepa": {
+          "status": "partial",
+          "note": "Price-history PNG is real but is not BSR; not transcribed into counts."
+        }
+      },
+      "sample": {
+        "CROX B0014C0LSY": {
+          "rank": 1,
+          "category": "Women's Shoes",
+          "also": "#12 Clothing, Shoes & Jewelry"
+        },
+        "CROX B01A6LUCZU": {
+          "rank": 29,
+          "category": "Women's Shoes",
+          "product_page": "#455 Clothing, Shoes & Jewelry; #5 Women's Mules & Clogs"
+        },
+        "ELF B07PBQZ3KF": {
+          "rank": 23,
+          "category": "Beauty & Personal Care"
+        },
+        "ELF B0CMYR1CNK": {
+          "rank": 24,
+          "category": "Beauty & Personal Care"
+        },
+        "LULU_TPR_NWL": "not in top 50 of fetched lists"
+      },
+      "retrieved_at_utc": "2026-11-13T00:52:36Z"
     },
     "youtube": {
       "status": "worked",
@@ -110,5 +221,6 @@
       "retrieved_at_utc": "2026-11-12T18:11:04Z"
     }
   },
-  "n_provenance_rows": 41
+  "n_provenance_rows": 106,
+  "retrieved_at_asia_shanghai": "2026-11-13 09:10 Asia/Shanghai"
 }

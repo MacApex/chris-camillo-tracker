@@ -1,0 +1,53 @@
+{
+  "ticker": "ELF",
+  "hashtag": "elfcosmetics",
+  "retrieved_at_utc": "2026-11-13T00:49:41Z",
+  "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+  "http_status": 200,
+  "source_url": "https://www.tiktok.com/tag/elfcosmetics",
+  "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=elfcosmetics&device_platform=web_pc&os=linux",
+  "challenge_id": "3745016",
+  "title": "elfcosmetics",
+  "stats": {
+    "videoCount": 0,
+    "viewCount": 11500000000
+  },
+  "statsV2": {
+    "videoCount": "560071",
+    "viewCount": "11511831389"
+  },
+  "videoCount": "560071",
+  "viewCount": "11511831389",
+  "status_code": 0,
+  "ok": true,
+  "challengeInfo_slim": {
+    "challenge": {
+      "coverLarger": "",
+      "coverMedium": "",
+      "coverThumb": "",
+      "desc": "",
+      "id": "3745016",
+      "isCommerce": false,
+      "profileLarger": "",
+      "profileMedium": "",
+      "profileThumb": "",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 11500000000
+      },
+      "title": "elfcosmetics"
+    },
+    "challengeAnnouncement": {
+      "body": "",
+      "title": ""
+    },
+    "stats": {
+      "videoCount": 0,
+      "viewCount": 11500000000
+    },
+    "statsV2": {
+      "videoCount": "560071",
+      "viewCount": "11511831389"
+    }
+  }
+}

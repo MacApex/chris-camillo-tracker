@@ -1,0 +1,24 @@
+{
+  "kind": "search_coach",
+  "url": "https://www.amazon.com/s?k=Coach+bag",
+  "method": "Scrapling Fetcher",
+  "status": 503,
+  "retrieved_at_utc": "2026-11-13T00:50:19Z",
+  "html_len": 2671,
+  "title": "[<data='<title>Sorry! Something went wrong!</tit...' parent='<head><meta charset=\"utf-8\"><meta http-e...'>]",
+  "brand_mentions": {
+    "Crocs": 0,
+    "Lululemon": 0,
+    "e.l.f.": 0,
+    "elf cosmetics": 0,
+    "Coach": 0,
+    "Elmer": 0,
+    "Tapestry": 0,
+    "Hey Dude": 0
+  },
+  "asins": [],
+  "zg_badge_ranks": [],
+  "title_samples": [],
+  "bsr_phrases": [],
+  "ok_partial": false
+}

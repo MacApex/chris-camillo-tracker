@@ -1,0 +1,1808 @@
+[
+  {
+    "url": "https://www.tiktok.com/tiktok/pns/privacy_headers?aid=1180",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 248,
+    "at": "2026-11-13T00:46:50Z",
+    "hits": [],
+    "keys": [
+      "code",
+      "extra",
+      "log_pb",
+      "message",
+      "results",
+      "status_code",
+      "status_msg"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/ttwid/check/",
+    "status": 200,
+    "ct": "application/json",
+    "len": 63,
+    "at": "2026-11-13T00:46:50Z",
+    "hits": [],
+    "keys": [
+      "status_code",
+      "message",
+      "sub_status_code"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/tiktok/popup/dispatch/v1?region=JP&priority_region=JP&aid=1988&device_id=7707451117705365013&app_language=en&device_platform=web_pc&WebIdLastTime=1794530807&scene=0",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 187,
+    "at": "2026-11-13T00:46:50Z",
+    "hits": [],
+    "keys": [
+      "status_code",
+      "status_msg",
+      "extra",
+      "log_pb"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/tiktok/ppf/api/eligibility/v2?WebIdLastTime=1794530807&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=t",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 206,
+    "at": "2026-11-13T00:46:50Z",
+    "hits": [],
+    "keys": [
+      "eligibility_list",
+      "log_pb",
+      "status_code",
+      "status_msg"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530810.json"
+  },
+  {
+    "url": "https://www.tiktok.com/api/challenge/detail/?WebIdLastTime=1794530807&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.36&challengeName=crocs&channel=tiktok_web&cook",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 717,
+    "at": "2026-11-13T00:46:51Z",
+    "hits": [
+      {
+        "path": "$.challengeInfo.challenge.stats",
+        "fields": {
+          "videoCount": 0,
+          "viewCount": 35500000000
+        }
+      },
+      {
+        "path": "$.challengeInfo.stats",
+        "fields": {
+          "videoCount": 0,
+          "viewCount": 35500000000
+        }
+      },
+      {
+        "path": "$.challengeInfo.statsV2",
+        "fields": {
+          "videoCount": "1927163",
+          "viewCount": "35500477038"
+        }
+      }
+    ],
+    "keys": [
+      "challengeInfo",
+      "extra",
+      "log_pb",
+      "shareMeta",
+      "statusCode",
+      "status_code",
+      "status_msg"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530811.json"
+  },
+  {
+    "url": "https://mcs-sg.tiktokv.com/v1/user/webid",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 58,
+    "at": "2026-11-13T00:46:51Z",
+    "hits": [],
+    "keys": [
+      "e",
+      "ssid",
+      "web_id"
+    ]
+  },
+  {
+    "url": "https://webcast.tiktok.com/webcast/wallet_api_tiktok/recharge/check_external_entry?WebIdLastTime=1794530807&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.36&chann",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 144,
+    "at": "2026-11-13T00:46:51Z",
+    "hits": [],
+    "keys": [
+      "data",
+      "extra",
+      "status_code"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530811.json"
+  },
+  {
+    "url": "https://mssdk-sg.tiktok.com/web/resource?eq=DBtJa1nwpo6dPZvaDpVkehdylXB1o5AlCdV0KXxgtnFHJcsKWkPYbagYgU4LItskUmR-agrW3l9nsdrV",
+    "status": 200,
+    "ct": "application/json",
+    "len": 623,
+    "at": "2026-11-13T00:46:51Z",
+    "hits": [],
+    "keys": [
+      "code",
+      "content"
+    ]
+  },
+  {
+    "url": "https://libraweb-sg.tiktok.com/service/2/abtest_config/",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 5838,
+    "at": "2026-11-13T00:46:51Z",
+    "hits": [],
+    "keys": [
+      "data",
+      "message"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/tiktok/pns/privacy_headers?aid=1180",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 248,
+    "at": "2026-11-13T00:46:52Z",
+    "hits": [],
+    "keys": [
+      "code",
+      "extra",
+      "log_pb",
+      "message",
+      "results",
+      "status_code",
+      "status_msg"
+    ]
+  },
+  {
+    "url": "https://mon-sg.tiktokv.com/monitor_web/settings/browser-settings?bid=cdn_replace_service_worker&store=1",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 1895,
+    "at": "2026-11-13T00:46:52Z",
+    "hits": [],
+    "keys": [
+      "data",
+      "errmsg",
+      "errno"
+    ]
+  },
+  {
+    "url": "https://mon-sg.tiktokv.com/monitor_web/settings/browser-settings?bid=tiktok_webapp&store=1",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 13980,
+    "at": "2026-11-13T00:46:52Z",
+    "hits": [],
+    "keys": [
+      "data",
+      "errmsg",
+      "errno"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/api/challenge/item_list/?WebIdLastTime=1794530807&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.36&challengeID=93006&channel=tiktok_web&cli",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 766080,
+    "at": "2026-11-13T00:46:53Z",
+    "hits": [
+      {
+        "path": "$.itemList[0]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": true,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1783053279,
+          "desc": "\ud83d\udea8 CROCS SALE FROM $27.95! \ud83d\ude31\ud83d\udd25 The Crocs Outlet at Changi City Point is having a massive markdown with prices starting from just SGD 27.95! Time to upgrade your comfort game with cheap clogs, sandals, and jibbitz charms. Sizes go fast, so run down ASAP! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 \ud83d\udccd Crocs Outlet, Changi City Point (#01 -44) \ud83d\ude87 Nearest MRT: Expo #CrocsSG #ChangiCityPoint #SGSale #SGLobang ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7658155468086447367",
+          "isAd": false,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "en",
+          "textTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[0].authorStats",
+        "fields": {
+          "diggCount": 34,
+          "followerCount": 12900,
+          "followingCount": 0,
+          "friendCount": 0,
+          "heart": 201600,
+          "heartCount": 201600,
+          "videoCount": 1165
+        }
+      },
+      {
+        "path": "$.itemList[0].authorStatsV2",
+        "fields": {
+          "diggCount": "34",
+          "followerCount": "12900",
+          "followingCount": "0",
+          "friendCount": "0",
+          "heart": "201600",
+          "heartCount": "201600",
+          "videoCount": "1165"
+        }
+      },
+      {
+        "path": "$.itemList[0].stats",
+        "fields": {
+          "collectCount": 220,
+          "commentCount": 22,
+          "diggCount": 1154,
+          "playCount": 115800,
+          "shareCount": 678
+        }
+      },
+      {
+        "path": "$.itemList[0].statsV2",
+        "fields": {
+          "collectCount": "220",
+          "commentCount": "22",
+          "diggCount": "1154",
+          "playCount": "115800",
+          "repostCount": "0",
+          "shareCount": "678"
+        }
+      },
+      {
+        "path": "$.itemList[1]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": true,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1794056074,
+          "desc": "Crocs \u1016\u102d\u1014\u1015\u103a50%\u1005\u103b\u1031\u1038\u1001\u103b\u1011\u102c\u1038\u1010\u1012\u1037\u1021\u1015\u103c\u1004\u103a Buy 2 Get 1 free \u1011\u1015\u103a\u1015\u1031\u1038\u101e\u1031\u1038\u1010\u101a\u103a \u101c\u103e\u101c\u1032\u101c\u103e\u1005\u102e\u101c\u102d\u102f\u1037\u101c\u1032\u1000\u1031\u102c\u1004\u103a\u1038\u1015\u1031\u102b\u1037\u1015\u1031\u102b\u1037\u1015\u102b\u1038\u1015\u102b\u1038\u101b\u1031\u1005\u102d\u102f\u101c\u1032\u1001\u1036 \u1005\u102e\u1038\u101b\u1010\u102c\u1021\u101b\u1019\u103a\u1038\u1021\u1006\u1004\u103a\u1015\u103c\u1031\u1010\u1032\u1037 Crocs \u1016\u102d\u1014\u1015\u103a#crocs #love #shopping #shoes #sale ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7705412144300412161",
+          "isAd": false,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "my",
+          "textTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[1].authorStats",
+        "fields": {
+          "diggCount": 94100,
+          "followerCount": 22100,
+          "followingCount": 10000,
+          "friendCount": 0,
+          "heart": 350800,
+          "heartCount": 350800,
+          "videoCount": 1708
+        }
+      },
+      {
+        "path": "$.itemList[1].authorStatsV2",
+        "fields": {
+          "diggCount": "94100",
+          "followerCount": "22100",
+          "followingCount": "10000",
+          "friendCount": "0",
+          "heart": "350800",
+          "heartCount": "350800",
+          "videoCount": "1708"
+        }
+      },
+      {
+        "path": "$.itemList[1].stats",
+        "fields": {
+          "collectCount": 485,
+          "commentCount": 44,
+          "diggCount": 3872,
+          "playCount": 194000,
+          "shareCount": 1388
+        }
+      },
+      {
+        "path": "$.itemList[1].statsV2",
+        "fields": {
+          "collectCount": "485",
+          "commentCount": "44",
+          "diggCount": "3872",
+          "playCount": "194000",
+          "repostCount": "0",
+          "shareCount": "1388"
+        }
+      },
+      {
+        "path": "$.itemList[2]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": true,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1782811051,
+          "desc": "\u3053\u306e\u30af\u30ed\u30c3\u30af\u30b9\u80cc\u76db\u308c\u308b\u3057\u53ef\u611b\u3044\u3057\u306a\u3093\u3067\u3082\u5408\u3046\u306e\u5929\u624d#\u30af\u30ed\u30c3\u30af\u30b9 #\u30af\u30ed\u30c3\u30af\u30b9\u539a\u5e95 ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7657115126482488584",
+          "isAd": false,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "ja",
+          "textTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[2].authorStats",
+        "fields": {
+          "diggCount": 20100,
+          "followerCount": 75900,
+          "followingCount": 266,
+          "friendCount": 0,
+          "heart": 2200000,
+          "heartCount": 2200000,
+          "videoCount": 345
+        }
+      },
+      {
+        "path": "$.itemList[2].authorStatsV2",
+        "fields": {
+          "diggCount": "20100",
+          "followerCount": "75900",
+          "followingCount": "266",
+          "friendCount": "0",
+          "heart": "2200000",
+          "heartCount": "2200000",
+          "videoCount": "345"
+        }
+      },
+      {
+        "path": "$.itemList[2].stats",
+        "fields": {
+          "collectCount": 429,
+          "commentCount": 28,
+          "diggCount": 3548,
+          "playCount": 126600,
+          "shareCount": 64
+        }
+      },
+      {
+        "path": "$.itemList[2].statsV2",
+        "fields": {
+          "collectCount": "429",
+          "commentCount": "28",
+          "diggCount": "3548",
+          "playCount": "126600",
+          "repostCount": "0",
+          "shareCount": "64"
+        }
+      },
+      {
+        "path": "$.itemList[3]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": false,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1792999550,
+          "desc": "#depdi #crocs #depdihoc #depcross ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7700874366988455176",
+          "isAd": true,
+          "isECVideo": 1,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "un",
+          "textTranslatable": false
+        }
+      },
+      {
+        "path": "$.itemList[3].authorStats",
+        "fields": {
+          "diggCount": 12400,
+          "followerCount": 7668,
+          "followingCount": 13,
+          "friendCount": 0,
+          "heart": 648200,
+          "heartCount": 648200,
+          "videoCount": 2831
+        }
+      },
+      {
+        "path": "$.itemList[3].authorStatsV2",
+        "fields": {
+          "diggCount": "12400",
+          "followerCount": "7668",
+          "followingCount": "13",
+          "friendCount": "0",
+          "heart": "648200",
+          "heartCount": "648200",
+          "videoCount": "2831"
+        }
+      },
+      {
+        "path": "$.itemList[3].stats",
+        "fields": {
+          "collectCount": 859,
+          "commentCount": 34,
+          "diggCount": 3350,
+          "playCount": 698900,
+          "shareCount": 1185
+        }
+      },
+      {
+        "path": "$.itemList[3].statsV2",
+        "fields": {
+          "collectCount": "859",
+          "commentCount": "34",
+          "diggCount": "3350",
+          "playCount": "698900",
+          "repostCount": "0",
+          "shareCount": "1185"
+        }
+      },
+      {
+        "path": "$.itemList[4]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": false,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1794009487,
+          "desc": "\ud83e\ude9a\u203c\ufe0fIf you\u2019re a chainsaw man fan, you can\u2019t miss these! #Crocs #Chainsawman #fyp #anime ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7705211973629201678",
+          "isAd": true,
+          "isECVideo": 1,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "en",
+          "textTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[4].authorStats",
+        "fields": {
+          "diggCount": 876,
+          "followerCount": 561500,
+          "followingCount": 3,
+          "friendCount": 0,
+          "heart": 1700000,
+          "heartCount": 1700000,
+          "videoCount": 1013
+        }
+      },
+      {
+        "path": "$.itemList[4].authorStatsV2",
+        "fields": {
+          "diggCount": "876",
+          "followerCount": "561500",
+          "followingCount": "3",
+          "friendCount": "0",
+          "heart": "1700000",
+          "heartCount": "1700000",
+          "videoCount": "1013"
+        }
+      },
+      {
+        "path": "$.itemList[4].stats",
+        "fields": {
+          "collectCount": 382,
+          "commentCount": 43,
+          "diggCount": 2025,
+          "playCount": 323400,
+          "shareCount": 359
+        }
+      },
+      {
+        "path": "$.itemList[4].statsV2",
+        "fields": {
+          "collectCount": "382",
+          "commentCount": "43",
+          "diggCount": "2025",
+          "playCount": "323400",
+          "repostCount": "0",
+          "shareCount": "359"
+        }
+      },
+      {
+        "path": "$.itemList[5]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": false,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1787031215,
+          "desc": "D\u00e9p s\u1ee5c k\u00e8m chram c\u1ee7a nh\u00e0 Yamiz d\u1ec5 th\u01b0\u01a1ng qu\u00e1 ta #depsuccrocs #depsucnamnu #niungreview ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7675240588660231445",
+          "isAd": true,
+          "isECVideo": 1,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "vi",
+          "textTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[5].authorStats",
+        "fields": {
+          "diggCount": 38000,
+          "followerCount": 20800,
+          "followingCount": 22,
+          "friendCount": 0,
+          "heart": 121200,
+          "heartCount": 121200,
+          "videoCount": 1108
+        }
+      },
+      {
+        "path": "$.itemList[5].authorStatsV2",
+        "fields": {
+          "diggCount": "38000",
+          "followerCount": "20800",
+          "followingCount": "22",
+          "friendCount": "0",
+          "heart": "121200",
+          "heartCount": "121200",
+          "videoCount": "1108"
+        }
+      },
+      {
+        "path": "$.itemList[5].stats",
+        "fields": {
+          "collectCount": 761,
+          "commentCount": 18,
+          "diggCount": 3138,
+          "playCount": 880600,
+          "shareCount": 708
+        }
+      },
+      {
+        "path": "$.itemList[5].statsV2",
+        "fields": {
+          "collectCount": "761",
+          "commentCount": "18",
+          "diggCount": "3138",
+          "playCount": "880600",
+          "repostCount": "0",
+          "shareCount": "708"
+        }
+      },
+      {
+        "path": "$.itemList[6]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": true,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1791030509,
+          "desc": "Review t\u1ea5t c\u1ea3 c\u00e1c m\u1eabu crocs cho n\u1eef b\u00ean s\u1ed1p #crocs #review #cute ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7692417442248756501",
+          "isAd": false,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "vi",
+          "textTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[6].authorStats",
+        "fields": {
+          "diggCount": 710,
+          "followerCount": 9826,
+          "followingCount": 6,
+          "friendCount": 0,
+          "heart": 235800,
+          "heartCount": 235800,
+          "videoCount": 250
+        }
+      },
+      {
+        "path": "$.itemList[6].authorStatsV2",
+        "fields": {
+          "diggCount": "710",
+          "followerCount": "9826",
+          "followingCount": "6",
+          "friendCount": "0",
+          "heart": "235800",
+          "heartCount": "235800",
+          "videoCount": "250"
+        }
+      },
+      {
+        "path": "$.itemList[6].stats",
+        "fields": {
+          "collectCount": 212,
+          "commentCount": 36,
+          "diggCount": 872,
+          "playCount": 81600,
+          "shareCount": 461
+        }
+      },
+      {
+        "path": "$.itemList[6].statsV2",
+        "fields": {
+          "collectCount": "212",
+          "commentCount": "36",
+          "diggCount": "872",
+          "playCount": "81600",
+          "repostCount": "0",
+          "shareCount": "461"
+        }
+      },
+      {
+        "path": "$.itemList[7]",
+        "fields": {
+          "AIGCDescription": "",
+          "BAInfo": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": false,
+          "adLabelVersion": 2,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1794452812,
+          "desc": "\u79cb\u51ac\u7528\u30af\u30ed\u30c3\u30af\u30b9\u8cb7\u3063\u3066\u6b63\u89e3\ud83e\udd79\ud83e\udd0e \u30b9\u30cb\u30fc\u30ab\u30fc\u3060\u3068\u3044\u3064\u3082\u540c\u3058\u611f\u3058\u306b\u306a\u308b\u3057\u3001\u6bce\u65e5\u539a\u5e95\u3084\u30d6\u30fc\u30c4\u306f\u3064\u3089\u3044\u306a\u3068\u601d\u3063\u3066\u3044\u3066\uff01 \u305d\u3093\u306a\u65e5\u306b\u30b5\u30c3\u3068\u5c65\u3051\u3066\u3001\u3061\u3083\u3093\u3068\u304a\u6d12\u843d\u306b\u6c7a\u307e\u308b\u306e\u304c\u6700\u9ad8\u3059\u304e\u305f\ud83e\udef6\ud83c\udffb \u7d50\u5c40\u3001\u4e00\u756a\u51fa\u756a\u304c\u591a\u3044\u306e\u3063\u3066\u666e\u6bb5\u7528\u306e\u9774\u3060\u304b\u3089\u3001\u3053\u3046\u3044\u3046\u6bce\u65e5\u4f7f\u3046\u3082\u306e\u3053\u305d\u3053\u3060\u308f\u308a\u305f\u3044\u2661 \u30b9\u30a8\u30fc\u30c9\u8abf\u306e\u7d20\u6750\u306b\u3082\u3053\u3082\u3053\u306e\u30d5\u30a1\u30fc\u304c\u53ef\u611b\u3059\u304e\u308b\u3057\u3001\u5185\u5074\u307e\u3067\u3075\u308f\u3063\u3075\u308f\u2601\ufe0f \u697d\u3061\u3093\u3067\u53ef\u611b\u304f\u3066\u3042\u3063\u305f\u304b\u3044\uff01 Crocs\uff5c\u30af\u30e9\u30b7\u30c3\u30af \u30a2\u30f3\u30d5\u30a1\u30fc\u30b2\u30c3\u30bf\u30d6\u30eb \u30b9\u30a8\u30fc\u30c9 \u30af\u30ed\u30c3\u30b0 \ud83e\uddf8\u2028\u666e\u6bb5\u7528\u30b7\u30e5\u30fc\u30ba\u306b\u3061\u3087\u3063\u3068\u304a\u91d1\u3092\u304b\u3051\u308b\u3060\u3051\u3067\u3001QOL\u4e0a\u304c\u308b\u6c17\u304c\u3059\u308b\ud83e\udd0d \u6c17\u306b\u306a\u308b\u4eba\u306f\u52d5\u753b\u5de6\u4e0b\u306e\u5546\u54c1\u30ea\u30f3\u30af\u304b\u3089\u30c1\u30a7\u30c3\u30af\u3057\u3066\u307f\u3066\u306d\ud83d\uded2 #\u30af\u30ed\u30c3\u30af\u30b9 #crocs #\u79cb\u51ac\u30b7\u30e5\u30fc\u30ba #\u51ac\u30b3\u30fc\u30c7 #\u8cfc\u5165\u54c1\u7d39\u4ecb",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7707116075456089352",
+          "isAd": true,
+          "isECVideo": 1,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "ja",
+          "textTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[7].authorStats",
+        "fields": {
+          "diggCount": 2,
+          "followerCount": 1000,
+          "followingCount": 21,
+          "friendCount": 0,
+          "heart": 161700,
+          "heartCount": 161700,
+          "videoCount": 39
+        }
+      },
+      {
+        "path": "$.itemList[7].authorStatsV2",
+        "fields": {
+          "diggCount": "2",
+          "followerCount": "1000",
+          "followingCount": "21",
+          "friendCount": "0",
+          "heart": "161700",
+          "heartCount": "161700",
+          "videoCount": "39"
+        }
+      },
+      {
+        "path": "$.itemList[7].stats",
+        "fields": {
+          "collectCount": 0,
+          "commentCount": 0,
+          "diggCount": 4,
+          "playCount": 756,
+          "shareCount": 0
+        }
+      },
+      {
+        "path": "$.itemList[7].statsV2",
+        "fields": {
+          "collectCount": "0",
+          "commentCount": "0",
+          "diggCount": "4",
+          "playCount": "756",
+          "repostCount": "0",
+          "shareCount": "0"
+        }
+      }
+    ],
+    "keys": [
+      "cursor",
+      "extra",
+      "hasMore",
+      "itemList",
+      "log_pb",
+      "statusCode",
+      "status_code",
+      "status_msg"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530813.json"
+  },
+  {
+    "url": "https://mcs-sg.tiktokv.com/v1/user/webid",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 58,
+    "at": "2026-11-13T00:46:53Z",
+    "hits": [],
+    "keys": [
+      "e",
+      "ssid",
+      "web_id"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/tiktok/linker/component/strategy/get/v1/?WebIdLastTime=1794530807&aid=1988&app_language=en&app_name=tiktok_web&biz_name=Webapp&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.36&channel=",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 1033,
+    "at": "2026-11-13T00:46:53Z",
+    "hits": [],
+    "keys": [
+      "extra",
+      "log_pb",
+      "status_code",
+      "status_msg",
+      "strategy"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530813.json"
+  },
+  {
+    "url": "https://www.tiktok.com/api/seo/generic_exposure/?WebIdLastTime=1794530807&aid=1988&app_id=1180&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_e",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 16040,
+    "at": "2026-11-13T00:46:53Z",
+    "hits": [],
+    "keys": [
+      "extra",
+      "generic_exposure_urls",
+      "log_pb",
+      "status_code",
+      "status_msg"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530813.json"
+  },
+  {
+    "url": "https://www.tiktok.com/api/challenge/item_list/?WebIdLastTime=1794530807&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.36&challengeID=93006&channel=tiktok_web&cli",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 712879,
+    "at": "2026-11-13T00:46:55Z",
+    "hits": [
+      {
+        "path": "$.itemList[0]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 120,
+          "IsHDBitrate": false,
+          "ShowAIGC": true,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1786276085,
+          "desc": "Bi\u1ebft mang g\u00ec \u0111i h\u1ecdc ch\u01b0a z\u1ea1aaa \ud83d\udcf8 #crocs4life #2026tiktok #crocsspiderman ",
+          "digged": false,
+          "duetDisplay": 0,
+          "forFriend": false,
+          "id": "7671997345432800530",
+          "isAd": false,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "textLanguage": "vi",
+          "textTranslatable": true,
+          "titleLanguage": "vi",
+          "titleTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[0].authorStats",
+        "fields": {
+          "diggCount": 354,
+          "followerCount": 8564,
+          "followingCount": 8,
+          "friendCount": 0,
+          "heart": 224000,
+          "heartCount": 224000,
+          "videoCount": 60
+        }
+      },
+      {
+        "path": "$.itemList[0].authorStatsV2",
+        "fields": {
+          "diggCount": "354",
+          "followerCount": "8564",
+          "followingCount": "8",
+          "friendCount": "0",
+          "heart": "224000",
+          "heartCount": "224000",
+          "videoCount": "60"
+        }
+      },
+      {
+        "path": "$.itemList[0].stats",
+        "fields": {
+          "collectCount": 11900,
+          "commentCount": 428,
+          "diggCount": 40300,
+          "playCount": 1600000,
+          "shareCount": 13700
+        }
+      },
+      {
+        "path": "$.itemList[0].statsV2",
+        "fields": {
+          "collectCount": "11916",
+          "commentCount": "428",
+          "diggCount": "40300",
+          "playCount": "1600000",
+          "repostCount": "0",
+          "shareCount": "13700"
+        }
+      },
+      {
+        "path": "$.itemList[1]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": false,
+          "adAuthorization": true,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1772748238,
+          "desc": "everything good in the world is for punch \ud83e\udd79",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7613895614887185695",
+          "isAd": true,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "en",
+          "textTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[1].authorStats",
+        "fields": {
+          "diggCount": 3203,
+          "followerCount": 3300000,
+          "followingCount": 54,
+          "friendCount": 0,
+          "heart": 40000000,
+          "heartCount": 40000000,
+          "videoCount": 802
+        }
+      },
+      {
+        "path": "$.itemList[1].authorStatsV2",
+        "fields": {
+          "diggCount": "3203",
+          "followerCount": "3300000",
+          "followingCount": "54",
+          "friendCount": "0",
+          "heart": "40000000",
+          "heartCount": "40000000",
+          "videoCount": "802"
+        }
+      },
+      {
+        "path": "$.itemList[1].stats",
+        "fields": {
+          "collectCount": 31000,
+          "commentCount": 2069,
+          "diggCount": 752100,
+          "playCount": 7400000,
+          "shareCount": 211500
+        }
+      },
+      {
+        "path": "$.itemList[1].statsV2",
+        "fields": {
+          "collectCount": "31004",
+          "commentCount": "2069",
+          "diggCount": "752100",
+          "playCount": "7400000",
+          "repostCount": "0",
+          "shareCount": "211500"
+        }
+      },
+      {
+        "path": "$.itemList[2]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": true,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1794357127,
+          "desc": "#crocs  #newcollection #snoopy #fyp #wholefamily  @Crocs ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "forFriend": false,
+          "id": "7706705124613229855",
+          "isAd": false,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "textLanguage": "un",
+          "textTranslatable": false
+        }
+      },
+      {
+        "path": "$.itemList[2].authorStats",
+        "fields": {
+          "diggCount": 98,
+          "followerCount": 3491,
+          "followingCount": 25,
+          "friendCount": 0,
+          "heart": 336100,
+          "heartCount": 336100,
+          "videoCount": 461
+        }
+      },
+      {
+        "path": "$.itemList[2].authorStatsV2",
+        "fields": {
+          "diggCount": "98",
+          "followerCount": "3491",
+          "followingCount": "25",
+          "friendCount": "0",
+          "heart": "336100",
+          "heartCount": "336100",
+          "videoCount": "461"
+        }
+      },
+      {
+        "path": "$.itemList[2].stats",
+        "fields": {
+          "collectCount": 1939,
+          "commentCount": 32,
+          "diggCount": 30700,
+          "playCount": 206500,
+          "shareCount": 13700
+        }
+      },
+      {
+        "path": "$.itemList[2].statsV2",
+        "fields": {
+          "collectCount": "1939",
+          "commentCount": "32",
+          "diggCount": "30700",
+          "playCount": "206500",
+          "repostCount": "0",
+          "shareCount": "13700"
+        }
+      },
+      {
+        "path": "$.itemList[3]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": true,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1794112971,
+          "desc": "\u00bfEres de Torre\u00f3n y est\u00e1s buscando los Crocs m\u00e1s virales del momento? \ud83d\udc40\ud83d\udd25 \u00a1Llegaste al video correcto! \ud83e\udd29 Tenemos los modelos que est\u00e1n en tendencia, dise\u00f1os incre\u00edbles y diferentes tallas para que encuentres tus favoritos. \ud83d\udc0a\u2728 \ud83d\udccd Estamos en Torre\u00f3n, Coahuila. \ud83d\udcf2 M\u00e1ndanos mensajito y te compartimos todos los modelos disponibles. \u00a1No te quedes sin los tuyos! \ud83d\udca5#torreon #ventas #fyp #crocs #envios ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7705656510143122709",
+          "isAd": false,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "es",
+          "textTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[3].authorStats",
+        "fields": {
+          "diggCount": 83400,
+          "followerCount": 4982,
+          "followingCount": 1044,
+          "friendCount": 0,
+          "heart": 35700,
+          "heartCount": 35700,
+          "videoCount": 137
+        }
+      },
+      {
+        "path": "$.itemList[3].authorStatsV2",
+        "fields": {
+          "diggCount": "83400",
+          "followerCount": "4982",
+          "followingCount": "1044",
+          "friendCount": "0",
+          "heart": "35700",
+          "heartCount": "35700",
+          "videoCount": "137"
+        }
+      },
+      {
+        "path": "$.itemList[3].stats",
+        "fields": {
+          "collectCount": 3066,
+          "commentCount": 267,
+          "diggCount": 8593,
+          "playCount": 178200,
+          "shareCount": 2497
+        }
+      },
+      {
+        "path": "$.itemList[3].statsV2",
+        "fields": {
+          "collectCount": "3066",
+          "commentCount": "267",
+          "diggCount": "8593",
+          "playCount": "178200",
+          "repostCount": "0",
+          "shareCount": "2497"
+        }
+      },
+      {
+        "path": "$.itemList[4]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": true,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1792815646,
+          "desc": "Crocs Classic xinh iu \ud83d\udc97\ud83d\udc97\ud83d\udc97 #crocsclassic #sneakers_ngocgiay #depcrocs #xuhuong #fyp ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7700084522771238164",
+          "isAd": false,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "vi",
+          "textTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[4].authorStats",
+        "fields": {
+          "diggCount": 1211,
+          "followerCount": 16600,
+          "followingCount": 1,
+          "friendCount": 0,
+          "heart": 357400,
+          "heartCount": 357400,
+          "videoCount": 121
+        }
+      },
+      {
+        "path": "$.itemList[4].authorStatsV2",
+        "fields": {
+          "diggCount": "1211",
+          "followerCount": "16600",
+          "followingCount": "1",
+          "friendCount": "0",
+          "heart": "357400",
+          "heartCount": "357400",
+          "videoCount": "121"
+        }
+      },
+      {
+        "path": "$.itemList[4].stats",
+        "fields": {
+          "collectCount": 457,
+          "commentCount": 110,
+          "diggCount": 3974,
+          "playCount": 152300,
+          "shareCount": 336
+        }
+      },
+      {
+        "path": "$.itemList[4].statsV2",
+        "fields": {
+          "collectCount": "457",
+          "commentCount": "110",
+          "diggCount": "3974",
+          "playCount": "152300",
+          "repostCount": "0",
+          "shareCount": "336"
+        }
+      },
+      {
+        "path": "$.itemList[5]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": false,
+          "adAuthorization": true,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1789372822,
+          "desc": "#crocs #sandals #fyp\u30b7 #sandalmurah #shoes ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "forFriend": false,
+          "id": "7685297708139089160",
+          "isAd": true,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "textLanguage": "un",
+          "textTranslatable": false
+        }
+      },
+      {
+        "path": "$.itemList[5].authorStats",
+        "fields": {
+          "diggCount": 336,
+          "followerCount": 3030,
+          "followingCount": 4,
+          "friendCount": 0,
+          "heart": 139200,
+          "heartCount": 139200,
+          "videoCount": 238
+        }
+      },
+      {
+        "path": "$.itemList[5].authorStatsV2",
+        "fields": {
+          "diggCount": "336",
+          "followerCount": "3030",
+          "followingCount": "4",
+          "friendCount": "0",
+          "heart": "139200",
+          "heartCount": "139200",
+          "videoCount": "238"
+        }
+      },
+      {
+        "path": "$.itemList[5].stats",
+        "fields": {
+          "collectCount": 1947,
+          "commentCount": 28,
+          "diggCount": 9210,
+          "playCount": 1100000,
+          "shareCount": 1247
+        }
+      },
+      {
+        "path": "$.itemList[5].statsV2",
+        "fields": {
+          "collectCount": "1947",
+          "commentCount": "28",
+          "diggCount": "9210",
+          "playCount": "1100000",
+          "repostCount": "0",
+          "shareCount": "1247"
+        }
+      },
+      {
+        "path": "$.itemList[6]",
+        "fields": {
+          "AIGCDescription": "",
+          "BAInfo": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": false,
+          "adLabelVersion": 2,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1794445839,
+          "desc": "the cutest winter shoes!! @Crocs #crocs #fuzzyslippers #clogs  ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7707086153672822029",
+          "isAd": true,
+          "isECVideo": 1,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "en",
+          "textTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[6].authorStats",
+        "fields": {
+          "diggCount": 2158,
+          "followerCount": 8887,
+          "followingCount": 16,
+          "friendCount": 0,
+          "heart": 1600000,
+          "heartCount": 1600000,
+          "videoCount": 4521
+        }
+      },
+      {
+        "path": "$.itemList[6].authorStatsV2",
+        "fields": {
+          "diggCount": "2158",
+          "followerCount": "8887",
+          "followingCount": "16",
+          "friendCount": "0",
+          "heart": "1600000",
+          "heartCount": "1600000",
+          "videoCount": "4521"
+        }
+      },
+      {
+        "path": "$.itemList[6].stats",
+        "fields": {
+          "collectCount": 1,
+          "commentCount": 0,
+          "diggCount": 8,
+          "playCount": 161,
+          "shareCount": 0
+        }
+      },
+      {
+        "path": "$.itemList[6].statsV2",
+        "fields": {
+          "collectCount": "1",
+          "commentCount": "0",
+          "diggCount": "8",
+          "playCount": "161",
+          "repostCount": "0",
+          "shareCount": "0"
+        }
+      },
+      {
+        "path": "$.itemList[7]",
+        "fields": {
+          "AIGCDescription": "",
+          "CategoryType": 109,
+          "IsHDBitrate": false,
+          "ShowAIGC": true,
+          "backendSourceEventTracking": "",
+          "collected": false,
+          "createTime": 1788612251,
+          "desc": "Nay shop \u0111\u1ed5i gi\u00f3 nh\u00e9 #crocs #xuhuong #fyp\u30b7 #kitty #jass ",
+          "digged": false,
+          "diversificationId": 10029,
+          "duetDisplay": 0,
+          "duetEnabled": true,
+          "forFriend": false,
+          "id": "7682031095017196820",
+          "isAd": false,
+          "isProhibited": false,
+          "isReviewing": false,
+          "itemCommentStatus": 0,
+          "officalItem": false,
+          "originalItem": false,
+          "privateItem": false,
+          "secret": false,
+          "shareEnabled": true,
+          "stitchDisplay": 0,
+          "stitchEnabled": true,
+          "textLanguage": "vi",
+          "textTranslatable": true
+        }
+      },
+      {
+        "path": "$.itemList[7].authorStats",
+        "fields": {
+          "diggCount": 530,
+          "followerCount": 7589,
+          "followingCount": 3,
+          "friendCount": 0,
+          "heart": 230300,
+          "heartCount": 230300,
+          "videoCount": 89
+        }
+      },
+      {
+        "path": "$.itemList[7].authorStatsV2",
+        "fields": {
+          "diggCount": "530",
+          "followerCount": "7589",
+          "followingCount": "3",
+          "friendCount": "0",
+          "heart": "230300",
+          "heartCount": "230300",
+          "videoCount": "89"
+        }
+      },
+      {
+        "path": "$.itemList[7].stats",
+        "fields": {
+          "collectCount": 776,
+          "commentCount": 58,
+          "diggCount": 13500,
+          "playCount": 274200,
+          "shareCount": 2370
+        }
+      },
+      {
+        "path": "$.itemList[7].statsV2",
+        "fields": {
+          "collectCount": "776",
+          "commentCount": "58",
+          "diggCount": "13500",
+          "playCount": "274200",
+          "repostCount": "0",
+          "shareCount": "2370"
+        }
+      }
+    ],
+    "keys": [
+      "cursor",
+      "extra",
+      "hasMore",
+      "itemList",
+      "log_pb",
+      "statusCode",
+      "status_code",
+      "status_msg"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530815.json"
+  },
+  {
+    "url": "https://www.tiktok.com/api/global-footer/graphql",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 11962,
+    "at": "2026-11-13T00:46:55Z",
+    "hits": [],
+    "keys": [
+      "data",
+      "extensions"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/aweme/v1/report/inbox/notice/?WebIdLastTime=1794530807&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.36&carrier_region=JP&channel=tiktok_we",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 105,
+    "at": "2026-11-13T00:46:56Z",
+    "hits": [],
+    "keys": [
+      "status_msg",
+      "log_pb",
+      "status_code"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530816.json"
+  },
+  {
+    "url": "https://www.tiktok.com/api/v1/web-cookie-privacy/config?locale=en&appId=1988&theme=default&tea=1",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 3186,
+    "at": "2026-11-13T00:46:56Z",
+    "hits": [],
+    "keys": [
+      "statusCode",
+      "body"
+    ]
+  },
+  {
+    "url": "https://starling-sg.tiktokv.com/check_and_get_text/2e1fcc60aeaa11e99ef535aeebd27c9b/normal/account_server?lang=en,zh",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 17118,
+    "at": "2026-11-13T00:46:56Z",
+    "hits": [],
+    "keys": [
+      "message",
+      "status"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/api/feedback/v1/newest_reply/?WebIdLastTime=1794530807&aid=1284&app_key=tiktok-web&app_language=en&app_name=tiktok_web&appkey=tiktok-web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.3",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 285,
+    "at": "2026-11-13T00:46:56Z",
+    "hits": [],
+    "keys": [
+      "err_code",
+      "message",
+      "data",
+      "pushResult",
+      "data_list"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530816.json"
+  },
+  {
+    "url": "https://www.tiktok.com/tiktok/v1/screen_time/list/?WebIdLastTime=1794530807&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=tru",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 105,
+    "at": "2026-11-13T00:46:56Z",
+    "hits": [],
+    "keys": [
+      "status_code",
+      "status_msg",
+      "log_pb"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530816.json"
+  },
+  {
+    "url": "https://www.tiktok.com/tiktok/v1/app_open_times/upload/?WebIdLastTime=1794530807&aid=1988&app_language=en&app_name=tiktok_web&app_open_times=%5Bobject%20Object%5D&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F53",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 105,
+    "at": "2026-11-13T00:46:56Z",
+    "hits": [],
+    "keys": [
+      "status_code",
+      "status_msg",
+      "log_pb"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530816.json"
+  },
+  {
+    "url": "https://www.tiktok.com/api/share/settings/?WebIdLastTime=1794530807&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&data_c",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 712,
+    "at": "2026-11-13T00:46:56Z",
+    "hits": [],
+    "keys": [
+      "extra",
+      "log_pb",
+      "share_platforms",
+      "status_code",
+      "status_msg"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530816.json"
+  },
+  {
+    "url": "https://www.tiktok.com/module_meta/common-login/vmok-manifest.json",
+    "status": 200,
+    "ct": "application/json",
+    "len": 20644,
+    "at": "2026-11-13T00:46:56Z",
+    "hits": [],
+    "keys": [
+      "id",
+      "name",
+      "metaData",
+      "shared",
+      "remotes",
+      "exposes"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/tiktok/v1/community_notes/intake/check/?WebIdLastTime=1794530807&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 105,
+    "at": "2026-11-13T00:46:56Z",
+    "hits": [],
+    "keys": [
+      "status_code",
+      "status_msg",
+      "log_pb"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530816.json"
+  },
+  {
+    "url": "https://mcs-sg.tiktokv.com/v1/user/webid",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 58,
+    "at": "2026-11-13T00:46:57Z",
+    "hits": [],
+    "keys": [
+      "e",
+      "ssid",
+      "web_id"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/tiktok/v1/screen_time/upload/?WebIdLastTime=1794530807&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=t",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 187,
+    "at": "2026-11-13T00:46:57Z",
+    "hits": [],
+    "keys": [
+      "status_code",
+      "status_msg",
+      "extra",
+      "log_pb"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530817.json"
+  },
+  {
+    "url": "https://mcs-sg.tiktokv.com/v1/user/webid",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 58,
+    "at": "2026-11-13T00:46:57Z",
+    "hits": [],
+    "keys": [
+      "e",
+      "ssid",
+      "web_id"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/module_meta/common-login/vmok-manifest.json",
+    "status": 200,
+    "ct": "application/json",
+    "len": 20644,
+    "at": "2026-11-13T00:46:57Z",
+    "hits": [],
+    "keys": [
+      "id",
+      "name",
+      "metaData",
+      "shared",
+      "remotes",
+      "exposes"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/tiktok/pns/privacy_headers?aid=1180",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 248,
+    "at": "2026-11-13T00:46:57Z",
+    "hits": [],
+    "keys": [
+      "code",
+      "extra",
+      "log_pb",
+      "message",
+      "results",
+      "status_code",
+      "status_msg"
+    ]
+  },
+  {
+    "url": "https://accounts.google.com/gsi/status?client_id=1096011445005-sdea0nf5jvj14eia93icpttv27cidkvk.apps.googleusercontent.com&cas=K1qpbRQg7SyvD%2BJ0ieVhMT9P5JWmYkzcslnqY7s%2BxGk&bs=bLmr2f%2B%2FtMw4TzQfdkGcKu%2FEJNfaBi%2Blku%2BMqbOtITU&has_opted_out_fedcm=false",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 79,
+    "at": "2026-11-13T00:46:58Z"
+  },
+  {
+    "url": "https://www.tiktok.com/node-webapp/api/login-config",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 896,
+    "at": "2026-11-13T00:46:58Z",
+    "hits": [],
+    "keys": [
+      "statusCode",
+      "config"
+    ]
+  },
+  {
+    "url": "https://starling-sg.tiktokv.com/check_and_get_text/5dc26cf008d511e9b571e1bc0c9e23b5/normal/WebApp_Login?lang=en,zh",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 125218,
+    "at": "2026-11-13T00:46:59Z",
+    "hits": [],
+    "keys": [
+      "message",
+      "status"
+    ]
+  },
+  {
+    "url": "https://mon-sg.tiktokv.com/monitor_web/settings/browser-settings?bid=tiktok_webapp_vmok&store=1",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 4181,
+    "at": "2026-11-13T00:46:59Z",
+    "hits": [],
+    "keys": [
+      "data",
+      "errmsg",
+      "errno"
+    ]
+  },
+  {
+    "url": "https://www.tiktok.com/api/feedback/v1/newest_reply/?WebIdLastTime=1794530807&aid=1284&app_key=tiktok-web&app_language=en&app_name=tiktok_web&appkey=tiktok-web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.3",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 285,
+    "at": "2026-11-13T00:47:06Z",
+    "hits": [],
+    "keys": [
+      "err_code",
+      "message",
+      "data",
+      "pushResult",
+      "data_list"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530826.json"
+  },
+  {
+    "url": "https://www.tiktok.com/api/feedback/v1/newest_reply/?WebIdLastTime=1794530807&aid=1284&app_key=tiktok-web&app_language=en&app_name=tiktok_web&appkey=tiktok-web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Linux%20x86_64&browser_version=5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F156.0.0.0%20Safari%2F537.3",
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "len": 285,
+    "at": "2026-11-13T00:47:17Z",
+    "hits": [],
+    "keys": [
+      "err_code",
+      "message",
+      "data",
+      "pushResult",
+      "data_list"
+    ],
+    "saved": "/workspace/chris-camillo-tracker/data/tiktok/tagxhr_crocs_1794530837.json"
+  }
+]

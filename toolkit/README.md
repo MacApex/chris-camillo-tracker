@@ -58,8 +58,10 @@ python -m pytest -q
 ```
 
 - `camillo_tracker.street_view` — Street Consensus Profile and priced-in verdict.
-- `camillo_tracker.signals` — Wikipedia pageviews, Google Trends, Google News RSS, GDELT (respect the 5-second limit), YouTube metadata via yt-dlp, iTunes Search, corroboration (two rising z-scores, no imputation).
-- Optional scrapers already attempted in `scripts/probe_platforms.py`: Scrapling Fetcher, instaloader (no login), twscrape (skipped — needs accounts; we will not log into user credentials), yt-dlp `--skip-download`. Status lives in `../data/platform_status.json`.
+- `camillo_tracker.signals` — Wikipedia pageviews, Google Trends, Google News RSS, GDELT (respect the 5-second limit), YouTube metadata via yt-dlp, iTunes Search, corroboration (two rising z-scores, no imputation). Platforms that worked but have no baseline (TikTok lifetime totals, a single Amazon BSR) are listed under `platforms_present_no_z`, not scored as a z.
+- `camillo_tracker.tiktok` — public `/api/challenge/detail/` (StealthyFetcher in-page fetch, prefer `statsV2`) and Creative Center `GetHashtagList`. Cached verified sample by default; set `CCT_LIVE_TIKTOK=1` to refetch. davidteather/TikTok-Api is a second official-shaped method (no login).
+- `camillo_tracker.amazon` — public Best Sellers `data-client-recs-list` official `zg.rank`, title-only brand match, and product-page BSR phrases. Cached sample by default; `CCT_LIVE_AMAZON=1` to refetch.
+- Optional scrapers already attempted in `scripts/probe_platforms.py`: Scrapling Fetcher, instaloader (no login), twscrape (skipped — needs accounts; we will not log into user credentials), yt-dlp `--skip-download`. Status lives in `../data/platform_status.json`. Verified numbers: `../data/tiktok/sample_hashtag_counts.json`, `../data/amazon/sample_bsr.json`.
 
 ### Environment variables
 
@@ -69,5 +71,7 @@ python -m pytest -q
 | `TWITTER_BEARER_TOKEN` | Same, fallback name. |
 | `CCT_USE_FINBERT=1` | Enable FinBERT if `transformers` and `torch` are installed. |
 | `YOUTUBE_API_KEY` | Optional official YouTube Data API. The default YouTube path is yt-dlp metadata search, no key. |
+| `CCT_LIVE_TIKTOK=1` | Live StealthyFetcher refetch of `/api/challenge/detail/` instead of the verified cache. |
+| `CCT_LIVE_AMAZON=1` | Live Fetcher refetch of a Best Sellers page instead of the verified cache. |
 
 Public data only. Do not put personal login cookies in this toolkit.

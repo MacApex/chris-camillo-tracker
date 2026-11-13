@@ -1,0 +1,53 @@
+{
+  "ticker": "CROX",
+  "hashtag": "crocsshoes",
+  "retrieved_at_utc": "2026-11-13T00:49:35Z",
+  "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+  "http_status": 200,
+  "source_url": "https://www.tiktok.com/tag/crocsshoes",
+  "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=crocsshoes&device_platform=web_pc&os=linux",
+  "challenge_id": "5909791",
+  "title": "crocsshoes",
+  "stats": {
+    "videoCount": 0,
+    "viewCount": 747900000
+  },
+  "statsV2": {
+    "videoCount": "53039",
+    "viewCount": "747910931"
+  },
+  "videoCount": "53039",
+  "viewCount": "747910931",
+  "status_code": 0,
+  "ok": true,
+  "challengeInfo_slim": {
+    "challenge": {
+      "coverLarger": "",
+      "coverMedium": "",
+      "coverThumb": "",
+      "desc": "",
+      "id": "5909791",
+      "isCommerce": false,
+      "profileLarger": "",
+      "profileMedium": "",
+      "profileThumb": "",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 747900000
+      },
+      "title": "crocsshoes"
+    },
+    "challengeAnnouncement": {
+      "body": "",
+      "title": ""
+    },
+    "stats": {
+      "videoCount": 0,
+      "viewCount": 747900000
+    },
+    "statsV2": {
+      "videoCount": "53039",
+      "viewCount": "747910931"
+    }
+  }
+}

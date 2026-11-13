@@ -1,0 +1,272 @@
+{
+  "kind": "bestsellers_toys",
+  "url": "https://www.amazon.com/gp/bestsellers/toys-and-games/",
+  "method": "Scrapling Fetcher",
+  "retrieved_at_utc": "2026-11-13T00:51:04Z",
+  "html_len": 442904,
+  "title": "Amazon Best Sellers: Best Toys & Games",
+  "products": [
+    {
+      "asin": "B0BQZFVJTB",
+      "rank": 1,
+      "title": "Schylling NeeDoh Nice Cube - Sensory Squeeze Toy with Super Solid Squish - 2.25\" Cube - Color May Vary (Pack of 1)",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Schylling-NeeDoh-Sensory-Super-Squish/dp/B0BQZFVJTB/ref=zg_bs_g_toys-and-games_d_sccl_1/131-1203256-9447810"
+    },
+    {
+      "asin": "B0GZ4ZZ4QS",
+      "rank": 2,
+      "title": "Schylling NeeDoh Nice Cube - Sensory Squeeze Toy with Super Solid Squish - 2.25\" Cube - Color May Vary (Pack of 1)",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Horizon-Group-USA-Slimygloop-Satisfying/dp/B0GZ4ZZ4QS/ref=zg_bs_g_toys-and-games_d_sccl_2/131-1203256-9447810"
+    },
+    {
+      "asin": "B07B6ZN7P8",
+      "rank": 3,
+      "title": "Horizon Group USA Slimygloop Gelli Gels, Minecraft Creeper | Slow-Flow Glitter Squishy Sensory Toys, Squeeze Stress Ball for",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/LeapFrog-Learning-Friends-Words-Green/dp/B07B6ZN7P8/ref=zg_bs_g_toys-and-games_d_sccl_3/131-1203256-9447810"
+    },
+    {
+      "asin": "B0BDQLJMFV",
+      "rank": 4,
+      "title": "LeapFrog Learning Friends 100 Words Book",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/PartyWoo-Balloons-Different-Birthday-Decorations/dp/B0BDQLJMFV/ref=zg_bs_g_toys-and-games_d_sccl_4/131-1203256-9447810"
+    },
+    {
+      "asin": "B07HDX46HS",
+      "rank": 5,
+      "title": "PartyWoo Black Balloons 140pcs Different Sizes of 18 12 10 5 Inch | Balloons for Baby Shower Birthday Graduation Casino Gamin",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Crayola-Globbles-Squish-Fidget-Toys-6Count/dp/B07HDX46HS/ref=zg_bs_g_toys-and-games_d_sccl_5/131-1203256-9447810"
+    },
+    {
+      "asin": "B0DG2VRFV7",
+      "rank": 6,
+      "title": "Crayola Globbles Fidget Toy, 6ct, Sticky Stress Ball, Kid Stocking Stuffers | Holiday Gift for Kids & Adults, Squishy Balls,",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Squishy-Squishies-Treasure-Classroom-Birthday/dp/B0DG2VRFV7/ref=zg_bs_g_toys-and-games_d_sccl_6/131-1203256-9447810"
+    },
+    {
+      "asin": "B0G3GGVJD5",
+      "rank": 7,
+      "title": "30 Pack Squishy Toys, Kawaii Squishies Party Favors for Kids 4-8 8-12 Treasure Box Toys for Classroom Birthday Xmas Gifts Goo",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Schylling-Needoh-Nice-Sicle-Sensory-Squeeze/dp/B0G3GGVJD5/ref=zg_bs_g_toys-and-games_d_sccl_7/131-1203256-9447810"
+    },
+    {
+      "asin": "B0D9ZTW7PS",
+      "rank": 7,
+      "title": "Schylling Needoh Nice-Sicle - Sensory Squeeze Toy - Colors May Vary",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Schylling-NeeDoh-Nice-Ice-Baby/dp/B0D9ZTW7PS/ref=zg_bs_g_toys-and-games_d_sccl_8/131-1203256-9447810"
+    },
+    {
+      "asin": "B0G3Y3RNZQ",
+      "rank": 8,
+      "title": "Schylling NeeDoh Nice Ice Baby - 1.25\" Cube - Color May Vary (Pack of 1) | Sensory Squeeze Toy with Super Solid Squish",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/CRUNCH-LABS-Mark-Rober-Crunchinator/dp/B0G3Y3RNZQ/ref=zg_bs_g_toys-and-games_d_sccl_9/131-1203256-9447810"
+    },
+    {
+      "asin": "B08LQYT546",
+      "rank": 10,
+      "title": "CrunchLabs by Mark Rober, The Crunchinator, STEM Toys for Ages 8-13 | Inspired by Mark Rober, 3 interchangeable plates, conta",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Crayola-Washable-Markers-Retractable-Supplies/dp/B08LQYT546/ref=zg_bs_g_toys-and-games_d_sccl_10/131-1203256-9447810"
+    },
+    {
+      "asin": "B0829FT44S",
+      "rank": 11,
+      "title": "Crayola Clicks Retractable Markers 10ct, Washable Markers, Stocking Stuffer | Holiday Gift for Kids & Teachers, School Suppli",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Official-Collection-Combination-Charizard-Detective/dp/B0829FT44S/ref=zg_bs_g_toys-and-games_d_sccl_11/131-1203256-9447810"
+    },
+    {
+      "asin": "B0B6B25BKW",
+      "rank": 12,
+      "title": "50+ Official Pokemon Cards Collection with 5 Foils in Any Combination and at Least 1 Rarity, GX, EX, FA, Tag Team, Or Secret",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/100-PICS-Mount-Cleverest-Birthday/dp/B0B6B25BKW/ref=zg_bs_g_toys-and-games_d_sccl_12/131-1203256-9447810"
+    },
+    {
+      "asin": "B087N9N6HH",
+      "rank": 13,
+      "title": "Mount Cleverest\u00ae Original Edition | True or False Trivia Game | Fun Adults & Kids Family Card Game | Stocking Stuffer | Trave",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Play-Doh-Non-Toxic-Modeling-Classroom-Exclusive/dp/B087N9N6HH/ref=zg_bs_g_toys-and-games_d_sccl_13/131-1203256-9447810"
+    },
+    {
+      "asin": "B06XL1B7QN",
+      "rank": 14,
+      "title": "Play Doh Bulk Handout 42-Pack of 1-Ounce Modeling Compound Cans, Back to School Gifts, Prizes, & Party Favors, Kids Arts & Cr",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/LeapFrog-2-in-1-LeapTop-Touch-Pink/dp/B06XL1B7QN/ref=zg_bs_g_toys-and-games_d_sccl_14/131-1203256-9447810"
+    },
+    {
+      "asin": "B0G3Y2FSKT",
+      "rank": 15,
+      "title": "LeapFrog 2-in-1 LeapTop Touch, Pink",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/CRUNCH-Rober-Turbo-Airplane-Launch/dp/B0G3Y2FSKT/ref=zg_bs_g_toys-and-games_d_sccl_15/131-1203256-9447810"
+    },
+    {
+      "asin": "B0G497FGT6",
+      "rank": 16,
+      "title": "CrunchLabs by Mark Rober, Turbo Trick Paper Airplane, Fold, Launch, Fly | Launcher kit with 5 flight designs, 3 power bands,",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Pieces-Scented-Slimes-Premium-Exclusive/dp/B0G497FGT6/ref=zg_bs_g_toys-and-games_d_sccl_16/131-1203256-9447810"
+    },
+    {
+      "asin": "B0DV4BD3H2",
+      "rank": 17,
+      "title": "GUI GUI Mega Slime Haul, 5 Scented Slimes, 50+ Pieces, Kids Toys | Gua Sha and 3-in-1 tool with cloud, clear, butter, jelli,",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Schylling-NeeDoh-Nice-Cube-Swirl/dp/B0DV4BD3H2/ref=zg_bs_g_toys-and-games_d_sccl_17/131-1203256-9447810"
+    },
+    {
+      "asin": "B00E4AMFKK",
+      "rank": 18,
+      "title": "Schylling NeeDoh Nice Cube Swirl - Color May Vary (1 Per Pack) | Sensory Toy with a Super Solid Squish - Unique, Swirling Col",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Bicycle-Standard-Poker-Size-Blackjack/dp/B00E4AMFKK/ref=zg_bs_g_toys-and-games_d_sccl_18/131-1203256-9447810"
+    },
+    {
+      "asin": "B07D4RN9NH",
+      "rank": 19,
+      "title": "Bicycle Playing Cards 2 Pack Standard Poker Size Red and Blue | Air-cushion finish, Over 130 years trusted, 52 cards plus 2 J",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Crayola-Twistables-Colored-Exclusive-Stocking/dp/B07D4RN9NH/ref=zg_bs_g_toys-and-games_d_sccl_19/131-1203256-9447810"
+    },
+    {
+      "asin": "B0G27H3QLN",
+      "rank": 20,
+      "title": "Crayola Twistables Colored Pencil Set 50ct, Stocking Stuffers for Kids | Holiday Gift for Kids, Cool Back to School Supplies,",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Fisher-Price-Toddler-Carrier-Mechanic-Preschool/dp/B0G27H3QLN/ref=zg_bs_g_toys-and-games_d_sccl_20/131-1203256-9447810"
+    },
+    {
+      "asin": "B0BZCHMVTK",
+      "rank": 21,
+      "title": "Fisher-Price Little People Load and Roll Hauler Playset | Toy Car Carrier, 3 Play Pieces, Mechanic Pretend Play, Toddlers and",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Bezente-Assorted-Balloons-Birthday-Decorations/dp/B0BZCHMVTK/ref=zg_bs_g_toys-and-games_d_sccl_21/131-1203256-9447810"
+    },
+    {
+      "asin": "B01B1V10KA",
+      "rank": 22,
+      "title": "Bezente Assorted Latex Rainbow Balloons 100 Pack 12 inch | Bright Color Balloons for Birthday Bridal Shower Wedding Party Dec",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Melissa-Doug-Wooden-Scoop-Counter/dp/B01B1V10KA/ref=zg_bs_g_toys-and-games_d_sccl_22/131-1203256-9447810"
+    },
+    {
+      "asin": "B00TPMDNSU",
+      "rank": 23,
+      "title": "Melissa & Doug Wooden Scoop & Serve Ice Cream Counter, Pretend Play Store, 28 Toy Food & Play Kitchen Accessories, Preschool",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Play-Doh-B1169-Starter-Set/dp/B00TPMDNSU/ref=zg_bs_g_toys-and-games_d_sccl_23/131-1203256-9447810"
+    },
+    {
+      "asin": "B0GRSZ5TDC",
+      "rank": 24,
+      "title": "Play-Doh Starter Set 9-Piece Kit with Storage Tote & 4 Modeling Compound Cans, Ages 3+, Presentation May Vary",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Schylling-Needoh-Teenie-Color-Change/dp/B0GRSZ5TDC/ref=zg_bs_g_toys-and-games_d_sccl_24/131-1203256-9447810"
+    },
+    {
+      "asin": "B07P6MZPK3",
+      "rank": 24,
+      "title": "Schylling NeeDoh Teenie Color Change - Sensory Squeeze Toy - 4 Pack",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Mattel-Games-Collectible-Families-Exclusive/dp/B07P6MZPK3/ref=zg_bs_g_toys-and-games_d_sccl_25/131-1203256-9447810"
+    },
+    {
+      "asin": "B0CTWHSSM8",
+      "rank": 26,
+      "title": "Mattel Games UNO Card Game, Ages 7+, 2-10 Players | Classic Card Game for Kids, Teens and Family Game Night, Colorblind Acces",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/QUNREDA-Control-Upgraded-Modular-Batteries/dp/B0CTWHSSM8/ref=zg_bs_g_toys-and-games_d_sccl_26/131-1203256-9447810"
+    },
+    {
+      "asin": "B0FJMBJKB9",
+      "rank": 27,
+      "title": "Paw Patrol Search & Rescue Rubble Bulldozer Toy Vehicle with 2 Figures | Pull Back Bulldozer Toy, Real Working Wheels, Rubble",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Paw-Patrol-Bulldozer-Vehicle-Pull-Back/dp/B0FJMBJKB9/ref=zg_bs_g_toys-and-games_d_sccl_27/131-1203256-9447810"
+    },
+    {
+      "asin": "B0G2KJ8V5R",
+      "rank": 28,
+      "title": "Paw Patrol Search & Rescue Rubble Bulldozer Toy Vehicle with 2 Figures | Pull Back Bulldozer Toy, Real Working Wheels, Rubble",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/LEGO-Ornaments-Christmas-Building-Decorations/dp/B0G2KJ8V5R/ref=zg_bs_g_toys-and-games_d_sccl_28/131-1203256-9447810"
+    },
+    {
+      "asin": "B00JM5GW10",
+      "rank": 29,
+      "title": "LEGO Snowman Ornaments 40812 | Christmas Craft, Building Toys, Girls & Boys, Ages 6+, Christmas Tree Decoration with Hanging",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Play-Doh-Modeling-Compound-Non-Toxic-Exclusive/dp/B00JM5GW10/ref=zg_bs_g_toys-and-games_d_sccl_29/131-1203256-9447810"
+    },
+    {
+      "asin": "B089T7PX27",
+      "rank": 30,
+      "title": "Play Doh Modeling Compound 10-Pack Case of Assorted Colors, Non-Toxic 2 oz. Cans, Back to School Gifts, Prizes, & Party Favor",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Crayola-Natural-White-Modeling-Bucket/dp/B089T7PX27/ref=zg_bs_g_toys-and-games_d_sccl_30/131-1203256-9447810"
+    }
+  ],
+  "brand_contexts": [
+    {
+      "match": "elf.",
+      "snippet": "(n in r)v(r[n])|| null===r[n]||(b.push(n+x+\"=\"+(r[n]-q)),p&&s(\"mark\",X[n]||n,+r[n]));b.push(\"t\"+x+\"=\"+r[m]);u.latency[\"t\"+x]=r[m];if(e(\"ctb\",k)||e(\"wb\",k))t=1}}!D&&t&&b.push(\"ctb=1\");return b.join(\"&\")}function x(b,c,f,e,m){if(b&&!e){e=d.ue_err;if(p){var g=h.encodeURIComponent;g&&b&&(m=new Image,b=\""
+    },
+    {
+      "match": "elf",
+      "snippet": "ajax&&p.ajax(b,c);k&&n&&(e={requestId:e,transitionType:\"soft\"},\"string\"===typeof g&&(e.pageType=g,d.ue_pty=g),\"string\"===typeof r&&(e.subPageType=r,d.ue_spty=r),k(\"newPage\",e),n(\"mark\",\"transitionStart\",b));a.tag(\"ajax-transition\")}d.ueinit=(d.ueinit||0)+1;var a=d.ue=d.ue||{};a.t0=h.aPageStart||d.ue"
+    },
+    {
+      "match": "elf",
+      "snippet": "oveEventListener\",aa=\"attachEvent\",ca=\"detachEvent\",X={cf:\"criticalFeature\",af:\"aboveTheFold\",fn:\"functional\",fp:\"firstPaint\",fcp:\"firstContentfulPaint\",bb:\"bodyBegin\",be:\"bodyEnd\",ld:\"loaded\"},K=h.Date,H=h.performance||h.webkitPerformance,g=(H||{}).timing,E=(H||{}).navigation,Q=(g||{}).navigationSt"
+    },
+    {
+      "match": "elf",
+      "snippet": "function(i,e,t,n){var r=!1,a=i[c];return N?(!a||a.tid!==J.tid||!a[S]||a.pid!==t||!a.ent&&n||n&&ii(a.ent,n))&&(i[c]={visible:!0,pid:t,tid:e,ent:n},r=!0):!H&&a&&a.tid===J.tid&&a[S]&&(r=!(a[S]=!1)),r}(R,(D?t.tid:null)||j.tid||t.tid||J.tid,(D?t.pid:null)||j.pid||t.pid||J.pid,(D?t.ent:null)||j.ent||t.ent"
+    }
+  ],
+  "n_asins": 30,
+  "n_ranked": 30,
+  "brand_products": [],
+  "http_status": 200
+}

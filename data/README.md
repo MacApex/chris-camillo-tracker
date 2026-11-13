@@ -11,6 +11,8 @@ All numbers in this folder were fetched or compiled with a source, a timestamp, 
 | `youtube_ytsearch_crocs.json` | yt-dlp metadata, no download. |
 | `wikipedia/` | Official Wikimedia REST pageviews, including historical event windows. |
 | `gdelt/CROX.json` | GDELT TimelineVol after a rate-limit retry. |
-| `experiments/` | Event-study JSON and CSV (market paths, not personal P&L). |
+| `experiments/` | Event-study JSON and CSV (market paths, not personal P&L); `corroboration_sample.json` (13 Nov 2026 rerun). |
+| `tiktok/` | Verified public hashtag counts (`sample_hashtag_counts.json`, `challenge_all.json`, Creative Center XHR). Lifetime totals, not weekly momentum. |
+| `amazon/` | Verified public Best Sellers ranks (`sample_bsr.json`, `clean_ranks.json`) and one product-page BSR snippet. |
 
 Site copies of the public files live in `docs/data/` for GitHub Pages.

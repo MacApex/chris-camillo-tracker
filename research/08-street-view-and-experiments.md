@@ -42,3 +42,16 @@ Limitations are listed in the JSON: small sample, storytelling bias, month preci
 ## Multi-platform probes
 
 See `data/platform_status.json` and `data/provenance.csv`. Every numeric point has a source URL, timestamp, and method. Cross-checks: Wikipedia last-day Crocs 473 via two fetches; X counts from the official API; YouTube view counts from yt-dlp metadata. Unverified numbers were discarded, never estimated.
+
+
+## TikTok and Amazon public-data pass (13 Nov 2026, Asia/Shanghai)
+
+TikTok and Amazon trend figures do not have to come from official developer programs. A second pass used only public, unauthenticated routes.
+
+**TikTok — worked.** Scrapling StealthyFetcher captured Creative Center's public `GetHashtagList` XHR (US last-7-days top 3, DOM-confirmed; unauthenticated `totalCount` is 3; sample brands were not in that list; "See analytics" appears to need a login, which we did not use). The working path for sample brands is the public `/api/challenge/detail/` endpoint, fetched in-page after a StealthyFetcher session on tiktok.com. Prefer `statsV2` (exact strings) over rounded `stats`. davidteather/TikTok-Api `hashtag.info()` (no login) returns the same challengeInfo shape and cross-checked #crocs, #lululemon, and #elfcosmetics. Two timed #crocs pulls document a live counter. Fetcher-only `__UNIVERSAL_DATA__` was a bot-detected shell without stats. hashtagradar.com and tiktokhashtags.com are the same site; their totals are lower and do not override official counts. `#coach`, `#lulu`, and `#slime` are noisy generic words.
+
+These are **lifetime cumulative** counts — a stock, not a 7-day flow. A single snapshot is not a momentum z-score.
+
+**Amazon — worked for Best Sellers lists and one product page.** Official `data-client-recs-list` `render.zg.rank` on public Best Sellers pages, brand match on product title only (context matches were false positives and were discarded). Crocs Classic Clog is #1 in Women's Shoes and #12 in Clothing, Shoes & Jewelry; Lined Clog is #29 in Women's Shoes and, on the product page, #455 in Clothing, Shoes & Jewelry and #5 in Women's Mules & Clogs; two e.l.f. items are #23 and #24 in Beauty. Lululemon, Coach, and Elmer's were not in the top 50 of the lists fetched. Movers & Shakers had no recs JSON via Fetcher; search returned 503; CamelCamelCamel was Cloudflare 403 (not bypassed); Keepa public PNGs are price charts, not BSR, and were not transcribed.
+
+**Corroboration rerun.** None of the five sample tickers reach the two-platform rising-z threshold. Wikipedia last-day views are all below their own history. Only ELF's Google Trends momentum clears +0.5 (n_confirming = 1). TikTok and Amazon sit in `platforms_present_no_z`. Nothing was imputed. See `data/experiments/corroboration_sample.json` and the [street-view page](https://macapex.github.io/chris-camillo-tracker/street-view.html).

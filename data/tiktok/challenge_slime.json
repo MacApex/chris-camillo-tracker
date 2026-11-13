@@ -1,0 +1,53 @@
+{
+  "ticker": "NWL",
+  "hashtag": "slime",
+  "retrieved_at_utc": "2026-11-13T00:49:52Z",
+  "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+  "http_status": 200,
+  "source_url": "https://www.tiktok.com/tag/slime",
+  "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=slime&device_platform=web_pc&os=linux",
+  "challenge_id": "47378",
+  "title": "slime",
+  "stats": {
+    "videoCount": 0,
+    "viewCount": 222600000000
+  },
+  "statsV2": {
+    "videoCount": "6360686",
+    "viewCount": "222606744837"
+  },
+  "videoCount": "6360686",
+  "viewCount": "222606744837",
+  "status_code": 0,
+  "ok": true,
+  "challengeInfo_slim": {
+    "challenge": {
+      "coverLarger": "",
+      "coverMedium": "",
+      "coverThumb": "",
+      "desc": "\u00a1Busca la receta perfecta de #slime y comparte tus favoritos!",
+      "id": "47378",
+      "isCommerce": false,
+      "profileLarger": "https://p16-common-sign.tiktokcdn.com/musically-maliva-obj/ee8126c5575b7aeff8e2b8f0cb31fbed~tplv-tiktokx-origin.image?dr=14566&x-expires=1794549600&x-signature=Jz6kywpgtthSahNR6ySs8bBFY7I%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=my3",
+      "profileMedium": "https://p16-common-sign.tiktokcdn.com/musically-maliva-obj/ee8126c5575b7aeff8e2b8f0cb31fbed~tplv-tiktokx-origin.image?dr=14566&x-expires=1794549600&x-signature=Jz6kywpgtthSahNR6ySs8bBFY7I%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=my3",
+      "profileThumb": "https://p16-common-sign.tiktokcdn.com/musically-maliva-obj/ee8126c5575b7aeff8e2b8f0cb31fbed~tplv-tiktokx-origin.image?dr=14566&x-expires=1794549600&x-signature=Jz6kywpgtthSahNR6ySs8bBFY7I%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=my3",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 222600000000
+      },
+      "title": "slime"
+    },
+    "challengeAnnouncement": {
+      "body": "",
+      "title": ""
+    },
+    "stats": {
+      "videoCount": 0,
+      "viewCount": 222600000000
+    },
+    "statsV2": {
+      "videoCount": "6360686",
+      "viewCount": "222606744837"
+    }
+  }
+}

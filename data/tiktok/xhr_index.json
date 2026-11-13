@@ -1,0 +1,1061 @@
+{
+  "retrieved_at_utc": "2026-11-13T00:43:28Z",
+  "n": 60,
+  "items": [
+    {
+      "url": "https://ads.tiktok.com/creative_radar_api/v1/user/info",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 85,
+      "retrieved_at_utc": "2026-11-13T00:39:41Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "code",
+        "msg",
+        "request_id"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530381_https_ads_tiktok_com_creative_radar_api_v1_user_info.json"
+    },
+    {
+      "url": "https://mcs-sg.tiktokv.com/webid",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 58,
+      "retrieved_at_utc": "2026-11-13T00:39:41Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "ssid",
+        "web_id"
+      ]
+    },
+    {
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/atsx/1.0.0.955/core.js?globalName=__PNS_RUNTIME__",
+      "status": 200,
+      "ct": "application/javascript",
+      "len": 113947,
+      "retrieved_at_utc": "2026-11-13T00:39:42Z",
+      "preview": "!function(){\"use strict\";var e,t;!function(e){e.assertEqual=e=>{},e.assertIs=function(e){},e.assertNever=function(e){throw new Error},e.arrayToEnum=e=>{const t={};for(const r of e)t[r]=r;return t},e.getValidEnumValues=t=>{const r=e.objectKeys(t).filter((e=>\"number\"!=typeof t[t[e]])),n={};for(const e of r)n[e]=t[e];return e.objectValues(n)},e.objectValues=t=>e.objectKeys(t).map((function(e){return "
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/webid",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 38,
+      "retrieved_at_utc": "2026-11-13T00:39:42Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "web_id"
+      ]
+    },
+    {
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/atsx/1.0.0.955/devtools.js?globalName=__PNS_RUNTIME__&__PNS_SW_CACHE__=1&__PNS_SW_CACHE_KEY__=to-json-schema",
+      "status": 200,
+      "ct": "application/javascript",
+      "len": 61102,
+      "retrieved_at_utc": "2026-11-13T00:39:42Z",
+      "preview": "!function(){\"use strict\";var e,t;!function(e){e.assertEqual=e=>{},e.assertIs=function(e){},e.assertNever=function(e){throw new Error},e.arrayToEnum=e=>{const t={};for(const a of e)t[a]=a;return t},e.getValidEnumValues=t=>{const a=e.objectKeys(t).filter((e=>\"number\"!=typeof t[t[e]])),n={};for(const e of a)n[e]=t[e];return e.objectValues(n)},e.objectValues=t=>e.objectKeys(t).map((function(e){return "
+    },
+    {
+      "url": "https://mcs-sg.tiktokv.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:39:42Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://mon-va.byteoversea.com/monitor_web/settings/browser-settings?bid=creative_one_ssr&store=1",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 1453,
+      "retrieved_at_utc": "2026-11-13T00:39:42Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "data",
+        "errmsg",
+        "errno"
+      ]
+    },
+    {
+      "url": "https://ads.tiktok.com/creative_radar_api/v1/user/info",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 85,
+      "retrieved_at_utc": "2026-11-13T00:39:43Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "code",
+        "msg",
+        "request_id"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530383_https_ads_tiktok_com_creative_radar_api_v1_user_info.json"
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:39:43Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:39:43Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:39:43Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:39:45Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?period=7&region=US&aioChannel=SEO&aioScene=AIOEntrance&aioCode=685cefab91818007&__loader=creativeCenter%2Ftrends%2F%28tab%29%2Flayout&__ssrDirect=true",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 49,
+      "retrieved_at_utc": "2026-11-13T00:39:45Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "dehydratedState"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530385_https_ads_tiktok_com_creative_creativeCenter_trends_hashtag.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?period=7&region=US&aioChannel=SEO&aioScene=AIOEntrance&aioCode=685cefab91818007&__loader=creativeCenter%2Ftrends%2F%28tab%29%2Fpage&__ssrDirect=true",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 49,
+      "retrieved_at_utc": "2026-11-13T00:39:45Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "dehydratedState"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530385_https_ads_tiktok_com_creative_creativeCenter_trends_hashtag.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/creative_radar_api/v1/user/info",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 85,
+      "retrieved_at_utc": "2026-11-13T00:39:45Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "code",
+        "msg",
+        "request_id"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530385_https_ads_tiktok_com_creative_radar_api_v1_user_info.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/cc_portal_api/api/trendsTcc",
+      "status": 500,
+      "ct": "text/plain; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:39:46Z",
+      "preview": "Internal Server Error"
+    },
+    {
+      "url": "https://ads.tiktok.com/CreativeOne/KnowledgeAPI/GetHashtagList",
+      "status": 200,
+      "ct": "application/json",
+      "len": 6206,
+      "retrieved_at_utc": "2026-11-13T00:39:46Z",
+      "numeric_hits": [
+        {
+          "path": "$.items[0].rankIndex",
+          "value": "1"
+        },
+        {
+          "path": "$.items[0].topCreators[0].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[0].topCreators[0].creatorRank",
+          "value": "1"
+        },
+        {
+          "path": "$.items[0].topCreators[1].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[0].topCreators[1].creatorRank",
+          "value": "2"
+        },
+        {
+          "path": "$.items[0].topCreators[2].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[0].topCreators[2].creatorRank",
+          "value": "3"
+        },
+        {
+          "path": "$.items[1].rankIndex",
+          "value": "2"
+        },
+        {
+          "path": "$.items[1].topCreators[0].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[1].topCreators[0].creatorRank",
+          "value": "1"
+        },
+        {
+          "path": "$.items[1].topCreators[1].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[1].topCreators[1].creatorRank",
+          "value": "2"
+        },
+        {
+          "path": "$.items[1].topCreators[2].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[1].topCreators[2].creatorRank",
+          "value": "3"
+        },
+        {
+          "path": "$.items[2].rankIndex",
+          "value": "3"
+        },
+        {
+          "path": "$.items[2].topCreators[0].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[2].topCreators[0].creatorRank",
+          "value": "1"
+        },
+        {
+          "path": "$.items[2].topCreators[1].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[2].topCreators[1].creatorRank",
+          "value": "2"
+        },
+        {
+          "path": "$.items[2].topCreators[2].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[2].topCreators[2].creatorRank",
+          "value": "3"
+        },
+        {
+          "path": "$.pagination.totalCount",
+          "value": 3
+        }
+      ],
+      "top_keys": [
+        "BaseResp",
+        "items",
+        "pagination"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530386_https_ads_tiktok_com_CreativeOne_KnowledgeAPI_GetHashtagList.json"
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:39:46Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:39:46Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:39:47Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://ads.tiktok.com/creative_radar_api/v1/user/info",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 85,
+      "retrieved_at_utc": "2026-11-13T00:39:50Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "code",
+        "msg",
+        "request_id"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530390_https_ads_tiktok_com_creative_radar_api_v1_user_info.json"
+    },
+    {
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/atsx/1.0.0.968/core.js?globalName=__PNS_RUNTIME__",
+      "status": 200,
+      "ct": "application/javascript",
+      "len": 115698,
+      "retrieved_at_utc": "2026-11-13T00:40:43Z",
+      "preview": "!function(){\"use strict\";var e,t;!function(e){e.assertEqual=e=>{},e.assertIs=function(e){},e.assertNever=function(e){throw new Error},e.arrayToEnum=e=>{const t={};for(const r of e)t[r]=r;return t},e.getValidEnumValues=t=>{const r=e.objectKeys(t).filter((e=>\"number\"!=typeof t[t[e]])),n={};for(const e of r)n[e]=t[e];return e.objectValues(n)},e.objectValues=t=>e.objectKeys(t).map((function(e){return "
+    },
+    {
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/atsx/1.0.0.968/devtools.js?globalName=__PNS_RUNTIME__&__PNS_SW_CACHE__=1&__PNS_SW_CACHE_KEY__=to-json-schema",
+      "status": 200,
+      "ct": "application/javascript",
+      "len": 61633,
+      "retrieved_at_utc": "2026-11-13T00:40:43Z",
+      "preview": "!function(){\"use strict\";var e,t;!function(e){e.assertEqual=e=>{},e.assertIs=function(e){},e.assertNever=function(e){throw new Error},e.arrayToEnum=e=>{const t={};for(const a of e)t[a]=a;return t},e.getValidEnumValues=t=>{const a=e.objectKeys(t).filter((e=>\"number\"!=typeof t[t[e]])),n={};for(const e of a)n[e]=t[e];return e.objectValues(n)},e.objectValues=t=>e.objectKeys(t).map((function(e){return "
+    },
+    {
+      "url": "https://ads.tiktok.com/creative_radar_api/v1/user/info",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 85,
+      "retrieved_at_utc": "2026-11-13T00:40:44Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "code",
+        "msg",
+        "request_id"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530444_https_ads_tiktok_com_creative_radar_api_v1_user_info.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?aioChannel=SEO&aioScene=AIOEntrance&aioCode=685cefab91818007&__loader=creativeCenter%2Ftrends%2F%28tab%29%2Flayout&__ssrDirect=true",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 49,
+      "retrieved_at_utc": "2026-11-13T00:40:45Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "dehydratedState"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530445_https_ads_tiktok_com_creative_creativeCenter_trends_hashtag.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?aioChannel=SEO&aioScene=AIOEntrance&aioCode=685cefab91818007&__loader=creativeCenter%2Ftrends%2F%28tab%29%2Fpage&__ssrDirect=true",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 49,
+      "retrieved_at_utc": "2026-11-13T00:40:45Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "dehydratedState"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530445_https_ads_tiktok_com_creative_creativeCenter_trends_hashtag.json"
+    },
+    {
+      "url": "https://mcs-sg.tiktokv.com/webid",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 58,
+      "retrieved_at_utc": "2026-11-13T00:40:45Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "ssid",
+        "web_id"
+      ]
+    },
+    {
+      "url": "https://mon-va.byteoversea.com/monitor_web/settings/browser-settings?bid=creative_one_ssr&store=1",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 1453,
+      "retrieved_at_utc": "2026-11-13T00:40:45Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "data",
+        "errmsg",
+        "errno"
+      ]
+    },
+    {
+      "url": "https://ads.tiktok.com/cc_portal_api/api/trendsTcc",
+      "status": 500,
+      "ct": "text/plain; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:40:46Z",
+      "preview": "Internal Server Error"
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/webid",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 38,
+      "retrieved_at_utc": "2026-11-13T00:40:46Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "web_id"
+      ]
+    },
+    {
+      "url": "https://ads.tiktok.com/CreativeOne/KnowledgeAPI/GetHashtagList",
+      "status": 200,
+      "ct": "application/json",
+      "len": 6204,
+      "retrieved_at_utc": "2026-11-13T00:40:46Z",
+      "numeric_hits": [
+        {
+          "path": "$.items[0].rankIndex",
+          "value": "1"
+        },
+        {
+          "path": "$.items[0].topCreators[0].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[0].topCreators[0].creatorRank",
+          "value": "1"
+        },
+        {
+          "path": "$.items[0].topCreators[1].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[0].topCreators[1].creatorRank",
+          "value": "2"
+        },
+        {
+          "path": "$.items[0].topCreators[2].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[0].topCreators[2].creatorRank",
+          "value": "3"
+        },
+        {
+          "path": "$.items[1].rankIndex",
+          "value": "2"
+        },
+        {
+          "path": "$.items[1].topCreators[0].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[1].topCreators[0].creatorRank",
+          "value": "1"
+        },
+        {
+          "path": "$.items[1].topCreators[1].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[1].topCreators[1].creatorRank",
+          "value": "2"
+        },
+        {
+          "path": "$.items[1].topCreators[2].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[1].topCreators[2].creatorRank",
+          "value": "3"
+        },
+        {
+          "path": "$.items[2].rankIndex",
+          "value": "3"
+        },
+        {
+          "path": "$.items[2].topCreators[0].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[2].topCreators[0].creatorRank",
+          "value": "1"
+        },
+        {
+          "path": "$.items[2].topCreators[1].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[2].topCreators[1].creatorRank",
+          "value": "2"
+        },
+        {
+          "path": "$.items[2].topCreators[2].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[2].topCreators[2].creatorRank",
+          "value": "3"
+        },
+        {
+          "path": "$.pagination.totalCount",
+          "value": 3
+        }
+      ],
+      "top_keys": [
+        "BaseResp",
+        "items",
+        "pagination"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530446_https_ads_tiktok_com_CreativeOne_KnowledgeAPI_GetHashtagList.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/creative_radar_api/v1/user/info",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 85,
+      "retrieved_at_utc": "2026-11-13T00:40:46Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "code",
+        "msg",
+        "request_id"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530446_https_ads_tiktok_com_creative_radar_api_v1_user_info.json"
+    },
+    {
+      "url": "https://mcs-sg.tiktokv.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:40:46Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?aioChannel=SEO&aioScene=AIOEntrance&aioCode=685cefab91818007&region=US&__loader=creativeCenter%2Ftrends%2F%28tab%29%2Fpage&__ssrDirect=true",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 49,
+      "retrieved_at_utc": "2026-11-13T00:40:46Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "dehydratedState"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530446_https_ads_tiktok_com_creative_creativeCenter_trends_hashtag.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?aioChannel=SEO&aioScene=AIOEntrance&aioCode=685cefab91818007&region=US&__loader=creativeCenter%2Ftrends%2F%28tab%29%2Flayout&__ssrDirect=true",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 49,
+      "retrieved_at_utc": "2026-11-13T00:40:46Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "dehydratedState"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530446_https_ads_tiktok_com_creative_creativeCenter_trends_hashtag.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?aioChannel=SEO&aioScene=AIOEntrance&aioCode=685cefab91818007&region=US&__loader=creativeCenter%2Flayout&__ssrDirect=true",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 734,
+      "retrieved_at_utc": "2026-11-13T00:40:47Z",
+      "numeric_hits": [
+        {
+          "path": "$.dehydratedState.queries[0].state.dataUpdateCount",
+          "value": 1
+        },
+        {
+          "path": "$.dehydratedState.queries[0].state.errorUpdateCount",
+          "value": 0
+        },
+        {
+          "path": "$.dehydratedState.queries[0].state.fetchFailureCount",
+          "value": 0
+        },
+        {
+          "path": "$.dehydratedState.queries[1].state.dataUpdateCount",
+          "value": 1
+        },
+        {
+          "path": "$.dehydratedState.queries[1].state.errorUpdateCount",
+          "value": 0
+        },
+        {
+          "path": "$.dehydratedState.queries[1].state.fetchFailureCount",
+          "value": 0
+        }
+      ],
+      "top_keys": [
+        "deviceType",
+        "dehydratedState"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530447_https_ads_tiktok_com_creative_creativeCenter_trends_hashtag.json"
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:40:47Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:40:47Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:40:47Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?aioChannel=SEO&aioScene=AIOEntrance&aioCode=685cefab91818007&region=US&period=7&__loader=creativeCenter%2Ftrends%2F%28tab%29%2Flayout&__ssrDirect=true",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 49,
+      "retrieved_at_utc": "2026-11-13T00:40:48Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "dehydratedState"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530448_https_ads_tiktok_com_creative_creativeCenter_trends_hashtag.json"
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:40:48Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?aioChannel=SEO&aioScene=AIOEntrance&aioCode=685cefab91818007&region=US&period=7&__loader=creativeCenter%2Ftrends%2F%28tab%29%2Fpage&__ssrDirect=true",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 49,
+      "retrieved_at_utc": "2026-11-13T00:40:48Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "dehydratedState"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530448_https_ads_tiktok_com_creative_creativeCenter_trends_hashtag.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?aioChannel=SEO&aioScene=AIOEntrance&aioCode=685cefab91818007&region=US&period=7&__loader=creativeCenter%2Flayout&__ssrDirect=true",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 734,
+      "retrieved_at_utc": "2026-11-13T00:40:48Z",
+      "numeric_hits": [
+        {
+          "path": "$.dehydratedState.queries[0].state.dataUpdateCount",
+          "value": 1
+        },
+        {
+          "path": "$.dehydratedState.queries[0].state.errorUpdateCount",
+          "value": 0
+        },
+        {
+          "path": "$.dehydratedState.queries[0].state.fetchFailureCount",
+          "value": 0
+        },
+        {
+          "path": "$.dehydratedState.queries[1].state.dataUpdateCount",
+          "value": 1
+        },
+        {
+          "path": "$.dehydratedState.queries[1].state.errorUpdateCount",
+          "value": 0
+        },
+        {
+          "path": "$.dehydratedState.queries[1].state.fetchFailureCount",
+          "value": 0
+        }
+      ],
+      "top_keys": [
+        "deviceType",
+        "dehydratedState"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530448_https_ads_tiktok_com_creative_creativeCenter_trends_hashtag.json"
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:40:48Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://ads.tiktok.com/creative_radar_api/v1/user/info",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 85,
+      "retrieved_at_utc": "2026-11-13T00:40:49Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "code",
+        "msg",
+        "request_id"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530449_https_ads_tiktok_com_creative_radar_api_v1_user_info.json"
+    },
+    {
+      "url": "https://maliva-mcs.byteoversea.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:40:49Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://ads.tiktok.com/creative_radar_api/v1/user/info",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 85,
+      "retrieved_at_utc": "2026-11-13T00:40:53Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "code",
+        "msg",
+        "request_id"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530453_https_ads_tiktok_com_creative_radar_api_v1_user_info.json"
+    },
+    {
+      "url": "https://mcs-sg.tiktokv.com/webid",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 58,
+      "retrieved_at_utc": "2026-11-13T00:42:34Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "ssid",
+        "web_id"
+      ]
+    },
+    {
+      "url": "https://ads.tiktok.com/creative_radar_api/v1/user/info",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 85,
+      "retrieved_at_utc": "2026-11-13T00:42:35Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "code",
+        "msg",
+        "request_id"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530555_https_ads_tiktok_com_creative_radar_api_v1_user_info.json"
+    },
+    {
+      "url": "https://mcs-sg.tiktokv.com/list",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:42:35Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "e",
+        "sc",
+        "tc"
+      ]
+    },
+    {
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/atsx/1.0.0.955/core.js?globalName=__PNS_RUNTIME__",
+      "status": 200,
+      "ct": "application/javascript",
+      "len": 113947,
+      "retrieved_at_utc": "2026-11-13T00:42:35Z",
+      "preview": "!function(){\"use strict\";var e,t;!function(e){e.assertEqual=e=>{},e.assertIs=function(e){},e.assertNever=function(e){throw new Error},e.arrayToEnum=e=>{const t={};for(const r of e)t[r]=r;return t},e.getValidEnumValues=t=>{const r=e.objectKeys(t).filter((e=>\"number\"!=typeof t[t[e]])),n={};for(const e of r)n[e]=t[e];return e.objectValues(n)},e.objectValues=t=>e.objectKeys(t).map((function(e){return "
+    },
+    {
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/atsx/1.0.0.955/devtools.js?globalName=__PNS_RUNTIME__&__PNS_SW_CACHE__=1&__PNS_SW_CACHE_KEY__=to-json-schema",
+      "status": 200,
+      "ct": "application/javascript",
+      "len": 61102,
+      "retrieved_at_utc": "2026-11-13T00:42:36Z",
+      "preview": "!function(){\"use strict\";var e,t;!function(e){e.assertEqual=e=>{},e.assertIs=function(e){},e.assertNever=function(e){throw new Error},e.arrayToEnum=e=>{const t={};for(const a of e)t[a]=a;return t},e.getValidEnumValues=t=>{const a=e.objectKeys(t).filter((e=>\"number\"!=typeof t[t[e]])),n={};for(const e of a)n[e]=t[e];return e.objectValues(n)},e.objectValues=t=>e.objectKeys(t).map((function(e){return "
+    },
+    {
+      "url": "https://ads.tiktok.com/creative_radar_api/v1/user/info",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 85,
+      "retrieved_at_utc": "2026-11-13T00:42:36Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "code",
+        "msg",
+        "request_id"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530556_https_ads_tiktok_com_creative_radar_api_v1_user_info.json"
+    },
+    {
+      "url": "https://mon-va.byteoversea.com/monitor_web/settings/browser-settings?bid=creative_one_ssr&store=1",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 1453,
+      "retrieved_at_utc": "2026-11-13T00:42:36Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "data",
+        "errmsg",
+        "errno"
+      ]
+    },
+    {
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?period=7&region=US&aioChannel=SEO&aioScene=AIOEntrance&aioCode=685cefab91818007&__loader=creativeCenter%2Ftrends%2F%28tab%29%2Flayout&__ssrDirect=true",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 49,
+      "retrieved_at_utc": "2026-11-13T00:42:37Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "dehydratedState"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530557_https_ads_tiktok_com_creative_creativeCenter_trends_hashtag.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/creative/creativeCenter/trends/hashtag?period=7&region=US&aioChannel=SEO&aioScene=AIOEntrance&aioCode=685cefab91818007&__loader=creativeCenter%2Ftrends%2F%28tab%29%2Fpage&__ssrDirect=true",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 49,
+      "retrieved_at_utc": "2026-11-13T00:42:37Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "dehydratedState"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530557_https_ads_tiktok_com_creative_creativeCenter_trends_hashtag.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/cc_portal_api/api/trendsTcc",
+      "status": 500,
+      "ct": "text/plain; charset=utf-8",
+      "len": 21,
+      "retrieved_at_utc": "2026-11-13T00:42:37Z",
+      "preview": "Internal Server Error"
+    },
+    {
+      "url": "https://ads.tiktok.com/CreativeOne/KnowledgeAPI/GetHashtagList",
+      "status": 200,
+      "ct": "application/json",
+      "len": 6211,
+      "retrieved_at_utc": "2026-11-13T00:42:38Z",
+      "numeric_hits": [
+        {
+          "path": "$.items[0].rankIndex",
+          "value": "1"
+        },
+        {
+          "path": "$.items[0].topCreators[0].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[0].topCreators[0].creatorRank",
+          "value": "1"
+        },
+        {
+          "path": "$.items[0].topCreators[1].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[0].topCreators[1].creatorRank",
+          "value": "2"
+        },
+        {
+          "path": "$.items[0].topCreators[2].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[0].topCreators[2].creatorRank",
+          "value": "3"
+        },
+        {
+          "path": "$.items[1].rankIndex",
+          "value": "2"
+        },
+        {
+          "path": "$.items[1].topCreators[0].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[1].topCreators[0].creatorRank",
+          "value": "1"
+        },
+        {
+          "path": "$.items[1].topCreators[1].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[1].topCreators[1].creatorRank",
+          "value": "2"
+        },
+        {
+          "path": "$.items[1].topCreators[2].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[1].topCreators[2].creatorRank",
+          "value": "3"
+        },
+        {
+          "path": "$.items[2].rankIndex",
+          "value": "3"
+        },
+        {
+          "path": "$.items[2].topCreators[0].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[2].topCreators[0].creatorRank",
+          "value": "1"
+        },
+        {
+          "path": "$.items[2].topCreators[1].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[2].topCreators[1].creatorRank",
+          "value": "2"
+        },
+        {
+          "path": "$.items[2].topCreators[2].countryCode",
+          "value": "US"
+        },
+        {
+          "path": "$.items[2].topCreators[2].creatorRank",
+          "value": "3"
+        },
+        {
+          "path": "$.pagination.totalCount",
+          "value": 3
+        }
+      ],
+      "top_keys": [
+        "BaseResp",
+        "items",
+        "pagination"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530558_https_ads_tiktok_com_CreativeOne_KnowledgeAPI_GetHashtagList.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/creative_radar_api/v1/user/info",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 85,
+      "retrieved_at_utc": "2026-11-13T00:42:39Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "code",
+        "msg",
+        "request_id"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530559_https_ads_tiktok_com_creative_radar_api_v1_user_info.json"
+    },
+    {
+      "url": "https://ads.tiktok.com/creative_radar_api/v1/user/info",
+      "status": 200,
+      "ct": "application/json; charset=utf-8",
+      "len": 85,
+      "retrieved_at_utc": "2026-11-13T00:42:43Z",
+      "numeric_hits": [],
+      "top_keys": [
+        "code",
+        "msg",
+        "request_id"
+      ],
+      "saved": "/workspace/chris-camillo-tracker/data/tiktok/xhr_1794530563_https_ads_tiktok_com_creative_radar_api_v1_user_info.json"
+    }
+  ]
+}

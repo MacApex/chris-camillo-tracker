@@ -1,0 +1,53 @@
+{
+  "ticker": "NWL",
+  "hashtag": "elmersglue",
+  "retrieved_at_utc": "2026-11-13T00:49:51Z",
+  "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+  "http_status": 200,
+  "source_url": "https://www.tiktok.com/tag/elmersglue",
+  "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=elmersglue&device_platform=web_pc&os=linux",
+  "challenge_id": "2063153",
+  "title": "elmersglue",
+  "stats": {
+    "videoCount": 0,
+    "viewCount": 624700000
+  },
+  "statsV2": {
+    "videoCount": "12310",
+    "viewCount": "624740454"
+  },
+  "videoCount": "12310",
+  "viewCount": "624740454",
+  "status_code": 0,
+  "ok": true,
+  "challengeInfo_slim": {
+    "challenge": {
+      "coverLarger": "",
+      "coverMedium": "",
+      "coverThumb": "",
+      "desc": "",
+      "id": "2063153",
+      "isCommerce": false,
+      "profileLarger": "",
+      "profileMedium": "",
+      "profileThumb": "",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 624700000
+      },
+      "title": "elmersglue"
+    },
+    "challengeAnnouncement": {
+      "body": "",
+      "title": ""
+    },
+    "stats": {
+      "videoCount": 0,
+      "viewCount": 624700000
+    },
+    "statsV2": {
+      "videoCount": "12310",
+      "viewCount": "624740454"
+    }
+  }
+}

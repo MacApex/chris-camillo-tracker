@@ -1,0 +1,27 @@
+{
+  "ticker": "CROX",
+  "asin": "B01A6LUCZU",
+  "note": "Crocs Classic Lined Clog \u2014 #29 Women's Shoes",
+  "url": "https://www.amazon.com/dp/B01A6LUCZU",
+  "method": "Scrapling Fetcher product page",
+  "retrieved_at_utc": "2026-11-13T00:52:20Z",
+  "http_status": 200,
+  "html_len": 2596627,
+  "title": "Amazon.com | Crocs Unisex-Adult Classic Lined Clog, Navy/Charcoal, 7 Women/5 Men | Mules & Clogs",
+  "bsr_phrases": [
+    "Best Sellers Rank #455 in Clothing, Shoes & Jewelry ( See Top 100 in Clothing, Shoes & Jewelry ) #5 in Women's Mules & Clogs ASIN B01A6LUCZU",
+    "Best Sellers Rank: #455 in Clothing, Shoes & Jewelry ( See Top 100 in Clothing, Shoes & Jewelry ) #5 in Women's Mules & Clogs",
+    "#455 in Clothing, Shoes & Jewelry ("
+  ],
+  "ranks": [
+    {
+      "rank": 455,
+      "category": "Clothing, Shoes & Jewelry"
+    },
+    {
+      "rank": 455,
+      "category": "Clothing, Shoes & Jewelry"
+    }
+  ],
+  "ok": true
+}

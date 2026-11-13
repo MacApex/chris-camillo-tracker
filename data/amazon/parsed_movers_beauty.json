@@ -1,0 +1,14 @@
+{
+  "kind": "movers_beauty",
+  "url": "https://www.amazon.com/gp/movers-and-shakers/beauty/",
+  "method": "Scrapling Fetcher",
+  "retrieved_at_utc": "2026-11-13T00:51:10Z",
+  "html_len": 3781,
+  "title": "",
+  "products": [],
+  "brand_contexts": [],
+  "n_asins": 0,
+  "n_ranked": 0,
+  "brand_products": [],
+  "http_status": 200
+}

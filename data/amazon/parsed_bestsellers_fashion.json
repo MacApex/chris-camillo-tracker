@@ -1,0 +1,345 @@
+{
+  "kind": "bestsellers_fashion",
+  "url": "https://www.amazon.com/gp/bestsellers/fashion/",
+  "method": "Scrapling Fetcher",
+  "retrieved_at_utc": "2026-11-13T00:50:53Z",
+  "html_len": 458668,
+  "title": "Amazon Best Sellers: Best Clothing, Shoes & Jewelry",
+  "products": [
+    {
+      "asin": "B01L8JJ57U",
+      "rank": 1,
+      "title": "Hanes Men's Sweatshirt, EcoSmart Fleece Crewneck Sweatshirt, Big & Tall Available, 1 or 2-Pack",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Hanes-Ecosmart-Fleece-Sweatshirt-Black/dp/B01L8JJ57U/ref=zg_bs_g_fashion_d_sccl_1/142-9357105-4352108"
+    },
+    {
+      "asin": "B0BW8ZFMDJ",
+      "rank": 2,
+      "title": "Hanes Men's Sweatshirt, EcoSmart Fleece Crewneck Sweatshirt, Big & Tall Available, 1 or 2-Pack",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Trendy-Queen-Fashion-Outfits-Aesthetic/dp/B0BW8ZFMDJ/ref=zg_bs_g_fashion_d_sccl_2/142-9357105-4352108"
+    },
+    {
+      "asin": "B075JW7CCH",
+      "rank": 3,
+      "title": "Trendy Queen Womens Long Sleeve T Shirts Fall Fashion Basic Y2K Tops 2026 | Buttery-Soft, Super Stretchy, Fitted Cute Tops, G",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Essentials-Fleece-Sweatpants-Black/dp/B075JW7CCH/ref=zg_bs_g_fashion_d_sccl_3/142-9357105-4352108"
+    },
+    {
+      "asin": "B071WWY2X3",
+      "rank": 4,
+      "title": "Amazon Essentials Men's Fleece Open Bottom Sweatpant (Available in Big & Tall)",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Hanes-Pullover-EcoSmart-Fleece-Sweatshirt/dp/B071WWY2X3/ref=zg_bs_g_fashion_d_sccl_4/142-9357105-4352108"
+    },
+    {
+      "asin": "B07ZTD3JZH",
+      "rank": 5,
+      "title": "Hanes Men's Hoodie - EcoSmart Fleece Hooded Sweatshirt for Men & Women - Midweight Fleece - Big & Tall Available",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/EVERSWE-Opaque-Tights-Womens-Totally/dp/B07ZTD3JZH/ref=zg_bs_g_fashion_d_sccl_5/142-9357105-4352108"
+    },
+    {
+      "asin": "B0D8FJVTBG",
+      "rank": 6,
+      "title": "EVERSWE Women's 80 Den Soft Opaque Tights, Women's Tights",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/OEAK-Comfortable-Bralettes-Underwire-Seamless/dp/B0D8FJVTBG/ref=zg_bs_g_fashion_d_sccl_6/142-9357105-4352108"
+    },
+    {
+      "asin": "B0CYZM5RSM",
+      "rank": 7,
+      "title": "OEAK Womens Jelly Bras Wireless Deep V Bralette Comfy Push Up Tshirt Bras | Comfortable,support and lift,no underwire,bralett",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/ANRABESS-Sleeve-Shirts-Ribbed-Fitted/dp/B0CYZM5RSM/ref=zg_bs_g_fashion_d_sccl_7/142-9357105-4352108"
+    },
+    {
+      "asin": "B086KSDTQ4",
+      "rank": 8,
+      "title": "ANRABESS Women Long Sleeve Shirts Ribbed Fitted Tops | Slim Basic Tee,2026 Fall Outfits,Lightweight Knit T-Shirt,Soft Undersc",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Hanes-Breathable-ComfortFlex-Waistband-Multipack/dp/B086KSDTQ4/ref=zg_bs_g_fashion_d_sccl_8/142-9357105-4352108"
+    },
+    {
+      "asin": "B07JDFPQTC",
+      "rank": 9,
+      "title": "Hanes Men's Underwear Boxer Briefs Pack, Cool & Breathable Cotton Moisture-wicking Underwear for Men, No Ride Up",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Gildan-T-Shirt-Multipack-Black-Large/dp/B07JDFPQTC/ref=zg_bs_g_fashion_d_sccl_9/142-9357105-4352108"
+    },
+    {
+      "asin": "B08R9DV9GR",
+      "rank": 10,
+      "title": "Gildan Men's Crew T-Shirts, Multipack, Style G1100",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Essentials-Stretch-Classic-Assorted/dp/B08R9DV9GR/ref=zg_bs_g_fashion_d_sccl_10/142-9357105-4352108"
+    },
+    {
+      "asin": "B0D9Q2MRB4",
+      "rank": 11,
+      "title": "Amazon Essentials Women's Cotton Spandex Bikini Brief Underwear (Available in Plus Size), Multipacks",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Bluemaple-Leggings-Women-Waisted-Athletic/dp/B0D9Q2MRB4/ref=zg_bs_g_fashion_d_sccl_11/142-9357105-4352108"
+    },
+    {
+      "asin": "B0014C0LSY",
+      "rank": 12,
+      "title": "Bluemaple High Waisted Leggings for Women - Tummy Control Pants Non See Through Workout Soft Yoga Pants for Running Plus Size",
+      "brand_hits": [
+        "crocs",
+        "Crocs",
+        "crocs",
+        "Crocs",
+        "crocs"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/crocs-Unisex-Classic-Black-Women/dp/B0014C0LSY/ref=zg_bs_g_fashion_d_sccl_12/142-9357105-4352108"
+    },
+    {
+      "asin": "B0FG27QSLG",
+      "rank": 13,
+      "title": "Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+      "brand_hits": [
+        "crocs",
+        "Crocs",
+        "crocs",
+        "Crocs",
+        "crocs"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/YEOREO-Workout-Leggings-Straight-Buttery/dp/B0FG27QSLG/ref=zg_bs_g_fashion_d_sccl_13/142-9357105-4352108"
+    },
+    {
+      "asin": "B09P1GB319",
+      "rank": 14,
+      "title": "YEOREO Ease Workout Leggings Womens Straight Leggings Eddiy Gym Yoga Pants | 29\"/31.5\"/33\"/35\"/37\",No Front Seam,High Waist,B",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/CRZ-YOGA-Butterluxe-Waisted-Legging/dp/B09P1GB319/ref=zg_bs_g_fashion_d_sccl_14/142-9357105-4352108"
+    },
+    {
+      "asin": "B0F9SW7V12",
+      "rank": 15,
+      "title": "CRZ YOGA Butterluxe Leggings 25\" | Extremely Soft, Gentle Compression, Yoga, High Waisted, for Women",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Trendy-Queen-Matching-Sweatsuit-Essential/dp/B0F9SW7V12/ref=zg_bs_g_fashion_d_sccl_15/142-9357105-4352108"
+    },
+    {
+      "asin": "B09JFV7HHY",
+      "rank": 16,
+      "title": "Trendy Queen Women's 2 Piece 2026 Fall Fashion Lounge Set with Pockets | Airport Outfit, Athleisure Workout Set, Fall Wardrob",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/J-Ver-Shirts-Stretch-Wrinkle-Free-Regular/dp/B09JFV7HHY/ref=zg_bs_g_fashion_d_sccl_16/142-9357105-4352108"
+    },
+    {
+      "asin": "B0DJWQ3S8T",
+      "rank": 17,
+      "title": "J.VER Men's Dress Shirts Solid Long Sleeve Stretch Wrinkle-Free Formal Shirt Business Casual Button Down Shirts",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Levis-Womens-Shaping-Wide-Leg-Available/dp/B0DJWQ3S8T/ref=zg_bs_g_fashion_d_sccl_17/142-9357105-4352108"
+    },
+    {
+      "asin": "B0DCJXLDR9",
+      "rank": 18,
+      "title": "Levi's Women's 318 Shaping Wide-Leg Jeans | (Also Available in Plus)",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/HONENNA-T-Crotch-Pantyhose-Reinforced-Stockings/dp/B0DCJXLDR9/ref=zg_bs_g_fashion_d_sccl_18/142-9357105-4352108"
+    },
+    {
+      "asin": "B0F597M88C",
+      "rank": 19,
+      "title": "HONENNA Sheer Tights for Women 2 Pairs Ultra Thin Reinforced T Crotch Control Top Pantyhose Stockings",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/PRETTYGARDEN-Womens-Sleeve-Shirts-Clothes/dp/B0F597M88C/ref=zg_bs_g_fashion_d_sccl_19/142-9357105-4352108"
+    },
+    {
+      "asin": "B00K5CN370",
+      "rank": 20,
+      "title": "PRETTYGARDEN Womens Bell Long Sleeve Ribbed Knit Tops | Trendy Boat Neck Y2K Cropped Going Out Tops, Ruched Slim Fit Cute Gar",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/NIKE-Unisex-Everyday-Cushion-Black/dp/B00K5CN370/ref=zg_bs_g_fashion_d_sccl_20/142-9357105-4352108"
+    },
+    {
+      "asin": "B0F6V8RDYM",
+      "rank": 21,
+      "title": "Nike Adult Everyday Cushioned Training Crew Socks (6-Packs) | Mens & Womens",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/LetsJoli-Supportive-Wireless-Underwear-Women%EF%BC%88Nude/dp/B0F6V8RDYM/ref=zg_bs_g_fashion_d_sccl_21/142-9357105-4352108"
+    },
+    {
+      "asin": "B00D1ARZMC",
+      "rank": 22,
+      "title": "LetsJoli Jelly Bras for Women No Underwire Plus Size Push Up Supportive | Full Coverage, Wireless Support Lift, For Older Wom",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Hanes-Available-Moisture-Wicking-Undershirts-Multipack/dp/B00D1ARZMC/ref=zg_bs_g_fashion_d_sccl_22/142-9357105-4352108"
+    },
+    {
+      "asin": "B0BVF476TZ",
+      "rank": 23,
+      "title": "Hanes Men's Undershirt Packs, Stay-Tucked Soft Cotton Undershirts, Best Undershirts for Men, White/Black/Asstd Multipacks",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/SINOPHANT-High-Waisted-Leggings-Women/dp/B0BVF476TZ/ref=zg_bs_g_fashion_d_sccl_23/142-9357105-4352108"
+    },
+    {
+      "asin": "B004QF0TFQ",
+      "rank": 24,
+      "title": "SINOPHANT High Waisted Leggings for Women - Full Length Capri Buttery Soft Yoga Pants for Workout Athletic",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Dickies-Multi-Pack-Dri-Tech-Moisture-Control/dp/B004QF0TFQ/ref=zg_bs_g_fashion_d_sccl_24/142-9357105-4352108"
+    },
+    {
+      "asin": "B002G9UDYG",
+      "rank": 25,
+      "title": "Dickies Men's Dri-tech Original Moisture Control Crew Socks, Available in M-xxl (6, 12, 18 Pairs)",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Carhartt-Acrylic-Watch-Black-Size/dp/B002G9UDYG/ref=zg_bs_g_fashion_d_sccl_25/142-9357105-4352108"
+    },
+    {
+      "asin": "B0CG5P42QH",
+      "rank": 26,
+      "title": "Carhartt Men's Iconic A18 Watch Cap Beanie",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/G4Free-Pockets-Straight-Sweatpants-Business/dp/B0CG5P42QH/ref=zg_bs_g_fashion_d_sccl_26/142-9357105-4352108"
+    },
+    {
+      "asin": "B0DQNFSW4Q",
+      "rank": 27,
+      "title": "G4Free Yoga Pants for Women Wide Leg Pants with Pockets High Waisted | Moisture Wicking, Soft Comfortable Feel, 4-Way Stretch",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Walifrey-Joggers-Drawstring-Sweatpants-Lounging/dp/B0DQNFSW4Q/ref=zg_bs_g_fashion_d_sccl_27/142-9357105-4352108"
+    },
+    {
+      "asin": "B002GHC19I",
+      "rank": 28,
+      "title": "Walifrey Joggers with Pockets, Drawstring Sweatpants Women | Soft breathable fabric, Adjustable waist, 2 Deep side pockets, C",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Carhartt-Workwear-Short-Sleeve-T-Shirt-X-Large/dp/B002GHC19I/ref=zg_bs_g_fashion_d_sccl_28/142-9357105-4352108"
+    },
+    {
+      "asin": "B0CLGNYKFR",
+      "rank": 29,
+      "title": "Carhartt Men's Iconic K87 Pocket T-Shirt",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/EverFoams-Open-toe-Machine-washable-Anti-slip-Lightweight/dp/B0CLGNYKFR/ref=zg_bs_g_fashion_d_sccl_29/142-9357105-4352108"
+    },
+    {
+      "asin": "B08YH711XM",
+      "rank": 30,
+      "title": "EverFoams Womens Fuzzy Open-toe Slippers Memory Foam Indoor House Shoes | Machine-washable, Gifts, Memory Foam, Anti-slip Sol",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Fruit-Loom-Eversoft-Sweatpants-Heather/dp/B08YH711XM/ref=zg_bs_g_fashion_d_sccl_30/142-9357105-4352108"
+    }
+  ],
+  "brand_contexts": [
+    {
+      "match": "elf.",
+      "snippet": "(n in r)v(r[n])|| null===r[n]||(b.push(n+x+\"=\"+(r[n]-q)),p&&s(\"mark\",X[n]||n,+r[n]));b.push(\"t\"+x+\"=\"+r[m]);u.latency[\"t\"+x]=r[m];if(e(\"ctb\",k)||e(\"wb\",k))t=1}}!D&&t&&b.push(\"ctb=1\");return b.join(\"&\")}function x(b,c,f,e,m){if(b&&!e){e=d.ue_err;if(p){var g=h.encodeURIComponent;g&&b&&(m=new Image,b=\""
+    },
+    {
+      "match": "elf",
+      "snippet": "ajax&&p.ajax(b,c);k&&n&&(e={requestId:e,transitionType:\"soft\"},\"string\"===typeof g&&(e.pageType=g,d.ue_pty=g),\"string\"===typeof r&&(e.subPageType=r,d.ue_spty=r),k(\"newPage\",e),n(\"mark\",\"transitionStart\",b));a.tag(\"ajax-transition\")}d.ueinit=(d.ueinit||0)+1;var a=d.ue=d.ue||{};a.t0=h.aPageStart||d.ue"
+    },
+    {
+      "match": "elf",
+      "snippet": "oveEventListener\",aa=\"attachEvent\",ca=\"detachEvent\",X={cf:\"criticalFeature\",af:\"aboveTheFold\",fn:\"functional\",fp:\"firstPaint\",fcp:\"firstContentfulPaint\",bb:\"bodyBegin\",be:\"bodyEnd\",ld:\"loaded\"},K=h.Date,H=h.performance||h.webkitPerformance,g=(H||{}).timing,E=(H||{}).navigation,Q=(g||{}).navigationSt"
+    },
+    {
+      "match": "eLF",
+      "snippet": "www.amazon.com/Best-Sellers-Clothing,-Shoes-Jewelry/zgbs/fashion\"> window.P && P.register('sp.load.js'); <meta name='amz-aapi-bsx-"
+    },
+    {
+      "match": "crocs",
+      "snippet": "class=\"zg-bdg-text\">#12 <img alt=\"Crocs Unisex-Adult Classic Clog, Clogs for Women and Men\" src=\"https://images-na.ssl-images-amazon.com/images/I/61SuPkDGYfL._AC_UL300_SR300,200_.jpg\" class=\"a-dynamic-image p13n-sc-dynamic-image p13n-product-image\" height=\"200px\" data-a-dynamic-image=\"{&quot;https:/"
+    },
+    {
+      "match": "Crocs",
+      "snippet": "iv class=\"zg-grid-general-faceout\"> <img alt=\"Crocs Unisex-Adult Classic Clog, Clogs for Women and Men\" src=\"https://images-na.ssl-images-amazon.com/images/I/61SuPkDGYfL._AC_UL300_SR300,200_.jpg\" class=\"a-dynamic-image p13n-sc-dynamic-image p13n-product-image\" height=\"200px\" data-a-dynamic-image=\"{&"
+    },
+    {
+      "match": "crocs",
+      "snippet": "ages-amazon.com/images/I/61SuPkDGYfL._AC_UL300_SR300,200_.jpg&quot;:[300,200],&quot;https://images-na.ssl-images-amazon.com/images/I/61SuPkDGYfL._AC_UL600_SR600,400_.jpg&quot;:[600,400],&quot;https://images-na.ssl-images-amazon.com/images/I/61SuPkDGYfL._AC_UL900_SR900,600_.jpg&quot;:[900,600]}\" styl"
+    },
+    {
+      "match": "Crocs",
+      "snippet": "t;:[600,400],&quot;https://images-na.ssl-images-amazon.com/images/I/61SuPkDGYfL._AC_UL900_SR900,600_.jpg&quot;:[900,600]}\" style=\"max-width:300px;max-height:200px\"/> Crocs Unisex-Adult Classic Clog, Clogs for Women and Men 4.8 out of 5 stars"
+    },
+    {
+      "match": "crocs",
+      "snippet": "_sccl_12_cr/142-9357105-4352108\"> 4.8 out of 5 stars 485,909 $29.10 <li class=\"zg-no-numbers\""
+    },
+    {
+      "match": "elf",
+      "snippet": "com/marketing?utm_source=amzn&utm_medium=footer&utm_campaign=home&ref_=footer_mm_dsp\" class=\"nav_a\">Start a Package Delivery Business Advertise Your Products Self-Publish with Us Become an Amazon Hub Partner \u203a <a href=\"/b/?"
+    },
+    {
+      "match": "elf",
+      "snippet": "ref_=footer_mm_dsp\" class=\"nav_a\">Start a Package Delivery Business Advertise Your Products Self-Publish with Us Become an Amazon Hub Partner \u203a <a href=\"/b/?node=18190131011&ld=AZUSSOA-seemore&ref_=footer_seemore\" class=\"na"
+    },
+    {
+      "match": "elf",
+      "snippet": "function(i,e,t,n){var r=!1,a=i[c];return N?(!a||a.tid!==J.tid||!a[S]||a.pid!==t||!a.ent&&n||n&&ii(a.ent,n))&&(i[c]={visible:!0,pid:t,tid:e,ent:n},r=!0):!H&&a&&a.tid===J.tid&&a[S]&&(r=!(a[S]=!1)),r}(R,(D?t.tid:null)||j.tid||t.tid||J.tid,(D?t.pid:null)||j.pid||t.pid||J.pid,(D?t.ent:null)||j.ent||t.ent"
+    }
+  ],
+  "n_asins": 30,
+  "n_ranked": 30,
+  "brand_products": [
+    {
+      "asin": "B0014C0LSY",
+      "rank": 12,
+      "title": "Bluemaple High Waisted Leggings for Women - Tummy Control Pants Non See Through Workout Soft Yoga Pants for Running Plus Size",
+      "brand_hits": [
+        "crocs",
+        "Crocs",
+        "crocs",
+        "Crocs",
+        "crocs"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/crocs-Unisex-Classic-Black-Women/dp/B0014C0LSY/ref=zg_bs_g_fashion_d_sccl_12/142-9357105-4352108"
+    },
+    {
+      "asin": "B0FG27QSLG",
+      "rank": 13,
+      "title": "Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+      "brand_hits": [
+        "crocs",
+        "Crocs",
+        "crocs",
+        "Crocs",
+        "crocs"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/YEOREO-Workout-Leggings-Straight-Buttery/dp/B0FG27QSLG/ref=zg_bs_g_fashion_d_sccl_13/142-9357105-4352108"
+    }
+  ],
+  "http_status": 200
+}

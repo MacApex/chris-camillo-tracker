@@ -1,0 +1,393 @@
+{
+  "kind": "bestsellers_womens_shoes",
+  "url": "https://www.amazon.com/gp/bestsellers/fashion/679337011",
+  "method": "Scrapling Fetcher",
+  "retrieved_at_utc": "2026-11-13T00:50:49Z",
+  "html_len": 439675,
+  "title": "Amazon Best Sellers: Best Women's Shoes",
+  "products": [
+    {
+      "asin": "B0014C0LSY",
+      "rank": 1,
+      "title": "Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+      "brand_hits": [
+        "crocs",
+        "Crocs",
+        "crocs",
+        "Crocs",
+        "crocs"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/crocs-Unisex-Classic-Black-Women/dp/B0014C0LSY/ref=zg_bs_g_679337011_d_sccl_1/142-2614247-7428539"
+    },
+    {
+      "asin": "B0CLGNYKFR",
+      "rank": 2,
+      "title": "Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+      "brand_hits": [
+        "crocs",
+        "Crocs",
+        "crocs",
+        "Crocs",
+        "crocs"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/EverFoams-Open-toe-Machine-washable-Anti-slip-Lightweight/dp/B0CLGNYKFR/ref=zg_bs_g_679337011_d_sccl_2/142-2614247-7428539"
+    },
+    {
+      "asin": "B0BS6G9WG6",
+      "rank": 3,
+      "title": "EverFoams Womens Fuzzy Open-toe Slippers Memory Foam Indoor House Shoes | Machine-washable, Gifts, Memory Foam, Anti-slip Sol",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/KIDMI-Genuine-Comfortable-Non-slip-Adjustable/dp/B0BS6G9WG6/ref=zg_bs_g_679337011_d_sccl_3/142-2614247-7428539"
+    },
+    {
+      "asin": "B0CKMQ5625",
+      "rank": 4,
+      "title": "KIDMI Genuine Suede Clogs for Women Men Cork Footbed Mules Potato Shoes | Arch Support, Comfortable, Leather Slip On, Fall, C",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/adidas-Womens-Court-Sneaker-Preloved/dp/B0CKMQ5625/ref=zg_bs_g_679337011_d_sccl_4/142-2614247-7428539"
+    },
+    {
+      "asin": "B0BYNYWKC7",
+      "rank": 5,
+      "title": "adidas Women's VL Court 3.0 Sneakers | Casual Shoes, Skateboarding-Inspired, Low-Cut, T-Toe, Lace Closure, Lightweight Cushio",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/EverFoams-Lightweight-Breathable-Machine-washable-Anti-slip/dp/B0BYNYWKC7/ref=zg_bs_g_679337011_d_sccl_5/142-2614247-7428539"
+    },
+    {
+      "asin": "B07FR5FNTT",
+      "rank": 6,
+      "title": "EverFoams Women's Fuzzy Slippers Warm Cozy Memory Foam Indoor House Shoes | Comfy, Soft, Lightweight, Breathable, Cloud, Non-",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Essentials-Womens-Ballet-Black/dp/B07FR5FNTT/ref=zg_bs_g_679337011_d_sccl_6/142-2614247-7428539"
+    },
+    {
+      "asin": "B09JP2TRK4",
+      "rank": 7,
+      "title": "Amazon Essentials Women's Comfortable Round Toe Ballet Flats, Cushioned Memory Foam",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/EverFoams-Slippers-Birthday-Wool-like-Anti-slip/dp/B09JP2TRK4/ref=zg_bs_g_679337011_d_sccl_7/142-2614247-7428539"
+    },
+    {
+      "asin": "B0CFD2JYRV",
+      "rank": 8,
+      "title": "PROJECT CLOUD 100% Genuine Leather Womens Boots Ankle Boots for Women Shoes | Water Resistant Memory Foam Insole Winter Shoes",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Genuine-Leather-Womens-Fur-Lined-Booties/dp/B0CFD2JYRV/ref=zg_bs_g_679337011_d_sccl_8/142-2614247-7428539"
+    },
+    {
+      "asin": "B0F4JJ9Z7V",
+      "rank": 9,
+      "title": "PROJECT CLOUD 100% Genuine Leather Womens Boots Ankle Boots for Women Shoes | Water Resistant Memory Foam Insole Winter Shoes",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Brooks-Adrenaline-Supportive-Running-Walking/dp/B0F4JJ9Z7V/ref=zg_bs_g_679337011_d_sccl_9/142-2614247-7428539"
+    },
+    {
+      "asin": "B0DPJH8ZRQ",
+      "rank": 10,
+      "title": "Brooks Women's Adrenaline GTS 25 Running Shoe",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/UGG-Womens-Tasman-Slipper-Chestnut/dp/B0DPJH8ZRQ/ref=zg_bs_g_679337011_d_sccl_10/142-2614247-7428539"
+    },
+    {
+      "asin": "B0FPPY5HM3",
+      "rank": 11,
+      "title": "UGG Women's Tasman II Slipper",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Project-Cloud-Genuine-Leather-Footbed/dp/B0FPPY5HM3/ref=zg_bs_g_679337011_d_sccl_11/142-2614247-7428539"
+    },
+    {
+      "asin": "B0CV463XTN",
+      "rank": 12,
+      "title": "PROJECT CLOUD 100% Genuine Leather Womens Cork Footbed Clogs for Women | Memory Foam Arch Support Slippers for Women; Trendy",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Essentials-Womens-Ballet-Burgundy/dp/B0CV463XTN/ref=zg_bs_g_679337011_d_sccl_12/142-2614247-7428539"
+    },
+    {
+      "asin": "B0B89K7948",
+      "rank": 13,
+      "title": "Amazon Essentials Women's Square-Toe Mary Jane Ballet Flat with Adjustable Metal Buckle Strap, Non-Slip Low Heel, Cushioned",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/New-Balance-Womens-Sneakers-Medium/dp/B0B89K7948/ref=zg_bs_g_679337011_d_sccl_13/142-2614247-7428539"
+    },
+    {
+      "asin": "B0FKSR8SGL",
+      "rank": 14,
+      "title": "New Balance Women's 327",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/OOW-Slippers-Winter-Outdoor-Chestnut/dp/B0FKSR8SGL/ref=zg_bs_g_679337011_d_sccl_14/142-2614247-7428539"
+    },
+    {
+      "asin": "B0C5ZRQS2X",
+      "rank": 15,
+      "title": "OOW Fuzzy Slippers for Women Cozy Faux Fur House Shoes Memory Foam Slippers | Winter, Warm Slippers, Cushioned Insole, Non-sl",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/KuaiLu-Support-Comfortable-Walking-Sandals/dp/B0C5ZRQS2X/ref=zg_bs_g_679337011_d_sccl_15/142-2614247-7428539"
+    },
+    {
+      "asin": "B0D8WPSF59",
+      "rank": 16,
+      "title": "KuaiLu Flip Flops for Women with Arch Support Summer Beach Thong Sandals | Comfortable Yoga Mat Walking Shoes Cushion Slip On",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Genuine-Leather-Slippers-Fur-Lined-Shearling/dp/B0D8WPSF59/ref=zg_bs_g_679337011_d_sccl_16/142-2614247-7428539"
+    },
+    {
+      "asin": "B09Q3MYDQH",
+      "rank": 17,
+      "title": "PROJECT CLOUD 100% Genuine Leather Shearling Womens Slippers for Women | Womens Genuine Australian Shearling Slippers - Fall",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/ATHMILE-Quick-Dry-Barefoot-Exercise-Accessories/dp/B09Q3MYDQH/ref=zg_bs_g_679337011_d_sccl_17/142-2614247-7428539"
+    },
+    {
+      "asin": "B08KXKFSJF",
+      "rank": 18,
+      "title": "Water Shoes for Women Men Quick-Dry Aqua Socks Swim Beach Outfits Barefoot | Pool Camping River Must Haves Hiking Yoga Exerci",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Evshine-Womens-Fuzzy-Slippers-Memory/dp/B08KXKFSJF/ref=zg_bs_g_679337011_d_sccl_18/142-2614247-7428539"
+    },
+    {
+      "asin": "B08DXN4RR4",
+      "rank": 19,
+      "title": "Evshine Memory Foam Fuzzy House Slippers for Women | Faux Fur Cross Band Open Toe Indoor Slippers, Gifts for Women, Moms and",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Snug-Leaves-Slippers-Anti-Slip-Brown-Leopard/dp/B08DXN4RR4/ref=zg_bs_g_679337011_d_sccl_19/142-2614247-7428539"
+    },
+    {
+      "asin": "B09JVQQ99K",
+      "rank": 20,
+      "title": "Litfun Fuzzy Slippers for Women Memory Foam Indoor House Shoes | Warm Fluffy Lining, Faux Suede Upper, Cushioned Comfort, Non",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Litfun-Womens-Memory-Slippers-Outdoor/dp/B09JVQQ99K/ref=zg_bs_g_679337011_d_sccl_20/142-2614247-7428539"
+    },
+    {
+      "asin": "B083GCRMBP",
+      "rank": 21,
+      "title": "Litfun Fuzzy Slippers for Women Memory Foam Indoor House Shoes | Warm Fluffy Lining, Faux Suede Upper, Cushioned Comfort, Non",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/HomeTop-Womens-Memory-Loafer-Slippers/dp/B083GCRMBP/ref=zg_bs_g_679337011_d_sccl_21/142-2614247-7428539"
+    },
+    {
+      "asin": "B0DJ1HY316",
+      "rank": 22,
+      "title": "HomeTop Women's Fuzzy Curly Fur Fleece Lining Memory Foam Loafer Slippers | Non-slip, Indoor and Outdoor, Machine-washable, W",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Project-Cloud-Genuine-Leather-Clogs/dp/B0DJ1HY316/ref=zg_bs_g_679337011_d_sccl_22/142-2614247-7428539"
+    },
+    {
+      "asin": "B0BF4MBNS5",
+      "rank": 23,
+      "title": "PROJECT CLOUD 100% Genuine Leather Clogs for Women Fall Shoes for Women | Memory Foam Insole Arch Support Clogs, Durable Outs",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Rilista-Slingback-Pointed-Sandals-Wedding/dp/B0BF4MBNS5/ref=zg_bs_g_679337011_d_sccl_23/142-2614247-7428539"
+    },
+    {
+      "asin": "B0DPMCH6GB",
+      "rank": 24,
+      "title": "Rilista Women's Slingback Kitten Heels Closed Pointed Toe Backless Wedding Party Dress Pumps Shoes",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/OOW-Slippers-Memory-Womens-Slipper/dp/B0DPMCH6GB/ref=zg_bs_g_679337011_d_sccl_24/142-2614247-7428539"
+    },
+    {
+      "asin": "B07PJ7QC41",
+      "rank": 25,
+      "title": "OOW Cozy House Slippers for Women with Memory Foam Fuzzy Shoes for Indoor",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Essentials-Womens-Aola-Ankle/dp/B07PJ7QC41/ref=zg_bs_g_679337011_d_sccl_25/142-2614247-7428539"
+    },
+    {
+      "asin": "B08CW719KY",
+      "rank": 26,
+      "title": "Amazon Essentials Women's Low Heel Ankle Boots with Side Zipper, Stacked Block Heel",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Essentials-Womens-Pointed-Ballet/dp/B08CW719KY/ref=zg_bs_g_679337011_d_sccl_26/142-2614247-7428539"
+    },
+    {
+      "asin": "B09652VJP1",
+      "rank": 27,
+      "title": "Amazon Essentials Women's Cushioned Pointed-Toe Ballet Flat, Slip-on Non-Slip Work Shoes Regular and Wide Widths",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Joomra-Slippers-Massage-Bathroom-Platform/dp/B09652VJP1/ref=zg_bs_g_679337011_d_sccl_27/142-2614247-7428539"
+    },
+    {
+      "asin": "B08KWQ61QQ",
+      "rank": 28,
+      "title": "Joomra Pillow Slippers for Women and Men Thick Sole Ultra Cushion Slides | Cloud-Like Sole, Quick Drying Shower Shoes, Soft O",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Chooka-Womens-Waterproof-Chelsea-Delridge/dp/B08KWQ61QQ/ref=zg_bs_g_679337011_d_sccl_28/142-2614247-7428539"
+    },
+    {
+      "asin": "B01A6LUCZU",
+      "rank": 29,
+      "title": "Chooka Women's Delridge Waterproof Faux Fur Chelsea Rain Boot Slip On | Ladies pull-on street style shoes with plush lining,",
+      "brand_hits": [
+        "Crocs",
+        "Crocs",
+        "Crocs",
+        "Crocs",
+        "Crocs"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/Crocs-Unisex-Classic-Lined-Charcoal/dp/B01A6LUCZU/ref=zg_bs_g_679337011_d_sccl_29/142-2614247-7428539"
+    },
+    {
+      "asin": "B094CTB3TY",
+      "rank": 30,
+      "title": "Crocs Unisex-Adult Classic Lined Clog | Casual Shoes",
+      "brand_hits": [
+        "Crocs",
+        "Crocs",
+        "Crocs",
+        "Crocs",
+        "Crocs"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/Ankis-2-75-inch-adjustable-cushioned-occasions/dp/B094CTB3TY/ref=zg_bs_g_679337011_d_sccl_30/142-2614247-7428539"
+    }
+  ],
+  "brand_contexts": [
+    {
+      "match": "elf.",
+      "snippet": "(n in r)v(r[n])|| null===r[n]||(b.push(n+x+\"=\"+(r[n]-q)),p&&s(\"mark\",X[n]||n,+r[n]));b.push(\"t\"+x+\"=\"+r[m]);u.latency[\"t\"+x]=r[m];if(e(\"ctb\",k)||e(\"wb\",k))t=1}}!D&&t&&b.push(\"ctb=1\");return b.join(\"&\")}function x(b,c,f,e,m){if(b&&!e){e=d.ue_err;if(p){var g=h.encodeURIComponent;g&&b&&(m=new Image,b=\""
+    },
+    {
+      "match": "elf",
+      "snippet": "ajax&&p.ajax(b,c);k&&n&&(e={requestId:e,transitionType:\"soft\"},\"string\"===typeof g&&(e.pageType=g,d.ue_pty=g),\"string\"===typeof r&&(e.subPageType=r,d.ue_spty=r),k(\"newPage\",e),n(\"mark\",\"transitionStart\",b));a.tag(\"ajax-transition\")}d.ueinit=(d.ueinit||0)+1;var a=d.ue=d.ue||{};a.t0=h.aPageStart||d.ue"
+    },
+    {
+      "match": "elf",
+      "snippet": "oveEventListener\",aa=\"attachEvent\",ca=\"detachEvent\",X={cf:\"criticalFeature\",af:\"aboveTheFold\",fn:\"functional\",fp:\"firstPaint\",fcp:\"firstContentfulPaint\",bb:\"bodyBegin\",be:\"bodyEnd\",ld:\"loaded\"},K=h.Date,H=h.performance||h.webkitPerformance,g=(H||{}).timing,E=(H||{}).navigation,Q=(g||{}).navigationSt"
+    },
+    {
+      "match": "crocs",
+      "snippet": "class=\"zg-bdg-text\">#1 <img alt=\"Crocs Unisex-Adult Classic Clog, Clogs for Women and Men\" src=\"https://images-na.ssl-images-amazon.com/images/I/61SuPkDGYfL._AC_UL300_SR300,200_.jpg\" class=\"a-dynamic-image p13n-sc-dynamic-image p13n-product-image\" height=\"200px\" data-a-dynamic-image=\"{&quot;https://"
+    },
+    {
+      "match": "Crocs",
+      "snippet": "v class=\"zg-grid-general-faceout\"> <img alt=\"Crocs Unisex-Adult Classic Clog, Clogs for Women and Men\" src=\"https://images-na.ssl-images-amazon.com/images/I/61SuPkDGYfL._AC_UL300_SR300,200_.jpg\" class=\"a-dynamic-image p13n-sc-dynamic-image p13n-product-image\" height=\"200px\" data-a-dynamic-image=\"{&q"
+    },
+    {
+      "match": "crocs",
+      "snippet": "ages-amazon.com/images/I/61SuPkDGYfL._AC_UL300_SR300,200_.jpg&quot;:[300,200],&quot;https://images-na.ssl-images-amazon.com/images/I/61SuPkDGYfL._AC_UL600_SR600,400_.jpg&quot;:[600,400],&quot;https://images-na.ssl-images-amazon.com/images/I/61SuPkDGYfL._AC_UL900_SR900,600_.jpg&quot;:[900,600]}\" styl"
+    },
+    {
+      "match": "Crocs",
+      "snippet": ";:[600,400],&quot;https://images-na.ssl-images-amazon.com/images/I/61SuPkDGYfL._AC_UL900_SR900,600_.jpg&quot;:[900,600]}\" style=\"max-width:300px;max-height:200px\"/> Crocs Unisex-Adult Classic Clog, Clogs for Women and Men 4.8 out of 5 star"
+    },
+    {
+      "match": "crocs",
+      "snippet": "d_sccl_1_cr/142-2614247-7428539\"> 4.8 out of 5 stars 485,909 $29.10 <li class=\"zg-no-numbers"
+    },
+    {
+      "match": "Crocs",
+      "snippet": "class=\"zg-bdg-text\">#29 <img alt=\"Crocs Unisex-Adult Classic Lined Clog | Casual Shoes\" src=\"https://images-na.ssl-images-amazon.com/images/I/61hTyV5rtsL._AC_UL300_SR300,200_.jpg\" class=\"a-dynamic-image p13n-sc-dynamic-image p13n-product-image\" height=\"200px\" data-a-dynamic-image=\"{&quot;https://ima"
+    },
+    {
+      "match": "Crocs",
+      "snippet": "ass=\"zg-grid-general-faceout\"> <img alt=\"Crocs Unisex-Adult Classic Lined Clog | Casual Shoes\" src=\"https://images-na.ssl-images-amazon.com/images/I/61hTyV5rtsL._AC_UL300_SR300,200_.jpg\" class=\"a-dynamic-image p13n-sc-dynamic-image p13n-product-image\" height=\"200px\" data-a-dynamic-image=\"{&quot;http"
+    },
+    {
+      "match": "Crocs",
+      "snippet": "ages-amazon.com/images/I/61hTyV5rtsL._AC_UL300_SR300,200_.jpg&quot;:[300,200],&quot;https://images-na.ssl-images-amazon.com/images/I/61hTyV5rtsL._AC_UL600_SR600,400_.jpg&quot;:[600,400],&quot;https://images-na.ssl-images-amazon.com/images/I/61hTyV5rtsL._AC_UL900_SR900,600_.jpg&quot;:[900,600]}\" styl"
+    },
+    {
+      "match": "Crocs",
+      "snippet": "00,400],&quot;https://images-na.ssl-images-amazon.com/images/I/61hTyV5rtsL._AC_UL900_SR900,600_.jpg&quot;:[900,600]}\" style=\"max-width:300px;max-height:200px\"/> Crocs Unisex-Adult Classic Lined Clog | Casual Shoes 4.8 out of 5 stars</s"
+    },
+    {
+      "match": "Crocs",
+      "snippet": "stars, 94,532 ratings\" class=\"a-link-normal\" href=\"/product-reviews/B01A6LUCZU/ref=zg_bs_g_679337011_d_sccl_29_cr/142-2614247-7428539\"> 4.8 out of 5 stars 94,532 1 offer from $1999 $ 19 <s"
+    },
+    {
+      "match": "elf",
+      "snippet": "function(i,e,t,n){var r=!1,a=i[c];return N?(!a||a.tid!==J.tid||!a[S]||a.pid!==t||!a.ent&&n||n&&ii(a.ent,n))&&(i[c]={visible:!0,pid:t,tid:e,ent:n},r=!0):!H&&a&&a.tid===J.tid&&a[S]&&(r=!(a[S]=!1)),r}(R,(D?t.tid:null)||j.tid||t.tid||J.tid,(D?t.pid:null)||j.pid||t.pid||J.pid,(D?t.ent:null)||j.ent||t.ent"
+    }
+  ],
+  "n_asins": 30,
+  "n_ranked": 30,
+  "brand_products": [
+    {
+      "asin": "B0014C0LSY",
+      "rank": 1,
+      "title": "Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+      "brand_hits": [
+        "crocs",
+        "Crocs",
+        "crocs",
+        "Crocs",
+        "crocs"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/crocs-Unisex-Classic-Black-Women/dp/B0014C0LSY/ref=zg_bs_g_679337011_d_sccl_1/142-2614247-7428539"
+    },
+    {
+      "asin": "B0CLGNYKFR",
+      "rank": 2,
+      "title": "Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+      "brand_hits": [
+        "crocs",
+        "Crocs",
+        "crocs",
+        "Crocs",
+        "crocs"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/EverFoams-Open-toe-Machine-washable-Anti-slip-Lightweight/dp/B0CLGNYKFR/ref=zg_bs_g_679337011_d_sccl_2/142-2614247-7428539"
+    },
+    {
+      "asin": "B01A6LUCZU",
+      "rank": 29,
+      "title": "Chooka Women's Delridge Waterproof Faux Fur Chelsea Rain Boot Slip On | Ladies pull-on street style shoes with plush lining,",
+      "brand_hits": [
+        "Crocs",
+        "Crocs",
+        "Crocs",
+        "Crocs",
+        "Crocs"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/Crocs-Unisex-Classic-Lined-Charcoal/dp/B01A6LUCZU/ref=zg_bs_g_679337011_d_sccl_29/142-2614247-7428539"
+    },
+    {
+      "asin": "B094CTB3TY",
+      "rank": 30,
+      "title": "Crocs Unisex-Adult Classic Lined Clog | Casual Shoes",
+      "brand_hits": [
+        "Crocs",
+        "Crocs",
+        "Crocs",
+        "Crocs",
+        "Crocs"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/Ankis-2-75-inch-adjustable-cushioned-occasions/dp/B094CTB3TY/ref=zg_bs_g_679337011_d_sccl_30/142-2614247-7428539"
+    }
+  ],
+  "http_status": 200
+}

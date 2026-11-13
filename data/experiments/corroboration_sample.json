@@ -1,0 +1,663 @@
+{
+  "title": "Multi-platform corroboration rerun after TikTok and Amazon public-data adapters",
+  "retrieved_at_utc": "2026-11-13T01:10:00Z",
+  "retrieved_at_asia_shanghai": "2026-11-13 09:10 Asia/Shanghai",
+  "policy": "No new z-score is invented for TikTok lifetime totals or a single Amazon BSR. Wikipedia uses the saved official series. Google Trends momentum is the 13 Nov 2026 live snapshot already published on the site. Missing platforms are listed, never imputed.",
+  "tickers": {
+    "CROX": {
+      "platforms": {
+        "google_trends": {
+          "status": "worked",
+          "ok": true,
+          "method": "pytrends TrendReq interest_over_time, today 5-y, US \u2014 13 Nov 2026 snapshot",
+          "source_url": "https://trends.google.com/trends/",
+          "momentum_0_100": 43.1
+        },
+        "wikipedia": {
+          "platform": "wikipedia",
+          "status": "worked",
+          "ok": true,
+          "method": "Wikimedia REST API (cached series, retrieved 2026-11-12T18:08Z)",
+          "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/",
+          "z_last_vs_history": -1.6135535087083528,
+          "last_day": 473,
+          "sum_13d": 6417,
+          "n_days": 395
+        },
+        "tiktok": {
+          "platform": "tiktok",
+          "status": "worked",
+          "ok": true,
+          "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+          "source_url": "https://www.tiktok.com/tag/crocs",
+          "retrieved_at_utc": "2026-11-13T00:49:34Z",
+          "z_last_vs_history": null,
+          "hashtag": "crocs",
+          "viewCount": 35500544935,
+          "videoCount": 1927145,
+          "quality": "specific",
+          "notes": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+          "preferred_hashtag": "crocs",
+          "other_tags": [
+            {
+              "hashtag": "crocsshoes",
+              "viewCount": 747910931,
+              "videoCount": 53039,
+              "quality": "specific"
+            },
+            {
+              "hashtag": "crocsclassicclog",
+              "viewCount": 20573765,
+              "videoCount": 1287,
+              "quality": "specific"
+            }
+          ],
+          "tiktokapi_crosscheck": {
+            "viewCount": 35500665122,
+            "videoCount": 1927144,
+            "viewCount_rounded": 35500000000,
+            "retrieved_at_utc": "2026-11-13T00:53:47Z",
+            "method": "davidteather/TikTok-Api hashtag.info(), no login, playwright session"
+          }
+        },
+        "amazon_movers": {
+          "platform": "amazon_movers",
+          "status": "worked",
+          "ok": true,
+          "method": "Scrapling Fetcher of public Best Sellers pages; ranks from data-client-recs-list metadataMap.render.zg.rank; brand match on PRODUCT TITLE only (context matches discarded).",
+          "source_url": "https://www.amazon.com/gp/bestsellers/fashion/679337011",
+          "retrieved_at_utc": "2026-11-13T00:50:49Z",
+          "z_last_vs_history": null,
+          "best_rank": 1,
+          "headline": "#1 in Women's Shoes \u2014 Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+          "n_listings": 3,
+          "notes": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher.",
+          "findings": [
+            {
+              "asin": "B0014C0LSY",
+              "title": "Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+              "rank": 1,
+              "category": "Women's Shoes",
+              "source_url": "https://www.amazon.com/gp/bestsellers/fashion/679337011",
+              "product_url": "https://www.amazon.com/dp/B0014C0LSY"
+            },
+            {
+              "asin": "B0014C0LSY",
+              "title": "Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+              "rank": 12,
+              "category": "Clothing, Shoes & Jewelry",
+              "source_url": "https://www.amazon.com/gp/bestsellers/fashion/",
+              "product_url": "https://www.amazon.com/dp/B0014C0LSY"
+            },
+            {
+              "asin": "B01A6LUCZU",
+              "title": "Crocs Unisex-Adult Classic Lined Clog | Casual Shoes",
+              "rank": 29,
+              "category": "Women's Shoes",
+              "source_url": "https://www.amazon.com/gp/bestsellers/fashion/679337011",
+              "product_url": "https://www.amazon.com/dp/B01A6LUCZU"
+            }
+          ]
+        }
+      },
+      "corroboration": {
+        "ok": true,
+        "corroborated": false,
+        "n_confirming": 0,
+        "n_fading": 2,
+        "min_confirm": 2,
+        "platforms_used": [
+          "google_trends",
+          "wikipedia"
+        ],
+        "platforms_present_no_z": [
+          {
+            "platform": "tiktok",
+            "status": "worked",
+            "reason": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+            "headline": null,
+            "viewCount": 35500544935,
+            "videoCount": 1927145,
+            "best_rank": null
+          },
+          {
+            "platform": "amazon_movers",
+            "status": "worked",
+            "reason": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher.",
+            "headline": "#1 in Women's Shoes \u2014 Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+            "viewCount": null,
+            "videoCount": null,
+            "best_rank": 1
+          }
+        ],
+        "platforms_missing": [],
+        "components": [
+          {
+            "platform": "google_trends",
+            "z": -0.6899999999999998,
+            "momentum_0_100": 43.1,
+            "weight": 0.75,
+            "status": "worked"
+          },
+          {
+            "platform": "wikipedia",
+            "z": -1.6135535087083528,
+            "momentum_0_100": null,
+            "weight": 0.7,
+            "status": "worked"
+          }
+        ],
+        "weighted_z": -1.136,
+        "composite_0_100": 38.64,
+        "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold."
+      }
+    },
+    "LULU": {
+      "platforms": {
+        "google_trends": {
+          "status": "worked",
+          "ok": true,
+          "method": "pytrends TrendReq interest_over_time, today 5-y, US \u2014 13 Nov 2026 snapshot",
+          "source_url": "https://trends.google.com/trends/",
+          "momentum_0_100": 35.56
+        },
+        "wikipedia": {
+          "platform": "wikipedia",
+          "status": "worked",
+          "ok": true,
+          "method": "Wikimedia REST API (cached series, retrieved 2026-11-12T18:08Z)",
+          "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/",
+          "z_last_vs_history": -0.6633912808276916,
+          "last_day": 908,
+          "sum_13d": 10310,
+          "n_days": 395
+        },
+        "tiktok": {
+          "platform": "tiktok",
+          "status": "worked",
+          "ok": true,
+          "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+          "source_url": "https://www.tiktok.com/tag/lululemon",
+          "retrieved_at_utc": "2026-11-13T00:49:38Z",
+          "z_last_vs_history": null,
+          "hashtag": "lululemon",
+          "viewCount": 26698719936,
+          "videoCount": 1274509,
+          "quality": "specific",
+          "notes": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+          "preferred_hashtag": "lululemon",
+          "other_tags": [
+            {
+              "hashtag": "lulu",
+              "viewCount": 13339723550,
+              "videoCount": 1015318,
+              "quality": "noisy_generic_word"
+            }
+          ],
+          "tiktokapi_crosscheck": {
+            "viewCount": 26698742524,
+            "videoCount": 1274510,
+            "viewCount_rounded": 26700000000,
+            "retrieved_at_utc": "2026-11-13T00:53:47Z",
+            "method": "davidteather/TikTok-Api hashtag.info(), no login, playwright session"
+          }
+        },
+        "amazon_movers": {
+          "platform": "amazon_movers",
+          "status": "worked",
+          "ok": true,
+          "method": "Scrapling Fetcher of public Best Sellers pages; ranks from data-client-recs-list metadataMap.render.zg.rank; brand match on PRODUCT TITLE only (context matches discarded).",
+          "source_url": "https://www.amazon.com/gp/bestsellers",
+          "retrieved_at_utc": "2026-11-13T00:50:49Z",
+          "z_last_vs_history": null,
+          "n_listings": 0,
+          "reason": "no title-only brand hit in fetched top-50 lists (LULU / Lululemon, TPR / Coach, NWL / Elmer's)",
+          "notes": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher. Absence from a top-50 list is a fact, not an estimated rank."
+        }
+      },
+      "corroboration": {
+        "ok": true,
+        "corroborated": false,
+        "n_confirming": 0,
+        "n_fading": 2,
+        "min_confirm": 2,
+        "platforms_used": [
+          "google_trends",
+          "wikipedia"
+        ],
+        "platforms_present_no_z": [
+          {
+            "platform": "tiktok",
+            "status": "worked",
+            "reason": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+            "headline": null,
+            "viewCount": 26698719936,
+            "videoCount": 1274509,
+            "best_rank": null
+          },
+          {
+            "platform": "amazon_movers",
+            "status": "worked",
+            "reason": "no title-only brand hit in fetched top-50 lists (LULU / Lululemon, TPR / Coach, NWL / Elmer's)",
+            "headline": null,
+            "viewCount": null,
+            "videoCount": null,
+            "best_rank": null
+          }
+        ],
+        "platforms_missing": [],
+        "components": [
+          {
+            "platform": "google_trends",
+            "z": -1.4439999999999997,
+            "momentum_0_100": 35.56,
+            "weight": 0.75,
+            "status": "worked"
+          },
+          {
+            "platform": "wikipedia",
+            "z": -0.6633912808276916,
+            "momentum_0_100": null,
+            "weight": 0.7,
+            "status": "worked"
+          }
+        ],
+        "weighted_z": -1.067,
+        "composite_0_100": 39.33,
+        "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold."
+      }
+    },
+    "ELF": {
+      "platforms": {
+        "google_trends": {
+          "status": "worked",
+          "ok": true,
+          "method": "pytrends TrendReq interest_over_time, today 5-y, US \u2014 13 Nov 2026 snapshot",
+          "source_url": "https://trends.google.com/trends/",
+          "momentum_0_100": 57.97
+        },
+        "wikipedia": {
+          "platform": "wikipedia",
+          "status": "worked",
+          "ok": true,
+          "method": "Wikimedia REST API (cached series, retrieved 2026-11-12T18:08Z)",
+          "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/",
+          "z_last_vs_history": -0.4615888959208264,
+          "last_day": 197,
+          "sum_13d": 2318,
+          "n_days": 395
+        },
+        "tiktok": {
+          "platform": "tiktok",
+          "status": "worked",
+          "ok": true,
+          "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+          "source_url": "https://www.tiktok.com/tag/elfcosmetics",
+          "retrieved_at_utc": "2026-11-13T00:49:41Z",
+          "z_last_vs_history": null,
+          "hashtag": "elfcosmetics",
+          "viewCount": 11511831389,
+          "videoCount": 560071,
+          "quality": "specific",
+          "notes": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+          "preferred_hashtag": "elfcosmetics",
+          "other_tags": [
+            {
+              "hashtag": "elfbeauty",
+              "viewCount": 173633632,
+              "videoCount": 7486,
+              "quality": "specific"
+            },
+            {
+              "hashtag": "elfmakeup",
+              "viewCount": 1410803929,
+              "videoCount": 78750,
+              "quality": "specific"
+            }
+          ],
+          "tiktokapi_crosscheck": {
+            "viewCount": 11511866885,
+            "videoCount": 560074,
+            "viewCount_rounded": 11500000000,
+            "retrieved_at_utc": "2026-11-13T00:53:47Z",
+            "method": "davidteather/TikTok-Api hashtag.info(), no login, playwright session"
+          }
+        },
+        "amazon_movers": {
+          "platform": "amazon_movers",
+          "status": "worked",
+          "ok": true,
+          "method": "Scrapling Fetcher of public Best Sellers pages; ranks from data-client-recs-list metadataMap.render.zg.rank; brand match on PRODUCT TITLE only (context matches discarded).",
+          "source_url": "https://www.amazon.com/gp/bestsellers/beauty/",
+          "retrieved_at_utc": "2026-11-13T00:50:49Z",
+          "z_last_vs_history": null,
+          "best_rank": 23,
+          "headline": "#23 in Beauty & Personal Care \u2014 e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde",
+          "n_listings": 2,
+          "notes": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher.",
+          "findings": [
+            {
+              "asin": "B07PBQZ3KF",
+              "title": "e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde",
+              "rank": 23,
+              "category": "Beauty & Personal Care",
+              "source_url": "https://www.amazon.com/gp/bestsellers/beauty/",
+              "product_url": "https://www.amazon.com/dp/B07PBQZ3KF"
+            },
+            {
+              "asin": "B0CMYR1CNK",
+              "title": "e.l.f. Cream Glide Lip Liner, Highly-Pigmented Pencil For Shaping & Sculpting Lips",
+              "rank": 24,
+              "category": "Beauty & Personal Care",
+              "source_url": "https://www.amazon.com/gp/bestsellers/beauty/",
+              "product_url": "https://www.amazon.com/dp/B0CMYR1CNK"
+            }
+          ]
+        }
+      },
+      "corroboration": {
+        "ok": true,
+        "corroborated": false,
+        "n_confirming": 1,
+        "n_fading": 0,
+        "min_confirm": 2,
+        "platforms_used": [
+          "google_trends",
+          "wikipedia"
+        ],
+        "platforms_present_no_z": [
+          {
+            "platform": "tiktok",
+            "status": "worked",
+            "reason": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+            "headline": null,
+            "viewCount": 11511831389,
+            "videoCount": 560071,
+            "best_rank": null
+          },
+          {
+            "platform": "amazon_movers",
+            "status": "worked",
+            "reason": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher.",
+            "headline": "#23 in Beauty & Personal Care \u2014 e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde",
+            "viewCount": null,
+            "videoCount": null,
+            "best_rank": 23
+          }
+        ],
+        "platforms_missing": [],
+        "components": [
+          {
+            "platform": "google_trends",
+            "z": 0.7969999999999999,
+            "momentum_0_100": 57.97,
+            "weight": 0.75,
+            "status": "worked"
+          },
+          {
+            "platform": "wikipedia",
+            "z": -0.4615888959208264,
+            "momentum_0_100": null,
+            "weight": 0.7,
+            "status": "worked"
+          }
+        ],
+        "weighted_z": 0.189,
+        "composite_0_100": 51.89,
+        "interpretation": "1 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold."
+      }
+    },
+    "TPR": {
+      "platforms": {
+        "google_trends": {
+          "status": "worked",
+          "ok": true,
+          "method": "pytrends TrendReq interest_over_time, today 5-y, US \u2014 13 Nov 2026 snapshot",
+          "source_url": "https://trends.google.com/trends/",
+          "momentum_0_100": 54.37
+        },
+        "wikipedia": {
+          "platform": "wikipedia",
+          "status": "worked",
+          "ok": true,
+          "method": "Wikimedia REST API (cached series, retrieved 2026-11-12T18:08Z)",
+          "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/",
+          "z_last_vs_history": -0.964850405253602,
+          "last_day": 111,
+          "sum_13d": 1779,
+          "n_days": 395
+        },
+        "tiktok": {
+          "platform": "tiktok",
+          "status": "worked",
+          "ok": true,
+          "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+          "source_url": "https://www.tiktok.com/tag/coachbag",
+          "retrieved_at_utc": "2026-11-13T00:49:47Z",
+          "z_last_vs_history": null,
+          "hashtag": "coachbag",
+          "viewCount": 6066578377,
+          "videoCount": 418193,
+          "quality": "specific",
+          "notes": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+          "preferred_hashtag": "coachbag",
+          "other_tags": [
+            {
+              "hashtag": "coach",
+              "viewCount": 68635437552,
+              "videoCount": 5821037,
+              "quality": "noisy_generic_word"
+            },
+            {
+              "hashtag": "coachnewyork",
+              "viewCount": 233738750,
+              "videoCount": 23338,
+              "quality": "specific"
+            }
+          ]
+        },
+        "amazon_movers": {
+          "platform": "amazon_movers",
+          "status": "worked",
+          "ok": true,
+          "method": "Scrapling Fetcher of public Best Sellers pages; ranks from data-client-recs-list metadataMap.render.zg.rank; brand match on PRODUCT TITLE only (context matches discarded).",
+          "source_url": "https://www.amazon.com/gp/bestsellers",
+          "retrieved_at_utc": "2026-11-13T00:50:49Z",
+          "z_last_vs_history": null,
+          "n_listings": 0,
+          "reason": "no title-only brand hit in fetched top-50 lists (LULU / Lululemon, TPR / Coach, NWL / Elmer's)",
+          "notes": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher. Absence from a top-50 list is a fact, not an estimated rank."
+        }
+      },
+      "corroboration": {
+        "ok": true,
+        "corroborated": false,
+        "n_confirming": 0,
+        "n_fading": 1,
+        "min_confirm": 2,
+        "platforms_used": [
+          "google_trends",
+          "wikipedia"
+        ],
+        "platforms_present_no_z": [
+          {
+            "platform": "tiktok",
+            "status": "worked",
+            "reason": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+            "headline": null,
+            "viewCount": 6066578377,
+            "videoCount": 418193,
+            "best_rank": null
+          },
+          {
+            "platform": "amazon_movers",
+            "status": "worked",
+            "reason": "no title-only brand hit in fetched top-50 lists (LULU / Lululemon, TPR / Coach, NWL / Elmer's)",
+            "headline": null,
+            "viewCount": null,
+            "videoCount": null,
+            "best_rank": null
+          }
+        ],
+        "platforms_missing": [],
+        "components": [
+          {
+            "platform": "google_trends",
+            "z": 0.4369999999999997,
+            "momentum_0_100": 54.37,
+            "weight": 0.75,
+            "status": "worked"
+          },
+          {
+            "platform": "wikipedia",
+            "z": -0.964850405253602,
+            "momentum_0_100": null,
+            "weight": 0.7,
+            "status": "worked"
+          }
+        ],
+        "weighted_z": -0.24,
+        "composite_0_100": 47.6,
+        "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold."
+      }
+    },
+    "NWL": {
+      "platforms": {
+        "google_trends": {
+          "status": "worked",
+          "ok": true,
+          "method": "pytrends TrendReq interest_over_time, today 5-y, US \u2014 13 Nov 2026 snapshot",
+          "source_url": "https://trends.google.com/trends/",
+          "momentum_0_100": 40.16
+        },
+        "wikipedia": {
+          "platform": "wikipedia",
+          "status": "worked",
+          "ok": true,
+          "method": "Wikimedia REST API (cached series, retrieved 2026-11-12T18:08Z)",
+          "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/",
+          "z_last_vs_history": -0.7278717852741204,
+          "last_day": 80,
+          "sum_13d": 969,
+          "n_days": 395
+        },
+        "tiktok": {
+          "platform": "tiktok",
+          "status": "worked",
+          "ok": true,
+          "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+          "source_url": "https://www.tiktok.com/tag/elmersslime",
+          "retrieved_at_utc": "2026-11-13T00:49:49Z",
+          "z_last_vs_history": null,
+          "hashtag": "elmersslime",
+          "viewCount": 89456670,
+          "videoCount": 2217,
+          "quality": "specific",
+          "notes": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+          "preferred_hashtag": "elmersslime",
+          "other_tags": [
+            {
+              "hashtag": "elmersglue",
+              "viewCount": 624740454,
+              "videoCount": 12310,
+              "quality": "specific"
+            },
+            {
+              "hashtag": "slime",
+              "viewCount": 222606744837,
+              "videoCount": 6360686,
+              "quality": "noisy_generic_word"
+            }
+          ]
+        },
+        "amazon_movers": {
+          "platform": "amazon_movers",
+          "status": "worked",
+          "ok": true,
+          "method": "Scrapling Fetcher of public Best Sellers pages; ranks from data-client-recs-list metadataMap.render.zg.rank; brand match on PRODUCT TITLE only (context matches discarded).",
+          "source_url": "https://www.amazon.com/gp/bestsellers",
+          "retrieved_at_utc": "2026-11-13T00:50:49Z",
+          "z_last_vs_history": null,
+          "n_listings": 0,
+          "reason": "no title-only brand hit in fetched top-50 lists (LULU / Lululemon, TPR / Coach, NWL / Elmer's)",
+          "notes": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher. Absence from a top-50 list is a fact, not an estimated rank."
+        }
+      },
+      "corroboration": {
+        "ok": true,
+        "corroborated": false,
+        "n_confirming": 0,
+        "n_fading": 2,
+        "min_confirm": 2,
+        "platforms_used": [
+          "google_trends",
+          "wikipedia"
+        ],
+        "platforms_present_no_z": [
+          {
+            "platform": "tiktok",
+            "status": "worked",
+            "reason": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+            "headline": null,
+            "viewCount": 89456670,
+            "videoCount": 2217,
+            "best_rank": null
+          },
+          {
+            "platform": "amazon_movers",
+            "status": "worked",
+            "reason": "no title-only brand hit in fetched top-50 lists (LULU / Lululemon, TPR / Coach, NWL / Elmer's)",
+            "headline": null,
+            "viewCount": null,
+            "videoCount": null,
+            "best_rank": null
+          }
+        ],
+        "platforms_missing": [],
+        "components": [
+          {
+            "platform": "google_trends",
+            "z": -0.9840000000000003,
+            "momentum_0_100": 40.16,
+            "weight": 0.75,
+            "status": "worked"
+          },
+          {
+            "platform": "wikipedia",
+            "z": -0.7278717852741204,
+            "momentum_0_100": null,
+            "weight": 0.7,
+            "status": "worked"
+          }
+        ],
+        "weighted_z": -0.86,
+        "composite_0_100": 41.4,
+        "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold."
+      }
+    }
+  },
+  "summary": {
+    "corroborated": {
+      "CROX": false,
+      "LULU": false,
+      "ELF": false,
+      "TPR": false,
+      "NWL": false
+    },
+    "weighted_z": {
+      "CROX": -1.136,
+      "LULU": -1.067,
+      "ELF": 0.189,
+      "TPR": -0.24,
+      "NWL": -0.86
+    },
+    "n_confirming": {
+      "CROX": 0,
+      "LULU": 0,
+      "ELF": 1,
+      "TPR": 0,
+      "NWL": 0
+    },
+    "interpretation": "None of the five sample tickers reach the two-platform rising-z threshold. Wikipedia last-day views are all below their own history (negative z). Google Trends momentum is above 50 only for ELF (57.97) and slightly for TPR (54.37); only ELF's Trends z exceeds +0.5, so ELF has n_confirming=1, still below the threshold. TikTok lifetime view totals and Amazon Best Sellers ranks are real and recorded, but a single snapshot is not a z-score and is listed under platforms_present_no_z. Nothing was imputed."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "ticker": "CROX",
+  "asin": "B0014C0LSY",
+  "url": "https://camelcamelcamel.com/product/B0014C0LSY",
+  "method": "Scrapling Fetcher CamelCamelCamel public product page",
+  "retrieved_at_utc": "2026-11-13T00:52:27Z",
+  "http_status": 403,
+  "html_len": 6050,
+  "title": "Just a moment...",
+  "phrases": [],
+  "ranks_guess": [],
+  "ok": false
+}

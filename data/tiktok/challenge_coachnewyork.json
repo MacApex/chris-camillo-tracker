@@ -1,0 +1,53 @@
+{
+  "ticker": "TPR",
+  "hashtag": "coachnewyork",
+  "retrieved_at_utc": "2026-11-13T00:49:48Z",
+  "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+  "http_status": 200,
+  "source_url": "https://www.tiktok.com/tag/coachnewyork",
+  "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=coachnewyork&device_platform=web_pc&os=linux",
+  "challenge_id": "66848250",
+  "title": "coachnewyork",
+  "stats": {
+    "videoCount": 0,
+    "viewCount": 233700000
+  },
+  "statsV2": {
+    "videoCount": "23338",
+    "viewCount": "233738750"
+  },
+  "videoCount": "23338",
+  "viewCount": "233738750",
+  "status_code": 0,
+  "ok": true,
+  "challengeInfo_slim": {
+    "challenge": {
+      "coverLarger": "",
+      "coverMedium": "",
+      "coverThumb": "",
+      "desc": "",
+      "id": "66848250",
+      "isCommerce": false,
+      "profileLarger": "",
+      "profileMedium": "",
+      "profileThumb": "",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 233700000
+      },
+      "title": "coachnewyork"
+    },
+    "challengeAnnouncement": {
+      "body": "",
+      "title": ""
+    },
+    "stats": {
+      "videoCount": 0,
+      "viewCount": 233700000
+    },
+    "statsV2": {
+      "videoCount": "23338",
+      "viewCount": "233738750"
+    }
+  }
+}

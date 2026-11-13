@@ -1,0 +1,363 @@
+{
+  "kind": "bestsellers_beauty",
+  "url": "https://www.amazon.com/gp/bestsellers/beauty/",
+  "method": "Scrapling Fetcher",
+  "retrieved_at_utc": "2026-11-13T00:50:56Z",
+  "html_len": 448958,
+  "title": "Amazon Best Sellers: Best Beauty & Personal Care",
+  "products": [
+    {
+      "asin": "B08KT2Z93D",
+      "rank": 1,
+      "title": "eos Shea Better Body Lotion- Vanilla Cashmere,  24-Hour Moisture, 16 fl oz | Natural Shea Butter & Oil, Whipped Vanilla & Car",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/eos-Cashmere-Moisture-Lightweight-Non-Greasy/dp/B08KT2Z93D/ref=zg_bs_g_beauty_d_sccl_1/140-6136747-7824768"
+    },
+    {
+      "asin": "B074PVTPBW",
+      "rank": 2,
+      "title": "eos Shea Better Body Lotion- Vanilla Cashmere,  24-Hour Moisture, 16 fl oz | Natural Shea Butter & Oil, Whipped Vanilla & Car",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Mighty-Patch-Hydrocolloid-Absorbing-count/dp/B074PVTPBW/ref=zg_bs_g_beauty_d_sccl_2/140-6136747-7824768"
+    },
+    {
+      "asin": "B07PBXXNCY",
+      "rank": 3,
+      "title": "Mighty Patch Hero Cosmetics Original Nighttime Acne Pimple Patches, 36 Ct | #1 Hydrocolloid Acne Patches, Shrinking Zits & Wh",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Clean-Skin-Club-Disposable-Sensitive/dp/B07PBXXNCY/ref=zg_bs_g_beauty_d_sccl_3/140-6136747-7824768"
+    },
+    {
+      "asin": "B09541P9WH",
+      "rank": 4,
+      "title": "Clean Skin Club Clean Towels XL\u00ae, 100% USDA Biobased Face Towel, Disposable Face Towelette, Eczema Association Accepted, Make",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Essentials-Cotton-Previously-Basics/dp/B09541P9WH/ref=zg_bs_g_beauty_d_sccl_4/140-6136747-7824768"
+    },
+    {
+      "asin": "B00U2VQZDS",
+      "rank": 5,
+      "title": "Amazon Essentials Cotton Swabs, 500 Count (Previously Amazon Basics)",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Neutrogena-Plant-Based-Cleansing-Waterproof-Alcohol-Free/dp/B00U2VQZDS/ref=zg_bs_g_beauty_d_sccl_5/140-6136747-7824768"
+    },
+    {
+      "asin": "B00262227E",
+      "rank": 6,
+      "title": "Neutrogena Makeup Remover Wipes, 2 Pack of 25 Ct | Daily Ultra-Soft Face Cleansing Towelettes, Gently Remove Oil & Waterproof",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Mrs-Meyers-Clean-Refill-Lavender/dp/B00262227E/ref=zg_bs_g_beauty_d_sccl_6/140-6136747-7824768"
+    },
+    {
+      "asin": "B08H3JPH74",
+      "rank": 7,
+      "title": "Mrs. Meyer's Clean Day, Hand Soap Refill, Lavender Scent, 33 Fl Oz",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Maybelline-Volumizing-Buildable-Lengthening-Multiplying/dp/B08H3JPH74/ref=zg_bs_g_beauty_d_sccl_7/140-6136747-7824768"
+    },
+    {
+      "asin": "B09V7Z4TJG",
+      "rank": 8,
+      "title": "Maybelline Lash Sensational Sky High Washable Mascara Makeup, Volumizing, Lengthening, Defining, Curling, Multiplying, Builda",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Medicube-Zero-Pore-Pads-Dual-Textured/dp/B09V7Z4TJG/ref=zg_bs_g_beauty_d_sccl_8/140-6136747-7824768"
+    },
+    {
+      "asin": "B09542G9ZN",
+      "rank": 9,
+      "title": "medicube Toner Pads Zero Pore Pad 2.0 for Exfoliation and Pore Care | Dual-Textured Facial Pad with 4.5% AHA Lactic Acid, 0.4",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Basics-Cotton-Rounds-Count/dp/B09542G9ZN/ref=zg_bs_g_beauty_d_sccl_9/140-6136747-7824768"
+    },
+    {
+      "asin": "B01N9SPQHQ",
+      "rank": 10,
+      "title": "Amazon Essentials 100% Cotton Rounds, 100 Count (Previously Amazon Basics)",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Roche-Posay-Toleriane-Double-Repair-Moisturizer/dp/B01N9SPQHQ/ref=zg_bs_g_beauty_d_sccl_10/140-6136747-7824768"
+    },
+    {
+      "asin": "B0DPHQRLJC",
+      "rank": 11,
+      "title": "La Roche-Posay Toleriane Double Repair Face Moisturizer | Daily face cream with glycerin, niacinamide and ceramide for all sk",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/eos-Moisturizing-Nourishing-Phthalate-Sensitive/dp/B0DPHQRLJC/ref=zg_bs_g_beauty_d_sccl_11/140-6136747-7824768"
+    },
+    {
+      "asin": "B07GB3NVN1",
+      "rank": 12,
+      "title": "eos Cashmere Body Wash- Vanilla Cashmere, Creamy Gel with Shea Butter, 16 fl oz",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Native-Deodorant-without-Aluminum-Parabens/dp/B07GB3NVN1/ref=zg_bs_g_beauty_d_sccl_12/140-6136747-7824768"
+    },
+    {
+      "asin": "B00AINMFAC",
+      "rank": 13,
+      "title": "Native Aluminum-Free Deodorant for Women & Men, Coconut & Vanilla, 2.65oz | Contains Naturally Derived Ingredients | 72-Hour",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Nizoral-Anti-Dandruff-Shampoo-Ketoconazole-Dandruff/dp/B00AINMFAC/ref=zg_bs_g_beauty_d_sccl_13/140-6136747-7824768"
+    },
+    {
+      "asin": "B0B2RM68G2",
+      "rank": 14,
+      "title": "BIODANCE Bio-Collagen Real Deep Mask for Hydrating & Plumping (4ea) | Overnight Hydrogel Hydrating Face Masks, Glass Skin, Gi",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Biodance-Bio-Collagen-Tightening-Hydrating-Molecular/dp/B0B2RM68G2/ref=zg_bs_g_beauty_d_sccl_14/140-6136747-7824768"
+    },
+    {
+      "asin": "B071914GGL",
+      "rank": 15,
+      "title": "BIODANCE Bio-Collagen Real Deep Mask for Hydrating & Plumping (4ea) | Overnight Hydrogel Hydrating Face Masks, Glass Skin, Gi",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Ordinary-Exfoliating-Brightening-Smoothing-Even-Looking/dp/B071914GGL/ref=zg_bs_g_beauty_d_sccl_15/140-6136747-7824768"
+    },
+    {
+      "asin": "B00T0C9XRK",
+      "rank": 16,
+      "title": "The Ordinary Glycolic Acid 7% Exfoliating Toner, Brightening and Smoothing Daily Toner for More Even-Looking Skin Tone",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Princess-Volumizing-Lengthening-Clump-Free-Separates/dp/B00T0C9XRK/ref=zg_bs_g_beauty_d_sccl_16/140-6136747-7824768"
+    },
+    {
+      "asin": "B0C4G1YZY4",
+      "rank": 17,
+      "title": "grace & stella Award Winning Eye Patches for Puffy Eyes | Eye Masks for Dark Circles, Puffy Eyes, Wrinkles, Undereye Bags, Tr",
+      "brand_hits": [
+        "elf"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/grace-stella-Award-Winning-Patches/dp/B0C4G1YZY4/ref=zg_bs_g_beauty_d_sccl_17/140-6136747-7824768"
+    },
+    {
+      "asin": "B0G1VBDXYF",
+      "rank": 18,
+      "title": "grace & stella Award Winning Eye Patches for Puffy Eyes | Eye Masks for Dark Circles, Puffy Eyes, Wrinkles, Undereye Bags, Tr",
+      "brand_hits": [
+        "elf"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/Luxe-Color-Changing-Foundation-Medium/dp/B0G1VBDXYF/ref=zg_bs_g_beauty_d_sccl_18/140-6136747-7824768"
+    },
+    {
+      "asin": "B0060OUV5Y",
+      "rank": 19,
+      "title": "Luxe Color Changing Foundation for Mature Skin, Color Matching, Medium | Color Matching, Adapts to Your Skin Tone, Lightweigh",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Roche-Posay-Cicaplast-Baume-Multi-Purpose-Butter/dp/B0060OUV5Y/ref=zg_bs_g_beauty_d_sccl_19/140-6136747-7824768"
+    },
+    {
+      "asin": "B01MYEZPC8",
+      "rank": 20,
+      "title": "La Roche-Posay Cicaplast Balm B5, Barrier Repair Cream for Dry Skin | Skin healing cream with centella asiatica, shea butter",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Ordinary-Hyaluronic-Acid-2-30ml/dp/B01MYEZPC8/ref=zg_bs_g_beauty_d_sccl_20/140-6136747-7824768"
+    },
+    {
+      "asin": "B00TTD9BRC",
+      "rank": 21,
+      "title": "The Ordinary Hyaluronic Acid 2% + B5 (with Ceramides), Multi-Depth Hydration Serum for Plumper, Smoother Skin",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/CeraVe-Moisturizing-Cream-Daily-Moisturizer/dp/B00TTD9BRC/ref=zg_bs_g_beauty_d_sccl_21/140-6136747-7824768"
+    },
+    {
+      "asin": "B00QY1XZ4W",
+      "rank": 22,
+      "title": "CeraVe Moisturizing Cream, Face & Body Moisturizer for Dry Skin, 19oz | Skin Care with Hyaluronic Acid, Skin Barrier Repair,",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Vanicream-pH-Balanced-Formulated-Irritants-Non-Comedogenic/dp/B00QY1XZ4W/ref=zg_bs_g_beauty_d_sccl_22/140-6136747-7824768"
+    },
+    {
+      "asin": "B07PBQZ3KF",
+      "rank": 23,
+      "title": "Vanicream Gentle Facial Cleaner, pH-Balanced Face Wash, 8 Fl Oz | Formulated without Common Irritants for Sensitive Skin, Rem",
+      "brand_hits": [
+        "e.l.f.",
+        "e.l.f."
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/l-f-Retractable-Precision-Tip-Natural-Looking-Cruelty-Free/dp/B07PBQZ3KF/ref=zg_bs_g_beauty_d_sccl_23/140-6136747-7824768"
+    },
+    {
+      "asin": "B0CMYR1CNK",
+      "rank": 24,
+      "title": "e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde | Retractable Precision-Tip Brow Pencil with Grooming Spoolie for Buildab",
+      "brand_hits": [
+        "e.l.f.",
+        "e.l.f.",
+        "e.l.f.",
+        "e.l.f."
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/l-f-Highly-Pigmented-Sculpting-Semi-Matte-Cruelty-Free/dp/B0CMYR1CNK/ref=zg_bs_g_beauty_d_sccl_24/140-6136747-7824768"
+    },
+    {
+      "asin": "B08BW46XXK",
+      "rank": 25,
+      "title": "e.l.f. Cream Glide Lip Liner, Highly-Pigmented Pencil For Shaping & Sculpting Lips, Semi-Matte Finish, Vegan & Cruelty-Free",
+      "brand_hits": [
+        "e.l.f.",
+        "e.l.f."
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/Vanicream-Moisturizer-Hyaluronic-pH-Balanced-Dermatologist/dp/B08BW46XXK/ref=zg_bs_g_beauty_d_sccl_25/140-6136747-7824768"
+    },
+    {
+      "asin": "B07TJG79HP",
+      "rank": 26,
+      "title": "Vanicream Daily Facial Moisturizer, Lightweight, Non-Greasy,  3 Fl Oz | Formulated Without Common Irritants for Sensitive Ski",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/MRS-MEYERS-CLEAN-DAY-Biodegradable/dp/B07TJG79HP/ref=zg_bs_g_beauty_d_sccl_26/140-6136747-7824768"
+    },
+    {
+      "asin": "B00MEDOY2G",
+      "rank": 27,
+      "title": "MRS. MEYER'S CLEAN DAY Liquid Hand Soap, Rain Water, 12.5 fl oz, 3 Pack | Moisturizing Liquid Hand Soap, Softens and Cleans H",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Dove-24hr-Lotion-Body-Moisture/dp/B00MEDOY2G/ref=zg_bs_g_beauty_d_sccl_27/140-6136747-7824768"
+    },
+    {
+      "asin": "B07RK4HST7",
+      "rank": 28,
+      "title": "Dove Deep Moisture Body Wash, 30.6 oz Pump, Sulfate Free | Dove Deep Moisture Body Wash hydrates dry skin for 24 hours with a",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/CeraVe-Moisturizing-Lotion-Hyaluronic-Fragrance/dp/B07RK4HST7/ref=zg_bs_g_beauty_d_sccl_28/140-6136747-7824768"
+    },
+    {
+      "asin": "B01N1LL62W",
+      "rank": 29,
+      "title": "CeraVe Daily Moisturizing Lotion, Face and Body Lotion, Skin care, 19oz | Hyaluronic Acid, Lotion For Dry Skin, Skin Barrier",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/CeraVe-Foaming-Facial-Cleanser-Face/dp/B01N1LL62W/ref=zg_bs_g_beauty_d_sccl_29/140-6136747-7824768"
+    },
+    {
+      "asin": "B01MSSDEPK",
+      "rank": 30,
+      "title": "CeraVe Foaming Facial Cleanser, Gentle Cleanser for Oily Skin, 16fl oz | Skin Care with Hyaluronic Acid & Niacinamide, Makeup",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/CeraVe-Hydrating-Facial-Cleanser-Fragrance/dp/B01MSSDEPK/ref=zg_bs_g_beauty_d_sccl_30/140-6136747-7824768"
+    }
+  ],
+  "brand_contexts": [
+    {
+      "match": "elf.",
+      "snippet": "(n in r)v(r[n])|| null===r[n]||(b.push(n+x+\"=\"+(r[n]-q)),p&&s(\"mark\",X[n]||n,+r[n]));b.push(\"t\"+x+\"=\"+r[m]);u.latency[\"t\"+x]=r[m];if(e(\"ctb\",k)||e(\"wb\",k))t=1}}!D&&t&&b.push(\"ctb=1\");return b.join(\"&\")}function x(b,c,f,e,m){if(b&&!e){e=d.ue_err;if(p){var g=h.encodeURIComponent;g&&b&&(m=new Image,b=\""
+    },
+    {
+      "match": "elf",
+      "snippet": "ajax&&p.ajax(b,c);k&&n&&(e={requestId:e,transitionType:\"soft\"},\"string\"===typeof g&&(e.pageType=g,d.ue_pty=g),\"string\"===typeof r&&(e.subPageType=r,d.ue_spty=r),k(\"newPage\",e),n(\"mark\",\"transitionStart\",b));a.tag(\"ajax-transition\")}d.ueinit=(d.ueinit||0)+1;var a=d.ue=d.ue||{};a.t0=h.aPageStart||d.ue"
+    },
+    {
+      "match": "elf",
+      "snippet": "oveEventListener\",aa=\"attachEvent\",ca=\"detachEvent\",X={cf:\"criticalFeature\",af:\"aboveTheFold\",fn:\"functional\",fp:\"firstPaint\",fcp:\"firstContentfulPaint\",bb:\"bodyBegin\",be:\"bodyEnd\",ld:\"loaded\"},K=h.Date,H=h.performance||h.webkitPerformance,g=(H||{}).timing,E=(H||{}).navigation,Q=(g||{}).navigationSt"
+    },
+    {
+      "match": "elf",
+      "snippet": "x\"/> grace &amp; stella Award Winning Eye Patches for Puffy Eyes | Eye Masks for Dark Circles, Puffy Eyes, Wrinkles, Undereye Bags, Travel Gifts for Women - Vegan, Self Care (6 Pairs, Gold) 4.4 out of 5 stars <span aria-hidden="
+    },
+    {
+      "match": "e.l.f.",
+      "snippet": "-faceout\"> <img alt=\"e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde | Retractable Precision-Tip Brow Pencil with Grooming Spoolie for Buildab\" src=\"https://images-na.ssl-images-amazon.com/images/I/51q4yBqcL0L._AC_UL300_SR300,200_.jpg\" class=\"a-dynamic-image p13n-sc-dynamic-image p13n-product-im"
+    },
+    {
+      "match": "e.l.f.",
+      "snippet": "//images-na.ssl-images-amazon.com/images/I/51q4yBqcL0L._AC_UL900_SR900,600_.jpg&quot;:[900,600]}\" style=\"max-width:300px;max-height:200px\"/> e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde | Retractable Precision-Tip Brow Pencil with Grooming Spoolie for Buildable Natural-Looking Color, Vegan &a"
+    },
+    {
+      "match": "e.l.f.",
+      "snippet": "eral-faceout\"> <img alt=\"e.l.f. Cream Glide Lip Liner, Highly-Pigmented Pencil For Shaping &amp; Sculpting Lips, Semi-Matte Finish, Vegan &amp; Cruelty-Free\" src=\"https://images-na.ssl-images-amazon.com/images/I/51ZdpCHmAQL._AC_UL300_SR300,200_.jpg\" class=\"a-dynamic-image p13n-sc-dynamic-image p13n-"
+    },
+    {
+      "match": "e.l.f.",
+      "snippet": "tps://images-na.ssl-images-amazon.com/images/I/51ZdpCHmAQL._AC_UL900_SR900,600_.jpg&quot;:[900,600]}\" style=\"max-width:300px;max-height:200px\"/> e.l.f. Cream Glide Lip Liner, Highly-Pigmented Pencil For Shaping &amp; Sculpting Lips, Semi-Matte Finish, Vegan &amp; Cruelty-Free <i aria-hidden=\"true\" c"
+    },
+    {
+      "match": "elf",
+      "snippet": "function(i,e,t,n){var r=!1,a=i[c];return N?(!a||a.tid!==J.tid||!a[S]||a.pid!==t||!a.ent&&n||n&&ii(a.ent,n))&&(i[c]={visible:!0,pid:t,tid:e,ent:n},r=!0):!H&&a&&a.tid===J.tid&&a[S]&&(r=!(a[S]=!1)),r}(R,(D?t.tid:null)||j.tid||t.tid||J.tid,(D?t.pid:null)||j.pid||t.pid||J.pid,(D?t.ent:null)||j.ent||t.ent"
+    }
+  ],
+  "n_asins": 30,
+  "n_ranked": 30,
+  "brand_products": [
+    {
+      "asin": "B0C4G1YZY4",
+      "rank": 17,
+      "title": "grace & stella Award Winning Eye Patches for Puffy Eyes | Eye Masks for Dark Circles, Puffy Eyes, Wrinkles, Undereye Bags, Tr",
+      "brand_hits": [
+        "elf"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/grace-stella-Award-Winning-Patches/dp/B0C4G1YZY4/ref=zg_bs_g_beauty_d_sccl_17/140-6136747-7824768"
+    },
+    {
+      "asin": "B0G1VBDXYF",
+      "rank": 18,
+      "title": "grace & stella Award Winning Eye Patches for Puffy Eyes | Eye Masks for Dark Circles, Puffy Eyes, Wrinkles, Undereye Bags, Tr",
+      "brand_hits": [
+        "elf"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/Luxe-Color-Changing-Foundation-Medium/dp/B0G1VBDXYF/ref=zg_bs_g_beauty_d_sccl_18/140-6136747-7824768"
+    },
+    {
+      "asin": "B07PBQZ3KF",
+      "rank": 23,
+      "title": "Vanicream Gentle Facial Cleaner, pH-Balanced Face Wash, 8 Fl Oz | Formulated without Common Irritants for Sensitive Skin, Rem",
+      "brand_hits": [
+        "e.l.f.",
+        "e.l.f."
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/l-f-Retractable-Precision-Tip-Natural-Looking-Cruelty-Free/dp/B07PBQZ3KF/ref=zg_bs_g_beauty_d_sccl_23/140-6136747-7824768"
+    },
+    {
+      "asin": "B0CMYR1CNK",
+      "rank": 24,
+      "title": "e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde | Retractable Precision-Tip Brow Pencil with Grooming Spoolie for Buildab",
+      "brand_hits": [
+        "e.l.f.",
+        "e.l.f.",
+        "e.l.f.",
+        "e.l.f."
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/l-f-Highly-Pigmented-Sculpting-Semi-Matte-Cruelty-Free/dp/B0CMYR1CNK/ref=zg_bs_g_beauty_d_sccl_24/140-6136747-7824768"
+    },
+    {
+      "asin": "B08BW46XXK",
+      "rank": 25,
+      "title": "e.l.f. Cream Glide Lip Liner, Highly-Pigmented Pencil For Shaping & Sculpting Lips, Semi-Matte Finish, Vegan & Cruelty-Free",
+      "brand_hits": [
+        "e.l.f.",
+        "e.l.f."
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/Vanicream-Moisturizer-Hyaluronic-pH-Balanced-Dermatologist/dp/B08BW46XXK/ref=zg_bs_g_beauty_d_sccl_25/140-6136747-7824768"
+    }
+  ],
+  "http_status": 200
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "ELF",
+  "hashtag": "elfmakeup",
+  "retrieved_at_utc": "2026-11-13T00:49:44Z",
+  "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+  "http_status": 200,
+  "source_url": "https://www.tiktok.com/tag/elfmakeup",
+  "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=elfmakeup&device_platform=web_pc&os=linux",
+  "challenge_id": "2397273",
+  "title": "elfmakeup",
+  "stats": {
+    "videoCount": 0,
+    "viewCount": 1400000000
+  },
+  "statsV2": {
+    "videoCount": "78750",
+    "viewCount": "1410803929"
+  },
+  "videoCount": "78750",
+  "viewCount": "1410803929",
+  "status_code": 0,
+  "ok": true,
+  "challengeInfo_slim": {
+    "challenge": {
+      "coverLarger": "",
+      "coverMedium": "",
+      "coverThumb": "",
+      "desc": "",
+      "id": "2397273",
+      "isCommerce": false,
+      "profileLarger": "",
+      "profileMedium": "",
+      "profileThumb": "",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 1400000000
+      },
+      "title": "elfmakeup"
+    },
+    "challengeAnnouncement": {
+      "body": "",
+      "title": ""
+    },
+    "stats": {
+      "videoCount": 0,
+      "viewCount": 1400000000
+    },
+    "statsV2": {
+      "videoCount": "78750",
+      "viewCount": "1410803929"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ticker": "CROX",
+  "asin": "B0014C0LSY",
+  "note": "Crocs Classic Clog \u2014 #1 Women's Shoes / #12 Fashion",
+  "url": "https://www.amazon.com/dp/B0014C0LSY",
+  "method": "Scrapling Fetcher product page",
+  "retrieved_at_utc": "2026-11-13T00:52:14Z",
+  "http_status": 200,
+  "html_len": 3781,
+  "title": "",
+  "bsr_phrases": [],
+  "ranks": [],
+  "ok": false
+}

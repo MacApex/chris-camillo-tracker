@@ -1,0 +1,14 @@
+{
+  "ticker": "ELF",
+  "asin": "B07PBQZ3KF",
+  "note": "e.l.f. Instant Lift Brow Pencil \u2014 #23 Beauty",
+  "url": "https://www.amazon.com/dp/B07PBQZ3KF",
+  "method": "Scrapling Fetcher product page",
+  "retrieved_at_utc": "2026-11-13T00:52:23Z",
+  "http_status": 200,
+  "html_len": 3781,
+  "title": "",
+  "bsr_phrases": [],
+  "ranks": [],
+  "ok": false
+}

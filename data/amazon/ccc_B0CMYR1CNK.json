@@ -1,0 +1,17 @@
+{
+  "ticker": "ELF",
+  "asin": "B0CMYR1CNK",
+  "url": "https://camelcamelcamel.com/product/B0CMYR1CNK",
+  "method": "Scrapling Fetcher CamelCamelCamel public product page",
+  "retrieved_at_utc": "2026-11-13T00:52:32Z",
+  "http_status": 403,
+  "html_len": 6050,
+  "title": "Just a moment...",
+  "phrases": [
+    "HqnN..QteghzORYLI5hF9iD6ohHKW_zc\",md: 'ObSRaEA38TGtuKlp2z5tb4JA05LWYQiVA.byQQCy2ns-1794531152-1.2.1.1-rMTPWaeTmo1V_PrVCO3B9"
+  ],
+  "ranks_guess": [
+    38
+  ],
+  "ok": false
+}

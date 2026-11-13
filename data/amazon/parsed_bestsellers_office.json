@@ -1,0 +1,317 @@
+{
+  "kind": "bestsellers_office",
+  "url": "https://www.amazon.com/gp/bestsellers/office-products/",
+  "method": "Scrapling Fetcher",
+  "retrieved_at_utc": "2026-11-13T00:51:00Z",
+  "html_len": 461881,
+  "title": "Amazon Best Sellers: Best Office Products",
+  "products": [
+    {
+      "asin": "B01FV0F8H8",
+      "rank": 1,
+      "title": "Amazon Basics Multipurpose Copy Printer Paper, 8.5 x 11 Inches, 20 lb, 92 Bright, White, 1 Ream (500 Sheets), Jam-Free",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/AmazonBasics-Multipurpose-Copy-Printer-Paper/dp/B01FV0F8H8/ref=zg_bs_g_office-products_d_sccl_1/132-1029111-4563902"
+    },
+    {
+      "asin": "B000J07BRQ",
+      "rank": 2,
+      "title": "Amazon Basics Multipurpose Copy Printer Paper, 8.5 x 11 Inches, 20 lb, 92 Bright, White, 1 Ream (500 Sheets), Jam-Free",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Scotch-Heavy-Duty-Packing-Rolls/dp/B000J07BRQ/ref=zg_bs_g_office-products_d_sccl_2/132-1029111-4563902"
+    },
+    {
+      "asin": "B001AFL8GY",
+      "rank": 3,
+      "title": "Scotch Heavy Duty Packing Tape, 1.88 in x 800 in, 6 Rolls | Clear Packing Tape, Guaranteed to Stay Sealed*, Heavy Duty Tape f",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/HP-Printer-Paper-Print20-200060R/dp/B001AFL8GY/ref=zg_bs_g_office-products_d_sccl_3/132-1029111-4563902"
+    },
+    {
+      "asin": "B00006IFHD",
+      "rank": 4,
+      "title": "HP Printer Paper | 8.5 x 11 Paper | Copy &Print 20 lb | 1 Ream Case - 500 Sheets| 92 Bright | FSC Certified | 200060",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Sharpie-Permanent-Markers-Resistant-Coloring/dp/B00006IFHD/ref=zg_bs_g_office-products_d_sccl_4/132-1029111-4563902"
+    },
+    {
+      "asin": "B01C5IHGJW",
+      "rank": 5,
+      "title": "Sharpie Permanent Markers, Fine Point, Black, 12 Count | Marks on Most Surfaces, Quick-Drying Ink, Water and Fade-Resistant,",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Scotch-Magic-Tape-Inch-Count/dp/B01C5IHGJW/ref=zg_bs_g_office-products_d_sccl_5/132-1029111-4563902"
+    },
+    {
+      "asin": "B084131T6G",
+      "rank": 6,
+      "title": "Scotch Magic Tape, 3 Dispensered Rolls, 3/4 x 300 Inches, Clear | Numerous Applications, Invisible, Clear Tape Engineered for",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/HP-Ink-Cartridge-Black-3YM56AN/dp/B084131T6G/ref=zg_bs_g_office-products_d_sccl_6/132-1029111-4563902"
+    },
+    {
+      "asin": "B07R8D1RHS",
+      "rank": 7,
+      "title": "HP 67 Black Ink Cartridge | Works with DeskJet 1255, 2700, 4100 and Envy 6000, 6400 Series, Eligible for Instant Ink, 3YM56AN",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Basics-Clear-Protector-Binder/dp/B07R8D1RHS/ref=zg_bs_g_office-products_d_sccl_7/132-1029111-4563902"
+    },
+    {
+      "asin": "B079KL4C91",
+      "rank": 8,
+      "title": "Amazon Basics Sheet Protectors for 3 Ring Binder, Lightweight, Acid-Free, Clear Plastic Sleeves, Letter Size, 8.5 x 11 Inch,",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Basics-Laminating-Documents-11-5-Inch/dp/B079KL4C91/ref=zg_bs_g_office-products_d_sccl_8/132-1029111-4563902"
+    },
+    {
+      "asin": "B001GAOTSW",
+      "rank": 9,
+      "title": "Amazon Basics Clear Thermal Laminating Sheets for Documents and Photos, 9 x 11.5-Inch, 2.8 mil, 200-Pack",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/PILOT-refillable-retractable-journaling-quick-drying/dp/B001GAOTSW/ref=zg_bs_g_office-products_d_sccl_9/132-1029111-4563902"
+    },
+    {
+      "asin": "B01LYHE49W",
+      "rank": 10,
+      "title": "PILOT G2 Premium Gel Pens, Fine Point 0.7mm, Black Ink, 12-Pack | G2 pilot pens, refillable and retractable ball, gel pens fo",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/August-19-2025-Sindhoora-Positions/dp/B01LYHE49W/ref=zg_bs_g_office-products_d_sccl_10/132-1029111-4563902"
+    },
+    {
+      "asin": "B06ZY9LP74",
+      "rank": 11,
+      "title": "Amazon Basics Sturdy File Folders with Reinforced Tabs for Filing and Organization, 1/3-Cut Tab, Assorted Positions, Letter S",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/HP-Tri-Color-Original-Cartridges-N9J90AN/dp/B06ZY9LP74/ref=zg_bs_g_office-products_d_sccl_11/132-1029111-4563902"
+    },
+    {
+      "asin": "B000MVV6AA",
+      "rank": 12,
+      "title": "Scotch Heavy Duty Packing Tape, 1.88 in x 27.7 yd, 1 Roll | Clear Packing Tape, Guaranteed to Stay Sealed*, Heavy Duty Tape f",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Scotch-Shipping-Packaging-Dispenser-142L/dp/B000MVV6AA/ref=zg_bs_g_office-products_d_sccl_12/132-1029111-4563902"
+    },
+    {
+      "asin": "B082PN4X5J",
+      "rank": 13,
+      "title": "Scotch Heavy Duty Packing Tape, 1.88 in x 27.7 yd, 1 Roll | Clear Packing Tape, Guaranteed to Stay Sealed*, Heavy Duty Tape f",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Sharpie-S-Gel-Black-Barrel-Medium/dp/B082PN4X5J/ref=zg_bs_g_office-products_d_sccl_13/132-1029111-4563902"
+    },
+    {
+      "asin": "B079ZV4V3C",
+      "rank": 14,
+      "title": "Sharpie S-Gel Pens, Black Barrel, Medium Point, Black Ink, 12 Count | Sleek Design, Vivid Ink, No Smear, No Bleed, Comfortabl",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Basics-Stapler-Capacity-Non-Slip/dp/B079ZV4V3C/ref=zg_bs_g_office-products_d_sccl_14/132-1029111-4563902"
+    },
+    {
+      "asin": "B072FVQNWM",
+      "rank": 15,
+      "title": "Amazon Basics Office Stapler with 1000 Staples, 25 Sheet Capacity, Non-Slip, Black, Home Office",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Hammermill-Printer-Paper-Copy-8-5/dp/B072FVQNWM/ref=zg_bs_g_office-products_d_sccl_15/132-1029111-4563902"
+    },
+    {
+      "asin": "B071JM699B",
+      "rank": 16,
+      "title": "Hammermill Printer Paper, 20 lb Copy, 8.5 x 11-8 Ream (4,000 Sheets) - 92 Bright, Made in the USA",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/AmazonBasics-Pre-sharpened-Wood-Cased-Pencils/dp/B071JM699B/ref=zg_bs_g_office-products_d_sccl_16/132-1029111-4563902"
+    },
+    {
+      "asin": "B00T3ROM9G",
+      "rank": 17,
+      "title": "Amazon Basics Wood-Cased School Pencils with Erasers for Writing and Drawing, Pre-sharpened, Soft Strong Lead, Orange, 30 Cou",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Basics-12-Pack-Low-Odor-Markers/dp/B00T3ROM9G/ref=zg_bs_g_office-products_d_sccl_17/132-1029111-4563902"
+    },
+    {
+      "asin": "B00QSR9URI",
+      "rank": 18,
+      "title": "Amazon Basics Dry Erase Whiteboard Markers, Chisel Tip, Low-Odor, Assorted Colors, 12-Pack, Erase Easily",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Basics-50-Sheet-Legal-Inches/dp/B00QSR9URI/ref=zg_bs_g_office-products_d_sccl_18/132-1029111-4563902"
+    },
+    {
+      "asin": "B07VNSXY31",
+      "rank": 19,
+      "title": "Amazon Basics Wide Ruled Lined Writing Note Pads for Office Supplies, 8.5\" x 11.75\", White, 12-Pack of 50 Perforated Sheets",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/EZlifego-Invisible-Double-Mounting-9-85FT/dp/B07VNSXY31/ref=zg_bs_g_office-products_d_sccl_19/132-1029111-4563902"
+    },
+    {
+      "asin": "B086BLQZ5L",
+      "rank": 20,
+      "title": "Aothia Non-Slip Waterproof PU Leather Desk Pad Protector for Mouse, Writing Desk, Office, Home, Laptop Blotter, 23.6\" x 13.7\"",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Leather-Protector-Non-Slip-Blotter-Waterproof/dp/B086BLQZ5L/ref=zg_bs_g_office-products_d_sccl_20/132-1029111-4563902"
+    },
+    {
+      "asin": "B077K8JVW4",
+      "rank": 21,
+      "title": "Aothia Non-Slip Waterproof PU Leather Desk Pad Protector for Mouse, Writing Desk, Office, Home, Laptop Blotter, 23.6\" x 13.7\"",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Basics-Paper-Flash-Weight/dp/B077K8JVW4/ref=zg_bs_g_office-products_d_sccl_21/132-1029111-4563902"
+    },
+    {
+      "asin": "B000I0TZO4",
+      "rank": 22,
+      "title": "Amazon Basics Heavy Weight Ruled Index Cards for Studying and Note Taking, White, 3\" x 5\", 300 Count (3 Packs of 100)",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Sharpie-Permanent-Marker-Point-Black/dp/B000I0TZO4/ref=zg_bs_g_office-products_d_sccl_22/132-1029111-4563902"
+    },
+    {
+      "asin": "B0012YVGOW",
+      "rank": 23,
+      "title": "Sharpie Permanent Markers, Fine Point, Black, 5 Count | Marks on Most Surfaces, Quick-Drying Ink, Water and Fade-Resistant, F",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/BIC-Round-Ballpoint-Medium-60-Count/dp/B0012YVGOW/ref=zg_bs_g_office-products_d_sccl_23/132-1029111-4563902"
+    },
+    {
+      "asin": "B085NDYN2Q",
+      "rank": 24,
+      "title": "BIC Round Stic Xtra Life Ballpoint Pen, Ultra Long Lasting and Consistent Ink Flow, 60-Count in Black Ink",
+      "brand_hits": [
+        "elf",
+        "elf"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/Fuxury-Envelopes-Durability-Multipurpose-Protected/dp/B085NDYN2Q/ref=zg_bs_g_office-products_d_sccl_24/132-1029111-4563902"
+    },
+    {
+      "asin": "B000087KUA",
+      "rank": 25,
+      "title": "Fuxury Poly Mailers 10x13 Inch 100 Pack,Shipping Bags for Clothes,White | Durable Mailing Envelopes for Clothing,Self Seal Po",
+      "brand_hits": [
+        "elf",
+        "elf"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/Scotch-Shipping-Packaging-6-Rolls-3850-6/dp/B000087KUA/ref=zg_bs_g_office-products_d_sccl_25/132-1029111-4563902"
+    },
+    {
+      "asin": "B00V5DG6IQ",
+      "rank": 26,
+      "title": "Scotch Heavy Duty Shipping Packing Tape, Clear, Shipping and Packaging Supplies, 1.88 in. x 54.6 yd., 6 Tape Rolls",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Basics-Hanging-Organizer-Folder/dp/B00V5DG6IQ/ref=zg_bs_g_office-products_d_sccl_26/132-1029111-4563902"
+    },
+    {
+      "asin": "B0GLR8B1SP",
+      "rank": 27,
+      "title": "Amazon Basics Hanging File Folders with Adjustable Tabs, Sturdy Expandable Document Organizer, Letter Size 8.5x11 inch, Green",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Blue-Sky-Monthly-Calendar-Enterprise/dp/B0GLR8B1SP/ref=zg_bs_g_office-products_d_sccl_27/132-1029111-4563902"
+    },
+    {
+      "asin": "B08412PTS8",
+      "rank": 28,
+      "title": "Blue Sky 2027 Weekly & Monthly Planner Calendar, 8.5\"x11\", Enterprise | January 2027 - December 2027, Flexible Cover, Durable",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/HP-Cartridge-Black-3YM57AN-Tri-Color/dp/B08412PTS8/ref=zg_bs_g_office-products_d_sccl_28/132-1029111-4563902"
+    },
+    {
+      "asin": "B0CQ6QY3WH",
+      "rank": 29,
+      "title": "HP 67XL Black High-Yield Ink Cartridge | Works with DeskJet 1255, 2700, 4100, Envy 6000, 6400 Series | Eligible for Instant I",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/BIC-Xtra-Smooth-Mechanical-40-Count-Supplies/dp/B0CQ6QY3WH/ref=zg_bs_g_office-products_d_sccl_29/132-1029111-4563902"
+    },
+    {
+      "asin": "B0C6LZ8S34",
+      "rank": 30,
+      "title": "BIC Xtra Smooth Pastel Mechanical Pencils, 40-Count | Christmas Stocking Stuffers, 0.7 mm Medium Point, Smudge-Resistant No.",
+      "brand_hits": [],
+      "change": null,
+      "href": "https://www.amazon.com/Amazon-Basics-8-Sheet-Cross-Cut-Shredder/dp/B0C6LZ8S34/ref=zg_bs_g_office-products_d_sccl_30/132-1029111-4563902"
+    }
+  ],
+  "brand_contexts": [
+    {
+      "match": "elf.",
+      "snippet": "(n in r)v(r[n])|| null===r[n]||(b.push(n+x+\"=\"+(r[n]-q)),p&&s(\"mark\",X[n]||n,+r[n]));b.push(\"t\"+x+\"=\"+r[m]);u.latency[\"t\"+x]=r[m];if(e(\"ctb\",k)||e(\"wb\",k))t=1}}!D&&t&&b.push(\"ctb=1\");return b.join(\"&\")}function x(b,c,f,e,m){if(b&&!e){e=d.ue_err;if(p){var g=h.encodeURIComponent;g&&b&&(m=new Image,b=\""
+    },
+    {
+      "match": "elf",
+      "snippet": "ajax&&p.ajax(b,c);k&&n&&(e={requestId:e,transitionType:\"soft\"},\"string\"===typeof g&&(e.pageType=g,d.ue_pty=g),\"string\"===typeof r&&(e.subPageType=r,d.ue_spty=r),k(\"newPage\",e),n(\"mark\",\"transitionStart\",b));a.tag(\"ajax-transition\")}d.ueinit=(d.ueinit||0)+1;var a=d.ue=d.ue||{};a.t0=h.aPageStart||d.ue"
+    },
+    {
+      "match": "elf",
+      "snippet": "oveEventListener\",aa=\"attachEvent\",ca=\"detachEvent\",X={cf:\"criticalFeature\",af:\"aboveTheFold\",fn:\"functional\",fp:\"firstPaint\",fcp:\"firstContentfulPaint\",bb:\"bodyBegin\",be:\"bodyEnd\",ld:\"loaded\"},K=h.Date,H=h.performance||h.webkitPerformance,g=(H||{}).timing,E=(H||{}).navigation,Q=(g||{}).navigationSt"
+    },
+    {
+      "match": "elf",
+      "snippet": "elative _cDEzb_noop_3Boyy aok-dm-img-container-bg aok-dm-img--rounded\"> <img alt=\"Fuxury Poly Mailers 10x13 Inch 100 Pack,Shipping Bags for Clothes,White | Durable Mailing Envelopes for Clothing,Self Seal Po\" src=\"https://images-na.ssl-images-amazon.com/images/I/51RhP2VilfL._AC_UL300_SR300,200_.jpg\""
+    },
+    {
+      "match": "elf",
+      "snippet": "300px;max-height:200px\"/> Fuxury Poly Mailers 10x13 Inch 100 Pack,Shipping Bags for Clothes,White | Durable Mailing Envelopes for Clothing,Self Seal Poly Bags Postal Return Packaging Bags for Books Accessories Small Business <spa"
+    },
+    {
+      "match": "elf",
+      "snippet": "com/marketing?utm_source=amzn&utm_medium=footer&utm_campaign=home&ref_=footer_mm_dsp\" class=\"nav_a\">Start a Package Delivery Business Advertise Your Products Self-Publish with Us Become an Amazon Hub Partner \u203a <a href=\"/b/?"
+    },
+    {
+      "match": "elf",
+      "snippet": "ref_=footer_mm_dsp\" class=\"nav_a\">Start a Package Delivery Business Advertise Your Products Self-Publish with Us Become an Amazon Hub Partner \u203a <a href=\"/b/?node=18190131011&ld=AZUSSOA-seemore&ref_=footer_seemore\" class=\"na"
+    },
+    {
+      "match": "elf",
+      "snippet": "function(i,e,t,n){var r=!1,a=i[c];return N?(!a||a.tid!==J.tid||!a[S]||a.pid!==t||!a.ent&&n||n&&ii(a.ent,n))&&(i[c]={visible:!0,pid:t,tid:e,ent:n},r=!0):!H&&a&&a.tid===J.tid&&a[S]&&(r=!(a[S]=!1)),r}(R,(D?t.tid:null)||j.tid||t.tid||J.tid,(D?t.pid:null)||j.pid||t.pid||J.pid,(D?t.ent:null)||j.ent||t.ent"
+    }
+  ],
+  "n_asins": 30,
+  "n_ranked": 30,
+  "brand_products": [
+    {
+      "asin": "B085NDYN2Q",
+      "rank": 24,
+      "title": "BIC Round Stic Xtra Life Ballpoint Pen, Ultra Long Lasting and Consistent Ink Flow, 60-Count in Black Ink",
+      "brand_hits": [
+        "elf",
+        "elf"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/Fuxury-Envelopes-Durability-Multipurpose-Protected/dp/B085NDYN2Q/ref=zg_bs_g_office-products_d_sccl_24/132-1029111-4563902"
+    },
+    {
+      "asin": "B000087KUA",
+      "rank": 25,
+      "title": "Fuxury Poly Mailers 10x13 Inch 100 Pack,Shipping Bags for Clothes,White | Durable Mailing Envelopes for Clothing,Self Seal Po",
+      "brand_hits": [
+        "elf",
+        "elf"
+      ],
+      "change": null,
+      "href": "https://www.amazon.com/Scotch-Shipping-Packaging-6-Rolls-3850-6/dp/B000087KUA/ref=zg_bs_g_office-products_d_sccl_25/132-1029111-4563902"
+    }
+  ],
+  "http_status": 200
+}

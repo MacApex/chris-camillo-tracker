@@ -27,7 +27,7 @@ RELIABILITY = {
     "x": 0.80,               # official counts when the query is clean
     "youtube": 0.65,
     "reddit": 0.70,
-    "tiktok": 0.85,          # high Camillo relevance; often inaccessible
+    "tiktok": 0.85,          # high Camillo relevance; official challenge/detail when available
     "instagram": 0.75,
     "pinterest_trends": 0.70,
     "amazon_movers": 0.70,
@@ -245,6 +245,7 @@ def corroborate(platform_results: dict[str, dict], min_confirm: int = 2) -> dict
     """Combine available platform z-scores. Missing platforms are recorded, not imputed."""
     scores = []
     missing = []
+    present_no_z = []
     used = []
     for name, res in platform_results.items():
         if not res:
@@ -263,6 +264,16 @@ def corroborate(platform_results: dict[str, dict], min_confirm: int = 2) -> dict
             w = RELIABILITY.get(name, 0.5)
             scores.append({"platform": name, "z": z, "momentum_0_100": mom, "weight": w, "status": st})
             used.append(name)
+        elif st in {"worked", "partial"} and z is None:
+            present_no_z.append({
+                "platform": name,
+                "status": st,
+                "reason": res.get("reason") or res.get("notes") or "worked, but no z-score (single snapshot / lifetime total / list position)",
+                "headline": res.get("headline"),
+                "viewCount": res.get("viewCount"),
+                "videoCount": res.get("videoCount"),
+                "best_rank": res.get("best_rank"),
+            })
         else:
             missing.append({"platform": name, "status": st, "reason": res.get("reason") or res.get("notes") or "no z-score"})
     if not scores:
@@ -271,6 +282,7 @@ def corroborate(platform_results: dict[str, dict], min_confirm: int = 2) -> dict
             "corroborated": False,
             "n_confirming": 0,
             "platforms_used": [],
+            "platforms_present_no_z": present_no_z,
             "platforms_missing": missing,
             "weighted_z": None,
             "composite_0_100": None,
@@ -288,6 +300,7 @@ def corroborate(platform_results: dict[str, dict], min_confirm: int = 2) -> dict
         "n_fading": len(falling),
         "min_confirm": min_confirm,
         "platforms_used": used,
+        "platforms_present_no_z": present_no_z,
         "platforms_missing": missing,
         "components": scores,
         "weighted_z": round(wz, 3),
@@ -330,5 +343,26 @@ def collect_signals(symbol: str, keywords: list[str] | None = None, wiki_article
     if wiki_article:
         out["platforms"]["wikipedia"] = wikipedia_pageviews(wiki_article)
     out["platforms"]["google_news"] = google_news_rss(primary)
+
+    # TikTok / Amazon: default to the verified public-sample cache.
+    # Lifetime hashtag totals and a single BSR do not produce a z-score.
+    # Set CCT_LIVE_TIKTOK=1 or CCT_LIVE_AMAZON=1 only when a live refetch is wanted.
+    import os
+    from . import tiktok as tiktok_mod
+    from . import amazon as amazon_mod
+
+    if os.environ.get("CCT_LIVE_TIKTOK") == "1":
+        tag = tiktok_mod.PREFERRED_HASHTAG.get(symbol.upper()) or primary
+        out["platforms"]["tiktok"] = tiktok_mod.fetch_challenge_detail_inpage(tag)
+    else:
+        out["platforms"]["tiktok"] = tiktok_mod.signal_for_ticker(symbol)
+
+    if os.environ.get("CCT_LIVE_AMAZON") == "1":
+        out["platforms"]["amazon_movers"] = amazon_mod.fetch_bestsellers(
+            "https://www.amazon.com/gp/bestsellers/"
+        )
+    else:
+        out["platforms"]["amazon_movers"] = amazon_mod.signal_for_ticker(symbol)
+
     out["corroboration"] = corroborate(out["platforms"])
     return out

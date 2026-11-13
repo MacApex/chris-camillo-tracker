@@ -9,3 +9,12 @@ toolkit/**/__pycache__/
 *.log
 .idea/
 .vscode/
+
+# Large raw captures (parsed JSON and snippets are kept)
+data/amazon/html_*.html
+data/tiktok/tag_crocs.png
+data/tiktok/tag_crocs_UNIVERSAL.json
+data/tiktok/tag_crocs_UNIVERSAL_full.json
+data/tiktok/tagxhr_crocs_*.json
+data/tiktok/third_*_www.tiktokhashtags.com.html
+data/tiktok/xhr_*user_info*.json

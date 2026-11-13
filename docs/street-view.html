@@ -104,10 +104,10 @@
     <h2>多平台信号 · Multi-platform signals</h2>
     <div class="pair">
       <div class="lang-zh">
-        <p>趋势检测不限于 Google Trends。我们实际安装并尝试了 Scrapling（Fetcher 优先）、instaloader、twscrape、yt-dlp（只取元数据）、Google News RSS、Wikipedia 官方浏览量、GDELT、iTunes Search，以及 Grok Bot 的官方 X 计数接口。没有使用 Max 的登录凭据，也没有绕过付费墙。不能核实的数字全部丢弃。</p>
+        <p>趋势检测不限于 Google Trends，TikTok 和亚马逊也不必走官方开发者渠道。我们用 Scrapling StealthyFetcher 捕获了 Creative Center 公开页的内部 JSON，并用同一会话在页面内请求公开的 <code>/api/challenge/detail/</code>，得到精确的 <code>statsV2</code>；davidteather/TikTok-Api（无需登录）作为第二种官方形态交叉验证。亚马逊公开畅销榜的官方 <code>data-client-recs-list</code> <code>zg.rank</code> 给出了真实名次，品牌只按商品标题匹配。没有使用 Max 的登录凭据，也没有绕过付费墙或 Cloudflare 挑战。不能核实的数字全部丢弃；累计播放量和单一 BSR 不会被编成动量 z 分数。</p>
       </div>
       <div class="lang-en">
-        <p>Trend detection is not limited to Google Trends. We actually installed and ran Scrapling (Fetcher first), instaloader, twscrape, yt-dlp (metadata only), Google News RSS, the official Wikipedia pageviews API, GDELT, iTunes Search, and Grok Bot’s official X recent-counts API. No logins with Max’s credentials, and no paywall bypass. Unverifiable numbers were discarded.</p>
+        <p>Trend detection is not limited to Google Trends, and TikTok / Amazon numbers need not come from official developer programs. Scrapling StealthyFetcher captured Creative Center’s public internal JSON, and an in-page fetch of public <code>/api/challenge/detail/</code> returned exact <code>statsV2</code> counts; davidteather/TikTok-Api (no login) is a second official-shaped cross-check. Public Amazon Best Sellers pages expose official <code>data-client-recs-list</code> <code>zg.rank</code> values; brands are matched on product title only. No logins with Max’s credentials, and no paywall or Cloudflare bypass. Unverifiable numbers were discarded. A lifetime view total or a single BSR is not turned into a momentum z-score.</p>
       </div>
     </div>
     <figure class="chart-fig">
@@ -116,7 +116,7 @@
     </figure>
 
     <h3>平台状态 · Platform status</h3>
-    <p class="small">Fetched 13 Nov 2026, 02:08–02:11 Asia/Shanghai. Provenance log: <a href="data/provenance.csv">data/provenance.csv</a>.</p>
+    <p class="small">Updated 13 Nov 2026, 09:10 Asia/Shanghai (TikTok and Amazon public-data pass). Earlier Wikipedia / Trends / X snapshot: 02:08–02:11 Asia/Shanghai. Provenance log: <a href="data/provenance.csv">data/provenance.csv</a>.</p>
     <div class="table-wrap">
       <table class="status-table">
         <thead><tr><th>Platform</th><th>Status</th><th>Reason</th><th>What was tried</th></tr></thead>
@@ -128,15 +128,75 @@
           <tr><td>youtube</td><td><span class="badge badge-worked">worked</span></td><td>3 public ytsearch results for “Crocs shoes”: 1,886,428 / 57,254 / 2,965,598 views (yt-dlp metadata, no download).</td><td>yt-dlp ytsearch3 --dump-json --skip-download. YouTube Data API skipped (no key).</td></tr>
           <tr><td>app_store</td><td><span class="badge badge-worked">worked</span></td><td>iTunes Search returns presence, not a live top-chart rank.</td><td>Official iTunes Search API.</td></tr>
           <tr><td>gdelt_news</td><td><span class="badge badge-partial">partial</span></td><td>First pass HTTP 429 (need ≥5s). Retry after 6s for “Crocs” returned 28 TimelineVol points, max 0.0505 on 2026-10-06, last 0.0046 on 2026-11-12. “e.l.f.” rejected as too short/common.</td><td>Official GDELT DOC API TimelineVol.</td></tr>
-          <tr><td>tiktok</td><td><span class="badge badge-partial">partial</span></td><td>Scrapling Fetcher HTTP 200 on Creative Center (21,168 bytes) and tiktok.com/tag/crocs (396,039 bytes). No trusted numeric view count was parsed. Counts were not estimated. TikTok-Api not run with session cookies.</td><td>Scrapling Fetcher. No logins.</td></tr>
+          <tr><td>tiktok</td><td><span class="badge badge-worked">worked</span></td><td>Official public challenge/detail statsV2 at 08:49 Asia/Shanghai: #crocs 35,500,544,935 views / 1,927,145 videos; #lululemon 26,698,719,936 / 1,274,509; #elfcosmetics 11,511,831,389 / 560,071; #coachbag 6,066,578,377 / 418,193; #elmersslime 89,456,670 / 2,217. TikTokApi (no login) cross-checked the first three (rounded billions match; live statsV2 increment). Creative Center public top-3 US 7-day also worked (#veteransday 63,021 posts / 68,790,053 views, DOM-confirmed) but is capped at 3 without login — sample brands were not in that list. Lifetime totals are a stock, not a z-score. hashtagradar figures are lower and from one site under two hostnames; not used to override.</td><td>StealthyFetcher XHR + in-page /api/challenge/detail/; davidteather/TikTok-Api hashtag.info(); Fetcher UNIVERSAL_DATA was a bot-shell (blocked for stats). No logins.</td></tr>
           <tr><td>pinterest_trends</td><td><span class="badge badge-partial">partial</span></td><td>HTTP 200, 57,852 bytes, title “Pinterest Trends”. No numeric series extracted.</td><td>Scrapling Fetcher.</td></tr>
-          <tr><td>amazon_movers</td><td><span class="badge badge-partial">partial</span></td><td>HTTP 200, 277,848 bytes, Movers &amp; Shakers title. No numeric ranks extracted; not estimated.</td><td>Scrapling Fetcher.</td></tr>
+          <tr><td>amazon_movers</td><td><span class="badge badge-worked">worked</span></td><td>Best Sellers official zg.rank, title-only match, 08:50 Asia/Shanghai: Crocs Classic Clog (B0014C0LSY) #1 Women’s Shoes and #12 Clothing, Shoes &amp; Jewelry; Crocs Lined Clog (B01A6LUCZU) #29 Women’s Shoes, and on the product page #455 in Clothing, Shoes &amp; Jewelry / #5 in Women’s Mules &amp; Clogs; e.l.f. Instant Lift Brow Pencil #23 and Cream Glide Lip Liner #24 in Beauty. Lululemon, Coach, and Elmer’s were not in the top 50 of the lists fetched (absence recorded, not estimated). Movers &amp; Shakers had no recs JSON; search HTTP 503; CamelCamelCamel Cloudflare 403 (not bypassed); Keepa PNG is a price chart, not BSR.</td><td>Scrapling Fetcher of public Best Sellers and one product page. Title-only brand match (context false positives discarded).</td></tr>
           <tr><td>instagram</td><td><span class="badge badge-blocked">blocked</span></td><td>Scrapling 200 on a public URL, but instaloader Hashtag.from_name returned 403 login_required. No credentials used.</td><td>Scrapling Fetcher; instaloader with no login.</td></tr>
           <tr><td>reddit</td><td><span class="badge badge-blocked">blocked</span></td><td>www 403; old.reddit 403; PullPush 526; Scrapling 403. Datacenter IP is a known issue.</td><td>Public JSON, PullPush, Scrapling.</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="small">X sample file: <a href="data/x_counts_sample.json">x_counts_sample.json</a>. YouTube metadata: <a href="data/youtube_ytsearch_crocs.json">youtube_ytsearch_crocs.json</a>. Adapters: <code>camillo_tracker.signals</code>. Env vars for users: <code>CCT_X_BEARER</code>, <code>CCT_USE_FINBERT=1</code>, <code>YOUTUBE_API_KEY</code> (optional official path). Cross-platform corroboration requires two rising z-scores; missing platforms are listed, never imputed.</p>
+    <h3>TikTok 真实计数 · Verified hashtag counts</h3>
+    <div class="pair">
+      <div class="lang-zh">
+        <p>主键是公开接口 <code>/api/challenge/detail/</code> 的 <code>statsV2</code>（精确字符串）。<code>stats.viewCount</code> 是四舍五入的十亿级数字；大标签的 <code>stats.videoCount</code> 会溢出为 0，所以不用。<code>#coach</code>、<code>#lulu</code>、<code>#slime</code> 是泛用词，只作记录，分析时优先用更具体的标签。累计播放量不是一周动量，单次快照不计算 z 分数。第三方便用 hashtagradar（与 tiktokhashtags.com 是同一站点）的数字明显偏低，方向一致，但<strong>不以它覆盖官方数字</strong>。</p>
+      </div>
+      <div class="lang-en">
+        <p>The primary source is <code>statsV2</code> (exact strings) from the public <code>/api/challenge/detail/</code> endpoint. <code>stats.viewCount</code> is rounded to the billions; <code>stats.videoCount</code> overflows to 0 on large tags, so we ignore it. <code>#coach</code>, <code>#lulu</code>, and <code>#slime</code> are noisy generic words — recorded, but we prefer the specific tags. Lifetime totals are not a weekly momentum figure, and a single snapshot is not a z-score. Third-party hashtagradar (the same site as tiktokhashtags.com) is directionally consistent but substantially lower, and is <strong>not used to override</strong> the official counts.</p>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Ticker</th><th>Hashtag</th><th>Quality</th><th>Views (statsV2)</th><th>Videos</th><th>Retrieved (UTC)</th><th>Cross-check</th></tr></thead>
+        <tbody>
+          <tr><td>CROX</td><td>#crocs</td><td>specific</td><td>35,500,544,935</td><td>1,927,145</td><td>2026-11-13T00:49:34Z</td><td>TikTokApi 00:53:47Z: 35,500,665,122 / 1,927,144 (live increment). Earlier XHR 00:46:53Z: 35,500,477,038 / 1,927,163.</td></tr>
+          <tr><td>CROX</td><td>#crocsshoes</td><td>specific</td><td>747,910,931</td><td>53,039</td><td>2026-11-13T00:49:35Z</td><td></td></tr>
+          <tr><td>CROX</td><td>#crocsclassicclog</td><td>specific</td><td>20,573,765</td><td>1,287</td><td>2026-11-13T00:49:36Z</td><td></td></tr>
+          <tr><td>LULU</td><td>#lululemon</td><td>specific (preferred)</td><td>26,698,719,936</td><td>1,274,509</td><td>2026-11-13T00:49:38Z</td><td>TikTokApi: 26,698,742,524 / 1,274,510.</td></tr>
+          <tr><td>LULU</td><td>#lulu</td><td>noisy (common name)</td><td>13,339,723,550</td><td>1,015,318</td><td>2026-11-13T00:49:39Z</td><td>Do not treat as a brand-only count.</td></tr>
+          <tr><td>ELF</td><td>#elfcosmetics</td><td>specific (preferred)</td><td>11,511,831,389</td><td>560,071</td><td>2026-11-13T00:49:41Z</td><td>TikTokApi: 11,511,866,885 / 560,074.</td></tr>
+          <tr><td>ELF</td><td>#elfbeauty</td><td>specific</td><td>173,633,632</td><td>7,486</td><td>2026-11-13T00:49:42Z</td><td></td></tr>
+          <tr><td>ELF</td><td>#elfmakeup</td><td>specific</td><td>1,410,803,929</td><td>78,750</td><td>2026-11-13T00:49:44Z</td><td></td></tr>
+          <tr><td>TPR</td><td>#coachbag</td><td>specific (preferred)</td><td>6,066,578,377</td><td>418,193</td><td>2026-11-13T00:49:47Z</td><td>Cleaner than #coach.</td></tr>
+          <tr><td>TPR</td><td>#coach</td><td>noisy (many meanings)</td><td>68,635,437,552</td><td>5,821,037</td><td>2026-11-13T00:49:45Z</td><td>Do not treat as a brand-only count.</td></tr>
+          <tr><td>TPR</td><td>#coachnewyork</td><td>specific</td><td>233,738,750</td><td>23,338</td><td>2026-11-13T00:49:48Z</td><td></td></tr>
+          <tr><td>NWL</td><td>#elmersslime</td><td>specific (preferred)</td><td>89,456,670</td><td>2,217</td><td>2026-11-13T00:49:49Z</td><td></td></tr>
+          <tr><td>NWL</td><td>#elmersglue</td><td>specific</td><td>624,740,454</td><td>12,310</td><td>2026-11-13T00:49:51Z</td><td></td></tr>
+          <tr><td>NWL</td><td>#slime</td><td>noisy (very broad)</td><td>222,606,744,837</td><td>6,360,686</td><td>2026-11-13T00:49:52Z</td><td>Not brand-specific.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Creative Center public US last-7-days top 3 (not sample brands), 08:39 Asia/Shanghai, XHR + DOM: #veteransday 63,021 posts / 68,790,053 views (DOM 63K / 68.8M); #mymoonmyman 19,837 / 43,857,081 (19.8K / 43.9M); #piratetoken 59,086 / 428,310,388 (59.1K / 428.3M). Full JSON: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/data/tiktok/sample_hashtag_counts.json">sample_hashtag_counts.json</a>.</p>
+
+    <h3>亚马逊真实名次 · Verified Amazon ranks</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Ticker</th><th>ASIN</th><th>Title</th><th>Rank</th><th>List / category</th><th>Method</th><th>Retrieved (UTC)</th></tr></thead>
+        <tbody>
+          <tr><td>CROX</td><td>B0014C0LSY</td><td>Crocs Unisex-Adult Classic Clog, Clogs for Women and Men</td><td>1</td><td>Women’s Shoes bestsellers</td><td>official zg.rank JSON</td><td>2026-11-13T00:50:49Z</td></tr>
+          <tr><td>CROX</td><td>B0014C0LSY</td><td>same ASIN</td><td>12</td><td>Clothing, Shoes &amp; Jewelry bestsellers</td><td>official zg.rank JSON</td><td>2026-11-13T00:50:49Z</td></tr>
+          <tr><td>CROX</td><td>B01A6LUCZU</td><td>Crocs Unisex-Adult Classic Lined Clog | Casual Shoes</td><td>29</td><td>Women’s Shoes bestsellers</td><td>official zg.rank JSON</td><td>2026-11-13T00:50:49Z</td></tr>
+          <tr><td>CROX</td><td>B01A6LUCZU</td><td>Crocs Lined Clog Navy/Charcoal (product page)</td><td>455 / 5</td><td>Clothing, Shoes &amp; Jewelry / Women’s Mules &amp; Clogs</td><td>product-page BSR phrases</td><td>2026-11-13T00:52:20Z</td></tr>
+          <tr><td>ELF</td><td>B07PBQZ3KF</td><td>e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde</td><td>23</td><td>Beauty &amp; Personal Care bestsellers</td><td>official zg.rank JSON</td><td>2026-11-13T00:50:49Z</td></tr>
+          <tr><td>ELF</td><td>B0CMYR1CNK</td><td>e.l.f. Cream Glide Lip Liner</td><td>24</td><td>Beauty &amp; Personal Care bestsellers</td><td>official zg.rank JSON</td><td>2026-11-13T00:50:49Z</td></tr>
+          <tr><td>LULU / TPR / NWL</td><td>—</td><td>no title-only hit</td><td>—</td><td>top 50 of fetched lists</td><td>absence recorded, not estimated</td><td>2026-11-13T00:50:49Z</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Women’s Shoes #29 vs Women’s Mules &amp; Clogs #5 is consistent (the subcategory is narrower). Full JSON: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/data/amazon/sample_bsr.json">sample_bsr.json</a>.</p>
+
+    <h3>交叉验证重跑 · Corroboration rerun</h3>
+    <div class="pair">
+      <div class="lang-zh">
+        <p>把新的 TikTok / 亚马逊适配器并入样本后，<strong>五个代码都没有达到「两个平台相对自身基线上升」的交叉确认门槛</strong>。维基百科最近一日浏览量全部低于自身历史（负 z）；Google Trends 动量只有 ELF（57.97）超过 +0.5 的确认线，因此 ELF 的确认数是 1，仍不够。TikTok 累计播放量和亚马逊名次是真实数字，但单次快照没有基线，列入 <code>platforms_present_no_z</code>，不编造 z，也不把缺失项填上。</p>
+      </div>
+      <div class="lang-en">
+        <p>After folding the new TikTok and Amazon adapters into the sample, <strong>none of the five tickers meet the two-platform rising-z confirmation threshold</strong>. Wikipedia last-day views are all below their own history (negative z). Only ELF’s Google Trends momentum (57.97) clears the +0.5 confirmation line, so ELF has n_confirming = 1, still short. TikTok lifetime totals and Amazon ranks are real numbers, but a single snapshot has no baseline: they sit in <code>platforms_present_no_z</code>. No z is invented, and nothing is imputed.</p>
+      </div>
+    </div>
+    <p class="small">Weighted z (Trends + Wikipedia only): CROX −1.136, LULU −1.067, ELF +0.189, TPR −0.240, NWL −0.860. Full file: <a href="data/corroboration_sample.json">corroboration_sample.json</a>. Adapters: <code>camillo_tracker.tiktok</code>, <code>camillo_tracker.amazon</code>, <code>camillo_tracker.signals</code>.</p>
+
+    <p class="small">X sample file: <a href="data/x_counts_sample.json">x_counts_sample.json</a>. YouTube metadata: <a href="data/youtube_ytsearch_crocs.json">youtube_ytsearch_crocs.json</a>. Env vars for users: <code>CCT_X_BEARER</code>, <code>CCT_USE_FINBERT=1</code>, <code>YOUTUBE_API_KEY</code> (optional official path), <code>CCT_LIVE_TIKTOK=1</code> / <code>CCT_LIVE_AMAZON=1</code> to refetch instead of using the verified cache. Cross-platform corroboration requires two rising z-scores; missing platforms are listed, never imputed.</p>
   </div>
 </section>
 

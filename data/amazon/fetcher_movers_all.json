@@ -1,0 +1,24 @@
+{
+  "kind": "movers_all",
+  "url": "https://www.amazon.com/gp/movers-and-shakers/",
+  "method": "Scrapling Fetcher",
+  "status": 200,
+  "retrieved_at_utc": "2026-11-13T00:50:02Z",
+  "html_len": 311004,
+  "title": "[<data='<title>Amazon.com Movers &amp; Shakers:...' parent='<head><script>var aPageStart = (new Date...'>]",
+  "brand_mentions": {
+    "Crocs": 0,
+    "Lululemon": 0,
+    "e.l.f.": 0,
+    "elf cosmetics": 0,
+    "Coach": 0,
+    "Elmer": 0,
+    "Tapestry": 0,
+    "Hey Dude": 0
+  },
+  "asins": [],
+  "zg_badge_ranks": [],
+  "title_samples": [],
+  "bsr_phrases": [],
+  "ok_partial": false
+}

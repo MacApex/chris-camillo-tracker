@@ -18,3 +18,6 @@ matplotlib>=3.8.0
 # instaloader>=4.16
 # yt-dlp
 # twscrape   # requires user accounts; this project will not log into them
+# TikTokApi / Playwright — optional live TikTok path (CCT_LIVE_TIKTOK=1)
+# TikTokApi>=7.0.0
+# scrapling already noted above; StealthyFetcher needs `patchright install chromium`

@@ -1,0 +1,96 @@
+{
+  "title": "Amazon bestseller ranks for sample brands \u2014 real public numbers",
+  "compiled_at_utc": "2026-11-13T01:00:00Z",
+  "compiled_at_asia_shanghai": "2026-11-13 09:00 Asia/Shanghai",
+  "method_primary": "Scrapling Fetcher of public Best Sellers pages; ranks from data-client-recs-list metadataMap.render.zg.rank; brand match on PRODUCT TITLE only (context matches discarded).",
+  "retrieved_at_utc": "2026-11-13T00:50:49Z",
+  "findings": [
+    {
+      "ticker": "CROX",
+      "asin": "B0014C0LSY",
+      "title": "Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+      "rank": 1,
+      "category": "Women's Shoes",
+      "source_url": "https://www.amazon.com/gp/bestsellers/fashion/679337011",
+      "product_url": "https://www.amazon.com/dp/B0014C0LSY"
+    },
+    {
+      "ticker": "CROX",
+      "asin": "B0014C0LSY",
+      "title": "Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+      "rank": 12,
+      "category": "Clothing, Shoes & Jewelry",
+      "source_url": "https://www.amazon.com/gp/bestsellers/fashion/",
+      "product_url": "https://www.amazon.com/dp/B0014C0LSY",
+      "note": "Same ASIN as Women's Shoes #1, consistent with a high but not #1 rank in the broader department."
+    },
+    {
+      "ticker": "CROX",
+      "asin": "B01A6LUCZU",
+      "title": "Crocs Unisex-Adult Classic Lined Clog | Casual Shoes",
+      "rank": 29,
+      "category": "Women's Shoes",
+      "source_url": "https://www.amazon.com/gp/bestsellers/fashion/679337011",
+      "product_url": "https://www.amazon.com/dp/B01A6LUCZU",
+      "product_page_bsr": {
+        "retrieved_at_utc": "2026-11-13T00:52:20Z",
+        "method": "Scrapling Fetcher of public product page",
+        "phrases": "Best Sellers Rank #455 in Clothing, Shoes & Jewelry; #5 in Women's Mules & Clogs",
+        "ranks": [
+          {
+            "rank": 455,
+            "category": "Clothing, Shoes & Jewelry"
+          },
+          {
+            "rank": 5,
+            "category": "Women's Mules & Clogs"
+          }
+        ],
+        "note": "Women's Shoes #29 vs Women's Mules & Clogs #5 is consistent (subcategory is narrower). Clothing department #455 vs Fashion bestsellers #12 is a different list/time; the #12 was the Classic Clog, not this Lined ASIN."
+      }
+    },
+    {
+      "ticker": "ELF",
+      "asin": "B07PBQZ3KF",
+      "title": "e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde",
+      "rank": 23,
+      "category": "Beauty & Personal Care",
+      "source_url": "https://www.amazon.com/gp/bestsellers/beauty/",
+      "product_url": "https://www.amazon.com/dp/B07PBQZ3KF"
+    },
+    {
+      "ticker": "ELF",
+      "asin": "B0CMYR1CNK",
+      "title": "e.l.f. Cream Glide Lip Liner, Highly-Pigmented Pencil For Shaping & Sculpting Lips",
+      "rank": 24,
+      "category": "Beauty & Personal Care",
+      "source_url": "https://www.amazon.com/gp/bestsellers/beauty/",
+      "product_url": "https://www.amazon.com/dp/B0CMYR1CNK"
+    }
+  ],
+  "not_found_in_top50_of_fetched_lists": [
+    "LULU / Lululemon",
+    "TPR / Coach",
+    "NWL / Elmer's"
+  ],
+  "blocked_or_empty": [
+    "Amazon search pages HTTP 503",
+    "Movers & Shakers fashion/beauty: 200 but no data-client-recs-list (likely JS-rendered or empty to this fetcher)",
+    "CamelCamelCamel HTTP 403 Cloudflare challenge (Fetcher); we did not bypass",
+    "Keepa SPA HTML has no BSR numbers without JS; public price-history PNGs returned 200 but are price, not BSR, and were not transcribed into counts",
+    "Product page for B0014C0LSY and two e.l.f. ASINs returned a short empty shell (3781 bytes) via Fetcher \u2014 BSR for those ASINs comes from the bestseller list only"
+  ],
+  "github_scrapers_checked_2026-11-13": [
+    {
+      "repo": "https://github.com/angeloestelle88/Amazon-Bestsellers-Scraper",
+      "stars": 49,
+      "used": false,
+      "note": "Low-star; we used our own Scrapling parser of the official recs JSON instead."
+    },
+    {
+      "repo": "https://github.com/m-murasovs/amazon-bestsellers-scraper",
+      "stars": 24,
+      "used": false
+    }
+  ]
+}

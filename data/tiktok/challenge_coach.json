@@ -1,0 +1,53 @@
+{
+  "ticker": "TPR",
+  "hashtag": "coach",
+  "retrieved_at_utc": "2026-11-13T00:49:45Z",
+  "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+  "http_status": 200,
+  "source_url": "https://www.tiktok.com/tag/coach",
+  "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=coach&device_platform=web_pc&os=linux",
+  "challenge_id": "9678",
+  "title": "coach",
+  "stats": {
+    "videoCount": 0,
+    "viewCount": 68600000000
+  },
+  "statsV2": {
+    "videoCount": "5821037",
+    "viewCount": "68635437552"
+  },
+  "videoCount": "5821037",
+  "viewCount": "68635437552",
+  "status_code": 0,
+  "ok": true,
+  "challengeInfo_slim": {
+    "challenge": {
+      "coverLarger": "",
+      "coverMedium": "",
+      "coverThumb": "",
+      "desc": "",
+      "id": "9678",
+      "isCommerce": false,
+      "profileLarger": "",
+      "profileMedium": "",
+      "profileThumb": "",
+      "stats": {
+        "videoCount": 0,
+        "viewCount": 68600000000
+      },
+      "title": "coach"
+    },
+    "challengeAnnouncement": {
+      "body": "",
+      "title": ""
+    },
+    "stats": {
+      "videoCount": 0,
+      "viewCount": 68600000000
+    },
+    "statsV2": {
+      "videoCount": "5821037",
+      "viewCount": "68635437552"
+    }
+  }
+}

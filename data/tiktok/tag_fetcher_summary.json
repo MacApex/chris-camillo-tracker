@@ -1,0 +1,125 @@
+{
+  "at": "2026-11-13T00:45:55Z",
+  "results": [
+    {
+      "tag": "crocs",
+      "url": "https://www.tiktok.com/tag/crocs",
+      "method": "Scrapling Fetcher",
+      "status": 200,
+      "retrieved_at_utc": "2026-11-13T00:45:23Z",
+      "html_len": 0,
+      "blob_names": [],
+      "stats_hits": [],
+      "raw_regex": [],
+      "ok": false
+    },
+    {
+      "tag": "crocsshoes",
+      "url": "https://www.tiktok.com/tag/crocsshoes",
+      "method": "Scrapling Fetcher",
+      "status": 200,
+      "retrieved_at_utc": "2026-11-13T00:45:27Z",
+      "html_len": 0,
+      "blob_names": [],
+      "stats_hits": [],
+      "raw_regex": [],
+      "ok": false
+    },
+    {
+      "tag": "lululemon",
+      "url": "https://www.tiktok.com/tag/lululemon",
+      "method": "Scrapling Fetcher",
+      "status": 200,
+      "retrieved_at_utc": "2026-11-13T00:45:30Z",
+      "html_len": 0,
+      "blob_names": [],
+      "stats_hits": [],
+      "raw_regex": [],
+      "ok": false
+    },
+    {
+      "tag": "lulu",
+      "url": "https://www.tiktok.com/tag/lulu",
+      "method": "Scrapling Fetcher",
+      "status": 200,
+      "retrieved_at_utc": "2026-11-13T00:45:34Z",
+      "html_len": 0,
+      "blob_names": [],
+      "stats_hits": [],
+      "raw_regex": [],
+      "ok": false
+    },
+    {
+      "tag": "elfcosmetics",
+      "url": "https://www.tiktok.com/tag/elfcosmetics",
+      "method": "Scrapling Fetcher",
+      "status": 200,
+      "retrieved_at_utc": "2026-11-13T00:45:37Z",
+      "html_len": 0,
+      "blob_names": [],
+      "stats_hits": [],
+      "raw_regex": [],
+      "ok": false
+    },
+    {
+      "tag": "elfbeauty",
+      "url": "https://www.tiktok.com/tag/elfbeauty",
+      "method": "Scrapling Fetcher",
+      "status": 200,
+      "retrieved_at_utc": "2026-11-13T00:45:40Z",
+      "html_len": 0,
+      "blob_names": [],
+      "stats_hits": [],
+      "raw_regex": [],
+      "ok": false
+    },
+    {
+      "tag": "coach",
+      "url": "https://www.tiktok.com/tag/coach",
+      "method": "Scrapling Fetcher",
+      "status": 200,
+      "retrieved_at_utc": "2026-11-13T00:45:43Z",
+      "html_len": 0,
+      "blob_names": [],
+      "stats_hits": [],
+      "raw_regex": [],
+      "ok": false
+    },
+    {
+      "tag": "coachbag",
+      "url": "https://www.tiktok.com/tag/coachbag",
+      "method": "Scrapling Fetcher",
+      "status": 200,
+      "retrieved_at_utc": "2026-11-13T00:45:46Z",
+      "html_len": 0,
+      "blob_names": [],
+      "stats_hits": [],
+      "raw_regex": [],
+      "ok": false
+    },
+    {
+      "tag": "elmersslime",
+      "url": "https://www.tiktok.com/tag/elmersslime",
+      "method": "Scrapling Fetcher",
+      "status": 200,
+      "retrieved_at_utc": "2026-11-13T00:45:50Z",
+      "html_len": 0,
+      "blob_names": [],
+      "stats_hits": [],
+      "raw_regex": [],
+      "ok": false
+    },
+    {
+      "tag": "elmersglue",
+      "url": "https://www.tiktok.com/tag/elmersglue",
+      "method": "Scrapling Fetcher",
+      "status": 200,
+      "retrieved_at_utc": "2026-11-13T00:45:54Z",
+      "html_len": 0,
+      "blob_names": [],
+      "stats_hits": [],
+      "raw_regex": [],
+      "ok": false
+    }
+  ]
+}
