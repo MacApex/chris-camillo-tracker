@@ -50,52 +50,35 @@
   
 <section class="prose">
   <div class="wrap">
-    <p class="eyebrow">交易库 · Documented calls</p>
-    <h1>每一笔有来源的记录。</h1>
-<div class="pair">
-      <div class="lang-zh">
-        <p>43 条记录，来自 Tearsheet、两篇 Business Insider、《笑傲华尔街》、Stansberry Investor Hour 第 192 期全文、Benzinga、CMC、VladTV 2026、以及 2025 年 X 长文。个人盈亏在记者看过账单或截图之前，一律标为自我陈述。股价百分比是市场事实，不是已核实的个人收益。<strong>Pabst 与 Vegas Golden Knights 因无来源被明确拒绝。</strong></p>
-      </div>
-      <div class="lang-en">
-        <p>43 records from Tearsheet, both Business Insider pieces, <em>Laughing at Wall Street</em>, the full Stansberry Investor Hour ep. 192 transcript, Benzinga, CMC, VladTV 2026, and a 2025 X thread. Personal P&amp;L is self-reported unless a journalist viewed statements or screenshots. Stock-path percentages are market facts, not verified personal returns. <strong>Pabst and the Vegas Golden Knights are explicitly rejected: no source.</strong></p>
-      </div>
+    <p class="eyebrow lang-zh">交易库</p>
+    <p class="eyebrow lang-en">Documented calls</p>
+    <h1 class="lang-zh">每一笔有来源的记录。</h1>
+    <h1 class="lang-en">Every sourced record.</h1>
+    <div class="lang-zh">
+        <p>43 条记录，来自 Tearsheet、两篇 Business Insider、《笑傲华尔街》、Stansberry Investor Hour 第 192 期全文、Benzinga、CMC、VladTV 2026，以及 2025 年 X 长文。个人盈亏在记者看过账单或截图之前，一律标为自我陈述。股价百分比是市场事实，不是已核实的个人收益。<strong>Pabst 与 Vegas Golden Knights 因无来源被明确拒绝。</strong></p>
     </div>
-    <div class="callout">Verification levels: <span class="badge badge-screenshots_viewed_by_journalist">screenshots viewed</span> <span class="badge badge-self_reported">self-reported</span> <span class="badge badge-self_reported_and_market_fact">self-reported + market fact</span> <span class="badge badge-third_party_mention">third party</span> <span class="badge badge-unconfirmed_ticker">unconfirmed ticker</span> <span class="badge badge-missed_opportunity">missed</span> <span class="badge badge-rejected_no_source">rejected</span></div>
+    <div class="lang-en">
+        <p>43 records from Tearsheet, both Business Insider pieces, <em>Laughing at Wall Street</em>, the full Stansberry Investor Hour ep. 192 transcript, Benzinga, CMC, VladTV 2026, and a 2025 X thread. Personal P&amp;L is self-reported unless a journalist viewed statements or screenshots. Stock-path percentages are market facts, not verified personal returns. <strong>Pabst and the Vegas Golden Knights are explicitly rejected: no source.</strong></p>
+    </div>
+    <div class="callout lang-zh">核验等级：<span class="badge badge-screenshots_viewed_by_journalist">记者看过截图</span> <span class="badge badge-self_reported">自我陈述</span> <span class="badge badge-self_reported_and_market_fact">自我陈述 + 市场事实</span> <span class="badge badge-third_party_mention">第三方</span> <span class="badge badge-unconfirmed_ticker">代码未证实</span> <span class="badge badge-missed_opportunity">错过</span> <span class="badge badge-rejected_no_source">排除</span></div>
+    <div class="callout lang-en">Verification levels: <span class="badge badge-screenshots_viewed_by_journalist">screenshots viewed</span> <span class="badge badge-self_reported">self-reported</span> <span class="badge badge-self_reported_and_market_fact">self-reported + market fact</span> <span class="badge badge-third_party_mention">third party</span> <span class="badge badge-unconfirmed_ticker">unconfirmed ticker</span> <span class="badge badge-missed_opportunity">missed</span> <span class="badge badge-rejected_no_source">rejected</span></div>
     <div class="filter-bar">
-      <input type="search" data-filter-q placeholder="Search name, ticker, thesis…">
-      <select data-filter-role>
-        <option value="all">All roles</option>
-        <option value="win">win</option>
-        <option value="loss">loss</option>
-        <option value="miss">miss</option>
-        <option value="theme">theme</option>
-        <option value="exit">exit</option>
-        <option value="open_or_unspecified">open / unspecified</option>
-        <option value="third_party">third party</option>
-        <option value="unconfirmed">unconfirmed</option>
-        <option value="rejected">rejected</option>
-      </select>
-      <select data-filter-ver>
-        <option value="all">All verification</option>
-        <option value="screenshots_viewed_by_journalist">screenshots viewed</option>
-        <option value="self_reported_and_market_fact">self-reported + market</option>
-        <option value="self_reported">self-reported</option>
-        <option value="third_party_mention">third party</option>
-        <option value="unconfirmed_ticker">unconfirmed ticker</option>
-        <option value="missed_opportunity">missed</option>
-        <option value="rejected_no_source">rejected</option>
-      </select>
+      <input type="search" data-filter-q data-ph-zh="搜索名称、代码、论点…" data-ph-en="Search name, ticker, thesis…" placeholder="搜索名称、代码、论点…">
+      <select data-filter-role></select>
+      <select data-filter-ver></select>
     </div>
     <p class="small" data-trades-meta></p>
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>Date</th><th>Ticker</th><th>Thesis</th><th>Instrument</th><th>Tags</th><th>Outcome</th><th>Source</th></tr>
+          <tr class="lang-zh"><th>日期</th><th>代码</th><th>论点</th><th>工具</th><th>标签</th><th>结局</th><th>来源</th></tr>
+          <tr class="lang-en"><th>Date</th><th>Ticker</th><th>Thesis</th><th>Instrument</th><th>Tags</th><th>Outcome</th><th>Source</th></tr>
         </thead>
         <tbody data-trades></tbody>
       </table>
     </div>
-    <p class="small">Raw JSON: <a href="data/trades.json">data/trades.json</a>. Research note: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/01-track-record.md">01-track-record.md</a>.</p>
+    <p class="small lang-zh">原始 JSON：<a href="data/trades.json">data/trades.json</a>。研究笔记：<a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/01-track-record.md">01-track-record.md</a>。</p>
+    <p class="small lang-en">Raw JSON: <a href="data/trades.json">data/trades.json</a>. Research note: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/01-track-record.md">01-track-record.md</a>.</p>
   </div>
 </section>
 

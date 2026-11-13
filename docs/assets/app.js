@@ -76,15 +76,65 @@
   const table = document.querySelector("[data-scanner]");
   if (!table) return;
 
+  const FLAGS = {
+    late_or_crowded: { zh: "已晚或拥挤", en: "late or crowded" },
+    watch: { zh: "观察", en: "watch" },
+    aligned: { zh: "一致", en: "aligned" },
+    opportunity: { zh: "机会旗标", en: "opportunity" },
+    unknown: { zh: "未知", en: "unknown" },
+  };
+
+  function translateNotes(notes, lang) {
+    const map = {
+      "Reddit unavailable or empty.": { zh: "Reddit 不可用或为空。", en: "Reddit unavailable or empty." },
+    };
+    return (notes || [])
+      .map((n) => (map[n] ? map[n][lang] : n))
+      .join(" ");
+  }
+
+  function translateInterp(r, lang) {
+    const div = r.divergence || {};
+    const flag = div.flag || "unknown";
+    const social = ((((r.social || {}).composite) || {}).score);
+    const street = ((((r.analyst || {}).composite) || {}).score);
+    const fmtN = (x) => (typeof x === "number" && isFinite(x) ? x.toFixed(2).replace(/\.00$/, "") : "—");
+    const s = fmtN(social);
+    const a = fmtN(street);
+    const tpl = {
+      late_or_crowded: {
+        zh: `分析师已经偏多（${a}），而社交动量更弱（${s}）。若有失衡，可能已经在收口。`,
+        en: `Analysts are already constructive (${a}) while social momentum is softer (${s}). The imbalance, if any, may already be closing.`,
+      },
+      watch: {
+        zh: `差距中等（社交 ${s} 对分析师 ${a}）。值得观察，不是旗标。`,
+        en: `Moderate gap (social ${s} vs analyst ${a}). Worth watching, not a flag.`,
+      },
+      aligned: {
+        zh: "社交与卖方读数大致一致，没有明显背离。",
+        en: "Social and Street readings are roughly in line; no clear divergence.",
+      },
+      opportunity: {
+        zh: `社交动量（${s}）明显高于卖方读数（${a}）——机会旗标，仍须独立核实。`,
+        en: `Social momentum (${s}) sits clearly above the Street reading (${a}) — an opportunity flag, still to be independently verified.`,
+      },
+    };
+    if (tpl[flag]) return tpl[flag][lang];
+    // Fall back to the source English only in English mode; hide raw English in Chinese mode.
+    if (lang === "en") return div.interpretation || "";
+    return "（该旗标暂无中文释义。）";
+  }
+
   const I18N = {
     zh: {
       meta: (t, n, f) =>
         `实盘扫描生成于 ${t}（UTC）。${n} 个代码，其中 ${f} 个标了机会旗标。`,
       close: "收盘",
       upside: "隐含上行",
-      social: "利基",
+      social: "社交",
       street: "卖方",
       fail: "无法加载扫描结果。请查看仓库中的 toolkit/examples/sample_run.json。",
+      flag: (f) => (FLAGS[f] || FLAGS.unknown).zh,
     },
     en: {
       meta: (t, n, f) =>
@@ -94,6 +144,7 @@
       social: "Social",
       street: "Street",
       fail: "Scanner results could not be loaded. See toolkit/examples/sample_run.json in the repository.",
+      flag: (f) => (FLAGS[f] || FLAGS.unknown).en,
     },
   };
 
@@ -123,13 +174,14 @@
         const street = (((r.analyst || {}).composite) || {}).score;
         const div = (r.divergence || {}).score;
         const flag = (r.divergence || {}).flag || "unknown";
-        const interp = (r.divergence || {}).interpretation || "";
+        const lang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "zh";
+        const interp = translateInterp(r, lang);
         const raw = ((r.analyst || {}).raw) || {};
         const close = raw.last_close;
         const up = raw.implied_upside_pct;
         const sPct = typeof social === "number" ? Math.max(0, Math.min(100, social)) : 0;
         const aPct = typeof street === "number" ? Math.max(0, Math.min(100, street)) : 0;
-        const notes = ((((r.social || {}).composite) || {}).notes || []).join(" ");
+        const notes = translateNotes((((r.social || {}).composite) || {}).notes || [], lang);
         const upS =
           typeof up === "number" ? (up >= 0 ? "+" : "") + up.toFixed(1) + "%" : "—";
         return `<article class="scan-card">
@@ -143,7 +195,7 @@
             </div>
             <div class="flag-pill flag-${flag}">
               <span class="div-num">${fmt(div, 1)}</span>
-              ${flag.replace(/_/g, " ")}
+              ${T.flag(flag)}
             </div>
             <p class="interp">${interp}${notes ? " " + notes : ""}</p>
           </article>`;
@@ -199,18 +251,37 @@
     independently_reviewed: "独立审阅",
   };
 
+  const PREC_ZH = {
+    month: "月",
+    day: "日",
+    year: "年",
+    era: "时代",
+    "n/a": "不适用",
+    unknown: "未知",
+    "year-uncertain": "年份不确定",
+    "multi-year": "跨年",
+    "day-approx": "约至日",
+    mention: "提及",
+  };
+
   const I18N = {
     zh: {
       showing: (a, b, c) => `显示 ${a} / ${b} 条。编制于 ${c}。`,
       fail: "无法加载 trades.json。",
       role: (v) => ROLE_ZH[v] || (v || "").replace(/_/g, " "),
       ver: (v) => VER_ZH[v] || (v || "").replace(/_/g, " "),
+      prec: (v) => PREC_ZH[v] || v || "",
+      allRoles: "全部角色",
+      allVer: "全部核实等级",
     },
     en: {
       showing: (a, b, c) => `Showing ${a} of ${b} records. Compiled ${c}.`,
       fail: "Could not load trades.json.",
       role: (v) => (v || "").replace(/_/g, " "),
       ver: (v) => (v || "").replace(/_/g, " "),
+      prec: (v) => (v || "").replace(/_/g, " "),
+      allRoles: "All roles",
+      allVer: "All verification",
     },
   };
 
@@ -224,8 +295,31 @@
   const badge = (v, label) =>
     `<span class="badge badge-${v}">${label}</span>`;
 
+  const fillFilters = () => {
+    const T = ui();
+    const lang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "zh";
+    if (q) {
+      const ph = q.getAttribute(lang === "en" ? "data-ph-en" : "data-ph-zh");
+      if (ph) q.placeholder = ph;
+    }
+    const fill = (sel, vals, labelFn, allLabel) => {
+      if (!sel) return;
+      const cur = sel.value || "all";
+      const unique = ["all", ...vals];
+      sel.innerHTML = unique
+        .map((v) => `<option value="${v}">${v === "all" ? allLabel : labelFn(v)}</option>`)
+        .join("");
+      if (unique.includes(cur)) sel.value = cur;
+    };
+    const roles = [...new Set(rows.map((r) => r.role).filter(Boolean))];
+    const vers = [...new Set(rows.map((r) => r.verification).filter(Boolean))];
+    fill(roleFilter, roles, T.role, T.allRoles);
+    fill(verFilter, vers, T.ver, T.allVer);
+  };
+
   const render = () => {
     const T = ui();
+    fillFilters();
     const role = roleFilter ? roleFilter.value : "all";
     const ver = verFilter ? verFilter.value : "all";
     const query = (q && q.value ? q.value : "").toLowerCase();
@@ -242,7 +336,7 @@
     host.innerHTML = shown
       .map(
         (t) => `<tr>
-            <td>${t.date || "—"}<br><span class="small">${t.date_precision || ""}</span></td>
+            <td>${t.date || "—"}<br><span class="small">${T.prec(t.date_precision)}</span></td>
             <td>${t.ticker || "—"}</td>
             <td><strong>${t.name || ""}</strong><br><span class="small">${(t.thesis || "").slice(0, 180)}${(t.thesis || "").length > 180 ? "…" : ""}</span></td>
             <td>${t.instrument || "—"}</td>

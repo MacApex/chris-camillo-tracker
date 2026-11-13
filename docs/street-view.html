@@ -50,8 +50,10 @@
   
 <section class="prose">
   <div class="wrap">
-    <p class="eyebrow">街景 · Street-view &amp; experiments</p>
-    <h1>这件事，卖方定价了吗？</h1>
+    <p class="eyebrow lang-zh">街景与实验</p>
+    <p class="eyebrow lang-en">Street view and experiments</p>
+    <h1 class="lang-zh">这件事，卖方定价了吗？</h1>
+    <h1 class="lang-en">Has the Street already priced this?</h1>
 <div class="pair">
       <div class="lang-zh">
         <p>这套框架用来<strong>支持</strong> Camillo 的定价检验，而不是替代观察本身。流程是：利基信号 → 候选代码 → 卖方共识档案（Street Consensus Profile）→ 定价结论。只有「利基上升且尚未清楚定价」才能进入人工研究；已经定价或数据不足就停下来。</p>
@@ -63,7 +65,8 @@
       </div>
     </div>
 
-    <h2>事件研究 · Event study</h2>
+    <h2 class="lang-zh">事件研究</h2>
+    <h2 class="lang-en">Event study</h2>
     <div class="pair">
       <div class="lang-zh">
         <p>我们对 10 个有日期、有代码的记录，用 yfinance 复权收盘价计算 21 / 63 / 126 个交易日的前瞻收益。这是<strong>市场路径</strong>，不是 Camillo 的个人盈亏。样本小，且偏向他后来谈过的故事；若干日期只有月份精度；GME / AMC 的占位已经落在挤兑中段；TPR 用的是 BI 文章日期，不是入场日；新冠仓位是期权，标的收益不是期权盈亏；Target × Missoni 是隔夜期权。我们<strong>拒绝</strong>给历史事件贴上「高利基 / 低卖方」象限标签：免费的 Google Trends 从 2026 年 11 月回看只有约五年，到不了 2019–2020，我们不会编造。</p>
@@ -73,20 +76,49 @@
       </div>
     </div>
 
-    <figure class="chart-fig">
-      <img src="assets/charts/event-forward-returns.png" alt="Forward 1, 3 and 6 month market returns from documented dates" width="1250" height="580">
+    <figure class="chart-fig lang-zh">
+      <img src="assets/charts/event-forward-returns-zh.png" alt="有记录日期起 1、3、6 个月的市场前瞻回报" width="1250" height="580">
+      <figcaption>自有记录日期起的复权收盘前瞻回报。空头已标明。不是个人损益。取数于 2026 年 11 月 13 日（Asia/Shanghai），经 yfinance。</figcaption>
+    </figure>
+    <figure class="chart-fig lang-en">
+      <img src="assets/charts/event-forward-returns-en.png" alt="Forward 1, 3 and 6 month market returns from documented dates" width="1250" height="580">
       <figcaption>Forward close-to-close returns from documented dates. Shorts are marked. Not personal P&amp;L. Retrieved 13 Nov 2026, Asia/Shanghai, via yfinance.</figcaption>
     </figure>
-    <figure class="chart-fig">
-      <img src="assets/charts/event-side-signed.png" alt="Same returns signed in the direction of the stated side" width="1250" height="540">
+    <figure class="chart-fig lang-zh">
+      <img src="assets/charts/event-side-signed-zh.png" alt="按所标方向签署后的同样回报" width="1250" height="540">
+      <figcaption>同一路径，按所标方向签署（空头 = 标的涨跌取反）。新冠数字仍是股票或指数路径，不是期权损益。</figcaption>
+    </figure>
+    <figure class="chart-fig lang-en">
+      <img src="assets/charts/event-side-signed-en.png" alt="Same returns signed in the direction of the stated side" width="1250" height="540">
       <figcaption>Same paths, signed with the stated side (short = flipped underlying). COVID figures remain equity-index moves, not option P&amp;L.</figcaption>
     </figure>
-    <figure class="chart-fig">
-      <img src="assets/charts/wiki-attention.png" alt="Wikipedia pageviews around documented dates, log scale" width="1000" height="520">
+    <figure class="chart-fig lang-zh">
+      <img src="assets/charts/wiki-attention-zh.png" alt="有记录日期前后的维基百科浏览量，对数刻度" width="1000" height="520">
+      <figcaption>英文维基用户浏览：日前、当日、日后 14 日均值（对数刻度）。官方 Wikimedia REST API。GME 与 AMC 的关注在 2021 年 1 月 25 日之后爆发——这是挤兑的滞后公开关注痕迹，不是 Camillo 的原始信号。</figcaption>
+    </figure>
+    <figure class="chart-fig lang-en">
+      <img src="assets/charts/wiki-attention-en.png" alt="Wikipedia pageviews around documented dates, log scale" width="1000" height="520">
       <figcaption>English Wikipedia user pageviews, 14-day means before and after, plus the date itself (log scale). Official Wikimedia REST API. GME and AMC attention exploded after 25 Jan 2021 — a lagging public-attention trace of the squeeze, not Camillo’s original signal.</figcaption>
     </figure>
 
-    <div class="table-wrap">
+    <div class="table-wrap lang-zh">
+      <table>
+        <thead><tr><th>事件</th><th>代码</th><th>日期</th><th>精度</th><th>方向</th><th>1 个月</th><th>3 个月</th><th>6 个月</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>elf-2019</td><td>ELF</td><td>2019-03-15</td><td>月</td><td>多</td><td>+25.0%</td><td>+32.5%</td><td>+70.3%</td><td>月中占位。自我陈述是六周内超过 50%——那是另一个窗口。Yahoo 上调：之前 0 次，之后 4 次。</td></tr>
+          <tr><td>rbi-2019-apr</td><td>QSR</td><td>2019-04-15</td><td>月</td><td>多</td><td>+0.5%</td><td>+9.2%</td><td>+7.1%</td><td>记录在案的亏损论点；早期窗口还不是亏损。记者看过截图。</td></tr>
+          <tr><td>rbi-2019-aug</td><td>QSR</td><td>2019-08-15</td><td>月</td><td>多</td><td>−2.2%</td><td>−7.2%</td><td>−7.3%</td><td>第二次买入窗口。亏损延续到 2020 年。</td></tr>
+          <tr><td>covid-spy-2020</td><td>SPY</td><td>2020-02-15</td><td>月</td><td>空</td><td>−28.7%</td><td>−11.9%</td><td>+1.4%</td><td>标的路径。看跌期权，储蓄的 25–30%，自我陈述。指数在 6 个月时已收回。</td></tr>
+          <tr><td>covid-wynn-2020</td><td>WYNN</td><td>2020-02-15</td><td>月</td><td>空</td><td>−67.5%</td><td>−38.4%</td><td>−36.9%</td><td>标的路径，不是看跌期权损益。</td></tr>
+          <tr><td>dorel-2020</td><td>DIIBF</td><td>2020-04-24</td><td>日</td><td>多</td><td>+131.1%</td><td>+242.9%</td><td>+608.7%</td><td>日期最清楚的一笔。yfinance 起点约 0.69 美元，对 BI 截图 1.56 美元——场外报价差异，两个数字都保留。BI 中的 629% 是到 11 月 11.38 美元的路径。</td></tr>
+          <tr><td>tgt-missoni-2011</td><td>TGT</td><td>2011-09-07</td><td>约至日</td><td>多</td><td>+2.6%</td><td>+6.7%</td><td>+14.4%</td><td>他描述的是隔夜期权翻倍。股票路径是另一种工具。维基浏览从 2015 年起才有。</td></tr>
+          <tr><td>gme-2021</td><td>GME</td><td>2021-01-25</td><td>月</td><td>多</td><td>+19.4%</td><td>+120.0%</td><td>+139.5%</td><td>自我陈述约 70 美元买入，处于挤兑中段。价格已经复权。维基浏览：2,628 → 16,446 → 57,513（日前 14 日 / 当日 / 日后 14 日）。</td></tr>
+          <tr><td>amc-2021</td><td>AMC</td><td>2021-01-25</td><td>月</td><td>多</td><td>+105.7%</td><td>+160.2%</td><td>+811.5%</td><td>自我陈述 3 美元 → 13–15 美元。价格已经复权，不应与那些数字直接比较。</td></tr>
+          <tr><td>tpr-2021-mention</td><td>TPR</td><td>2021-08-15</td><td>提及</td><td>多</td><td>−8.3%</td><td>+4.5%</td><td>−9.8%</td><td>BI 对 310 万美元仓位的提及——不是建仓日。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-wrap lang-en">
       <table>
         <thead><tr><th>Event</th><th>Ticker</th><th>Date</th><th>Precision</th><th>Side</th><th>1m</th><th>3m</th><th>6m</th><th>Notes</th></tr></thead>
         <tbody>
@@ -103,9 +135,11 @@
         </tbody>
       </table>
     </div>
-    <p class="small">Full JSON and method note: <a href="data/event_study.json">data/event_study.json</a>. Unit tests: <code>toolkit/tests/test_street_view.py</code> (11 passed, 13 Nov 2026).</p>
+    <p class="small lang-zh">完整 JSON 与方法说明：<a href="data/event_study.json">data/event_study.json</a>。单元测试：<code>toolkit/tests/test_street_view.py</code>（11 项通过，2026 年 11 月 13 日）。</p>
+    <p class="small lang-en">Full JSON and method note: <a href="data/event_study.json">data/event_study.json</a>. Unit tests: <code>toolkit/tests/test_street_view.py</code> (11 passed, 13 Nov 2026).</p>
 
-    <h2>多平台信号 · Multi-platform signals</h2>
+    <h2 class="lang-zh">多平台信号</h2>
+    <h2 class="lang-en">Multi-platform signals</h2>
     <div class="pair">
       <div class="lang-zh">
         <p>趋势检测不限于 Google Trends，TikTok 和亚马逊也不必走官方开发者渠道。我们用 Scrapling StealthyFetcher 捕获了 Creative Center 公开页的内部 JSON，并用同一会话在页面内请求公开的 <code>/api/challenge/detail/</code>，得到精确的 <code>statsV2</code>；davidteather/TikTok-Api（无需登录）作为第二种官方形态交叉验证。亚马逊公开畅销榜的官方 <code>data-client-recs-list</code> <code>zg.rank</code> 给出了真实名次，品牌只按商品标题匹配。没有使用 Max 的登录凭据，也没有绕过付费墙或 Cloudflare 挑战。不能核实的数字全部丢弃；累计播放量和单一 BSR 不会被编成动量 z 分数。</p>
@@ -114,17 +148,42 @@
         <p>Trend detection is not limited to Google Trends, and TikTok / Amazon numbers need not come from official developer programs. Scrapling StealthyFetcher captured Creative Center’s public internal JSON, and an in-page fetch of public <code>/api/challenge/detail/</code> returned exact <code>statsV2</code> counts; davidteather/TikTok-Api (no login) is a second official-shaped cross-check. Public Amazon Best Sellers pages expose official <code>data-client-recs-list</code> <code>zg.rank</code> values; brands are matched on product title only. No logins with Max’s credentials, and no paywall or Cloudflare bypass. Unverifiable numbers were discarded. A lifetime view total or a single BSR is not turned into a momentum z-score.</p>
       </div>
     </div>
-    <figure class="chart-fig">
-      <img src="assets/charts/live-snapshot.png" alt="Live snapshot of Trends, Wikipedia, and X counts on 13 Nov 2026" width="1280" height="470">
+    <figure class="chart-fig lang-zh">
+      <img src="assets/charts/live-snapshot-zh.png" alt="2026 年 11 月 13 日 Trends、维基与 X 计数的即时快照" width="1280" height="470">
+      <figcaption>即时快照，2026 年 11 月 13 日（Asia/Shanghai）。X 上的 ELF* 在去掉 $ 之后是噪声查询——不要把 90,164 当成干净的品牌计数。维基 ELF / TPR 使用更正后的条目标题（E.l.f.；Tapestry, Inc.）。</figcaption>
+    </figure>
+    <figure class="chart-fig lang-en">
+      <img src="assets/charts/live-snapshot-en.png" alt="Live snapshot of Trends, Wikipedia, and X counts on 13 Nov 2026" width="1280" height="470">
       <figcaption>Live snapshot, 13 Nov 2026, Asia/Shanghai. ELF* on X is a noisy query after X strips the $ character — do not treat 90,164 as a clean brand count. Wikipedia ELF/TPR use corrected article titles (E.l.f.; Tapestry, Inc.).</figcaption>
     </figure>
 
-    <h3>平台状态 · Platform status</h3>
-    <p class="small">Updated 13 Nov 2026, 09:10 Asia/Shanghai (TikTok and Amazon public-data pass). Earlier Wikipedia / Trends / X snapshot: 02:08–02:11 Asia/Shanghai. Provenance log: <a href="data/provenance.csv">data/provenance.csv</a>.</p>
-    <div class="table-wrap">
+    <h3 class="lang-zh">平台状态</h3>
+    <h3 class="lang-en">Platform status</h3>
+    <p class="small lang-zh">更新于 2026 年 11 月 13 日 09:10（Asia/Shanghai）（TikTok 与亚马逊公开数据这一轮）。更早的维基 / Trends / X 快照：02:08–02:11（Asia/Shanghai）。出处日志：<a href="data/provenance.csv">data/provenance.csv</a>。</p>
+    <p class="small lang-en">Updated 13 Nov 2026, 09:10 Asia/Shanghai (TikTok and Amazon public-data pass). Earlier Wikipedia / Trends / X snapshot: 02:08–02:11 Asia/Shanghai. Provenance log: <a href="data/provenance.csv">data/provenance.csv</a>.</p>
+    <div class="table-wrap lang-zh">
+      <table class="status-table">
+        <thead><tr><th>平台</th><th>状态</th><th>原因</th><th>尝试过什么</th></tr></thead>
+        <tbody data-platforms-static>
+          <tr><td>wikipedia</td><td><span class="badge badge-worked">已取到</span></td><td>5/5 条每日序列（ELF 与 TPR 使用更正后的条目标题）。</td><td>官方 Wikimedia REST API，可识别的 User-Agent。</td></tr>
+          <tr><td>google_trends</td><td><span class="badge badge-worked">已取到</span></td><td>5/5 个关键词，pytrends，美国五年窗口。动量：CROX 43.1，LULU 35.56，ELF 57.97，NWL 40.16，TPR 54.37。</td><td>带 urllib3 method_whitelist 补丁的 pytrends。</td></tr>
+          <tr><td>x</td><td><span class="badge badge-worked">已取到</span></td><td>官方 7 日计数：Crocs 42,056（11 月 10 日尖峰 18,438）；Lululemon 172,939；Coach bag 2,029；ELF 90,164（去掉 $ 后有噪声）。twscrape 跳过（需要登录）。</td><td>Grok Bot MCP get_posts_counts_recent（官方 X API）。CCT_X_BEARER 适配器可用。twscrape 未登录。</td></tr>
+          <tr><td>google_news</td><td><span class="badge badge-worked">已取到</span></td><td>5/5 条 RSS（84、100、77、49、56 条）。</td><td>Google News RSS；Scrapling 作为退路（未用到）。</td></tr>
+          <tr><td>youtube</td><td><span class="badge badge-worked">已取到</span></td><td>「Crocs shoes」的 3 条公开 ytsearch 结果：1,886,428 / 57,254 / 2,965,598 次播放（yt-dlp 元数据，未下载）。</td><td>yt-dlp ytsearch3 --dump-json --skip-download。YouTube Data API 跳过（无密钥）。</td></tr>
+          <tr><td>app_store</td><td><span class="badge badge-worked">已取到</span></td><td>iTunes Search 返回的是是否存在，不是实时总榜名次。</td><td>官方 iTunes Search API。</td></tr>
+          <tr><td>gdelt_news</td><td><span class="badge badge-partial">部分</span></td><td>第一轮 HTTP 429（需间隔 ≥5 秒）。6 秒后重试「Crocs」得到 28 个 TimelineVol 点，最高 0.0505（2026-10-06），最近 0.0046（2026-11-12）。「e.l.f.」因过短或过常见被拒绝。</td><td>官方 GDELT DOC API TimelineVol。</td></tr>
+          <tr><td>tiktok</td><td><span class="badge badge-worked">已取到</span></td><td>公开 challenge/detail 的 statsV2，08:49 Asia/Shanghai：#crocs 35,500,544,935 次播放 / 1,927,145 条视频；#lululemon 26,698,719,936 / 1,274,509；#elfcosmetics 11,511,831,389 / 560,071；#coachbag 6,066,578,377 / 418,193；#elmersslime 89,456,670 / 2,217。TikTokApi（无登录）交叉验证了前三个（十亿级四舍五入一致；实时 statsV2 在递增）。Creative Center 公开美国 7 日前 3 名也取到（#veteransday 63,021 条 / 68,790,053 次播放，DOM 确认），但未登录上限为 3——样本品牌不在该名单。终身累计是存量，不是 z 分数。hashtagradar 数字偏低，且是同一站点的两个主机名；不用它覆盖。</td><td>StealthyFetcher XHR + 页内 /api/challenge/detail/；davidteather/TikTok-Api hashtag.info()；Fetcher UNIVERSAL_DATA 是机器人外壳（统计被挡住）。无登录。</td></tr>
+          <tr><td>pinterest_trends</td><td><span class="badge badge-partial">部分</span></td><td>HTTP 200，57,852 字节，标题 “Pinterest Trends”。未能抽出数值序列。</td><td>Scrapling Fetcher。</td></tr>
+          <tr><td>amazon_movers</td><td><span class="badge badge-worked">已取到</span></td><td>畅销榜官方 zg.rank，只按标题匹配，08:50 Asia/Shanghai：Crocs Classic Clog（B0014C0LSY）女鞋第 1、服装鞋帽珠宝第 12；Crocs Lined Clog（B01A6LUCZU）女鞋第 29，商品页上服装鞋帽珠宝第 455 / 女式穆勒鞋第 5；e.l.f. Instant Lift Brow Pencil 美容第 23，Cream Glide Lip Liner 第 24。Lululemon、Coach 和 Elmer’s 不在所取名单的前 50（记录为缺席，不作估计）。Movers &amp; Shakers 无 recs JSON；搜索 HTTP 503；CamelCamelCamel 的 Cloudflare 403（不绕过）；Keepa PNG 是价格图，不是 BSR。</td><td>Scrapling Fetcher 抓取公开畅销榜和一个商品页。只按标题匹配品牌（上下文误匹配已丢弃）。</td></tr>
+          <tr><td>instagram</td><td><span class="badge badge-blocked">被挡住</span></td><td>Scrapling 对公开 URL 返回 200，但 instaloader Hashtag.from_name 返回 403 login_required。未使用凭据。</td><td>Scrapling Fetcher；instaloader，无登录。</td></tr>
+          <tr><td>reddit</td><td><span class="badge badge-blocked">被挡住</span></td><td>www 403；old.reddit 403；PullPush 526；Scrapling 403。数据中心 IP 是已知问题。</td><td>公开 JSON、PullPush、Scrapling。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-wrap lang-en">
       <table class="status-table">
         <thead><tr><th>Platform</th><th>Status</th><th>Reason</th><th>What was tried</th></tr></thead>
-        <tbody data-platforms>
+        <tbody data-platforms data-platforms-static>
           <tr><td>wikipedia</td><td><span class="badge badge-worked">worked</span></td><td>5/5 daily series (corrected titles for ELF and TPR).</td><td>Official Wikimedia REST API, identified User-Agent.</td></tr>
           <tr><td>google_trends</td><td><span class="badge badge-worked">worked</span></td><td>5/5 keywords, pytrends, 5-year US window. Momentum: CROX 43.1, LULU 35.56, ELF 57.97, NWL 40.16, TPR 54.37.</td><td>pytrends with urllib3 method_whitelist patch.</td></tr>
           <tr><td>x</td><td><span class="badge badge-worked">worked</span></td><td>Official 7-day counts: Crocs 42,056 (spike 18,438 on 10 Nov); Lululemon 172,939; Coach bag 2,029; ELF 90,164 (noisy after $ strip). twscrape skipped (needs logins).</td><td>Grok Bot MCP get_posts_counts_recent (official X API). CCT_X_BEARER adapter available. twscrape not logged in.</td></tr>
@@ -140,7 +199,8 @@
         </tbody>
       </table>
     </div>
-    <h3>TikTok 真实计数 · Verified hashtag counts</h3>
+    <h3 class="lang-zh">TikTok 真实计数</h3>
+    <h3 class="lang-en">Verified hashtag counts</h3>
     <div class="pair">
       <div class="lang-zh">
         <p>主键是公开接口 <code>/api/challenge/detail/</code> 的 <code>statsV2</code>（精确字符串）。<code>stats.viewCount</code> 是四舍五入的十亿级数字；大标签的 <code>stats.videoCount</code> 会溢出为 0，所以不用。<code>#coach</code>、<code>#lulu</code>、<code>#slime</code> 是泛用词，只作记录，分析时优先用更具体的标签。累计播放量不是一周动量，单次快照不计算 z 分数。第三方便用 hashtagradar（与 tiktokhashtags.com 是同一站点）的数字明显偏低，方向一致，但<strong>不以它覆盖官方数字</strong>。</p>
@@ -149,7 +209,28 @@
         <p>The primary source is <code>statsV2</code> (exact strings) from the public <code>/api/challenge/detail/</code> endpoint. <code>stats.viewCount</code> is rounded to the billions; <code>stats.videoCount</code> overflows to 0 on large tags, so we ignore it. <code>#coach</code>, <code>#lulu</code>, and <code>#slime</code> are noisy generic words — recorded, but we prefer the specific tags. Lifetime totals are not a weekly momentum figure, and a single snapshot is not a z-score. Third-party hashtagradar (the same site as tiktokhashtags.com) is directionally consistent but substantially lower, and is <strong>not used to override</strong> the official counts.</p>
       </div>
     </div>
-    <div class="table-wrap">
+    <div class="table-wrap lang-zh">
+      <table>
+        <thead><tr><th>代码</th><th>标签</th><th>质量</th><th>播放（statsV2）</th><th>视频</th><th>取数（UTC）</th><th>交叉验证</th></tr></thead>
+        <tbody>
+          <tr><td>CROX</td><td>#crocs</td><td>具体</td><td>35,500,544,935</td><td>1,927,145</td><td>2026-11-13T00:49:34Z</td><td>TikTokApi 00:53:47Z：35,500,665,122 / 1,927,144（实时递增）。更早的 XHR 00:46:53Z：35,500,477,038 / 1,927,163。</td></tr>
+          <tr><td>CROX</td><td>#crocsshoes</td><td>具体</td><td>747,910,931</td><td>53,039</td><td>2026-11-13T00:49:35Z</td><td></td></tr>
+          <tr><td>CROX</td><td>#crocsclassicclog</td><td>具体</td><td>20,573,765</td><td>1,287</td><td>2026-11-13T00:49:36Z</td><td></td></tr>
+          <tr><td>LULU</td><td>#lululemon</td><td>具体（首选）</td><td>26,698,719,936</td><td>1,274,509</td><td>2026-11-13T00:49:38Z</td><td>TikTokApi：26,698,742,524 / 1,274,510。</td></tr>
+          <tr><td>LULU</td><td>#lulu</td><td>噪声（常见名字）</td><td>13,339,723,550</td><td>1,015,318</td><td>2026-11-13T00:49:39Z</td><td>不要当作只属于品牌的计数。</td></tr>
+          <tr><td>ELF</td><td>#elfcosmetics</td><td>具体（首选）</td><td>11,511,831,389</td><td>560,071</td><td>2026-11-13T00:49:41Z</td><td>TikTokApi：11,511,866,885 / 560,074。</td></tr>
+          <tr><td>ELF</td><td>#elfbeauty</td><td>具体</td><td>173,633,632</td><td>7,486</td><td>2026-11-13T00:49:42Z</td><td></td></tr>
+          <tr><td>ELF</td><td>#elfmakeup</td><td>具体</td><td>1,410,803,929</td><td>78,750</td><td>2026-11-13T00:49:44Z</td><td></td></tr>
+          <tr><td>TPR</td><td>#coachbag</td><td>具体（首选）</td><td>6,066,578,377</td><td>418,193</td><td>2026-11-13T00:49:47Z</td><td>比 #coach 更干净。</td></tr>
+          <tr><td>TPR</td><td>#coach</td><td>噪声（含义很多）</td><td>68,635,437,552</td><td>5,821,037</td><td>2026-11-13T00:49:45Z</td><td>不要当作只属于品牌的计数。</td></tr>
+          <tr><td>TPR</td><td>#coachnewyork</td><td>具体</td><td>233,738,750</td><td>23,338</td><td>2026-11-13T00:49:48Z</td><td></td></tr>
+          <tr><td>NWL</td><td>#elmersslime</td><td>具体（首选）</td><td>89,456,670</td><td>2,217</td><td>2026-11-13T00:49:49Z</td><td></td></tr>
+          <tr><td>NWL</td><td>#elmersglue</td><td>具体</td><td>624,740,454</td><td>12,310</td><td>2026-11-13T00:49:51Z</td><td></td></tr>
+          <tr><td>NWL</td><td>#slime</td><td>噪声（非常宽泛）</td><td>222,606,744,837</td><td>6,360,686</td><td>2026-11-13T00:49:52Z</td><td>不是品牌专属。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-wrap lang-en">
       <table>
         <thead><tr><th>Ticker</th><th>Hashtag</th><th>Quality</th><th>Views (statsV2)</th><th>Videos</th><th>Retrieved (UTC)</th><th>Cross-check</th></tr></thead>
         <tbody>
@@ -170,10 +251,26 @@
         </tbody>
       </table>
     </div>
-    <p class="small">Creative Center public US last-7-days top 3 (not sample brands), 08:39 Asia/Shanghai, XHR + DOM: #veteransday 63,021 posts / 68,790,053 views (DOM 63K / 68.8M); #mymoonmyman 19,837 / 43,857,081 (19.8K / 43.9M); #piratetoken 59,086 / 428,310,388 (59.1K / 428.3M). Full JSON: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/data/tiktok/sample_hashtag_counts.json">sample_hashtag_counts.json</a>.</p>
+    <p class="small lang-zh">Creative Center 公开的美国近 7 日前 3 名（不是样本品牌），08:39 Asia/Shanghai，XHR + DOM：#veteransday 63,021 条 / 68,790,053 次播放（DOM 63K / 68.8M）；#mymoonmyman 19,837 / 43,857,081（19.8K / 43.9M）；#piratetoken 59,086 / 428,310,388（59.1K / 428.3M）。完整 JSON：<a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/data/tiktok/sample_hashtag_counts.json">sample_hashtag_counts.json</a>。</p>
+    <p class="small lang-en">Creative Center public US last-7-days top 3 (not sample brands), 08:39 Asia/Shanghai, XHR + DOM: #veteransday 63,021 posts / 68,790,053 views (DOM 63K / 68.8M); #mymoonmyman 19,837 / 43,857,081 (19.8K / 43.9M); #piratetoken 59,086 / 428,310,388 (59.1K / 428.3M). Full JSON: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/data/tiktok/sample_hashtag_counts.json">sample_hashtag_counts.json</a>.</p>
 
-    <h3>亚马逊真实名次 · Verified Amazon ranks</h3>
-    <div class="table-wrap">
+    <h3 class="lang-zh">亚马逊真实名次</h3>
+    <h3 class="lang-en">Verified Amazon ranks</h3>
+    <div class="table-wrap lang-zh">
+      <table>
+        <thead><tr><th>代码</th><th>ASIN</th><th>标题</th><th>名次</th><th>榜单 / 类目</th><th>方法</th><th>取数（UTC）</th></tr></thead>
+        <tbody>
+          <tr><td>CROX</td><td>B0014C0LSY</td><td>Crocs Unisex-Adult Classic Clog, Clogs for Women and Men</td><td>1</td><td>女鞋畅销榜</td><td>官方 zg.rank JSON</td><td>2026-11-13T00:50:49Z</td></tr>
+          <tr><td>CROX</td><td>B0014C0LSY</td><td>同一 ASIN</td><td>12</td><td>服装、鞋靴与珠宝畅销榜</td><td>官方 zg.rank JSON</td><td>2026-11-13T00:50:49Z</td></tr>
+          <tr><td>CROX</td><td>B01A6LUCZU</td><td>Crocs Unisex-Adult Classic Lined Clog | Casual Shoes</td><td>29</td><td>女鞋畅销榜</td><td>官方 zg.rank JSON</td><td>2026-11-13T00:50:49Z</td></tr>
+          <tr><td>CROX</td><td>B01A6LUCZU</td><td>Crocs Lined Clog Navy/Charcoal（商品页）</td><td>455 / 5</td><td>服装、鞋靴与珠宝 / 女式穆勒鞋与木底鞋</td><td>商品页 BSR 短语</td><td>2026-11-13T00:52:20Z</td></tr>
+          <tr><td>ELF</td><td>B07PBQZ3KF</td><td>e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde</td><td>23</td><td>美容与个人护理畅销榜</td><td>官方 zg.rank JSON</td><td>2026-11-13T00:50:49Z</td></tr>
+          <tr><td>ELF</td><td>B0CMYR1CNK</td><td>e.l.f. Cream Glide Lip Liner</td><td>24</td><td>美容与个人护理畅销榜</td><td>官方 zg.rank JSON</td><td>2026-11-13T00:50:49Z</td></tr>
+          <tr><td>LULU / TPR / NWL</td><td>—</td><td>无仅按标题的命中</td><td>—</td><td>所取名单的前 50</td><td>记录为缺席，不作估计</td><td>2026-11-13T00:50:49Z</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-wrap lang-en">
       <table>
         <thead><tr><th>Ticker</th><th>ASIN</th><th>Title</th><th>Rank</th><th>List / category</th><th>Method</th><th>Retrieved (UTC)</th></tr></thead>
         <tbody>
@@ -187,9 +284,11 @@
         </tbody>
       </table>
     </div>
-    <p class="small">Women’s Shoes #29 vs Women’s Mules &amp; Clogs #5 is consistent (the subcategory is narrower). Full JSON: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/data/amazon/sample_bsr.json">sample_bsr.json</a>.</p>
+    <p class="small lang-zh">女鞋第 29 名与女式穆勒鞋 / 木底鞋第 5 名是一致的（子类目更窄）。完整 JSON：<a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/data/amazon/sample_bsr.json">sample_bsr.json</a>。</p>
+    <p class="small lang-en">Women’s Shoes #29 vs Women’s Mules &amp; Clogs #5 is consistent (the subcategory is narrower). Full JSON: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/data/amazon/sample_bsr.json">sample_bsr.json</a>.</p>
 
-    <h3>交叉验证重跑 · Corroboration rerun</h3>
+    <h3 class="lang-zh">交叉验证重跑</h3>
+    <h3 class="lang-en">Corroboration rerun</h3>
     <div class="pair">
       <div class="lang-zh">
         <p>把新的 TikTok / 亚马逊适配器并入样本后，<strong>五个代码都没有达到「两个平台相对自身基线上升」的交叉确认门槛</strong>。维基百科最近一日浏览量全部低于自身历史（负 z）；Google Trends 动量只有 ELF（57.97）超过 +0.5 的确认线，因此 ELF 的确认数是 1，仍不够。TikTok 累计播放量和亚马逊名次是真实数字，但单次快照没有基线，列入 <code>platforms_present_no_z</code>，不编造 z，也不把缺失项填上。</p>
@@ -198,9 +297,11 @@
         <p>After folding the new TikTok and Amazon adapters into the sample, <strong>none of the five tickers meet the two-platform rising-z confirmation threshold</strong>. Wikipedia last-day views are all below their own history (negative z). Only ELF’s Google Trends momentum (57.97) clears the +0.5 confirmation line, so ELF has n_confirming = 1, still short. TikTok lifetime totals and Amazon ranks are real numbers, but a single snapshot has no baseline: they sit in <code>platforms_present_no_z</code>. No z is invented, and nothing is imputed.</p>
       </div>
     </div>
-    <p class="small">Weighted z (Trends + Wikipedia only): CROX −1.136, LULU −1.067, ELF +0.189, TPR −0.240, NWL −0.860. Full file: <a href="data/corroboration_sample.json">corroboration_sample.json</a>. Adapters: <code>camillo_tracker.tiktok</code>, <code>camillo_tracker.amazon</code>, <code>camillo_tracker.signals</code>.</p>
+    <p class="small lang-zh">加权 z（仅 Trends + 维基）：CROX −1.136，LULU −1.067，ELF +0.189，TPR −0.240，NWL −0.860。完整文件：<a href="data/corroboration_sample.json">corroboration_sample.json</a>。适配器：<code>camillo_tracker.tiktok</code>、<code>camillo_tracker.amazon</code>、<code>camillo_tracker.signals</code>。</p>
+    <p class="small lang-en">Weighted z (Trends + Wikipedia only): CROX −1.136, LULU −1.067, ELF +0.189, TPR −0.240, NWL −0.860. Full file: <a href="data/corroboration_sample.json">corroboration_sample.json</a>. Adapters: <code>camillo_tracker.tiktok</code>, <code>camillo_tracker.amazon</code>, <code>camillo_tracker.signals</code>.</p>
 
-    <p class="small">X sample file: <a href="data/x_counts_sample.json">x_counts_sample.json</a>. YouTube metadata: <a href="data/youtube_ytsearch_crocs.json">youtube_ytsearch_crocs.json</a>. Env vars for users: <code>CCT_X_BEARER</code>, <code>CCT_USE_FINBERT=1</code>, <code>YOUTUBE_API_KEY</code> (optional official path), <code>CCT_LIVE_TIKTOK=1</code> / <code>CCT_LIVE_AMAZON=1</code> to refetch instead of using the verified cache. Cross-platform corroboration requires two rising z-scores; missing platforms are listed, never imputed.</p>
+    <p class="small lang-zh">X 样本文件：<a href="data/x_counts_sample.json">x_counts_sample.json</a>。YouTube 元数据：<a href="data/youtube_ytsearch_crocs.json">youtube_ytsearch_crocs.json</a>。使用者的环境变量：<code>CCT_X_BEARER</code>、<code>CCT_USE_FINBERT=1</code>、<code>YOUTUBE_API_KEY</code>（可选官方路径），以及 <code>CCT_LIVE_TIKTOK=1</code> / <code>CCT_LIVE_AMAZON=1</code> 以重新拉取而非使用已核实的缓存。跨平台交叉确认需要两个上升的 z 分数；缺失的平台会被列出，绝不填空。</p>
+    <p class="small lang-en">X sample file: <a href="data/x_counts_sample.json">x_counts_sample.json</a>. YouTube metadata: <a href="data/youtube_ytsearch_crocs.json">youtube_ytsearch_crocs.json</a>. Env vars for users: <code>CCT_X_BEARER</code>, <code>CCT_USE_FINBERT=1</code>, <code>YOUTUBE_API_KEY</code> (optional official path), <code>CCT_LIVE_TIKTOK=1</code> / <code>CCT_LIVE_AMAZON=1</code> to refetch instead of using the verified cache. Cross-platform corroboration requires two rising z-scores; missing platforms are listed, never imputed.</p>
   </div>
 </section>
 

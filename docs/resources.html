@@ -50,14 +50,30 @@
 
   <article class="prose">
     <div class="wrap-narrow">
-      <p class="eyebrow">03 · Resources</p>
-      <h1>Tools that approximate the inputs — not the judgment</h1>
-      <p class="deck">Star counts and URLs were verified with the GitHub API on 13 November 2026 (Asia/Shanghai). No repository backtests Camillo’s discretionary eye. These are tools for search interest, conversation, sentiment, consensus, and options research. Full table: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/03-resources.md">research/03-resources.md</a>.</p>
+      <p class="eyebrow lang-zh">03 · 工具与资源</p>
+      <p class="eyebrow lang-en">03 · Resources</p>
+      <h1 class="lang-zh">这些工具接近输入，而不是判断本身</h1>
+      <h1 class="lang-en">Tools that approximate the inputs — not the judgment</h1>
+      <p class="deck lang-zh">星标数与网址已于 2026 年 11 月 13 日（Asia/Shanghai）用 GitHub API 核实。没有哪个仓库能回测 Camillo 的主观眼光。这些是搜索兴趣、讨论、情绪、共识和期权研究的工具。完整表：<a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/03-resources.md">research/03-resources.md</a>。</p>
+      <p class="deck lang-en">Star counts and URLs were verified with the GitHub API on 13 November 2026 (Asia/Shanghai). No repository backtests Camillo’s discretionary eye. These are tools for search interest, conversation, sentiment, consensus, and options research. Full table: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/03-resources.md">research/03-resources.md</a>.</p>
     </div>
     <div class="wrap">
       <h2>Google Trends</h2>
-      <p class="deck">One of his favorite early-warning tools. Use a five-year window. In 2025 he warned that AI-generated queries may pollute the series.</p>
-      <div class="table-wrap">
+      <p class="deck lang-zh">他早期预警最爱用的工具之一。使用五年窗口。2025 年他警告，人工智能生成的查询可能污染这条序列。</p>
+      <p class="deck lang-en">One of his favorite early-warning tools. Use a five-year window. In 2025 he warned that AI-generated queries may pollute the series.</p>
+      <div class="table-wrap lang-zh">
+        <table>
+          <thead><tr><th>仓库</th><th>星标</th><th>用途</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://github.com/GeneralMills/pytrends">GeneralMills/pytrends</a></td><td>3,730</td><td>非官方 Python 客户端，取 interest-over-time。已归档。本工具箱修补了 urllib3 v2 的不兼容，仍在使用。</td></tr>
+            <tr><td><a href="https://github.com/akvise/trends-checker">akvise/trends-checker</a></td><td>404</td><td>建立在 pytrends 上的命令行工具，速率限制与 cookie 处理更严。</td></tr>
+            <tr><td><a href="https://github.com/yiromo/pytrends-modern">yiromo/pytrends-modern</a></td><td>76</td><td>仍在维护的 Trends 客户端，是一系列分叉之后的版本。</td></tr>
+            <tr><td><a href="https://github.com/flack0x/trendspyg">flack0x/trendspyg</a></td><td>65</td><td>较新、仍在维护的 pytrends 替代，带命令行。</td></tr>
+            <tr><td><a href="https://github.com/mikedbjones/longtrends">mikedbjones/longtrends</a></td><td>16</td><td>长期 Trends 序列——他偏好的那种窗口。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-wrap lang-en">
         <table>
           <thead><tr><th>Repository</th><th>Stars</th><th>Purpose</th></tr></thead>
           <tbody>
@@ -69,10 +85,24 @@
           </tbody>
         </table>
       </div>
-      <p style="margin-top:1em">Academic companions: Preis, Moat &amp; Stanley, <em>Scientific Reports</em> 2013; Da, Engelberg &amp; Gao, “In Search of Attention,” <em>Journal of Finance</em> 2011.</p>
+      <p class="lang-zh" style="margin-top:1em">学术对照：Preis, Moat &amp; Stanley，《Scientific Reports》2013；Da, Engelberg &amp; Gao，“In Search of Attention”，《Journal of Finance》2011。</p>
+      <p class="lang-en" style="margin-top:1em">Academic companions: Preis, Moat &amp; Stanley, <em>Scientific Reports</em> 2013; Da, Engelberg &amp; Gao, “In Search of Attention,” <em>Journal of Finance</em> 2011.</p>
 
-      <h2>Social sentiment</h2>
-      <div class="table-wrap">
+      <h2 class="lang-zh">社交情绪</h2>
+      <h2 class="lang-en">Social sentiment</h2>
+      <div class="table-wrap lang-zh">
+        <table>
+          <thead><tr><th>仓库</th><th>星标</th><th>用途</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://github.com/asad70/reddit-sentiment-analysis">asad70/reddit-sentiment-analysis</a></td><td>288</td><td>Reddit 上被提到最多的股票代码，用 VADER 打分。我们核实过的、星标最高的实用 WSB 风格流水线。</td></tr>
+            <tr><td><a href="https://github.com/asad70/wallstreetbets-sentiment-analysis">asad70/wallstreetbets-sentiment-analysis</a></td><td>149</td><td>更早的、只针对 r/wallstreetbets 的姊妹项目。</td></tr>
+            <tr><td><a href="https://github.com/JustAnotherArchivist/snscrape">JustAnotherArchivist/snscrape</a></td><td>5,466</td><td>不经官方 API 抓取 X、Reddit 等网络。站点一改就会坏；请遵守服务条款。</td></tr>
+            <tr><td><a href="https://github.com/cjhutto/vaderSentiment">cjhutto/vaderSentiment</a></td><td>5,096</td><td>面向社交媒体的词典加规则情绪分析。本工具箱的默认引擎。</td></tr>
+            <tr><td><a href="https://github.com/ProsusAI/finBERT">ProsusAI/finBERT</a></td><td>2,279</td><td>在金融语言上微调的 BERT。这里可通过 <code>CCT_USE_FINBERT=1</code> 选用。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-wrap lang-en">
         <table>
           <thead><tr><th>Repository</th><th>Stars</th><th>Purpose</th></tr></thead>
           <tbody>
@@ -84,10 +114,24 @@
           </tbody>
         </table>
       </div>
-      <p>Hashtag <em>view and video counts</em> are now in this repo via the public <code>/api/challenge/detail/</code> endpoint (and TikTokApi as a cross-check) — see the street-view page. Comment-level scraping at the scale Camillo describes is still a manual research surface; we did not collect comments. Reddit’s public JSON was 403 from this project’s build network; the code path is still in the toolkit for residential or authenticated use.</p>
+      <p class="lang-zh">标签的<em>播放与视频计数</em>现已通过公开接口 <code>/api/challenge/detail/</code>（并以 TikTokApi 交叉验证）进入本仓库——见街景页。Camillo 所描述的那种评论级抓取，仍然是人工研究面，我们没有采集评论。本项目的构建网络上，Reddit 公开 JSON 返回 403；代码路径仍在工具箱里，供住宅网络或已认证的使用。</p>
+      <p class="lang-en">Hashtag <em>view and video counts</em> are now in this repo via the public <code>/api/challenge/detail/</code> endpoint (and TikTokApi as a cross-check) — see the street-view page. Comment-level scraping at the scale Camillo describes is still a manual research surface; we did not collect comments. Reddit’s public JSON was 403 from this project’s build network; the code path is still in the toolkit for residential or authenticated use.</p>
 
-      <h2>Market data and options</h2>
-      <div class="table-wrap">
+      <h2 class="lang-zh">市场数据与期权</h2>
+      <h2 class="lang-en">Market data and options</h2>
+      <div class="table-wrap lang-zh">
+        <table>
+          <thead><tr><th>仓库</th><th>星标</th><th>用途</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://github.com/ranaroussi/yfinance">ranaroussi/yfinance</a></td><td>25,900</td><td>非官方 Yahoo Finance 客户端：价格、评级、目标价、上调下调、新闻。扫描器的卖方腿。</td></tr>
+            <tr><td><a href="https://github.com/OpenBB-finance/OpenBB">OpenBB-finance/OpenBB</a></td><td>75,364</td><td>面向分析师和智能体的开放数据平台（核验时 API 列在 <a href="https://github.com/openbq-org/OpenBB">openbq-org/OpenBB</a>）。</td></tr>
+            <tr><td><a href="https://github.com/goldspanlabs/optopsy">goldspanlabs/optopsy</a></td><td>1,517</td><td>轻量的 Python 期权研究与回测库。</td></tr>
+            <tr><td><a href="https://github.com/Lumiwealth/lumibot">Lumiwealth/lumibot</a></td><td>2,229</td><td>更宽的框架：回测、模拟盘和实盘，包括期权。</td></tr>
+            <tr><td><a href="https://github.com/kernc/backtesting.py">kernc/backtesting.py</a></td><td>9,229</td><td>干净的股票策略回测器，并非为期权原生设计。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-wrap lang-en">
         <table>
           <thead><tr><th>Repository</th><th>Stars</th><th>Purpose</th></tr></thead>
           <tbody>
@@ -99,7 +143,8 @@
           </tbody>
         </table>
       </div>
-      <p><code>OptionLab-Perg/OptionLab</code> returned 404 on 13 November 2026 and is not listed. Options libraries help you <em>study</em> structures; they do not encode his entries or exits.</p>
+      <p class="lang-zh"><code>OptionLab-Perg/OptionLab</code> 在 2026 年 11 月 13 日返回 404，故未列入。期权库能帮你<em>研究</em>结构，并不能编码他的进出场。</p>
+      <p class="lang-en"><code>OptionLab-Perg/OptionLab</code> returned 404 on 13 November 2026 and is not listed. Options libraries help you <em>study</em> structures; they do not encode his entries or exits.</p>
     </div>
   </article>
 

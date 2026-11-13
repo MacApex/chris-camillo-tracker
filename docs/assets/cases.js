@@ -185,6 +185,8 @@
   function buildPicker() {
     const el = document.getElementById("case-picker");
     if (!el) return;
+    const aria = el.getAttribute(lang() === "en" ? "data-aria-en" : "data-aria-zh");
+    if (aria) el.setAttribute("aria-label", aria);
     el.innerHTML = "";
     cases().forEach((c) => {
       const b = document.createElement("button");
