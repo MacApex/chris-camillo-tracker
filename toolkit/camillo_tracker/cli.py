@@ -70,7 +70,33 @@ def main(argv: list[str] | None = None) -> int:
     sig.add_argument("--keywords", default="", help="Comma-separated Trends / news keywords")
     sig.add_argument("--wiki", default="", help="English Wikipedia article title")
     sig.add_argument("--out", "-o", help="Write JSON")
+    res = sub.add_parser("research", help="End-to-end research workflow: signals, corroboration, Street view, dated report")
+    res.add_argument("brand", help="Brand or observation name, e.g. Crocs")
+    res.add_argument("ticker", help="Ticker symbol, e.g. CROX")
+    res.add_argument("--wiki", default="", help="English Wikipedia article title")
+    res.add_argument("--keywords", default="", help="Comma-separated Trends / news keywords")
+    res.add_argument("--out", "-o", default="", help="Directory for the dated markdown+JSON report")
+    res.add_argument("--offline", action="store_true", help="Use verified caches only; no new network calls")
     args = p.parse_args(argv)
+
+    if args.cmd == "research":
+        from .workflow import run_research
+        kws = [x.strip() for x in (args.keywords or "").split(",") if x.strip()] or None
+        out = args.out or "examples/reports"
+        report = run_research(
+            args.brand,
+            args.ticker.upper(),
+            wiki=args.wiki or None,
+            keywords=kws,
+            out_dir=out,
+            offline=bool(args.offline),
+        )
+        print()
+        print(report["markdown"])
+        if report.get("written"):
+            print("wrote", report["written"]["markdown"])
+            print("wrote", report["written"]["json"])
+        return 0
 
     if args.cmd == "street":
         from .street_view import street_profile

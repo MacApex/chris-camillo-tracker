@@ -1,0 +1,313 @@
+{
+  "title": "Research report · Crocs (CROX)",
+  "brand": "Crocs",
+  "ticker": "CROX",
+  "wiki_article": "Crocs",
+  "keywords": [
+    "Crocs"
+  ],
+  "retrieved_at_utc": "2026-11-13T01:13:11Z",
+  "mode": "offline-cache",
+  "disclaimer": "Not financial advice. This is a research memo produced by Chris Camillo Tracker. It is not a trade, not affiliated with Camillo / Dumb Money / TickerTags, and it does not copy his 2–30% sizing or options book. Missing data is listed, never imputed. Lifetime totals are not momentum.",
+  "workflow_steps": [
+    [
+      "discover",
+      "发现",
+      "Observe a real change versus your own baseline. Log it. Pull Trends (5-year), Wikipedia, and the relevant commerce / TikTok tags — as facts, with provenance."
+    ],
+    [
+      "corroborate",
+      "交叉验证",
+      "Require two or three independent platforms showing a rise versus their own baseline. Lifetime TikTok totals and a single Amazon BSR sit in platforms_present_no_z: they do not count as a z. Missing platforms are listed, never imputed."
+    ],
+    [
+      "materiality",
+      "物质性",
+      "Open the 10-K segment note. Can this change move earnings at this company’s size? If not, stop."
+    ],
+    [
+      "street",
+      "卖方定价",
+      "Run the Street Consensus Profile. If already_priced, stand down. Only “niche rising and not clearly priced” survives."
+    ],
+    [
+      "memo",
+      "论点备忘",
+      "Write the thesis and the exit (information parity, and “the tool is polluted”) before any action. The report is a prompt for human work, not a trade."
+    ]
+  ],
+  "catalog_primary": {
+    "search_interest": "Google Trends via pytrends (5-year US window, YoY)",
+    "social_tiktok": "Public /api/challenge/detail/ (StealthyFetcher in-page fetch); prefer statsV2",
+    "social_x": "Official X recent-search tweet counts (7-day)",
+    "social_youtube": "yt-dlp metadata search, no download",
+    "social_reddit": "Not usable from this project’s datacenter IP. Recommended later: official Reddit API, or public JSON from a residential network.",
+    "social_instagram": "Manual observation only. Automated hashtag counts were login_required.",
+    "commerce_amazon": "Public Best Sellers official data-client-recs-list zg.rank; title-only brand match",
+    "commerce_apps": "Official iTunes Search API — presence only, not a live top-chart rank",
+    "attention_wikipedia": "Official Wikimedia REST pageviews API, identified User-Agent",
+    "news": "Google News RSS item counts",
+    "street": "Street Consensus Profile via yfinance (ratings, targets, revisions, recency, headlines, coverage, surprises)"
+  },
+  "platforms": {
+    "tiktok": {
+      "platform": "tiktok",
+      "ok": true,
+      "status": "worked",
+      "ticker": "CROX",
+      "preferred_hashtag": "crocs",
+      "method": "in-page fetch of public /api/challenge/detail/ after StealthyFetcher session on tiktok.com",
+      "source_url": "https://www.tiktok.com/tag/crocs",
+      "retrieved_at_utc": "2026-11-13T00:49:34Z",
+      "notes": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+      "hashtag": "crocs",
+      "quality": "specific",
+      "viewCount": 35500544935,
+      "videoCount": 1927145,
+      "statsV2": {
+        "videoCount": "1927145",
+        "viewCount": "35500544935"
+      },
+      "challenge_id": "93006",
+      "api_url": "https://www.tiktok.com/api/challenge/detail/?aid=1988&app_language=en&app_name=tiktok_web&channel=tiktok_web&challengeName=crocs&device_platform=web_pc&os=linux",
+      "z_last_vs_history": null,
+      "other_tags": [
+        {
+          "hashtag": "crocsshoes",
+          "viewCount": 747910931,
+          "videoCount": 53039,
+          "quality": "specific"
+        },
+        {
+          "hashtag": "crocsclassicclog",
+          "viewCount": 20573765,
+          "videoCount": 1287,
+          "quality": "specific"
+        }
+      ],
+      "tiktokapi_crosscheck": {
+        "viewCount": 35500665122,
+        "videoCount": 1927144,
+        "viewCount_rounded": 35500000000,
+        "retrieved_at_utc": "2026-11-13T00:53:47Z",
+        "method": "davidteather/TikTok-Api hashtag.info(), no login, playwright session"
+      }
+    },
+    "amazon_movers": {
+      "platform": "amazon_movers",
+      "ok": true,
+      "status": "worked",
+      "ticker": "CROX",
+      "method": "Scrapling Fetcher of public Best Sellers pages; ranks from data-client-recs-list metadataMap.render.zg.rank; brand match on PRODUCT TITLE only (context matches discarded).",
+      "retrieved_at_utc": "2026-11-13T00:50:49Z",
+      "source_url": "https://www.amazon.com/gp/bestsellers/fashion/679337011",
+      "z_last_vs_history": null,
+      "notes": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher.",
+      "findings": [
+        {
+          "ticker": "CROX",
+          "asin": "B0014C0LSY",
+          "title": "Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+          "rank": 1,
+          "category": "Women's Shoes",
+          "source_url": "https://www.amazon.com/gp/bestsellers/fashion/679337011",
+          "product_url": "https://www.amazon.com/dp/B0014C0LSY"
+        },
+        {
+          "ticker": "CROX",
+          "asin": "B0014C0LSY",
+          "title": "Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+          "rank": 12,
+          "category": "Clothing, Shoes & Jewelry",
+          "source_url": "https://www.amazon.com/gp/bestsellers/fashion/",
+          "product_url": "https://www.amazon.com/dp/B0014C0LSY",
+          "note": "Same ASIN as Women's Shoes #1, consistent with a high but not #1 rank in the broader department."
+        },
+        {
+          "ticker": "CROX",
+          "asin": "B01A6LUCZU",
+          "title": "Crocs Unisex-Adult Classic Lined Clog | Casual Shoes",
+          "rank": 29,
+          "category": "Women's Shoes",
+          "source_url": "https://www.amazon.com/gp/bestsellers/fashion/679337011",
+          "product_url": "https://www.amazon.com/dp/B01A6LUCZU",
+          "product_page_bsr": {
+            "retrieved_at_utc": "2026-11-13T00:52:20Z",
+            "method": "Scrapling Fetcher of public product page",
+            "phrases": "Best Sellers Rank #455 in Clothing, Shoes & Jewelry; #5 in Women's Mules & Clogs",
+            "ranks": [
+              {
+                "rank": 455,
+                "category": "Clothing, Shoes & Jewelry"
+              },
+              {
+                "rank": 5,
+                "category": "Women's Mules & Clogs"
+              }
+            ],
+            "note": "Women's Shoes #29 vs Women's Mules & Clogs #5 is consistent (subcategory is narrower). Clothing department #455 vs Fashion bestsellers #12 is a different list/time; the #12 was the Classic Clog, not this Lined ASIN."
+          }
+        }
+      ],
+      "n_listings": 3,
+      "best_rank": 1,
+      "headline": "#1 in Women's Shoes — Crocs Unisex-Adult Classic Clog, Clogs for Women and Men"
+    },
+    "wikipedia": {
+      "platform": "wikipedia",
+      "status": "worked",
+      "ok": true,
+      "last_day": 473,
+      "sum_13d": 6417,
+      "z_last_vs_history": -1.6135535087083528,
+      "n_days": 395,
+      "method": "Wikimedia REST API (cached series)",
+      "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/",
+      "article": "Crocs"
+    },
+    "google_trends": {
+      "platform": "google_trends",
+      "status": "worked",
+      "ok": true,
+      "momentum_0_100": 43.1,
+      "method": "pytrends, US, today 5-y — cached 13 Nov 2026 snapshot already on the site (offline mode does not refetch)",
+      "source_url": "https://trends.google.com/trends/",
+      "retrieved_at_utc": "2026-11-12T18:09:07Z"
+    }
+  },
+  "corroboration": {
+    "ok": true,
+    "corroborated": false,
+    "n_confirming": 0,
+    "n_fading": 2,
+    "min_confirm": 2,
+    "platforms_used": [
+      "wikipedia",
+      "google_trends"
+    ],
+    "platforms_present_no_z": [
+      {
+        "platform": "tiktok",
+        "status": "worked",
+        "reason": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+        "headline": null,
+        "viewCount": 35500544935,
+        "videoCount": 1927145,
+        "best_rank": null
+      },
+      {
+        "platform": "amazon_movers",
+        "status": "worked",
+        "reason": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher.",
+        "headline": "#1 in Women's Shoes — Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+        "viewCount": null,
+        "videoCount": null,
+        "best_rank": 1
+      }
+    ],
+    "platforms_missing": [],
+    "components": [
+      {
+        "platform": "wikipedia",
+        "z": -1.6135535087083528,
+        "momentum_0_100": null,
+        "weight": 0.7,
+        "status": "worked"
+      },
+      {
+        "platform": "google_trends",
+        "z": -0.6899999999999998,
+        "momentum_0_100": 43.1,
+        "weight": 0.75,
+        "status": "worked"
+      }
+    ],
+    "weighted_z": -1.136,
+    "composite_0_100": 38.64,
+    "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold."
+  },
+  "street": {
+    "verdict": null,
+    "how_it_feeds_the_tree": null,
+    "ran": false
+  },
+  "gates": {
+    "corroborate": {
+      "gate": "corroborate",
+      "passed": false,
+      "detail": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold.",
+      "n_confirming": 0,
+      "weighted_z": -1.136,
+      "platforms_used": [
+        "wikipedia",
+        "google_trends"
+      ],
+      "platforms_present_no_z": [
+        {
+          "platform": "tiktok",
+          "status": "worked",
+          "reason": "Lifetime cumulative counts (stock), not a 7-day flow. No z-score is computed from a single snapshot. TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics.",
+          "headline": null,
+          "viewCount": 35500544935,
+          "videoCount": 1927145,
+          "best_rank": null
+        },
+        {
+          "platform": "amazon_movers",
+          "status": "worked",
+          "reason": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher.",
+          "headline": "#1 in Women's Shoes — Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+          "viewCount": null,
+          "videoCount": null,
+          "best_rank": 1
+        }
+      ],
+      "platforms_missing": []
+    },
+    "materiality": {
+      "gate": "materiality",
+      "passed": null,
+      "detail": "Human gate: open the 10-K segment note. This runner does not estimate a share of sales."
+    },
+    "street": {
+      "gate": "street",
+      "passed": false,
+      "detail": "Street profile not run (offline or error). insufficient_data — a stop, not a green light.",
+      "verdict": "insufficient_data"
+    }
+  },
+  "recommendation": "not_corroborated",
+  "recommendation_zh": "未达到两平台上升门槛（或只有存量快照、没有 z）：不进入交易准备。继续观察或停下。",
+  "optional_keys": [
+    {
+      "var": "CCT_X_BEARER",
+      "upgrade": "Official X recent-search from the adapter itself, without depending on MCP."
+    },
+    {
+      "var": "YOUTUBE_API_KEY",
+      "upgrade": "Official YouTube Data API (time-bounded stats) instead of a three-result yt-dlp search."
+    },
+    {
+      "var": "Keepa API key (paid, third-party)",
+      "upgrade": "Historical BSR as a true flow. Public Keepa PNGs are price charts; we did not transcribe them and did not bypass anything."
+    },
+    {
+      "var": "Reddit official API",
+      "upgrade": "Would reopen a blocked platform. Public JSON was 403 from our datacenter."
+    },
+    {
+      "var": "Sensor Tower / data.ai (paid)",
+      "upgrade": "Live app-chart ranks. iTunes Search is presence only."
+    },
+    {
+      "var": "FactSet / Bloomberg (paid)",
+      "upgrade": "Higher-quality estimate revisions for the Street profile. yfinance remains the default free path."
+    }
+  ],
+  "policy": {
+    "no_daily_routine": true,
+    "public_data_only": true,
+    "no_imputation": true,
+    "no_login": true
+  }
+}

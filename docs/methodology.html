@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <script>
+  (function(){try{var p=new URLSearchParams(location.search).get("lang");var l=(p==="en"||p==="zh")?p:(localStorage.getItem("cct-lang")||"zh");if(l!=="en")l="zh";document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l==="zh"?"zh-Hans":"en";}catch(e){}})();
+  </script>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-title-zh="方法论总纲与数据工作流 — Chris Camillo Tracker" data-title-en="Methodology synthesis and data workflow — Chris Camillo Tracker">方法论总纲与数据工作流 — Chris Camillo Tracker</title>
+  <meta name="description" data-desc-zh="把已研究的方法蒸馏成一页总纲，并给出基于实测的最佳数据获取工作流。" data-desc-en="A tight synthesis of the method, and an evidence-based data-acquisition playbook from what actually worked." content="把已研究的方法蒸馏成一页总纲，并给出基于实测的最佳数据获取工作流。">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,450;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CC</span>
+        <span class="brand-text">
+          <strong>Chris Camillo Tracker</strong>
+          <span class="lang-zh">社会套利研究</span>
+          <span class="lang-en">Social arbitrage research</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="菜单" aria-expanded="false">☰</button>
+      <nav class="primary" aria-label="Primary">
+        <a href="index.html"><span class="lang-zh">概览</span><span class="lang-en">Overview</span></a>
+        <a href="methodology.html" aria-current="page"><span class="lang-zh">总纲</span><span class="lang-en">Synthesis</span></a>
+        <a href="cases.html" class="nav-featured"><span class="lang-zh">案例</span><span class="lang-en">Cases</span></a>
+        <a href="core-logic.html"><span class="lang-zh">核心逻辑</span><span class="lang-en">Core logic</span></a>
+        <a href="trades.html"><span class="lang-zh">交易</span><span class="lang-en">Trades</span></a>
+        <a href="dimensions.html"><span class="lang-zh">维度</span><span class="lang-en">Dimensions</span></a>
+        <a href="street-view.html"><span class="lang-zh">街景</span><span class="lang-en">Street view</span></a>
+        <a href="track-record.html"><span class="lang-zh">业绩</span><span class="lang-en">Track record</span></a>
+        <a href="playbook.html"><span class="lang-zh">手册</span><span class="lang-en">Playbook</span></a>
+        <a href="divergence.html"><span class="lang-zh">信息差</span><span class="lang-en">Divergence</span></a>
+        <a href="resources.html"><span class="lang-zh">工具</span><span class="lang-en">Resources</span></a>
+        <a href="sources.html"><span class="lang-zh">来源</span><span class="lang-en">Sources</span></a>
+      </nav>
+      <div class="lang-switch" data-lang-switch role="group" aria-label="语言">
+        <button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="true">中文</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+<article class="prose">
+  <div class="wrap">
+    <p class="eyebrow lang-zh">方法论总纲</p>
+    <p class="eyebrow lang-en">Methodology synthesis</p>
+    <h1 class="lang-zh">时差，不是更便宜的估值。</h1>
+    <h1 class="lang-en">A time gap, not a cheaper multiple.</h1>
+    <p class="deck lang-zh">把本档案已经核实的方法，收成一页总纲：第一性原理、因果链、七条真正要紧的规则、方法何时成立与失败，以及普通投资者该如何改写。证据链到既有页面，这里不重复长文。本页不是投资建议，也与 Camillo、Dumb Money、TickerTags 均无关联。</p>
+    <p class="deck lang-en">Everything we have verified, distilled to one page: first principles, the causal chain, the seven rules that actually matter, when the method works and fails, and what a normal investor should change. Evidence lives on the existing pages; this is not a repeat. This is not financial advice, and it is not affiliated with Camillo, Dumb Money, or TickerTags.</p>
+
+    <h2 id="synthesis" class="lang-zh">因果链</h2>
+    <h2 id="synthesis-en" class="lang-en">The causal chain</h2>
+    <ol class="lang-zh">
+      <li>在真实世界里，观察到相对于<strong>你自己的基线</strong>（这个社群、这个季节、这个品牌平时的样子）的异常变化——文化、消费、技术或政策。不是相对于一条头条。</li>
+      <li>把它连接到一家上市公司：该变化必须大到足以推动这家公司的收入或利润（物质性）。</li>
+      <li>用 2–3 个独立平台交叉确认：各平台相对<strong>自身历史</strong>在上升。一条序列不是论点。终身累计播放量或单一畅销名次不是动量。</li>
+      <li>问卖方是否已经把这件事写入预测、评级和研报。已定价，就放下。</li>
+      <li>只有「利基上升，且尚未清楚定价」才进入人工研究：写下论点与退出条件，再决定是否行动。</li>
+      <li>退出看的是<strong>信息平价</strong>——事实进入财报、研报和价格本身——以及论点是否已被证伪（包括「测量工具坏了」）。</li>
+    </ol>
+    <ol class="lang-en">
+      <li>Observe a real-world change — culture, consumption, technology, or policy — versus <strong>your own baseline</strong> for that community, season, and brand. Not versus a headline.</li>
+      <li>Connect it to a public company where the change is large enough to move revenue or earnings (materiality).</li>
+      <li>Corroborate on two or three independent platforms: each rising versus <strong>its own history</strong>. One series is not a thesis. A lifetime view total or a single bestseller rank is not momentum.</li>
+      <li>Ask whether the Street has already written the fact into estimates, ratings, and notes. If it is priced, stand down.</li>
+      <li>Only “niche rising and not clearly priced” becomes human work: write the thesis and the exit, then decide whether to act.</li>
+      <li>Exit at <strong>information parity</strong> — the fact reaches earnings, notes, and the tape — and if the thesis is broken, including “the measuring tool is polluted.”</li>
+    </ol>
+    <p class="small lang-zh">任何一关为「否」：停止，或继续观察。展开的决策树、清单与案例见 <a href="core-logic.html">核心逻辑</a>；十步操作见 <a href="playbook.html">方法手册</a>；卖方框架与事件研究见 <a href="street-view.html">街景</a>。</p>
+    <p class="small lang-en">A “no” at any gate is a stop, or a decision to keep watching. The full tree, checklists and cases are on <a href="core-logic.html">Core logic</a>; the ten operational steps are in the <a href="playbook.html">Playbook</a>; the Street framework and event study are on <a href="street-view.html">Street view</a>.</p>
+
+    <h2 class="lang-zh">七条真正要紧的规则</h2>
+    <h2 class="lang-en">The seven rules that matter</h2>
+    <ol class="lang-zh">
+      <li><strong>问的是异常，不是热闹。</strong> 没有基线，评论再多也只是噪音。Camillo 对 Crocs 与 UGG 的说法是：他知道「平常」是多少。</li>
+      <li><strong>边缘是时差，不是同一个模型上更聪明。</strong> Schwager 把这一章题为 “Neither”：既非传统基本面，也非技术分析。灵感来自林奇，但财务深挖被主动放下，只保留规模与物质性。</li>
+      <li><strong>一条序列不是论点。</strong> 至少两个独立平台同时相对自身基线上升。缺失的平台要记下来，不许填空。2025 年他退出 Lululemon，公开理由是 Google Trends 被人工智能查询污染——工具本身会坏。</li>
+      <li><strong>先问能否推动利润，再谈故事。</strong> 打开 10-K 的分部说明，而不是做一份估值模型。slime 热潮对 Elmer’s 可能足够，对 Newell 整体仍可能只是四舍五入——要算，不要感觉。</li>
+      <li><strong>已定价就放下。</strong> 信息一旦「被普遍知道」，他就认为已经在价格里。退出是分批的、按信息到达的，不是按一张价格目标图。</li>
+      <li><strong>不能核实的数字，丢掉。</strong> 终身播放量是存量，要动量必须自己做重复取样——本项目不设每日快照例行。宽泛标签（如 <code>#coach</code>、<code>#slime</code>）不可当作品牌计数。查询会被污染（X 去掉 $ 之后，ELF 会严重噪声）。</li>
+      <li><strong>不要复制他的风险结构。</strong> 审计业绩建立在期权、集中仓位（他曾说一般 2%–30%）和一个可以承受损失的「大钱」账户上。波动大约是指数的五倍。无止损只在「交易的是信息、论点未破」时自洽；借走这句话而不借过程，是危险的。</li>
+    </ol>
+    <ol class="lang-en">
+      <li><strong>The question is “unusual,” not “busy.”</strong> Without a baseline, a lot of talk is just noise. On Crocs and UGGs he has said he knows what ordinary comment volume looks like.</li>
+      <li><strong>The edge is a time gap, not a smarter take on the same model.</strong> Schwager titled the chapter “Neither”: neither traditional fundamentals nor technical analysis. Lynch is the inspiration; the financial deep-dive is dropped; size and materiality remain.</li>
+      <li><strong>One series is not a thesis.</strong> At least two independent platforms should be rising versus their own baselines. Missing platforms are recorded, never imputed. In 2025 he exited Lululemon after concluding that AI queries had polluted Google Trends — tools break.</li>
+      <li><strong>Materiality before the romance.</strong> Open the 10-K segment note, not a valuation model. A slime craze can matter at Elmer’s and still be a rounding error at Newell as a whole — compute it; don’t feel it.</li>
+      <li><strong>If it is priced, stand down.</strong> Once the information is “universally known,” he treats it as in the price. Exits are gradual and information-based, not a chart target.</li>
+      <li><strong>Discard unverifiable numbers.</strong> Lifetime view totals are a stock; a flow needs repeated snapshots at a cadence you choose — this project does not run a daily routine. Generic tags (<code>#coach</code>, <code>#slime</code>) are not brand counts. Queries get polluted (after X strips the $ character, ELF is noisy).</li>
+      <li><strong>Do not copy his risk structure.</strong> The audited record sits on options, concentration (he has said generally 2–30%), and a “big money” account funded with money he can afford to lose. Volatility was about five times the index. “No stop-losses” is coherent only inside an information process; borrowing the phrase without the process is dangerous.</li>
+    </ol>
+
+    <div class="check-grid">
+      <div class="check-card">
+        <h3 class="lang-zh">何时成立</h3>
+        <h3 class="lang-en">When it works</h3>
+        <ul class="lang-zh">
+          <li>变化发生在卖方听得少的地方：青年与女性消费文化、地理口袋（他所说的「地理套利」）。</li>
+          <li>观察者对该领域有真正的基线，而不是第一次看到热闹。</li>
+          <li>变化对那家公司的利润够大，且尚未进入预测与研报。</li>
+          <li>往往靠近一次披露：货架变化之后几天就是财报，这是他故事里反复出现的节奏，不是「买热门品牌拿十年」。</li>
+        </ul>
+        <ul class="lang-en">
+          <li>The change sits where the Street under-listens: youth and female consumer culture, geographic pockets (his “geographical arbitrage”).</li>
+          <li>The observer has a real baseline in that domain, not a first look at a crowd.</li>
+          <li>The change is material at that company, and is not yet in estimates and notes.</li>
+          <li>Stories often cluster just before a disclosure — a shelf change, then earnings a few days later — not “buy a hot brand and hold it for a decade.”</li>
+        </ul>
+      </div>
+      <div class="check-card">
+        <h3 class="lang-zh">何时失败</h3>
+        <h3 class="lang-en">When it fails</h3>
+        <ul class="lang-zh">
+          <li><strong>隐藏的分部：</strong> Restaurant Brands / Tim Hortons，自述亏损 75 万美元——两个品牌看对了，第三个看不见。</li>
+          <li><strong>个人偏好：</strong> Silicon Image（HDMI），「投资你熟悉的」变成偏见。</li>
+          <li><strong>数据被污染：</strong> 2025 年 Lululemon 与 Trends；交叉验证才能避免套利一个幽灵。</li>
+          <li><strong>把存量当成动量：</strong> 一个 350 亿次播放的标签，本身不说明「正在上升」。</li>
+          <li>证据与市场路径见 <a href="trades.html">交易库</a>、<a href="track-record.html">业绩</a>、<a href="street-view.html">街景</a>。事件研究是市场路径，不是他的个人盈亏。</li>
+        </ul>
+        <ul class="lang-en">
+          <li><strong>The hidden division:</strong> Restaurant Brands / Tim Hortons, a self-reported $750,000 loss — two brands right, a third invisible.</li>
+          <li><strong>Personal bias:</strong> Silicon Image (HDMI), where “invest in what you know” became a trap.</li>
+          <li><strong>Polluted data:</strong> Lululemon and Trends in 2025; without a cross-check you will arbitrage a ghost.</li>
+          <li><strong>Mistaking a stock for a flow:</strong> a 35-billion-view hashtag does not, by itself, mean “it is rising.”</li>
+          <li>Evidence and market paths: the <a href="trades.html">trade database</a>, <a href="track-record.html">track record</a>, and <a href="street-view.html">Street view</a>. The event study is a market path, not his personal P&amp;L.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="lang-zh">普通投资者该改写什么</h2>
+    <h2 class="lang-en">What a normal investor should adapt</h2>
+    <div class="lang-zh">
+      <p>可以借用的是观察习惯、基线、交叉验证、物质性检验和定价检验。扫描器和本页的数据工作流，都只是<strong>人工研究的提示</strong>，不是买入信号。</p>
+      <p>不要借用的是：2%–30% 的仓位、把储蓄的 25%–30% 用于看跌期权、在没有信息过程的情况下取消止损、以及把审计过的 77% 年化当成可复制的承诺。如果你投资，用一个可以承受损失的独立账户；默认用股票现货而不是期权；仓位小到你无需引用他的数字就能解释；先写论点再行动。模板在 <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/templates/thesis.md">thesis.md</a>。</p>
+    </div>
+    <div class="lang-en">
+      <p>What you can borrow: the habit of observation, a baseline, corroboration, the materiality test, and the priced-in test. The scanner and the data workflow on this page are <strong>prompts for human work</strong>, not buy signals.</p>
+      <p>What you should not borrow: 2–30% position sizes, putting 25–30% of savings into puts, dropping stop-losses without an information process, or treating the audited 77% annual compound as a reproducible promise. If you invest, use a separate account funded with money you can afford to lose; default to cash equity rather than options; size a position so you can explain it without citing his figures; write the thesis before you act. Template: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/templates/thesis.md">thesis.md</a>.</p>
+    </div>
+
+    <h2 id="data-workflow" class="lang-zh">最佳数据获取工作流</h2>
+    <h2 id="data-workflow-en" class="lang-en">Data acquisition playbook</h2>
+    <p class="lang-zh">下面的排序来自本项目在 2026 年 11 月 13 日（Asia/Shanghai）的实测，见 <a href="data/platform_status.json">platform_status.json</a> 与 <a href="data/provenance.csv">provenance.csv</a>。公开数据，不登录，不绕过付费墙。工作流按<strong>论点触发</strong>，不是每日定时快照。终身计数若要变成动量，由你自己决定重复取样的节奏。</p>
+    <p class="lang-en">The ranking below comes from what this project actually ran on 13 Nov 2026 (Asia/Shanghai): <a href="data/platform_status.json">platform_status.json</a> and <a href="data/provenance.csv">provenance.csv</a>. Public data only; no logins; no paywall bypass. The workflow is <strong>thesis-triggered</strong>, not a daily snapshot routine. If you want a flow from a lifetime total, you choose the cadence of repeated snapshots.</p>
+
+    <h3 class="lang-zh">各信号的主路径</h3>
+    <h3 class="lang-en">A primary path for each signal</h3>
+
+    <div class="table-wrap lang-zh">
+      <table>
+        <thead><tr><th>信号</th><th>状态</th><th>主路径</th><th>备选</th><th>交叉验证</th><th>指标含义与归一化</th></tr></thead>
+        <tbody>
+          <tr><td>搜索兴趣</td><td><span class="badge badge-worked">已通</span></td><td>Google Trends（pytrends，美国，五年窗口，同比）。<code>python -m camillo_tracker signals CROX --keywords 'Crocs' --wiki Crocs</code></td><td>Trends 网页，同样用五年窗口，不用默认的十二个月。</td><td>维基百科日浏览量 z 分数；第二条关键词。不要只用新闻量。</td><td>相对 0–100 的<strong>流量</strong>，不是绝对查询次数。五年窗口看季节性；相对自身历史算 z；不可跨词比较原始分数。2025 年他指出人工智能会污染 Trends。</td></tr>
+          <tr><td>社交 · TikTok</td><td><span class="badge badge-worked">已通</span></td><td>公开接口 <code>/api/challenge/detail/</code>（StealthyFetcher 页内请求），用 <code>statsV2</code>。默认读已核实缓存；<code>CCT_LIVE_TIKTOK=1</code> 才现场抓取。</td><td>TikTok-Api 的 <code>hashtag.info()</code>（无需登录），同一套 challengeInfo。</td><td>两种官方形态互相核对。Creative Center 的公开列表只覆盖美国近七日前三，不能代替品牌分析（登录我们不做）。</td><td>终身播放与条数是<strong>存量</strong>。单次快照不算 z。要流量，就重复取样再做差。用具体标签（<code>#coachbag</code> 而不是 <code>#coach</code>）。</td></tr>
+          <tr><td>社交 · X</td><td><span class="badge badge-worked">已通</span></td><td>官方近七日推文计数（MCP，或 <code>CCT_X_BEARER</code>）。</td><td>没有密钥则跳过。twscrape 需要登录，本项目不用。</td><td>Trends 与维基百科。注意查询是否干净（ELF 在去掉 $ 后噪声很大）。</td><td>近窗计数是<strong>短流</strong>。单窗是水平，不是 z；有上一窗才可比较。</td></tr>
+          <tr><td>社交 · YouTube</td><td><span class="badge badge-worked">已通</span></td><td><code>yt-dlp 'ytsearch3:Crocs shoes' --dump-json --skip-download</code></td><td>官方 Data API（可选 <code>YOUTUBE_API_KEY</code>）。</td><td>Trends、维基百科。几个视频的播放量只是「在场」，不是趋势序列。</td><td>单视频播放量是存量。三次搜索结果不能加成品牌 z。</td></tr>
+          <tr><td>社交 · Reddit</td><td><span class="badge badge-blocked">受阻</span></td><td>本项目机房 IP 上不可用（HTTP 403）。日后可用官方 API，或在住宅网络请求公开 JSON。</td><td>PullPush 在此亦失败（HTTP 526）。</td><td>不要编造 Reddit 数字；记为缺失，改用 Trends / 维基 / X。</td><td>若通路打开，近期帖文是流量。我们没有已核实的 Reddit 数字。</td></tr>
+          <tr><td>社交 · Instagram</td><td><span class="badge badge-blocked">受阻</span></td><td>只做人工观察。无登录的 instaloader 返回必须登录。</td><td>无。不用个人凭据。</td><td>TikTok 具体标签、亚马逊名次、Trends。</td><td>无已核实指标。当作与店员交谈一样的定性渠道。</td></tr>
+          <tr><td>商业 · 亚马逊</td><td><span class="badge badge-worked">已通</span></td><td>公开畅销榜官方 <code>zg.rank</code>（Scrapling Fetcher），<strong>只按商品标题</strong>匹配品牌。<code>camillo_tracker.amazon</code></td><td>商品页「畅销排名」短语（四个 ASIN 里成功了一个）。</td><td>同一 ASIN 在两个榜单上，或商品页的细分类名次。CamelCamelCamel 为 Cloudflare 403，不绕过。Keepa 公开图是价格，不是排名。</td><td>名次是某一刻在某一榜上的<strong>位置</strong>（越小越强），不是销量，也不是 z。同一 ASIN、同一榜单上重复取样。不可跨类平均。</td></tr>
+          <tr><td>商业 · 应用商店</td><td><span class="badge badge-worked">已通</span></td><td>官方 iTunes Search：只表示「在架」，不是排行榜名次。</td><td>人工浏览商店。</td><td>不要把搜索命中当成需求。付费榜单（Sensor Tower 等）是可选升级，不是必需。</td><td>在场 ≠ 名次。不可把在场写成 z。</td></tr>
+          <tr><td>注意力 · 维基百科</td><td><span class="badge badge-worked">已通</span></td><td>官方 Wikimedia REST 浏览量，带可识别的 User-Agent。<code>--wiki 'E.l.f.'</code>（条目名要正确）。</td><td>同一 API，换正确条目标题（<code>e.l.f._Cosmetics</code>、<code>Coach_(company)</code> 曾是空的或极薄）。</td><td>Google Trends。浏览量是注意力，不是情绪，也不是销售。</td><td>日浏览是<strong>流量</strong>。用末日对自身历史的 z，或 13 日合计对比前 13 日。</td></tr>
+          <tr><td>新闻</td><td><span class="badge badge-worked">已通</span></td><td>Google 新闻 RSS 条目数。</td><td>GDELT TimelineVol，两次请求间隔至少 6 秒。</td><td>卖方新闻标题（street_view）。在 Camillo 框架里，主流新闻量往往<strong>滞后</strong>——用来问「是否已经公开」，而不是当领先信号。</td><td>标题量是流量。没有基线不要当 z。短词（如 e.l.f.）可能被 GDELT 拒绝。</td></tr>
+          <tr><td>卖方街景</td><td><span class="badge badge-worked">已通</span></td><td><code>python -m camillo_tracker street ELF</code>（yfinance：评级、目标价、预测修正、覆盖、意外）。</td><td>公司 10-K 分部说明，用于物质性，不是做贴现模型。</td><td>新闻是否已经在讨论这件事。结论保守：缺数据就降低把握，不填数字。标签只有：已定价 / 部分定价 / 尚未清楚定价 / 数据不足。</td><td>这是卖方已经写入模型的<strong>水平</strong>。不要把「买入占比」和利基 z 平均成一个魔法数字。工作流只问：是否已经清楚定价？</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-wrap lang-en">
+      <table>
+        <thead><tr><th>Signal</th><th>Status</th><th>Primary</th><th>Fallback</th><th>Cross-check</th><th>What it means, and how to normalize</th></tr></thead>
+        <tbody>
+          <tr><td>Search interest</td><td><span class="badge badge-worked">worked</span></td><td>Google Trends via pytrends (US, five-year window, year-over-year). <code>python -m camillo_tracker signals CROX --keywords 'Crocs' --wiki Crocs</code></td><td>The Trends website, same five-year window — not the default 12-month view.</td><td>Wikipedia daily-pageview z-score; a second keyword. Never news volume alone.</td><td>A relative 0–100 <strong>flow</strong>, not an absolute query count. Use a five-year window for seasonality; z versus own history; do not compare raw scores across keywords. In 2025 he treated AI-polluted Trends as a broken tool.</td></tr>
+          <tr><td>Social · TikTok</td><td><span class="badge badge-worked">worked</span></td><td>Public <code>/api/challenge/detail/</code> (StealthyFetcher in-page fetch); prefer <code>statsV2</code>. Default is the verified cache; <code>CCT_LIVE_TIKTOK=1</code> refetches.</td><td>TikTok-Api <code>hashtag.info()</code> (no login), same challengeInfo shape.</td><td>Run both official-shaped methods against each other. Creative Center’s public list is only the US last-7-day top 3 — not brand analytics (we do not log in).</td><td>Lifetime views and video counts are a <strong>stock</strong>. A single snapshot is not a z. For a flow, difference repeated snapshots. Use specific tags (<code>#coachbag</code>, not <code>#coach</code>).</td></tr>
+          <tr><td>Social · X</td><td><span class="badge badge-worked">worked</span></td><td>Official 7-day tweet counts (MCP, or <code>CCT_X_BEARER</code>).</td><td>Skip without a key. twscrape needs logins; this project will not use them.</td><td>Trends and Wikipedia. Inspect query cleanliness (ELF is noisy after $ is stripped).</td><td>A recent-window count is a <strong>short flow</strong>. One window is a level, not a z, until you have a prior window.</td></tr>
+          <tr><td>Social · YouTube</td><td><span class="badge badge-worked">worked</span></td><td><code>yt-dlp 'ytsearch3:Crocs shoes' --dump-json --skip-download</code></td><td>Official Data API (optional <code>YOUTUBE_API_KEY</code>).</td><td>Trends, Wikipedia. A handful of view counts is presence, not a trend series.</td><td>Per-video views are a stock. Three search hits must not be summed into a brand z.</td></tr>
+          <tr><td>Social · Reddit</td><td><span class="badge badge-blocked">blocked</span></td><td>Unusable from this project’s datacenter IP (HTTP 403). Later: official API, or public JSON from a residential network.</td><td>PullPush also failed here (HTTP 526).</td><td>Do not invent a Reddit count; record it as missing; use Trends / Wikipedia / X.</td><td>If a path opens, recent posts are a flow. We have no verified Reddit numbers.</td></tr>
+          <tr><td>Social · Instagram</td><td><span class="badge badge-blocked">blocked</span></td><td>Manual observation only. instaloader without a login returned login_required.</td><td>None. No personal credentials.</td><td>TikTok specific tags, Amazon ranks, Trends.</td><td>No verified metric. Treat it as a qualitative channel check, like talking to clerks.</td></tr>
+          <tr><td>Commerce · Amazon</td><td><span class="badge badge-worked">worked</span></td><td>Public Best Sellers official <code>zg.rank</code> (Scrapling Fetcher); match brands on <strong>product title only</strong>. <code>camillo_tracker.amazon</code></td><td>Product-page Best Sellers Rank phrases (worked on 1 of 4 ASINs).</td><td>The same ASIN on two lists, or the product-page subcategory rank. CamelCamelCamel is Cloudflare 403 — not bypassed. Keepa public charts are price, not BSR.</td><td>A rank is a <strong>position</strong> on one list at one moment (lower is stronger), not unit sales and not a z. Repeat the same ASIN on the same list. Never average across categories.</td></tr>
+          <tr><td>Commerce · App stores</td><td><span class="badge badge-worked">worked</span></td><td>Official iTunes Search: presence only, not a live chart rank.</td><td>Browse the store by hand.</td><td>Do not treat a search hit as demand. Paid chart vendors (Sensor Tower and the like) are an optional upgrade, not required.</td><td>Presence is not a rank. Do not turn presence into a z.</td></tr>
+          <tr><td>Attention · Wikipedia</td><td><span class="badge badge-worked">worked</span></td><td>Official Wikimedia REST pageviews, identified User-Agent. <code>--wiki 'E.l.f.'</code> (the title must be right).</td><td>The same API with a corrected title (<code>e.l.f._Cosmetics</code> and <code>Coach_(company)</code> were thin or empty).</td><td>Google Trends. Pageviews are attention, not sentiment and not sales.</td><td>Daily views are a <strong>flow</strong>. Use a last-day z versus the series’ own history, or a 13-day sum versus the prior 13.</td></tr>
+          <tr><td>News</td><td><span class="badge badge-worked">worked</span></td><td>Google News RSS item counts.</td><td>GDELT TimelineVol, with at least 6 seconds between calls.</td><td>Street headlines via street_view. In Camillo’s frame, mainstream news volume often <strong>lags</strong> — use it as “is this already public?”, not as a leading signal.</td><td>Headline volume is a flow. Do not treat raw counts as a z without a baseline. Short queries (e.l.f.) may be rejected by GDELT.</td></tr>
+          <tr><td>Street view</td><td><span class="badge badge-worked">worked</span></td><td><code>python -m camillo_tracker street ELF</code> (yfinance: ratings, targets, revisions, coverage, surprises).</td><td>The 10-K segment note, for materiality — not a DCF.</td><td>Whether the press is already on the fact. Verdicts are conservative: missing data lowers confidence, never fills numbers. Labels: already priced / partially priced / not clearly priced / insufficient data.</td><td>This is a <strong>level</strong> of what the Street already has in the model. Do not average a “buy” share with a niche z into one magic number. The workflow asks: is it clearly priced?</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="lang-zh">端到端顺序，以及一条命令</h3>
+    <h3 class="lang-en">End-to-end order, and one command</h3>
+    <ol class="lang-zh">
+      <li><strong>发现。</strong> 记下相对基线的真实变化。拉取 Trends（五年）、维基百科，以及相关的 TikTok 标签与亚马逊名次——都带着来源、时间和做法。</li>
+      <li><strong>交叉验证。</strong> 两个或三个独立平台相对自身基线上升。终身 TikTok 计数和单一 BSR 列入「有结果但无 z」，不充当动量。缺失平台列出，不填空。</li>
+      <li><strong>物质性。</strong> 打开 10-K 分部。推动不了利润，就停下。</li>
+      <li><strong>卖方定价。</strong> 跑 Street Consensus Profile。已定价，放下。只有「利基上升且尚未清楚定价」进入下一步。</li>
+      <li><strong>论点备忘。</strong> 用模板写下论点与退出（信息平价，以及「工具被污染」），再决定是否行动。备忘是提示，不是交易指令。</li>
+    </ol>
+    <ol class="lang-en">
+      <li><strong>Discover.</strong> Log a real change versus your baseline. Pull Trends (five-year), Wikipedia, and the relevant TikTok tags and Amazon ranks — each with a source, a time, and a method.</li>
+      <li><strong>Corroborate.</strong> Two or three independent platforms rising versus their own baselines. Lifetime TikTok totals and a single BSR sit in “present but no z”; they do not count as momentum. Missing platforms are listed, never imputed.</li>
+      <li><strong>Materiality.</strong> Open the 10-K segment. If it cannot move earnings, stop.</li>
+      <li><strong>Street / priced-in.</strong> Run the Street Consensus Profile. If already priced, stand down. Only “niche rising and not clearly priced” continues.</li>
+      <li><strong>Thesis memo.</strong> Write the thesis and the exit (information parity, and “the tool is polluted”) before any action. The memo is a prompt, not a trade.</li>
+    </ol>
+    <pre><code>python -m camillo_tracker research Crocs CROX --wiki Crocs --keywords Crocs --out examples/reports
+python -m camillo_tracker research Crocs CROX --wiki Crocs --offline</code></pre>
+    <p class="lang-zh"><code>--offline</code> 只读已核实缓存，不发起新的网络请求，适合复现。默认模式会现场拉取 Trends、新闻和卖方档案，并在失败时诚实降级。报告是带日期的 Markdown 与 JSON，含关口、来源和「不填空」的缺失项。样例：<a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/toolkit/examples/reports/2026-11-13_CROX_Crocs.md">2026-11-13_CROX_Crocs.md</a>。五个样本代码在 11 月 13 日的重跑中，都没有达到两平台上升门槛——这是真实结果，不是缺陷。</p>
+    <p class="lang-en"><code>--offline</code> uses verified caches only (no new network calls) and is the way to reproduce a memo. The default mode pulls Trends, news, and the Street profile live, and degrades honestly on failure. The report is a dated Markdown and JSON file with gates, sources, and missingness recorded rather than filled. Sample: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/toolkit/examples/reports/2026-11-13_CROX_Crocs.md">2026-11-13_CROX_Crocs.md</a>. On the 13 November rerun, none of the five sample tickers met the two-platform rising-z threshold — that is a real result, not a defect.</p>
+
+    <h3 class="lang-zh">信任矩阵：什么问题信什么源</h3>
+    <h3 class="lang-en">Decision matrix: which source for which question</h3>
+    <div class="table-wrap lang-zh">
+      <table>
+        <thead><tr><th>问题</th><th>该信的源</th><th>不要当作答案的源</th></tr></thead>
+        <tbody>
+          <tr><td>文化讨论是否相对基线在上升？</td><td>重复取样后的 TikTok 具体标签、干净的 X 近窗、五年 Trends。至少两个。</td><td>单次终身播放量；宽泛标签；已被新闻占满的话题（往往已滞后）。</td></tr>
+          <tr><td>搜索兴趣是否在上升？</td><td>五年 Trends，并用维基百科 z 交叉。注意 2025 年的污染失效模式。</td><td>默认十二个月的 Trends 视图；与其他关键词比较原始 0–100。</td></tr>
+          <tr><td>货是否在卖？</td><td>同一 ASIN、同一亚马逊榜单上的重复名次；商品页细分类作为核对。</td><td>Keepa 价格图；CamelCamelCamel（在此为 403）；把「不在前 50」写成一个估出来的名次。</td></tr>
+          <tr><td>卖方是否已经在这件事上？</td><td>street_view 的定价结论，加上新闻 / GDELT 作为「是否已经公开」。</td><td>把新闻量当成领先的利基信号；在数据不足时当成绿灯。</td></tr>
+          <tr><td>应用是否在飙升？</td><td>我们核实的只有「在架」。要名次需日后的付费榜单。</td><td>把 iTunes 搜索命中当成需求。</td></tr>
+          <tr><td>这个词是不是太宽？</td><td>用具体标签与人工判断（<code>#elfcosmetics</code> 而不是 <code>#elf</code>）。</td><td>把 <code>#coach</code>、<code>#lulu</code>、<code>#slime</code>、去掉 $ 后的 ELF 当成品牌计数。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-wrap lang-en">
+      <table>
+        <thead><tr><th>Question</th><th>Trust</th><th>Do not treat as the answer</th></tr></thead>
+        <tbody>
+          <tr><td>Is cultural conversation rising versus baseline?</td><td>Repeated snapshots of specific TikTok tags, a clean X recent window, and five-year Trends — at least two of these.</td><td>A single lifetime view total; generic tags; a topic already saturated in the press (often already late).</td></tr>
+          <tr><td>Is search interest rising?</td><td>Five-year Trends, cross-checked with a Wikipedia z. Remember the 2025 pollution failure mode.</td><td>The default 12-month Trends view; raw 0–100 comparisons across keywords.</td></tr>
+          <tr><td>Is the product selling?</td><td>Repeated ranks for the same ASIN on the same Amazon list; the product-page subcategory as a check.</td><td>A Keepa price chart; CamelCamelCamel (403 here); writing “not in the top 50” as an estimated rank.</td></tr>
+          <tr><td>Is the Street already on this?</td><td>The street_view priced-in verdict, plus news / GDELT as “is this already public?”</td><td>News volume as a leading niche signal; treating insufficient data as a green light.</td></tr>
+          <tr><td>Is an app climbing?</td><td>All we verified is presence. Live chart ranks would need a paid vendor later.</td><td>An iTunes search hit as demand.</td></tr>
+          <tr><td>Is this word too broad?</td><td>Specific tags and human judgment (<code>#elfcosmetics</code>, not <code>#elf</code>).</td><td><code>#coach</code>, <code>#lulu</code>, <code>#slime</code>, or ELF after $ is stripped, as a brand count.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="lang-zh">可选的密钥与付费升级（不是必需）</h3>
+    <h3 class="lang-en">Optional keys and paid upgrades (not required)</h3>
+    <ul class="lang-zh">
+      <li><code>CCT_X_BEARER</code>：让官方 X 近搜在适配器里直接跑，不必依赖 MCP。</li>
+      <li><code>YOUTUBE_API_KEY</code>：官方、可按时间切分的播放统计，替代三次 yt-dlp 搜索。</li>
+      <li>Keepa API（付费）：历史 BSR 会变成真正的流量。公开价格图我们没有转录，也没有绕过任何墙。</li>
+      <li>Reddit 官方 API：重新打开一个目前被挡住的平台。</li>
+      <li>Sensor Tower / data.ai（付费）：应用排行榜名次。</li>
+      <li>FactSet / Bloomberg（付费）：更高质量的预测修正。免费默认路径仍是 yfinance。</li>
+    </ul>
+    <ul class="lang-en">
+      <li><code>CCT_X_BEARER</code>: run official X recent-search in the adapter itself, without depending on MCP.</li>
+      <li><code>YOUTUBE_API_KEY</code>: official, time-bounded statistics instead of a three-result yt-dlp search.</li>
+      <li>Keepa API (paid): historical BSR as a true flow. We did not transcribe public price charts, and we did not bypass anything.</li>
+      <li>Official Reddit API: would reopen a platform that is blocked today.</li>
+      <li>Sensor Tower / data.ai (paid): live app-chart ranks.</li>
+      <li>FactSet / Bloomberg (paid): higher-quality estimate revisions. The default free path remains yfinance.</li>
+    </ul>
+    <p class="small lang-zh">配套说明：<a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/09-methodology-and-workflow.md">research/09-methodology-and-workflow.md</a>。实现：<code>camillo_tracker.workflow</code>。</p>
+    <p class="small lang-en">Companion note: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/09-methodology-and-workflow.md">research/09-methodology-and-workflow.md</a>. Code: <code>camillo_tracker.workflow</code>.</p>
+  </div>
+</article>
+    <footer class="site-footer">
+    <div class="inner">
+      <p class="lang-zh">Chris Camillo Tracker · 独立研究档案 · 与 Camillo、Dumb Money、TickerTags 均无关联。<br>
+      <strong>不构成投资建议。</strong> 即使经过审计的过往业绩，也不能预测未来收益。<a href="https://github.com/MacApex/chris-camillo-tracker">GitHub 仓库</a>。</p>
+      <p class="lang-en">Chris Camillo Tracker · independent research archive · not affiliated with Camillo, Dumb Money, or TickerTags.<br>
+      <strong>Not financial advice.</strong> Past, even audited, results do not predict future returns. <a href="https://github.com/MacApex/chris-camillo-tracker">GitHub repository</a>.</p>
+      <p class="lang-zh">更新于 2026 年 11 月 13 日（Asia/Shanghai）。<br><a href="sources.html">来源与缺口</a> · <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/DISCLAIMER.md">免责声明</a></p>
+      <p class="lang-en">Updated 13 Nov 2026, Asia/Shanghai.<br><a href="sources.html">Sources and gaps</a> · <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/DISCLAIMER.md">Disclaimer</a></p>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

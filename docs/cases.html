@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <script>
+  (function(){try{var p=new URLSearchParams(location.search).get("lang");var l=(p==="en"||p==="zh")?p:(localStorage.getItem("cct-lang")||"zh");if(l!=="en")l="zh";document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l==="zh"?"zh-Hans":"en";}catch(e){}})();
+  </script>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-title-zh="知名案例时间线 — Chris Camillo Tracker" data-title-en="Documented cases, on a timeline — Chris Camillo Tracker">知名案例时间线 — Chris Camillo Tracker</title>
+  <meta name="description" data-desc-zh="用真实历史数据对齐社群信号、Camillo 记录的进出场、卖方评级与股价，标出他领先华尔街的时差。缺失的序列如实标为缺失，绝不插值。" data-desc-en="Real historical series aligned: niche signals, Camillo’s documented entry and exit, Street ratings, and the share price, with the lead-time gap marked. Missing series are shown as missing, never interpolated." content="用真实历史数据对齐社群信号、Camillo 记录的进出场、卖方评级与股价，标出他领先华尔街的时差。缺失的序列如实标为缺失，绝不插值。">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,450;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CC</span>
+        <span class="brand-text">
+          <strong>Chris Camillo Tracker</strong>
+          <span class="lang-zh">社会套利研究</span>
+          <span class="lang-en">Social arbitrage research</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="菜单" aria-expanded="false">☰</button>
+      <nav class="primary" aria-label="Primary">
+        <a href="index.html"><span class="lang-zh">概览</span><span class="lang-en">Overview</span></a>
+        <a href="methodology.html"><span class="lang-zh">总纲</span><span class="lang-en">Synthesis</span></a>
+        <a href="cases.html" aria-current="page" class="nav-featured"><span class="lang-zh">案例</span><span class="lang-en">Cases</span></a>
+        <a href="core-logic.html"><span class="lang-zh">核心逻辑</span><span class="lang-en">Core logic</span></a>
+        <a href="trades.html"><span class="lang-zh">交易</span><span class="lang-en">Trades</span></a>
+        <a href="dimensions.html"><span class="lang-zh">维度</span><span class="lang-en">Dimensions</span></a>
+        <a href="street-view.html"><span class="lang-zh">街景</span><span class="lang-en">Street view</span></a>
+        <a href="track-record.html"><span class="lang-zh">业绩</span><span class="lang-en">Track record</span></a>
+        <a href="playbook.html"><span class="lang-zh">手册</span><span class="lang-en">Playbook</span></a>
+        <a href="divergence.html"><span class="lang-zh">信息差</span><span class="lang-en">Divergence</span></a>
+        <a href="resources.html"><span class="lang-zh">工具</span><span class="lang-en">Resources</span></a>
+        <a href="sources.html"><span class="lang-zh">来源</span><span class="lang-en">Sources</span></a>
+      </nav>
+      <div class="lang-switch" data-lang-switch role="group" aria-label="语言">
+        <button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="true">中文</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+<article class="prose">
+  <div class="wrap">
+    <p class="eyebrow lang-zh">知名案例可视化</p>
+    <p class="eyebrow lang-en">Documented cases, visualized</p>
+    <h1 class="lang-zh">他看见的，和华尔街看见的，中间隔着一段时间。</h1>
+    <h1 class="lang-en">What he saw, and what the Street saw, with time in between.</h1>
+    <p class="deck lang-zh">把记录最完整的案例放到同一条时间轴上：利基信号（该时段的历史 Google Trends、2015 年起的维基浏览、来源里有日期的社会证据）、Camillo 记录的进出场、卖方评级与目标价变动、财报日，以及复权股价。若能计算「时差」——从有记录的进场或信号，到第一次卖方上调或财报超预期——用金色色带标出。本页不是投资建议，也与 Camillo、Dumb Money、TickerTags 均无关联。</p>
+    <p class="deck lang-en">The best-documented cases on one aligned timeline: niche signals (historical Google Trends for that exact window, Wikipedia pageviews from 2015, dated social evidence from the sources), Camillo’s documented entry and exit, Street rating and target changes, earnings dates, and the adjusted share price. Where a lead time can be computed — from a documented entry or signal to the first Street upgrade or earnings beat — it is a gold shaded band. This is not financial advice, and it is not affiliated with Camillo, Dumb Money, or TickerTags.</p>
+
+    <div class="how-to">
+      <h3 class="lang-zh">怎么读这张图，以及我们不做什么</h3>
+      <h3 class="lang-en">How to read the chart, and what we will not do</h3>
+      <div class="lang-zh">
+        <p>所有曲线都是 2026 年 11 月 13 日取到的真实历史序列，带来源。取不到的序列在图上标记为缺失，<strong>绝不插值、填零或编造</strong>。Yahoo 的评级历史是不完整的：空不等于「卖方没动作」，时差在这种情况下标为「不可用」，不记作零。月精度的进出场用月中占位，并明确标注。新冠仓位是看跌期权，图上的股价路径不是期权损益。Tapestry 的日期是《商业内幕》的提及，不是建仓日。Restaurant Brands 是记录在案的亏损反例。Lululemon 2025 年是工具失效后的退出，不是「领先卖方」的胜例。</p>
+        <p>时差只在同时满足以下条件时计算：有记录的进场（日或月精度，后者会标明），以及之后 Yahoo 样本里真实、有日期的<strong>评级上调</strong>或<strong>财报超预期</strong>。同一评级下几美元的目标微调、进场之前卖方已经偏多，都不构成「他领先了」。Google Trends 使用该案例的<strong>自定义时间窗</strong>（不是默认的「最近五年」）；数值是该窗内的相对 0–100。</p>
+      </div>
+      <div class="lang-en">
+        <p>Every line is a real historical series retrieved on 13 Nov 2026, with provenance. A series we could not get is marked missing on the chart — <strong>never interpolated, zero-filled, or invented</strong>. Yahoo’s ratings history is incomplete: empty is not proof the Street was quiet, and lead time in that case is “unavailable,” not zero. Month-precision entries use a mid-month placeholder, clearly labeled. The COVID positions were puts; the equity path is not put P&amp;L. The Tapestry date is a Business Insider mention, not an entry. Restaurant Brands is a documented losing counterexample. The Lululemon 2025 case is an exit after a tool failure, not a “ahead of the Street” win.</p>
+        <p>Lead time is computed only when there is a documented entry (day or month precision, the latter labeled) and a real, dated <strong>rating upgrade</strong> or <strong>earnings beat</strong> in the Yahoo sample after it. A few-dollar target trim on an unchanged rating, or a Street that was already constructive before the entry, does not count as a lead. Google Trends uses an <strong>explicit custom timeframe</strong> for that case (not the default “past five years”); values are relative 0–100 inside that window.</p>
+      </div>
+    </div>
+
+    <div id="case-picker" class="case-picker" role="tablist" aria-label="Cases"></div>
+    <p class="cases-legend-hint lang-zh">点选一个案例。图例可开关序列；可拖动或捏合缩放。缺失的序列不会画成零。</p>
+    <p class="cases-legend-hint lang-en">Pick a case. Click the legend to show or hide a series; drag or pinch to zoom. Missing series are not drawn as zero.</p>
+
+    <h2 id="case-title">e.l.f. Beauty，2019 年  ·  ELF</h2>
+    <p id="case-sub" class="small"></p>
+    <div id="series-pills" class="series-pills"></div>
+    <div id="lead-card" class="lead-card">
+      <div class="num"></div>
+      <div class="lead-body"></div>
+    </div>
+    <div id="returns-row" class="returns-row"></div>
+    <div class="chart-frame">
+      <div id="timeline-chart" role="img" aria-label="Aligned timeline chart"></div>
+    </div>
+    <div id="chart-notes"></div>
+    <h3 class="lang-zh">此窗口内的卖方动作与财报</h3>
+    <h3 class="lang-en">Street actions and earnings in this window</h3>
+    <p class="small lang-zh">来源：Yahoo Finance（yfinance）的 upgrades_downgrades 与财报日期。历史不完整。数字是样本里出现的，不是「全部卖方」的普查。</p>
+    <p class="small lang-en">Source: Yahoo Finance (yfinance) upgrades_downgrades and earnings dates. The history is incomplete. These are the rows in the sample, not a census of every firm.</p>
+    <div id="actions-wrap"></div>
+
+    <h2 id="comparison" class="lang-zh">各案例的时差与远期回报</h2>
+    <h2 id="comparison-en" class="lang-en">Lead time and forward returns across cases</h2>
+    <p class="small lang-zh">金色点是时差（仅在可计算时画出）。柱子是既有事件研究的 1 / 3 / 6 个月远期回报——按所标方向（空头以标的下跌为正）。没有已发表远期回报的案例，柱子为空。回报不是他的个人损益，也未扣除费用。新冠是看跌期权。</p>
+    <p class="small lang-en">Gold dots are lead time, drawn only where it can be computed. Bars are 1-, 3- and 6-month forward returns from the existing event study, in the stated direction (for shorts, a falling underlying is a positive). Cases with no published forward return have empty bars. These are not his personal P&amp;L and they are not net of costs. The COVID positions were puts.</p>
+    <div class="chart-frame">
+      <div id="summary-chart" role="img" aria-label="Lead time and forward-return comparison"></div>
+    </div>
+    <div id="summary-table"></div>
+
+    <h2 class="lang-zh">数据从哪里来，以及仍然缺什么</h2>
+    <h2 class="lang-en">Where the data comes from, and what is still missing</h2>
+    <div class="lang-zh">
+      <ul>
+        <li><strong>股价、评级、财报。</strong> Yahoo Finance，经 yfinance 1.8，2026 年 11 月 13 日（Asia/Shanghai）拉取。复权收盘。评级索引先排序再按日期过滤（该索引不是单调的，不能直接切片）。Yahoo 历史不完整。</li>
+        <li><strong>Google Trends。</strong> pytrends，美国，每个案例一段<strong>明确的自定义时间窗</strong>（不是「today 5-y」）。修复了 urllib3 的 <code>method_whitelist</code> 兼容问题之后，2016–2020 的窗口同样取到了真实序列——包括 ELF「elf cosmetics」在 2019 年 3 月 3 日当周到达 100，以及 Elmer's slime 在 2017 年 5 月 28 日当周到达 100。数值是该窗内的相对指数。Camillo 在 2025 年指出，人工智能查询可能污染 Trends；Lululemon 的退出要在这个背景下看。</li>
+        <li><strong>维基浏览。</strong> Wikimedia REST，英文维基，2015 年起有数据。e.l.f. 使用条目 <code>E.l.f._Cosmetics</code>（原先错误的 <code>E.l.f.</code> 返回 404，已更正，没有编造）。ELF 条目本身流量很低，另附 Jeffree Star 同期浏览，并标明那不是品牌条目，也不是某一支视频的上传日（该日期没有独立来源）。新冠条目 <code>COVID-19_pandemic</code> 的浏览从 2020 年 3 月 12 日开始，更早是缺失，不是零；并且那不是他的中文一手来源。</li>
+        <li><strong>有日期的社会证据。</strong> 只使用来源里已经写明的日期：Dorel 2020 年 4 月 24 日的截图与 11 月退出（BI）、Crocs 2022 年 8 月 3 日仍在持有（Benzinga）、新冠自称 3 月初退出。Jeffree Star 视频没有独立核实的上传日，故不设标记。</li>
+        <li><strong>远期回报。</strong> 沿用已发表的事件研究（<a href="street-view.html">街景</a>），不在本页另算一套未经核对的路径。</li>
+      </ul>
+      <p class="small">原始序列与出处：<code>data/cases/</code>，图数据：<code>docs/data/cases-charts.json</code>。配套说明见 <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/09-methodology-and-workflow.md">research/09</a> 与 <a href="methodology.html">方法论总纲</a>。</p>
+    </div>
+    <div class="lang-en">
+      <ul>
+        <li><strong>Prices, ratings, earnings.</strong> Yahoo Finance via yfinance 1.8, retrieved 13 Nov 2026 (Asia/Shanghai). Auto-adjusted closes. Ratings are sorted, then filtered by date (the index is not monotonic and cannot be sliced directly). Yahoo’s history is incomplete.</li>
+        <li><strong>Google Trends.</strong> pytrends, US, with an <strong>explicit custom timeframe</strong> for each case (not “today 5-y”). After a urllib3 <code>method_whitelist</code> compatibility patch, 2016–2020 windows also returned real series — including “elf cosmetics” reaching 100 in the week of 3 Mar 2019, and “Elmer's slime” reaching 100 in the week of 28 May 2017. Values are a relative index inside that window. Camillo argued in 2025 that AI-generated queries can pollute Trends; the Lululemon exit should be read in that light.</li>
+        <li><strong>Wikipedia pageviews.</strong> Wikimedia REST, English Wikipedia, available from 2015. e.l.f. uses the article <code>E.l.f._Cosmetics</code> (the earlier title <code>E.l.f.</code> returned 404; it was corrected, not invented). The ELF article itself is low-traffic; Jeffree Star pageviews are attached as a contemporaneous series, labeled as not the brand article and not a dated video upload (that date was not independently sourced). Pageviews for <code>COVID-19_pandemic</code> begin on 12 Mar 2020; earlier days are missing, not zero; and that article is not his Chinese-language primary sources.</li>
+        <li><strong>Dated social evidence.</strong> Only dates already in the sources: Dorel’s 24 Apr 2020 screenshots and November exit (BI), Crocs still long on 3 Aug 2022 (Benzinga), a self-reported early-March COVID exit. No Jeffree Star video-upload marker is drawn, because that date was not independently verified.</li>
+        <li><strong>Forward returns.</strong> The published event study on <a href="street-view.html">Street view</a>, not a new unaudited path computed on this page.</li>
+      </ul>
+      <p class="small">Raw series and provenance: <code>data/cases/</code>. Chart payload: <code>docs/data/cases-charts.json</code>. Companion note: <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/research/09-methodology-and-workflow.md">research/09</a> and the <a href="methodology.html">methodology synthesis</a>.</p>
+    </div>
+  </div>
+</article>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p class="lang-zh">Chris Camillo Tracker · 独立研究档案 · 与 Camillo、Dumb Money、TickerTags 均无关联。<br>
+      <strong>不构成投资建议。</strong> 即使经过审计的过往业绩，也不能预测未来收益。<a href="https://github.com/MacApex/chris-camillo-tracker">GitHub 仓库</a>。</p>
+      <p class="lang-en">Chris Camillo Tracker · independent research archive · not affiliated with Camillo, Dumb Money, or TickerTags.<br>
+      <strong>Not financial advice.</strong> Past, even audited, results do not predict future returns. <a href="https://github.com/MacApex/chris-camillo-tracker">GitHub repository</a>.</p>
+      <p class="lang-zh">更新于 2026 年 11 月 13 日（Asia/Shanghai）。<br><a href="sources.html">来源与缺口</a> · <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/DISCLAIMER.md">免责声明</a></p>
+      <p class="lang-en">Updated 13 Nov 2026, Asia/Shanghai.<br><a href="sources.html">Sources and gaps</a> · <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/DISCLAIMER.md">Disclaimer</a></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script src="assets/app.js"></script>
+  <script src="assets/cases.js"></script>
+</body>
+</html>

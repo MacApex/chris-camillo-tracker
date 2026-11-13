@@ -5,6 +5,6 @@ It does not replicate Camillo's discretionary judgment, options timing,
 or risk management. See the root README and DISCLAIMER.
 """
 
-__version__ = "2.1.0"
+__version__ = "2.2.0"
 __title__ = "Chris Camillo Tracker"
 

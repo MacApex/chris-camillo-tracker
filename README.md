@@ -2,7 +2,7 @@
 
 A researched, cited archive of Chris Camillo's **social-arbitrage** investing — the independently reviewed track record, a bilingual core-logic playbook, a trade database, a Street-view “is it priced in?” framework with an honest event study, multi-platform signal adapters (with a provenance log), and a working Python **divergence scanner**.
 
-**[Open the site](https://macapex.github.io/chris-camillo-tracker/)** · **[核心逻辑 · Core logic](https://macapex.github.io/chris-camillo-tracker/core-logic.html)** · Research notes in [`research/`](research/) · Toolkit in [`toolkit/`](toolkit/)
+**[Open the site](https://macapex.github.io/chris-camillo-tracker/)** · **[案例时间线](https://macapex.github.io/chris-camillo-tracker/cases.html)** · **[方法论总纲](https://macapex.github.io/chris-camillo-tracker/methodology.html)** · **[核心逻辑](https://macapex.github.io/chris-camillo-tracker/core-logic.html)** · Research notes in [`research/`](research/) · Toolkit in [`toolkit/`](toolkit/)
 
 This project is **not affiliated with** Chris Camillo, Dumb Money, TickerTags, M Science, Jack Schwager, or Business Insider. **It is not financial advice.** You can lose money, especially with options and concentration. Read [DISCLAIMER.md](DISCLAIMER.md) before anything else.
 
@@ -26,7 +26,7 @@ Social arbitrage is **information-gap investing**. Observe a real change in cult
 research/     Cited notes, bilingual core-logic companion, dimensions, Street-view write-up, thesis templates
 data/         trades.json, provenance.csv, platform_status.json, experiment results, live samples
 toolkit/      Scanner, street_view, multi-platform signals, event study, pytest
-docs/         GitHub Pages site (core-logic, trades, dimensions, street-view, original pages)
+docs/         GitHub Pages site (cases timelines, methodology, core-logic, trades, street-view, …)
 DISCLAIMER.md Not financial advice; verification policy
 ```
 
@@ -56,13 +56,44 @@ A dedicated, Chinese-first column distills the method into a reusable playbook: 
 
 Companion note: [`research/06-core-logic-playbook.md`](research/06-core-logic-playbook.md). Templates: [`research/templates/`](research/templates/).
 
+## Methodology synthesis and data-acquisition playbook
+
+A tight, Chinese-first page states the method as a time gap (not a cheaper multiple), seven rules, when it works and fails, and what a normal investor should change. Below it is an evidence-based data-acquisition playbook from what we actually ran: primary, fallback and cross-check for each signal type, with exact tools, rate limits and metric meaning (stock versus flow). There is **no daily snapshot routine**.
+
+**https://macapex.github.io/chris-camillo-tracker/methodology.html** (`#synthesis`, `#data-workflow`)
+
+Companion: [`research/09-methodology-and-workflow.md`](research/09-methodology-and-workflow.md). Runner:
+
+```bash
+cd toolkit
+python -m camillo_tracker research Crocs CROX --wiki Crocs --keywords Crocs --offline --out examples/reports
+```
+
+## Documented-case timelines
+
+An interactive ECharts module aligns, for each best-documented case, (a) niche intensity — historical Google Trends with an **explicit custom timeframe**, Wikipedia pageviews from 2015, dated social evidence; (b) Camillo’s documented entry and exit; (c) Street upgrades, target moves and earnings dates from Yahoo; (d) the adjusted share price. A gold band marks **lead time** only when a real dated Street upgrade or earnings beat exists after a documented entry. Missing series are shown as missing, never interpolated. Yahoo empty is “unavailable,” not zero. Month-precision dates are labeled as placeholders. COVID equity paths are not put P&L. The Tapestry date is a BI mention, not an entry. RBI is the documented losing counterexample. The Lululemon 2025 case is a tool-failure exit, not a claim he was ahead of the Street.
+
+Lead times we can actually support, retrieved 13 Nov 2026 (Asia/Shanghai):
+
+- **ELF 2019:** about 19 calendar days from a March month-precision placeholder to Jefferies Hold→Buy on 3 Apr 2019 (31 days from the real “elf cosmetics” Trends peak of 3 Mar = 100). Street was lowering targets on 27 Feb.
+- **Dorel 2020:** 107 calendar days from the dated 24 Apr purchase to the first earnings beat on 9 Aug (surprise +340%). Yahoo ratings in the window are empty (incomplete, not a zero-day lead). BI screenshot $1.56 and yfinance ≈ $0.69 that day are both kept.
+
+The other seven cases have lead time **unavailable**, with the reason on the page. Custom Trends windows **did** return real 2016–2020 series (Elmer’s slime peaked at 100 in the week of 28 May 2017). Wikipedia for ELF uses `E.l.f._Cosmetics` (the title `E.l.f.` was a 404). Chart data: [`docs/data/cases-charts.json`](docs/data/cases-charts.json). Raw: [`data/cases/`](data/cases/). Tests: `toolkit/tests/test_cases_data.py`.
+
+**https://macapex.github.io/chris-camillo-tracker/cases.html**
+
+## Language
+
+The site has one global language switch at the far top-right of every page: pure Chinese or pure English, no side-by-side mode. Default is Chinese. The choice is stored in `localStorage` (`cct-lang`) and can be set with `?lang=zh` or `?lang=en`. Chart labels on the cases page follow the same switch. Technical names (tickers, commands, repo names) and the product name “Chris Camillo Tracker” may stay as they are.
+
+
 ## Trade database
 
 [`data/trades.json`](data/trades.json) — 43 sourced records (including two explicit rejections: Pabst and the Vegas Golden Knights), each with date precision, ticker status, thesis, instrument, outcome, source, and a verification level. Site table: [交易库](https://macapex.github.io/chris-camillo-tracker/trades.html).
 
 ## Street-view framework and event study
 
-`camillo_tracker.street_view` builds a Street Consensus Profile (ratings, targets, revisions, recency, news, coverage, surprises) and a conservative priced-in verdict. An event study on 10 dated calls reports *market-path* forward 1/3/6-month returns — not Camillo's P&L — and honestly refuses historical niche/Street quadrants where free Trends history does not reach. Results and charts: [街景](https://macapex.github.io/chris-camillo-tracker/street-view.html). Pytest: 11 passed, 13 Nov 2026.
+`camillo_tracker.street_view` builds a Street Consensus Profile (ratings, targets, revisions, recency, news, coverage, surprises) and a conservative priced-in verdict. An event study on 10 dated calls reports *market-path* forward 1/3/6-month returns — not Camillo's P&L — and honestly refuses historical niche/Street quadrants where free Trends history does not reach. Results and charts: [街景](https://macapex.github.io/chris-camillo-tracker/street-view.html). Pytest: workflow and cases-data suites included; run `python -m pytest -q` from `toolkit/`. 13 Nov 2026.
 
 ```bash
 cd toolkit

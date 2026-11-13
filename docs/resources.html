@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans" data-lang="zh">
 <head>
-  <meta charset="utf-8">
+  <script>
+  (function(){try{var p=new URLSearchParams(location.search).get("lang");var l=(p==="en"||p==="zh")?p:(localStorage.getItem("cct-lang")||"zh");if(l!=="en")l="zh";document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l==="zh"?"zh-Hans":"en";}catch(e){}})();
+  </script>
+
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resources — Chris Camillo Tracker</title>
-  <meta name="description" content="Verified GitHub tools for replicating the inputs of social-arbitrage research.">
+  <title data-title-zh="工具与资源 — Chris Camillo Tracker" data-title-en="Resources — Chris Camillo Tracker">工具与资源 — Chris Camillo Tracker</title>
+  <meta name="description" data-desc-zh="经核实的开源工具：Trends、情感分析、yfinance 与期权回测。工具近似输入，不能代替判断。" data-desc-en="Verified open-source tools for Trends, sentiment, yfinance, and options backtests. Tools approximate inputs, not judgment." content="经核实的开源工具：Trends、情感分析、yfinance 与期权回测。工具近似输入，不能代替判断。">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,28 +16,35 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header class="site-header">
+      <header class="site-header">
     <div class="inner">
       <a class="brand" href="index.html">
         <span class="brand-mark">CC</span>
         <span class="brand-text">
           <strong>Chris Camillo Tracker</strong>
-          <span>Social arbitrage research</span>
+          <span class="lang-zh">社会套利研究</span>
+          <span class="lang-en">Social arbitrage research</span>
         </span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" type="button" aria-label="菜单" aria-expanded="false">☰</button>
       <nav class="primary" aria-label="Primary">
-        <a href="index.html">Overview</a>
-        <a href="core-logic.html" class="nav-featured">核心逻辑</a>
-        <a href="trades.html">交易</a>
-        <a href="dimensions.html">维度</a>
-        <a href="street-view.html">街景</a>
-        <a href="track-record.html">Track record</a>
-        <a href="playbook.html">Playbook</a>
-        <a href="divergence.html">Divergence</a>
-        <a href="resources.html" aria-current="page">Resources</a>
-        <a href="sources.html">Sources</a>
+        <a href="index.html"><span class="lang-zh">概览</span><span class="lang-en">Overview</span></a>
+        <a href="methodology.html"><span class="lang-zh">总纲</span><span class="lang-en">Synthesis</span></a>
+        <a href="cases.html" class="nav-featured"><span class="lang-zh">案例</span><span class="lang-en">Cases</span></a>
+        <a href="core-logic.html"><span class="lang-zh">核心逻辑</span><span class="lang-en">Core logic</span></a>
+        <a href="trades.html"><span class="lang-zh">交易</span><span class="lang-en">Trades</span></a>
+        <a href="dimensions.html"><span class="lang-zh">维度</span><span class="lang-en">Dimensions</span></a>
+        <a href="street-view.html"><span class="lang-zh">街景</span><span class="lang-en">Street view</span></a>
+        <a href="track-record.html"><span class="lang-zh">业绩</span><span class="lang-en">Track record</span></a>
+        <a href="playbook.html"><span class="lang-zh">手册</span><span class="lang-en">Playbook</span></a>
+        <a href="divergence.html"><span class="lang-zh">信息差</span><span class="lang-en">Divergence</span></a>
+        <a href="resources.html" aria-current="page"><span class="lang-zh">工具</span><span class="lang-en">Resources</span></a>
+        <a href="sources.html"><span class="lang-zh">来源</span><span class="lang-en">Sources</span></a>
       </nav>
+      <div class="lang-switch" data-lang-switch role="group" aria-label="语言">
+        <button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="true">中文</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      </div>
     </div>
   </header>
 
@@ -92,11 +103,14 @@
     </div>
   </article>
 
-  <footer class="site-footer">
+      <footer class="site-footer">
     <div class="inner">
-      <p>Chris Camillo Tracker · independent research archive · not affiliated with Camillo, Dumb Money, or TickerTags.<br>
+      <p class="lang-zh">Chris Camillo Tracker · 独立研究档案 · 与 Camillo、Dumb Money、TickerTags 均无关联。<br>
+      <strong>不构成投资建议。</strong> 即使经过审计的过往业绩，也不能预测未来收益。<a href="https://github.com/MacApex/chris-camillo-tracker">GitHub 仓库</a>。</p>
+      <p class="lang-en">Chris Camillo Tracker · independent research archive · not affiliated with Camillo, Dumb Money, or TickerTags.<br>
       <strong>Not financial advice.</strong> Past, even audited, results do not predict future returns. <a href="https://github.com/MacApex/chris-camillo-tracker">GitHub repository</a>.</p>
-      <p>Compiled 13 Nov 2026, Asia/Shanghai.<br><a href="sources.html">Sources and gaps</a> · <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/DISCLAIMER.md">Disclaimer</a></p>
+      <p class="lang-zh">更新于 2026 年 11 月 13 日（Asia/Shanghai）。<br><a href="sources.html">来源与缺口</a> · <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/DISCLAIMER.md">免责声明</a></p>
+      <p class="lang-en">Updated 13 Nov 2026, Asia/Shanghai.<br><a href="sources.html">Sources and gaps</a> · <a href="https://github.com/MacApex/chris-camillo-tracker/blob/main/DISCLAIMER.md">Disclaimer</a></p>
     </div>
   </footer>
   <script src="assets/app.js"></script>

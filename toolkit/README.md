@@ -38,6 +38,16 @@ python -m camillo_tracker scan CROX LULU ELF NWL TPR --out examples/sample_run.j
 
 A real run from 13 November 2026 (Asia/Shanghai) is saved at [`examples/sample_run.json`](examples/sample_run.json), with a short write-up in [`examples/sample_run.md`](examples/sample_run.md). Network-dependent sources (especially Google Trends and Reddit) can fail; the scanner degrades gracefully and records the gap in the JSON.
 
+## End-to-end research memo
+
+```bash
+python -m camillo_tracker research Crocs CROX --wiki Crocs --keywords Crocs [--offline] [--out examples/reports]
+```
+
+Writes a dated Chinese-first markdown and JSON memo (discover → corroborate → materiality → Street → thesis) with provenance. `--offline` uses cached public numbers and will not invent a z-score. Materiality is always a human gate. The workflow catalog and ranked sources live in `camillo_tracker.workflow` and on the [methodology page](https://macapex.github.io/chris-camillo-tracker/methodology.html#data-workflow). There is no daily snapshot routine.
+
+Documented-case timelines (real historical series, ECharts, lead-time bands only when honest) are on the [cases page](https://macapex.github.io/chris-camillo-tracker/cases.html). The payload is built from `data/cases/` into `docs/data/cases-charts.json`. Honesty tests: `pytest tests/test_cases_data.py tests/test_workflow.py`.
+
 ## Interpreting a flag
 
 A flag is a **prompt for human work**, the kind Camillo actually does: talk to store clerks, read comments against a baseline of what "normal" looks like, check whether the change can move the needle at a company of that size, and ask whether the information is already priced in. The scanner cannot do any of that.
