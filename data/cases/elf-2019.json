@@ -9,7 +9,7 @@
   "entry": {
     "date": "2019-03-15",
     "precision": "month",
-    "label": "documented window (mid-month placeholder)"
+    "label": "WITHDRAWN placeholder. Not an execution day and not a lead start."
   },
   "exit": null,
   "wiki": "E.l.f.",
@@ -20,7 +20,7 @@
   ],
   "side": "long",
   "role": "win",
-  "note": "Jeffree Star / channel-check month, per BI. Entry is month-precision.",
+  "note": "March 2019 viewing is a Dec 2020 recollection. Purchase day unknown. Placeholder is not a lead.",
   "prices": {
     "ok": true,
     "ticker": "ELF",

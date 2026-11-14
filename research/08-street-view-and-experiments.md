@@ -32,7 +32,7 @@ Ten dated, tickered events; forward 21/63/126-trading-day close-to-close returns
 | SPY 2020-02-18 (short; underlying) | −28.7% | −11.9% | +1.4% |
 | WYNN 2020-02-18 (short; underlying) | −67.5% | −38.4% | −36.9% |
 | DIIBF 2020-04-24 | +131.1% | +242.9% | +608.7% |
-| TGT 2011-09-07 (equity path, not the overnight options) | +2.6% | +6.7% | +14.4% |
+| TGT 2011-09-13 (Target nationwide launch, not a verified fill; equity path recomputed 14 Nov 2026; 7 Sep anchor withdrawn) | +3.53% | +5.54% | +16.33% |
 | GME 2021-01-25 (mid-squeeze placeholder; split-adjusted) | +19.4% | +120.0% | +139.5% |
 | AMC 2021-01-25 (split-adjusted) | +105.7% | +160.2% | +811.5% |
 | TPR 2021-08-16 (mention date, not entry) | −8.3% | +4.5% | −9.8% |

@@ -31,6 +31,23 @@ def test_unconfirmed_tickers_are_labeled():
             assert t["ticker_status"] in {"unconfirmed", "vehicle_uncertain", "unnamed_microcap", "unnamed"} or "uncertain" in str(t["ticker_status"])
 
 
+def test_records_are_not_a_verified_trade_census():
+    assert TRADES["n_records"] == 43
+    assert TRADES["record_count_meaning"] == "research_records_not_verified_trades"
+    assert "win rate" in TRADES["policy"].lower()
+    assert TRADES["source_url_null_count"] == 30
+    broken = "chris-camillo-social-arbitrage-investing-strategy-ticker-tags-2021-8"
+    assert all(broken not in (t.get("source_url") or "") for t in TRADES["trades"])
+    hp = next(t for t in TRADES["trades"] if t["id"] == "hp-printers-2020")
+    assert hp["role"] == "named_no_pnl"
+    lulu = next(t for t in TRADES["trades"] if t["id"] == "lululemon-2025-exit")
+    assert lulu["role"] == "signal_note"
+    assert "exit" not in lulu["thesis"].lower() or "does not say he held or exited" in lulu["thesis"]
+    for t in TRADES["trades"]:
+        assert t.get("thesis_zh") and t.get("outcome_zh")
+        assert t["thesis_zh"] != t.get("thesis")
+
+
 def test_dorel_has_day_precision_and_screenshot_level():
     d = next(t for t in TRADES["trades"] if t["id"] == "dorel-2020")
     assert d["date"] == "2020-04-24"

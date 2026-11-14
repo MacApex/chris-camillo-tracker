@@ -5,6 +5,9 @@
   const T = {
     zh: {
       price: "股价（复权收盘，美元）",
+      axisPrice: "复权收盘，美元",
+      axisTrends: "相对搜索兴趣 0–100，不是次数",
+      axisViews: "每日浏览量，不是搜索兴趣",
       trends: "Google Trends（窗口内 0–100）",
       wiki: "维基百科日浏览",
       jeffree: "Jeffree Star 维基浏览",
@@ -51,6 +54,10 @@
       loadErr: "无法加载案例数据。",
       putNote: "标的路径，不是看跌期权损益。",
       mentionNote: "这是提及日，不是建仓日。",
+      mentionMark: "发表 / 提及",
+      stageTitle: "把时钟分开",
+      returnsWithdrawn: "不展示。旧路径用的日期不是成交日。",
+      signalNotValue: "社会或搜索观察不是利润、现金流或价值。",
       stillLong: "「仍在持有」标记，不是退出。",
       eraNote: "只有年代，不是精确进场日。",
       monthNote: "月精度：中间日只是占位，不是核实过的成交日。",
@@ -72,6 +79,9 @@
     },
     en: {
       price: "Share price (adjusted close, USD)",
+      axisPrice: "Adjusted close, USD",
+      axisTrends: "Relative interest 0–100, not a count",
+      axisViews: "Daily pageviews, not search interest",
       trends: "Google Trends (0–100 in this window)",
       wiki: "Wikipedia daily pageviews",
       jeffree: "Jeffree Star Wikipedia pageviews",
@@ -118,6 +128,10 @@
       loadErr: "Could not load the case data.",
       putNote: "Underlying path, not put P&L.",
       mentionNote: "This is a mention date, not an entry.",
+      mentionMark: "Publication / mention",
+      stageTitle: "Separate the clocks",
+      returnsWithdrawn: "Not shown. The old path used a date that is not an execution.",
+      signalNotValue: "A social or search observation is not earnings, cash flow, or value.",
       stillLong: "A still-long marker, not an exit.",
       eraNote: "Era only, not an exact entry day.",
       monthNote: "Month precision: the mid-month day is a placeholder, not a verified trade date.",
@@ -251,16 +265,36 @@
       leadEl.className = "lead-card" + (ld.ok ? "" : " unavailable");
       const num = leadEl.querySelector(".num");
       const body = leadEl.querySelector(".lead-body");
-      if (ld.ok) {
+      const text = lang() === "zh" ? ld.zh : ld.en;
+      if (ld.ok && ld.days != null) {
         num.innerHTML = ld.days + `<small>${t("daysUnit")}${ld.from_precision === "month" ? " · " + t("fromPlaceholder") : ""}</small>`;
-        const caveats = (ld.caveats || []).map((x) => `<p class="caveat">${escapeHtml(x)}</p>`).join("");
-        body.innerHTML = `<p>${escapeHtml(lang() === "zh" ? ld.zh : ld.en)}</p>${lang() === "en" ? caveats : ""}`;
-        if (lang() === "zh" && ld.caveats && ld.caveats.length && !ld.zh.includes("月精度")) {
-          body.innerHTML += caveats;
-        }
       } else {
         num.innerHTML = t("leadUnavailable");
-        body.innerHTML = `<p>${escapeHtml(lang() === "zh" ? ld.zh : ld.en || ld.reason || "")}</p>`;
+      }
+      body.innerHTML = `<p>${escapeHtml(text || ld.reason || "")}</p>`;
+    }
+    const stages = document.getElementById("stage-ledger");
+    if (stages) {
+      const rows = c.stages || [];
+      if (!rows.length) {
+        stages.innerHTML = "";
+      } else {
+        const cap = t("stageTitle");
+        const clock = {
+          social_observation: { zh: "社会观察", en: "Social observation" },
+          verified_signal_timestamp: { zh: "已核实的信号时间", en: "Verified signal time" },
+          documented_entry: { zh: "有记录的进场", en: "Documented entry" },
+          first_street_response: { zh: "第一次卖方反应", en: "First Street response" },
+          earnings_confirmation: { zh: "财报确认", en: "Earnings confirmation" },
+          investment_outcome: { zh: "投资结果", en: "Investment outcome" },
+        };
+        const body = rows
+          .map((s) => {
+            const name = (clock[s.id] && clock[s.id][lang()]) || s.id;
+            return `<tr><th scope="row">${escapeHtml(name)}</th><td>${escapeHtml(lang() === "zh" ? s.status_zh : s.status_en)}</td><td>${escapeHtml(lang() === "zh" ? s.zh : s.en)}</td></tr>`;
+          })
+          .join("");
+        stages.innerHTML = `<h3>${escapeHtml(cap)}</h3><p class="small">${escapeHtml(t("signalNotValue"))}</p><div class="table-wrap"><table><thead><tr><th>${lang() === "zh" ? "时钟" : "Clock"}</th><th>${lang() === "zh" ? "状态" : "Status"}</th><th>${lang() === "zh" ? "依据" : "What is actually known"}</th></tr></thead><tbody>${body}</tbody></table></div>`;
       }
     }
 
@@ -268,8 +302,9 @@
     if (ret) {
       const es = c.event_study || {};
       const keys = Object.keys(es);
-      if (!keys.length) {
-        ret.innerHTML = `<p class="small">${t("noRet")}</p>`;
+      const firstPeek = keys.length ? es[keys[0]] : null;
+      if (!keys.length || (firstPeek && firstPeek.display_returns === false)) {
+        ret.innerHTML = `<p class="small">${t("returnsWithdrawn")}</p>`;
       } else {
         const first = es[keys[0]];
         const r = first.returns || {};
@@ -310,7 +345,7 @@
       (c.price_notes || []).forEach((n) => {
         lis.push(`<li>${escapeHtml(lang() === "zh" ? n.zh : n.en)}</li>`);
       });
-      if (c.wikipedia && c.wikipedia.interpretive_note) {
+      if (lang() === "en" && c.wikipedia && c.wikipedia.interpretive_note) {
         lis.push(`<li>${escapeHtml(c.wikipedia.interpretive_note)}</li>`);
       }
       if (c.wikipedia_jeffree_star) {
@@ -399,7 +434,10 @@
         lineStyle: { color: color, type: "solid", width: 1.5 },
       });
     }
-    if (c.entry) add(c.entry.date, t("entry"), "#6ee7a8", c.entry.precision);
+    if (c.entry) {
+      const name = c.entry.precision === "mention" ? t("mentionMark") : t("entry");
+      add(c.entry.date, name, "#6ee7a8", c.entry.precision);
+    }
     if (c.entry2) add(c.entry2.date, t("entry2"), "#86efac", c.entry2.precision);
     if (c.exit_partial) add(c.exit_partial.date, t("exitPartial"), "#f0b429", c.exit_partial.precision);
     if (c.exit) {
@@ -411,7 +449,8 @@
 
   function leadArea(c) {
     const ld = c.lead || {};
-    if (!ld.ok || !ld.from || !ld.to) return null;
+    if (!ld.ok || !ld.from || !ld.to || ld.days == null) return null;
+    if (ld.from_precision === "month" || ld.from_precision === "era") return null;
     const label =
       lang() === "zh"
         ? `时差 ${ld.days} 日${ld.from_precision === "month" ? "（月精度占位）" : ""}\n${ld.from} → ${ld.to}${ld.kind === "earnings_beat" ? "（首次财报超预期）" : "（首次卖方上调）"}`
@@ -503,6 +542,7 @@
       series.push({
         name: t("price"),
         type: "line",
+        xAxisIndex: 0,
         yAxisIndex: 0,
         showSymbol: false,
         sampling: "lttb",
@@ -520,6 +560,7 @@
       series.push({
         name: t("trends") + (c.trends.keyword ? ` · ${c.trends.keyword}` : ""),
         type: "line",
+        xAxisIndex: 1,
         yAxisIndex: 1,
         showSymbol: false,
         lineStyle: { width: 1.8, color: "#5ec8c5" },
@@ -533,6 +574,7 @@
       series.push({
         name: t("jeffree"),
         type: "line",
+        xAxisIndex: 2,
         yAxisIndex: 2,
         showSymbol: false,
         sampling: "lttb",
@@ -544,13 +586,11 @@
     }
     // Brand wiki: skip default display when dwarfed by Jeffree, but still offer it
     if (wiki.length) {
-      const maxW = Math.max.apply(null, wiki.map((p) => p.views));
-      const maxJ = jeffree.length ? Math.max.apply(null, jeffree.map((p) => p.views)) : 0;
-      const hidden = jeffree.length && maxJ > maxW * 20;
       series.push({
         name: t("wiki") + (c.wikipedia.article ? ` · ${c.wikipedia.article}` : ""),
         type: "line",
-        yAxisIndex: jeffree.length && !hidden ? 3 : 2,
+        xAxisIndex: 2,
+        yAxisIndex: 2,
         showSymbol: false,
         sampling: "lttb",
         lineStyle: { width: 1.3, color: "#a78bfa" },
@@ -565,6 +605,7 @@
       series.push({
         name,
         type: "scatter",
+        xAxisIndex: 0,
         yAxisIndex: 0,
         data,
         symbol,
@@ -587,39 +628,70 @@
     scatter(t("earningsMiss"), scat.miss, "star", "#f5b4b8", 13);
     scatter(t("earnings"), scat.earn, "star", "#94a3b8", 10);
 
-    const yAxis = [
-      {
-        type: "value",
-        name: t("price"),
-        nameTextStyle: { color: "#e4c88a", fontSize: 11 },
-        axisLabel: { color: textColor, fontSize: 10 },
-        axisLine,
-        splitLine,
-        scale: true,
-      },
-      {
-        type: "value",
-        name: t("trends"),
-        nameTextStyle: { color: "#5ec8c5", fontSize: 11 },
-        min: 0,
-        max: 100,
-        axisLabel: { color: textColor, fontSize: 10 },
+    const priceNames = new Set([
+      t("price"), t("upgrades"), t("downgrades"), t("ptRaise"), t("ptLower"),
+      t("otherStreet"), t("earningsBeat"), t("earningsMiss"), t("earnings"),
+    ]);
+    series.forEach((s) => {
+      if (priceNames.has(s.name)) s._panel = "price";
+      else if (String(s.name).indexOf(t("trends")) === 0) s._panel = "trends";
+      else s._panel = "views";
+    });
+    const order = ["price", "trends", "views"].filter((p) => series.some((s) => s._panel === p));
+    series.forEach((s) => {
+      const idx = order.indexOf(s._panel);
+      s.xAxisIndex = idx;
+      s.yAxisIndex = idx;
+      delete s._panel;
+    });
+    const n = Math.max(order.length, 1);
+    const titles = { price: t("axisPrice"), trends: t("axisTrends"), views: t("axisViews") };
+    const colors = { price: "#e4c88a", trends: "#5ec8c5", views: "#a78bfa" };
+    const titleH = 28;
+    const foot = 28;
+    const gap = 8;
+    const plot = Math.max(96, Math.floor((el.clientHeight - foot - n * titleH - gap * n) / n));
+    const grids = [];
+    const xAxes = [];
+    const yAxes = [];
+    const title = [];
+    order.forEach((key, i) => {
+      const titleTop = i * (plot + titleH + gap);
+      const top = titleTop + titleH;
+      grids.push({ left: 48, right: 12, top, height: plot });
+      title.push({
+        text: titles[key],
+        left: 52,
+        top: titleTop,
+        textStyle: { color: colors[key], fontSize: 12, fontWeight: 500, fontFamily: "Outfit, sans-serif" },
+      });
+      xAxes.push({
+        type: "time",
+        gridIndex: i,
+        axisLabel: { show: i === n - 1, color: textColor, fontSize: 10, hideOverlap: true },
         axisLine,
         splitLine: { show: false },
-      },
-      {
+      });
+      yAxes.push({
         type: "value",
-        name: t("wiki"),
-        nameTextStyle: { color: "#a78bfa", fontSize: 11 },
-        axisLabel: { color: textColor, fontSize: 10, formatter: compactNum },
+        gridIndex: i,
+        name: "",
+        min: key === "trends" ? 0 : undefined,
+        max: key === "trends" ? 100 : undefined,
+        scale: key !== "trends",
+        axisLabel: Object.assign(
+          { color: textColor, fontSize: 10, hideOverlap: true },
+          key === "views" ? { formatter: compactNum } : {}
+        ),
         axisLine,
-        splitLine: { show: false },
-        scale: true,
-        offset: 0,
-      },
-    ];
-    // If both jeffree and brand wiki, a 4th axis gets crowded on mobile — share axis 2
-    // (already assigned). Fine.
+        splitLine: key === "price" ? splitLine : { show: false },
+      });
+    });
+    if (!order.length) {
+      grids.push({ left: 62, right: 16, top: 40, height: 160 });
+      xAxes.push({ type: "time", gridIndex: 0 });
+      yAxes.push({ type: "value", gridIndex: 0 });
+    }
 
     const opt = {
       backgroundColor: "transparent",
@@ -631,28 +703,50 @@
         textStyle: { color: "#e8e6e0", fontSize: 12 },
         axisPointer: axisPtr,
       },
-      legend: {
-        type: "scroll",
-        top: 4,
-        textStyle: { color: textColor, fontSize: 11 },
-        pageIconColor: "#c9a66b",
-        pageTextStyle: { color: muted },
-      },
-      grid: { left: 56, right: 56, top: 72, bottom: 72 },
+      legend: { show: false },
+      title,
+      grid: grids,
       dataZoom: [
-        { type: "inside", filterMode: "none" },
-        { type: "slider", height: 18, bottom: 12, borderColor: "#2a2e38", fillerColor: "rgba(201,166,107,0.18)", textStyle: { color: muted }, handleStyle: { color: "#c9a66b" }, moveHandleStyle: { color: "#c9a66b" } },
+        { type: "inside", filterMode: "none", xAxisIndex: xAxes.map((_, i) => i) },
+        {
+          type: "slider",
+          xAxisIndex: xAxes.map((_, i) => i),
+          height: 16,
+          bottom: 6,
+          borderColor: "#2a2e38",
+          fillerColor: "rgba(201,166,107,0.18)",
+          textStyle: { color: muted, fontSize: 10 },
+          handleStyle: { color: "#c9a66b" },
+          moveHandleStyle: { color: "#c9a66b" },
+        },
       ],
-      xAxis: {
-        type: "time",
-        axisLabel: { color: textColor, fontSize: 10, hideOverlap: true },
-        axisLine,
-        splitLine: { show: false },
-      },
-      yAxis,
+      xAxis: xAxes,
+      yAxis: yAxes,
       series,
     };
     timeline.setOption(opt, { notMerge: true });
+    renderLegend(series);
+  }
+
+  function renderLegend(series) {
+    const box = document.getElementById("timeline-legend");
+    if (!box) return;
+    box.replaceChildren();
+    series.forEach((s) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      const color = (s.itemStyle && s.itemStyle.color) || "#c9a66b";
+      const swatch = document.createElement("i");
+      swatch.style.background = color;
+      btn.appendChild(swatch);
+      btn.appendChild(document.createTextNode(s.name));
+      btn.addEventListener("click", () => {
+        if (!timeline) return;
+        timeline.dispatchAction({ type: "legendToggleSelect", name: s.name });
+        btn.classList.toggle("is-off");
+      });
+      box.appendChild(btn);
+    });
   }
 
   function compactNum(n) {
@@ -685,7 +779,7 @@
       const ret = (first && first.returns) || {};
       // For shorts, use direction-of-side so a correct short shows as positive
       function pick(h) {
-        if (!first) return null;
+        if (!first || first.display_returns === false) return null;
         if (c.side === "short" && dir[h] != null) return dir[h];
         return (ret[h] && ret[h].ok ? ret[h].pct : null) ?? null;
       }

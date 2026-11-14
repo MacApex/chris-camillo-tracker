@@ -9,7 +9,7 @@
         "google_trends": {
           "status": "worked",
           "ok": true,
-          "method": "pytrends TrendReq interest_over_time, today 5-y, US \u2014 13 Nov 2026 snapshot",
+          "method": "pytrends TrendReq interest_over_time, today 5-y, US — 13 Nov 2026 snapshot",
           "source_url": "https://trends.google.com/trends/",
           "momentum_0_100": 43.1
         },
@@ -69,7 +69,7 @@
           "retrieved_at_utc": "2026-11-13T00:50:49Z",
           "z_last_vs_history": null,
           "best_rank": 1,
-          "headline": "#1 in Women's Shoes \u2014 Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+          "headline": "#1 in Women's Shoes — Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
           "n_listings": 3,
           "notes": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher.",
           "findings": [
@@ -107,7 +107,6 @@
         "n_fading": 2,
         "min_confirm": 2,
         "platforms_used": [
-          "google_trends",
           "wikipedia"
         ],
         "platforms_present_no_z": [
@@ -124,21 +123,21 @@
             "platform": "amazon_movers",
             "status": "worked",
             "reason": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher.",
-            "headline": "#1 in Women's Shoes \u2014 Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
+            "headline": "#1 in Women's Shoes — Crocs Unisex-Adult Classic Clog, Clogs for Women and Men",
             "viewCount": null,
             "videoCount": null,
             "best_rank": 1
+          },
+          {
+            "platform": "google_trends",
+            "status": "worked",
+            "reason": "momentum_0_100 is a 0–100 project index on normalized relative interest, not a count flow and not a statistical z. The old (index-50)/10 figure is withdrawn and is not a confirming score.",
+            "momentum_0_100": 43.1,
+            "withdrawn_false_z": -0.6899999999999998
           }
         ],
         "platforms_missing": [],
         "components": [
-          {
-            "platform": "google_trends",
-            "z": -0.6899999999999998,
-            "momentum_0_100": 43.1,
-            "weight": 0.75,
-            "status": "worked"
-          },
           {
             "platform": "wikipedia",
             "z": -1.6135535087083528,
@@ -147,9 +146,12 @@
             "status": "worked"
           }
         ],
-        "weighted_z": -1.136,
+        "weighted_z": -1.614,
         "composite_0_100": 38.64,
-        "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold."
+        "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold.",
+        "weighted_z_basis": "wikipedia_only_after_withdrawing_trends_index_inversion",
+        "fading_claim": "not_supported",
+        "fading_reason": "Last-day completeness was not archived with this sample, so a negative Wikipedia z is not a business-fading claim."
       }
     },
     "LULU": {
@@ -157,7 +159,7 @@
         "google_trends": {
           "status": "worked",
           "ok": true,
-          "method": "pytrends TrendReq interest_over_time, today 5-y, US \u2014 13 Nov 2026 snapshot",
+          "method": "pytrends TrendReq interest_over_time, today 5-y, US — 13 Nov 2026 snapshot",
           "source_url": "https://trends.google.com/trends/",
           "momentum_0_100": 35.56
         },
@@ -222,7 +224,6 @@
         "n_fading": 2,
         "min_confirm": 2,
         "platforms_used": [
-          "google_trends",
           "wikipedia"
         ],
         "platforms_present_no_z": [
@@ -243,17 +244,17 @@
             "viewCount": null,
             "videoCount": null,
             "best_rank": null
+          },
+          {
+            "platform": "google_trends",
+            "status": "worked",
+            "reason": "momentum_0_100 is a 0–100 project index on normalized relative interest, not a count flow and not a statistical z. The old (index-50)/10 figure is withdrawn and is not a confirming score.",
+            "momentum_0_100": 35.56,
+            "withdrawn_false_z": -1.4439999999999997
           }
         ],
         "platforms_missing": [],
         "components": [
-          {
-            "platform": "google_trends",
-            "z": -1.4439999999999997,
-            "momentum_0_100": 35.56,
-            "weight": 0.75,
-            "status": "worked"
-          },
           {
             "platform": "wikipedia",
             "z": -0.6633912808276916,
@@ -262,9 +263,12 @@
             "status": "worked"
           }
         ],
-        "weighted_z": -1.067,
+        "weighted_z": -0.663,
         "composite_0_100": 39.33,
-        "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold."
+        "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold.",
+        "weighted_z_basis": "wikipedia_only_after_withdrawing_trends_index_inversion",
+        "fading_claim": "not_supported",
+        "fading_reason": "Last-day completeness was not archived with this sample, so a negative Wikipedia z is not a business-fading claim."
       }
     },
     "ELF": {
@@ -272,7 +276,7 @@
         "google_trends": {
           "status": "worked",
           "ok": true,
-          "method": "pytrends TrendReq interest_over_time, today 5-y, US \u2014 13 Nov 2026 snapshot",
+          "method": "pytrends TrendReq interest_over_time, today 5-y, US — 13 Nov 2026 snapshot",
           "source_url": "https://trends.google.com/trends/",
           "momentum_0_100": 57.97
         },
@@ -332,7 +336,7 @@
           "retrieved_at_utc": "2026-11-13T00:50:49Z",
           "z_last_vs_history": null,
           "best_rank": 23,
-          "headline": "#23 in Beauty & Personal Care \u2014 e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde",
+          "headline": "#23 in Beauty & Personal Care — e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde",
           "n_listings": 2,
           "notes": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher.",
           "findings": [
@@ -358,11 +362,10 @@
       "corroboration": {
         "ok": true,
         "corroborated": false,
-        "n_confirming": 1,
+        "n_confirming": 0,
         "n_fading": 0,
         "min_confirm": 2,
         "platforms_used": [
-          "google_trends",
           "wikipedia"
         ],
         "platforms_present_no_z": [
@@ -379,21 +382,21 @@
             "platform": "amazon_movers",
             "status": "worked",
             "reason": "A Best Sellers rank is a position on one public list at one moment, not a z-score vs a baseline. Lululemon, Coach, and Elmer's were not in the top 50 of the category pages we fetched. Movers & Shakers returned no data-client-recs-list via Fetcher.",
-            "headline": "#23 in Beauty & Personal Care \u2014 e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde",
+            "headline": "#23 in Beauty & Personal Care — e.l.f. Instant Lift Brow Pencil, Dual-Sided, Blonde",
             "viewCount": null,
             "videoCount": null,
             "best_rank": 23
+          },
+          {
+            "platform": "google_trends",
+            "status": "worked",
+            "reason": "momentum_0_100 is a 0–100 project index on normalized relative interest, not a count flow and not a statistical z. The old (index-50)/10 figure is withdrawn and is not a confirming score.",
+            "momentum_0_100": 57.97,
+            "withdrawn_false_z": 0.7969999999999999
           }
         ],
         "platforms_missing": [],
         "components": [
-          {
-            "platform": "google_trends",
-            "z": 0.7969999999999999,
-            "momentum_0_100": 57.97,
-            "weight": 0.75,
-            "status": "worked"
-          },
           {
             "platform": "wikipedia",
             "z": -0.4615888959208264,
@@ -402,9 +405,12 @@
             "status": "worked"
           }
         ],
-        "weighted_z": 0.189,
+        "weighted_z": -0.462,
         "composite_0_100": 51.89,
-        "interpretation": "1 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold."
+        "interpretation": "1 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold.",
+        "weighted_z_basis": "wikipedia_only_after_withdrawing_trends_index_inversion",
+        "fading_claim": "not_supported",
+        "fading_reason": "Last-day completeness was not archived with this sample, so a negative Wikipedia z is not a business-fading claim."
       }
     },
     "TPR": {
@@ -412,7 +418,7 @@
         "google_trends": {
           "status": "worked",
           "ok": true,
-          "method": "pytrends TrendReq interest_over_time, today 5-y, US \u2014 13 Nov 2026 snapshot",
+          "method": "pytrends TrendReq interest_over_time, today 5-y, US — 13 Nov 2026 snapshot",
           "source_url": "https://trends.google.com/trends/",
           "momentum_0_100": 54.37
         },
@@ -476,7 +482,6 @@
         "n_fading": 1,
         "min_confirm": 2,
         "platforms_used": [
-          "google_trends",
           "wikipedia"
         ],
         "platforms_present_no_z": [
@@ -497,17 +502,17 @@
             "viewCount": null,
             "videoCount": null,
             "best_rank": null
+          },
+          {
+            "platform": "google_trends",
+            "status": "worked",
+            "reason": "momentum_0_100 is a 0–100 project index on normalized relative interest, not a count flow and not a statistical z. The old (index-50)/10 figure is withdrawn and is not a confirming score.",
+            "momentum_0_100": 54.37,
+            "withdrawn_false_z": 0.4369999999999997
           }
         ],
         "platforms_missing": [],
         "components": [
-          {
-            "platform": "google_trends",
-            "z": 0.4369999999999997,
-            "momentum_0_100": 54.37,
-            "weight": 0.75,
-            "status": "worked"
-          },
           {
             "platform": "wikipedia",
             "z": -0.964850405253602,
@@ -516,9 +521,12 @@
             "status": "worked"
           }
         ],
-        "weighted_z": -0.24,
+        "weighted_z": -0.965,
         "composite_0_100": 47.6,
-        "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold."
+        "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold.",
+        "weighted_z_basis": "wikipedia_only_after_withdrawing_trends_index_inversion",
+        "fading_claim": "not_supported",
+        "fading_reason": "Last-day completeness was not archived with this sample, so a negative Wikipedia z is not a business-fading claim."
       }
     },
     "NWL": {
@@ -526,7 +534,7 @@
         "google_trends": {
           "status": "worked",
           "ok": true,
-          "method": "pytrends TrendReq interest_over_time, today 5-y, US \u2014 13 Nov 2026 snapshot",
+          "method": "pytrends TrendReq interest_over_time, today 5-y, US — 13 Nov 2026 snapshot",
           "source_url": "https://trends.google.com/trends/",
           "momentum_0_100": 40.16
         },
@@ -590,7 +598,6 @@
         "n_fading": 2,
         "min_confirm": 2,
         "platforms_used": [
-          "google_trends",
           "wikipedia"
         ],
         "platforms_present_no_z": [
@@ -611,17 +618,17 @@
             "viewCount": null,
             "videoCount": null,
             "best_rank": null
+          },
+          {
+            "platform": "google_trends",
+            "status": "worked",
+            "reason": "momentum_0_100 is a 0–100 project index on normalized relative interest, not a count flow and not a statistical z. The old (index-50)/10 figure is withdrawn and is not a confirming score.",
+            "momentum_0_100": 40.16,
+            "withdrawn_false_z": -0.9840000000000003
           }
         ],
         "platforms_missing": [],
         "components": [
-          {
-            "platform": "google_trends",
-            "z": -0.9840000000000003,
-            "momentum_0_100": 40.16,
-            "weight": 0.75,
-            "status": "worked"
-          },
           {
             "platform": "wikipedia",
             "z": -0.7278717852741204,
@@ -630,9 +637,12 @@
             "status": "worked"
           }
         ],
-        "weighted_z": -0.86,
+        "weighted_z": -0.728,
         "composite_0_100": 41.4,
-        "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold."
+        "interpretation": "0 platform(s) show a rise vs their own baseline; below the 2-platform confirmation threshold.",
+        "weighted_z_basis": "wikipedia_only_after_withdrawing_trends_index_inversion",
+        "fading_claim": "not_supported",
+        "fading_reason": "Last-day completeness was not archived with this sample, so a negative Wikipedia z is not a business-fading claim."
       }
     }
   },
@@ -658,6 +668,12 @@
       "TPR": 0,
       "NWL": 0
     },
-    "interpretation": "None of the five sample tickers reach the two-platform rising-z threshold. Wikipedia last-day views are all below their own history (negative z). Google Trends momentum is above 50 only for ELF (57.97) and slightly for TPR (54.37); only ELF's Trends z exceeds +0.5, so ELF has n_confirming=1, still below the threshold. TikTok lifetime view totals and Amazon Best Sellers ranks are real and recorded, but a single snapshot is not a z-score and is listed under platforms_present_no_z. Nothing was imputed."
+    "interpretation": "No ticker has two real z-scores above +0.5. The previous line that ELF momentum 57.97 'clears +0.5' mixed a 0–100 index with a z threshold. (57.97-50)/10 = 0.797 is withdrawn; it is not the formula that produced 57.97. Wikipedia z figures remain descriptive. They are not a fading claim, because last-day completeness was not stored. TikTok totals and Amazon ranks stay outside the z. Two TikTok clients on the same payload are a retrieval check, not independent demand.",
+    "trends_false_z_withdrawn": true
+  },
+  "audit": {
+    "pass": "2026-11-14",
+    "elf_momentum_index": 57.97,
+    "withdrawn_false_z": 0.797
   }
 }

@@ -39,7 +39,7 @@ CATALOG: dict[str, dict[str, Any]] = {
             "command": "python -m camillo_tracker signals CROX --wiki Crocs",
         },
         "status": "worked",
-        "reliability": "Worked 5/5 sample keywords on 13 Nov 2026. Unofficial; often rate-limited. Camillo publicly treated AI-polluted Trends as a broken tool in 2025 (Lululemon exit).",
+        "reliability": "Worked 5/5 sample keywords on 13 Nov 2026. Unofficial; often rate-limited. A 2025 thread says Trends may be affected by automated queries; reliability unverified. That thread does not establish a Lululemon position or exit.",
         "cost": "free",
         "rate_limits": "pytrends 429s are common; back off and retry. No official quota.",
         "blockers": "Unofficial endpoint can change. A spike that contradicts clerks, card data, or other platforms is not a thesis.",
@@ -309,23 +309,29 @@ CATALOG: dict[str, dict[str, Any]] = {
             "command": "python -m camillo_tracker street CROX --out /tmp/street.json",
         },
         "status": "worked",
-        "reliability": "yfinance is free and delayed; it is not a Bloomberg terminal. Labels: already_priced / partially_priced / not_clearly_priced / insufficient_data.",
+        "reliability": "yfinance is free and delayed; it is not a Bloomberg terminal. Labels, for one stated thesis: explicitly_reflected / partly_reflected / not_evidenced_in_reviewed_sources / insufficient_evidence. Silence is not 'unaware' or 'unpriced'.",
         "cost": "free (yfinance). Paid estimate vendors (FactSet, Bloomberg) would upgrade revision quality — optional, not required.",
         "rate_limits": "Yahoo may throttle; cache a profile rather than polling.",
-        "blockers": "Thin coverage → insufficient_data. That is a stop, not a green light.",
+        "blockers": "Thin coverage → insufficient_evidence. That is not a green light and not proof of an information gap.",
         "metric_kind": "level",
         "metric_means": "Consensus ratings, implied upside, revision direction — a snapshot of what the Street already has in the model.",
         "normalize": "Use the rule-based verdict; do not average a “buy” share with a niche z-score into one magic number. The workflow asks a yes/no: is it clearly priced?",
     },
 }
 
-# Preferred end-to-end order (discover → memo). No daily cron.
+# Project research order. These gates are this archive's conventions.
+# They are not rules Camillo published, and they are not a validated model.
+# Street work is auxiliary: it checks one thesis. It does not discover the name.
 STEP_ORDER = [
-    ("discover", "发现", "Observe a real change versus your own baseline. Log it. Pull Trends (5-year), Wikipedia, and the relevant commerce / TikTok tags — as facts, with provenance."),
-    ("corroborate", "交叉验证", "Require two or three independent platforms showing a rise versus their own baseline. Lifetime TikTok totals and a single Amazon BSR sit in platforms_present_no_z: they do not count as a z. Missing platforms are listed, never imputed."),
-    ("materiality", "物质性", "Open the 10-K segment note. Can this change move earnings at this company’s size? If not, stop."),
-    ("street", "卖方定价", "Run the Street Consensus Profile. If already_priced, stand down. Only “niche rising and not clearly priced” survives."),
-    ("memo", "论点备忘", "Write the thesis and the exit (information parity, and “the tool is polluted”) before any action. The report is a prompt for human work, not a trade."),
+    ("discover", "社会观察", "Start from a real-world or social observation, not from a Street screen. Log what was seen, where, and by whom."),
+    ("evidence", "证据质量", "Separate self-report, journalist-viewed screenshot, and independent document. Record the timestamp class. A week label is not the moment the series became available."),
+    ("corroborate", "独立交叉", "Project heuristic only: two platforms with a real z versus their own baseline. A Trends momentum index, a lifetime TikTok total, one Amazon rank, and a second client on the same TikTok payload do not count. Missing stays missing."),
+    ("materiality", "收入桥", "Walk paying customers to units, net price, recognized revenue, incremental profit, offsets, tax and share count, then dated expectations. Unknowns stay unknown. No 1–2% cutoff."),
+    ("falsify", "证伪", "Write the measurable prediction, the deadline, and the contrary evidence that would make you drop the claim. A dirty source means reassess, not an automatic false business."),
+    ("horizon", "期限", "State the horizon before any action. A catalyst can be late. Timing alone is not causation."),
+    ("risk_exit", "风险与退出", "Information parity is only one exit idea he has described. It does not replace liquidity, solvency, valuation, gap risk, correlation, or a portfolio limit. A lower price alone is not a reason to add. Options can expire worthless. No leverage by default."),
+    ("street", "辅助卖方核对", "Ask whether THIS thesis is explicitly reflected, partly reflected, not evidenced in the rows reviewed, or insufficient. Do not screen the market by consensus. Do not read silence as ignorance."),
+    ("decision", "人工关口", "A person decides. The memo is not a buy, a sell, or a position size."),
 ]
 
 
@@ -381,29 +387,41 @@ def _gate_corroboration(corr: dict) -> dict:
 
 
 def _gate_street(profile: dict | None, niche_rising: bool | None) -> dict:
+    """Auxiliary thesis check. `passed` is not a buy and not the discovery screen."""
     if not profile:
         return {
             "gate": "street",
-            "passed": False,
-            "detail": "Street profile not run (offline or error). insufficient_data — a stop, not a green light.",
-            "verdict": "insufficient_data",
+            "role": "auxiliary_thesis_check",
+            "passed": None,
+            "detail": "Street profile not run. insufficient_evidence — not a green light and not proof of a gap.",
+            "verdict": "insufficient_evidence",
         }
     v = profile.get("verdict") or {}
-    label = v.get("label") or "insufficient_data"
-    # Survive only when niche is rising and not clearly priced
-    passed = bool(niche_rising) and label == "not_clearly_priced"
+    label = v.get("label") or "insufficient_evidence"
+    # None means "this check does not itself authorize work."
+    # False means the reviewed rows already reflect a bullish version of the thesis.
+    if label == "explicitly_reflected":
+        passed = False
+        detail = "Reviewed rows explicitly reflect a bullish version of this thesis. Not a trade instruction."
+    elif label == "not_evidenced_in_reviewed_sources":
+        passed = None
+        detail = "Not evidenced in the rows reviewed. Silence is not proof the Street is unaware."
+    else:
+        passed = None
+        detail = f"Auxiliary label {label}. niche_observation_rising={niche_rising}. Not a screen and not a buy."
     return {
         "gate": "street",
+        "role": "auxiliary_thesis_check",
         "passed": passed,
         "verdict": label,
         "confidence": v.get("confidence"),
         "reasons": v.get("reasons") or [],
-        "detail": (
-            "Niche rising and not clearly priced — candidate for human work."
-            if passed
-            else f"Verdict is {label}; niche_rising={niche_rising}. Stand down or keep watching."
-        ),
+        "detail": detail,
     }
+
+
+def _human_gate(name: str, detail: str) -> dict:
+    return {"gate": name, "passed": None, "detail": detail, "convention": "project_not_camillo_rule"}
 
 
 def compose_report(
@@ -429,20 +447,52 @@ def compose_report(
     g_corr = _gate_corroboration(corr)
     g_street = _gate_street(street, niche_rising if corr.get("ok") else None)
 
-    # Materiality is always a human gate — we do not scrape a 10-K into a fake share
-    g_mat = {
-        "gate": "materiality",
-        "passed": None,
-        "detail": "Human gate: open the 10-K segment note. This runner does not estimate a share of sales.",
-    }
+    g_mat = _human_gate(
+        "materiality",
+        "Human gate. Bridge: paying customers → units × net price → recognized revenue → "
+        "incremental gross profit → opex and other offsets → tax and share count → EPS or cash flow → "
+        "dated expectations → valuation and downside. Name the owner, channel, geography, sell-through "
+        "versus stocking, supply, promotions, and other divisions. Unknowns stay unknown. "
+        "No blanket 1–2% materiality cutoff.",
+    )
+    g_evidence = _human_gate(
+        "evidence",
+        "Separate social observation, verified signal timestamp, claimed trade, first public disclosure, "
+        "and retrieval date. Week-start labels are not availability. Full-window peaks are look-ahead.",
+    )
+    g_falsify = _human_gate(
+        "falsify",
+        "Write a measurable prediction, a deadline, and contrary evidence. "
+        "An unreliable source means uncertainty and a reassessment, not an automatic false business thesis.",
+    )
+    g_horizon = _human_gate(
+        "horizon",
+        "State the horizon. A late catalyst is not the same thing as a wrong observation.",
+    )
+    g_risk = _human_gate(
+        "risk_exit",
+        "Project convention, not a verified Camillo rule: information parity is only one exit criterion. "
+        "Also write liquidity, solvency, valuation, gap risk, correlated exposures, portfolio-loss limit, "
+        "and, if options are even discussed, expiry, implied volatility, and total premium loss. "
+        "A lower price alone never warrants adding. Separate accounts do not remove household risk. "
+        "1–3% is not a universal size. No leverage as an educational default.",
+    )
+    g_decision = _human_gate(
+        "decision",
+        "Human decision. This report never emits a buy, a sell, or a position.",
+    )
 
-    recommendation = "stand_down_or_watch"
-    if g_corr["passed"] and g_street["passed"]:
-        recommendation = "candidate_for_human_work"
-    elif g_corr["passed"] and (street is None):
-        recommendation = "corroborated_but_street_incomplete"
-    elif not g_corr["passed"]:
+    street_label = g_street.get("verdict")
+    if not g_corr["passed"]:
         recommendation = "not_corroborated"
+    elif street_label == "explicitly_reflected":
+        recommendation = "corroborated_but_explicitly_reflected"
+    elif street is None or street_label == "insufficient_evidence":
+        recommendation = "corroborated_but_street_incomplete"
+    elif street_label == "not_evidenced_in_reviewed_sources":
+        recommendation = "candidate_for_human_work"
+    else:
+        recommendation = "stand_down_or_watch"
 
     report = {
         "title": f"Research report · {brand} ({ticker})",
@@ -468,16 +518,27 @@ def compose_report(
             "ran": bool(street),
         } if street is not None or True else None,
         "gates": {
+            "evidence": g_evidence,
             "corroborate": g_corr,
             "materiality": g_mat,
+            "falsify": g_falsify,
+            "horizon": g_horizon,
+            "risk_exit": g_risk,
             "street": g_street,
+            "decision": g_decision,
         },
+        "signal_vs_value": (
+            "A short-term social or search observation is not durable earnings, cash flow, or value. "
+            "Those require the revenue bridge, a dated expectation, and an explicit horizon. "
+            "This memo does not supply them."
+        ),
         "recommendation": recommendation,
         "recommendation_zh": {
-            "candidate_for_human_work": "利基上升且尚未清楚定价：进入人工研究（写论点，不是下单）。",
-            "corroborated_but_street_incomplete": "平台交叉已确认上升，但卖方档案未跑完：先补定价检验，再决定是否进入备忘。",
-            "not_corroborated": "未达到两平台上升门槛（或只有存量快照、没有 z）：不进入交易准备。继续观察或停下。",
-            "stand_down_or_watch": "定价检验未通过，或数据不足：放下或继续观察。",
+            "candidate_for_human_work": "社会观察已过本项目的交叉启发式，且已审阅的卖方材料未见该论点：只进入人工研究。不是买卖。短期社交信号不是利润或现金流。",
+            "corroborated_but_explicitly_reflected": "社会观察有交叉，但已审阅材料已反映一个看多版本。信息差主张在这些材料里不成立。不是买卖。",
+            "corroborated_but_street_incomplete": "社会观察已过交叉启发式，但卖方核对未完成。证据不足不是未被定价。不是买卖。",
+            "not_corroborated": "未达到本项目的两平台 z 启发式（动量指数、终身播放、单一名次都不算）。不进入交易准备。",
+            "stand_down_or_watch": "继续观察。没有通过的人工关口，也没有买卖指令。",
         }.get(recommendation, recommendation),
         "optional_keys": OPTIONAL_KEYS,
         "policy": {
@@ -511,12 +572,19 @@ def render_markdown(report: dict) -> str:
         "",
         "## 工作流关口",
         "",
-        f"1. **交叉验证：** {'通过' if gates.get('corroborate', {}).get('passed') else '未通过'} — {gates.get('corroborate', {}).get('detail')}",
+        f"短期社交或搜索信号不是可持续的利润、现金流或价值。收入桥、已标明日期的预期和明确期限都还空着。",
+        "",
+        f"1. **证据质量：** 人工 — {gates.get('evidence', {}).get('detail')}",
+        f"2. **交叉验证（项目启发式，不是 Camillo 的规则，也不是已验证模型）：** {'通过' if gates.get('corroborate', {}).get('passed') else '未通过'} — {gates.get('corroborate', {}).get('detail')}",
         f"   - 确认平台数 n_confirming = {gates.get('corroborate', {}).get('n_confirming')}",
         f"   - 加权 z = {gates.get('corroborate', {}).get('weighted_z')}",
         f"   - 用于 z 的平台：{', '.join(gates.get('corroborate', {}).get('platforms_used') or []) or '无'}",
-        f"2. **物质性：** 人工关口。打开 10-K 分部说明。本命令不估计收入占比。",
-        f"3. **卖方定价：** {(gates.get('street') or {}).get('verdict')} — {(gates.get('street') or {}).get('detail')}",
+        f"3. **收入桥：** 人工 — {gates.get('materiality', {}).get('detail')}",
+        f"4. **证伪：** 人工 — {gates.get('falsify', {}).get('detail')}",
+        f"5. **期限：** 人工 — {gates.get('horizon', {}).get('detail')}",
+        f"6. **风险与退出：** 人工 — {gates.get('risk_exit', {}).get('detail')}",
+        f"7. **卖方核对（辅助，不是选股器）：** {(gates.get('street') or {}).get('verdict')} — {(gates.get('street') or {}).get('detail')}",
+        f"8. **决定：** 人工 — {gates.get('decision', {}).get('detail')}",
         "",
         "## 各平台（有来源，不填空）",
         "",
@@ -580,17 +648,21 @@ def render_markdown(report: dict) -> str:
         "",
         "## 下一步（人工）",
         "",
-        "- 物质性：分部规模，能否推动利润。",
-        "- 若关口通过：用 `research/templates/thesis.md` 写论点与退出条件，再决定是否行动。",
-        "- 本备忘不是下单指令。",
+        "- 把收入桥里未知的格子留空。",
+        "- 写出可检验的预测、截止日期和相反证据。",
+        "- 写出期限、流动性、偿债、估值、跳空、相关敞口和组合亏损上限。",
+        "- 本备忘不是下单指令。信息平价不能代替上述风险。",
         "",
         "## English brief",
         "",
         f"Recommendation: **{report['recommendation']}**. "
-        f"Corroborated={c.get('corroborated')}, n_confirming={c.get('n_confirming')}, "
-        f"weighted_z={c.get('weighted_z')}. "
-        f"Street verdict={(gates.get('street') or {}).get('verdict')}. "
-        "Lifetime totals and a single BSR are not z-scores. Nothing was imputed. Not financial advice.",
+        f"{report.get('signal_vs_value')} "
+        f"Corroborated={c.get('corroborated')} (project heuristic, not a Camillo rule), "
+        f"n_confirming={c.get('n_confirming')}, weighted_z={c.get('weighted_z')}. "
+        f"Street verdict={(gates.get('street') or {}).get('verdict')} (auxiliary to this thesis; silence is not unawareness). "
+        "A Trends momentum index, a lifetime total, and one Amazon rank are not z-scores. "
+        "Nothing was imputed. Human gates for the revenue bridge, falsification, horizon, and risk are unfilled. "
+        "Not financial advice.",
         "",
     ]
     return "\n".join(lines) + "\n"

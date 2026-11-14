@@ -75,8 +75,8 @@ An interactive ECharts module aligns, for each best-documented case, (a) niche i
 
 Lead times we can actually support, retrieved 13 Nov 2026 (Asia/Shanghai):
 
-- **ELF 2019:** about 19 calendar days from a March month-precision placeholder to Jefferies Hold→Buy on 3 Apr 2019 (31 days from the real “elf cosmetics” Trends peak of 3 Mar = 100). Street was lowering targets on 27 Feb.
-- **Dorel 2020:** 107 calendar days from the dated 24 Apr purchase to the first earnings beat on 9 Aug (surprise +340%). Yahoo ratings in the window are empty (incomplete, not a zero-day lead). BI screenshot $1.56 and yfinance ≈ $0.69 that day are both kept.
+- **ELF 2019:** no trading lead. The purchase day is unknown. 19 days was the gap from a withdrawn 15 Mar placeholder to 3 Apr. 31 days is the gap from a stored weekly Trends label (2019-03-03) to 3 Apr, not a first-signal time and not re-pulled this pass. Motley Fool confirms a Jefferies upgrade on 3 Apr 2019 with a $14 target. The original note was not obtained, and the article’s reasons are not the Jeffree Star recollection (Business Insider, 7 Dec 2020).
+- **Dorel 2020:** 108 calendar days from the 24 Apr purchase screenshots to the issuer release dated 10 Aug 2020 after the close. That interval is not a Street-rating lag. Yahoo’s 9 Aug stamp (107 days) is the vendor clock. Adjusted diluted EPS in the release is US$0.48; reported diluted EPS is US$0.34. Yahoo’s +340% surprise is not in the release and is not a stock return. The adjusted close near $0.69 is not comparable to the nominal $1.56 until factor, currency, identity, and quote quality are reconciled. A later US$12 special dividend is a corporate event to examine, not a demonstrated explanation.
 
 The other seven cases have lead time **unavailable**, with the reason on the page. Custom Trends windows **did** return real 2016–2020 series (Elmer’s slime peaked at 100 in the week of 28 May 2017). Wikipedia for ELF uses `E.l.f._Cosmetics` (the title `E.l.f.` was a 404). Chart data: [`docs/data/cases-charts.json`](docs/data/cases-charts.json). Raw: [`data/cases/`](data/cases/). Tests: `toolkit/tests/test_cases_data.py`.
 

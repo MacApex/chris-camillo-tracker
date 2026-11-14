@@ -73,6 +73,21 @@
 })();
 
 (function () {
+  document.querySelectorAll(".event-study table").forEach((table) => {
+    const labels = [...table.querySelectorAll("thead th")].map((th) => th.textContent.trim());
+    table.querySelectorAll("tbody tr").forEach((tr) => {
+      [...tr.children].forEach((td, i) => {
+        if (td.querySelector(".cell-label")) return;
+        const label = document.createElement("span");
+        label.className = "cell-label";
+        label.textContent = labels[i] || "";
+        td.insertBefore(label, td.firstChild);
+      });
+    });
+  });
+})();
+
+(function () {
   const table = document.querySelector("[data-scanner]");
   if (!table) return;
 
@@ -235,6 +250,8 @@
     miss: "错过",
     theme: "主题",
     exit: "退出",
+    signal_note: "信号举例，不是持仓",
+    named_no_pnl: "仅点名，无盈亏",
     open_or_unspecified: "未了结 / 未说明",
     third_party: "第三方",
     unconfirmed: "未证实",
@@ -319,6 +336,7 @@
 
   const render = () => {
     const T = ui();
+    const lang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "zh";
     fillFilters();
     const role = roleFilter ? roleFilter.value : "all";
     const ver = verFilter ? verFilter.value : "all";
@@ -327,7 +345,7 @@
       if (role !== "all" && t.role !== role) return false;
       if (ver !== "all" && t.verification !== ver) return false;
       if (query) {
-        const blob = [t.id, t.name, t.ticker, t.thesis, t.source, t.outcome].join(" ").toLowerCase();
+        const blob = [t.id, t.name, t.ticker, t.thesis, t.thesis_zh, t.source, t.outcome, t.outcome_zh].join(" ").toLowerCase();
         if (!blob.includes(query)) return false;
       }
       return true;
@@ -338,10 +356,10 @@
         (t) => `<tr>
             <td>${t.date || "—"}<br><span class="small">${T.prec(t.date_precision)}</span></td>
             <td>${t.ticker || "—"}</td>
-            <td><strong>${t.name || ""}</strong><br><span class="small">${(t.thesis || "").slice(0, 180)}${(t.thesis || "").length > 180 ? "…" : ""}</span></td>
-            <td>${t.instrument || "—"}</td>
+            <td><strong>${t.name || ""}</strong><br><span class="small">${(lang === "zh" ? t.thesis_zh || "（中文译文缺失）" : t.thesis || "").slice(0, 220)}</span></td>
+            <td>${lang === "zh" ? t.instrument_zh || "—" : t.instrument || "—"}</td>
             <td>${badge(t.role, T.role(t.role))}${badge(t.verification, T.ver(t.verification))}</td>
-            <td class="small">${(t.outcome || "").slice(0, 220)}${(t.outcome || "").length > 220 ? "…" : ""}</td>
+            <td class="small">${(lang === "zh" ? t.outcome_zh || "（中文译文缺失）" : t.outcome || "").slice(0, 260)}</span></td>
             <td class="small">${t.source || ""}</td>
           </tr>`
       )

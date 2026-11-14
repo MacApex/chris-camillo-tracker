@@ -1,24 +1,20 @@
 {
   "id": "lululemon-2025-exit",
   "ticker": "LULU",
-  "brand": "Lululemon 2025 exit",
+  "brand": "Lululemon as a Trends example",
   "window": [
     "2024-07-01",
     "2026-11-12"
   ],
   "entry": null,
-  "exit": {
-    "date": "2025-08-15",
-    "precision": "month",
-    "label": "self-reported exit after concluding AI had corrupted Trends"
-  },
+  "exit": null,
   "wiki": "Lululemon",
   "trends_kw": [
     "Lululemon"
   ],
-  "side": "exit",
-  "role": "exit",
-  "note": "This is a tool-failure / change-of-mind case, not a claim that he was ahead of the Street.",
+  "side": "context",
+  "role": "signal",
+  "note": "Signal-reliability example only. The thread does not establish a Lululemon position or exit. AI contamination is a hypothesis.",
   "prices": {
     "ok": true,
     "ticker": "LULU",

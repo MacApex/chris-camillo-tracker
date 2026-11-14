@@ -37,6 +37,7 @@
         <a href="street-view.html" aria-current="page"><span class="lang-zh">街景</span><span class="lang-en">Street view</span></a>
         <a href="track-record.html"><span class="lang-zh">业绩</span><span class="lang-en">Track record</span></a>
         <a href="playbook.html"><span class="lang-zh">手册</span><span class="lang-en">Playbook</span></a>
+        <a href="memo.html"><span class="lang-zh">备忘</span><span class="lang-en">Memo</span></a>
         <a href="divergence.html"><span class="lang-zh">信息差</span><span class="lang-en">Divergence</span></a>
         <a href="resources.html"><span class="lang-zh">工具</span><span class="lang-en">Resources</span></a>
         <a href="sources.html"><span class="lang-zh">来源</span><span class="lang-en">Sources</span></a>
@@ -56,12 +57,12 @@
     <h1 class="lang-en">Has the Street already priced this?</h1>
 <div class="pair">
       <div class="lang-zh">
-        <p>这套框架用来<strong>支持</strong> Camillo 的定价检验，而不是替代观察本身。流程是：利基信号 → 候选代码 → 卖方共识档案（Street Consensus Profile）→ 定价结论。只有「利基上升且尚未清楚定价」才能进入人工研究；已经定价或数据不足就停下来。</p>
-        <p>档案的七个构件：共识评级分布、目标价离散与隐含上行、盈利预测修正、评级变动新近度、新闻 / 研报语气、覆盖人数、盈利意外历史。模块在 <code>camillo_tracker.street_view</code>，结论只能是 already_priced / partially_priced / not_clearly_priced / insufficient_data。</p>
+        <p>顺序是：社会观察 → 这是不是一门生意 → 收入与现金流的经济桥 → 已标明日期的预期。卖方材料只是对<strong>这条已经写下来的论点</strong>的辅助评估。它不是进入研究的门，也不是「尚未清楚定价才继续」的筛选器。</p>
+        <p>卖方材料只核对一条已经写出的论点，不是选股器。标签是：已在所审材料中明确反映、部分反映、所审材料未见、证据不足。沉默不是「没看见」，也不是「未定价」。分数是项目启发式，不是已验证模型。</p>
       </div>
       <div class="lang-en">
-        <p>This framework is built to <strong>support</strong> Camillo’s “is it priced in?” test, not to replace observation. The workflow is: niche signal → candidate ticker → Street Consensus Profile → priced-in verdict. Only “niche rising and not clearly priced” survives to human work; already priced, or insufficient data, is a stand-down.</p>
-        <p>Seven components: consensus rating distribution, price-target dispersion and implied upside, estimate revisions, rating-change recency, news/note sentiment, coverage count, earnings-surprise history. Implemented in <code>camillo_tracker.street_view</code>. The only allowed labels are already_priced, partially_priced, not_clearly_priced, and insufficient_data.</p>
+        <p>The order is observation, then whether it is a business, then the economics of revenue and cash flow, then dated expectations. Street material is an auxiliary reading of <strong>the thesis already written</strong>. It is not the gate into the research, and “not clearly priced” is not the condition for continuing.</p>
+        <p>Street material checks one written thesis. It is not a stock screen. The labels are explicitly reflected, partly reflected, not evidenced in the reviewed sources, and insufficient evidence. Silence is not “unaware” and not “unpriced.” The score is a project heuristic, not a validated model.</p>
       </div>
     </div>
 
@@ -69,69 +70,47 @@
     <h2 class="lang-en">Event study</h2>
     <div class="pair">
       <div class="lang-zh">
-        <p>我们对 10 个有日期、有代码的记录，用 yfinance 复权收盘价计算 21 / 63 / 126 个交易日的前瞻收益。这是<strong>市场路径</strong>，不是 Camillo 的个人盈亏。样本小，且偏向他后来谈过的故事；若干日期只有月份精度；GME / AMC 的占位已经落在挤兑中段；TPR 用的是 BI 文章日期，不是入场日；新冠仓位是期权，标的收益不是期权盈亏；Target × Missoni 是隔夜期权。我们<strong>拒绝</strong>给历史事件贴上「高利基 / 低卖方」象限标签：免费的 Google Trends 从 2026 年 11 月回看只有约五年，到不了 2019–2020，我们不会编造。</p>
+        <p>月精度占位、挤兑中段占位，以及没有成交日的回忆，不再显示前瞻收益、评级窗口或维基前后均值。那些数字依赖一个不是成交的日期，已经作废。下面表里保留数字的，只有有独立日期、并且标明不是个人盈亏的路径：Dorel 的复权收盘（不能与 1.56 美元比较）、Target 全国上市日的股票路径（不是期权成交）、以及 TPR 发表日的股票路径（不是建仓）。</p>
       </div>
       <div class="lang-en">
-        <p>For 10 dated, tickered events we computed 21 / 63 / 126-trading-day forward returns on yfinance auto-adjusted closes. These are <strong>market paths</strong>, not Camillo’s personal P&amp;L. The sample is small and biased toward stories he later discussed; several dates are month-precision; the GME / AMC placeholders sit mid-squeeze; TPR uses the BI article date, not an entry; the COVID positions were puts, so equity returns are not put P&amp;L; Target × Missoni was an overnight options trade. We <strong>refuse</strong> to assign historical high-niche / low-Street quadrants: free Google Trends from November 2026 only reaches about five years, and we will not invent the rest.</p>
+        <p>Month-precision placeholders and mid-squeeze placeholders no longer show forward returns, rating windows, or Wikipedia before/after means. Those figures depended on a date that is not a fill, so they are withdrawn. The only numbers left in the table are paths with an independent date, each labeled as not personal P&amp;L: Dorel’s adjusted closes (not comparable to $1.56), the equity path from Target’s nationwide launch (not an option fill), and the equity path from the TPR publication date (not an entry).</p>
       </div>
     </div>
 
-    <figure class="chart-fig lang-zh">
-      <img src="assets/charts/event-forward-returns-zh.png" alt="有记录日期起 1、3、6 个月的市场前瞻回报" width="1250" height="580">
-      <figcaption>自有记录日期起的复权收盘前瞻回报。空头已标明。不是个人损益。取数于 2026 年 11 月 13 日（Asia/Shanghai），经 yfinance。</figcaption>
-    </figure>
-    <figure class="chart-fig lang-en">
-      <img src="assets/charts/event-forward-returns-en.png" alt="Forward 1, 3 and 6 month market returns from documented dates" width="1250" height="580">
-      <figcaption>Forward close-to-close returns from documented dates. Shorts are marked. Not personal P&amp;L. Retrieved 13 Nov 2026, Asia/Shanghai, via yfinance.</figcaption>
-    </figure>
-    <figure class="chart-fig lang-zh">
-      <img src="assets/charts/event-side-signed-zh.png" alt="按所标方向签署后的同样回报" width="1250" height="540">
-      <figcaption>同一路径，按所标方向签署（空头 = 标的涨跌取反）。新冠数字仍是股票或指数路径，不是期权损益。</figcaption>
-    </figure>
-    <figure class="chart-fig lang-en">
-      <img src="assets/charts/event-side-signed-en.png" alt="Same returns signed in the direction of the stated side" width="1250" height="540">
-      <figcaption>Same paths, signed with the stated side (short = flipped underlying). COVID figures remain equity-index moves, not option P&amp;L.</figcaption>
-    </figure>
-    <figure class="chart-fig lang-zh">
-      <img src="assets/charts/wiki-attention-zh.png" alt="有记录日期前后的维基百科浏览量，对数刻度" width="1000" height="520">
-      <figcaption>英文维基用户浏览：日前、当日、日后 14 日均值（对数刻度）。官方 Wikimedia REST API。GME 与 AMC 的关注在 2021 年 1 月 25 日之后爆发——这是挤兑的滞后公开关注痕迹，不是 Camillo 的原始信号。</figcaption>
-    </figure>
-    <figure class="chart-fig lang-en">
-      <img src="assets/charts/wiki-attention-en.png" alt="Wikipedia pageviews around documented dates, log scale" width="1000" height="520">
-      <figcaption>English Wikipedia user pageviews, 14-day means before and after, plus the date itself (log scale). Official Wikimedia REST API. GME and AMC attention exploded after 25 Jan 2021 — a lagging public-attention trace of the squeeze, not Camillo’s original signal.</figcaption>
-    </figure>
+    <p class="lang-zh">先前的前瞻收益图和维基注意力图包含月精度占位锚点。那些图已从本页撤下，不与仍有效的日期并排展示。</p>
+    <p class="lang-en">The previous forward-return and Wikipedia-attention charts included month-precision placeholder anchors. Those charts are removed from this page so they are not shown beside dates that still stand.</p>
 
-    <div class="table-wrap lang-zh">
+    <div class="table-wrap lang-zh event-study">
       <table>
         <thead><tr><th>事件</th><th>代码</th><th>日期</th><th>精度</th><th>方向</th><th>1 个月</th><th>3 个月</th><th>6 个月</th><th>说明</th></tr></thead>
         <tbody>
-          <tr><td>elf-2019</td><td>ELF</td><td>2019-03-15</td><td>月</td><td>多</td><td>+25.0%</td><td>+32.5%</td><td>+70.3%</td><td>月中占位。自我陈述是六周内超过 50%——那是另一个窗口。Yahoo 上调：之前 0 次，之后 4 次。</td></tr>
-          <tr><td>rbi-2019-apr</td><td>QSR</td><td>2019-04-15</td><td>月</td><td>多</td><td>+0.5%</td><td>+9.2%</td><td>+7.1%</td><td>记录在案的亏损论点；早期窗口还不是亏损。记者看过截图。</td></tr>
-          <tr><td>rbi-2019-aug</td><td>QSR</td><td>2019-08-15</td><td>月</td><td>多</td><td>−2.2%</td><td>−7.2%</td><td>−7.3%</td><td>第二次买入窗口。亏损延续到 2020 年。</td></tr>
-          <tr><td>covid-spy-2020</td><td>SPY</td><td>2020-02-15</td><td>月</td><td>空</td><td>−28.7%</td><td>−11.9%</td><td>+1.4%</td><td>标的路径。看跌期权，储蓄的 25–30%，自我陈述。指数在 6 个月时已收回。</td></tr>
-          <tr><td>covid-wynn-2020</td><td>WYNN</td><td>2020-02-15</td><td>月</td><td>空</td><td>−67.5%</td><td>−38.4%</td><td>−36.9%</td><td>标的路径，不是看跌期权损益。</td></tr>
-          <tr><td>dorel-2020</td><td>DIIBF</td><td>2020-04-24</td><td>日</td><td>多</td><td>+131.1%</td><td>+242.9%</td><td>+608.7%</td><td>日期最清楚的一笔。yfinance 起点约 0.69 美元，对 BI 截图 1.56 美元——场外报价差异，两个数字都保留。BI 中的 629% 是到 11 月 11.38 美元的路径。</td></tr>
-          <tr><td>tgt-missoni-2011</td><td>TGT</td><td>2011-09-07</td><td>约至日</td><td>多</td><td>+2.6%</td><td>+6.7%</td><td>+14.4%</td><td>他描述的是隔夜期权翻倍。股票路径是另一种工具。维基浏览从 2015 年起才有。</td></tr>
-          <tr><td>gme-2021</td><td>GME</td><td>2021-01-25</td><td>月</td><td>多</td><td>+19.4%</td><td>+120.0%</td><td>+139.5%</td><td>自我陈述约 70 美元买入，处于挤兑中段。价格已经复权。维基浏览：2,628 → 16,446 → 57,513（日前 14 日 / 当日 / 日后 14 日）。</td></tr>
-          <tr><td>amc-2021</td><td>AMC</td><td>2021-01-25</td><td>月</td><td>多</td><td>+105.7%</td><td>+160.2%</td><td>+811.5%</td><td>自我陈述 3 美元 → 13–15 美元。价格已经复权，不应与那些数字直接比较。</td></tr>
-          <tr><td>tpr-2021-mention</td><td>TPR</td><td>2021-08-15</td><td>提及</td><td>多</td><td>−8.3%</td><td>+4.5%</td><td>−9.8%</td><td>BI 对 310 万美元仓位的提及——不是建仓日。</td></tr>
+          <tr><td>elf-2019</td><td>ELF</td><td>不可用</td><td>月份回忆</td><td>多</td><td>—</td><td>—</td><td>—</td><td>买入日未知。3 月 15 日占位路径已撤回。不是交易时差。</td></tr>
+          <tr><td>rbi-2019-apr</td><td>QSR</td><td>2019 年 4 月</td><td>月，日未知</td><td>多</td><td>—</td><td>—</td><td>—</td><td>15 日是占位，不是截图上的成交日。占位路径已撤回。</td></tr>
+          <tr><td>rbi-2019-aug</td><td>QSR</td><td>2019 年 8 月</td><td>月，日未知</td><td>多</td><td>—</td><td>—</td><td>—</td><td>15 日是占位。占位路径已撤回。</td></tr>
+          <tr><td>covid-spy-2020</td><td>SPY</td><td>不可用</td><td>回忆</td><td>空</td><td>—</td><td>—</td><td>—</td><td>没有已核实的成交日或完整退出日。占位路径已撤回。</td></tr>
+          <tr><td>covid-wynn-2020</td><td>WYNN</td><td>不可用</td><td>回忆</td><td>空</td><td>—</td><td>—</td><td>—</td><td>没有已核实的成交日。占位路径已撤回。</td></tr>
+          <tr><td>dorel-2020</td><td>DIIBF</td><td>2020-04-24</td><td>日</td><td>多</td><td>+131.1%</td><td>+242.9%</td><td>+608.7%</td><td>只是复权收盘路径。在调整因子、货币、证券身份和报价质量对齐之前，不能与名义 1.56 美元比较。不是每股收益。发行人发布是 8 月 10 日收盘后（108 日），不是评级滞后。</td></tr>
+          <tr><td>tgt-missoni-2011</td><td>TGT</td><td>2011-09-13</td><td>零售上市</td><td>多</td><td>+3.5%</td><td>+5.5%</td><td>+16.3%</td><td>Target 的全国上市日，不是已核实成交。股票路径于 2026-11-14 重算。所述隔夜期权翻倍未核实。9 月 7 日锚点已撤回。</td></tr>
+          <tr><td>gme-2021</td><td>GME</td><td>不可用</td><td>月占位</td><td>多</td><td>—</td><td>—</td><td>—</td><td>1 月 25 日是挤兑中段占位，不是成交日。收益和维基窗口已撤回。</td></tr>
+          <tr><td>amc-2021</td><td>AMC</td><td>不可用</td><td>月占位</td><td>多</td><td>—</td><td>—</td><td>—</td><td>同一占位。收益和维基窗口已撤回。</td></tr>
+          <tr><td>tpr-2021-mention</td><td>TPR</td><td>2021-08-18</td><td>发表日</td><td>多</td><td>−2.0%</td><td>+10.6%</td><td>−0.0%</td><td>发表日，不是交易。8 月 15 日是文章里 Playa 的年初至今截止，已撤回。路径于 2026-11-14 重算。</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="table-wrap lang-en">
+    <div class="table-wrap lang-en event-study">
       <table>
         <thead><tr><th>Event</th><th>Ticker</th><th>Date</th><th>Precision</th><th>Side</th><th>1m</th><th>3m</th><th>6m</th><th>Notes</th></tr></thead>
         <tbody>
-          <tr><td>elf-2019</td><td>ELF</td><td>2019-03-15</td><td>month</td><td>long</td><td>+25.0%</td><td>+32.5%</td><td>+70.3%</td><td>Mid-month placeholder. Self-report was &gt;50% in six weeks — a different window. 0 Yahoo upgrades before, 4 after.</td></tr>
-          <tr><td>rbi-2019-apr</td><td>QSR</td><td>2019-04-15</td><td>month</td><td>long</td><td>+0.5%</td><td>+9.2%</td><td>+7.1%</td><td>Documented losing thesis; early window not yet the loss. Screenshots viewed.</td></tr>
-          <tr><td>rbi-2019-aug</td><td>QSR</td><td>2019-08-15</td><td>month</td><td>long</td><td>−2.2%</td><td>−7.2%</td><td>−7.3%</td><td>Second purchase window. Damage continues into 2020.</td></tr>
-          <tr><td>covid-spy-2020</td><td>SPY</td><td>2020-02-15</td><td>month</td><td>short</td><td>−28.7%</td><td>−11.9%</td><td>+1.4%</td><td>Underlying path. Puts, 25–30% of savings, self-reported. Index recovered by 6m.</td></tr>
-          <tr><td>covid-wynn-2020</td><td>WYNN</td><td>2020-02-15</td><td>month</td><td>short</td><td>−67.5%</td><td>−38.4%</td><td>−36.9%</td><td>Underlying path, not put P&amp;L.</td></tr>
-          <tr><td>dorel-2020</td><td>DIIBF</td><td>2020-04-24</td><td>day</td><td>long</td><td>+131.1%</td><td>+242.9%</td><td>+608.7%</td><td>Best-dated. yfinance start ≈ $0.69 vs BI screenshot $1.56 — OTC discrepancy, both kept. 629% in BI is the path to $11.38 in November.</td></tr>
-          <tr><td>tgt-missoni-2011</td><td>TGT</td><td>2011-09-07</td><td>day-approx</td><td>long</td><td>+2.6%</td><td>+6.7%</td><td>+14.4%</td><td>He described an overnight options double. The equity path is a different instrument. Wiki starts 2015.</td></tr>
-          <tr><td>gme-2021</td><td>GME</td><td>2021-01-25</td><td>month</td><td>long</td><td>+19.4%</td><td>+120.0%</td><td>+139.5%</td><td>Self-reported buy ~$70, mid-squeeze. Prices are split-adjusted. Wiki views: 2,628 → 16,446 → 57,513 (14d before / on date / 14d after).</td></tr>
-          <tr><td>amc-2021</td><td>AMC</td><td>2021-01-25</td><td>month</td><td>long</td><td>+105.7%</td><td>+160.2%</td><td>+811.5%</td><td>Self-reported $3 → $13–15. Prices are split-adjusted and should not be compared raw to those figures.</td></tr>
-          <tr><td>tpr-2021-mention</td><td>TPR</td><td>2021-08-15</td><td>mention</td><td>long</td><td>−8.3%</td><td>+4.5%</td><td>−9.8%</td><td>BI mention of a $3.1M position — not an entry date.</td></tr>
+          <tr><td>elf-2019</td><td>ELF</td><td>unavailable</td><td>month recollection</td><td>long</td><td>—</td><td>—</td><td>—</td><td>Purchase day unknown. The 15 Mar placeholder path is withdrawn. Not a trading lead.</td></tr>
+          <tr><td>rbi-2019-apr</td><td>QSR</td><td>April 2019</td><td>month, day unknown</td><td>long</td><td>—</td><td>—</td><td>—</td><td>The 15th is a placeholder, not the screenshot day. Placeholder path withdrawn.</td></tr>
+          <tr><td>rbi-2019-aug</td><td>QSR</td><td>August 2019</td><td>month, day unknown</td><td>long</td><td>—</td><td>—</td><td>—</td><td>The 15th is a placeholder. Placeholder path withdrawn.</td></tr>
+          <tr><td>covid-spy-2020</td><td>SPY</td><td>unavailable</td><td>recollection</td><td>short</td><td>—</td><td>—</td><td>—</td><td>No verified fill or complete-exit day. Placeholder path withdrawn.</td></tr>
+          <tr><td>covid-wynn-2020</td><td>WYNN</td><td>unavailable</td><td>recollection</td><td>short</td><td>—</td><td>—</td><td>—</td><td>No verified fill. Placeholder path withdrawn.</td></tr>
+          <tr><td>dorel-2020</td><td>DIIBF</td><td>2020-04-24</td><td>day</td><td>long</td><td>+131.1%</td><td>+242.9%</td><td>+608.7%</td><td>Adjusted-close path only. Not comparable to the nominal $1.56 screenshot until factor, currency, identity, and quote quality are reconciled. Not the EPS line. Issuer release is 10 Aug 2020 after the close (108 days), not a Street-rating lead.</td></tr>
+          <tr><td>tgt-missoni-2011</td><td>TGT</td><td>2011-09-13</td><td>retail launch</td><td>long</td><td>+3.5%</td><td>+5.5%</td><td>+16.3%</td><td>Target’s nationwide launch, not a verified fill. Equity path recomputed 14 Nov 2026. The claimed overnight options double is unverified. 7 Sep anchor withdrawn.</td></tr>
+          <tr><td>gme-2021</td><td>GME</td><td>unavailable</td><td>month placeholder</td><td>long</td><td>—</td><td>—</td><td>—</td><td>25 Jan is a mid-squeeze placeholder, not a fill. Returns and the Wikipedia window are withdrawn.</td></tr>
+          <tr><td>amc-2021</td><td>AMC</td><td>unavailable</td><td>month placeholder</td><td>long</td><td>—</td><td>—</td><td>—</td><td>Same placeholder. Returns and the Wikipedia window are withdrawn.</td></tr>
+          <tr><td>tpr-2021-mention</td><td>TPR</td><td>2021-08-18</td><td>publication</td><td>long</td><td>−2.0%</td><td>+10.6%</td><td>−0.0%</td><td>Publication date, not a trade. 15 Aug was the article’s Playa year-to-date cutoff and is withdrawn. Path recomputed 14 Nov 2026.</td></tr>
         </tbody>
       </table>
     </div>
@@ -291,14 +270,14 @@
     <h3 class="lang-en">Corroboration rerun</h3>
     <div class="pair">
       <div class="lang-zh">
-        <p>把新的 TikTok / 亚马逊适配器并入样本后，<strong>五个代码都没有达到「两个平台相对自身基线上升」的交叉确认门槛</strong>。维基百科最近一日浏览量全部低于自身历史（负 z）；Google Trends 动量只有 ELF（57.97）超过 +0.5 的确认线，因此 ELF 的确认数是 1，仍不够。TikTok 累计播放量和亚马逊名次是真实数字，但单次快照没有基线，列入 <code>platforms_present_no_z</code>，不编造 z，也不把缺失项填上。</p>
+        <p>并入 TikTok 与亚马逊适配器之后，<strong>五个代码都没有两个高于 +0.5 的真实 z</strong>。ELF 的 57.97 是归一化相对兴趣上的 0–100 项目指数，不是「超过 +0.5」。旧的换算 (57.97−50)/10 = 0.797 已撤回，那不是生成 57.97 的公式；用它混出来的加权 +0.189 一并撤回。维基 z 只作描述。最后一日是否完整并没有存档，所以不能当成「需求在消退」。TikTok 终身播放不是流量。一个亚马逊名次是序数位置，不是销量。两个 TikTok 客户端读的是同一载荷，只是取数核对，不是独立需求。</p>
       </div>
       <div class="lang-en">
-        <p>After folding the new TikTok and Amazon adapters into the sample, <strong>none of the five tickers meet the two-platform rising-z confirmation threshold</strong>. Wikipedia last-day views are all below their own history (negative z). Only ELF’s Google Trends momentum (57.97) clears the +0.5 confirmation line, so ELF has n_confirming = 1, still short. TikTok lifetime totals and Amazon ranks are real numbers, but a single snapshot has no baseline: they sit in <code>platforms_present_no_z</code>. No z is invented, and nothing is imputed.</p>
+        <p>After folding the TikTok and Amazon adapters into the sample, <strong>none of the five tickers has two real z-scores above +0.5</strong>. ELF’s Google Trends figure 57.97 is a 0–100 project index on normalized relative interest. It does not “clear +0.5.” The old inversion (57.97−50)/10 = 0.797 is withdrawn; that is not the formula that produced 57.97, and the blended weighted figure +0.189 that used it is withdrawn too. Wikipedia z values stay descriptive. Last-day completeness was not stored, so they are not a fading claim. A lifetime TikTok total is not a flow. One Amazon rank is an ordinal position, not sales. Two TikTok clients on the same payload are a retrieval check, not independent demand.</p>
       </div>
     </div>
-    <p class="small lang-zh">加权 z（仅 Trends + 维基）：CROX −1.136，LULU −1.067，ELF +0.189，TPR −0.240，NWL −0.860。完整文件：<a href="data/corroboration_sample.json">corroboration_sample.json</a>。适配器：<code>camillo_tracker.tiktok</code>、<code>camillo_tracker.amazon</code>、<code>camillo_tracker.signals</code>。</p>
-    <p class="small lang-en">Weighted z (Trends + Wikipedia only): CROX −1.136, LULU −1.067, ELF +0.189, TPR −0.240, NWL −0.860. Full file: <a href="data/corroboration_sample.json">corroboration_sample.json</a>. Adapters: <code>camillo_tracker.tiktok</code>, <code>camillo_tracker.amazon</code>, <code>camillo_tracker.signals</code>.</p>
+    <p class="small lang-zh">撤掉错误的 Trends 换算之后，只剩维基 z：CROX −1.614，LULU −0.663，ELF −0.462，TPR −0.965，NWL −0.728。这些不是「需求消退」的结论。完整文件：<a href="data/corroboration_sample.json">corroboration_sample.json</a>。</p>
+    <p class="small lang-en">Wikipedia-only z after the false Trends inversion was removed: CROX −1.614, LULU −0.663, ELF −0.462, TPR −0.965, NWL −0.728. These are not fading claims. Full file: <a href="data/corroboration_sample.json">corroboration_sample.json</a>.</p>
 
     <p class="small lang-zh">X 样本文件：<a href="data/x_counts_sample.json">x_counts_sample.json</a>。YouTube 元数据：<a href="data/youtube_ytsearch_crocs.json">youtube_ytsearch_crocs.json</a>。使用者的环境变量：<code>CCT_X_BEARER</code>、<code>CCT_USE_FINBERT=1</code>、<code>YOUTUBE_API_KEY</code>（可选官方路径），以及 <code>CCT_LIVE_TIKTOK=1</code> / <code>CCT_LIVE_AMAZON=1</code> 以重新拉取而非使用已核实的缓存。跨平台交叉确认需要两个上升的 z 分数；缺失的平台会被列出，绝不填空。</p>
     <p class="small lang-en">X sample file: <a href="data/x_counts_sample.json">x_counts_sample.json</a>. YouTube metadata: <a href="data/youtube_ytsearch_crocs.json">youtube_ytsearch_crocs.json</a>. Env vars for users: <code>CCT_X_BEARER</code>, <code>CCT_USE_FINBERT=1</code>, <code>YOUTUBE_API_KEY</code> (optional official path), <code>CCT_LIVE_TIKTOK=1</code> / <code>CCT_LIVE_AMAZON=1</code> to refetch instead of using the verified cache. Cross-platform corroboration requires two rising z-scores; missing platforms are listed, never imputed.</p>

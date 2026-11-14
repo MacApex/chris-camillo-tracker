@@ -64,7 +64,7 @@ def street_profile(symbol: str) -> dict:
         "method": "yfinance (Yahoo Finance free endpoints)",
         "source_url": f"https://finance.yahoo.com/quote/{symbol}",
         "components": {},
-        "verdict": {"label": "insufficient_data", "reasons": [], "confidence": "low"},
+        "verdict": {"label": "insufficient_evidence", "reasons": [], "confidence": "low"},
     }
     try:
         t = _safe(symbol)
@@ -263,10 +263,9 @@ def street_profile(symbol: str) -> dict:
 
     out["verdict"] = priced_in_verdict(out["components"])
     out["how_it_feeds_the_tree"] = (
-        "Camillo's decision tree asks, after materiality, whether the observed fact "
-        "is already in estimates and notes. A not_clearly_priced verdict with a rising "
-        "niche signal is the only combination that survives to a candidate trade; "
-        "already_priced or a late_or_crowded divergence flag is a reason to stand down."
+        "Street rows are an auxiliary check on one stated thesis, not a stock screen. "
+        "Labels say whether that thesis is reflected in the sources reviewed. "
+        "A missing row is insufficient_evidence, not proof the Street is unaware or that the name is unpriced."
     )
     return out
 
@@ -340,20 +339,18 @@ def priced_in_verdict(components: dict) -> dict:
             points -= 1
 
     if pieces == 0:
-        return {"label": "insufficient_data", "reasons": ["No Street component returned usable numbers."],
-                "confidence": "low", "priced_in_points": None, "n_components": 0}
+        return {"label": "insufficient_evidence", "reasons": ["No Street component returned usable numbers."],
+                "confidence": "low", "priced_in_points": None, "n_components": 0,
+                "scale": "Heuristic point total on the rows reviewed. Not a validated pricing model. Silence is not 'ignored'."}
 
     if points >= 4:
-        label = "already_priced"
+        label = "explicitly_reflected"
     elif points >= 2:
-        label = "partially_priced"
-    elif points <= -2:
-        label = "not_clearly_priced"
+        label = "partly_reflected"
+    elif abs(points) <= 1:
+        label = "partly_reflected"
     else:
-        label = "not_clearly_priced" if points < 2 else "partially_priced"
-        # mid-range: if we simply don't have a strong read
-        if abs(points) <= 1:
-            label = "partially_priced"
+        label = "not_evidenced_in_reviewed_sources"
 
     confidence = "high" if pieces >= 5 else ("medium" if pieces >= 3 else "low")
     return {
@@ -362,11 +359,12 @@ def priced_in_verdict(components: dict) -> dict:
         "confidence": confidence,
         "priced_in_points": points,
         "n_components": pieces,
+        "scale": "Project heuristic on reviewed Street rows. Not a Camillo rule and not a stock-selection model.",
         "reading": {
-            "already_priced": "Street ratings, revisions, or targets already look like they have absorbed a bullish fact. A Camillo-style information-gap trade is weaker here.",
-            "partially_priced": "Some Street channels have moved, others have not. The trend may be mid-migration; this is the murky zone.",
-            "not_clearly_priced": "Available Street metrics do not show a clear bullish absorption of a new fact. Combined with a rising niche signal, this is the only zone that survives to a candidate.",
-            "insufficient_data": "Not enough free data to say.",
+            "explicitly_reflected": "The reviewed ratings, revisions, or targets already look like they contain a bullish version of this fact. That is not a buy or a sell.",
+            "partly_reflected": "Some reviewed Street channels have moved and others have not. The thesis is not shown to be either fully in or fully absent.",
+            "not_evidenced_in_reviewed_sources": "The reviewed Street rows do not show this thesis. That is not proof the Street is unaware, and it is not proof the price is wrong.",
+            "insufficient_evidence": "Not enough reviewed rows to say whether this thesis is reflected.",
         }.get(label),
     }
 
@@ -375,15 +373,15 @@ def profile_and_scan_context(symbol: str, niche_rising: bool | None = None) -> d
     """Workflow: niche signal → ticker → Street profile → priced-in verdict."""
     profile = street_profile(symbol)
     verdict = profile.get("verdict") or {}
-    action = "stand_down_insufficient_data"
-    if verdict.get("label") == "already_priced" and niche_rising:
-        action = "stand_down_late_or_crowded"
-    elif verdict.get("label") == "not_clearly_priced" and niche_rising:
+    action = "street_check_inconclusive"
+    if verdict.get("label") == "explicitly_reflected" and niche_rising:
+        action = "thesis_already_reflected_in_reviewed_rows"
+    elif verdict.get("label") == "not_evidenced_in_reviewed_sources" and niche_rising:
         action = "candidate_for_human_work"
-    elif verdict.get("label") == "partially_priced" and niche_rising:
-        action = "watch_migration"
-    elif verdict.get("label") == "not_clearly_priced" and niche_rising is False:
-        action = "no_niche_confirmation"
+    elif verdict.get("label") == "partly_reflected" and niche_rising:
+        action = "watch_partial_reflection"
+    elif verdict.get("label") == "not_evidenced_in_reviewed_sources" and niche_rising is False:
+        action = "no_social_corroboration"
     profile["workflow_action"] = action
     profile["niche_rising"] = niche_rising
     return profile

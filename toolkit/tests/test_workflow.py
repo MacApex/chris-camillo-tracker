@@ -35,7 +35,10 @@ def test_catalog_is_complete():
 
 def test_step_order():
     ids = [s[0] for s in STEP_ORDER]
-    assert ids == ["discover", "corroborate", "materiality", "street", "memo"]
+    assert ids[0] == "discover"
+    assert "street" in ids and ids.index("street") > ids.index("discover")
+    assert "falsify" in ids and "horizon" in ids and "risk_exit" in ids
+    assert ids.index("decision") == len(ids) - 1
 
 
 def test_compose_does_not_invent_z_or_impute():
@@ -81,16 +84,19 @@ def test_offline_research_writes_report(tmp_path):
     assert report["platforms"]["tiktok"]["viewCount"] == 35500544935
     assert report["platforms"]["amazon_movers"]["best_rank"] == 1
     # Offline does not invent a Street green light
-    assert (report["gates"]["street"]["verdict"] == "insufficient_data") or report["street"]["ran"] is False
+    assert report["gates"]["street"]["verdict"] == "insufficient_evidence"
+    assert report["gates"]["materiality"]["passed"] is None
+    assert report["gates"]["risk_exit"]["passed"] is None
+    assert "not earnings" in report["signal_vs_value"].lower() or "not durable" in report["signal_vs_value"].lower()
     assert "daily" not in (report.get("policy") or {}) or report["policy"]["no_daily_routine"] is True
 
 
 def test_two_rising_platforms_can_pass_corroboration_gate():
     platforms = {
-        "google_trends": {"status": "worked", "momentum_0_100": 75},
+        "google_trends": {"status": "worked", "z_last_vs_history": 1.1},
         "wikipedia": {"status": "worked", "z_last_vs_history": 1.2},
     }
-    street = {"verdict": {"label": "not_clearly_priced", "confidence": "medium", "reasons": ["cold consensus"]}}
+    street = {"verdict": {"label": "not_evidenced_in_reviewed_sources", "confidence": "medium", "reasons": ["not in the rows reviewed"]}}
     r = compose_report("e.l.f.", "ELF", platforms=platforms, street=street, mode="test")
     assert r["gates"]["corroborate"]["passed"] is True
     assert r["recommendation"] == "candidate_for_human_work"

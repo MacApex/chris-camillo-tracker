@@ -56,19 +56,28 @@ def test_every_series_is_real_or_flagged_missing():
 def test_lead_only_when_honest():
     by = {c["id"]: c for c in _chart()["cases"]}
     elf = by["elf-2019"]["lead"]
-    assert elf["ok"] is True
-    assert elf["days"] == 19
-    assert elf["kind"] == "street_upgrade"
-    assert elf["to"] == "2019-04-03"
-    assert elf["to_event"]["firm"] == "Jefferies"
-    assert elf["from_precision"] == "month"
-    assert elf["also"]["from_trends_peak"]["days_to_same_event"] == 31
+    assert elf["ok"] is False
+    assert elf["days"] is None
+    measured = elf["measured_not_a_lead"]
+    assert measured["placeholder_15_mar_to_3_apr_calendar_days"] == 19
+    assert measured["placeholder_is_execution"] is False
+    assert measured["trends_week_label_to_3_apr_calendar_days"] == 31
+    assert measured["week_label_is_first_signal"] is False
+    assert measured["jefferies_note_obtained"] is False
+    assert by["elf-2019"]["entry"] is None
 
     dorel = by["dorel-2020"]["lead"]
-    assert dorel["ok"] is True
-    assert dorel["days"] == 107
-    assert dorel["kind"] == "earnings_beat"
-    assert dorel["to"] == "2020-08-09"
+    assert dorel["ok"] is False
+    assert dorel["days"] is None
+    m = dorel["measured_not_a_lead"]
+    assert m["calendar_days_entry_to_issuer_release"] == 108
+    assert m["calendar_days_entry_to_yahoo_row"] == 107
+    assert m["yahoo_row_is_not_the_lead"] is True
+    assert m["yahoo_surprise_is_stock_return"] is False
+    assert m["adjusted_diluted_eps"] == 0.48
+    assert m["reported_diluted_eps"] == 0.34
+    assert m["prices_directly_comparable"] is False
+    assert m["special_dividend_explains_gap"] is False
     # empty Yahoo ratings must not become a 0-day lead
     assert by["dorel-2020"]["street"]["n"] == 0
 
@@ -91,7 +100,8 @@ def test_no_one_day_rbi_lead_and_no_three_dollar_wynn_lead():
     by = {c["id"]: c for c in _chart()["cases"]}
     assert "1" not in str(by["rbi-2019"]["lead"].get("days"))
     reason = (by["rbi-2019"]["lead"].get("reason") or "") + (by["rbi-2019"]["lead"].get("en") or "")
-    assert "counterexample" in reason.lower() or "constructive" in reason.lower()
+    assert "not a tim hortons turnaround" in reason.lower()
+    assert by["rbi-2019"]["lead"]["ok"] is False
     wynn = by["covid-wynn-2020"]["lead"]
     assert wynn["ok"] is False
     assert "5-day" not in (wynn.get("reason") or "") or "do not report a 5-day" in (wynn.get("reason") or "")
@@ -130,19 +140,29 @@ def test_covid_wiki_starts_mid_march_not_zero_filled():
 
 def test_event_study_returns_are_the_published_ones():
     by = {c["id"]: c for c in _chart()["cases"]}
-    elf = by["elf-2019"]["event_study"]["elf-2019"]["returns"]
-    assert elf["1m"]["pct"] == 25.0
-    assert elf["6m"]["pct"] == 70.35
+    elf = by["elf-2019"]["event_study"]["elf-2019"]
+    assert elf["display_returns"] is False
+    assert elf["returns"]["1m"]["ok"] is False
+    assert elf["returns"]["1m"]["pct"] is None
+    assert elf["returns"]["6m"]["pct"] is None
     dorel = by["dorel-2020"]["event_study"]["dorel-2020"]["returns"]
     assert dorel["1m"]["pct"] == 131.06
     assert dorel["6m"]["pct"] == 608.7
+    assert "not comparable" in by["dorel-2020"]["event_study"]["dorel-2020"]["note"].lower() or "not the bi" in by["dorel-2020"]["event_study"]["dorel-2020"]["note"].lower()
+    lulu = by["lululemon-2025-exit"]
+    assert lulu["role"] == "signal"
+    assert lulu["exit"] is None
+    tap = by["tapestry-2021"]
+    assert tap["entry"]["date"] == "2021-08-18"
+    assert tap["event_study"]["tpr-2021-mention"]["returns"]["1m"]["pct"] == -1.95
 
 
 def test_chart_json_policy_forbids_interpolation():
     pol = _chart()["policy"].lower()
-    assert "never interpolated" in pol or "never interpolate" in pol
-    assert "incomplete" in pol and "not monotonic" not in pol or "incomplete" in pol
-    assert "month-precision" in pol or "month-precision placeholders" in pol
+    assert "never interpolated" in pol
+    assert "insufficient evidence" in pol
+    assert "not trading leads" in pol
+    assert "look-ahead" in pol
 
 
 def test_raw_case_files_exist():
