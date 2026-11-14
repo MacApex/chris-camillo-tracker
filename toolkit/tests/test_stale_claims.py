@@ -103,12 +103,50 @@ def test_chart_export_matches_withdrawal():
         assert rbi["event_study"][key]["returns"]["1m"]["pct"] is None
 
 
+def test_methodology_rules_do_not_skip_valuation_or_stand_down():
+    t = _text("methodology.html")
+    assert "not a valuation model" not in t
+    assert "而不是做一份估值模型" not in t
+    assert "If it is priced, stand down" not in t
+    assert "已定价就放下" not in t
+    assert "Verify incremental earnings, then evaluate valuation" in t
+    assert "先核实增量利润，再评估估值" in t
+    assert "report of his practice" in t
+    assert "对他做法的转述" in t or "那是对他做法的转述" in t
+    play = _text("playbook.html")
+    assert "not a DCF" not in play
+    assert "而不是做一份贴现模型" not in play
+    assert "the imbalance is gone" not in play
+
+
+def test_diagram_does_not_treat_bullish_as_thesis_and_both_branches_continue():
+    t = _text("core-logic.html")
+    assert "look bullish" not in t
+    assert "已有看多版本" not in t
+    assert "matching earnings assumptions" in t
+    assert "盈利假设对得上" in t
+    assert "Both readings continue" in t
+    assert "两条都继续" in t
+    assert "neither selects nor rejects" in t
+    assert "不单独允许或否定选股" in t
+
+
+def test_stage_labels_are_translated():
+    js = (DOCS / "assets" / "cases.js").read_text(encoding="utf-8")
+    assert "社会观察" in js and "Social observation" in js
+    assert "投资结果" in js and "Investment outcome" in js
+    assert 's.id.replaceAll' not in js
+
+
 def test_memo_is_bilingual_and_not_a_buy():
     t = _text("memo.html")
     assert "cct-research-memo-v1" in t
     assert "needs research" in t
     assert "待研究" in t
     assert "not_a_buy" in t
+    assert "filled, not verified" in t
+    assert "已填写，未核实" in t
+    assert "verified: false" in t
     assert "localStorage.removeItem" in t
     assert "password" not in t.lower()
     assert "api key" not in t.lower()

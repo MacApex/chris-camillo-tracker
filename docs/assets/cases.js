@@ -274,11 +274,19 @@
         stages.innerHTML = "";
       } else {
         const cap = t("stageTitle");
+        const clock = {
+          social_observation: { zh: "社会观察", en: "Social observation" },
+          verified_signal_timestamp: { zh: "已核实的信号时间", en: "Verified signal time" },
+          documented_entry: { zh: "有记录的进场", en: "Documented entry" },
+          first_street_response: { zh: "第一次卖方反应", en: "First Street response" },
+          earnings_confirmation: { zh: "财报确认", en: "Earnings confirmation" },
+          investment_outcome: { zh: "投资结果", en: "Investment outcome" },
+        };
         const body = rows
-          .map(
-            (s) =>
-              `<tr><th scope="row">${escapeHtml(s.id.replaceAll("_", " "))}</th><td>${escapeHtml(lang() === "zh" ? s.status_zh : s.status_en)}</td><td>${escapeHtml(lang() === "zh" ? s.zh : s.en)}</td></tr>`
-          )
+          .map((s) => {
+            const name = (clock[s.id] && clock[s.id][lang()]) || s.id;
+            return `<tr><th scope="row">${escapeHtml(name)}</th><td>${escapeHtml(lang() === "zh" ? s.status_zh : s.status_en)}</td><td>${escapeHtml(lang() === "zh" ? s.zh : s.en)}</td></tr>`;
+          })
           .join("");
         stages.innerHTML = `<h3>${escapeHtml(cap)}</h3><p class="small">${escapeHtml(t("signalNotValue"))}</p><div class="table-wrap"><table><thead><tr><th>${lang() === "zh" ? "时钟" : "Clock"}</th><th>${lang() === "zh" ? "状态" : "Status"}</th><th>${lang() === "zh" ? "依据" : "What is actually known"}</th></tr></thead><tbody>${body}</tbody></table></div>`;
       }

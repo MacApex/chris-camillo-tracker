@@ -96,6 +96,18 @@
           <label for="m-invalidation"><span class="lang-zh">失效条件：哪条证据、在哪个日期之前，会让你放下这条论点</span><span class="lang-en">Invalidation: which evidence, by which date, would make you drop the claim</span></label>
           <textarea id="m-invalidation" name="invalidation"></textarea>
         </div>
+        <div>
+          <label for="m-source-date"><span class="lang-zh">关键假设的来源日期（可选）</span><span class="lang-en">Source date for the key assumptions (optional)</span></label>
+          <input id="m-source-date" name="source_date" maxlength="40" placeholder="">
+        </div>
+        <div>
+          <label for="m-source-link"><span class="lang-zh">来源链接（可选，公开页面）</span><span class="lang-en">Source link (optional, a public page)</span></label>
+          <input id="m-source-link" name="source_link" maxlength="300">
+        </div>
+        <div>
+          <label for="m-next-review"><span class="lang-zh">下次复查日期（可选）</span><span class="lang-en">Next review date (optional)</span></label>
+          <input id="m-next-review" name="next_review" maxlength="40">
+        </div>
         <div class="memo-actions">
           <button type="button" id="memo-export"><span class="lang-zh">导出 JSON</span><span class="lang-en">Export JSON</span></button>
           <button type="button" id="memo-reset"><span class="lang-zh">清除本机记录</span><span class="lang-en">Clear local note</span></button>
@@ -118,7 +130,7 @@
   <script>
   (function () {
     var KEY = "cct-research-memo-v1";
-    var fields = ["name", "horizon", "durability", "competition", "profit", "debt", "valuation", "quarterly", "invalidation"];
+    var fields = ["name", "horizon", "durability", "competition", "profit", "debt", "valuation", "quarterly", "invalidation", "source-date", "source-link", "next-review"];
     var crucial = ["durability", "competition", "profit", "debt", "valuation", "quarterly", "invalidation"];
     var labels = {
       zh: { durability: "耐久性", competition: "竞争与重复购买", profit: "增量利润与自由现金流", debt: "债务与稀释", valuation: "估值情形", quarterly: "季度验证", invalidation: "失效条件", needs: "待研究" },
@@ -150,7 +162,7 @@
       var data = read();
       host.innerHTML = crucial.map(function (id) {
         var empty = !String(data[id] || "").trim();
-        var state = empty ? L.needs : (lang() === "zh" ? "已填写" : "filled");
+        var state = empty ? L.needs : (lang() === "zh" ? "已填写，未核实" : "filled, not verified");
         return "<li>" + L[id] + ": <span class='" + (empty ? "memo-gap" : "") + "'>" + state + "</span></li>";
       }).join("");
     }
@@ -160,7 +172,7 @@
       var data = read();
       var gaps = {};
       crucial.forEach(function (id) { if (!String(data[id] || "").trim()) gaps[id] = "needs research"; });
-      var payload = { convention: "project_not_camillo_proof", not_a_buy: true, horizon_years: Number(data.horizon) || null, fields: data, needs_research: gaps };
+      var payload = { convention: "project_not_camillo_proof", not_a_buy: true, verified: false, horizon_years: Number(data.horizon) || null, fields: data, needs_research: gaps, filled_means: "filled_not_verified" };
       var blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
       var a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
@@ -170,7 +182,7 @@
     });
     document.getElementById("memo-reset").addEventListener("click", function () {
       try { localStorage.removeItem(KEY); } catch (e) {}
-      write({ name: "", horizon: "5", durability: "", competition: "", profit: "", debt: "", valuation: "", quarterly: "", invalidation: "" });
+      write({ name: "", horizon: "5", durability: "", competition: "", profit: "", debt: "", valuation: "", quarterly: "", invalidation: "", "source-date": "", "source-link": "", "next-review": "" });
       renderGaps();
     });
     document.addEventListener("cct-lang", renderGaps);
