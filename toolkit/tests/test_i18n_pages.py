@@ -59,8 +59,9 @@ def test_street_view_bilingual_charts_exist():
 
 def test_street_view_tables_are_paired():
     t = (DOCS / "street-view.html").read_text(encoding="utf-8")
-    assert t.count('class="table-wrap lang-zh"') == 4
-    assert t.count('class="table-wrap lang-en"') == 4
+    assert t.count("table-wrap lang-zh") == 4
+    assert t.count("table-wrap lang-en") == 4
+    assert t.count("event-study") == 2
     assert "data-platforms-static" in t
     # Chinese headers
     assert "<th>事件</th>" in t

@@ -39,7 +39,7 @@ CATALOG: dict[str, dict[str, Any]] = {
             "command": "python -m camillo_tracker signals CROX --wiki Crocs",
         },
         "status": "worked",
-        "reliability": "Worked 5/5 sample keywords on 13 Nov 2026. Unofficial; often rate-limited. Camillo publicly treated AI-polluted Trends as a broken tool in 2025 (Lululemon exit).",
+        "reliability": "Worked 5/5 sample keywords on 13 Nov 2026. Unofficial; often rate-limited. A 2025 thread says Trends may be affected by automated queries; reliability unverified. That thread does not establish a Lululemon position or exit.",
         "cost": "free",
         "rate_limits": "pytrends 429s are common; back off and retry. No official quota.",
         "blockers": "Unofficial endpoint can change. A spike that contradicts clerks, card data, or other platforms is not a thesis.",

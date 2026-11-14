@@ -5,6 +5,9 @@
   const T = {
     zh: {
       price: "股价（复权收盘，美元）",
+      axisPrice: "复权收盘，美元",
+      axisTrends: "相对搜索兴趣 0–100，不是次数",
+      axisViews: "每日浏览量，不是搜索兴趣",
       trends: "Google Trends（窗口内 0–100）",
       wiki: "维基百科日浏览",
       jeffree: "Jeffree Star 维基浏览",
@@ -76,6 +79,9 @@
     },
     en: {
       price: "Share price (adjusted close, USD)",
+      axisPrice: "Adjusted close, USD",
+      axisTrends: "Relative interest 0–100, not a count",
+      axisViews: "Daily pageviews, not search interest",
       trends: "Google Trends (0–100 in this window)",
       wiki: "Wikipedia daily pageviews",
       jeffree: "Jeffree Star Wikipedia pageviews",
@@ -536,6 +542,7 @@
       series.push({
         name: t("price"),
         type: "line",
+        xAxisIndex: 0,
         yAxisIndex: 0,
         showSymbol: false,
         sampling: "lttb",
@@ -553,6 +560,7 @@
       series.push({
         name: t("trends") + (c.trends.keyword ? ` · ${c.trends.keyword}` : ""),
         type: "line",
+        xAxisIndex: 1,
         yAxisIndex: 1,
         showSymbol: false,
         lineStyle: { width: 1.8, color: "#5ec8c5" },
@@ -566,6 +574,7 @@
       series.push({
         name: t("jeffree"),
         type: "line",
+        xAxisIndex: 2,
         yAxisIndex: 2,
         showSymbol: false,
         sampling: "lttb",
@@ -577,13 +586,11 @@
     }
     // Brand wiki: skip default display when dwarfed by Jeffree, but still offer it
     if (wiki.length) {
-      const maxW = Math.max.apply(null, wiki.map((p) => p.views));
-      const maxJ = jeffree.length ? Math.max.apply(null, jeffree.map((p) => p.views)) : 0;
-      const hidden = jeffree.length && maxJ > maxW * 20;
       series.push({
         name: t("wiki") + (c.wikipedia.article ? ` · ${c.wikipedia.article}` : ""),
         type: "line",
-        yAxisIndex: jeffree.length && !hidden ? 3 : 2,
+        xAxisIndex: 2,
+        yAxisIndex: 2,
         showSymbol: false,
         sampling: "lttb",
         lineStyle: { width: 1.3, color: "#a78bfa" },
@@ -598,6 +605,7 @@
       series.push({
         name,
         type: "scatter",
+        xAxisIndex: 0,
         yAxisIndex: 0,
         data,
         symbol,
@@ -620,39 +628,70 @@
     scatter(t("earningsMiss"), scat.miss, "star", "#f5b4b8", 13);
     scatter(t("earnings"), scat.earn, "star", "#94a3b8", 10);
 
-    const yAxis = [
-      {
-        type: "value",
-        name: t("price"),
-        nameTextStyle: { color: "#e4c88a", fontSize: 11 },
-        axisLabel: { color: textColor, fontSize: 10 },
-        axisLine,
-        splitLine,
-        scale: true,
-      },
-      {
-        type: "value",
-        name: t("trends"),
-        nameTextStyle: { color: "#5ec8c5", fontSize: 11 },
-        min: 0,
-        max: 100,
-        axisLabel: { color: textColor, fontSize: 10 },
+    const priceNames = new Set([
+      t("price"), t("upgrades"), t("downgrades"), t("ptRaise"), t("ptLower"),
+      t("otherStreet"), t("earningsBeat"), t("earningsMiss"), t("earnings"),
+    ]);
+    series.forEach((s) => {
+      if (priceNames.has(s.name)) s._panel = "price";
+      else if (String(s.name).indexOf(t("trends")) === 0) s._panel = "trends";
+      else s._panel = "views";
+    });
+    const order = ["price", "trends", "views"].filter((p) => series.some((s) => s._panel === p));
+    series.forEach((s) => {
+      const idx = order.indexOf(s._panel);
+      s.xAxisIndex = idx;
+      s.yAxisIndex = idx;
+      delete s._panel;
+    });
+    const n = Math.max(order.length, 1);
+    const titles = { price: t("axisPrice"), trends: t("axisTrends"), views: t("axisViews") };
+    const colors = { price: "#e4c88a", trends: "#5ec8c5", views: "#a78bfa" };
+    const titleH = 28;
+    const foot = 28;
+    const gap = 8;
+    const plot = Math.max(96, Math.floor((el.clientHeight - foot - n * titleH - gap * n) / n));
+    const grids = [];
+    const xAxes = [];
+    const yAxes = [];
+    const title = [];
+    order.forEach((key, i) => {
+      const titleTop = i * (plot + titleH + gap);
+      const top = titleTop + titleH;
+      grids.push({ left: 48, right: 12, top, height: plot });
+      title.push({
+        text: titles[key],
+        left: 52,
+        top: titleTop,
+        textStyle: { color: colors[key], fontSize: 12, fontWeight: 500, fontFamily: "Outfit, sans-serif" },
+      });
+      xAxes.push({
+        type: "time",
+        gridIndex: i,
+        axisLabel: { show: i === n - 1, color: textColor, fontSize: 10, hideOverlap: true },
         axisLine,
         splitLine: { show: false },
-      },
-      {
+      });
+      yAxes.push({
         type: "value",
-        name: t("wiki"),
-        nameTextStyle: { color: "#a78bfa", fontSize: 11 },
-        axisLabel: { color: textColor, fontSize: 10, formatter: compactNum },
+        gridIndex: i,
+        name: "",
+        min: key === "trends" ? 0 : undefined,
+        max: key === "trends" ? 100 : undefined,
+        scale: key !== "trends",
+        axisLabel: Object.assign(
+          { color: textColor, fontSize: 10, hideOverlap: true },
+          key === "views" ? { formatter: compactNum } : {}
+        ),
         axisLine,
-        splitLine: { show: false },
-        scale: true,
-        offset: 0,
-      },
-    ];
-    // If both jeffree and brand wiki, a 4th axis gets crowded on mobile — share axis 2
-    // (already assigned). Fine.
+        splitLine: key === "price" ? splitLine : { show: false },
+      });
+    });
+    if (!order.length) {
+      grids.push({ left: 62, right: 16, top: 40, height: 160 });
+      xAxes.push({ type: "time", gridIndex: 0 });
+      yAxes.push({ type: "value", gridIndex: 0 });
+    }
 
     const opt = {
       backgroundColor: "transparent",
@@ -664,28 +703,50 @@
         textStyle: { color: "#e8e6e0", fontSize: 12 },
         axisPointer: axisPtr,
       },
-      legend: {
-        type: "scroll",
-        top: 4,
-        textStyle: { color: textColor, fontSize: 11 },
-        pageIconColor: "#c9a66b",
-        pageTextStyle: { color: muted },
-      },
-      grid: { left: 56, right: 56, top: 72, bottom: 72 },
+      legend: { show: false },
+      title,
+      grid: grids,
       dataZoom: [
-        { type: "inside", filterMode: "none" },
-        { type: "slider", height: 18, bottom: 12, borderColor: "#2a2e38", fillerColor: "rgba(201,166,107,0.18)", textStyle: { color: muted }, handleStyle: { color: "#c9a66b" }, moveHandleStyle: { color: "#c9a66b" } },
+        { type: "inside", filterMode: "none", xAxisIndex: xAxes.map((_, i) => i) },
+        {
+          type: "slider",
+          xAxisIndex: xAxes.map((_, i) => i),
+          height: 16,
+          bottom: 6,
+          borderColor: "#2a2e38",
+          fillerColor: "rgba(201,166,107,0.18)",
+          textStyle: { color: muted, fontSize: 10 },
+          handleStyle: { color: "#c9a66b" },
+          moveHandleStyle: { color: "#c9a66b" },
+        },
       ],
-      xAxis: {
-        type: "time",
-        axisLabel: { color: textColor, fontSize: 10, hideOverlap: true },
-        axisLine,
-        splitLine: { show: false },
-      },
-      yAxis,
+      xAxis: xAxes,
+      yAxis: yAxes,
       series,
     };
     timeline.setOption(opt, { notMerge: true });
+    renderLegend(series);
+  }
+
+  function renderLegend(series) {
+    const box = document.getElementById("timeline-legend");
+    if (!box) return;
+    box.replaceChildren();
+    series.forEach((s) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      const color = (s.itemStyle && s.itemStyle.color) || "#c9a66b";
+      const swatch = document.createElement("i");
+      swatch.style.background = color;
+      btn.appendChild(swatch);
+      btn.appendChild(document.createTextNode(s.name));
+      btn.addEventListener("click", () => {
+        if (!timeline) return;
+        timeline.dispatchAction({ type: "legendToggleSelect", name: s.name });
+        btn.classList.toggle("is-off");
+      });
+      box.appendChild(btn);
+    });
   }
 
   function compactNum(n) {

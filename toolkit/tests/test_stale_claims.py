@@ -103,6 +103,38 @@ def test_chart_export_matches_withdrawal():
         assert rbi["event_study"][key]["returns"]["1m"]["pct"] is None
 
 
+def test_pitfalls_do_not_treat_ai_or_priced_as_settled():
+    t = _text("core-logic.html")
+    assert "AI-polluted" not in t
+    assert "已被 AI 污染" not in t
+    assert "already priced it" not in t
+    assert "已经定价还硬做" not in t
+    assert "may be affected by automated queries" in t
+    assert "可能受自动查询影响" in t
+    assert "reliability unverified" in t
+    assert "可靠性未经核实" in t
+    assert "without comparing the specific earnings expectations and the valuation" in t
+    catalog = (ROOT / "toolkit" / "camillo_tracker" / "workflow.py").read_text(encoding="utf-8")
+    assert "Lululemon exit" not in catalog and "AI-polluted" not in catalog
+    assert "may be affected by automated queries" in catalog
+    assert "没有对照具体的盈利预期和估值就交易" in t
+    assert "look bullish" not in t
+
+
+def test_mobile_logic_and_chart_units_exist():
+    css = (DOCS / "assets" / "style.css").read_text(encoding="utf-8")
+    assert ".logic-steps" in css and ".tree-wrap { display: none" in css
+    assert ".event-study tr" in css and "cell-label" in css
+    app = (DOCS / "assets" / "app.js").read_text(encoding="utf-8")
+    assert "event-study table" in app
+    js = (DOCS / "assets" / "cases.js").read_text(encoding="utf-8")
+    assert "axisTrends" in js and "不是次数" in js and "not a count" in js
+    assert "axisViews" in js and "不是搜索兴趣" in js
+    assert "gridIndex" in js
+    logic = _text("core-logic.html")
+    assert "logic-steps" in logic and "两条都继续" in logic and "Both readings continue" in logic
+
+
 def test_methodology_rules_do_not_skip_valuation_or_stand_down():
     t = _text("methodology.html")
     assert "not a valuation model" not in t
@@ -111,6 +143,9 @@ def test_methodology_rules_do_not_skip_valuation_or_stand_down():
     assert "已定价就放下" not in t
     assert "Verify incremental earnings, then evaluate valuation" in t
     assert "先核实增量利润，再评估估值" in t
+    assert "pollution failure mode" not in t
+    assert "污染失效模式" not in t
+    assert "may be affected by automated queries" in t
     assert "report of his practice" in t
     assert "对他做法的转述" in t or "那是对他做法的转述" in t
     play = _text("playbook.html")

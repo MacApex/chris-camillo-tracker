@@ -19,7 +19,7 @@ Five consumer names tied to Camillo stories. **No `opportunity_flag`** fired —
 ### Reading the interesting corners
 
 - **TPR (Tapestry / Coach).** The keyword “Coach bag” is the one Trends series that is actually *up*: recent average 32.6 versus 26.2 a year earlier and a 20.2 baseline (momentum 69.7). Combined with a dead “Tapestry Coach” series it averages to 59.8, almost exactly in line with a already-bullish Street (mean target $163.55, +22% implied upside). The 2021 “Coach comeback” Camillo described to Business Insider is, on this screen, **no longer an information gap**.
-- **LULU.** Search for “Lululemon” is down versus a year ago (30.6 vs 44.5). The Street is cautious: thirty Holds, a slightly negative implied upside, recent action balance −2. Social is fading *with* a soft consensus — a watch, not a contrarian flag. (Camillo himself exited a Trends-led Lululemon thesis in 2025 after suspecting AI-polluted search.)
+- **LULU.** Search for “Lululemon” is down versus a year ago (30.6 vs 44.5). The Street is cautious: thirty Holds, a slightly negative implied upside, recent action balance −2. Social is fading *with* a soft consensus — a watch, not a contrarian flag. (A 2025 thread uses Lululemon product terms as an example and says Trends may be affected by automated queries; reliability unverified. It does not establish a Lululemon position or exit.)
 - **CROX and ELF.** Analysts are constructive; brand-term Trends sit below their longer baselines. The scanner labels that `late_or_crowded`: if there was a social-arbitrage window, this snapshot is not showing it open.
 - **NWL.** Elmer’s / Newell search is similarly below last year. A mild Street score, a watch.
 

@@ -503,11 +503,53 @@ html[data-lang="zh"] .brand-text span { text-transform: none; letter-spacing: 0.
   background: var(--bg-elev); border: 1px solid var(--line-soft);
   border-radius: 16px; padding: 8px 4px 4px; margin: 0 0 12px;
 }
-#timeline-chart, #summary-chart { width: 100%; height: 520px; }
+#timeline-chart, #summary-chart { width: 100%; height: 780px; }
 #summary-chart { height: 440px; }
+.timeline-legend {
+  display: flex; flex-wrap: wrap; gap: 4px 14px;
+  padding: 8px 10px 0; font-size: 13px; line-height: 1.35; color: var(--ink);
+}
+.timeline-legend button {
+  appearance: none; background: transparent; border: 0; padding: 2px 0;
+  color: inherit; font: inherit; cursor: pointer; text-align: left;
+}
+.timeline-legend button.is-off { opacity: 0.38; text-decoration: line-through; }
+.timeline-legend i {
+  display: inline-block; width: 9px; height: 9px; border-radius: 50%;
+  margin-right: 6px; vertical-align: 0;
+}
 @media (max-width: 700px) {
-  #timeline-chart { height: 460px; }
+  #timeline-chart { height: 600px; }
   #summary-chart { height: 400px; }
+}
+.logic-steps { display: none; }
+.logic-steps ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.logic-steps li {
+  background: var(--bg-card); border: 1px solid var(--line-soft);
+  border-radius: 12px; padding: 12px 14px; font-size: 15.5px; line-height: 1.45;
+}
+.logic-steps strong { display: block; font-size: 16px; margin: 0 0 4px; color: var(--gold-bright); }
+.event-study .cell-label { display: none; }
+@media (max-width: 760px) {
+  .tree-wrap { display: none !important; }
+  .logic-steps { display: block; margin: 12px 0 24px; }
+  .event-study table, .event-study thead, .event-study tbody, .event-study tr, .event-study td { display: block; width: 100%; }
+  .event-study thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .event-study tr {
+    display: block; margin: 0 0 12px; padding: 12px 14px;
+    border: 1px solid var(--line-soft); border-radius: 12px; background: var(--bg-card);
+  }
+  .event-study td, .event-study th {
+    display: block; width: auto; white-space: normal; border: 0;
+    padding: 2px 0; text-align: left; font-size: 15px; line-height: 1.4;
+  }
+  .event-study td:last-child { margin-top: 8px; color: var(--cream); }
+  .event-study .cell-label {
+    display: block; margin: 8px 0 0;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em;
+    text-transform: none; color: var(--gold);
+  }
+  .event-study td:first-child .cell-label { margin-top: 0; }
 }
 .chart-notes { font-size: 13px; color: var(--muted); margin: 0 0 28px; }
 .chart-notes li { margin: 0 0 6px; }

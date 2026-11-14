@@ -73,6 +73,21 @@
 })();
 
 (function () {
+  document.querySelectorAll(".event-study table").forEach((table) => {
+    const labels = [...table.querySelectorAll("thead th")].map((th) => th.textContent.trim());
+    table.querySelectorAll("tbody tr").forEach((tr) => {
+      [...tr.children].forEach((td, i) => {
+        if (td.querySelector(".cell-label")) return;
+        const label = document.createElement("span");
+        label.className = "cell-label";
+        label.textContent = labels[i] || "";
+        td.insertBefore(label, td.firstChild);
+      });
+    });
+  });
+})();
+
+(function () {
   const table = document.querySelector("[data-scanner]");
   if (!table) return;
 

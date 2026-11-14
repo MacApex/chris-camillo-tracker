@@ -122,14 +122,14 @@
         <ul class="lang-zh">
           <li><strong>隐藏的分部：</strong> Restaurant Brands / Tim Hortons，自述亏损 75 万美元——两个品牌看对了，第三个看不见。</li>
           <li><strong>个人偏好：</strong> Silicon Image（HDMI），「投资你熟悉的」变成偏见。</li>
-          <li><strong>数据被污染：</strong> 2025 年 Lululemon 与 Trends；交叉验证才能避免套利一个幽灵。</li>
+          <li><strong>搜索可靠性未经核实：</strong> 2025 年的帖子假设自动查询可能影响 Trends，并用 Lululemon 产品词举例。这不是已确立的原因。</li>
           <li><strong>把存量当成动量：</strong> 一个 350 亿次播放的标签，本身不说明「正在上升」。</li>
           <li>证据与市场路径见 <a href="trades.html">交易库</a>、<a href="track-record.html">业绩</a>、<a href="street-view.html">街景</a>。事件研究是市场路径，不是他的个人盈亏。</li>
         </ul>
         <ul class="lang-en">
           <li><strong>The hidden division:</strong> Restaurant Brands / Tim Hortons, a self-reported $750,000 loss — two brands right, a third invisible.</li>
           <li><strong>Personal bias:</strong> Silicon Image (HDMI), where “invest in what you know” became a trap.</li>
-          <li><strong>Polluted data:</strong> Lululemon and Trends in 2025; without a cross-check you will arbitrage a ghost.</li>
+          <li><strong>Unverified search reliability:</strong> a 2025 thread says Trends may be affected by automated queries and uses Lululemon product terms as the example. That is not an established cause.</li>
           <li><strong>Mistaking a stock for a flow:</strong> a 35-billion-view hashtag does not, by itself, mean “it is rising.”</li>
           <li>Evidence and market paths: the <a href="trades.html">trade database</a>, <a href="track-record.html">track record</a>, and <a href="street-view.html">Street view</a>. The event study is a market path, not his personal P&amp;L.</li>
         </ul>
@@ -159,7 +159,7 @@
       <table>
         <thead><tr><th>信号</th><th>状态</th><th>主路径</th><th>备选</th><th>交叉验证</th><th>指标含义与归一化</th></tr></thead>
         <tbody>
-          <tr><td>搜索兴趣</td><td><span class="badge badge-worked">已通</span></td><td>Google Trends（pytrends，美国，五年窗口，同比）。<code>python -m camillo_tracker signals CROX --keywords 'Crocs' --wiki Crocs</code></td><td>Trends 网页，同样用五年窗口，不用默认的十二个月。</td><td>维基百科日浏览量 z 分数；第二条关键词。不要只用新闻量。</td><td>相对 0–100 的<strong>流量</strong>，不是绝对查询次数。五年窗口看季节性；相对自身历史算 z；不可跨词比较原始分数。2025 年他指出人工智能会污染 Trends。</td></tr>
+          <tr><td>搜索兴趣</td><td><span class="badge badge-worked">已通</span></td><td>Google Trends（pytrends，美国，五年窗口，同比）。<code>python -m camillo_tracker signals CROX --keywords 'Crocs' --wiki Crocs</code></td><td>Trends 网页，同样用五年窗口，不用默认的十二个月。</td><td>维基百科日浏览量 z 分数；第二条关键词。不要只用新闻量。</td><td>相对 0–100 的搜索兴趣，不是查询次数。五年窗口看季节性。2025 年的帖子假设自动查询可能影响 Trends，可靠性未经核实。</td></tr>
           <tr><td>社交 · TikTok</td><td><span class="badge badge-worked">已通</span></td><td>公开接口 <code>/api/challenge/detail/</code>（StealthyFetcher 页内请求），用 <code>statsV2</code>。默认读已核实缓存；<code>CCT_LIVE_TIKTOK=1</code> 才现场抓取。</td><td>TikTok-Api 的 <code>hashtag.info()</code>（无需登录），同一套 challengeInfo。</td><td>两种官方形态互相核对。Creative Center 的公开列表只覆盖美国近七日前三，不能代替品牌分析（登录我们不做）。</td><td>终身播放与条数是<strong>存量</strong>。单次快照不算 z。要流量，就重复取样再做差。用具体标签（<code>#coachbag</code> 而不是 <code>#coach</code>）。</td></tr>
           <tr><td>社交 · X</td><td><span class="badge badge-worked">已通</span></td><td>官方近七日推文计数（MCP，或 <code>CCT_X_BEARER</code>）。</td><td>没有密钥则跳过。twscrape 需要登录，本项目不用。</td><td>Trends 与维基百科。注意查询是否干净（ELF 在去掉 $ 后噪声很大）。</td><td>近窗计数是<strong>短流</strong>。单窗是水平，不是 z；有上一窗才可比较。</td></tr>
           <tr><td>社交 · YouTube</td><td><span class="badge badge-worked">已通</span></td><td><code>yt-dlp 'ytsearch3:Crocs shoes' --dump-json --skip-download</code></td><td>官方 Data API（可选 <code>YOUTUBE_API_KEY</code>）。</td><td>Trends、维基百科。几个视频的播放量只是「在场」，不是趋势序列。</td><td>单视频播放量是存量。三次搜索结果不能加成品牌 z。</td></tr>
@@ -178,7 +178,7 @@
       <table>
         <thead><tr><th>Signal</th><th>Status</th><th>Primary</th><th>Fallback</th><th>Cross-check</th><th>What it means, and how to normalize</th></tr></thead>
         <tbody>
-          <tr><td>Search interest</td><td><span class="badge badge-worked">worked</span></td><td>Google Trends via pytrends (US, five-year window, year-over-year). <code>python -m camillo_tracker signals CROX --keywords 'Crocs' --wiki Crocs</code></td><td>The Trends website, same five-year window — not the default 12-month view.</td><td>Wikipedia daily-pageview z-score; a second keyword. Never news volume alone.</td><td>A relative 0–100 <strong>flow</strong>, not an absolute query count. Use a five-year window for seasonality; z versus own history; do not compare raw scores across keywords. In 2025 he treated AI-polluted Trends as a broken tool.</td></tr>
+          <tr><td>Search interest</td><td><span class="badge badge-worked">worked</span></td><td>Google Trends via pytrends (US, five-year window, year-over-year). <code>python -m camillo_tracker signals CROX --keywords 'Crocs' --wiki Crocs</code></td><td>The Trends website, same five-year window — not the default 12-month view.</td><td>Wikipedia daily-pageview z-score; a second keyword. Never news volume alone.</td><td>Relative search interest, 0–100, not a query count. A 2025 thread says Trends may be affected by automated queries; reliability unverified.</td></tr>
           <tr><td>Social · TikTok</td><td><span class="badge badge-worked">worked</span></td><td>Public <code>/api/challenge/detail/</code> (StealthyFetcher in-page fetch); prefer <code>statsV2</code>. Default is the verified cache; <code>CCT_LIVE_TIKTOK=1</code> refetches.</td><td>TikTok-Api <code>hashtag.info()</code> (no login), same challengeInfo shape.</td><td>Run both official-shaped methods against each other. Creative Center’s public list is only the US last-7-day top 3 — not brand analytics (we do not log in).</td><td>Lifetime views and video counts are a <strong>stock</strong>. A single snapshot is not a z. For a flow, difference repeated snapshots. Use specific tags (<code>#coachbag</code>, not <code>#coach</code>).</td></tr>
           <tr><td>Social · X</td><td><span class="badge badge-worked">worked</span></td><td>Official 7-day tweet counts (MCP, or <code>CCT_X_BEARER</code>).</td><td>Skip without a key. twscrape needs logins; this project will not use them.</td><td>Trends and Wikipedia. Inspect query cleanliness (ELF is noisy after $ is stripped).</td><td>A recent-window count is a <strong>short flow</strong>. One window is a level, not a z, until you have a prior window.</td></tr>
           <tr><td>Social · YouTube</td><td><span class="badge badge-worked">worked</span></td><td><code>yt-dlp 'ytsearch3:Crocs shoes' --dump-json --skip-download</code></td><td>Official Data API (optional <code>YOUTUBE_API_KEY</code>).</td><td>Trends, Wikipedia. A handful of view counts is presence, not a trend series.</td><td>Per-video views are a stock. Three search hits must not be summed into a brand z.</td></tr>
@@ -225,7 +225,7 @@ python -m camillo_tracker research Crocs CROX --wiki Crocs --offline</code></pre
         <thead><tr><th>问题</th><th>该信的源</th><th>不要当作答案的源</th></tr></thead>
         <tbody>
           <tr><td>文化讨论是否相对基线在上升？</td><td>重复取样后的 TikTok 具体标签、干净的 X 近窗、五年 Trends。至少两个。</td><td>单次终身播放量；宽泛标签；已被新闻占满的话题（往往已滞后）。</td></tr>
-          <tr><td>搜索兴趣是否在上升？</td><td>五年 Trends，并用维基百科 z 交叉。注意 2025 年的污染失效模式。</td><td>默认十二个月的 Trends 视图；与其他关键词比较原始 0–100。</td></tr>
+          <tr><td>搜索兴趣是否在上升？</td><td>五年 Trends，并用维基百科 z 交叉。2025 年的帖子假设自动查询可能影响 Trends，可靠性未经核实。</td><td>默认十二个月的 Trends 视图；与其他关键词比较原始 0–100。</td></tr>
           <tr><td>货是否在卖？</td><td>同一 ASIN、同一亚马逊榜单上的重复名次；商品页细分类作为核对。</td><td>Keepa 价格图；CamelCamelCamel（在此为 403）；把「不在前 50」写成一个估出来的名次。</td></tr>
           <tr><td>卖方是否已经在这件事上？</td><td>street_view 的定价结论，加上新闻 / GDELT 作为「是否已经公开」。</td><td>把新闻量当成领先的利基信号；在数据不足时当成绿灯。</td></tr>
           <tr><td>应用是否在飙升？</td><td>我们核实的只有「在架」。要名次需日后的付费榜单。</td><td>把 iTunes 搜索命中当成需求。</td></tr>
@@ -238,7 +238,7 @@ python -m camillo_tracker research Crocs CROX --wiki Crocs --offline</code></pre
         <thead><tr><th>Question</th><th>Trust</th><th>Do not treat as the answer</th></tr></thead>
         <tbody>
           <tr><td>Is cultural conversation rising versus baseline?</td><td>Repeated snapshots of specific TikTok tags, a clean X recent window, and five-year Trends — at least two of these.</td><td>A single lifetime view total; generic tags; a topic already saturated in the press (often already late).</td></tr>
-          <tr><td>Is search interest rising?</td><td>Five-year Trends, cross-checked with a Wikipedia z. Remember the 2025 pollution failure mode.</td><td>The default 12-month Trends view; raw 0–100 comparisons across keywords.</td></tr>
+          <tr><td>Is search interest rising?</td><td>Five-year Trends, cross-checked with a Wikipedia z. A 2025 thread says Trends may be affected by automated queries; reliability unverified.</td><td>The default 12-month Trends view; raw 0–100 comparisons across keywords.</td></tr>
           <tr><td>Is the product selling?</td><td>Repeated ranks for the same ASIN on the same Amazon list; the product-page subcategory as a check.</td><td>A Keepa price chart; CamelCamelCamel (403 here); writing “not in the top 50” as an estimated rank.</td></tr>
           <tr><td>Is the Street already on this?</td><td>The street_view priced-in verdict, plus news / GDELT as “is this already public?”</td><td>News volume as a leading niche signal; treating insufficient data as a green light.</td></tr>
           <tr><td>Is an app climbing?</td><td>All we verified is presence. Live chart ranks would need a paid vendor later.</td><td>An iTunes search hit as demand.</td></tr>
