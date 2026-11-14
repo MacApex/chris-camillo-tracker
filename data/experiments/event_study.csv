@@ -5,7 +5,7 @@ rbi-2019-aug,QSR,2019-08-15,month,long,2019-08-15,-2.18,-7.24,-7.29,-2.18,-7.24,
 covid-spy-2020,SPY,2020-02-15,month,short,2020-02-18,-28.73,-11.88,1.38,28.73,11.88,-1.38,False,False,"Puts on SPY, self-reported. Underlying returns shown; put P&L is unknown."
 covid-wynn-2020,WYNN,2020-02-15,month,short,2020-02-18,-67.5,-38.44,-36.91,67.5,38.44,36.91,True,True,"Puts on Wynn, self-reported."
 dorel-2020,DIIBF,2020-04-24,day,long,2020-04-24,131.06,242.86,608.7,131.06,242.86,608.7,True,True,"Best-dated event: purchase screenshots at $1.56, viewed by BI."
-tgt-missoni-2011,TGT,2011-09-07,day-approx,long,2011-09-07,2.63,6.69,14.45,2.63,6.69,14.45,True,False, collab event week. Overnight options P&L is self-reported; we only show equity path. Wiki pageviews start mid-2015.
+tgt-missoni-2011,TGT,2011-09-13,retail_launch_not_execution,long,2011-09-13,3.53,5.54,16.33,3.53,5.54,16.33,True,False,"Retail launch 13 Sep 2011, not a verified fill. Equity path recomputed 14 Nov 2026. Option return unverified. 7 Sep anchor withdrawn."
 gme-2021,GME,2021-01-25,month,long,2021-01-25,19.43,119.99,139.54,19.43,119.99,139.54,True,True,Self-reported buy around $70 — already mid-squeeze. Mid/late January placeholder.
 amc-2021,AMC,2021-01-25,month,long,2021-01-25,105.66,160.18,811.54,105.66,160.18,811.54,True,True,Self-reported buy around $3.
-tpr-2021-mention,TPR,2021-08-15,mention_date,long,2021-08-16,-8.29,4.55,-9.75,-8.29,4.55,-9.75,True,True,BI mention of a $3.1M position — NOT an entry date. Forward returns from the article date only.
+tpr-2021-mention,TPR,2021-08-18,publication_not_trade,long,2021-08-18,-1.95,10.64,-0.02,-1.95,10.64,-0.02,True,True,"Publication date 18 Aug 2021, not a trade. 15 Aug Playa cutoff withdrawn. Path recomputed 14 Nov 2026."

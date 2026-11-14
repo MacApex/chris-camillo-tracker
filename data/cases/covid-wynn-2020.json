@@ -6,16 +6,8 @@
     "2019-11-01",
     "2020-08-31"
   ],
-  "entry": {
-    "date": "2020-02-15",
-    "precision": "month",
-    "label": "documented window (mid-month placeholder)"
-  },
-  "exit": {
-    "date": "2020-03-10",
-    "precision": "month",
-    "label": "early March 2020, self-reported"
-  },
+  "entry": null,
+  "exit": null,
   "wiki": "Wynn_Resorts",
   "trends_kw": [
     "Wynn",

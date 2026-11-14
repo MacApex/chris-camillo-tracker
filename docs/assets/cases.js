@@ -51,6 +51,10 @@
       loadErr: "无法加载案例数据。",
       putNote: "标的路径，不是看跌期权损益。",
       mentionNote: "这是提及日，不是建仓日。",
+      mentionMark: "发表 / 提及",
+      stageTitle: "把时钟分开",
+      returnsWithdrawn: "不展示。旧路径用的日期不是成交日。",
+      signalNotValue: "社会或搜索观察不是利润、现金流或价值。",
       stillLong: "「仍在持有」标记，不是退出。",
       eraNote: "只有年代，不是精确进场日。",
       monthNote: "月精度：中间日只是占位，不是核实过的成交日。",
@@ -118,6 +122,10 @@
       loadErr: "Could not load the case data.",
       putNote: "Underlying path, not put P&L.",
       mentionNote: "This is a mention date, not an entry.",
+      mentionMark: "Publication / mention",
+      stageTitle: "Separate the clocks",
+      returnsWithdrawn: "Not shown. The old path used a date that is not an execution.",
+      signalNotValue: "A social or search observation is not earnings, cash flow, or value.",
       stillLong: "A still-long marker, not an exit.",
       eraNote: "Era only, not an exact entry day.",
       monthNote: "Month precision: the mid-month day is a placeholder, not a verified trade date.",
@@ -251,16 +259,28 @@
       leadEl.className = "lead-card" + (ld.ok ? "" : " unavailable");
       const num = leadEl.querySelector(".num");
       const body = leadEl.querySelector(".lead-body");
-      if (ld.ok) {
+      const text = lang() === "zh" ? ld.zh : ld.en;
+      if (ld.ok && ld.days != null) {
         num.innerHTML = ld.days + `<small>${t("daysUnit")}${ld.from_precision === "month" ? " · " + t("fromPlaceholder") : ""}</small>`;
-        const caveats = (ld.caveats || []).map((x) => `<p class="caveat">${escapeHtml(x)}</p>`).join("");
-        body.innerHTML = `<p>${escapeHtml(lang() === "zh" ? ld.zh : ld.en)}</p>${lang() === "en" ? caveats : ""}`;
-        if (lang() === "zh" && ld.caveats && ld.caveats.length && !ld.zh.includes("月精度")) {
-          body.innerHTML += caveats;
-        }
       } else {
         num.innerHTML = t("leadUnavailable");
-        body.innerHTML = `<p>${escapeHtml(lang() === "zh" ? ld.zh : ld.en || ld.reason || "")}</p>`;
+      }
+      body.innerHTML = `<p>${escapeHtml(text || ld.reason || "")}</p>`;
+    }
+    const stages = document.getElementById("stage-ledger");
+    if (stages) {
+      const rows = c.stages || [];
+      if (!rows.length) {
+        stages.innerHTML = "";
+      } else {
+        const cap = t("stageTitle");
+        const body = rows
+          .map(
+            (s) =>
+              `<tr><th scope="row">${escapeHtml(s.id.replaceAll("_", " "))}</th><td>${escapeHtml(lang() === "zh" ? s.status_zh : s.status_en)}</td><td>${escapeHtml(lang() === "zh" ? s.zh : s.en)}</td></tr>`
+          )
+          .join("");
+        stages.innerHTML = `<h3>${escapeHtml(cap)}</h3><p class="small">${escapeHtml(t("signalNotValue"))}</p><div class="table-wrap"><table><thead><tr><th>${lang() === "zh" ? "时钟" : "Clock"}</th><th>${lang() === "zh" ? "状态" : "Status"}</th><th>${lang() === "zh" ? "依据" : "What is actually known"}</th></tr></thead><tbody>${body}</tbody></table></div>`;
       }
     }
 
@@ -268,8 +288,9 @@
     if (ret) {
       const es = c.event_study || {};
       const keys = Object.keys(es);
-      if (!keys.length) {
-        ret.innerHTML = `<p class="small">${t("noRet")}</p>`;
+      const firstPeek = keys.length ? es[keys[0]] : null;
+      if (!keys.length || (firstPeek && firstPeek.display_returns === false)) {
+        ret.innerHTML = `<p class="small">${t("returnsWithdrawn")}</p>`;
       } else {
         const first = es[keys[0]];
         const r = first.returns || {};
@@ -310,7 +331,7 @@
       (c.price_notes || []).forEach((n) => {
         lis.push(`<li>${escapeHtml(lang() === "zh" ? n.zh : n.en)}</li>`);
       });
-      if (c.wikipedia && c.wikipedia.interpretive_note) {
+      if (lang() === "en" && c.wikipedia && c.wikipedia.interpretive_note) {
         lis.push(`<li>${escapeHtml(c.wikipedia.interpretive_note)}</li>`);
       }
       if (c.wikipedia_jeffree_star) {
@@ -399,7 +420,10 @@
         lineStyle: { color: color, type: "solid", width: 1.5 },
       });
     }
-    if (c.entry) add(c.entry.date, t("entry"), "#6ee7a8", c.entry.precision);
+    if (c.entry) {
+      const name = c.entry.precision === "mention" ? t("mentionMark") : t("entry");
+      add(c.entry.date, name, "#6ee7a8", c.entry.precision);
+    }
     if (c.entry2) add(c.entry2.date, t("entry2"), "#86efac", c.entry2.precision);
     if (c.exit_partial) add(c.exit_partial.date, t("exitPartial"), "#f0b429", c.exit_partial.precision);
     if (c.exit) {
@@ -685,7 +709,7 @@
       const ret = (first && first.returns) || {};
       // For shorts, use direction-of-side so a correct short shows as positive
       function pick(h) {
-        if (!first) return null;
+        if (!first || first.display_returns === false) return null;
         if (c.side === "short" && dir[h] != null) return dir[h];
         return (ret[h] && ret[h].ok ? ret[h].pct : null) ?? null;
       }

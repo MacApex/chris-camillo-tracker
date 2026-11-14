@@ -17,8 +17,9 @@ from typing import Any
 
 from .provenance import now_utc
 
-# Higher = more trustworthy as a Camillo-style cultural/attention input
-# when the adapter actually returns data. Missing data is weight 0.
+# PROJECT convention, not a rule Camillo published and not a validated model.
+# Higher = this archive's opinion of source quality when the adapter returns data.
+# Missing data is weight 0. Weights never become a trade.
 RELIABILITY = {
     "wikipedia": 0.70,       # official, stable, attention not sentiment
     "google_trends": 0.75,   # Camillo's own tool; 2025 AI-pollution caveat
@@ -79,17 +80,41 @@ def wikipedia_pageviews(article: str, start: str = "20251013", end: str = "20261
             out["status"] = "partial"
             out["reason"] = "empty series"
             return out
+        # The UTC day still in progress is not a complete observation.
+        # An incomplete last point cannot support a fading (or rising) claim.
+        today = now_utc()[:10].replace("-", "")
+        complete_items = list(items)
+        last_ts = str((items[-1] or {}).get("timestamp") or "")
+        dropped = None
+        if len(last_ts) >= 8 and last_ts[:8] >= today:
+            dropped = last_ts
+            complete_items = items[:-1]
+        if len(complete_items) < 5:
+            out.update({
+                "ok": False,
+                "status": "partial",
+                "reason": "No complete pageview day left after dropping an in-progress UTC day."
+                if dropped else "Series too short for a z.",
+                "dropped_incomplete_day": dropped,
+                "n_days": len(complete_items),
+                "z_last_vs_history": None,
+            })
+            return out
+        views = [int(i.get("views") or 0) for i in complete_items]
         recent, prior = views[-13:], views[-26:-13] or views[:-13]
         out.update({
             "ok": True,
             "status": "worked",
             "last_day": views[-1],
-            "last_timestamp": items[-1].get("timestamp"),
+            "last_timestamp": complete_items[-1].get("timestamp"),
+            "last_day_complete": True,
+            "dropped_incomplete_day": dropped,
             "sum_13d": sum(recent),
             "sum_prior_13d": sum(prior) if prior else None,
             "z_last_vs_history": _z(views[:-1], views[-1]),
+            "z_note": "z uses complete days only. A negative z is not a business-fading claim.",
             "n_days": len(views),
-            "series": [{"date": i.get("timestamp"), "views": i.get("views")} for i in items[-90:]],
+            "series": [{"date": i.get("timestamp"), "views": i.get("views")} for i in complete_items[-90:]],
         })
         return out
     except Exception as e:
@@ -253,13 +278,24 @@ def corroborate(platform_results: dict[str, dict], min_confirm: int = 2) -> dict
             continue
         st = res.get("status") or ("worked" if res.get("ok") else "blocked")
         z = res.get("z_last_vs_history")
-        mom = None
-        if z is None and isinstance(res.get("momentum_0_100"), (int, float)):
-            # Recover a rough z from a 0–100 momentum if that is all we have
-            mom = float(res["momentum_0_100"])
-            z = (mom - 50.0) / 10.0
-        elif isinstance(res.get("momentum_0_100"), (int, float)):
-            mom = float(res["momentum_0_100"])
+        mom = res.get("momentum_0_100") if isinstance(res.get("momentum_0_100"), (int, float)) else None
+        # momentum_0_100 is a separate 0–100 heuristic on normalized relative
+        # interest (see social.google_trends). It is NOT 50+10*z. Do not invert
+        # it with (score-50)/10 and call the result a statistical z.
+        if z is None and mom is not None and st in {"worked", "partial"}:
+            present_no_z.append({
+                "platform": name,
+                "status": st,
+                "reason": (
+                    "momentum_0_100 is a project heuristic index on normalized "
+                    "relative interest, not a count flow and not a statistical z. "
+                    "Formula in social.google_trends: 50 + 50 * clip(0.6*yoy + 0.4*vs_baseline). "
+                    "(index-50)/10 is not that formula and is not used."
+                ),
+                "momentum_0_100": mom,
+                "headline": res.get("headline"),
+            })
+            continue
         if st in {"worked", "partial"} and z is not None:
             w = RELIABILITY.get(name, 0.5)
             scores.append({"platform": name, "z": z, "momentum_0_100": mom, "weight": w, "status": st})

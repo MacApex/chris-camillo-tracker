@@ -3498,29 +3498,7 @@
       }
     }
   },
-  "lead": {
-    "ok": true,
-    "kind": "earnings_beat",
-    "days": 107,
-    "from": "2020-04-24",
-    "from_precision": "day",
-    "to": "2020-08-09",
-    "to_event": {
-      "date": "2020-08-09",
-      "kind": "earnings_beat",
-      "EPS Estimate": -0.2,
-      "Reported EPS": 0.48,
-      "Surprise(%)": 340.0
-    },
-    "definition": "Calendar days from the documented 24 Apr 2020 purchase (BI-viewed screenshots at $1.56) to the first Yahoo earnings beat after that date: 9 Aug 2020, estimate \u22120.20 vs reported 0.48, surprise +340%. The 8 May print was a miss (\u2212180%). Yahoo upgrades_downgrades in this window is empty (n=0 of 1 row in the entire Yahoo history); that is incomplete, not proof the Street was silent, so we do not report a lead to a rating change.",
-    "caveats": [
-      "yfinance auto-adjusted close on 24 Apr is about $0.69; BI published a screenshot at $1.56. Both figures are kept; we do not pick one.",
-      "By 9 Aug the equity had already moved a long way (event-study 3-month return +242.86% from the $0.69 start).",
-      "Yahoo ratings history is empty here and is incomplete."
-    ],
-    "zh": "107 \u4e2a\u65e5\u5386\u65e5\uff084 \u6708 24 \u65e5\u6709\u65e5\u671f\u7684\u4e70\u5165 \u2192 8 \u6708 9 \u65e5\u9996\u6b21\u8d22\u62a5\u8d85\u9884\u671f\uff0c\u60ca\u559c +340%\uff09\u30025 \u6708 8 \u65e5\u662f\u4e0d\u53ca\u9884\u671f\u3002Yahoo \u8bc4\u7ea7\u5728\u6b64\u7a97\u53e3\u4e3a\u7a7a\uff0c\u4e0d\u662f\u300c\u5356\u65b9\u4ec0\u4e48\u90fd\u6ca1\u505a\u300d\u7684\u8bc1\u636e\uff0c\u56e0\u6b64\u4e0d\u5bf9\u8bc4\u7ea7\u8ba1\u7b97\u65f6\u5dee\u3002",
-    "en": "107 calendar days (dated 24 Apr purchase \u2192 9 Aug first earnings beat, surprise +340%). The 8 May print was a miss. Yahoo ratings in this window are empty \u2014 not proof of inactivity \u2014 so we do not compute a ratings lead."
-  },
+  "lead": {"ok": false, "kind": null, "days": null, "from": null, "to": null, "zh": "这不是「卖方无知」的时差。2021 年 8 月 18 日《商业内幕》称截图显示 2020 年 4 月 24 日以名义价格 1.56 美元买入。发行人把二季报日期写为 2020 年 8 月 10 日收盘后（8 月 4 日的电话会通知写明新闻稿在 8 月 11 日电话会的前一天发布）。4 月 24 日到 8 月 10 日是 108 个日历日：从有记录的买入日到财报发布，不是评级滞后。Yahoo 把该行标成 2020 年 8 月 9 日（107 日），那是供应商的时间戳，不是发行人的。新闻稿写明调整后稀释每股收益 0.48 美元，报告稀释每股收益 0.34 美元。Yahoo 的 Surprise(%) +340 用的是预期 −0.20 和 0.48。新闻稿没有公布这组一致预期，所以 +340% 不是已确认的超预期，也不是股价涨幅。库存的 2020 年 4 月 24 日自动复权收盘约 0.69 美元。在调整因子、货币、证券身份和报价质量对齐之前，不能与 1.56 美元直接比较。更晚的每股 12 美元特别股息（2022 年 1 月 4 日新闻稿，2022 年 2 月 1 日支付）可能影响复权历史；它没有被证明就是这个价差的原因。窗口内 Yahoo 评级为空：证据不足，不是「卖方沉默」。复权收盘的事件研究路径，与每股收益、以及 BI 描述的 1.56 到 11.38 美元路径，是三件不同的事。", "en": "Not a Street-ignorance lead. Business Insider (18 Aug 2021) said screenshots showed a 24 Apr 2020 purchase at a nominal $1.56. The issuer dated the Q2 release 10 Aug 2020, after the close (call notice dated 4 Aug 2020 said the release would come the day before the 11 Aug call). 24 Apr to 10 Aug is 108 calendar days: entry date to an earnings release, not a rating lag. Yahoo stamps the row 9 Aug 2020 (107 days). That is the vendor clock, not the issuer's. The release states adjusted diluted EPS of US$0.48 and reported diluted EPS of US$0.34. Yahoo Surprise(%) +340 uses estimate −0.20 and 0.48. The release does not publish that consensus, so +340% is not a confirmed beat and is not a stock return. The stored auto-adjusted close on 24 Apr 2020 is about $0.69. It is not comparable to $1.56 until adjustment factor, currency, security identity, and quote quality are reconciled. A later US$12 special dividend (issuer release 4 Jan 2022, payable 1 Feb 2022) can affect adjusted history; it is not a demonstrated explanation of this gap. Yahoo rating rows in the window are empty: insufficient evidence, not a silent Street. The adjusted-close event-study path is a different object from both the EPS line and the $1.56 to $11.38 path BI described.", "trading_lead": "unavailable"},
   "series_status": {
     "prices": "worked",
     "grades": "worked",

@@ -6,7 +6,7 @@ Chris Camillo Tracker's write-ups, playbook, and divergence scanner are an indep
 
 ## What this is not
 
-- It is not a recreation of Camillo's personal returns. His audited record includes concentrated, high-volatility options trades. A Python score cannot reproduce that judgment or those results.
+- It is not a recreation of Camillo's personal returns. Business Insider reported that Jack Schwager reviewed monthly brokerage statements and that Prof. Biljana Adebambo independently reviewed them and agreed. That is not a published professional audit of every trade or of later headline totals. This project did not audit the account and did not separate the contribution of observation, leverage, and concentration. A Python score cannot reproduce that judgment or those results.
 - It is not a backtested, investable strategy. Social-arbitrage, as he practices it, is discretionary. There is no mechanical rule set here that has been shown to produce similar returns.
 - It is not a substitute for your own research, a licensed adviser, or an understanding of options risk. You can lose the entire premium on an option, and you can lose more than you intend if you use leverage carelessly.
 
@@ -14,7 +14,7 @@ Chris Camillo Tracker's write-ups, playbook, and divergence scanner are an indep
 
 Every performance figure in this repository is attributed to a source and labelled as **independently reviewed**, **self-reported**, or **unverified**. Headline totals ($20k to $2 million, $42 million, $70 million, $80 million) come from different dates, different account definitions, and different degrees of verification. They should not be collapsed into a single "track record." We did not invent, round up, or interpolate any return, price, or quote. Where a popular anecdote could not be sourced, we say so.
 
-Past results, including independently audited ones, do not predict future results.
+Past results, including figures a journalist said were reviewed from statements, do not predict future results. The research-record table is not a complete trading history and cannot support a win rate, an expected return, or a claim of strategy effectiveness.
 
 ## Data quality
 

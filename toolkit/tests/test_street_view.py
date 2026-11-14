@@ -12,7 +12,7 @@ def test_already_priced_when_street_is_bullish_and_revising_up():
         "coverage": {"n_ratings": 24},
     }
     v = priced_in_verdict(components)
-    assert v["label"] == "already_priced"
+    assert v["label"] == "explicitly_reflected"
     assert v["n_components"] >= 4
     assert v["priced_in_points"] >= 4
 
@@ -26,20 +26,19 @@ def test_not_clearly_priced_when_street_is_cold():
         "coverage": {"n_ratings": 8},
     }
     v = priced_in_verdict(components)
-    assert v["label"] in {"not_clearly_priced", "partially_priced"}
-    # Cold consensus should not be called already_priced
-    assert v["label"] != "already_priced"
+    assert v["label"] in {"not_evidenced_in_reviewed_sources", "partly_reflected"}
+    assert v["label"] != "explicitly_reflected"
 
 
 def test_insufficient_data():
     v = priced_in_verdict({})
-    assert v["label"] == "insufficient_data"
+    assert v["label"] == "insufficient_evidence"
     assert v["priced_in_points"] is None
 
 
 def test_corroboration_requires_two_rising_platforms():
     platforms = {
-        "google_trends": {"status": "worked", "momentum_0_100": 75},  # z ~ 2.5
+        "google_trends": {"status": "worked", "z_last_vs_history": 1.4},
         "wikipedia": {"status": "worked", "z_last_vs_history": 1.2},
         "reddit": {"status": "blocked", "reason": "HTTP 403"},
     }
@@ -58,8 +57,9 @@ def test_corroboration_does_not_impute_missing():
     }
     c = corroborate(platforms, min_confirm=2)
     assert c["corroborated"] is False
-    assert c["n_confirming"] == 1
-    assert c["weighted_z"] is not None  # one platform still produces a z
+    assert c["n_confirming"] == 0
+    assert c["weighted_z"] is None
+    assert any(p["platform"] == "google_trends" for p in c["platforms_present_no_z"])
     assert len(c["platforms_missing"]) == 2
 
 

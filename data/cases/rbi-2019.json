@@ -9,12 +9,12 @@
   "entry": {
     "date": "2019-04-15",
     "precision": "month",
-    "label": "April purchase window"
+    "label": "April 2019 month window. The 15th is a placeholder, not the screenshot day."
   },
   "entry2": {
     "date": "2019-08-15",
     "precision": "month",
-    "label": "August second purchase"
+    "label": "August 2019 month window. The 15th is a placeholder, not the screenshot day."
   },
   "exit": null,
   "wiki": "Restaurant_Brands_International",

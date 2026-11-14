@@ -160,7 +160,7 @@ def signal_for_ticker(ticker: str, sample: dict | None = None) -> dict:
         "notes": (
             "Lifetime cumulative counts (stock), not a 7-day flow. "
             "No z-score is computed from a single snapshot. "
-            "TikTokApi hashtag.info() cross-checks the same challengeInfo on #crocs, #lululemon, #elfcosmetics."
+            "TikTokApi hashtag.info() repeats the same challengeInfo upstream on #crocs, #lululemon, #elfcosmetics. That is a retrieval check, not a second demand source."
         ),
     }
     if not rec:

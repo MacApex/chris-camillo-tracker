@@ -165,7 +165,7 @@ We looked for the anecdotes that circulate around Camillo — including Pabst an
 | May 2021 | Cumulative profits **$42 million**; 77% CAGR 2006–2020 | Schwager update, BI |
 | 2021 | Tapestry **$3.1M** position; Playa thesis; still adding Crocs | Screenshots / interview |
 | Aug 2022 | Still long Crocs, HeyDude thesis | Benzinga interview |
-| 2025 | Google Trends / AI critique; Lululemon exit; short GOOGL disclosed | His X thread |
+| 2025 | Google Trends reliability hypothesis; Lululemon product terms as an example, not a documented exit; short GOOGL disclosed | His X thread |
 | 2026 interviews | "**$80 million**" lifetime returns, "**68%** over 17 years" | Self-reported |
 
 ## Bottom line on the record

@@ -1,8 +1,8 @@
 {
   "title": "Chris Camillo / Dumb Money documented calls",
   "version": "1.0",
-  "compiled_at_asia_shanghai": "2026-11-13 02:15 Asia/Shanghai",
-  "policy": "Every row is sourced. Personal P&L is self-reported unless a journalist is recorded as having viewed statements or screenshots. Stock-path percentages are market facts, not Camillo's verified return. Tickers that could not be confirmed are labeled. Pabst Blue Ribbon and the Vegas Golden Knights are omitted because no source links them to Camillo. This is not financial advice and is not affiliated with Camillo, Dumb Money, TickerTags, Schwager, or Business Insider.",
+  "compiled_at_asia_shanghai": "2026-11-14 audit pass, Asia/Shanghai",
+  "policy": "43 research records, not 43 verified trades. The set includes excluded attributions, themes, misses, third-party mentions, and repeats. Do not compute a win rate, expected return, or strategy efficacy. Incomplete history cannot support those estimates. Personal P&L is self-reported unless a journalist viewed statements or screenshots, and a purchase screenshot is not exit proceeds. Schwager's review of monthly statements, as reported by Business Insider, is not a published audit of every trade or of later headline totals. This project did not audit the account.",
   "verification_levels": {
     "independently_reviewed": "Schwager statement audit and/or Business Insider review of tax forms or statements — used for career totals, not usually for a single trade's P&L.",
     "screenshots_viewed_by_journalist": "A journalist reported viewing purchase or position screenshots. Still not an audited closed P&L unless stated.",
@@ -21,17 +21,28 @@
       "date_precision": "year-uncertain",
       "ticker": null,
       "ticker_status": "historical_private_company_then_ipo",
-      "thesis": "A teenage Camillo noticed Snapple displacing other drinks and bought puts on a competing brand (accounts vary on the exact listed vehicle).",
+      "thesis": "He noticed Snapple losing shelf space at a 7-Eleven (a favorite flavor gone; doors cut back) and, through his brother, bought puts on Snapple. Not a story of Snapple winning while he shorted a competitor.",
       "signal": "Real-world product substitution, observed locally.",
       "instrument": "puts",
       "entry": "about $300",
       "exit": null,
-      "outcome": "Self-reported approximately a 3x; consistent in interviews since at least 2011. Not audited.",
-      "source": "Tearsheet 2011; later retellings (Stansberry, VladTV).",
-      "source_url": "https://www.tearsheet.co/",
+      "outcome": "Personal recollection of about a 3x. The listed vehicle, the year, and the execution are unresolved. Not a verified trade.",
+      "source": "Tearsheet / Tradestreaming, Zack Miller, 12 Dec 2011; same direction in Business Insider, 7 Dec 2020.",
+      "source_url": "https://tearsheet.co/podcasts/how-to-beat-wall-street-by-using-facebook-reading-tabloids-and-shopping-with-chris-camillo/",
       "verification": "self_reported",
       "role": "win",
-      "notes": "Date often given as late 1980s. Exact counterparty ticker is not independently confirmed."
+      "notes": "Date often given as late 1980s. Exact counterparty ticker is not independently confirmed.",
+      "thesis_zh": "他注意到 7-Eleven 里 Snapple 货架在缩小（常喝的口味没有了，冰箱门被砍掉），并通过哥哥买入 Snapple 的看跌期权。不是「Snapple 在赢、他做空竞争对手」。",
+      "outcome_zh": "个人回忆大约 3 倍。上市工具、年份和成交都未解决。不是已核实交易。",
+      "instrument_zh": "看跌期权（回忆）",
+      "evidence": {
+        "identity": "snapple_named",
+        "date": "late_1980s_unresolved",
+        "instrument": "puts_recalled",
+        "position": "not_verified",
+        "closed_pnl": "self_reported_unverified",
+        "review": "pages_reread_2026_11_14"
+      }
     },
     {
       "id": "uggs-book-era",
@@ -49,7 +60,18 @@
       "source": "Laughing at Wall Street (2011); later interviews.",
       "source_url": "https://www.penguinrandomhouse.com/",
       "verification": "self_reported",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "UGG 靴子的文化采用早于卖方认识。",
+      "outcome_zh": "自述的盈利例子。没有已审计盈亏。",
+      "instrument_zh": "未说明（书中时代的股票或期权）",
+      "evidence": {
+        "identity": "probable",
+        "date": "era",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "true-religion-book-era",
@@ -67,7 +89,18 @@
       "source": "Laughing at Wall Street (2011).",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "高端牛仔的文化浪潮。",
+      "outcome_zh": "自述的盈利例子。没有已审计盈亏。书中的营销数字（例如 1000 美元到 75 万美元）未经审计。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "historical_delisted",
+        "date": "era",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "nintendo-wii",
@@ -85,7 +118,18 @@
       "source": "Tearsheet, 2011.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "Wii 的休闲玩家采用被相对索尼和微软低估。",
+      "outcome_zh": "被描述为一笔大的盈利。我们取得的一手来源里没有盈亏数字。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "probable",
+        "date": "era",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "cerner-emr",
@@ -103,7 +147,18 @@
       "source": "Tearsheet 2011 and later interviews.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "电子病历采用浪潮。",
+      "outcome_zh": "自述「我相信约 700%」，大约两年。未经审计，措辞有保留。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "historical_delisted",
+        "date": "era",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "chuggington-facebook",
@@ -121,7 +176,18 @@
       "source": "Tearsheet 2011.",
       "source_url": null,
       "verification": "unconfirmed_ticker",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "儿童节目在 Facebook 上出现意外热度。",
+      "outcome_zh": "自述数月内约 50%。上市工具没有可靠识别。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "vehicle_uncertain",
+        "date": "era",
+        "instrument": "see_text",
+        "position": "unconfirmed_ticker",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "delcasse-medical-study",
@@ -139,7 +205,18 @@
       "source": "Secondary retellings of early interviews.",
       "source_url": null,
       "verification": "unconfirmed_ticker",
-      "role": "unconfirmed"
+      "role": "unconfirmed",
+      "thesis_zh": "与一项医学研究有关的想法（有读者猜是 Dendreon；我们不这么定）。",
+      "outcome_zh": "代码未证实。不要当成已核实的 Camillo 交易。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "unconfirmed",
+        "date": "unknown",
+        "instrument": "see_text",
+        "position": "unconfirmed_ticker",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "silicon-image-hdmi",
@@ -157,25 +234,47 @@
       "source": "Tearsheet 2011.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "loss"
+      "role": "loss",
+      "thesis_zh": "HDMI 采用。他后来把这笔当作个人偏见压过方法的例子。",
+      "outcome_zh": "被描述为亏损和流程失败，不是信息本身的模型失败。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "historical_delisted",
+        "date": "era",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "target-missoni-2011",
       "name": "Target × Missoni",
-      "date": "2011-09",
-      "date_precision": "month",
+      "date": "2011-09-13",
+      "date_precision": "retail_event_not_execution",
       "ticker": "TGT",
       "ticker_status": "confirmed_event_vehicle",
-      "thesis": "A designer collab would sell out immediately; options around the event.",
+      "thesis": "He recalled waiting in line, seeing a Missoni for Target sellout, and buying leveraged options that day, out the next morning. Target’s 16 Sep 2011 statement says the nationwide launch was 13 Sep 2011. The 7 Sep 2011 anchor is withdrawn. Executions and the option return are unverified.",
       "signal": "Pre-event consumer chatter and collab marketing. The sell-out is a documented retail event (September 2011).",
       "instrument": "options",
       "entry": null,
       "exit": "next morning, self-reported",
-      "outcome": "Self-reported doubled overnight on options, out the next morning. Event is independently documented; P&L is not audited.",
+      "outcome": "Self-reported overnight double on options. Not verified. Any price path from 13 Sep is the equity path from the retail launch, not his option return.",
       "source": "Tearsheet 2011; contemporaneous retail coverage of the Missoni sell-out.",
-      "source_url": null,
+      "source_url": "https://tearsheet.co/podcasts/how-to-beat-wall-street-by-using-facebook-reading-tabloids-and-shopping-with-chris-camillo/",
       "verification": "self_reported_and_market_fact",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "他回忆当天排队、看见 Missoni for Target 售罄，并买入杠杆期权，次日早上退出。Target 2011 年 9 月 16 日的声明称全国上市是 9 月 13 日。2011 年 9 月 7 日的锚点已撤回。成交和期权收益未核实。",
+      "outcome_zh": "自述期权隔夜翻倍。未核实。从 9 月 13 日起的价格路径是零售上市日的股票路径，不是他的期权收益。",
+      "instrument_zh": "期权（自述，未核实）",
+      "evidence": {
+        "identity": "target_named",
+        "date": "retail_launch_13_sep_not_a_fill",
+        "instrument": "options_unverified",
+        "position": "not_verified",
+        "closed_pnl": "self_reported_unverified",
+        "review": "pages_reread_2026_11_14"
+      }
     },
     {
       "id": "jcrew-obama-miss",
@@ -193,7 +292,18 @@
       "source": "Tearsheet 2011 (he missed it); later marketing copy that misattributes the figure.",
       "source_url": null,
       "verification": "missed_opportunity",
-      "role": "miss"
+      "role": "miss",
+      "thesis_zh": "广为引用的营销故事（有时写成 186%）不是他的盈利。Tearsheet：他错过了。",
+      "outcome_zh": "记为错过的机会，不是盈利交易。不要把 186% 写成他的收益。",
+      "instrument_zh": "无",
+      "evidence": {
+        "identity": "historical",
+        "date": "era",
+        "instrument": "see_text",
+        "position": "missed_opportunity",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "elf-2019",
@@ -202,52 +312,77 @@
       "date_precision": "month",
       "ticker": "ELF",
       "ticker_status": "confirmed",
-      "thesis": "Jeffree Star and channel checks pointed to a demand spike not yet in the tape.",
+      "thesis": "In the 7 Dec 2020 interview he recalled a March 2019 Jeffree Star video and pharmacy sellouts, then a purchase. The purchase day is not in the interview. The video upload day is not independently dated.",
       "signal": "Influencer / YouTube beauty culture plus channel checks.",
       "instrument": "unspecified (equity or options)",
       "entry": null,
       "exit": null,
-      "outcome": "Self-reported to Business Insider: the stock rose more than 50% in six weeks. The stock-path fact is checkable; personal P&L is self-reported.",
-      "source": "Business Insider, Laila Maidan, 18 August 2021.",
-      "source_url": "https://www.businessinsider.com/chris-camillo-social-arbitrage-investing-strategy-ticker-tags-2021-8",
+      "outcome": "He said the stock rose more than 50% in the six weeks after his initial purchase. Self-reported market path, not audited P&L. No single-number lead is published.",
+      "source": "Business Insider, Christopher Competiello, 7 Dec 2020.",
+      "source_url": "https://www.businessinsider.com/trading-strategy-market-wizard-chris-camillo-shares-secrets-to-millions-2020-12",
       "verification": "self_reported_and_market_fact",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "2020 年 12 月 7 日的访谈里，他回忆 2019 年 3 月的 Jeffree Star 视频和药店售罄，然后买入。访谈没有买入日。视频上传日没有独立日期。",
+      "outcome_zh": "他说首次买入后六周股价涨超 50%。这是自述的价格路径，不是已审计盈亏。不发布单一数字的领先时间。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "elf_named",
+        "date": "month_recollection_not_a_fill",
+        "instrument": "unspecified",
+        "position": "not_stated",
+        "closed_pnl": "self_reported_path_not_pnl",
+        "review": "pages_reread_2026_11_14"
+      }
     },
     {
       "id": "rbi-2019-apr",
-      "name": "Restaurant Brands (Tim Hortons) — April",
+      "name": "Restaurant Brands — April 2019",
       "date": "2019-04",
       "date_precision": "month",
       "ticker": "QSR",
       "ticker_status": "confirmed",
-      "thesis": "A Tim Hortons turnaround thesis that did not play out as hoped.",
+      "thesis": "Impossible Whopper and Popeyes chicken sandwich, later offset by Tim Hortons weakness. Not a Tim Hortons turnaround bet. April 2019 purchase; day not published. Screenshots viewed by BI.",
       "signal": "Channel / brand observation.",
       "instrument": "unspecified",
       "entry": null,
       "exit": null,
-      "outcome": "Part of a self-reported ~$750k loss. BI reported viewing purchase screenshots. Peak price context: $78.45 then about −59% by March 2020 (market path, not his exact P&L).",
-      "source": "Business Insider, 18 August 2021.",
-      "source_url": "https://www.businessinsider.com/chris-camillo-social-arbitrage-investing-strategy-ticker-tags-2021-8",
+      "outcome": "Part of a self-reported loss of about $750,000. Purchase screenshot is not exit proceeds.",
+      "source": "Business Insider, Laila Maidan, 18 Aug 2021.",
+      "source_url": "https://www.businessinsider.com/stock-market-trading-strategies-social-arbitrage-chris-camillo-bets-picks-2021-8",
       "verification": "screenshots_viewed_by_journalist",
-      "role": "loss"
+      "role": "loss",
+      "thesis_zh": "Impossible Whopper 与 Popeyes 鸡肉三明治，后来被 Tim Hortons 的疲弱抵消。不是 Tim Hortons 翻盘赌注。2019 年 4 月买入；日未公布。BI 看过截图。",
+      "outcome_zh": "自述约 75 万美元亏损的一部分。买入截图不是退出所得。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "qsr_named",
+        "date": "april_2019_day_unknown",
+        "instrument": "unspecified",
+        "position": "screenshots_viewed",
+        "closed_pnl": "self_reported",
+        "review": "pages_reread_2026_11_14"
+      }
     },
     {
       "id": "rbi-2019-aug",
-      "name": "Restaurant Brands — August add/second buy",
+      "name": "Restaurant Brands — August 2019",
       "date": "2019-08",
       "date_precision": "month",
       "ticker": "QSR",
       "ticker_status": "confirmed",
-      "thesis": "Same Tim Hortons thesis; second dated purchase.",
+      "thesis": "Second 2019 purchase, same Whopper / Popeyes thesis. August is the month BI reported; the day was not published.",
       "signal": "Same as April 2019.",
       "instrument": "unspecified",
       "entry": null,
       "exit": null,
-      "outcome": "Folded into the self-reported $750k loss. Screenshots viewed.",
-      "source": "Business Insider, 18 August 2021.",
-      "source_url": "https://www.businessinsider.com/chris-camillo-social-arbitrage-investing-strategy-ticker-tags-2021-8",
+      "outcome": "Folded into the same self-reported loss of about $750,000.",
+      "source": "Business Insider, Laila Maidan, 18 Aug 2021.",
+      "source_url": "https://www.businessinsider.com/stock-market-trading-strategies-social-arbitrage-chris-camillo-bets-picks-2021-8",
       "verification": "screenshots_viewed_by_journalist",
-      "role": "loss"
+      "role": "loss",
+      "thesis_zh": "2019 年第二次买入，仍是 Whopper / Popeyes 论点。BI 报道的是 8 月；日未公布。",
+      "outcome_zh": "并入同一笔自述的约 75 万美元亏损。",
+      "instrument_zh": "未说明"
     },
     {
       "id": "covid-shorts-2020",
@@ -256,17 +391,28 @@
       "date_precision": "month",
       "ticker": "SPY,WYNN",
       "ticker_status": "confirmed_as_named",
-      "thesis": "Chinese-language papers (read via Translate) implied a pandemic trajectory the US tape had not priced.",
+      "thesis": "He described translating Chinese newspapers and blogs in February 2020, not academic papers, then buying puts and shorting SPY outright, plus Wynn puts.",
       "signal": "Primary foreign-language research, not a social-app meme.",
       "instrument": "puts on SPY and Wynn; 25–30% of savings, self-reported",
       "entry": null,
       "exit": "early March 2020, self-reported",
-      "outcome": "Self-reported to Stansberry: losing at first, then 'seven figures in a week' in early March. Unaudited. He has also said he was even or slightly up in the 2008 crash after going short — separate, self-reported.",
-      "source": "Stansberry Investor Hour, episode 192, early February 2021 (full transcript retrieved).",
-      "source_url": "https://stansberrystore.com/",
+      "outcome": "Self-reported: losing at first, then seven figures in a week around early March. Not verified as a complete exit. Not put or short P&L on the equity path.",
+      "source": "Stansberry Investor Hour episode 192 transcript page.",
+      "source_url": "https://stansberryresearch.com/stansberry-investor-hour/episode-192-turning-20k-to-2-million-during-the-financial-crisis",
       "verification": "self_reported",
       "role": "win",
-      "notes": "Exact put strikes and premiums were not published. Do not invent them."
+      "notes": "Exact put strikes and premiums were not published. Do not invent them.",
+      "thesis_zh": "他描述 2020 年 2 月翻译中文报纸和博客，不是学术论文，然后买入看跌期权并直接做空 SPY，外加 Wynn 的看跌期权。",
+      "outcome_zh": "自述：起初亏损，然后在三月初的一周赚到七位数。没有核实为完整平仓。股价路径不是期权或做空损益。",
+      "instrument_zh": "看跌期权，以及直接做空 SPY（自述）",
+      "evidence": {
+        "identity": "spy_and_wynn_named",
+        "date": "february_and_early_march_recollection",
+        "instrument": "puts_and_outright_shorts",
+        "position": "self_reported_size",
+        "closed_pnl": "self_reported_not_a_verified_exit",
+        "review": "transcript_page_reread_2026_11_14"
+      }
     },
     {
       "id": "dorel-2020",
@@ -275,16 +421,27 @@
       "date_precision": "day",
       "ticker": "DIIBF",
       "ticker_status": "confirmed",
-      "thesis": "Stay-at-home demand for Dorel's home and bike lines.",
+      "thesis": "Stay-at-home demand for Dorel's bike and home lines, as told to Business Insider.",
       "signal": "COVID consumption shift; purchase screenshots dated 24 April 2020 at $1.56, viewed by BI. Gradual selling around June near $4.46; full exit November, when the stock was $11.38.",
       "instrument": "equity (screenshots of purchases)",
       "entry": "$1.56 on 2020-04-24 (screenshot, BI)",
       "exit": "gradual June ~$4.46; full exit November 2020, stock $11.38 that day (BI)",
-      "outcome": "The 629% figure is the stock's move from $1.56 to $11.38, not a verified personal rate of return (he sold gradually). Stansberry: '9X I think' — self-reported and hedged. Screenshots viewed.",
-      "source": "Business Insider, 18 August 2021; Stansberry ep. 192.",
-      "source_url": "https://www.businessinsider.com/chris-camillo-social-arbitrage-investing-strategy-ticker-tags-2021-8",
+      "outcome": "BI: screenshots of a 24 Apr 2020 purchase at $1.56, gradual selling near $4.46 in June, and a November exit with the stock at $11.38, which the article calls a 629% rise. That is a described price path, not verified personal return and not the EPS figure. The stored adjusted close that day (~$0.69) is not directly comparable.",
+      "source": "Business Insider, Laila Maidan, 18 Aug 2021. Issuer release 10 Aug 2020.",
+      "source_url": "https://www.businessinsider.com/stock-market-trading-strategies-social-arbitrage-chris-camillo-bets-picks-2021-8",
       "verification": "screenshots_viewed_by_journalist",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "向《商业内幕》讲述的、居家带来的 Dorel 自行车和家居需求。",
+      "outcome_zh": "BI：2020 年 4 月 24 日以 1.56 美元买入的截图，6 月在约 4.46 美元附近分批卖出，11 月退出时股价 11.38 美元，文章称之为上涨 629%。这是被描述的价格路径，不是已核实的个人收益率，也不是每股收益。当日库存复权收盘（约 0.69 美元）不能直接比较。",
+      "instrument_zh": "股票（买入截图）",
+      "evidence": {
+        "identity": "dorel_named",
+        "date": "2020-04-24_purchase",
+        "instrument": "equity_screenshots",
+        "position": "purchase_screenshots_viewed",
+        "closed_pnl": "not_audited",
+        "review": "pages_reread_2026_11_14"
+      }
     },
     {
       "id": "peloton-2020",
@@ -302,7 +459,18 @@
       "source": "Stansberry Investor Hour, ep. 192.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "居家健身硬件和软件。",
+      "outcome_zh": "向 Stansberry 自述也许是一生最大的一笔：「400 万美元……相对小的投资。」未经审计。进场日不够精确。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "confirmed_as_named",
+        "date": "year",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "amazon-2020",
@@ -320,7 +488,18 @@
       "source": "Business Insider 2021; later podcasts including VladTV 2026.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "电商加速。后来的评论描述一笔很大的亚马逊期权、做到财报。",
+      "outcome_zh": "2020 年前后的访谈里点过名。1000 万美元期权数字是后来播客里的自述，不是已审计的平仓盈亏。",
+      "instrument_zh": "股票，以及后来的期权（自述）",
+      "evidence": {
+        "identity": "confirmed_as_named",
+        "date": "year",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "shopify-2020",
@@ -338,7 +517,18 @@
       "source": "Business Insider, 18 August 2021.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "theme"
+      "role": "theme",
+      "thesis_zh": "封锁期间的 DTC / 电商基础设施。BI 引述一种看法：它本不该下跌。",
+      "outcome_zh": "被点名；没有已审计的个人盈亏。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "confirmed_as_named",
+        "date": "year",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "outdoor-2020",
@@ -356,7 +546,18 @@
       "source": "Stansberry ep. 192; BI 2021.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "theme"
+      "role": "theme",
+      "thesis_zh": "新冠期间的户外需求。",
+      "outcome_zh": "主题被点名；我们手头的来源没有把每个代码和盈亏写全。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "theme_multiple_names",
+        "date": "year",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "hp-printers-2020",
@@ -365,16 +566,19 @@
       "date_precision": "year",
       "ticker": "HPQ",
       "ticker_status": "probable",
-      "thesis": "Work-from-home printer demand.",
+      "thesis": "Work-from-home printer demand, named on Stansberry.",
       "signal": "Consumption / search observation.",
       "instrument": "unspecified",
       "entry": null,
       "exit": null,
-      "outcome": "Named on Stansberry; no P&L.",
+      "outcome": "Named. No P&L evidence. Not a win.",
       "source": "Stansberry Investor Hour, ep. 192.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "named_no_pnl",
+      "thesis_zh": "在家办公的打印机需求，Stansberry 上点过名。",
+      "outcome_zh": "只是被点名。没有盈亏证据。不是一笔盈利记录。",
+      "instrument_zh": "未说明"
     },
     {
       "id": "logitech-webcams-2020",
@@ -388,11 +592,14 @@
       "instrument": "unspecified",
       "entry": null,
       "exit": null,
-      "outcome": "Named on Stansberry; no P&L.",
+      "outcome": "Named on Stansberry. No P&L evidence. Not graded as a win.",
       "source": "Stansberry Investor Hour, ep. 192.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "named_no_pnl",
+      "outcome_zh": "Stansberry 上点过名。没有盈亏证据。不记为盈利。",
+      "thesis_zh": "在家办公、网络摄像头短缺或需求。",
+      "instrument_zh": "未说明"
     },
     {
       "id": "pets-2020-miss",
@@ -410,7 +617,18 @@
       "source": "Stansberry Investor Hour, ep. 192.",
       "source_url": null,
       "verification": "missed_opportunity",
-      "role": "miss"
+      "role": "miss",
+      "thesis_zh": "他说自己错过了 6 到 7 个后来涨了 3 到 6 倍的宠物相关名字。",
+      "outcome_zh": "错过的机会，自述。名字没有列出。",
+      "instrument_zh": "无",
+      "evidence": {
+        "identity": "multiple_unnamed",
+        "date": "year",
+        "instrument": "see_text",
+        "position": "missed_opportunity",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "election-biden-2020",
@@ -428,7 +646,18 @@
       "source": "Stansberry Investor Hour, ep. 192.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "theme"
+      "role": "theme",
+      "thesis_zh": "围绕 2020 年美国大选的政策与文化定位。",
+      "outcome_zh": "被点名；我们有的文字稿里没有代码表或盈亏。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "theme_unnamed",
+        "date": "month",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "newell-slime",
@@ -446,25 +675,39 @@
       "source": "CMC Markets interview, September 2022.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "Elmer's 史莱姆热：一条产品线收入的大约 50%，公司的 1%–2%。这是他自己的物质性边界例子，他仍用杠杆做了。不是本项目的「1%–2% 通常不重要」规则。",
+      "outcome_zh": "自述杠杆下「接近 200%」。CMC Markets 访谈，2022 年 9 月。未经审计。",
+      "instrument_zh": "杠杆（自述）",
+      "evidence": {
+        "identity": "confirmed_as_named",
+        "date": "era",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "tapestry-2021",
       "name": "Tapestry (Coach) position",
-      "date": "2021",
-      "date_precision": "year",
+      "date": "2021-08-18",
+      "date_precision": "publication_not_trade",
       "ticker": "TPR",
       "ticker_status": "confirmed",
-      "thesis": "Coach / Tapestry cultural demand.",
+      "thesis": "Coach / Tapestry social interest. The 18 Aug 2021 article is when BI reported a $3.1 million position. That date is not a fill. 15 Aug 2021 is the article's Playa year-to-date cutoff.",
       "signal": "Brand/cultural observation.",
       "instrument": "equity (position screenshots)",
       "entry": null,
       "exit": null,
-      "outcome": "BI reported screenshots of a $3.1 million position in 2021. That is a position size, not a closed P&L.",
+      "outcome": "Position size viewed by a journalist, not a closed P&L and not exit proceeds.",
       "source": "Business Insider, 18 August 2021.",
-      "source_url": "https://www.businessinsider.com/chris-camillo-social-arbitrage-investing-strategy-ticker-tags-2021-8",
+      "source_url": "https://www.businessinsider.com/stock-market-trading-strategies-social-arbitrage-chris-camillo-bets-picks-2021-8",
       "verification": "screenshots_viewed_by_journalist",
-      "role": "open_or_unspecified"
+      "role": "open_or_unspecified",
+      "thesis_zh": "Coach / Tapestry 的社交兴趣。2021 年 8 月 18 日的文章报道了 310 万美元持仓。该日不是成交日。2021 年 8 月 15 日是文章里 Playa 的年初至今截止日期。",
+      "outcome_zh": "记者看过的持仓规模，不是已平仓盈亏，也不是退出所得。",
+      "instrument_zh": "股票（持仓截图）"
     },
     {
       "id": "playa-2021",
@@ -480,9 +723,11 @@
       "exit": null,
       "outcome": "Thesis described to BI. The stock was +32% year-to-date through 15 August 2021 — a market fact, not his verified return. Entry date unknown.",
       "source": "Business Insider, 18 August 2021.",
-      "source_url": "https://www.businessinsider.com/chris-camillo-social-arbitrage-investing-strategy-ticker-tags-2021-8",
+      "source_url": "https://www.businessinsider.com/stock-market-trading-strategies-social-arbitrage-chris-camillo-bets-picks-2021-8",
       "verification": "self_reported_and_market_fact",
-      "role": "theme"
+      "role": "theme",
+      "thesis_zh": "海滩度假搜索升温后的 Playa 论点。文章给出的「年初至 8 月 15 日约涨 32%」是发表文中的市场截止日期，不是交易日。",
+      "outcome_zh": "自述重仓。+32% 是到 2021 年 8 月 15 日的年初至今市场事实，不是他的已核实收益，也不是进场日。"
     },
     {
       "id": "crocs-multi-year",
@@ -500,7 +745,18 @@
       "source": "Business Insider 2021; Benzinga, 3 August 2022.",
       "source_url": "https://www.benzinga.com/",
       "verification": "self_reported_and_market_fact",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "Crocs 的文化再加速，然后 HeyDude 作为「地理套利」。",
+      "outcome_zh": "2021 年他说股票已经翻了三倍仍在加仓（自述立场；三倍是市场路径）。Benzinga 2022 年 8 月 3 日：仍持有。没有已审计的平仓盈亏。",
+      "instrument_zh": "股票",
+      "evidence": {
+        "identity": "confirmed",
+        "date": "multi-year",
+        "instrument": "see_text",
+        "position": "self_reported_and_market_fact",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "gamestop-2021",
@@ -518,7 +774,18 @@
       "source": "Stansberry Investor Hour, ep. 192 (full transcript).",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "他是在轧空期间买入，不是从 YouTube 标题「预测」出来的。Stansberry：大约 70 美元买入，一部分在大约 300–340 美元卖出。",
+      "outcome_zh": "Stansberry 第 192 期自述。仅凭 YouTube 标题说他预测了轧空，证据更弱，这里不用。",
+      "instrument_zh": "股票",
+      "evidence": {
+        "identity": "confirmed_as_named",
+        "date": "month",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "amc-2021",
@@ -536,7 +803,18 @@
       "source": "Stansberry Investor Hour, ep. 192.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "相关的迷因轧空参与。",
+      "outcome_zh": "自述约 30 万美元变成约 120–130 万美元，捐给一家儿科基金会。未经审计。",
+      "instrument_zh": "股票",
+      "evidence": {
+        "identity": "confirmed_as_named",
+        "date": "month",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "silver-2021",
@@ -554,7 +832,18 @@
       "source": "Stansberry Investor Hour, ep. 192.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "短暂参与 2021 年白银轧空。",
+      "outcome_zh": "自述先赚 30 万美元，吐回一些后「略正」。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "metal_vehicle_unspecified",
+        "date": "month",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "aws-forums",
@@ -572,7 +861,18 @@
       "source": "VladTV interview, 2026.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "开发者论坛的讨论意味着 AWS 需求强于共识。",
+      "outcome_zh": "2026 年 VladTV 上的描述。日期含糊。未经审计。",
+      "instrument_zh": "未说明，自述杠杆",
+      "evidence": {
+        "identity": "confirmed_as_named",
+        "date": "unknown",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "salesforce-crm",
@@ -590,7 +890,18 @@
       "source": "VladTV interview, 2026.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "win"
+      "role": "win",
+      "thesis_zh": "销售论坛上的成交讨论。",
+      "outcome_zh": "2026 年 VladTV。日期含糊。未经审计。",
+      "instrument_zh": "杠杆，自述金额很大",
+      "evidence": {
+        "identity": "confirmed_as_named",
+        "date": "unknown",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "beacon-roofing",
@@ -608,25 +919,47 @@
       "source": "Interviews (Trends examples).",
       "source_url": null,
       "verification": "self_reported",
-      "role": "theme"
+      "role": "theme",
+      "thesis_zh": "用「屋顶维修」的 Google Trends 代理需求。",
+      "outcome_zh": "自述例子。所用来源没有日期和盈亏。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "probable",
+        "date": "unknown",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "lululemon-2025-exit",
-      "name": "Lululemon 2025 exit (AI-corrupted Trends)",
+      "name": "Lululemon product terms (not a documented exit)",
       "date": "2025-08",
-      "date_precision": "month",
+      "date_precision": "thread_not_a_trade_date",
       "ticker": "LULU",
       "ticker_status": "confirmed",
-      "thesis": "He exited after concluding that AI-generated content had corrupted Google Trends as a signal.",
+      "thesis": "The thread uses Lululemon product terms as an example of Trends readings that do not match card, web, app, and store signals, and hypothesizes external AI query leakage. It does not say he held or exited Lululemon.",
       "signal": "Google Trends — and a meta-signal that the tool itself had broken.",
       "instrument": "unspecified (prior long)",
       "entry": null,
       "exit": "disclosed 2025, X thread",
-      "outcome": "Self-reported exit rationale. Threadreader of X thread 1957441296798298509. Not a P&L figure.",
+      "outcome": "No Lululemon position or exit is established. The disclosure in the thread is a short in GOOGL. AI contamination remains a hypothesis.",
       "source": "Camillo X thread, 2025, via Threadreader.",
       "source_url": "https://threadreaderapp.com/thread/1957441296798298509.html",
       "verification": "self_reported",
-      "role": "exit"
+      "role": "signal_note",
+      "thesis_zh": "该帖把 Lululemon 产品词当作 Trends 与刷卡、网页、应用和到店信号不符的例子，并假设外部人工智能查询漏进 Trends。帖子没有说他持有或退出 Lululemon。",
+      "outcome_zh": "没有建立 Lululemon 持仓或退出。帖子里的披露是做空 GOOGL。人工智能污染仍是假设。",
+      "instrument_zh": "不适用",
+      "evidence": {
+        "identity": "no_lulu_position",
+        "date": "not_a_trade_date",
+        "instrument": "none",
+        "position": "not_established",
+        "closed_pnl": "not_a_trade",
+        "review": "thread_reread_2026_11_14"
+      }
     },
     {
       "id": "googl-short-2025",
@@ -635,16 +968,27 @@
       "date_precision": "year",
       "ticker": "GOOGL",
       "ticker_status": "confirmed_as_named",
-      "thesis": "A disclosed short; full thesis and close not independently reviewed here.",
+      "thesis": "The same thread discloses: Short $GOOGL. It does not give size, entry, or exit.",
       "signal": "unspecified in the sources we logged",
       "instrument": "short",
       "entry": null,
       "exit": null,
-      "outcome": "Disclosed stance. No audited P&L in our set.",
+      "outcome": "Disclosed stance only. Not an audited position or P&L.",
       "source": "Camillo 2025 social posts / related commentary.",
-      "source_url": null,
+      "source_url": "https://threadreaderapp.com/thread/1957441296798298509.html",
       "verification": "self_reported",
-      "role": "open_or_unspecified"
+      "role": "open_or_unspecified",
+      "thesis_zh": "同一帖子披露：做空 GOOGL。没有规模、进场或退出。",
+      "outcome_zh": "只是披露的立场。不是已审计的持仓或盈亏。",
+      "instrument_zh": "做空（仅披露）",
+      "evidence": {
+        "identity": "googl_disclosed",
+        "date": "thread_date_not_converted",
+        "instrument": "short_disclosed",
+        "position": "size_unknown",
+        "closed_pnl": "not_stated",
+        "review": "thread_reread_2026_11_14"
+      }
     },
     {
       "id": "moissanite-2021",
@@ -662,7 +1006,18 @@
       "source": "Stansberry Investor Hour, ep. 192.",
       "source_url": null,
       "verification": "unconfirmed_ticker",
-      "role": "theme"
+      "role": "theme",
+      "thesis_zh": "一个很小的莫桑石名字。他同时说过一般不投微型股——这是检验那条规则的例外。",
+      "outcome_zh": "Stansberry 上提到。代码未点名。规模被说成很小。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "unnamed_microcap",
+        "date": "year",
+        "instrument": "see_text",
+        "position": "unconfirmed_ticker",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "schwager-regret-calls",
@@ -680,7 +1035,18 @@
       "source": "Schwager / elearnmarkets summary of Unknown Market Wizards.",
       "source_url": null,
       "verification": "self_reported",
-      "role": "loss"
+      "role": "loss",
+      "thesis_zh": "Schwager 记述他听了别人的意见、亏损砍掉三分之二的看涨期权，论点后来被验证。",
+      "outcome_zh": "流程上的亏损。代码未点名。不要编一个代码。",
+      "instrument_zh": "看涨期权",
+      "evidence": {
+        "identity": "unnamed",
+        "date": "unknown",
+        "instrument": "see_text",
+        "position": "self_reported",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "mattel-barbie-third-party",
@@ -698,7 +1064,18 @@
       "source": "Chart Academy; Matt Ober commentary.",
       "source_url": null,
       "verification": "third_party_mention",
-      "role": "third_party"
+      "role": "third_party",
+      "thesis_zh": "Chart Academy / Matt Ober 称为喜欢的例子。",
+      "outcome_zh": "我们的来源里没有 Camillo 的一手盈亏。只是第三方提及。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "third_party",
+        "date": "unknown",
+        "instrument": "see_text",
+        "position": "third_party_mention",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "abercrombie-third-party",
@@ -716,7 +1093,18 @@
       "source": "Matt Ober / Chart Academy.",
       "source_url": null,
       "verification": "third_party_mention",
-      "role": "third_party"
+      "role": "third_party",
+      "thesis_zh": "第三方喜欢的例子。",
+      "outcome_zh": "没有一手盈亏。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "third_party",
+        "date": "unknown",
+        "instrument": "see_text",
+        "position": "third_party_mention",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "coors-seltzer-third-party",
@@ -734,7 +1122,18 @@
       "source": "Matt Ober / Chart Academy.",
       "source_url": null,
       "verification": "third_party_mention",
-      "role": "third_party"
+      "role": "third_party",
+      "thesis_zh": "硬苏打浪潮，第三方提及。",
+      "outcome_zh": "没有一手盈亏。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "third_party",
+        "date": "unknown",
+        "instrument": "see_text",
+        "position": "third_party_mention",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "funko-third-party",
@@ -752,7 +1151,18 @@
       "source": "Matt Ober / Chart Academy.",
       "source_url": null,
       "verification": "third_party_mention",
-      "role": "third_party"
+      "role": "third_party",
+      "thesis_zh": "收藏品流行文化浪潮，第三方提及。",
+      "outcome_zh": "没有一手盈亏。",
+      "instrument_zh": "未说明",
+      "evidence": {
+        "identity": "third_party",
+        "date": "unknown",
+        "instrument": "see_text",
+        "position": "third_party_mention",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "pabst-rejected",
@@ -770,7 +1180,18 @@
       "source": "No source found after targeted search.",
       "source_url": null,
       "verification": "rejected_no_source",
-      "role": "rejected"
+      "role": "rejected",
+      "thesis_zh": "网上有时会归到他名下。我们没有找到把他和这件事连起来的来源。",
+      "outcome_zh": "不收入这笔交易。",
+      "instrument_zh": "无",
+      "evidence": {
+        "identity": "no_source",
+        "date": "n/a",
+        "instrument": "see_text",
+        "position": "rejected_no_source",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     },
     {
       "id": "vgk-rejected",
@@ -788,7 +1209,21 @@
       "source": "No source found after targeted search.",
       "source_url": null,
       "verification": "rejected_no_source",
-      "role": "rejected"
+      "role": "rejected",
+      "thesis_zh": "网上有时会归到他名下。我们没有找到把他和这件事连起来的来源。",
+      "outcome_zh": "不收入这笔交易。",
+      "instrument_zh": "无",
+      "evidence": {
+        "identity": "no_source",
+        "date": "n/a",
+        "instrument": "see_text",
+        "position": "rejected_no_source",
+        "closed_pnl": "not_graded_as_verified",
+        "review": "archive_note_not_reread_this_pass"
+      }
     }
-  ]
+  ],
+  "record_count_meaning": "research_records_not_verified_trades",
+  "source_url_null_count": 30,
+  "n_records": 43
 }

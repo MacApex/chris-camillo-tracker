@@ -9,21 +9,13 @@
       "brand": "COVID puts (SPY)",
       "side": "short",
       "role": "win",
-      "note": "Puts; equity path is not put P&L. Self-reported.",
+      "note": "February 2020 recollection of translating Chinese newspapers and blogs, then puts and outright SPY shorts (Wynn puts also named on the Stansberry transcript). Seven figures in a week around early March is self-reported and is not a verified complete exit. Equity path is not put or short P&L. No placeholder day is drawn.",
       "window": [
         "2019-11-01",
         "2020-08-31"
       ],
-      "entry": {
-        "date": "2020-02-15",
-        "precision": "month",
-        "label": "documented window (mid-month placeholder)"
-      },
-      "exit": {
-        "date": "2020-03-10",
-        "precision": "month",
-        "label": "early March 2020, self-reported"
-      },
+      "entry": null,
+      "exit": null,
       "entry2": null,
       "exit_partial": null,
       "series_status": {
@@ -37,9 +29,11 @@
         "ok": false,
         "kind": null,
         "days": null,
-        "reason": "SPY has no Yahoo upgrades_downgrades series (ETF; 404 on fundamentals). Lead time to a Street rating is unavailable, not zero. English Google Trends for 'coronavirus' leaves 0 in the week of 19 Jan 2020 and is still only 4 in the week of 16 Feb, then 17 / 32 / 82 / 100 (15 Mar). The February window sits on the early English-search slope, before the March public spike. That English series is not his Chinese-language primary sources (those were not retrieved as a series). Wikipedia COVID-19_pandemic pageviews begin 12 Mar 2020; earlier days are missing, not zero. Equity path is not put P&L.",
-        "zh": "时差不可用：SPY 没有 Yahoo 评级序列。英语「coronavirus」搜索在 3 月才冲到 100，维基浏览从 3 月 12 日才有数据。这不是他的中文一手来源，标的路径也不是看跌期权损益。",
-        "en": "Lead time unavailable: SPY has no Yahoo ratings series. English 'coronavirus' search peaks at 100 in March; Wikipedia pageviews start 12 Mar. This is not his Chinese-language sources, and the equity path is not put P&L."
+        "from": null,
+        "to": null,
+        "zh": "没有进出场时差。Stansberry 第 192 期里他说的是翻译中文报纸和博客，然后买看跌期权并直接做空 SPY（也提到 Wynn 的看跌期权）。三月初一周七位数是自述，没有核实为完整平仓。不画占位日。股价路径不是期权或做空损益。",
+        "en": "No entry or exit lead. On Stansberry episode 192 he described translating Chinese newspapers and blogs, then puts and outright SPY shorts (Wynn puts are also named). Seven figures in a week around early March is self-reported and is not a verified complete exit. No placeholder day is drawn. The equity path is not options or short P&L.",
+        "trading_lead": "unavailable"
       },
       "file": "data/cases/covid-spy-2020.json",
       "n": {
@@ -62,21 +56,13 @@
       "brand": "COVID puts (Wynn)",
       "side": "short",
       "role": "win",
-      "note": "Puts; equity path is not put P&L. Self-reported.",
+      "note": "February 2020 recollection of translating Chinese newspapers and blogs, then puts and outright SPY shorts (Wynn puts also named on the Stansberry transcript). Seven figures in a week around early March is self-reported and is not a verified complete exit. Equity path is not put or short P&L. No placeholder day is drawn.",
       "window": [
         "2019-11-01",
         "2020-08-31"
       ],
-      "entry": {
-        "date": "2020-02-15",
-        "precision": "month",
-        "label": "documented window (mid-month placeholder)"
-      },
-      "exit": {
-        "date": "2020-03-10",
-        "precision": "month",
-        "label": "early March 2020, self-reported"
-      },
+      "entry": null,
+      "exit": null,
       "entry2": null,
       "exit_partial": null,
       "series_status": {
@@ -90,33 +76,11 @@
         "ok": false,
         "kind": null,
         "days": null,
-        "reason": "Yahoo already shows rating downgrades in January 2020 (Standpoint Buy→Hold on 16 Jan, BofA Buy→Neutral on 27 Jan), before the February window. The 20 Feb Morgan Stanley $3 target trim (147→144, Equal-Weight maintained) is not a thesis catch-up, and we do not report a 5-day lead from a mid-month placeholder to that trim. The first large target cut is Morgan Stanley 144→85 on 30 Mar — after the self-reported early-March exit. Equity path is not put P&L.",
-        "prior_downgrades": [
-          {
-            "date": "2020-01-16",
-            "firm": "Standpoint Research",
-            "action": "down",
-            "frm": "Buy",
-            "to": "Hold"
-          },
-          {
-            "date": "2020-01-27",
-            "firm": "B of A Securities",
-            "action": "down",
-            "frm": "Buy",
-            "to": "Neutral"
-          }
-        ],
-        "large_pt_cut_after_exit": {
-          "date": "2020-03-30",
-          "firm": "Morgan Stanley",
-          "pt": 85.0,
-          "prior_pt": 144.0,
-          "action": "main",
-          "pt_action": "Lowers"
-        },
-        "zh": "时差不可用（不是零）。1 月已有降级；2 月 20 日仅 3 美元目标微调不算「卖方追上」；3 月 30 日大幅下调目标价已在他自称的 3 月初退出之后。标的路径不是看跌期权损益。",
-        "en": "Lead time unavailable (not zero). Downgrades already appeared in January; a $3 trim on 20 Feb is not a catch-up; the large 30 Mar target cut is after the self-reported early-March exit. Equity path is not put P&L."
+        "from": null,
+        "to": null,
+        "zh": "没有进出场时差。Stansberry 第 192 期里他说的是翻译中文报纸和博客，然后买看跌期权并直接做空 SPY（也提到 Wynn 的看跌期权）。三月初一周七位数是自述，没有核实为完整平仓。不画占位日。股价路径不是期权或做空损益。",
+        "en": "No entry or exit lead. On Stansberry episode 192 he described translating Chinese newspapers and blogs, then puts and outright SPY shorts (Wynn puts are also named). Seven figures in a week around early March is self-reported and is not a verified complete exit. No placeholder day is drawn. The equity path is not options or short P&L.",
+        "trading_lead": "unavailable"
       },
       "file": "data/cases/covid-wynn-2020.json",
       "n": {
@@ -192,7 +156,7 @@
       "brand": "Dorel Industries",
       "side": "long",
       "role": "win",
-      "note": "Best-dated event. yfinance start ≈ $0.69 vs BI screenshot $1.56 — OTC discrepancy, both kept.",
+      "note": "Dated purchase screenshots. Earnings release is 10 Aug 2020 after the close. 108 days is not a Street-rating lead.",
       "window": [
         "2019-10-01",
         "2020-12-31"
@@ -221,27 +185,33 @@
         "trends": "worked"
       },
       "lead": {
-        "ok": true,
-        "kind": "earnings_beat",
-        "days": 107,
-        "from": "2020-04-24",
-        "from_precision": "day",
-        "to": "2020-08-09",
-        "to_event": {
-          "date": "2020-08-09",
-          "kind": "earnings_beat",
-          "EPS Estimate": -0.2,
-          "Reported EPS": 0.48,
-          "Surprise(%)": 340.0
-        },
-        "definition": "Calendar days from the documented 24 Apr 2020 purchase (BI-viewed screenshots at $1.56) to the first Yahoo earnings beat after that date: 9 Aug 2020, estimate −0.20 vs reported 0.48, surprise +340%. The 8 May print was a miss (−180%). Yahoo upgrades_downgrades in this window is empty (n=0 of 1 row in the entire Yahoo history); that is incomplete, not proof the Street was silent, so we do not report a lead to a rating change.",
-        "caveats": [
-          "yfinance auto-adjusted close on 24 Apr is about $0.69; BI published a screenshot at $1.56. Both figures are kept; we do not pick one.",
-          "By 9 Aug the equity had already moved a long way (event-study 3-month return +242.86% from the $0.69 start).",
-          "Yahoo ratings history is empty here and is incomplete."
-        ],
-        "zh": "107 个日历日（4 月 24 日有日期的买入 → 8 月 9 日首次财报超预期，惊喜 +340%）。5 月 8 日是不及预期。Yahoo 评级在此窗口为空，不是「卖方什么都没做」的证据，因此不对评级计算时差。",
-        "en": "107 calendar days (dated 24 Apr purchase → 9 Aug first earnings beat, surprise +340%). The 8 May print was a miss. Yahoo ratings in this window are empty — not proof of inactivity — so we do not compute a ratings lead."
+        "ok": false,
+        "kind": null,
+        "days": null,
+        "from": null,
+        "to": null,
+        "zh": "这不是「卖方无知」的时差。2021 年 8 月 18 日《商业内幕》称截图显示 2020 年 4 月 24 日以名义价格 1.56 美元买入。发行人把二季报日期写为 2020 年 8 月 10 日收盘后（8 月 4 日的电话会通知写明新闻稿在 8 月 11 日电话会的前一天发布）。4 月 24 日到 8 月 10 日是 108 个日历日：从有记录的买入日到财报发布，不是评级滞后。Yahoo 把该行标成 2020 年 8 月 9 日（107 日），那是供应商的时间戳，不是发行人的。新闻稿写明调整后稀释每股收益 0.48 美元，报告稀释每股收益 0.34 美元。Yahoo 的 Surprise(%) +340 用的是预期 −0.20 和 0.48。新闻稿没有公布这组一致预期，所以 +340% 不是已确认的超预期，也不是股价涨幅。库存的 2020 年 4 月 24 日自动复权收盘约 0.69 美元。在调整因子、货币、证券身份和报价质量对齐之前，不能与 1.56 美元直接比较。更晚的每股 12 美元特别股息（2022 年 1 月 4 日新闻稿，2022 年 2 月 1 日支付）可能影响复权历史；它没有被证明就是这个价差的原因。窗口内 Yahoo 评级为空：证据不足，不是「卖方沉默」。复权收盘的事件研究路径，与每股收益、以及 BI 描述的 1.56 到 11.38 美元路径，是三件不同的事。",
+        "en": "Not a Street-ignorance lead. Business Insider (18 Aug 2021) said screenshots showed a 24 Apr 2020 purchase at a nominal $1.56. The issuer dated the Q2 release 10 Aug 2020, after the close (call notice dated 4 Aug 2020 said the release would come the day before the 11 Aug call). 24 Apr to 10 Aug is 108 calendar days: entry date to an earnings release, not a rating lag. Yahoo stamps the row 9 Aug 2020 (107 days). That is the vendor clock, not the issuer's. The release states adjusted diluted EPS of US$0.48 and reported diluted EPS of US$0.34. Yahoo Surprise(%) +340 uses estimate −0.20 and 0.48. The release does not publish that consensus, so +340% is not a confirmed beat and is not a stock return. The stored auto-adjusted close on 24 Apr 2020 is about $0.69. It is not comparable to $1.56 until adjustment factor, currency, security identity, and quote quality are reconciled. A later US$12 special dividend (issuer release 4 Jan 2022, payable 1 Feb 2022) can affect adjusted history; it is not a demonstrated explanation of this gap. Yahoo rating rows in the window are empty: insufficient evidence, not a silent Street. The adjusted-close event-study path is a different object from both the EPS line and the $1.56 to $11.38 path BI described.",
+        "trading_lead": "unavailable",
+        "measured_not_a_lead": {
+          "purchase_date": "2020-04-24",
+          "nominal_screenshot_px": 1.56,
+          "issuer_release_date": "2020-08-10",
+          "issuer_release_timing": "after_the_close",
+          "calendar_days_entry_to_issuer_release": 108,
+          "yahoo_row_date": "2020-08-09",
+          "calendar_days_entry_to_yahoo_row": 107,
+          "yahoo_row_is_not_the_lead": true,
+          "adjusted_diluted_eps": 0.48,
+          "reported_diluted_eps": 0.34,
+          "yahoo_surprise_pct": 340.0,
+          "yahoo_surprise_is_stock_return": false,
+          "yahoo_surprise_consensus_in_release": false,
+          "yfinance_adjusted_close_2020_04_24": 0.6869,
+          "prices_directly_comparable": false,
+          "special_dividend_usd": 12.0,
+          "special_dividend_explains_gap": false
+        }
       },
       "file": "data/cases/dorel-2020.json",
       "n": {
@@ -264,16 +234,12 @@
       "brand": "e.l.f. Beauty",
       "side": "long",
       "role": "win",
-      "note": "Jeffree Star / channel-check month, per BI. Entry is month-precision.",
+      "note": "March 2019 observation recalled in Dec 2020. Purchase day unavailable. No trading lead.",
       "window": [
         "2018-07-01",
         "2020-03-31"
       ],
-      "entry": {
-        "date": "2019-03-15",
-        "precision": "month",
-        "label": "documented window (mid-month placeholder)"
-      },
+      "entry": null,
       "exit": null,
       "entry2": null,
       "exit_partial": null,
@@ -285,39 +251,29 @@
         "trends": "worked"
       },
       "lead": {
-        "ok": true,
-        "kind": "street_upgrade",
-        "days": 19,
-        "from": "2019-03-15",
-        "from_precision": "month",
-        "to": "2019-04-03",
-        "to_event": {
-          "date": "2019-04-03",
-          "firm": "Jefferies",
-          "to": "Buy",
-          "frm": "Hold",
-          "action": "up",
-          "pt_action": "Raises",
-          "pt": 14.0,
-          "prior_pt": 10.0
-        },
-        "also": {
-          "from_trends_peak": {
-            "date": "2019-03-03",
-            "value": 100,
-            "keyword": "elf cosmetics",
-            "days_to_same_event": 31,
-            "note": "Google Trends weekly peak in this window (US, explicit timeframe 2018-07-01 2020-03-31). A November 2018 reading of 84–87 also appears and may be seasonal; we do not treat that earlier spike as the 2019 thesis rise."
-          }
-        },
-        "definition": "Calendar days from the documented March 2019 entry window (mid-month placeholder 15 Mar) to the first Yahoo rating upgrade on or after that date: Jefferies Hold→Buy on 3 Apr 2019, price target $10→$14. A 31-day alternative is measured from the real Trends peak of 3 Mar. Month precision means the true entry day is unknown; 19 is not exact.",
-        "caveats": [
-          "Entry is month-precision; 15 Mar is a placeholder.",
-          "Yahoo is incomplete; this is the first upgrade in the Yahoo sample, not a claim that Jefferies was the first firm anywhere.",
-          "Street was lowering targets on 27 Feb 2019 (Wells Fargo, Morgan Stanley, BMO), the day after a 26 Feb earnings beat."
-        ],
-        "zh": "约 19 个日历日（3 月月精度占位 15 日 → 4 月 3 日 Jefferies 由持有上调至买入，目标价 10→14 美元）。从 Google Trends 窗口峰值（3 月 3 日=100）计为 31 日。月精度意味着真实买入日未知。",
-        "en": "About 19 calendar days (March month-precision placeholder of the 15th → 3 Apr Jefferies Hold→Buy, target $10→$14). From the Google Trends window peak (3 Mar = 100) it is 31 days. Month precision means the real entry day is unknown."
+        "ok": false,
+        "kind": null,
+        "days": null,
+        "from": null,
+        "to": null,
+        "zh": "没有单一数字的交易时差：买入日未知。2019 年 3 月 15 日只是月中占位（到 4 月 3 日相隔 19 个日历日），不是成交证据。2020 年 12 月 7 日《商业内幕》访谈里，他回忆 2019 年 3 月看过 Jeffree Star 的视频；这是事后回忆，不是有日期的买入，视频上传日也没有独立来源。库存的 Google Trends 点 2019-03-03 = 100 是 2026 年 11 月 13 日拉取窗口里的周桶标签，不是第一信号的时间戳，本次没有重拉 Trends。该标签到 2019 年 4 月 3 日是 31 个日历日，不是他的领先时间。Motley Fool（2019 年 4 月 3 日）记载当天 Jefferies 的 Stephanie Wissink 上调并给出 14 美元目标价。原始 Jefferies 报告没有取得。Yahoo 另有由持有到买入、目标价 10 到 14 美元；这两个「之前」字段只来自 Yahoo。Fool 文章里的理由（维权股东、新 CFO、货架）不是 Jeffree Star 观察，所以上调不能证明卖方采纳了他的论点。发行人 2019 年 2 月 26 日的财年业绩（净销售 2.67 亿美元，下降 1%）是此前的公司背景，不是这条社会观察。短期搜索或视频观察不是利润、现金流或价值。",
+        "en": "No single-number trading lead: the purchase day is unknown. 15 Mar 2019 was only a mid-month placeholder (19 calendar days before 3 Apr) and is not execution evidence. In the 7 Dec 2020 Business Insider interview he recalled watching a Jeffree Star video in March 2019; that recollection is not a dated buy, and the video upload day was not independently sourced. The stored Google Trends point 2019-03-03 = 100 is a weekly bucket label inside a window pulled on 13 Nov 2026, not a first-signal timestamp, and this pass did not re-pull Trends. Calendar days from that label to 3 Apr 2019 are 31. That span is not his lead. Motley Fool (3 Apr 2019) reports a Jefferies upgrade that day by Stephanie Wissink with a $14 target. The original Jefferies note was not obtained. Yahoo also shows Hold to Buy and $10 to $14; those prior fields are Yahoo-only. The Fool article's reasons (activists, a new CFO, shelf space) are not the Jeffree Star observation, so the upgrade does not show the Street adopted his thesis. The issuer's 26 Feb 2019 release (fiscal 2018 net sales $267 million, down 1%) is prior context, not the social claim. A short-term search or video observation is not earnings, cash flow, or value.",
+        "trading_lead": "unavailable",
+        "measured_not_a_lead": {
+          "placeholder_15_mar_to_3_apr_calendar_days": 19,
+          "placeholder_is_execution": false,
+          "trends_week_label": "2019-03-03",
+          "trends_week_label_to_3_apr_calendar_days": 31,
+          "week_label_is_first_signal": false,
+          "trends_repulled_this_pass": false,
+          "jefferies_note_obtained": false,
+          "public_upgrade_date": "2019-04-03",
+          "sources": [
+            "https://www.businessinsider.com/trading-strategy-market-wizard-chris-camillo-shares-secrets-to-millions-2020-12",
+            "https://www.fool.com/investing/2019/04/03/analyst-optimism-sends-elf-beauty-over-14-higher-w.aspx",
+            "https://investor.elfbeauty.com/stock-and-financial/press-releases/landing-news/2019/02-26-2019-073720920"
+          ]
+        }
       },
       "file": "data/cases/elf-2019.json",
       "n": {
@@ -338,19 +294,15 @@
       "id": "lululemon-2025-exit",
       "ticker": "LULU",
       "brand": "Lululemon 2025 exit",
-      "side": "exit",
-      "role": "exit",
-      "note": "This is a tool-failure / change-of-mind case, not a claim that he was ahead of the Street.",
+      "side": "context",
+      "role": "signal",
+      "note": "The Threadreader mirror discusses implausible Lululemon product-term spikes versus other signals, and a hypothesis that external AI queries can leak into Trends. It discloses a short in GOOGL. It does not establish a Lululemon position or exit. AI contamination is his hypothesis, not a finding.",
       "window": [
         "2024-07-01",
         "2026-11-12"
       ],
       "entry": null,
-      "exit": {
-        "date": "2025-08-15",
-        "precision": "month",
-        "label": "self-reported exit after concluding AI had corrupted Trends"
-      },
+      "exit": null,
       "entry2": null,
       "exit_partial": null,
       "series_status": {
@@ -364,36 +316,11 @@
         "ok": false,
         "kind": null,
         "days": null,
-        "reason": "This is a self-reported August 2025 exit after he concluded AI-generated queries had corrupted Google Trends — a tool-failure / change-of-mind case, not a claim that he was ahead of the Street. Yahoo already shows rating downgrades from 9 Jun 2025 (CICC Outperform→Market Perform; Morgan Stanley Overweight→Equal-Weight), and JP Morgan Overweight→Neutral on 22 Jul, before the August exit window.",
-        "street_already_cutting": [
-          {
-            "date": "2025-06-09",
-            "firm": "CICC",
-            "action": "down",
-            "frm": "Outperform",
-            "to": "Market Perform"
-          },
-          {
-            "date": "2025-06-09",
-            "firm": "Morgan Stanley",
-            "action": "down",
-            "frm": "Overweight",
-            "to": "Equal-Weight",
-            "pt": 280.0,
-            "prior_pt": 346.0
-          },
-          {
-            "date": "2025-07-22",
-            "firm": "JP Morgan",
-            "action": "down",
-            "frm": "Overweight",
-            "to": "Neutral",
-            "pt": 224.0,
-            "prior_pt": 303.0
-          }
-        ],
-        "zh": "时差不可用。这是工具失效后的退出（他公开说人工智能查询污染了 Trends），不是「领先卖方」。Yahoo 显示 2025 年 6 月 9 日起已有降级，早于 8 月退出窗口。",
-        "en": "Lead time unavailable. This is an exit after a tool failure (he said AI queries had corrupted Trends), not a claim he was ahead of the Street. Yahoo shows downgrades from 9 Jun 2025, before the August exit window."
+        "from": null,
+        "to": null,
+        "zh": "没有交易时差。该帖讨论 Lululemon 产品词在 Trends 上的异常，并假设外部人工智能查询可能漏进 Trends；披露做空 GOOGL。帖子没有建立 Lululemon 的持仓或退出。人工智能污染只是假设。",
+        "en": "No trading lead. The thread discusses odd Lululemon product-term Trends readings and hypothesizes that external AI queries can leak into Trends. It discloses a short in GOOGL. It does not establish a Lululemon position or exit. AI contamination is a hypothesis only.",
+        "trading_lead": "unavailable"
       },
       "file": "data/cases/lululemon-2025-exit.json",
       "n": {
@@ -404,10 +331,10 @@
         "trends": 124
       },
       "labels": {
-        "zh": "Lululemon，2025 年退出",
-        "en": "Lululemon, 2025 exit",
-        "short_zh": "LULU 退出",
-        "short_en": "LULU exit"
+        "zh": "Lululemon：搜索可靠性举例",
+        "en": "Lululemon: search-reliability example",
+        "short_zh": "LULU 信号",
+        "short_en": "LULU signal"
       }
     },
     {
@@ -470,7 +397,7 @@
       "brand": "Restaurant Brands",
       "side": "long",
       "role": "loss",
-      "note": "Documented losing thesis; screenshots viewed by BI. Counterexample.",
+      "note": "18 Aug 2021 BI: he was betting on the Impossible Whopper and the Popeyes sandwich; Tim Hortons had one of its worst quarters and he called that an oversight. Not a Tim Hortons turnaround thesis. April and August 2019 purchases, screenshots viewed. About $750k loss is self-reported.",
       "window": [
         "2018-10-01",
         "2020-06-30"
@@ -478,7 +405,7 @@
       "entry": {
         "date": "2019-04-15",
         "precision": "month",
-        "label": "April purchase window"
+        "label": "April 2019 month window. The 15th is a placeholder, not the screenshot day."
       },
       "exit": null,
       "entry2": {
@@ -498,33 +425,11 @@
         "ok": false,
         "kind": null,
         "days": null,
-        "reason": "This is the documented losing counterexample, and Yahoo already shows constructive Street action before the April 2019 purchase window: BMO Market Perform→Outperform on 24 Jan, Citigroup PT raise on 14 Feb, Barclays Overweight initiation on 8 Mar. The first post-window Yahoo event is a Wells Fargo $2 target raise on 16 Apr while maintaining Market Perform — a one-day gap from a mid-month placeholder to a modest 'main' raise is not a lead, and we do not report it as one. The first actual rating upgrade after April is Longbow Underperform→Neutral on 30 Sep.",
-        "street_already_ahead": true,
-        "prior_events": [
-          {
-            "date": "2019-01-24",
-            "firm": "BMO Capital",
-            "action": "up",
-            "frm": "Market Perform",
-            "to": "Outperform"
-          },
-          {
-            "date": "2019-02-14",
-            "firm": "Citigroup",
-            "action": "main",
-            "pt_action": "Raises",
-            "pt": 75.0,
-            "prior_pt": 65.0
-          },
-          {
-            "date": "2019-03-08",
-            "firm": "Barclays",
-            "action": "init",
-            "to": "Overweight"
-          }
-        ],
-        "zh": "时差不可用（不是零）。卖方在 4 月买入窗口之前已经偏多；这是记录在案的反例，不是「领先华尔街」。",
-        "en": "Lead time unavailable (not zero). The Street was already constructive before the April purchase window. This is the documented counterexample, not a claim he was ahead."
+        "from": null,
+        "to": null,
+        "zh": "没有领先时差。论点是 Impossible Whopper 和 Popeyes 三明治，被 Tim Hortons 的疲弱抵消，不是 Tim Hortons 翻盘赌注。4 月与 8 月的「15 日」是月中占位，不是截图上的成交日。约 75 万美元亏损是自述。",
+        "en": "No lead. The thesis was the Impossible Whopper and the Popeyes sandwich, offset by Tim Hortons weakness, not a Tim Hortons turnaround. The 15ths are month placeholders, not screenshot days. The roughly $750k loss is self-reported.",
+        "trading_lead": "unavailable"
       },
       "file": "data/cases/rbi-2019.json",
       "n": {
@@ -547,15 +452,15 @@
       "brand": "Tapestry / Coach",
       "side": "long",
       "role": "open_or_unspecified",
-      "note": "Mention date only. Forward returns from the article date are not an entry study.",
+      "note": "Publication-anchored only. $3.1 million is a screenshot-viewed position size, not a closed P&L and not an entry date.",
       "window": [
         "2020-08-01",
         "2022-03-31"
       ],
       "entry": {
-        "date": "2021-08-15",
+        "date": "2021-08-18",
         "precision": "mention",
-        "label": "BI article mention of a $3.1M position — NOT an entry date"
+        "label": "Publication date of the 18 Aug 2021 BI article. Not a trade. 15 Aug is that article's Playa year-to-date cutoff."
       },
       "exit": null,
       "entry2": null,
@@ -571,9 +476,11 @@
         "ok": false,
         "kind": null,
         "days": null,
-        "reason": "The 15 Aug 2021 date is a Business Insider mention of a $3.1M position, not an entry. No lead time is computed. Forward returns from the article date are not an entry study.",
-        "zh": "时差不可用。2021 年 8 月 15 日是《商业内幕》对 310 万美元仓位的提及，不是建仓日。",
-        "en": "Lead time unavailable. 15 Aug 2021 is a Business Insider mention of a $3.1M position, not an entry."
+        "from": null,
+        "to": null,
+        "zh": "没有进场时差。2021 年 8 月 18 日是《商业内幕》的发表日，不是成交日。8 月 15 日是同一篇文章里 Playa 年初至当日内的截止日期，不能挪来当作 TPR 的交易日。310 万美元是记者看过的持仓规模，不是已平仓盈亏。",
+        "en": "No entry lead. 18 Aug 2021 is the Business Insider publication date, not a fill. 15 Aug is that article's year-to-date cutoff for Playa, not a TPR trade date. $3.1 million is a position size a journalist viewed, not a closed P&L.",
+        "trading_lead": "unavailable"
       },
       "file": "data/cases/tapestry-2021.json",
       "n": {
@@ -673,5 +580,11 @@
       "en": "Lead time unavailable. 15 Aug 2021 is a Business Insider mention of a $3.1M position, not an entry.",
       "reason": "The 15 Aug 2021 date is a Business Insider mention of a $3.1M position, not an entry. No lead time is computed. Forward returns from the article date are not an entry study."
     }
-  ]
+  ],
+  "audit_note": {
+    "reviewed": "2026-11-14",
+    "elf_trading_lead": "unavailable",
+    "dorel_issuer_span_days": 108,
+    "dorel_surprise_340_status": "yahoo_vendor_statistic_not_in_issuer_release"
+  }
 }

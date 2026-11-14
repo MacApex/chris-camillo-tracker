@@ -16,7 +16,7 @@ Social arbitrage is information-gap investing.
 4. Only if the niche signal is rising *and* the fact is not clearly priced does the idea become a candidate for human work.
 5. Exit as the information reaches earnings, notes, and the tape — at information parity. He has described selling 10–20% at a time. A broken thesis is also an exit, even though he does not use stop-loss orders.
 
-Schwager titled the chapter “Neither”: neither traditional fundamentals nor technical analysis. Peter Lynch is the inspiration; Camillo drops the financial deep-dive and keeps size. The edge is being early. Tools (TikTok, Trends, TickerTags, Discord, forums) are instruments. In 2025 he exited Lululemon after concluding AI had corrupted Trends — the method is not an app.
+Schwager titled the chapter “Neither”: neither traditional fundamentals nor technical analysis. Peter Lynch is the inspiration; Camillo drops the financial deep-dive and keeps size. The edge is being early. Tools (TikTok, Trends, TickerTags, Discord, forums) are instruments. A 2025 thread hypothesizes that external AI queries can leak into Trends and uses Lululemon product terms as an example. It does not establish a Lululemon exit. The method is not an app.
 
 ## Decision tree
 
