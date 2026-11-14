@@ -435,7 +435,8 @@
 
   function leadArea(c) {
     const ld = c.lead || {};
-    if (!ld.ok || !ld.from || !ld.to) return null;
+    if (!ld.ok || !ld.from || !ld.to || ld.days == null) return null;
+    if (ld.from_precision === "month" || ld.from_precision === "era") return null;
     const label =
       lang() === "zh"
         ? `时差 ${ld.days} 日${ld.from_precision === "month" ? "（月精度占位）" : ""}\n${ld.from} → ${ld.to}${ld.kind === "earnings_beat" ? "（首次财报超预期）" : "（首次卖方上调）"}`

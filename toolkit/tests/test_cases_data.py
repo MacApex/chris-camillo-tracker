@@ -142,7 +142,9 @@ def test_event_study_returns_are_the_published_ones():
     by = {c["id"]: c for c in _chart()["cases"]}
     elf = by["elf-2019"]["event_study"]["elf-2019"]
     assert elf["display_returns"] is False
-    assert elf["anchor"] == "withdrawn_15_mar_placeholder"
+    assert elf["returns"]["1m"]["ok"] is False
+    assert elf["returns"]["1m"]["pct"] is None
+    assert elf["returns"]["6m"]["pct"] is None
     dorel = by["dorel-2020"]["event_study"]["dorel-2020"]["returns"]
     assert dorel["1m"]["pct"] == 131.06
     assert dorel["6m"]["pct"] == 608.7

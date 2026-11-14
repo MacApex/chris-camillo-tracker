@@ -1,11 +1,11 @@
 id,ticker,date,precision,side,trading_start,r1m,r3m,r6m,r1m_in_side,r3m_in_side,r6m_in_side,street_ok,wiki_ok,note
-elf-2019,ELF,2019-03-15,month,long,2019-03-15,25.0,32.47,70.35,25.0,32.47,70.35,True,False,"Jeffree Star / channel-check month, per BI. Mid-month placeholder."
-rbi-2019-apr,QSR,2019-04-15,month,long,2019-04-15,0.47,9.15,7.07,0.47,9.15,7.07,True,True,"First dated purchase window, later a loss."
-rbi-2019-aug,QSR,2019-08-15,month,long,2019-08-15,-2.18,-7.24,-7.29,-2.18,-7.24,-7.29,True,True,Second dated purchase window.
-covid-spy-2020,SPY,2020-02-15,month,short,2020-02-18,-28.73,-11.88,1.38,28.73,11.88,-1.38,False,False,"Puts on SPY, self-reported. Underlying returns shown; put P&L is unknown."
-covid-wynn-2020,WYNN,2020-02-15,month,short,2020-02-18,-67.5,-38.44,-36.91,67.5,38.44,36.91,True,True,"Puts on Wynn, self-reported."
+elf-2019,ELF,unavailable,withdrawn_placeholder,long,,,,,,,,True,False,"Purchase day unknown. 15 Mar 2019 placeholder path, rating window, and any counts from that date are withdrawn."
+rbi-2019-apr,QSR,unavailable,withdrawn_placeholder,long,,,,,,,,True,True,"15 Apr 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn."
+rbi-2019-aug,QSR,unavailable,withdrawn_placeholder,long,,,,,,,,True,True,"15 Aug 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn."
+covid-spy-2020,SPY,unavailable,withdrawn_placeholder,short,,,,,,,,False,False,No verified SPY fill or complete exit. 15 Feb 2020 placeholder path and dependent windows are withdrawn.
+covid-wynn-2020,WYNN,unavailable,withdrawn_placeholder,short,,,,,,,,True,True,No verified Wynn fill. 15 Feb 2020 placeholder path and dependent windows are withdrawn.
 dorel-2020,DIIBF,2020-04-24,day,long,2020-04-24,131.06,242.86,608.7,131.06,242.86,608.7,True,True,"Best-dated event: purchase screenshots at $1.56, viewed by BI."
 tgt-missoni-2011,TGT,2011-09-13,retail_launch_not_execution,long,2011-09-13,3.53,5.54,16.33,3.53,5.54,16.33,True,False,"Retail launch 13 Sep 2011, not a verified fill. Equity path recomputed 14 Nov 2026. Option return unverified. 7 Sep anchor withdrawn."
-gme-2021,GME,2021-01-25,month,long,2021-01-25,19.43,119.99,139.54,19.43,119.99,139.54,True,True,Self-reported buy around $70 — already mid-squeeze. Mid/late January placeholder.
-amc-2021,AMC,2021-01-25,month,long,2021-01-25,105.66,160.18,811.54,105.66,160.18,811.54,True,True,Self-reported buy around $3.
+gme-2021,GME,unavailable,withdrawn_placeholder,long,,,,,,,,True,True,"25 Jan 2021 is a mid-squeeze month placeholder, not a fill. Returns and Wikipedia window are withdrawn."
+amc-2021,AMC,unavailable,withdrawn_placeholder,long,,,,,,,,True,True,"25 Jan 2021 is a month placeholder, not a fill. Returns and Wikipedia window are withdrawn."
 tpr-2021-mention,TPR,2021-08-18,publication_not_trade,long,2021-08-18,-1.95,10.64,-0.02,-1.95,10.64,-0.02,True,True,"Publication date 18 Aug 2021, not a trade. 15 Aug Playa cutoff withdrawn. Path recomputed 14 Nov 2026."

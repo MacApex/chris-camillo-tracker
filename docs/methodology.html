@@ -37,6 +37,7 @@
         <a href="street-view.html"><span class="lang-zh">街景</span><span class="lang-en">Street view</span></a>
         <a href="track-record.html"><span class="lang-zh">业绩</span><span class="lang-en">Track record</span></a>
         <a href="playbook.html"><span class="lang-zh">手册</span><span class="lang-en">Playbook</span></a>
+        <a href="memo.html"><span class="lang-zh">备忘</span><span class="lang-en">Memo</span></a>
         <a href="divergence.html"><span class="lang-zh">信息差</span><span class="lang-en">Divergence</span></a>
         <a href="resources.html"><span class="lang-zh">工具</span><span class="lang-en">Resources</span></a>
         <a href="sources.html"><span class="lang-zh">来源</span><span class="lang-en">Sources</span></a>
@@ -62,17 +63,17 @@
       <li>在真实世界里，观察到相对于<strong>你自己的基线</strong>（这个社群、这个季节、这个品牌平时的样子）的异常变化——文化、消费、技术或政策。不是相对于一条头条。</li>
       <li>把它连接到一家上市公司：该变化必须大到足以推动这家公司的收入或利润（物质性）。</li>
       <li>用 2–3 个独立平台交叉确认：各平台相对<strong>自身历史</strong>在上升。一条序列不是论点。终身累计播放量或单一畅销名次不是动量。</li>
-      <li>问卖方是否已经把这件事写入预测、评级和研报。已定价，就放下。</li>
-      <li>只有「利基上升，且尚未清楚定价」才进入人工研究：写下论点与退出条件，再决定是否行动。</li>
-      <li>退出看的是<strong>信息平价</strong>——事实进入财报、研报和价格本身——以及论点是否已被证伪（包括「测量工具坏了」）。</li>
+      <li>卖方材料只辅助核对已经写下来的论点。沉默或「尚未反映」都不是买入条件。</li>
+      <li>卖方行只辅助核对一条已经写下来的论点。它不决定研究是否可以开始。</li>
+      <li>信息平价只是一种退出想法。还要写流动性、偿债、估值、跳空、相关敞口和组合亏损上限。来源不可靠是重新评估，不是自动判定生意为假。</li>
     </ol>
     <ol class="lang-en">
       <li>Observe a real-world change — culture, consumption, technology, or policy — versus <strong>your own baseline</strong> for that community, season, and brand. Not versus a headline.</li>
       <li>Connect it to a public company where the change is large enough to move revenue or earnings (materiality).</li>
       <li>Corroborate on two or three independent platforms: each rising versus <strong>its own history</strong>. One series is not a thesis. A lifetime view total or a single bestseller rank is not momentum.</li>
-      <li>Ask whether the Street has already written the fact into estimates, ratings, and notes. If it is priced, stand down.</li>
-      <li>Only “niche rising and not clearly priced” becomes human work: write the thesis and the exit, then decide whether to act.</li>
-      <li>Exit at <strong>information parity</strong> — the fact reaches earnings, notes, and the tape — and if the thesis is broken, including “the measuring tool is polluted.”</li>
+      <li>Street material only checks a thesis already written. Silence, or “not yet reflected,” is not a condition for buying.</li>
+      <li>Street rows are an auxiliary check of one written thesis. They do not decide that research may begin.</li>
+      <li>Information parity is only one exit idea. Also write liquidity, solvency, valuation, gap risk, correlation, and a portfolio-loss limit. An unreliable source means reassessment, not an automatic false business.</li>
     </ol>
     <p class="small lang-zh">任何一关为「否」：停止，或继续观察。展开的决策树、清单与案例见 <a href="core-logic.html">核心逻辑</a>；十步操作见 <a href="playbook.html">方法手册</a>；卖方框架与事件研究见 <a href="street-view.html">街景</a>。</p>
     <p class="small lang-en">A “no” at any gate is a stop, or a decision to keep watching. The full tree, checklists and cases are on <a href="core-logic.html">Core logic</a>; the ten operational steps are in the <a href="playbook.html">Playbook</a>; the Street framework and event study are on <a href="street-view.html">Street view</a>.</p>
@@ -168,7 +169,7 @@
           <tr><td>商业 · 应用商店</td><td><span class="badge badge-worked">已通</span></td><td>官方 iTunes Search：只表示「在架」，不是排行榜名次。</td><td>人工浏览商店。</td><td>不要把搜索命中当成需求。付费榜单（Sensor Tower 等）是可选升级，不是必需。</td><td>在场 ≠ 名次。不可把在场写成 z。</td></tr>
           <tr><td>注意力 · 维基百科</td><td><span class="badge badge-worked">已通</span></td><td>官方 Wikimedia REST 浏览量，带可识别的 User-Agent。<code>--wiki 'E.l.f.'</code>（条目名要正确）。</td><td>同一 API，换正确条目标题（<code>e.l.f._Cosmetics</code>、<code>Coach_(company)</code> 曾是空的或极薄）。</td><td>Google Trends。浏览量是注意力，不是情绪，也不是销售。</td><td>日浏览是<strong>流量</strong>。用末日对自身历史的 z，或 13 日合计对比前 13 日。</td></tr>
           <tr><td>新闻</td><td><span class="badge badge-worked">已通</span></td><td>Google 新闻 RSS 条目数。</td><td>GDELT TimelineVol，两次请求间隔至少 6 秒。</td><td>卖方新闻标题（street_view）。在 Camillo 框架里，主流新闻量往往<strong>滞后</strong>——用来问「是否已经公开」，而不是当领先信号。</td><td>标题量是流量。没有基线不要当 z。短词（如 e.l.f.）可能被 GDELT 拒绝。</td></tr>
-          <tr><td>卖方街景</td><td><span class="badge badge-worked">已通</span></td><td><code>python -m camillo_tracker street ELF</code>（yfinance：评级、目标价、预测修正、覆盖、意外）。</td><td>公司 10-K 分部说明，用于物质性，不是做贴现模型。</td><td>新闻是否已经在讨论这件事。结论保守：缺数据就降低把握，不填数字。标签只有：已定价 / 部分定价 / 尚未清楚定价 / 数据不足。</td><td>这是卖方已经写入模型的<strong>水平</strong>。不要把「买入占比」和利基 z 平均成一个魔法数字。工作流只问：是否已经清楚定价？</td></tr>
+          <tr><td>卖方街景</td><td><span class="badge badge-worked">已通</span></td><td><code>python -m camillo_tracker street ELF</code>（yfinance：评级、目标价、预测修正、覆盖、意外）。</td><td>发行人分部与现金流桥。未知保持待研究。不是贴现模型，也没有 1%–2% 门槛。</td><td>只问这条已写论点在所审材料里是明确反映、部分反映、未见，还是证据不足。沉默不是未定价。</td><td>辅助核对，不是选股器。不要把评级份额和利基指数平均成一个分数，也不要据此买入。</td></tr>
         </tbody>
       </table>
     </div>
@@ -187,7 +188,7 @@
           <tr><td>Commerce · App stores</td><td><span class="badge badge-worked">worked</span></td><td>Official iTunes Search: presence only, not a live chart rank.</td><td>Browse the store by hand.</td><td>Do not treat a search hit as demand. Paid chart vendors (Sensor Tower and the like) are an optional upgrade, not required.</td><td>Presence is not a rank. Do not turn presence into a z.</td></tr>
           <tr><td>Attention · Wikipedia</td><td><span class="badge badge-worked">worked</span></td><td>Official Wikimedia REST pageviews, identified User-Agent. <code>--wiki 'E.l.f.'</code> (the title must be right).</td><td>The same API with a corrected title (<code>e.l.f._Cosmetics</code> and <code>Coach_(company)</code> were thin or empty).</td><td>Google Trends. Pageviews are attention, not sentiment and not sales.</td><td>Daily views are a <strong>flow</strong>. Use a last-day z versus the series’ own history, or a 13-day sum versus the prior 13.</td></tr>
           <tr><td>News</td><td><span class="badge badge-worked">worked</span></td><td>Google News RSS item counts.</td><td>GDELT TimelineVol, with at least 6 seconds between calls.</td><td>Street headlines via street_view. In Camillo’s frame, mainstream news volume often <strong>lags</strong> — use it as “is this already public?”, not as a leading signal.</td><td>Headline volume is a flow. Do not treat raw counts as a z without a baseline. Short queries (e.l.f.) may be rejected by GDELT.</td></tr>
-          <tr><td>Street view</td><td><span class="badge badge-worked">worked</span></td><td><code>python -m camillo_tracker street ELF</code> (yfinance: ratings, targets, revisions, coverage, surprises).</td><td>The 10-K segment note, for materiality — not a DCF.</td><td>Whether the press is already on the fact. Verdicts are conservative: missing data lowers confidence, never fills numbers. Labels: already priced / partially priced / not clearly priced / insufficient data.</td><td>This is a <strong>level</strong> of what the Street already has in the model. Do not average a “buy” share with a niche z into one magic number. The workflow asks: is it clearly priced?</td></tr>
+          <tr><td>Street view</td><td><span class="badge badge-worked">worked</span></td><td><code>python -m camillo_tracker street ELF</code> (yfinance: ratings, targets, revisions, coverage, surprises).</td><td>Issuer segment and cash-flow bridge. Unknowns stay needs research. Not a DCF, and no 1–2% cutoff.</td><td>Ask only whether this written thesis is explicitly reflected, partly reflected, not evidenced, or insufficient in the rows reviewed. Silence is not unpriced.</td><td>Auxiliary check, not a screen. Do not average a rating share with a niche index, and do not turn the result into a buy.</td></tr>
         </tbody>
       </table>
     </div>

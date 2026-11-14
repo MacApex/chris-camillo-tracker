@@ -2,18 +2,15 @@
   "retrieved_at_utc": "2026-11-12T18:16:23Z",
   "retrieved_at_asia_shanghai": "2026-11-13 Asia/Shanghai",
   "n_events_attempted": 10,
-  "n_with_1m_return": 10,
-  "method": "Forward close-to-close returns from the first trading day on or after the documented date, using yfinance auto-adjusted closes, 21/63/126 trading days. These are market-path facts, not Camillo's personal P&L. Dates with only month precision use mid-month placeholders, labeled as such.",
+  "n_with_1m_return": 3,
+  "method": "A forward path is kept only when the anchor is an independent dated event (purchase screenshots, issuer retail launch, or publication date) and is labeled as not personal P&L. Month-placeholder and unverified-exit anchors have returns, rating windows, and Wikipedia windows set to null.",
   "limitations": [
-    "Sample is small and is drawn from stories he later discussed — survivorship and storytelling bias.",
-    "Several dates are month-precision; GME/AMC placeholders are mid-squeeze, which can flatten or reverse forward returns.",
-    "TPR uses the BI article date, which is a mention, not an entry.",
-    "RBI is a documented losing thesis; it is included so the study is not winners-only.",
-    "COVID positions were puts — equity-index forward returns are not put P&L.",
-    "Target × Missoni was an overnight options trade; the equity 1/3/6-month path is a different instrument.",
-    "pytrends 'today 5-y' from November 2026 does not reach 2019–2020, so we cannot honestly classify historical events into high-niche/low-Street quadrants. Wikipedia attention is a proxy only where the article exists.",
-    "Yahoo upgrades/downgrades history is incomplete. Zeros are not proof of inactivity.",
-    "No transaction costs, borrow fees, or options Greeks. Not a backtest of a tradable rule."
+    "Placeholder dates do not produce returns or dependent windows.",
+    "Dorel adjusted closes are not comparable to the nominal $1.56 screenshot; factor, currency, identity, and quote quality are unresolved.",
+    "Missoni equity path uses Target's 13 Sep 2011 launch, not a verified option fill. Rating counts from the old 7 Sep anchor were invalidated rather than reused.",
+    "TPR path and the recomputed rating and pageview windows use the 18 Aug 2021 publication date, not a fill.",
+    "Yahoo rating history is incomplete. An empty window is insufficient evidence, not silence.",
+    "No costs, borrow, or option Greeks. Not a backtest and not a buy."
   ],
   "quadrant_classification": {
     "status": "not_performed",
@@ -32,49 +29,45 @@
       "trading_start": "2019-03-15",
       "returns": {
         "1m": {
-          "ok": true,
-          "start_date": "2019-03-15",
-          "end_date": "2019-04-15",
-          "start_px": 9.24,
-          "end_px": 11.55,
-          "pct": 25.0
+          "ok": false,
+          "pct": null,
+          "reason": "Purchase day unknown. 15 Mar 2019 placeholder path, rating window, and any counts from that date are withdrawn."
         },
         "3m": {
-          "ok": true,
-          "start_date": "2019-03-15",
-          "end_date": "2019-06-14",
-          "start_px": 9.24,
-          "end_px": 12.24,
-          "pct": 32.47
+          "ok": false,
+          "pct": null,
+          "reason": "Purchase day unknown. 15 Mar 2019 placeholder path, rating window, and any counts from that date are withdrawn."
         },
         "6m": {
-          "ok": true,
-          "start_date": "2019-03-15",
-          "end_date": "2019-09-13",
-          "start_px": 9.24,
-          "end_px": 15.74,
-          "pct": 70.35
+          "ok": false,
+          "pct": null,
+          "reason": "Purchase day unknown. 15 Mar 2019 placeholder path, rating window, and any counts from that date are withdrawn."
         }
       },
       "return_in_direction_of_stated_side": {
-        "1m": 25.0,
-        "3m": 32.47,
-        "6m": 70.35
+        "1m": null,
+        "3m": null,
+        "6m": null
       },
       "street_window": {
-        "ok": true,
-        "n_actions_plus_minus_90d": 8,
-        "n_before": 4,
-        "n_after": 4,
-        "upgrades_before": 0,
-        "upgrades_after": 4,
-        "method": "yfinance.Ticker.upgrades_downgrades",
-        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+        "ok": false,
+        "status": "invalidated",
+        "n_before": null,
+        "n_after": null,
+        "upgrades_before": null,
+        "upgrades_after": null,
+        "reason": "Purchase day unknown. 15 Mar 2019 placeholder path, rating window, and any counts from that date are withdrawn."
       },
       "wikipedia_attention": {
         "ok": false,
-        "reason": "no article assigned (date too early, or 404)"
-      }
+        "status": "invalidated",
+        "reason": "Purchase day unknown. 15 Mar 2019 placeholder path, rating window, and any counts from that date are withdrawn.",
+        "prior_article": null
+      },
+      "returns_status": "withdrawn",
+      "returns_withdrawn_reason": "Purchase day unknown. 15 Mar 2019 placeholder path, rating window, and any counts from that date are withdrawn.",
+      "display_returns": false,
+      "date_role": "not_a_trade_anchor"
     },
     {
       "id": "rbi-2019-apr",
@@ -88,57 +81,45 @@
       "trading_start": "2019-04-15",
       "returns": {
         "1m": {
-          "ok": true,
-          "start_date": "2019-04-15",
-          "end_date": "2019-05-15",
-          "start_px": 51.1888,
-          "end_px": 51.4276,
-          "pct": 0.47
+          "ok": false,
+          "pct": null,
+          "reason": "15 Apr 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn."
         },
         "3m": {
-          "ok": true,
-          "start_date": "2019-04-15",
-          "end_date": "2019-07-16",
-          "start_px": 51.1888,
-          "end_px": 55.8732,
-          "pct": 9.15
+          "ok": false,
+          "pct": null,
+          "reason": "15 Apr 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn."
         },
         "6m": {
-          "ok": true,
-          "start_date": "2019-04-15",
-          "end_date": "2019-10-14",
-          "start_px": 51.1888,
-          "end_px": 54.8073,
-          "pct": 7.07
+          "ok": false,
+          "pct": null,
+          "reason": "15 Apr 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn."
         }
       },
       "return_in_direction_of_stated_side": {
-        "1m": 0.47,
-        "3m": 9.15,
-        "6m": 7.07
+        "1m": null,
+        "3m": null,
+        "6m": null
       },
       "street_window": {
-        "ok": true,
-        "n_actions_plus_minus_90d": 10,
-        "n_before": 4,
-        "n_after": 6,
-        "upgrades_before": 1,
-        "upgrades_after": 0,
-        "method": "yfinance.Ticker.upgrades_downgrades",
-        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+        "ok": false,
+        "status": "invalidated",
+        "n_before": null,
+        "n_after": null,
+        "upgrades_before": null,
+        "upgrades_after": null,
+        "reason": "15 Apr 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn."
       },
       "wikipedia_attention": {
-        "ok": true,
-        "article": "Restaurant_Brands_International",
-        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Restaurant_Brands_International/daily/20190101/20200331",
-        "method": "Wikimedia REST API",
-        "retrieved_at_utc": "2026-11-12T18:13:00Z",
-        "views_on_date": 722,
-        "mean_14d_before": 774.2142857142857,
-        "mean_14d_after": 957.0,
-        "n_before": 14,
-        "n_after": 14
-      }
+        "ok": false,
+        "status": "invalidated",
+        "reason": "15 Apr 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn.",
+        "prior_article": "Restaurant_Brands_International"
+      },
+      "returns_status": "withdrawn",
+      "returns_withdrawn_reason": "15 Apr 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn.",
+      "display_returns": false,
+      "date_role": "not_a_trade_anchor"
     },
     {
       "id": "rbi-2019-aug",
@@ -152,57 +133,45 @@
       "trading_start": "2019-08-15",
       "returns": {
         "1m": {
-          "ok": true,
-          "start_date": "2019-08-15",
-          "end_date": "2019-09-16",
-          "start_px": 57.0993,
-          "end_px": 55.8543,
-          "pct": -2.18
+          "ok": false,
+          "pct": null,
+          "reason": "15 Aug 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn."
         },
         "3m": {
-          "ok": true,
-          "start_date": "2019-08-15",
-          "end_date": "2019-11-13",
-          "start_px": 57.0993,
-          "end_px": 52.9632,
-          "pct": -7.24
+          "ok": false,
+          "pct": null,
+          "reason": "15 Aug 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn."
         },
         "6m": {
-          "ok": true,
-          "start_date": "2019-08-15",
-          "end_date": "2020-02-14",
-          "start_px": 57.0993,
-          "end_px": 52.9387,
-          "pct": -7.29
+          "ok": false,
+          "pct": null,
+          "reason": "15 Aug 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn."
         }
       },
       "return_in_direction_of_stated_side": {
-        "1m": -2.18,
-        "3m": -7.24,
-        "6m": -7.29
+        "1m": null,
+        "3m": null,
+        "6m": null
       },
       "street_window": {
-        "ok": true,
-        "n_actions_plus_minus_90d": 13,
-        "n_before": 7,
-        "n_after": 6,
-        "upgrades_before": 0,
-        "upgrades_after": 1,
-        "method": "yfinance.Ticker.upgrades_downgrades",
-        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+        "ok": false,
+        "status": "invalidated",
+        "n_before": null,
+        "n_after": null,
+        "upgrades_before": null,
+        "upgrades_after": null,
+        "reason": "15 Aug 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn."
       },
       "wikipedia_attention": {
-        "ok": true,
-        "article": "Restaurant_Brands_International",
-        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Restaurant_Brands_International/daily/20190101/20200331",
-        "method": "Wikimedia REST API",
-        "retrieved_at_utc": "2026-11-12T18:13:00Z",
-        "views_on_date": 907,
-        "mean_14d_before": 960.3571428571429,
-        "mean_14d_after": 3270.8571428571427,
-        "n_before": 14,
-        "n_after": 14
-      }
+        "ok": false,
+        "status": "invalidated",
+        "reason": "15 Aug 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn.",
+        "prior_article": "Restaurant_Brands_International"
+      },
+      "returns_status": "withdrawn",
+      "returns_withdrawn_reason": "15 Aug 2019 is a month placeholder, not the screenshot day. Returns and dependent windows are withdrawn.",
+      "display_returns": false,
+      "date_role": "not_a_trade_anchor"
     },
     {
       "id": "covid-spy-2020",
@@ -216,43 +185,45 @@
       "trading_start": "2020-02-18",
       "returns": {
         "1m": {
-          "ok": true,
-          "start_date": "2020-02-18",
-          "end_date": "2020-03-18",
-          "start_px": 306.1756,
-          "end_px": 218.2227,
-          "pct": -28.73
+          "ok": false,
+          "pct": null,
+          "reason": "No verified SPY fill or complete exit. 15 Feb 2020 placeholder path and dependent windows are withdrawn."
         },
         "3m": {
-          "ok": true,
-          "start_date": "2020-02-18",
-          "end_date": "2020-05-18",
-          "start_px": 306.1756,
-          "end_px": 269.8095,
-          "pct": -11.88
+          "ok": false,
+          "pct": null,
+          "reason": "No verified SPY fill or complete exit. 15 Feb 2020 placeholder path and dependent windows are withdrawn."
         },
         "6m": {
-          "ok": true,
-          "start_date": "2020-02-18",
-          "end_date": "2020-08-17",
-          "start_px": 306.1756,
-          "end_px": 310.4153,
-          "pct": 1.38
+          "ok": false,
+          "pct": null,
+          "reason": "No verified SPY fill or complete exit. 15 Feb 2020 placeholder path and dependent windows are withdrawn."
         }
       },
       "return_in_direction_of_stated_side": {
-        "1m": 28.73,
-        "3m": 11.88,
-        "6m": -1.38
+        "1m": null,
+        "3m": null,
+        "6m": null
       },
       "street_window": {
         "ok": false,
-        "reason": "no upgrades_downgrades"
+        "status": "invalidated",
+        "n_before": null,
+        "n_after": null,
+        "upgrades_before": null,
+        "upgrades_after": null,
+        "reason": "No verified SPY fill or complete exit. 15 Feb 2020 placeholder path and dependent windows are withdrawn."
       },
       "wikipedia_attention": {
         "ok": false,
-        "reason": "no article assigned (date too early, or 404)"
-      }
+        "status": "invalidated",
+        "reason": "No verified SPY fill or complete exit. 15 Feb 2020 placeholder path and dependent windows are withdrawn.",
+        "prior_article": null
+      },
+      "returns_status": "withdrawn",
+      "returns_withdrawn_reason": "No verified SPY fill or complete exit. 15 Feb 2020 placeholder path and dependent windows are withdrawn.",
+      "display_returns": false,
+      "date_role": "not_a_trade_anchor"
     },
     {
       "id": "covid-wynn-2020",
@@ -266,57 +237,45 @@
       "trading_start": "2020-02-18",
       "returns": {
         "1m": {
-          "ok": true,
-          "start_date": "2020-02-18",
-          "end_date": "2020-03-18",
-          "start_px": 127.7132,
-          "end_px": 41.513,
-          "pct": -67.5
+          "ok": false,
+          "pct": null,
+          "reason": "No verified Wynn fill. 15 Feb 2020 placeholder path and dependent windows are withdrawn."
         },
         "3m": {
-          "ok": true,
-          "start_date": "2020-02-18",
-          "end_date": "2020-05-18",
-          "start_px": 127.7132,
-          "end_px": 78.6161,
-          "pct": -38.44
+          "ok": false,
+          "pct": null,
+          "reason": "No verified Wynn fill. 15 Feb 2020 placeholder path and dependent windows are withdrawn."
         },
         "6m": {
-          "ok": true,
-          "start_date": "2020-02-18",
-          "end_date": "2020-08-17",
-          "start_px": 127.7132,
-          "end_px": 80.575,
-          "pct": -36.91
+          "ok": false,
+          "pct": null,
+          "reason": "No verified Wynn fill. 15 Feb 2020 placeholder path and dependent windows are withdrawn."
         }
       },
       "return_in_direction_of_stated_side": {
-        "1m": 67.5,
-        "3m": 38.44,
-        "6m": 36.91
+        "1m": null,
+        "3m": null,
+        "6m": null
       },
       "street_window": {
-        "ok": true,
-        "n_actions_plus_minus_90d": 17,
-        "n_before": 9,
-        "n_after": 8,
-        "upgrades_before": 2,
-        "upgrades_after": 1,
-        "method": "yfinance.Ticker.upgrades_downgrades",
-        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+        "ok": false,
+        "status": "invalidated",
+        "n_before": null,
+        "n_after": null,
+        "upgrades_before": null,
+        "upgrades_after": null,
+        "reason": "No verified Wynn fill. 15 Feb 2020 placeholder path and dependent windows are withdrawn."
       },
       "wikipedia_attention": {
-        "ok": true,
-        "article": "Wynn_Resorts",
-        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Wynn_Resorts/daily/20200101/20200630",
-        "method": "Wikimedia REST API",
-        "retrieved_at_utc": "2026-11-12T18:13:00Z",
-        "views_on_date": 211,
-        "mean_14d_before": 249.42857142857142,
-        "mean_14d_after": 263.64285714285717,
-        "n_before": 14,
-        "n_after": 14
-      }
+        "ok": false,
+        "status": "invalidated",
+        "reason": "No verified Wynn fill. 15 Feb 2020 placeholder path and dependent windows are withdrawn.",
+        "prior_article": "Wynn_Resorts"
+      },
+      "returns_status": "withdrawn",
+      "returns_withdrawn_reason": "No verified Wynn fill. 15 Feb 2020 placeholder path and dependent windows are withdrawn.",
+      "display_returns": false,
+      "date_role": "not_a_trade_anchor"
     },
     {
       "id": "dorel-2020",
@@ -367,7 +326,7 @@
         "upgrades_before": 0,
         "upgrades_after": 0,
         "method": "yfinance.Ticker.upgrades_downgrades",
-        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+        "note": "Empty Yahoo sample in this window is insufficient evidence, not a silent Street. Counts are from the 24 Apr 2020 purchase date."
       },
       "wikipedia_attention": {
         "ok": true,
@@ -379,8 +338,11 @@
         "mean_14d_before": 243.42857142857142,
         "mean_14d_after": 298.0,
         "n_before": 14,
-        "n_after": 14
-      }
+        "n_after": 14,
+        "note": "Pageviews around the dated purchase, not demand, and not a lead."
+      },
+      "display_returns": true,
+      "returns_status": "adjusted_close_path_not_comparable_to_nominal_screenshot"
     },
     {
       "id": "tgt-missoni-2011",
@@ -424,23 +386,25 @@
         "6m": 16.33
       },
       "street_window": {
-        "ok": true,
-        "n_actions_plus_minus_90d": 0,
-        "n_before": 0,
-        "n_after": 0,
-        "upgrades_before": 0,
-        "upgrades_after": 0,
-        "method": "yfinance.Ticker.upgrades_downgrades",
-        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+        "ok": false,
+        "status": "invalidated",
+        "n_before": null,
+        "n_after": null,
+        "upgrades_before": null,
+        "upgrades_after": null,
+        "reason": "Anchor moved from 2011-09-07 to the 13 Sep 2011 retail launch. The old ±90-day rating counts were not recomputed from stored rows, so they are null."
       },
       "wikipedia_attention": {
         "ok": false,
-        "reason": "no article assigned (date too early, or 404)"
+        "status": "unavailable",
+        "reason": "English Wikipedia pageviews begin in 2015, so there is no 2011 before/after window. This does not depend on the six-day anchor move."
       },
       "withdrawn_anchor": {
         "date": "2011-09-07",
         "why": "Not in the Tearsheet transcript. Do not use."
-      }
+      },
+      "display_returns": true,
+      "returns_status": "retail_launch_equity_path_not_a_fill"
     },
     {
       "id": "gme-2021",
@@ -454,57 +418,45 @@
       "trading_start": "2021-01-25",
       "returns": {
         "1m": {
-          "ok": true,
-          "start_date": "2021-01-25",
-          "end_date": "2021-02-24",
-          "start_px": 19.1975,
-          "end_px": 22.9275,
-          "pct": 19.43
+          "ok": false,
+          "pct": null,
+          "reason": "25 Jan 2021 is a mid-squeeze month placeholder, not a fill. Returns and Wikipedia window are withdrawn."
         },
         "3m": {
-          "ok": true,
-          "start_date": "2021-01-25",
-          "end_date": "2021-04-26",
-          "start_px": 19.1975,
-          "end_px": 42.2325,
-          "pct": 119.99
+          "ok": false,
+          "pct": null,
+          "reason": "25 Jan 2021 is a mid-squeeze month placeholder, not a fill. Returns and Wikipedia window are withdrawn."
         },
         "6m": {
-          "ok": true,
-          "start_date": "2021-01-25",
-          "end_date": "2021-07-26",
-          "start_px": 19.1975,
-          "end_px": 45.985,
-          "pct": 139.54
+          "ok": false,
+          "pct": null,
+          "reason": "25 Jan 2021 is a mid-squeeze month placeholder, not a fill. Returns and Wikipedia window are withdrawn."
         }
       },
       "return_in_direction_of_stated_side": {
-        "1m": 19.43,
-        "3m": 119.99,
-        "6m": 139.54
+        "1m": null,
+        "3m": null,
+        "6m": null
       },
       "street_window": {
-        "ok": true,
-        "n_actions_plus_minus_90d": 5,
-        "n_before": 0,
-        "n_after": 5,
-        "upgrades_before": 0,
-        "upgrades_after": 0,
-        "method": "yfinance.Ticker.upgrades_downgrades",
-        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+        "ok": false,
+        "status": "invalidated",
+        "n_before": null,
+        "n_after": null,
+        "upgrades_before": null,
+        "upgrades_after": null,
+        "reason": "25 Jan 2021 is a mid-squeeze month placeholder, not a fill. Returns and Wikipedia window are withdrawn."
       },
       "wikipedia_attention": {
-        "ok": true,
-        "article": "GameStop",
-        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/GameStop/daily/20201201/20210630",
-        "method": "Wikimedia REST API",
-        "retrieved_at_utc": "2026-11-12T18:13:00Z",
-        "views_on_date": 16446,
-        "mean_14d_before": 2628.214285714286,
-        "mean_14d_after": 57513.42857142857,
-        "n_before": 14,
-        "n_after": 14
-      }
+        "ok": false,
+        "status": "invalidated",
+        "reason": "25 Jan 2021 is a mid-squeeze month placeholder, not a fill. Returns and Wikipedia window are withdrawn.",
+        "prior_article": "GameStop"
+      },
+      "returns_status": "withdrawn",
+      "returns_withdrawn_reason": "25 Jan 2021 is a mid-squeeze month placeholder, not a fill. Returns and Wikipedia window are withdrawn.",
+      "display_returns": false,
+      "date_role": "not_a_trade_anchor"
     },
     {
       "id": "amc-2021",
@@ -518,57 +470,45 @@
       "trading_start": "2021-01-25",
       "returns": {
         "1m": {
-          "ok": true,
-          "start_date": "2021-01-25",
-          "end_date": "2021-02-24",
-          "start_px": 44.2,
-          "end_px": 90.9,
-          "pct": 105.66
+          "ok": false,
+          "pct": null,
+          "reason": "25 Jan 2021 is a month placeholder, not a fill. Returns and Wikipedia window are withdrawn."
         },
         "3m": {
-          "ok": true,
-          "start_date": "2021-01-25",
-          "end_date": "2021-04-26",
-          "start_px": 44.2,
-          "end_px": 115.0,
-          "pct": 160.18
+          "ok": false,
+          "pct": null,
+          "reason": "25 Jan 2021 is a month placeholder, not a fill. Returns and Wikipedia window are withdrawn."
         },
         "6m": {
-          "ok": true,
-          "start_date": "2021-01-25",
-          "end_date": "2021-07-26",
-          "start_px": 44.2,
-          "end_px": 402.9,
-          "pct": 811.54
+          "ok": false,
+          "pct": null,
+          "reason": "25 Jan 2021 is a month placeholder, not a fill. Returns and Wikipedia window are withdrawn."
         }
       },
       "return_in_direction_of_stated_side": {
-        "1m": 105.66,
-        "3m": 160.18,
-        "6m": 811.54
+        "1m": null,
+        "3m": null,
+        "6m": null
       },
       "street_window": {
-        "ok": true,
-        "n_actions_plus_minus_90d": 0,
-        "n_before": 0,
-        "n_after": 0,
-        "upgrades_before": 0,
-        "upgrades_after": 0,
-        "method": "yfinance.Ticker.upgrades_downgrades",
-        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+        "ok": false,
+        "status": "invalidated",
+        "n_before": null,
+        "n_after": null,
+        "upgrades_before": null,
+        "upgrades_after": null,
+        "reason": "25 Jan 2021 is a month placeholder, not a fill. Returns and Wikipedia window are withdrawn."
       },
       "wikipedia_attention": {
-        "ok": true,
-        "article": "AMC_Theatres",
-        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/AMC_Theatres/daily/20201201/20210630",
-        "method": "Wikimedia REST API",
-        "retrieved_at_utc": "2026-11-12T18:13:00Z",
-        "views_on_date": 2503,
-        "mean_14d_before": 901.0714285714286,
-        "mean_14d_after": 8768.714285714286,
-        "n_before": 14,
-        "n_after": 14
-      }
+        "ok": false,
+        "status": "invalidated",
+        "reason": "25 Jan 2021 is a month placeholder, not a fill. Returns and Wikipedia window are withdrawn.",
+        "prior_article": "AMC_Theatres"
+      },
+      "returns_status": "withdrawn",
+      "returns_withdrawn_reason": "25 Jan 2021 is a month placeholder, not a fill. Returns and Wikipedia window are withdrawn.",
+      "display_returns": false,
+      "date_role": "not_a_trade_anchor"
     },
     {
       "id": "tpr-2021-mention",
@@ -613,30 +553,37 @@
       },
       "street_window": {
         "ok": true,
-        "n_actions_plus_minus_90d": 12,
-        "n_before": 2,
-        "n_after": 10,
+        "status": "recomputed_from_stored_grades",
+        "anchor": "2021-08-18",
+        "n_actions_plus_minus_90d": 14,
+        "n_before": 3,
+        "n_after": 11,
         "upgrades_before": 0,
         "upgrades_after": 0,
-        "method": "yfinance.Ticker.upgrades_downgrades",
-        "note": "Yahoo's history is incomplete; a zero does not mean no Street activity."
+        "method": "stored yfinance grades in data/cases/tapestry-2021.json, recomputed for the publication anchor",
+        "note": "Not a trade study. Counts are rows in the stored Yahoo sample, which is incomplete. Empty is not silence.",
+        "previous_window_invalidated": "Counts previously attached after the anchor moved from 15 Aug were not left in place."
       },
       "wikipedia_attention": {
         "ok": true,
+        "status": "recomputed_from_stored_pageviews",
         "article": "Tapestry,_Inc.",
-        "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tapestry,_Inc./daily/20210101/20211231",
-        "method": "Wikimedia REST API",
-        "retrieved_at_utc": "2026-11-12T18:13:00Z",
-        "views_on_date": 146,
-        "mean_14d_before": 172.78571428571428,
-        "mean_14d_after": 198.42857142857142,
+        "anchor": "2021-08-18",
+        "views_on_date": 182,
+        "mean_14d_before": 175.07142857142858,
+        "mean_14d_after": 191.57142857142858,
         "n_before": 14,
-        "n_after": 14
+        "n_after": 14,
+        "method": "stored Wikimedia series in data/cases/tapestry-2021.json",
+        "note": "Publication-date attention, not a trade-date study. Not demand."
       },
       "withdrawn_anchor": {
         "date": "2021-08-15",
         "why": "Playa YTD cutoff in the same article, not the publication time and not a TPR fill."
-      }
+      },
+      "display_returns": true,
+      "returns_status": "publication_equity_path_not_a_fill"
     }
-  ]
+  ],
+  "n_withdrawn_placeholder_anchors": 7
 }

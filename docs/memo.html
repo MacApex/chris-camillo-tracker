@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-lang="zh">
+<head>
+  <script>
+  (function(){try{var p=new URLSearchParams(location.search).get("lang");var l=(p==="en"||p==="zh")?p:(localStorage.getItem("cct-lang")||"zh");if(l!=="en")l="zh";document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l==="zh"?"zh-Hans":"en";}catch(e){}})();
+  </script>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-title-zh="三到五年研究备忘 — Chris Camillo Tracker" data-title-en="Three- to five-year research memo — Chris Camillo Tracker">三到五年研究备忘 — Chris Camillo Tracker</title>
+  <meta name="description" data-desc-zh="可填写的研究备忘。空着的关键项保持待研究。趋势或分数不是买入。" data-desc-en="A fillable research memo. Empty crucial inputs stay needs research. A trend or a score is not a buy." content="可填写的研究备忘。空着的关键项保持待研究。趋势或分数不是买入。">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,450;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CC</span>
+        <span class="brand-text">
+          <strong>Chris Camillo Tracker</strong>
+          <span class="lang-zh">社会套利研究</span>
+          <span class="lang-en">Social arbitrage research</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="菜单" aria-expanded="false">☰</button>
+      <nav class="primary" aria-label="Primary">
+        <a href="index.html"><span class="lang-zh">概览</span><span class="lang-en">Overview</span></a>
+        <a href="methodology.html"><span class="lang-zh">总纲</span><span class="lang-en">Synthesis</span></a>
+        <a href="cases.html" class="nav-featured"><span class="lang-zh">案例</span><span class="lang-en">Cases</span></a>
+        <a href="core-logic.html"><span class="lang-zh">核心逻辑</span><span class="lang-en">Core logic</span></a>
+        <a href="trades.html"><span class="lang-zh">交易</span><span class="lang-en">Trades</span></a>
+        <a href="dimensions.html"><span class="lang-zh">维度</span><span class="lang-en">Dimensions</span></a>
+        <a href="street-view.html"><span class="lang-zh">街景</span><span class="lang-en">Street view</span></a>
+        <a href="track-record.html"><span class="lang-zh">业绩</span><span class="lang-en">Track record</span></a>
+        <a href="playbook.html"><span class="lang-zh">手册</span><span class="lang-en">Playbook</span></a>
+        <a href="memo.html" aria-current="page"><span class="lang-zh">备忘</span><span class="lang-en">Memo</span></a>
+        <a href="divergence.html"><span class="lang-zh">信息差</span><span class="lang-en">Divergence</span></a>
+        <a href="resources.html"><span class="lang-zh">工具</span><span class="lang-en">Resources</span></a>
+        <a href="sources.html"><span class="lang-zh">来源</span><span class="lang-en">Sources</span></a>
+      </nav>
+      <div class="lang-switch" data-lang-switch role="group" aria-label="语言">
+        <button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="true">中文</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+  <article class="prose">
+    <div class="wrap">
+      <p class="eyebrow lang-zh">项目约定 · 不是 Camillo 的证明</p>
+      <p class="eyebrow lang-en">Project convention · not proof of Camillo’s method</p>
+      <h1 class="lang-zh">三到五年的研究备忘</h1>
+      <h1 class="lang-en">A three- to five-year research memo</h1>
+      <p class="deck lang-zh">短期社交或搜索信号不是耐久的利润、现金流或价值。下面每一格空着就是「待研究」。填完也不会产生买入。不要输入账户、身份或密钥。记录只留在这台浏览器里。</p>
+      <p class="deck lang-en">A short-term social or search signal is not durable earnings, cash flow, or value. An empty cell below is “needs research.” Filling the form does not produce a buy. Do not enter accounts, identity documents, or secrets. The note stays in this browser only.</p>
+      <form id="memo-form" class="memo-form" autocomplete="off">
+        <div>
+          <label for="m-name"><span class="lang-zh">名称或代码（可选，公开标识即可）</span><span class="lang-en">Name or ticker (optional, public identifier only)</span></label>
+          <input id="m-name" name="name" maxlength="80">
+        </div>
+        <div>
+          <label for="m-horizon"><span class="lang-zh">期限</span><span class="lang-en">Horizon</span></label>
+          <select id="m-horizon" name="horizon">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected>5</option>
+          </select>
+        </div>
+        <div>
+          <label for="m-durability"><span class="lang-zh">耐久性：这门生意三年后还在为谁解决什么问题？</span><span class="lang-en">Durability: whose problem does this business still solve in three years?</span></label>
+          <textarea id="m-durability" name="durability"></textarea>
+        </div>
+        <div>
+          <label for="m-competition"><span class="lang-zh">竞争与重复购买</span><span class="lang-en">Competition and repeat purchase</span></label>
+          <textarea id="m-competition" name="competition"></textarea>
+        </div>
+        <div>
+          <label for="m-profit"><span class="lang-zh">增量利润与自由现金流</span><span class="lang-en">Incremental profit and free cash flow</span></label>
+          <textarea id="m-profit" name="profit"></textarea>
+        </div>
+        <div>
+          <label for="m-debt"><span class="lang-zh">债务与稀释</span><span class="lang-en">Debt and dilution</span></label>
+          <textarea id="m-debt" name="debt"></textarea>
+        </div>
+        <div>
+          <label for="m-valuation"><span class="lang-zh">估值情形（下行 / 基准 / 上行）。没有数字就留空。</span><span class="lang-en">Valuation scenarios (downside / base / upside). Leave blank if you have no figures.</span></label>
+          <textarea id="m-valuation" name="valuation"></textarea>
+        </div>
+        <div>
+          <label for="m-quarterly"><span class="lang-zh">季度验证：下一季到四季你要看到的具体数字</span><span class="lang-en">Quarterly validation: the specific figures you need over the next one to four quarters</span></label>
+          <textarea id="m-quarterly" name="quarterly"></textarea>
+        </div>
+        <div>
+          <label for="m-invalidation"><span class="lang-zh">失效条件：哪条证据、在哪个日期之前，会让你放下这条论点</span><span class="lang-en">Invalidation: which evidence, by which date, would make you drop the claim</span></label>
+          <textarea id="m-invalidation" name="invalidation"></textarea>
+        </div>
+        <div class="memo-actions">
+          <button type="button" id="memo-export"><span class="lang-zh">导出 JSON</span><span class="lang-en">Export JSON</span></button>
+          <button type="button" id="memo-reset"><span class="lang-zh">清除本机记录</span><span class="lang-en">Clear local note</span></button>
+        </div>
+      </form>
+      <h2 class="lang-zh">仍待研究</h2>
+      <h2 class="lang-en">Still needs research</h2>
+      <ul id="memo-gaps"></ul>
+      <p class="small lang-zh">这张表是项目约定，不是 Camillo 的规则，也不是买卖指令。卖方共识不能填上这些空格。</p>
+      <p class="small lang-en">This sheet is a project convention, not a rule of Camillo’s, and not an instruction to buy or sell. Street consensus does not fill these cells.</p>
+    </div>
+  </article>
+  <footer class="site-footer">
+    <div class="inner">
+      <p class="lang-zh">Chris Camillo Tracker · 独立研究档案 · 与 Camillo、Dumb Money、TickerTags 均无关联。<br><strong>不构成投资建议。</strong></p>
+      <p class="lang-en">Chris Camillo Tracker · independent research archive · not affiliated with Camillo, Dumb Money, or TickerTags.<br><strong>Not financial advice.</strong></p>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+  <script>
+  (function () {
+    var KEY = "cct-research-memo-v1";
+    var fields = ["name", "horizon", "durability", "competition", "profit", "debt", "valuation", "quarterly", "invalidation"];
+    var crucial = ["durability", "competition", "profit", "debt", "valuation", "quarterly", "invalidation"];
+    var labels = {
+      zh: { durability: "耐久性", competition: "竞争与重复购买", profit: "增量利润与自由现金流", debt: "债务与稀释", valuation: "估值情形", quarterly: "季度验证", invalidation: "失效条件", needs: "待研究" },
+      en: { durability: "Durability", competition: "Competition and repeat purchase", profit: "Incremental profit and free cash flow", debt: "Debt and dilution", valuation: "Valuation scenarios", quarterly: "Quarterly validation", invalidation: "Invalidation", needs: "needs research" }
+    };
+    function lang() { return document.documentElement.getAttribute("data-lang") === "en" ? "en" : "zh"; }
+    function read() {
+      var out = {};
+      fields.forEach(function (id) {
+        var el = document.getElementById("m-" + id);
+        out[id] = el ? el.value : "";
+      });
+      return out;
+    }
+    function write(data) {
+      fields.forEach(function (id) {
+        var el = document.getElementById("m-" + id);
+        if (el && data && Object.prototype.hasOwnProperty.call(data, id)) el.value = data[id] || "";
+      });
+    }
+    function save() {
+      try { localStorage.setItem(KEY, JSON.stringify(read())); } catch (e) {}
+      renderGaps();
+    }
+    function renderGaps() {
+      var host = document.getElementById("memo-gaps");
+      if (!host) return;
+      var L = labels[lang()];
+      var data = read();
+      host.innerHTML = crucial.map(function (id) {
+        var empty = !String(data[id] || "").trim();
+        var state = empty ? L.needs : (lang() === "zh" ? "已填写" : "filled");
+        return "<li>" + L[id] + ": <span class='" + (empty ? "memo-gap" : "") + "'>" + state + "</span></li>";
+      }).join("");
+    }
+    try { write(JSON.parse(localStorage.getItem(KEY) || "{}")); } catch (e) {}
+    document.getElementById("memo-form").addEventListener("input", save);
+    document.getElementById("memo-export").addEventListener("click", function () {
+      var data = read();
+      var gaps = {};
+      crucial.forEach(function (id) { if (!String(data[id] || "").trim()) gaps[id] = "needs research"; });
+      var payload = { convention: "project_not_camillo_proof", not_a_buy: true, horizon_years: Number(data.horizon) || null, fields: data, needs_research: gaps };
+      var blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "research-memo.json";
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+    document.getElementById("memo-reset").addEventListener("click", function () {
+      try { localStorage.removeItem(KEY); } catch (e) {}
+      write({ name: "", horizon: "5", durability: "", competition: "", profit: "", debt: "", valuation: "", quarterly: "", invalidation: "" });
+      renderGaps();
+    });
+    document.addEventListener("cct-lang", renderGaps);
+    renderGaps();
+  })();
+  </script>
+</body>
+</html>
